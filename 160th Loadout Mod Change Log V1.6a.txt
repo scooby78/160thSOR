@@ -1,0 +1,224 @@
+******************************************************
+****Best viewed in full screen with word wrap off*****
+******************************************************
+V1.6a**************************************************************************************************************************************************************************************************************************
+
+FIXED	- "fn_parajump.sqf" line 17 "SOR_ParaJump_Active = true;" value added issue resolved										[\functions\]
+
+V1.6**************************************************************************************************************************************************************************************************************************
+
+BUG	- "fn_parajump.sqf" will not reset after manual chute open selected												Reported by scooby
+
+FIXED	- Correct invalid file path to "160th.paa".  Now no longer requires external .paa file and uses internal .paa instead						[cfgFactionClasses.hpp] 
+
+ADDED	- Mod signed																			[160thSOR.pbo.160thSOR_Modpack_V1.6.bisign][160thSOR_Modpack_V1.6.bikey]
+ADDED	- "160th_day.paa" & "160th_night picture															[\data\]
+ADDED	- supply box "SOR_Box_NATO_WpsSpecial_F" for use by viper as per requests by FLIP 										[cfgCrates.hpp][cfgPatches.hpp]
+ADDED	- "SOR_Engineer_D" as per Loomis's advice															[cfgTroopsDesert.hpp][cfgPatches.hpp]
+ADDED	- "SOR_OrdanancePack_D", "SOR_CombatPack_D" and "SOR_Eng_Repair_Pack_D" as per Loomis's advice									[cfgBackpacks.hpp]
+ADDED	- "SOR_B_SDV_01_F" submarine with 3 x scuba loadouts int the inventory												[cfgArmor.hpp][cfgPatches.hpp]
+ADDED	- "SOR_rhsusf_m1025_d_s" engineer vehicle loadout inspired by Loomis												[cfgArmor.hpp][cfgPatches.hpp]
+ADDED	- "SOR_B_APC_Tracked_01_rcws_F" armored engineer vehicle loadout inspired by Loomis										[cfgArmor.hpp][cfgPatches.hpp]
+ADDED	- "SOR_rhsusf_m1025_d" troop transport vehicle loadout														[cfgArmor.hpp][cfgPatches.hpp]
+ADDED	- "SOR_rhsusf_m1025_d_Mk19" armed troop transport vehicle loadout												[cfgArmor.hpp][cfgPatches.hpp]
+ADDED	- "SOR_rhsusf_m1025_d_m2" armed troop transport vehicle loadout													[cfgArmor.hpp][cfgPatches.hpp]
+ADDED	- "SOR_rhsusf_M1083A1P2_d_fmtv_usarmy" armored engineer truck loadout inspired by Loomis									[cfgArmor.hpp][cfgPatches.hpp]
+
+REMOVED	- "headless.sfq" from functions																	[\functions\][cfgFunctions.hpp]
+REMOVED	- "SOR_M2A3_BUSKIII_BUFF" as testing has concluded														[cfgArmor.hpp][cfgPatches.hpp]
+REMOVED	- "SOR_rhsusf_m113d_usarmy_buffcq" as testing has concluded													[cfgArmor.hpp][cfgPatches.hpp]
+
+CHANGED	- "SOR_MechOperator_D" now has "SOR_Mech_Radio" backpack													[cfgTroopsDesert.hpp]
+CHANGED	- "SOR_HMG_Crate_F" increased to 3x M2 guns, now hase normal and mini tripods as well as 3x mortar tubes							[cfgCrates.hpp]
+CHANGED	- 160th helicopters not have "SOR_Repair_Pack_D" in inventory													[cfgAircraft.hpp]
+CHANGED	- Zeus placeable repair pad "SOR_HelipadSquare" is now "SOR_Land_HelipadCircle_F"										[cfgMisc.hpp][cfgPatches.hpp]
+CHANGED	- Refined "fn_trigger.sqf", "fn_trigger_mech.sqf", "fn_service.sqf" and "fn_mech_service.sqf" coding								[\functions\]
+CHANGED	- "SOR_mod" now calls itself "SOR_Desert_Loadouts" 														[cfgPatches.hpp]
+CHANGED	- "SOR_rhsusf_m113d_usarmy_buff" classname to "SOR_rhsusf_m113d_usarmy" as testing has concluded								[cfgArmor.hpp][cfgPatches.hpp]
+
+V1.5****************************************************************************************************************************************************************************************************************************
+
+BUG	- "@160thSOR\160th.paa" not found error when loading into editor or Zeus screens 										(Reported by Scooby)
+
+ADDED	- Mod signed																			[160thSOR.pbo.160thSOR_Modpack_V1.5.bisign][160thSOR_Modpack_V1.5.bikey]
+ADDED	- New custom weapon "160_rhs_weap_m16a4_carryhandle" 														[cfgWeapons.hpp]
+ADDED	- 2 x "rhs_mag_an_m8hc" to "SOR_Repair_Pack_D"															[cfgBackpacks.hpp]
+ADDED	- New backpacks "SOR_Spotter_Radio" and "SOR_Mech_Radio" with custom inventory											[cfgBackpacks.hpp]
+ADDED	- "SOR_Infantry_Recon" class 																	[cfgVehicleClasses.hpp]
+ADDED	- 2 x "rhs_weap_m4a1_carryhandle_grip" added to all mech vehicles 												[cfgArmor.hpp]
+ADDED	- New unit loadout "SOR_Recon_M249AR_D"	as per requests by FLIP													[cfgTroopsDesert.hpp] 
+ADDED	- "SOR_MechOperator_D", "SOR_MechDriver_D" and "SOR_MechCrewCommander_D" units as per BEAN's request								[cfgTroopsDesert.hpp] 
+
+REMOVED	- "SOR_Scout" unit loadout not required																[cfgTroopsDesert.hpp] 
+REMOVED	- "SOR_Scout_Pack" and "SOR_Spotter_Camo"															[cfgBackpacks.hpp]
+REMOVED	- "NVGoggles" removed from all player kits (will also aid weight reduction)											[define_macros.hpp]
+
+CHANGED	- "Mechanised Crew" group classnames changed to suit new unit classnames											[cfgGroups.hpp]
+CHANGED	- "160_rhs_weap_sr25" now has "rhsusf_acc_SR25S" and "rhsusf_acc_harris_bipod" attached in config								[cfgWeapons.hpp]
+CHANGED	- "160_rhs_weap_m16a4_carryhandle_grip_pmag" now has "rhsusf_acc_nt4_black" attached in config									[cfgWeapons.hpp]
+CHANGED	- Refined coding for "class UserActions" allowing for correct inheritance functionality										[cfgAircraft.hpp][cfgArmor.hpp]
+CHANGED	- Removed "160_m4a1_carryhandle_grip_holo" from "SOR_MechCrew_D" primary weapon as per BEAN's request								[cfgTroopsDesert.hpp]
+CHANGED	- All "H_HelmetB_light_snakeskin" replaced with "H_HelmetSpecB_paint2" for increased head armor									[cfgTroopsDesert.hpp]
+CHANGED	- "SOR_Actual_D" now has "160_m4a1_carryhandle_grip_holo" instead of "160_m4a1_grip2"										[cfgTroopsDesert.hpp]
+CHANGED	- "SOR_Actual_D", "SOR_MORActual_D" and "SOR_HMGActual_D" now have "tf_rt1523g_rhs" instead of "tf_rt1523g_big_rhs" (weight reduction)				[cfgTroopsDesert.hpp]
+CHANGED	- Airborne units now all have GPS items and can use UAV terminals												[cfgTroopsDesert.hpp]
+CHANGED	- Naming scheme of "SOR_Infantry_OCP" to "SOR_Infantry" & "SOR_Infantry_Supports_D" to "SOR_Infantry_Support" for better cohesion with furture 160th skin mods	[cfgTroopsDesert.hpp][cfgVehicleClasses.hpp]
+CHANGED	- Various coding format changes 																[cfgTroopsDesert.hpp]
+CHANGED	- "SOR_ReconLeader_D","SOR_ReconJTAC_D","SOR_ReconRifleman_D" & "SOR_Marksman_D" loadouts revamped as per requests by FLIP					[cfgTroopsDesert.hpp]
+CHANGED	- Recon units can now HALO jump like PJ units can 														[cfgTroopsDesert.hpp]
+cHANGED	- "SOR_RTO_Pack_D" & "SOR_Scout_radio" now use "tf_rt1523g_rhs"base instead of "tf_rt1523g_big_rhs" for weight reduction					[cfgBackpacks.hpp]
+CHANGED	- Reduced number of smoke rounds in "SOR_RTO_Pack_D" due to capacity change.  Removed "rhs_mag_m714_White" and "ACE_HandFlare_Green" 				[cfgBackpacks.hpp]
+CHANGED	- "SOR_RTO_Pack_D" now uses "tf_rt1523g_rhs" and has less ammo for weight reduction										[cfgBackpacks.hpp]
+CHANGED	- Removed "ACE_HandFlare_Green" from "SOR_Medic_Pack_D"	and "SOR_PJMedicPack_D"											[cfgBackpacks.hpp]							
+
+MERGED	- "160_rhs_weap_m16a4_carryhandle" & "160_rhs_weap_sr25" from AmTheAgent's SOR modpack V4									[cfgWeapons.cfg]
+
+V1.4****************************************************************************************************************************************************************************************************************************
+
+FIXED	- MELB base SOR helicopters can now use MFD screens though user actions (Required re-hash after MELB update due to user action code change)			[cfgAircraft.hpp]
+FIXED	- TUSKII based SOR tank, Commander can now us M2 gun 														[cfgArmor.hpp]
+FIXED	- F16C SOR jets now correctly init with custom loadouts (Required re-hash after FIR F16 update due to user action code change)					[cfgAircraft.hpp]
+FIXED	- HAVOC 1-2 now is the same unit as 1-1 "SOR_Commander_D" and now has long range radio 										[cfgGroups.hpp]
+FIXED	- "SOR_UH60M","SOR_CH_47F" and "SOR_UH60M_MEV2" players now have options to open doors										[cfgAircraft.hpp]
+FIXED	- "SOR_Commander_D" now spawns with only 1 GPS. 														[cfgTroopsDesert.hpp]
+
+ADDED	- Mod signed																			[160thSOR.pbo.160thSOR_Modpack_V1.4.bisign][160thSOR_Modpack_V1.4.bikey]
+ADDED	- "SOR_FIR_F16C_CAS" has custom loadout with laser guided 2x AGM64L, 3x GBU38 and short range AA 2x Aim9x							[cfgAircraft.hpp][cfgPatches.hpp]
+ADDED	- "SOR_FIR_F16C_TWAS3" Blufor TWAS training jet [Red team] with "Ag_Flanker" skin										[cfgAircraft.hpp][cfgPatches.hpp]
+ADDED	- "SOR_MELB_MH6M_MEV" medivac loadout helicopter														[cfgAircraft.hpp][cfgPatches.hpp]
+ADDED	- "SOR_Rifleman_Pack_D" with 1 x "rhsusf_200Rnd_556x45_soft_pouch" and 1 x "MAAWS_HEAT" round 									[cfgBackpacks.hpp] 
+ADDED	- "160th Captured Aircraft" class created															[cfgVehicleClasses.hpp]
+ADDED	- "fn_Taru_Pod_Mod.sqf" allowing for "call SOR_fnc_Taru_Pod_Mod;" command to be used in game logic. Activates Taru Pod attach and Drop capability (Experimental)[cfgFunctions.hpp](Credit to XENO)
+ADDED	- "SOR_Land_Pod_Heli_Transport_04_bench_F" and "SOR_Land_Pod_Heli_Transport_04_covered_F" troop pods.  (Can be dropped with Chute with SOR_fnc_Taru_Pod_Mod) 	[cfgCrates.hpp][cfgPatches.hpp]
+ADDED	- "SOR_MELB_AH6M_H" attack little bird variation introduced in MELB update											[cfgAircraft.hpp][cfgPatches.hpp]
+
+CHANGED	- "SOR_Actual_D" and "SOR_Commander_D" now have "Laserdesignator" instead of "Rangefinder"									[cfgTroopsDesert.hpp]
+CHANGED	- "SOR_RFLAT_Pack_D" now only has 1 x "MAAWS_HEAT" and "MAAWS_HEDP" to allow for better stamina	post ARMA stamina update					[cfgBackpacks.hpp]
+CHANGED	- All "Captured" vehicles moved to "160th Captured Aircraft" class to lower name size 										[cfgAircraft.hpp]
+CHANGED	- "SOR_Rifleman_D" now has "SOR_Rifleman_Pack_D" instead of "B_AssaultPack_cbr"											[cfgTroopsDesert.hpp]
+CHANGED	- "SOR_FIR_F16C_AA" now has SEAD capability, can interact with loadout dialog, afterburner capability removed and top speed reduced				[cfgAircraft.hpp]
+CHANGED	- "SOR_FIR_F16C_OPFOR" and "SOR_FIR_F16C_TWAS2" now use "Ag_Flanker" skin and top speed reduced									[cfgAircraft.hpp]
+CHANGED	- "SOR_MELB_MH6M_MEV" and "SOR_UH60M_MEV2" now no longer have "ACE_bloodIV_500" in inventory due to players stealling it					[cfgAircraft.hpp]
+CHANGED	- "SOR_PJMedicPack_D" now has 1 more "ACE_bloodIV_500" in inventory												[cfgBackpacks.hpp]
+CHANGED	- "SOR_UH60M_MEV2" will now automatically eject dead bodies from vehicle											[cfgAircraft.hpp]
+CHANGED	- "SOR_O_Heli_Transport_04_F" now can use ACE actions to Cargo Lift/Attach/Drop pods (Must have "call SOR_fnc_Taru_Pod_Mod;" in a game logic to activate)	[cfgAircraft.hpp]
+
+V1.3****************************************************************************************************************************************************************************************************************************
+
+BUG	- "SOR_Commander_D" spawed with 2 x GPS in inventory 														(Reported by Flip)
+BUG	- Some havoc units have backpacks and not long wave radios 													(Reported by Mantis, Narce & Flip)
+BUG	- TUSKII tank commander can't use M2 while turned out 														(Reported by Quag)
+BUG	- MELB helicopters can't use MFD screens as pilot or co-pilot													(Reported by Buck)
+BUG	- F16C SOR jets can't interact with loadout modules and incorrectly init when loaded with custom loadouts							(Reported by Scooby & Buck) 
+BUG	- "SOR_UH60M","SOR_CH_47F" and "SOR_UH60M_MEV2" players have no option to open doors										(Reported by Scooby & Barry)
+
+ADDED	- mod signed																			[160thSOR.pbo.160thSOR_Modpack_V1.3.bisign][160thSOR_Modpack_V1.3.bikey]
+
+REMOVED	- portable light addition from "SOR_HelipadSquare" and "SOR_HelipadRescue_F" due to coding error causing masive frame drops with more than 30 players connected	[fn_attachLights.sqf][fn_trigger.sqf] 
+
+V1.2****************************************************************************************************************************************************************************************************************************
+
+BUG	- Repair helipads spawned 4 x portable lights for every player joined and placed them at the bottom left of map caused frame drops after 30+ players joined	(Reported by Scooby) 
+
+ADDED	- mod is now signed																		[160thSOR.pbo.160thSOR_Modpack_V1.2.bisign][160thSOR_Modpack_V1.2.bikey]
+ADDED 	- cfgArmor.hpp 																			[cfgVehicles.hpp][cfgArmor.hpp][cfgVehicleClasses.hpp]
+ADDED 	- new define "Airbourne_Equipment" which includes "ACE_Altimeter" instead of "ItemWatch"									[define_macros.hpp]
+ADDED 	- "SOR_PJ_Box_F" to static stores for MEDIVAC team use only using "Land_PlasticCase_01_medium_F" model								[cfgCrates.hpp][cfgPatches.hpp]
+ADDED 	- "SOR_Air_LP" using "Land_PlasticCase_01_large_F" model for airborne life preservers aka "V_RebreatherB" for pilots flying over water outside gliding distance	[cfgCrates.hpp][cfgPatches.hpp]
+ADDED	- "fn_trigger_mech.sqf" and "fn_mech_service.sqf" scripts for use with "SOR_MechService"									[cfgFunctions.hpp]	
+ADDED 	- credit notes added																		[cfgMisc.hpp][fn_autoparadrop.sqf][fn_parajump.sqf][fn_service.sqf]
+ADDED	- "SOR_MELB_MH6M" with custom inventory	and shows crew and pax capacity in its description									[cfgAircraft.hpp][cfgPatches.hpp]
+ADDED	- "SOR_MELB_H6M" with custom inventory and shows crew and pax capacity in its description									[cfgAircraft.hpp][cfgPatches.hpp]
+ADDED	- "SOR_MELB_AH6M_M" with custom inventory and shows crew and pax capacity in its description									[cfgAircraft.hpp][cfgPatches.hpp]
+ADDED	- "SOR_MELB_AH6M_L" with custom inventory and shows crew and pax capacity in its description									[cfgAircraft.hpp][cfgPatches.hpp]
+ADDED	- Non lethal training aircraft "SOR_FIR_F16C_TWAS" and "SOR_FIR_F16C_TWAS2" 											[cfgAircraft.hpp][cfgPatches.hpp]
+ADDED	- Captured MI-290 Taru Medivac "SOR_O_Heli_Transport_04_medevac_F" (uses Blufor Radio and encription)								[cfgAircraft.hpp][cfgPatches.hpp]
+ADDED	- Captured MI-290 Taru bench troop transport "SOR_O_Heli_Transport_04_bench_F" (uses Blufor Radio and encription)						[cfgAircraft.hpp][cfgPatches.hpp]
+ADDED	- Captured MI-290 Taru covered troop transport "SOR_O_Heli_Transport_04_covered_F" (uses Blufor Radio and encription)						[cfgAircraft.hpp][cfgPatches.hpp]
+ADDED	- Captured MI-AMT troop transport "SOR_RHS_Mi8amt_civilian" (uses Blufor Radio and encription)									[cfgAircraft.hpp][cfgPatches.hpp]
+ADDED	- Captured MI-48 Kajman armed troop transport "SOR_O_Heli_Attack_02_F" (uses Blufor Radio and encription)							[cfgAircraft.hpp][cfgPatches.hpp]
+ADDED	- Captured MI-48 black armed troop transport "SOR_O_Heli_Attack_02_black_F" (uses Blufor Radio and encription)							[cfgAircraft.hpp][cfgPatches.hpp]
+ADDED	- Captured PO-30 Orca armed troop transport "SOR_O_Heli_Light_02_v2_F" (uses Blufor Radio and encription)							[cfgAircraft.hpp][cfgPatches.hpp]
+ADDED	- Captured Yak-130 [CAS] "SOR_O_Plane_CAS_02_B" (uses Blufor Radio and encription)										[cfgAircraft.hpp][cfgPatches.hpp]
+ADDED	- Captured L159 ALCA [AA] "SOR_I_Plane_Fighter_03_AA_B" (uses Blufor Radio and encription)									[cfgAircraft.hpp][cfgPatches.hpp]
+ADDED	- Captured L159 ALCA [CAS] "SOR_I_Plane_Fighter_03_CAS_B" (uses Blufor Radio and encription)									[cfgAircraft.hpp][cfgPatches.hpp]
+ADDED	- Captured Taru Medivac "SOR_O_Heli_Transport_04_medevac_F" (uses Blufor Radio and encription)									[cfgAircraft.hpp][cfgPatches.hpp]
+ADDED	- OpFor F16-C OpFor "SOR_FIR_F16C_OPFOR"															[cfgAircraft.hpp][cfgPatches.hpp]
+ADDED	- Opfor L159 ALCA [AA] "SOR_I_Plane_Fighter_03_AA_F"														[cfgAircraft.hpp][cfgPatches.hpp]
+ADDED	- Opfor L159 ALCA [CAS] "SOR_I_Plane_Fighter_03_CAS_F"														[cfgAircraft.hpp][cfgPatches.hpp]
+ADDED	- Buffed "SOR_M2A3_BUSKIII".  M2A3  Custom inventory					 									[cfgArmor.hpp][cfgPatches.hpp]
+ADDED	- Buffed "SOR_M2A3_BUSKIII_BUFF".  M2A3  Armor increased to recieve more realistic damage. Custom inventory							[cfgArmor.hpp][cfgPatches.hpp]
+ADDED	- Buffed "SOR_rhsusf_m113d_usarmy_buff". M113 Armor increased to recieve more realistic damage. Custom inventory						[cfgArmor.hpp][cfgPatches.hpp]
+ADDED	- Buffed "SOR_rhsusf_m113d_usarmy_buffCQ".  M113 Close Quaters. Armor increased to recieve more realistic damage. Custom inventory				[cfgArmor.hpp][cfgPatches.hpp]
+ADDED	- Buffed "SOR_rhsusf_m1a2sep1tuskid_usarmy". Tusk I  Armor increased to recieve more realistic damage. Custom inventory						[cfgArmor.hpp][cfgPatches.hpp]
+ADDED	- Buffed "SOR_rhsusf_m1a2sep1tuskiid_usarmy". Tusk II Close Quarters. Armor increased to recieve more realistic damage. Custom inventory			[cfgArmor.hpp][cfgPatches.hpp]
+ADDED	- "SOR_MechService" container with attached scripted repair, refuel and rearm.  Can be sling loaded								[cfgMisc.hpp][cfgPatches.hpp]
+ADDED	- Buffed "SOR_RHS_AH64D_AA". Armor increased to recieve more realistic damage (was less than transport heli!) Custom inventory					[cfgAircraft.hpp][cfgPatches.hpp]
+ADDED	- Buffed "SOR_RHS_AH64D_CS". Armor increased to recieve more realistic damage (was less than transport heli!) Custom inventory					[cfgAircraft.hpp][cfgPatches.hpp]
+ADDED	- Buffed "SOR_RHS_AH64D_GS". Armor increased to recieve more realistic damage (was less than transport heli!) Custom inventory					[cfgAircraft.hpp][cfgPatches.hpp]
+
+MERGED	- cfgGroups.hpp from AmTheAgent's modpack V4															[cfgGroups.hpp]
+MERGED	- "SOR_ReconRifleman_D","SOR_ReconLeader_D","SOR_ReconJTAC_D","SOR_Marksman_D" units from AmTheAgent's modpack V4						[cfgTroopsDesert.hpp]
+MERGED	- Various flush lights from AmTheAgent's modpack V4														[cfgMisc.hpp]
+
+REMOVED	- cfgTroopsWoodland.hpp	as requested by AmTheAgent for use in another modpack											[cfgVehicles.hpp][cfgBackpacks.hpp][cfgVehicleClasses.hpp][cfgGroups]
+REMOVED	- cfgTroopsEflora.hpp as requested by AmTheAgent for use in another modpack											[no changes required]
+REMOVED	- All but "SOR_MechService" container as they where not consistent in operation											[cfgMisc.hpp][cfgPatches.hpp]
+
+CHANGED - Naming conventions																		[cfgVehicleClasses.hpp][cfgFactionClasses.hpp][cfgCrates.hpp][cfgMisc.hpp]
+CHANGED - Base backpack marcro changed from "B_Kitbag_cbr" to "B_AssaultPack_cbr" to reduce unit combat weight								[cfgBackpacks.hpp]
+CHANGED	- "SOR_M249_Pack_D" now has 2x "rhsusf_200Rnd_556x45_soft_pouch" to reduce unit combat weight									[cfgBackpacks.hpp] 
+CHANGED	- "SOR_M240_Pack_D" now has 3x "rhsusf_100Rnd_762x51" to reduce unit combat weight										[cfgBackpacks.hpp] 
+CHANGED - "SOR_GD_Pack_D" slightly lowered to reduce unit combat weight													[cfgBackpacks.hpp] 
+CHANGED - "SOR_RFLAT_Pack_D" now has 3x "MAAWS_HEAT" and 1x "MAAWS_HEDP" to reduce unit combat weight									[cfgBackpacks.hpp] 
+CHANGED	- "SOR_Medic_Pack_D" supplies slightly lowered Morphine and Epi but raised Bandages and now has smoke as all troops have their own medicals supplies		[cfgBackpacks.hpp] 
+CHANGED	- "SOR_Sniper_Camo" reduced blood supplies to 1x "ACE_bloodIV_500" and uses "B_AssaultPack_mtp" to reduce unit combat weight 					[cfgBackpacks.hpp] 
+CHANGED	- "SOR_Spotter_Camo" reduced blood supplies to 1x "ACE_bloodIV_500" and uses "B_AssaultPack_mtp" to reduce unit combat weight 					[cfgBackpacks.hpp] 
+CHANGED	- "SOR_Scout_radio" reduced blood supplies to 1x "ACE_bloodIV_500" to reduce unit combat weight 								[cfgBackpacks.hpp] 
+CHANGED	- "SOR_M_Box_F" bandages reduced to 30 since medic pack has some												[cfgCrates.hpp]
+CHANGED	- "SOR_M_Box_F" now has no Epi since medic pack has them													[cfgCrates.hpp]
+CHANGED	- "SOR_E_Box_F" now has 10 "DemoCharge_Remote_Mag" 														[cfgCrates.hpp]
+CHANGED	- "SOR_A_Box_F" now has 3x "rhsusf_200Rnd_556x45_soft_pouch" 													[cfgCrates.hpp]
+CHANGED	- "SOR_A_Box_F" now has 3x "rhsusf_100Rnd_762x51" 		  												[cfgCrates.hpp]
+CHANGED	- "SOR_divegear" now uses "Land_PlasticCase_01_large_F" model and has increased equipment to 20x SCUBA outfits							[cfgCrates.hpp]
+CHANGED	- "SOR_G_Box_F" tweaked all supplys to be more proportional for a single unit											[cfgCrates.hpp]
+CHANGED	- "SOR_A_Crate_F" tweaked all supplys to be more proportional for a single unit											[cfgCrates.hpp]
+CHANGED	- "SOR_AM_Crate_F" tweaked all supplys to be more proportional for a single unit										[cfgCrates.hpp]
+CHANGED	- "SOR_HeliPilot_D","SOR_HeliCrew_D","SOR_JetPilot_D","SOR_MEVPilot_D" and "SOR_ParaJumper_D" now use "airbourne_Equipment" macro in loadout			[cfgTroopsDesert.hpp]
+CHANGED	- "SOR_HeliPilot_D" now has "Laserbatteries" in inventory													[cfgTroopsDesert.hpp]
+CHANGED	- "SOR_ParaJumper_D" now uses "SOR_HeliPilot_D" macro														[cfgTroopsDesert.hpp]
+CHANGED	- "SOR_PJMedicPack_D" now has "rhsusf_acc_ACOG" instead of "rhsusf_acc_eotech_552" due to "SOR_ParaJumper_D" change						[cfgBackpacks.hpp]
+CHANGED	- "SOR_JetPilot_D" no longer has rifle, only pistol														[cfgTroopsDesert.hpp]
+CHANGED	- "SOR_Medic_D" now has GPS																	[cfgTroopsDesert.hpp]
+CHANGED	- line 20 reduced to 1 to fix chute not auto deploying correctly from vertical drop										[fn_parajump.sqf]
+CHANGED	- line 24 reduced to < 15m for chute autodeploy															[fn_parajump.sqf]
+CHANGED	- changed order of refuel then repair code.  Now is repair then refuel												[fn_service.sqf]
+CHANGED	- All attack helicopters now have reduced fuel capacity so they require to refuel more often in a mission (approx 30mins fuel)					[cfgAircraft.hpp]
+CHANGED	- UserAction "SOR_AutoDrop" altitude increased to 200m for "SOR_UH60M"												[cfgAircraft.hpp]
+CHANGED	- halved INF supplies in inventory for "SOR_UH60M" 														[cfgAircraft.hpp]
+CHANGED	- "supplyRadius" increased to 30 for "SOR_CH_47F"														[cfgAircraft.hpp]
+CHANGED	- UserAction "SOR_AutoDrop" altitude increased to 200m for "SOR_CH_47F"												[cfgAircraft.hpp]
+CHANGED	- UserAction "SOR_HALO" altitude increased to 50m for "SOR_ParaJumper_D"											[cfgTroopsDesert.hpp]
+CHANGED	- "SOR_UH60M" now shows crew and pax capacity in its description												[cfgAircraft.hpp]
+CHANGED	- "SOR_CH_47F" now shows crew and pax capacity in its description, now correctly shows as CH 47F and note refuel/rearm capabilities				[cfgAircraft.hpp]
+CHANGED	- "SOR_UH60M_MEV2" now shows crew and pax capacity in its description												[cfgAircraft.hpp]
+
+V1.1****************************************************************************************************************************************************************************************************************************
+
+ADDED 	- Toolkit to "SOR_UH60M_MEV2"	 																[cfgAircraft.hpp]
+ADDED	- Toolkit to "SOR_UH60M"																	[cfgAircraft.hpp]
+ADDED	- 3x "U_B_Wetsuit" to MEV chopper inventory 															[cfgAircraft.hpp]
+ADDED	- 3x "G_Diving" to MEV chopper inventory 															[cfgAircraft.hpp]
+ADDED	- 3x "V_RebreatherB" to MEV chopper inventory 															[cfgAircraft.hpp]
+ADDED	- 1x Holo sight to "SOR_PJMedicPack_D"																[cfgBackpacks.hpp]
+ADDED	- 5x "ACE_bloodIV_500" to "SOR_PJMedicPack_D" along with "SOR_Medic_Pack_D" items										[cfgBackpacks.hpp]
+
+REMOVED	- Diving gear from "SOR_S_Box_F" (Box [Equipment])														[cfgCrates.hpp]
+
+CHANGED	- MEV chopper now has 10x "ACE_bloodIV_500" in inventory instead of 5x 												[cfgAircraft.hpp]
+CHANGED	- PJ Uniform from "U_B_CombatUniform_mcam_tshirt" to "U_B_CombatUniform_mcam_vest" 										[cfgTroopsDesert.hpp]
+CHANGED	- "SOR_PJMedicPack_D" is now uses "B_Kitbag_cbr" macro instead of "SOR_Medic_Pack_D"										[cfgBackpacks.hpp]
+
+V1.0****************************************************************************************************************************************************************************************************************************
+
+Initial issue - Many thanks to the hard work from AmTheAgent, Darce and Scooby.
