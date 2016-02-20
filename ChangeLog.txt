@@ -10,17 +10,18 @@ ADDED	- New unit "SOR_Rilfeman_Ammo_D" 																[cfgTroopsDesert.hpp][cfg
 
 CHANGED	- All units now have "rhsusf_weap_m9" instead of "hgun_Pistol_heavy_01_F"											[cfgTroopsDesert.hpp]
 CHANGED - "SOR_ParaJumper_D" and "SOR_Medic_D" now have "rhsusf_opscore_mc_cover_pelt" helmet and "rhs_googles_clear" goggles 						[cfgTroopsDesert.hpp]
-CHANGED - macro "Std_Pistol" to 3 x "rhsusf_mag_15Rnd_9x19_FMJ" instead of "11Rnd_45ACP_Mag"										[define_macros.hpp]
-CHANGED - all backpacks using "B_AssaultPack_cbr" now use "rhsusf_assault_eagleaiii_ocp" model instead									[cfgBackpacks.hpp]
 CHANGED - "SOR_Teamleader_D" now has "rhsusf_assault_eagleaiii_ocp" instead of "B_AssaultPack_cbr"									[cfgTroopsDesert.hpp]
-CHANGED - units with "G_Lowprofile" goggles replaced with "rhs_googles_clear"												[cfgTroopsDesert.hpp]
+CHANGED - Units with "G_Lowprofile" goggles replaced with "rhs_googles_clear"												[cfgTroopsDesert.hpp]
 CHANGED	- "SOR_M240AR_D" and "SOR_M249AR_D" now have "rhs_ess_black" goggles 												[cfgTroopsDesert.hpp]
 CHANGED	- "SOR_Teamleader_D" now has "rhs_weap_M136_hp" and "rhsusf_iotv_ocp_Squadleader" vest was changed to "rhsusf_iotv_ocp_Teamleader" 				[cfgTroopsDesert.hpp]
-CHANGED	- "160_m249_pip" is now called "160_rhs_weap_m249_pip_L_para" and now uses the "rhs_weap_m249_pip_L_para" instead of "rhs_weap_m249_pip" and use
-	  "rhs_200rnd_556x45_M_SAW" instead of "rhsusf_200Rnd_556x45_soft_pouch"											[cfgWeapons.hpp][cfgTroopsDesert.hpp][cfgArmor.hpp][cfgPatches.hpp][cfgCrates.hpp][cfgAircraft.hpp]
-CHANGED	- "H_HelmetSpecB_paint2" changed to "rhsusf_ach_helmet_ocp"
-CHANGED	- "Rangfinder" replaced with "ACE_Vector"
-CHANGED	-
+CHANGED	- "H_HelmetSpecB_paint2" changed to "rhsusf_ach_helmet_ocp"													[cfgTroopsDesert.hpp]
+CHANGED	- "Rangfinder" replaced with "ACE_Vector"															[cfgTroopsDesert.hpp]
+CHANGED	- Various tweaks to troop loadouts																[cfgTroopsDesert.hpp]
+CHANGED	- "160_m249_pip" is now called "160_rhs_weap_m249_pip_L_para" and uses "rhs_weap_m249_pip_L_para" used instead of "rhs_weap_m249_pip"				[cfgWeapons.hpp][cfgTroopsDesert.hpp]
+CHANGED	- "rhs_200rnd_556x45_M_SAW" replaced with "rhsusf_200Rnd_556x45_soft_pouch"											[cfgWeapons.hpp][cfgTroopsDesert.hpp][cfgArmor.hpp][cfgPatches.hpp][cfgCrates.hpp][cfgAircraft.hpp]
+CHANGED - Macro "Std_Pistol" to 3 x "rhsusf_mag_15Rnd_9x19_FMJ" instead of "11Rnd_45ACP_Mag"										[define_macros.hpp]
+CHANGED - All backpacks using "B_AssaultPack_cbr" now use "rhsusf_assault_eagleaiii_ocp" model instead									[cfgBackpacks.hpp]
+
 
 V1.6a**************************************************************************************************************************************************************************************************************************
 
@@ -34,7 +35,7 @@ FIXED	- Correct invalid file path to "160th.paa".  Now no longer requires extern
 
 ADDED	- Mod signed																			[160thSOR.pbo.160thSOR_Modpack_V1.6.bisign][160thSOR_Modpack_V1.6.bikey]
 ADDED	- "160th_day.paa" & "160th_night picture															[\data\]
-ADDED	- supply box "SOR_Box_NATO_WpsSpecial_F" for use by viper as per requests by FLIP 										[cfgCrates.hpp][cfgPatches.hpp]
+ADDED	- Supply box "SOR_Box_NATO_WpsSpecial_F" for use by viper as per requests by FLIP 										[cfgCrates.hpp][cfgPatches.hpp]
 ADDED	- "SOR_Engineer_D" as per Loomis's advice															[cfgTroopsDesert.hpp][cfgPatches.hpp]
 ADDED	- "SOR_OrdanancePack_D", "SOR_CombatPack_D" and "SOR_Eng_Repair_Pack_D" as per Loomis's advice									[cfgBackpacks.hpp]
 ADDED	- "SOR_B_SDV_01_F" submarine with 3 x scuba loadouts int the inventory												[cfgArmor.hpp][cfgPatches.hpp]
