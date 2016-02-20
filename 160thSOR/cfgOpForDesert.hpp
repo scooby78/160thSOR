@@ -6,7 +6,6 @@
 	class O_Soldier_AR_F;
 	class tf_rt1523g_bwmod;
 	class B_AssaultPack_khk;
-	class rhs_weap_ak74m_Base_F;
 
 #define Opfor_Mags 		"rhs_30Rnd_545x39_AK",\
 						"rhs_30Rnd_545x39_AK",\
@@ -26,7 +25,7 @@
 							"ItemWatch",\
 							"tf_fadak_3",\
 							"ItemGPS"
-
+							
 //Custom TL Pack	
 	class SOR_OpFor_TL_Pack_D : tf_rt1523g_bwmod
 	{
@@ -45,18 +44,6 @@
 			mag_xx(CAF_100Rnd_762x54_PKM,3);
 		};
 	};	
-//Custom rifle	
-	class 160_rhs_weap_ak74m: rhs_weap_ak74m_Base_F 
-	{
-		class LinkedItems 
-		{
-			class LinkedItemsOptic 
-			{
-				item = "rhsusf_acc_ACOG";
-				slot = "CowsSlot";
-			};			
-		};
-	};
 
 ////////////////////////////		    
 //SOR Opfor Faction Units///
@@ -70,8 +57,8 @@ class SOR_Opfor_Rifleman_D : O_Soldier_F
 		vehicleclass = "SOR_Infantry";
 		uniformClass = "rhs_uniform_vdv_emr";
 	    backpack = "";
-		weapons[] = {"rhs_weap_ak74m_dtk","Throw","Put"};
-		respawnWeapons[] = {"rhs_weap_ak74m_dtk","Throw","Put"};
+		weapons[] = {"rhs_weap_ak74m_pkas","Throw","Put"};
+		respawnWeapons[] = {"rhs_weap_ak74m_pkas","Throw","Put"};
 		Items[] = {Standard_Meds};
         RespawnItems[] = {Standard_Meds};
 		magazines[] = {Opfor_Mags};
@@ -142,6 +129,6 @@ class SOR_Opfor_TL_D : SOR_Opfor_Rifleman_D
 	{
 		displayName = "Team Leader";
 	    backpack = "SOR_OpFor_TL_Pack_D";
-		weapons[] = {"160_rhs_weap_ak74m_dtk", "Throw", "Put", "Rangefinder"};
-		respawnWeapons[] = {"160_rhs_weap_ak74m_dtk", "Throw", "Put", "Rangefinder"};
+		weapons[] = {"rhs_weap_ak74m_pkas", "Throw", "Put", "Rangefinder"};
+		respawnWeapons[] = {"rhs_weap_ak74m_pkas", "Throw", "Put", "Rangefinder"};
 	};
