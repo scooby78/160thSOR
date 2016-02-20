@@ -105,9 +105,9 @@
 		class TransportMagazines
 		{
 			mag_xx(30Rnd_556x45_Stanag_Tracer_Red,20)
-			mag_xx(11Rnd_45ACP_Mag,10)
+			mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,10)
 			mag_xx(rhsusf_mag_7x45acp_MHP,10)
-			mag_xx(rhsusf_200Rnd_556x45_soft_pouch,2)
+			mag_xx(rhs_200rnd_556x45_M_SAW,2)
 			mag_xx(rhsusf_100Rnd_762x51,2)
 		};
 		class TransportBackpacks
@@ -173,9 +173,9 @@
 		class TransportMagazines
 		{
 			mag_xx(30Rnd_556x45_Stanag_Tracer_Red,40)
-			mag_xx(11Rnd_45ACP_Mag,10)
+			mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,10)
 			mag_xx(rhsusf_mag_7x45acp_MHP,10)
-			mag_xx(rhsusf_200Rnd_556x45_soft_pouch,4)
+			mag_xx(rhs_200rnd_556x45_M_SAW,4)
 			mag_xx(rhsusf_100Rnd_762x51,4)
 		};
 		class TransportBackpacks
@@ -231,7 +231,7 @@
 		class TransportMagazines
 		{
 			mag_xx(30Rnd_556x45_Stanag_Tracer_Red,5)
-			mag_xx(11Rnd_45ACP_Mag,4)
+			mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,4)
 		};
 		class TransportBackpacks
 		{
@@ -257,7 +257,7 @@
 		class TransportMagazines
 		{
 			mag_xx(30Rnd_556x45_Stanag_Tracer_Red,5)
-			mag_xx(11Rnd_45ACP_Mag,4)
+			mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,4)
 		};
 		class TransportBackpacks
 		{
@@ -310,7 +310,7 @@
 		class TransportMagazines
 		{
 			mag_xx(30Rnd_556x45_Stanag_Tracer_Red,5)
-			mag_xx(11Rnd_45ACP_Mag,4)
+			mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,4)
 		};
 		class TransportBackpacks
 		{
@@ -336,7 +336,7 @@
 		class TransportMagazines
 		{
 			mag_xx(30Rnd_556x45_Stanag_Tracer_Red,5)
-			mag_xx(11Rnd_45ACP_Mag,4)
+			mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,4)
 		};
 		class TransportBackpacks
 		{
@@ -362,7 +362,7 @@
 		class TransportMagazines
 		{
 			mag_xx(30Rnd_556x45_Stanag_Tracer_Red,5)
-			mag_xx(11Rnd_45ACP_Mag,4)
+			mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,4)
 		};
 		class TransportBackpacks
 		{
@@ -388,7 +388,7 @@
 		class TransportMagazines
 		{
 			mag_xx(30Rnd_556x45_Stanag_Tracer_Red,5)
-			mag_xx(11Rnd_45ACP_Mag,4)
+			mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,4)
 		};
 		class TransportBackpacks{};
 	};	
@@ -411,7 +411,7 @@
 		class TransportMagazines
 		{
 			mag_xx(30Rnd_556x45_Stanag_Tracer_Red,5)
-			mag_xx(11Rnd_45ACP_Mag,4)
+			mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,4)
 		};
 		class TransportBackpacks{};
 	};		
@@ -434,7 +434,7 @@
 		class TransportMagazines
 		{
 			mag_xx(30Rnd_556x45_Stanag_Tracer_Red,5)
-			mag_xx(11Rnd_45ACP_Mag,4)
+			mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,4)
 		};
 		class TransportBackpacks{};
 	};		
@@ -744,7 +744,7 @@ if you want don't add weapon in hardpoint, just leave empty.
 		class TransportMagazines
 		{
 			mag_xx(30Rnd_556x45_Stanag_Tracer_Red,5)
-			mag_xx(11Rnd_45ACP_Mag,4)
+			mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,4)
 		};
 		class TransportBackpacks{};
 	};	
@@ -765,7 +765,7 @@ if you want don't add weapon in hardpoint, just leave empty.
 		class TransportMagazines
 		{
 			mag_xx(30Rnd_556x45_Stanag_Tracer_Red,5)
-			mag_xx(11Rnd_45ACP_Mag,4)
+			mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,4)
 		};
 		class TransportBackpacks{};
 	};
@@ -786,7 +786,7 @@ if you want don't add weapon in hardpoint, just leave empty.
 		class TransportMagazines
 		{
 			mag_xx(30Rnd_556x45_Stanag_Tracer_Red,5)
-			mag_xx(11Rnd_45ACP_Mag,4)
+			mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,4)
 		};
 		class TransportBackpacks{};
 	};	

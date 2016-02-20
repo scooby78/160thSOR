@@ -95,9 +95,9 @@
 						"rhs_mag_an_m8hc",\
 						"rhs_mag_an_m8hc"	
 					
-#define Std_Pistol		"11Rnd_45ACP_Mag",\
-						"11Rnd_45ACP_Mag",\
-						"11Rnd_45ACP_Mag"\
+#define Std_Pistol		"rhsusf_mag_15Rnd_9x19_FMJ",\
+						"rhsusf_mag_15Rnd_9x19_FMJ",\
+						"rhsusf_mag_15Rnd_9x19_FMJ"\
 
 #define Std_m1911a1		"rhsusf_mag_7x45acp_MHP",\
 						"rhsusf_mag_7x45acp_MHP",\

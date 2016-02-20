@@ -4,10 +4,11 @@
 	class tf_rt1523g_rhs;
 	class B_Kitbag_mcamo;
 	class B_AssaultPack_mcamo;
+	class rhsusf_assault_eagleaiii_ocp;
 
 	
 //Custom Medic Pack	
-	class SOR_Medic_Pack_D : B_AssaultPack_cbr
+	class SOR_Medic_Pack_D : rhsusf_assault_eagleaiii_ocp
 	{
 		displayName = "Pack Desert Medic";
 		class TransportMagazines
@@ -24,7 +25,7 @@
 	};
 
 //Custom Parajumper Pack		
-	class SOR_PJMedicPack_D : B_AssaultPack_cbr
+	class SOR_PJMedicPack_D : rhsusf_assault_eagleaiii_ocp
 	{
 		displayName = "Pack Desert Paramedic";
 		class TransportMagazines
@@ -43,29 +44,38 @@
 	};
 
 //Custom Rifleman Pack
-	class SOR_Rifleman_Pack_D : B_AssaultPack_cbr
+	class SOR_Rifleman_Pack_D : rhsusf_assault_eagleaiii_ocp
 	{
-		displayName = "Pack Desert Rifleman";
+		displayName = "Pack Desert Rifleman (M249)";
 		class TransportMagazines
 		{
-			mag_xx(rhsusf_200Rnd_556x45_soft_pouch,1);
-			mag_xx(MAAWS_HEAT,1)
+			mag_xx(rhsusf_100Rnd_556x45_soft_pouch,1);
+			mag_xx(rhs_200rnd_556x45_M_SAW,2);
+		};
+	};
+	
+//Custom Rilfeman Ammobearer Pack
+	class SOR_Rifleman_Ammo_Pack_D : rhsusf_assault_eagleaiii_ocp
+	{
+		displayName = "Pack Desert Rifleman (M240)";
+		class TransportMagazines
+		{
+			mag_xx(rhsusf_100Rnd_762x51,3);
 		};
 	};
 
-	
 //Custom m249 Pack		
-	class SOR_M249_Pack_D : B_AssaultPack_cbr
+	class SOR_M249_Pack_D : rhsusf_assault_eagleaiii_ocp
 	{
 		displayName = "Pack Desert M249";
 		class TransportMagazines
 		{
-			mag_xx(rhsusf_200Rnd_556x45_soft_pouch,2);
+			mag_xx(rhs_200rnd_556x45_M_SAW,2);
 		};
 	};
 	
 // Custom m240 Pack
-	class SOR_M240_Pack_D : B_AssaultPack_cbr
+	class SOR_M240_Pack_D : rhsusf_assault_eagleaiii_ocp
 	{
 		displayName = "Pack Desert M240";
 		class TransportMagazines
@@ -75,7 +85,7 @@
 	};
 
 //Repair Pack With Toolkit	
-	class SOR_Repair_Pack_D : B_AssaultPack_cbr
+	class SOR_Repair_Pack_D : rhsusf_assault_eagleaiii_ocp
 	{
 		displayName = "Pack Desert Repair";
 		class TransportItems
@@ -90,12 +100,13 @@
 	};
 
 //Custom Grenadier Pack	
-	class SOR_GD_Pack_D : B_AssaultPack_cbr
+	class SOR_GD_Pack_D : rhsusf_assault_eagleaiii_ocp
 	{
 		displayName = "Pack Desert GD";
 		class TransportMagazines
 		{
-			mag_xx(rhs_mag_M433_HEDP,15);
+			mag_xx(rhs_mag_M433_HEDP,10);
+			mag_xx(rhs_mag_M441_HE,5);
 			mag_xx(rhs_mag_m713_Red,5);
 			mag_xx(rhs_mag_m715_Green,2);
 			mag_xx(rhs_mag_m67,2);
@@ -117,7 +128,7 @@
 	};
 
 //Custom Rifleman AT Pack	
-	class SOR_RFLAT_Pack_D : B_AssaultPack_cbr
+	class SOR_RFLAT_Pack_D : rhsusf_assault_eagleaiii_ocp
 	{
 		displayName = "Pack Desert RFLAT";
 		class TransportMagazines
@@ -171,7 +182,7 @@
 	};
 
 //Custom Engineer Repair Pack	
-	class SOR_Eng_Repair_Pack_D : B_AssaultPack_cbr
+	class SOR_Eng_Repair_Pack_D : rhsusf_assault_eagleaiii_ocp
 	{
 		displayName = "Pack Desert Eng Repair";
 		class TransportMagazines{};
@@ -183,7 +194,7 @@
 	};	
 	
 //Custom Engineer Ordanance Pack		
-	class SOR_OrdanancePack_D : B_AssaultPack_cbr
+	class SOR_OrdanancePack_D : rhsusf_assault_eagleaiii_ocp
 	{
 		displayName = "Pack Desert Ordanance";
 		class TransportMagazines{};
@@ -197,7 +208,7 @@
 	};
 	
 //Custom Engineer Combat Pack		
-	class SOR_CombatPack_D : B_AssaultPack_cbr
+	class SOR_CombatPack_D : rhsusf_assault_eagleaiii_ocp
 	{
 		displayName = "Pack Desert Combat";
 		class TransportMagazines
