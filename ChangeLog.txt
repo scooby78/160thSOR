@@ -1,6 +1,12 @@
 ******************************************************
 ****Best viewed in full screen with word wrap off*****
 ******************************************************
+V1.7**************************************************************************************************************************************************************************************************************************
+
+ADDED	- New units "SOR_Opfor_Rifleman_D","SOR_OpFor_PKM_D", "SOR_Opfor_TL_D" russian vdv loadouts for FTT training 							[cfgOpForDesert.hpp]
+ADDED	- New packs "SOR_OpFor_AR_Pack_D", "SOR_OpFor_TL_Pack_D" russian vdv loadouts for FTT training 									[cfgOpForDesert.hpp]
+ADDED	- New define macros "Opfor_Mags", "Opfor_Equipment" russian vdv loadouts for FTT training  									[cfgOpForDesert.hpp]
+
 V1.6a**************************************************************************************************************************************************************************************************************************
 
 FIXED	- "fn_parajump.sqf" line 17 "SOR_ParaJump_Active = true;" value added issue resolved										[\functions\]
