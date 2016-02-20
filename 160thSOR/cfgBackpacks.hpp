@@ -80,7 +80,7 @@
 		displayName = "Pack Desert M240";
 		class TransportMagazines
 		{
-			mag_xx(rhsusf_100Rnd_762x51,3);
+			mag_xx(rhsusf_100Rnd_762x51,2);
 		};
 	};
 

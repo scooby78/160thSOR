@@ -242,7 +242,7 @@ class SOR_RTO_D : B_Soldier_F
 		linkedItems[] = 
 		{	
 			"rhsusf_iotv_ocp_Squadleader",
-			"H_HelmetSpecB_paint2",
+			"rhsusf_ach_helmet_headset_ocp",
 			"rhs_googles_clear",
 			"ItemGPS", 
 			Standard_Equipment
@@ -250,7 +250,7 @@ class SOR_RTO_D : B_Soldier_F
         respawnLinkedItems[] = 
 		{	
 			"rhsusf_iotv_ocp_Squadleader",
-			"H_HelmetSpecB_paint2",
+			"rhsusf_ach_helmet_headset_ocp",
 			"rhs_googles_clear",
 			"ItemGPS", 
 			Standard_Equipment
