@@ -823,8 +823,8 @@ class SOR_ParaJumper_D : B_medic_F
 		icon =  "iconManMG";
 		backpack = "SOR_M249_Pack_D";
 		displayName = "Recon AutoRifleman M249";
-		weapons[] = {"160_m249_pip", "Throw", "Put"};
-		respawnWeapons[] = {"160_m249_pip", "Throw", "Put"};
+		weapons[] = {"160_rhs_weap_m249_pip_L_para", "Throw", "Put"};
+		respawnWeapons[] = {"160_rhs_weap_m249_pip_L_para", "Throw", "Put"};
 		Items[] = 		
 		{
 			Recon_Equip,
@@ -841,7 +841,7 @@ class SOR_ParaJumper_D : B_medic_F
 			"rhs_mag_m67",
 			"rhs_mag_an_m8hc",
 			"rhs_mag_an_m8hc",
-			"rhsusf_200Rnd_556x45_soft_pouch"
+			"rhs_200rnd_556x45_M_SAW"
 		};
 		respawnMagazines[] =
 		{
@@ -849,7 +849,7 @@ class SOR_ParaJumper_D : B_medic_F
 			"rhs_mag_m67",
 			"rhs_mag_an_m8hc",
 			"rhs_mag_an_m8hc",
-			"rhsusf_200Rnd_556x45_soft_pouch"
+			"rhs_200rnd_556x45_M_SAW"
 		};			
 	};	
 	
