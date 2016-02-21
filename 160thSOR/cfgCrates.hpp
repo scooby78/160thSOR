@@ -101,9 +101,9 @@
 		class TransportMagazines
 		{
 			mag_xx(30Rnd_556x45_Stanag_Tracer_Red,40)
-			mag_xx(11Rnd_45ACP_Mag,10)
+			mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,10)
 			mag_xx(rhsusf_mag_7x45acp_MHP,10)
-			mag_xx(rhsusf_200Rnd_556x45_soft_pouch,3)	
+			mag_xx(rhs_200rnd_556x45_M_SAW,3)	
 			mag_xx(rhsusf_100Rnd_762x51,3)
 		};
 		class TransportBackpacks{};
@@ -314,9 +314,9 @@
 		class TransportMagazines
 		{
 			mag_xx(30Rnd_556x45_Stanag_Tracer_Red,100)
-			mag_xx(11Rnd_45ACP_Mag,40)
+			mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,40)
 			mag_xx(rhsusf_mag_7x45acp_MHP,40)
-			mag_xx(rhsusf_200Rnd_556x45_soft_pouch,8)	
+			mag_xx(rhs_200rnd_556x45_M_SAW,8)	
 			mag_xx(rhsusf_100Rnd_762x51,8)		
 			mag_xx(rhs_mag_M433_HEDP,10)
 			mag_xx(rhs_mag_m714_White,10)			
@@ -349,9 +349,9 @@
 		class TransportMagazines
 		{
 			mag_xx(30Rnd_556x45_Stanag_Tracer_Red,80)
-			mag_xx(11Rnd_45ACP_Mag,40)
+			mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,40)
 			mag_xx(rhsusf_mag_7x45acp_MHP,40)
-			mag_xx(rhsusf_200Rnd_556x45_soft_pouch,8)	
+			mag_xx(rhs_200rnd_556x45_M_SAW,8)	
 			mag_xx(rhsusf_100Rnd_762x51,8)		
 			mag_xx(rhs_mag_M433_HEDP,10)
 			mag_xx(rhs_mag_m714_White,10)			
@@ -426,9 +426,9 @@
 		class TransportMagazines
 		{
 			mag_xx(30Rnd_556x45_Stanag_Tracer_Red,80)
-			mag_xx(11Rnd_45ACP_Mag,40)
+			mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,40)
 			mag_xx(rhsusf_mag_7x45acp_MHP,40)
-			mag_xx(rhsusf_200Rnd_556x45_soft_pouch,8)	
+			mag_xx(rhs_200rnd_556x45_M_SAW,8)	
 			mag_xx(rhsusf_100Rnd_762x51,8)		
 			mag_xx(rhs_mag_M433_HEDP,10)
 			mag_xx(rhs_mag_m714_White,10)			
@@ -461,7 +461,7 @@
 		class TransportMagazines
 		{
 			mag_xx(30Rnd_556x45_Stanag_Tracer_Red,5)
-			mag_xx(11Rnd_45ACP_Mag,5)
+			mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,5)
 			mag_xx(rhs_mag_m67,10)
 			mag_xx(rhs_mag_an_m8hc,10)
 			mag_xx(rhs_mag_m18_green,10)
