@@ -31,11 +31,11 @@
 	class RHS_AH64D_AA;
 	class RHS_AH64D_CS;
 	class RHS_AH64D_GS;
+	class RHS_C130J;
 
 // Transport Helos	
-	class SOR_UH60M : RHS_UH60M
+class SOR_UH60M : RHS_UH60M
 	{
-		side=1;
 		faction = SOR_Faction_D;
 		vehicleclass = "SOR_Aircraft";
 		displayName = "UH-60M (C4/P12)";
@@ -114,16 +114,13 @@
 		};
 	};
 	
-	class SOR_CH_47F : RHS_CH_47F
+class SOR_CH_47F : RHS_CH_47F
 	{
-		side=1;
 		faction = SOR_Faction_D;
 		vehicleclass = "SOR_Aircraft";
 		displayName = "CH-47F (C4/P24)[Refuel]";
-		transportFuel = 3000;
-		transportAmmo = 10000;
+		transportFuel = 30000;
 		supplyRadius = 30;
-		transportRepair = 1; //test
 		class UserActions
 		{
 			class SOR_AutoDrop
@@ -179,7 +176,7 @@
 		};
 	};
 	
-	class SOR_UH60M_MEV2 : RHS_UH60M_MEV2
+class SOR_UH60M_MEV2 : RHS_UH60M_MEV2
 	{
 		faction = SOR_Faction_D;
 		vehicleClass = "SOR_Aircraft";
@@ -187,7 +184,7 @@
 		driverCanEject = 1; // was 0, Allows pilot to exit heli with engine running
 		ejectDeadCargo = 1; //test dead eject
 		crewCrashProtection = 0.20; /// Was 0.25, multiplier of damage to crew of the vehicle => low number means better protection //test
-		getInRadius = 3;
+		getInRadius = 4;
 		crew = "SOR_MEVPilot_D";
 		class TransportItems
 		{
@@ -197,7 +194,6 @@
 			item_xx(G_Diving,3)
 			item_xx(U_B_Wetsuit,3)
 			item_xx(V_RebreatherB,3)
-			item_xx(ToolKit,1)			
 		};		
 		class TransportWeapons{};
 		class TransportMagazines{};
@@ -207,9 +203,8 @@
 		};
 	};
 	
-	class SOR_MELB_H6M : MELB_H6M
+class SOR_MELB_H6M : MELB_H6M
 	{
-//		side=1;
 		faction = SOR_Faction_D;
 		vehicleclass = "SOR_Aircraft";
 		displayName = "H-6M (C2/P2)";
@@ -231,9 +226,8 @@
 		};
 	};	
 	
-	class SOR_MELB_MH6M : MELB_MH6M
+class SOR_MELB_MH6M : MELB_MH6M
 	{
-//		side=1;
 		faction = SOR_Faction_D;
 		vehicleclass = "SOR_Aircraft";
 		displayName = "MH-6M (C2/P6)";
@@ -255,13 +249,14 @@
 		};
 	};	
 	
-	class SOR_MELB_MH6M_MEV : MELB_MH6M
+class SOR_MELB_MH6M_MEV : MELB_MH6M
 	{
 		faction = SOR_Faction_D;
 		vehicleclass = "SOR_Aircraft";
 		displayName = "MH-6M MEV (C2/P6)";
 		driverCanEject = 1; // was 0 test eject
 		ejectDeadCargo = 1; //test dead eject	
+		getInRadius = 4;
 		class TransportItems 
 		{
 			item_xx(ACE_Fielddressing,24)
@@ -280,7 +275,7 @@
 	};	
 	
 // Attack Helos	
-	class SOR_MELB_AH6M_L : MELB_AH6M_L
+class SOR_MELB_AH6M_L : MELB_AH6M_L
 	{
 		faction = SOR_Faction_D;
 		vehicleclass = "SOR_Aircraft";
@@ -303,7 +298,7 @@
 		};
 	};	
 	
-	class SOR_MELB_AH6M_M : MELB_AH6M_M
+class SOR_MELB_AH6M_M : MELB_AH6M_M
 	{
 		faction = SOR_Faction_D;
 		vehicleclass = "SOR_Aircraft";
@@ -326,7 +321,7 @@
 		};
 	};	
 
-	class SOR_MELB_AH6M_H : MELB_AH6M_H
+class SOR_MELB_AH6M_H : MELB_AH6M_H
 	{
 		faction = SOR_Faction_D;
 		vehicleclass = "SOR_Aircraft";
@@ -349,9 +344,8 @@
 		};
 	};	
 	
-	class SOR_RHS_AH64D_AA : RHS_AH64D_AA
+class SOR_RHS_AH64D_AA : RHS_AH64D_AA
 	{
-		side=1;
 		faction = SOR_Faction_D;
 		vehicleclass = "SOR_Aircraft";
 		displayName = "AH-64D (AA)";
@@ -374,7 +368,7 @@
 		};
 	};	
 
-	class SOR_RHS_AH64D_CS : RHS_AH64D_CS
+class SOR_RHS_AH64D_CS : RHS_AH64D_CS
 	{
 		faction = SOR_Faction_D;
 		vehicleclass = "SOR_Aircraft";
@@ -397,7 +391,7 @@
 		};
 	};		
 	
-	class SOR_RHS_AH64D_GS : RHS_AH64D_GS
+class SOR_RHS_AH64D_GS : RHS_AH64D_GS
 	{
 		faction = SOR_Faction_D;
 		vehicleclass = "SOR_Aircraft";
@@ -423,9 +417,139 @@
 //////////	
 // Jets //
 //////////
+class SOR_RHS_C130J : RHS_C130J
+	{
+
+		faction = SOR_Faction_D;
+		vehicleClass = "SOR_Aircraft";
+		displayName = "C130J (C3/P24)";
+		class UserActions
+		{
+			class SOR_AutoDrop
+			{
+				condition = "(player == driver this)&&((getPosATL this) select 2 > 200)";
+				displayName = "<t color='#008000'>Start Drop!</t>";
+				displayNameDefault = "<t color='#008000'>Start Drop!</t>";
+				onlyForPlayer = 0;
+				position = "";
+				radius= 8;				
+				priority = 1;
+				showWindow = 0;
+				hideOnUse = 1;
+				statement = "[this] spawn sor_fnc_autoparadrop";
+			};
+			class closefdoor
+			{
+				condition = "(this doorPhase 'door_1' == 1) AND Alive(this)";
+				displayName = "Close Crew Door";
+				onlyforplayer = 1;
+				position = "pos_gunner";
+				radius = 6;
+				statement = "this animateDoor ['door_1',0]";
+			};
+			class Closeldoor
+			{
+				condition = "(this doorPhase 'door_2_1' == 1) AND Alive(this)";
+				displayName = "Close Left Door";
+				onlyforplayer = 1;
+				position = "pos_gunner";
+				radius = 6;
+				statement = "this animateDoor ['door_2_1',0];this setVariable ['doorhandler_L',0,true]";
+			};
+			class CloseRamp
+			{
+				condition = "(this doorPhase 'ramp' == 1) AND Alive(this)";
+				displayName = "Close Cargo Ramp";
+				onlyforplayer = 1;
+				position = "pos_gunner";
+				radius = 6;
+				statement = "this animateDoor ['ramp',0];[this] call rhs_fnc_cargoAttach";
+			};
+			class Closerdoor
+			{
+				condition = "(this doorPhase 'door_2_2' == 1) AND Alive(this)";
+				displayName = "Close Right Door";
+				onlyforplayer = 1;
+				position = "pos_gunner";
+				radius = 6;
+				statement = "this animateDoor ['door_2_2',0];this setVariable ['doorhandler_R',0,true]";
+				
+			};
+			class MoveInside
+			{
+				condition = "player in this and ((getpos this select 2)>50)";
+				displayName = "Move inside";
+				onlyforplayer = 1;
+				position = "pos_gunner";
+				radius = 6;
+				statement = "[this] spawn rhs_fnc_moveInside";
+			};
+			class openfdoor
+			{
+				condition = "(this doorPhase 'door_1' == 0) AND Alive(this)";
+				displayName = "Open Crew Door";
+				onlyforplayer = 1;
+				position = "pos_gunner";
+				radius = 6;
+				statement = "this animateDoor ['door_1',1]";
+			};
+			class OpenLdoor
+			{
+				condition = "(this doorPhase 'door_2_1' == 0) AND Alive(this)";
+				displayName = "Open Left Door";
+				onlyforplayer = 1;
+				position = "pos_gunner";
+				radius = 6;
+				statement = "this animateDoor ['door_2_1',1];this setVariable ['doorhandler_L',1,true]";
+			};
+			class OpenRamp
+			{
+				condition = "(this doorPhase 'ramp' == 0) AND Alive(this)";
+				displayName = "Open Cargo Ramp";
+				onlyforplayer = 1;
+				position = "pos_gunner";
+				radius = 6;
+				statement = "this animateDoor ['ramp',1];{if(not(_x isKindOf 'Man'))then{detach _x}}foreach attachedObjects this";
+			};
+			class OpenRdoor
+			{
+				condition = "(this doorPhase 'door_2_2' == 0) AND Alive(this)";
+				displayName = "Open Right Door";
+				onlyforplayer = 1;
+				position = "pos_gunner";
+				radius = 6;
+				statement = "this animateDoor ['door_2_2',1];this setVariable ['doorhandler_R',1,true]";
+			};
+			class VehicleParadrop
+			{
+				condition = "(count (attachedObjects this) > 0) AND ('man' countType (attachedObjects this) == 0) AND Alive(this)";
+				displayName = "Paradrop cargo";
+				onlyforplayer = 1;
+				position = "pos_gunner";
+				radius = 6;
+				statement = "[this] spawn rhs_fnc_vehPara";
+			};
+		};
+		class TransportItems{};		
+		class TransportWeapons{};
+		class TransportMagazines{};
+		class TransportBackpacks
+		{
+			pack_xx(SOR_Repair_Pack_D,1)
+		};
+	};
+
+
+
+
+
+/*  
+
+Currently broken since latest FIR F16 mod update
+
 
 //Training ammo (non leathal)
-	class SOR_FIR_F16C_TWAS : FIR_F16C_TWAS
+class SOR_FIR_F16C_TWAS : FIR_F16C_TWAS
 	{
 		faction = SOR_Faction_D;
 		vehicleclass = "SOR_Aircraft";
@@ -454,9 +578,9 @@ hardpoint 5 = ecmpod / twaspod / fueltank_300gal
 hardpoint 5a = htspod / lantirnpod
 
 if you want don't add weapon in hardpoint, just leave empty.
-*/
 
-	class SOR_FIR_F16C_AA : FIR_F16C
+
+class SOR_FIR_F16C_AA : FIR_F16C
 	{
 		faction = SOR_Faction_D;
 		vehicleclass = "SOR_Aircraft";
@@ -520,7 +644,7 @@ if you want don't add weapon in hardpoint, just leave empty.
 		class TransportBackpacks{};
 	};
 
-	class SOR_FIR_F16C_CAS : FIR_F16C
+class SOR_FIR_F16C_CAS : FIR_F16C
 	{
 		faction = SOR_Faction_D;
 		vehicleclass = "SOR_Aircraft";
@@ -564,7 +688,7 @@ if you want don't add weapon in hardpoint, just leave empty.
 		class TransportBackpacks{};
 	};	
 
-	class SOR_FIR_F16C_TWAS3 : FIR_F16C_TWAS2
+class SOR_FIR_F16C_TWAS3 : FIR_F16C_TWAS2
 	{
 		faction = SOR_Faction_D;
 		vehicleclass = "SOR_Aircraft";
@@ -580,13 +704,13 @@ if you want don't add weapon in hardpoint, just leave empty.
 		class TransportBackpacks{};
 	};		
 
-	
+*/	
 /////////////////////
 //Captured Aircraft//
 /////////////////////
 
 //Transport (This is the only one that can attach and drop pods)
-	class SOR_O_Heli_Transport_04_F : O_Heli_Transport_04_F
+class SOR_O_Heli_Transport_04_F : O_Heli_Transport_04_F
 	{
 		side=1;
 		faction = SOR_Faction_D;
@@ -607,7 +731,7 @@ if you want don't add weapon in hardpoint, just leave empty.
 	};
 	
 // Medivac Taru (Fixed pod)
-	class SOR_O_Heli_Transport_04_medevac_F : O_Heli_Transport_04_medevac_F
+class SOR_O_Heli_Transport_04_medevac_F : O_Heli_Transport_04_medevac_F
 	{
 		side=1;
 		faction = SOR_Faction_D;
@@ -631,7 +755,7 @@ if you want don't add weapon in hardpoint, just leave empty.
 	};
 
 // Troop transport Taru (fixed pod)	
-	class SOR_O_Heli_Transport_04_bench_F : O_Heli_Transport_04_bench_F
+class SOR_O_Heli_Transport_04_bench_F : O_Heli_Transport_04_bench_F
 	{
 		side=1;
 		faction = SOR_Faction_D;
@@ -663,7 +787,7 @@ if you want don't add weapon in hardpoint, just leave empty.
 	};
 
 // Covered Troop transport Taru (fixed pod)
-	class SOR_O_Heli_Transport_04_covered_F : O_Heli_Transport_04_covered_F
+class SOR_O_Heli_Transport_04_covered_F : O_Heli_Transport_04_covered_F
 	{
 		side=1;
 		faction = SOR_Faction_D;
@@ -679,7 +803,7 @@ if you want don't add weapon in hardpoint, just leave empty.
 	};
 
 // Civilial troop transport	
-	class SOR_RHS_Mi8amt_civilian : RHS_Mi8amt_civilian
+class SOR_RHS_Mi8amt_civilian : RHS_Mi8amt_civilian
 	{
 		side=1;
 		faction = SOR_Faction_D;
@@ -696,7 +820,7 @@ if you want don't add weapon in hardpoint, just leave empty.
 	
 
 //Attack
-	class SOR_O_Heli_Attack_02_F : O_Heli_Attack_02_F
+class SOR_O_Heli_Attack_02_F : O_Heli_Attack_02_F
 	{
 		side=1;
 		faction = SOR_Faction_D;
@@ -718,7 +842,7 @@ if you want don't add weapon in hardpoint, just leave empty.
 		};
 	};	
 
-	class SOR_O_Heli_Attack_02_black_F : O_Heli_Attack_02_black_F
+class SOR_O_Heli_Attack_02_black_F : O_Heli_Attack_02_black_F
 	{
 		side=1;
 		faction = SOR_Faction_D;
@@ -740,7 +864,7 @@ if you want don't add weapon in hardpoint, just leave empty.
 		};
 	};
 
-	class SOR_O_Heli_Light_02_v2_F : O_Heli_Light_02_v2_F
+class SOR_O_Heli_Light_02_v2_F : O_Heli_Light_02_v2_F
 	{
 		side=1;
 		faction = SOR_Faction_D;
@@ -763,7 +887,7 @@ if you want don't add weapon in hardpoint, just leave empty.
 	};	
 
 //Jets	
-	class SOR_O_Plane_CAS_02_B : O_Plane_CAS_02_F
+class SOR_O_Plane_CAS_02_B : O_Plane_CAS_02_F
 	{
 		side=1;
 		faction = SOR_Faction_D;
@@ -775,7 +899,7 @@ if you want don't add weapon in hardpoint, just leave empty.
 		class TransportBackpacks{};
 	};
 
-	class SOR_I_Plane_Fighter_03_AA_B : I_Plane_Fighter_03_AA_F
+class SOR_I_Plane_Fighter_03_AA_B : I_Plane_Fighter_03_AA_F
 	{
 		side=1;
 		faction = SOR_Faction_D;
@@ -787,7 +911,7 @@ if you want don't add weapon in hardpoint, just leave empty.
 		class TransportBackpacks{};
 	};
 
-	class SOR_I_Plane_Fighter_03_CAS_B : I_Plane_Fighter_03_CAS_F
+class SOR_I_Plane_Fighter_03_CAS_B : I_Plane_Fighter_03_CAS_F
 	{
 		side=1;
 		faction = SOR_Faction_D;
@@ -804,7 +928,8 @@ if you want don't add weapon in hardpoint, just leave empty.
 //////////////////
 
 //Live ammo
-	class SOR_FIR_F16C_OPFOR : FIR_F16C_Polish_CFT
+/*
+class SOR_FIR_F16C_OPFOR : FIR_F16C_Polish_CFT
 	{
 		side=0;
 		faction = SOR_Faction_D;
@@ -820,32 +945,9 @@ if you want don't add weapon in hardpoint, just leave empty.
 		class TransportMagazines{};
 		class TransportBackpacks{};
 	};
-
-	class SOR_I_Plane_Fighter_03_AA_F : I_Plane_Fighter_03_AA_F
-	{
-		side=0;
-		faction = SOR_Faction_D;
-		vehicleclass = "SOR_Aircraft";
-		displayName = "L159 ALCA [AA] OpFor";
-		class TransportItems{};
-		class TransportWeapons{};
-		class TransportMagazines{};
-		class TransportBackpacks{};
-	};
-
-	class SOR_I_Plane_Fighter_03_CAS_F : I_Plane_Fighter_03_CAS_F
-	{
-		side=0;
-		faction = SOR_Faction_D;
-		vehicleclass = "SOR_Aircraft";
-		displayName = "L159 ALCA [CAS] OpFor";
-		class TransportItems{};
-		class TransportWeapons{};
-		class TransportMagazines{};
-		class TransportBackpacks{};
-	};	
+	
 //Training ammo (non leathal)	
-	class SOR_FIR_F16C_TWAS2 : FIR_F16C_TWAS2
+class SOR_FIR_F16C_TWAS2 : FIR_F16C_TWAS2
 	{
 		side=0;
 		faction = SOR_Faction_D;
@@ -861,3 +963,29 @@ if you want don't add weapon in hardpoint, just leave empty.
 		class TransportMagazines{};
 		class TransportBackpacks{};
 	};	
+	
+*/
+class SOR_I_Plane_Fighter_03_AA_F : I_Plane_Fighter_03_AA_F
+	{
+		side=0;
+		faction = SOR_Faction_D;
+		vehicleclass = "SOR_Aircraft";
+		displayName = "L159 ALCA [AA] OpFor";
+		class TransportItems{};
+		class TransportWeapons{};
+		class TransportMagazines{};
+		class TransportBackpacks{};
+	};
+
+class SOR_I_Plane_Fighter_03_CAS_F : I_Plane_Fighter_03_CAS_F
+	{
+		side=0;
+		faction = SOR_Faction_D;
+		vehicleclass = "SOR_Aircraft";
+		displayName = "L159 ALCA [CAS] OpFor";
+		class TransportItems{};
+		class TransportWeapons{};
+		class TransportMagazines{};
+		class TransportBackpacks{};
+	};	
+	
