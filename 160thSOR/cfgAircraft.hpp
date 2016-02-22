@@ -422,7 +422,7 @@ class SOR_RHS_C130J : RHS_C130J
 
 		faction = SOR_Faction_D;
 		vehicleClass = "SOR_Aircraft";
-		displayName = "C130J (C3/P24)";
+		displayName = "C130J (C3/P24/V1)";
 		class UserActions
 		{
 			class SOR_AutoDrop

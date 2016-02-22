@@ -21,7 +21,7 @@ class CfgPatches
 					,"SOR_M2A3_BUSKIII","SOR_rhsusf_m113d_usarmy","SOR_rhsusf_m1a2sep1tuskid_usarmy","SOR_rhsusf_m1a2sep1tuskiid_usarmy","SOR_rhsusf_m1025_d_Mk19","SOR_HW_Box_F"
 					,"SOR_Land_Flush_Light_green_F","SOR_Land_Flush_Light_red_F","SOR_Land_Flush_Light_yellow_F","SOR_Land_PortableLight_double_F","SOR_B_Slingload_01_Cargo_F",
 					,"SOR_Gunrack1","SOR_PJ_Box_F","SOR_Air_LP","SOR_A_Box_F","SOR_M_Box_F","SOR_E_Box_F","SOR_G_Box_F","SOR_S_Box_F","SOR_divegear","SOR_A_Crate_F","SOR_AM_Crate_F","SOR_HMG_Crate_F","SOR_MOR_Crate_F"
-					,"SOR_rhsusf_m1025_d","SOR_rhsusf_m1025_d_m2","SOR_B_SDV_01_F","SOR_rhsusf_m1025_d_s","SOR_B_APC_Tracked_01_rcws_F","SOR_Box_NATO_WpsSpecial_F_Training"
+					,"SOR_rhsusf_m1025_d","SOR_rhsusf_m1025_d_m2","SOR_B_SDV_01_F","SOR_rhsusf_m1025_d_s","SOR_B_APC_Tracked_01_rcws_F","SOR_Box_NATO_WpsSpecial_F_Training","SOR_rhsusf_m113d_usarmy_medical","SOR_RHS_C130J","SOR_rhsusf_m1a1aim_tuski_d"
 					,"SOR_Land_Pod_Heli_Transport_04_medevac_F","SOR_O_Heli_Transport_04_F","SOR_Land_Pod_Heli_Transport_04_ammo_F","SOR_Land_Pod_Heli_Transport_04_bench_F","SOR_Land_Pod_Heli_Transport_04_covered_F"};
 
 		weapons[] = {"160_m4a1_carryhandle_grip_acog"
