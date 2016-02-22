@@ -32,8 +32,6 @@
 //Special Gun Rack//
 	class SOR_Gunrack1 : Gunrack1
 	{
-		scope = 2;
-		scopeCurator = 2;
 		displayName = "Gun Rack [Static]";
 		vehicleClass = "SOR_SupplyBoxes";
 		faction = SOR_Faction_CRATE;
@@ -47,10 +45,8 @@
 	};
 	
 //PJ medical supply box//	
-		class SOR_PJ_Box_F : Land_MetalCase_01_large_F
+	class SOR_PJ_Box_F : Land_MetalCase_01_large_F
 	{
-		scope = 2;
-		scopeCurator = 2;
 		displayName = "Box PJ Medical[Static]";
 		vehicleClass = "SOR_SupplyBoxes";
 		faction = SOR_Faction_CRATE;
@@ -63,17 +59,26 @@
 		};		
 		class TransportWeapons{};
 		class TransportMagazines{};
+		class TransportBackpacks{};
+	};
+
+	class SOR_PJ_Pack_Box_F : Land_PlasticCase_01_large_F
+	{
+		displayName = "Box PJ Pack Storage [Static]";
+		vehicleClass = "SOR_SupplyBoxes";
+		faction = SOR_Faction_CRATE;
+		class TransportItems{};		
+		class TransportWeapons{};
+		class TransportMagazines{};
 		class TransportBackpacks
 		{
-			pack_xx(SOR_PJMedicPack_D,3)
+			pack_xx(SOR_PJMedicPack_D,7)
 		};
-	};
+	};	
 	
 // Airborne Life Preservers (For missions with lost of flying outside glide distance from the coast)//
 	class SOR_Air_LP : Land_PlasticCase_01_medium_F
 	{
-		scope = 2;
-		scopeCurator = 2;
 		displayName = "Box [Airborne Life Preservers][Static]";
 		vehicleClass = "SOR_SupplyBoxes";
 		faction = SOR_Faction_CRATE;
@@ -81,8 +86,7 @@
 		{
 			item_xx(V_RebreatherB,15)
 		};	
-	};
-	
+	};	
 
 ///////////////////////
 //Hand Liftable Boxes//
@@ -91,8 +95,6 @@
 // Ammo Box	
 	class SOR_A_Box_F : Box_NATO_Ammo_F
 	{
-		scope = 2;
-		scopeCurator = 2;
 		displayName = "Box [Ammo]";
 		vehicleClass = "SOR_SupplyBoxes";
 		faction = SOR_Faction_CRATE;
@@ -112,8 +114,6 @@
 // Medical Box 
 	class SOR_M_Box_F : ACE_medicalSupplyCrate
 	{
-		scope = 2;
-		scopeCurator = 2;
 		displayName = "Box [Medical]";
 		vehicleClass = "SOR_SupplyBoxes";
 		faction = SOR_Faction_CRATE;
@@ -133,8 +133,6 @@
 // Explosives Box	
 	class SOR_E_Box_F : Box_NATO_AmmoOrd_F
 	{
-		scope = 2;
-		scopeCurator = 2;
 		displayName = "Box [Explosives]";
 		vehicleClass = "SOR_SupplyBoxes";
 		faction = SOR_Faction_CRATE;
@@ -159,8 +157,6 @@
 // Grenades Box	
 	class SOR_G_Box_F : Box_NATO_Grenades_F
 	{
-		scope = 2;
-		scopeCurator = 2;
 		displayName = "Box [Grenades]";
 		vehicleClass = "SOR_SupplyBoxes";
 		faction = SOR_Faction_CRATE;		
@@ -184,8 +180,6 @@
 // Support Equipment Box	
 	class SOR_S_Box_F : Box_NATO_Support_F
 	{
-		scope = 2;
-		scopeCurator = 2;
 		displayName = "Box [Equipment]";
 		vehicleClass = "SOR_SupplyBoxes";
 		faction = SOR_Faction_CRATE;
@@ -212,8 +206,6 @@
 // Dive Gear	
 	class SOR_divegear : Land_PlasticCase_01_large_F
 	{
-		scope = 2;
-		scopeCurator = 2;
 		displayName = "Box [Dive Gear]";
 		vehicleClass = "SOR_SupplyBoxes";
 		faction = SOR_Faction_CRATE;		
@@ -228,8 +220,6 @@
 // Heavy weapons Box	
 	class SOR_HW_Box_F : Box_NATO_WpsSpecial_F
 	{
-		scope = 2;
-		scopeCurator = 2;
 		displayName = "Box [Heavy Weapons]";
 		vehicleClass = "SOR_SupplyBoxes";
 		faction = SOR_Faction_CRATE;
@@ -303,8 +293,6 @@
 // Ammo Crate		
 	class SOR_A_Crate_F : B_supplyCrate_F
 	{
-		scope = 2;
-		scopeCurator = 2;
 		displayName = "Crate [Ammo]";
 		vehicleClass = "SOR_SupplyCrates";
 		faction = SOR_Faction_CRATE;
@@ -333,8 +321,6 @@
 // All in one Crate		
 	class SOR_AM_Crate_F : B_supplyCrate_F
 	{
-		scope = 2;
-		scopeCurator = 2;
 		displayName = "Crate [Ammo&Med]";
 		vehicleClass = "SOR_SupplyCrates";
 		faction = SOR_Faction_CRATE;
@@ -371,8 +357,6 @@
 // M2 and Mortar Crate	
 	class SOR_HMG_Crate_F : B_supplyCrate_F
 	{
-		scope = 2;
-		scopeCurator = 2;
 		displayName = "Crate [M2/Mortar]";
 		vehicleClass = "SOR_SupplyCrates";
 		faction = SOR_Faction_CRATE;
@@ -393,8 +377,6 @@
 // Mortar Crate	//// To be phased out?????
 	class SOR_MOR_Crate_F : B_supplyCrate_F
 	{
-		scope = 2;
-		scopeCurator = 2;
 		displayName = "Crate [MORTAR]";
 		vehicleClass = "SOR_SupplyCrates";
 		faction = SOR_Faction_CRATE;
@@ -416,8 +398,6 @@
 // All in one pod	
 	class SOR_Land_Pod_Heli_Transport_04_ammo_F : Land_Pod_Heli_Transport_04_ammo_F
 	{
-		scope = 2;
-		scopeCurator = 2;
 		displayName = "Taru Pod [Ammo]";
 		vehicleClass = "SOR_SupplyCrates";
 		faction = SOR_Faction_CRATE;
@@ -445,8 +425,6 @@
 // Medical pod	
 	class SOR_Land_Pod_Heli_Transport_04_medevac_F : Land_Pod_Heli_Transport_04_medevac_F
 	{
-		scope = 2;
-		scopeCurator = 2;
 		displayName = "Taru Pod [Medical CCP]";
 		vehicleClass = "SOR_SupplyCrates";
 		faction = SOR_Faction_CRATE;
@@ -476,8 +454,6 @@
 // Troop transport bench pod	
 	class SOR_Land_Pod_Heli_Transport_04_bench_F : Land_Pod_Heli_Transport_04_bench_F
 	{
-		scope = 2;
-		scopeCurator = 2;
 		displayName = "Taru Pod [Bench P8]";
 		vehicleClass = "SOR_SupplyCrates";
 		faction = SOR_Faction_CRATE;
@@ -490,8 +466,6 @@
 // Covered troop transport pod		
 	class SOR_Land_Pod_Heli_Transport_04_covered_F : Land_Pod_Heli_Transport_04_covered_F
 	{
-		scope = 2;
-		scopeCurator = 2;
 		displayName = "Taru Pod [Covered P16]";
 		vehicleClass = "SOR_SupplyCrates";
 		faction = SOR_Faction_CRATE;
