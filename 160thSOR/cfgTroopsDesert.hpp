@@ -700,15 +700,15 @@ class SOR_ParaJumper_D : B_medic_F
 		linkedItems[] = 
 		{	
 			"rhsusf_iotv_ocp_Medic",
-			"rhsusf_opscore_mc_cover_pelt",
-			"rhs_googles_clear", 
+			"H_HelmetSpecB_paint2",
+			"rhs_ess_black", 
 			Airborne_Equipment
 		};
         respawnLinkedItems[] = 
 		{	
 			"rhsusf_iotv_ocp_Medic", 
-			"rhsusf_opscore_mc_cover_pelt", 
-			"rhs_googles_clear",  
+			"H_HelmetSpecB_paint2", 
+			"rhs_ess_black",  
 			Airborne_Equipment
 		};
 		class UserActions
