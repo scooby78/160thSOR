@@ -3,8 +3,8 @@ class cfgWeapons
 	class rhs_weap_m4a1_carryhandle_grip;
 	class rhs_weap_m4a1_grip2;
 	class rhs_weap_m4a1_m320;
-	class rhs_weap_m249_pip;
-	class rhs_weap_m240B_CAP;
+	class rhs_weap_m249_pip_L_para;
+	class rhs_weap_m240B;
 	class srifle_LRR_camo_F;
 	class rhs_weap_m4a1_blockII_M203;
 	class rhs_weap_m4a1_blockII_grip2_KAC;
@@ -82,7 +82,7 @@ class cfgWeapons
 		};
 	};
 	
-	class 160_m249_pip: rhs_weap_m249_pip 
+	class 160_rhs_weap_m249_pip_L_para: rhs_weap_m249_pip_L_para 
 	{
 		class LinkedItems 
 		{
@@ -93,13 +93,13 @@ class cfgWeapons
 			};
 			class LinkedItemsAcc 
 			{
-				item = "rhsusf_acc_anpeq15A";
+				item = "rhsusf_acc_anpeq15side";
 				slot = "PointerSlot";
 			};
 		};
 	};
 	
-	class 160_m240B_CAP: rhs_weap_m240B_CAP 
+	class 160_rhs_weap_m240B: rhs_weap_m240B 
 	{
 		class LinkedItems 
 		{

@@ -97,22 +97,19 @@
 		};		
 		class TransportItems 
 		{
-			item_xx(ToolKit,1)
 			item_xx(ACE_FieldDressing,10);
-			item_xx(ACE_morphine,4);			
 		};
 		class TransportWeapons{};
 		class TransportMagazines
 		{
 			mag_xx(30Rnd_556x45_Stanag_Tracer_Red,20)
-			mag_xx(11Rnd_45ACP_Mag,10)
+			mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,10)
 			mag_xx(rhsusf_mag_7x45acp_MHP,10)
-			mag_xx(rhsusf_200Rnd_556x45_soft_pouch,2)
+			mag_xx(rhs_200rnd_556x45_M_SAW,2)
 			mag_xx(rhsusf_100Rnd_762x51,2)
 		};
 		class TransportBackpacks
 		{
-			pack_xx(SOR_Medic_Pack_D,1)
 			pack_xx(SOR_Repair_Pack_D,1)			
 		};
 	};
@@ -165,22 +162,19 @@
 		};
 		class TransportItems 
 		{
-			item_xx(ToolKit,1)
 			item_xx(ACE_FieldDressing,10);
-			item_xx(ACE_morphine,4);			
 		};
 		class TransportWeapons{};
 		class TransportMagazines
 		{
 			mag_xx(30Rnd_556x45_Stanag_Tracer_Red,40)
-			mag_xx(11Rnd_45ACP_Mag,10)
+			mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,10)
 			mag_xx(rhsusf_mag_7x45acp_MHP,10)
-			mag_xx(rhsusf_200Rnd_556x45_soft_pouch,4)
+			mag_xx(rhs_200rnd_556x45_M_SAW,4)
 			mag_xx(rhsusf_100Rnd_762x51,4)
 		};
 		class TransportBackpacks
 		{
-			pack_xx(SOR_Medic_Pack_D,2)
 			pack_xx(SOR_Repair_Pack_D,1)			
 		};
 	};
@@ -223,15 +217,13 @@
 		fuelConsumptionRate = 0.0555; //was 0.0368;
 		class TransportItems 
 		{
-			item_xx(ToolKit,1)
 			item_xx(ACE_FieldDressing,10);
-			item_xx(ACE_morphine,4);			
 		};
 		class TransportWeapons{};
 		class TransportMagazines
 		{
 			mag_xx(30Rnd_556x45_Stanag_Tracer_Red,5)
-			mag_xx(11Rnd_45ACP_Mag,4)
+			mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,4)
 		};
 		class TransportBackpacks
 		{
@@ -249,15 +241,13 @@
 		fuelConsumptionRate = 0.0555; //was 0.0368;
 		class TransportItems 
 		{
-			item_xx(ToolKit,1)
 			item_xx(ACE_FieldDressing,10);
-			item_xx(ACE_morphine,4);			
 		};
 		class TransportWeapons{};
 		class TransportMagazines
 		{
 			mag_xx(30Rnd_556x45_Stanag_Tracer_Red,5)
-			mag_xx(11Rnd_45ACP_Mag,4)
+			mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,4)
 		};
 		class TransportBackpacks
 		{
@@ -267,7 +257,6 @@
 	
 	class SOR_MELB_MH6M_MEV : MELB_MH6M
 	{
-		side=1;
 		faction = SOR_Faction_D;
 		vehicleclass = "SOR_Aircraft";
 		displayName = "MH-6M MEV (C2/P6)";
@@ -281,7 +270,6 @@
 			item_xx(G_Diving,3)
 			item_xx(U_B_Wetsuit,3)
 			item_xx(V_RebreatherB,3)
-			item_xx(ToolKit,1)
 		};
 		class TransportWeapons{};
 		class TransportMagazines{};
@@ -294,7 +282,6 @@
 // Attack Helos	
 	class SOR_MELB_AH6M_L : MELB_AH6M_L
 	{
-		side=1;
 		faction = SOR_Faction_D;
 		vehicleclass = "SOR_Aircraft";
 		displayName = "AH-6M_L (C2/P1)";
@@ -302,15 +289,13 @@
 		fuelConsumptionRate = 0.0555; //was 0.0368;
 		class TransportItems 
 		{
-			item_xx(ToolKit,1)
 			item_xx(ACE_FieldDressing,10);
-			item_xx(ACE_morphine,4);			
 		};
 		class TransportWeapons{};
 		class TransportMagazines
 		{
 			mag_xx(30Rnd_556x45_Stanag_Tracer_Red,5)
-			mag_xx(11Rnd_45ACP_Mag,4)
+			mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,4)
 		};
 		class TransportBackpacks
 		{
@@ -320,7 +305,6 @@
 	
 	class SOR_MELB_AH6M_M : MELB_AH6M_M
 	{
-		side=1;
 		faction = SOR_Faction_D;
 		vehicleclass = "SOR_Aircraft";
 		displayName = "AH-6M_M (C2/P1)";
@@ -328,15 +312,13 @@
 		fuelConsumptionRate = 0.0555; //was 0.0368;
 		class TransportItems 
 		{
-			item_xx(ToolKit,1)
 			item_xx(ACE_FieldDressing,10);
-			item_xx(ACE_morphine,4);			
 		};
 		class TransportWeapons{};
 		class TransportMagazines
 		{
 			mag_xx(30Rnd_556x45_Stanag_Tracer_Red,5)
-			mag_xx(11Rnd_45ACP_Mag,4)
+			mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,4)
 		};
 		class TransportBackpacks
 		{
@@ -346,7 +328,6 @@
 
 	class SOR_MELB_AH6M_H : MELB_AH6M_H
 	{
-		side=1;
 		faction = SOR_Faction_D;
 		vehicleclass = "SOR_Aircraft";
 		displayName = "AH-6M_H (C2/P1)";
@@ -354,15 +335,13 @@
 		fuelConsumptionRate = 0.0555; //was 0.0368;
 		class TransportItems 
 		{
-			item_xx(ToolKit,1)
 			item_xx(ACE_FieldDressing,10);
-			item_xx(ACE_morphine,4);			
 		};
 		class TransportWeapons{};
 		class TransportMagazines
 		{
 			mag_xx(30Rnd_556x45_Stanag_Tracer_Red,5)
-			mag_xx(11Rnd_45ACP_Mag,4)
+			mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,4)
 		};
 		class TransportBackpacks
 		{
@@ -380,7 +359,6 @@
 		fuelCapacity = 200; //was 500 
 		class TransportItems 
 		{
-			item_xx(ToolKit,1)
 			item_xx(ACE_FieldDressing,10);
 			item_xx(ACE_morphine,4);			
 		};
@@ -388,14 +366,16 @@
 		class TransportMagazines
 		{
 			mag_xx(30Rnd_556x45_Stanag_Tracer_Red,5)
-			mag_xx(11Rnd_45ACP_Mag,4)
+			mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,4)
 		};
-		class TransportBackpacks{};
+		class TransportBackpacks
+		{
+			pack_xx(SOR_Repair_Pack_D,1)
+		};
 	};	
 
 	class SOR_RHS_AH64D_CS : RHS_AH64D_CS
 	{
-		side=1;
 		faction = SOR_Faction_D;
 		vehicleclass = "SOR_Aircraft";
 		displayName = "AH-64D (Close-Support)";
@@ -403,22 +383,22 @@
 		fuelCapacity = 200; //was 500 
 		class TransportItems 
 		{
-			item_xx(ToolKit,1)
 			item_xx(ACE_FieldDressing,10);
-			item_xx(ACE_morphine,4);			
 		};
 		class TransportWeapons{};
 		class TransportMagazines
 		{
 			mag_xx(30Rnd_556x45_Stanag_Tracer_Red,5)
-			mag_xx(11Rnd_45ACP_Mag,4)
+			mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,4)
 		};
-		class TransportBackpacks{};
+		class TransportBackpacks
+		{
+			pack_xx(SOR_Repair_Pack_D,1)
+		};
 	};		
 	
 	class SOR_RHS_AH64D_GS : RHS_AH64D_GS
 	{
-		side=1;
 		faction = SOR_Faction_D;
 		vehicleclass = "SOR_Aircraft";
 		displayName = "AH-64D (Ground-Suppression)";
@@ -426,17 +406,18 @@
 		fuelCapacity = 200; //was 500 
 		class TransportItems 
 		{
-			item_xx(ToolKit,1)
 			item_xx(ACE_FieldDressing,10);
-			item_xx(ACE_morphine,4);			
 		};
 		class TransportWeapons{};
 		class TransportMagazines
 		{
 			mag_xx(30Rnd_556x45_Stanag_Tracer_Red,5)
-			mag_xx(11Rnd_45ACP_Mag,4)
+			mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,4)
 		};
-		class TransportBackpacks{};
+		class TransportBackpacks
+		{
+			pack_xx(SOR_Repair_Pack_D,1)
+		};
 	};		
 	
 //////////	
@@ -446,7 +427,6 @@
 //Training ammo (non leathal)
 	class SOR_FIR_F16C_TWAS : FIR_F16C_TWAS
 	{
-		side=1;
 		faction = SOR_Faction_D;
 		vehicleclass = "SOR_Aircraft";
 		displayName = "F16-C Non-Lethal Training Aircraft [Blue Team]";
@@ -478,9 +458,6 @@ if you want don't add weapon in hardpoint, just leave empty.
 
 	class SOR_FIR_F16C_AA : FIR_F16C
 	{
-		side=1;
-		scope = 2;
-		scopeCurator = 2;
 		faction = SOR_Faction_D;
 		vehicleclass = "SOR_Aircraft";
 		displayName = "F16-C [AA]";
@@ -545,9 +522,6 @@ if you want don't add weapon in hardpoint, just leave empty.
 
 	class SOR_FIR_F16C_CAS : FIR_F16C
 	{
-		side=1;
-		scope = 2;
-		scopeCurator = 2;
 		faction = SOR_Faction_D;
 		vehicleclass = "SOR_Aircraft";
 		displayName = "F16-C [CAS]";
@@ -592,8 +566,6 @@ if you want don't add weapon in hardpoint, just leave empty.
 
 	class SOR_FIR_F16C_TWAS3 : FIR_F16C_TWAS2
 	{
-		scope = 2;
-		scopeCurator = 2;
 		faction = SOR_Faction_D;
 		vehicleclass = "SOR_Aircraft";
 		displayName = "F16-C Non-Lethal Training Aircraft [Red Team]";
@@ -617,8 +589,6 @@ if you want don't add weapon in hardpoint, just leave empty.
 	class SOR_O_Heli_Transport_04_F : O_Heli_Transport_04_F
 	{
 		side=1;
-		scope = 2;
-		scopeCurator = 2;
 		faction = SOR_Faction_D;
 //		_generalMacro = "SOR_O_Heli_Transport_04_F";
 		vehicleClass = "SOR_Aircraft_Captured";
@@ -627,21 +597,19 @@ if you want don't add weapon in hardpoint, just leave empty.
 		{
 			init="_this call SLX_XEH_EH_Init;";
 		};
-		class TransportItems 
-		{
-			item_xx(ToolKit,1)
-		};		
+		class TransportItems{};		
 		class TransportWeapons{};
 		class TransportMagazines{};
-		class TransportBackpacks{};
+		class TransportBackpacks
+		{
+			pack_xx(SOR_Repair_Pack_D,1)
+		};
 	};
 	
 // Medivac Taru (Fixed pod)
 	class SOR_O_Heli_Transport_04_medevac_F : O_Heli_Transport_04_medevac_F
 	{
 		side=1;
-		scope = 2;
-		scopeCurator = 2;
 		faction = SOR_Faction_D;
 		vehicleClass = "SOR_Aircraft_Captured";
 		displayName = "MI-290 Taru (Medical C3/P4)";
@@ -653,11 +621,13 @@ if you want don't add weapon in hardpoint, just leave empty.
 			item_xx(G_Diving,3)
 			item_xx(U_B_Wetsuit,3)
 			item_xx(V_RebreatherB,3)
-			item_xx(ToolKit,1)
 		};		
 		class TransportWeapons{};
 		class TransportMagazines{};
-		class TransportBackpacks{};
+		class TransportBackpacks
+		{
+			pack_xx(SOR_Repair_Pack_D,1)
+		};
 	};
 
 // Troop transport Taru (fixed pod)	
@@ -683,31 +653,29 @@ if you want don't add weapon in hardpoint, just leave empty.
 				statement = "[this] spawn sor_fnc_autoparadrop";
 			};
 		};		
-		class TransportItems 
-		{
-			item_xx(ToolKit,1)
-		};
+		class TransportItems{};
 		class TransportWeapons{};
 		class TransportMagazines{};
-		class TransportBackpacks{};
+		class TransportBackpacks
+		{
+			pack_xx(SOR_Repair_Pack_D,1)
+		};
 	};
 
 // Covered Troop transport Taru (fixed pod)
 	class SOR_O_Heli_Transport_04_covered_F : O_Heli_Transport_04_covered_F
 	{
 		side=1;
-		scope = 2;
-		scopeCurator = 2;		
 		faction = SOR_Faction_D;
 		vehicleclass = "SOR_Aircraft_Captured";
 		displayName = "MI-290 Taru (Covered C3/P16)";
-		class TransportItems 
-		{
-			item_xx(ToolKit,1)
-		};
+		class TransportItems{};
 		class TransportWeapons{};
 		class TransportMagazines{};
-		class TransportBackpacks{};
+		class TransportBackpacks
+		{
+			pack_xx(SOR_Repair_Pack_D,1)
+		};
 	};
 
 // Civilial troop transport	
@@ -717,13 +685,13 @@ if you want don't add weapon in hardpoint, just leave empty.
 		faction = SOR_Faction_D;
 		vehicleclass = "SOR_Aircraft_Captured";
 		displayName = "MI-8AMT (C2/P20)";
-		class TransportItems 
-		{
-			item_xx(ToolKit,1)
-		};
+		class TransportItems{};
 		class TransportWeapons{};
 		class TransportMagazines{};
-		class TransportBackpacks{};
+		class TransportBackpacks
+		{
+			pack_xx(SOR_Repair_Pack_D,1)
+		};
 	};
 	
 
@@ -736,17 +704,18 @@ if you want don't add weapon in hardpoint, just leave empty.
 		displayName = "MI-48 Kajman (C2/P8)";
 		class TransportItems 
 		{
-			item_xx(ToolKit,1)
 			item_xx(ACE_FieldDressing,16);
-			item_xx(ACE_morphine,8);			
 		};
 		class TransportWeapons{};
 		class TransportMagazines
 		{
 			mag_xx(30Rnd_556x45_Stanag_Tracer_Red,5)
-			mag_xx(11Rnd_45ACP_Mag,4)
+			mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,4)
 		};
-		class TransportBackpacks{};
+		class TransportBackpacks
+		{
+			pack_xx(SOR_Repair_Pack_D,1)
+		};
 	};	
 
 	class SOR_O_Heli_Attack_02_black_F : O_Heli_Attack_02_black_F
@@ -757,17 +726,18 @@ if you want don't add weapon in hardpoint, just leave empty.
 		displayName = "MI-48 Kajman (Black C2/P8)";
 		class TransportItems 
 		{
-			item_xx(ToolKit,1)
 			item_xx(ACE_FieldDressing,16);
-			item_xx(ACE_morphine,8);		
 		};
 		class TransportWeapons{};
 		class TransportMagazines
 		{
 			mag_xx(30Rnd_556x45_Stanag_Tracer_Red,5)
-			mag_xx(11Rnd_45ACP_Mag,4)
+			mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,4)
 		};
-		class TransportBackpacks{};
+		class TransportBackpacks
+		{
+			pack_xx(SOR_Repair_Pack_D,1)
+		};
 	};
 
 	class SOR_O_Heli_Light_02_v2_F : O_Heli_Light_02_v2_F
@@ -778,25 +748,24 @@ if you want don't add weapon in hardpoint, just leave empty.
 		displayName = "PO-30 Orca (B&W C2/P8)";
 		class TransportItems 
 		{
-			item_xx(ToolKit,1)
 			item_xx(ACE_FieldDressing,16);
-			item_xx(ACE_morphine,8);		
 		};
 		class TransportWeapons{};
 		class TransportMagazines
 		{
 			mag_xx(30Rnd_556x45_Stanag_Tracer_Red,5)
-			mag_xx(11Rnd_45ACP_Mag,4)
+			mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,4)
 		};
-		class TransportBackpacks{};
+		class TransportBackpacks
+		{
+			pack_xx(SOR_Repair_Pack_D,1)
+		};
 	};	
 
 //Jets	
 	class SOR_O_Plane_CAS_02_B : O_Plane_CAS_02_F
 	{
 		side=1;
-		scope = 2;
-		scopeCurator = 2;
 		faction = SOR_Faction_D;
 		vehicleclass = "SOR_Aircraft_Captured";
 		displayName = "Yak-130 [CAS]";
@@ -809,8 +778,6 @@ if you want don't add weapon in hardpoint, just leave empty.
 	class SOR_I_Plane_Fighter_03_AA_B : I_Plane_Fighter_03_AA_F
 	{
 		side=1;
-		scope = 2;
-		scopeCurator = 2;
 		faction = SOR_Faction_D;
 		vehicleclass = "SOR_Aircraft_Captured";
 		displayName = "L159 ALCA [AA]";
@@ -823,8 +790,6 @@ if you want don't add weapon in hardpoint, just leave empty.
 	class SOR_I_Plane_Fighter_03_CAS_B : I_Plane_Fighter_03_CAS_F
 	{
 		side=1;
-		scope = 2;
-		scopeCurator = 2;
 		faction = SOR_Faction_D;
 		vehicleclass = "SOR_Aircraft_Captured";
 		displayName = "L159 ALCA [CAS]";
@@ -842,8 +807,6 @@ if you want don't add weapon in hardpoint, just leave empty.
 	class SOR_FIR_F16C_OPFOR : FIR_F16C_Polish_CFT
 	{
 		side=0;
-		scope = 2;
-		scopeCurator = 2;
 		faction = SOR_Faction_D;
 		vehicleclass = "SOR_Aircraft";
 		displayName = "F16-C OpFor";
@@ -861,8 +824,6 @@ if you want don't add weapon in hardpoint, just leave empty.
 	class SOR_I_Plane_Fighter_03_AA_F : I_Plane_Fighter_03_AA_F
 	{
 		side=0;
-		scope = 2;
-		scopeCurator = 2;
 		faction = SOR_Faction_D;
 		vehicleclass = "SOR_Aircraft";
 		displayName = "L159 ALCA [AA] OpFor";
@@ -875,8 +836,6 @@ if you want don't add weapon in hardpoint, just leave empty.
 	class SOR_I_Plane_Fighter_03_CAS_F : I_Plane_Fighter_03_CAS_F
 	{
 		side=0;
-		scope = 2;
-		scopeCurator = 2;
 		faction = SOR_Faction_D;
 		vehicleclass = "SOR_Aircraft";
 		displayName = "L159 ALCA [CAS] OpFor";
@@ -889,8 +848,6 @@ if you want don't add weapon in hardpoint, just leave empty.
 	class SOR_FIR_F16C_TWAS2 : FIR_F16C_TWAS2
 	{
 		side=0;
-		scope = 2;
-		scopeCurator = 2;
 		faction = SOR_Faction_D;
 		vehicleclass = "SOR_Aircraft";
 		displayName = "F16-C Non-Lethal Training Aircraft [Red Team OpFor]";

@@ -10,6 +10,7 @@ class cfgVehicles
 #include "cfgBackpacks.hpp"
 #include "cfgMisc.hpp"
 #include "cfgTroopsDesert.hpp"
+#include "cfgOpForDesert.hpp"
 #include "cfgCrates.hpp"
 #include "cfgAircraft.hpp"
 #include "cfgArmour.hpp"
