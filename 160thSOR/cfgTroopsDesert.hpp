@@ -266,8 +266,8 @@ class SOR_RTO_D : B_Soldier_F
 		uniformClass = "rhs_uniform_cu_ocp";
 		accuracy = 3.5;		
 	    backpack = "rhsusf_assault_eagleaiii_ocp";
-		weapons[] = {"160_m4a1_carryhandle_grip_acog", "rhsusf_weap_m9","rhs_weap_M136_hp","Throw","Put","ACE_Vector"};
-		respawnWeapons[] = {"160_m4a1_carryhandle_grip_acog", "rhsusf_weap_m9","rhs_weap_M136_hp","Throw","Put","ACE_Vector"};
+		weapons[] = {"160_m4a1_carryhandle_grip_acog", "rhsusf_weap_m9","Throw","Put","ACE_Vector"};
+		respawnWeapons[] = {"160_m4a1_carryhandle_grip_acog", "rhsusf_weap_m9","Throw","Put","ACE_Vector"};
 		Items[] = {Standard_Meds,SL_Equip};
         RespawnItems[] = {Standard_Meds,SL_Equip};
 		magazines[] = {Standard_Mags,Std_Pistol};
@@ -499,6 +499,8 @@ class SOR_Rilfeman_Ammo_D : SOR_Rifleman_D
 	{
 		displayName = "Rifleman Ammo Bearer (M240)";
 		backpack = "SOR_Rifleman_Ammo_Pack_D";
+		weapons[] = {"160_m4a1_carryhandle_grip_acog","rhsusf_weap_m9","rhs_weap_M136_hp","Throw","Put"};
+		respawnWeapons[] = {"160_m4a1_carryhandle_grip_acog","rhsusf_weap_m9","rhs_weap_M136_hp","Throw","Put"};
 	};
 	
 class SOR_RiflemanAT_D : B_soldier_AT_F
@@ -509,8 +511,8 @@ class SOR_RiflemanAT_D : B_soldier_AT_F
 		uniformClass = "rhs_uniform_cu_ocp";
 		displayName = "Rifleman AT";
 		backpack = "SOR_RFLAT_Pack_D";
-		weapons[] = {"160_m4a1_carryhandle_grip_acog", "rhsusf_weap_m9","M3CG", "Throw", "Put"};
-		respawnWeapons[] = {"160_m4a1_carryhandle_grip_acog", "rhsusf_weap_m9","M3CG","Throw", "Put"};
+		weapons[] = {"160_m4a1_carryhandle_grip_acog", "rhsusf_weap_m9","rhs_weap_M136_hp", "Throw", "Put"};
+		respawnWeapons[] = {"160_m4a1_carryhandle_grip_acog", "rhsusf_weap_m9","rhs_weap_M136_hp","Throw", "Put"};
 		Items[] = {Standard_Meds};
         RespawnItems[] = {Standard_Meds};
 		magazines[] = {Standard_Mags,Std_Pistol};

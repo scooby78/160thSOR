@@ -60,7 +60,7 @@
 		displayName = "Pack Desert Rifleman (M240)";
 		class TransportMagazines
 		{
-			mag_xx(rhsusf_100Rnd_762x51,3);
+			mag_xx(rhsusf_100Rnd_762x51,2);
 		};
 	};
 
@@ -123,7 +123,6 @@
 			mag_xx(rhs_mag_m713_Red,8);
 			mag_xx(rhs_mag_m715_Green,2);
 			mag_xx(rhs_mag_m716_yellow,2);
-//			mag_xx(rhs_mag_m714_White,3);
 		};	
 	};
 
