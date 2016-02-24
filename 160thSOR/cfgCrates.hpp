@@ -35,6 +35,7 @@
 		displayName = "Gun Rack [Static]";
 		vehicleClass = "SOR_SupplyBoxes";
 		faction = SOR_Faction_CRATE;
+		editorCategory = "EdCat_Supplies";
 		class TransportItems{};		
 		class TransportWeapons
 		{
@@ -50,6 +51,7 @@
 		displayName = "Box PJ Medical[Static]";
 		vehicleClass = "SOR_SupplyBoxes";
 		faction = SOR_Faction_CRATE;
+		editorCategory = "EdCat_Supplies";
 		class TransportItems
 		{
 			item_xx(ACE_FieldDressing,40);
@@ -67,6 +69,7 @@
 		displayName = "Box PJ Pack Storage [Static]";
 		vehicleClass = "SOR_SupplyBoxes";
 		faction = SOR_Faction_CRATE;
+		editorCategory = "EdCat_Supplies";
 		class TransportItems{};		
 		class TransportWeapons{};
 		class TransportMagazines{};
@@ -82,6 +85,7 @@
 		displayName = "Box [Airborne Life Preservers][Static]";
 		vehicleClass = "SOR_SupplyBoxes";
 		faction = SOR_Faction_CRATE;
+		editorCategory = "EdCat_Supplies";
 		class TransportItems
 		{
 			item_xx(V_RebreatherB,15)
@@ -98,6 +102,7 @@
 		displayName = "Box [Ammo]";
 		vehicleClass = "SOR_SupplyBoxes";
 		faction = SOR_Faction_CRATE;
+		editorCategory = "EdCat_Supplies";
 		class TransportItems{};
 		class TransportWeapons{};
 		class TransportMagazines
@@ -117,6 +122,7 @@
 		displayName = "Box [Medical]";
 		vehicleClass = "SOR_SupplyBoxes";
 		faction = SOR_Faction_CRATE;
+		editorCategory = "EdCat_Supplies";
 		class TransportItems
 		{
 			item_xx(ACE_FieldDressing,40);
@@ -136,6 +142,7 @@
 		displayName = "Box [Explosives]";
 		vehicleClass = "SOR_SupplyBoxes";
 		faction = SOR_Faction_CRATE;
+		editorCategory = "EdCat_Supplies";
 		class TransportItems
 		{
 			item_xx(ACE_DefusalKit,1);
@@ -159,7 +166,8 @@
 	{
 		displayName = "Box [Grenades]";
 		vehicleClass = "SOR_SupplyBoxes";
-		faction = SOR_Faction_CRATE;		
+		faction = SOR_Faction_CRATE;
+		editorCategory = "EdCat_Supplies";		
 		class TransportItems{};
 		class TransportWeapons{};
 		class TransportMagazines
@@ -183,6 +191,7 @@
 		displayName = "Box [Equipment]";
 		vehicleClass = "SOR_SupplyBoxes";
 		faction = SOR_Faction_CRATE;
+		editorCategory = "EdCat_Supplies";
 		class TransportItems
 		{
 			item_xx(ACE_CableTie,10)
@@ -208,7 +217,8 @@
 	{
 		displayName = "Box [Dive Gear]";
 		vehicleClass = "SOR_SupplyBoxes";
-		faction = SOR_Faction_CRATE;		
+		faction = SOR_Faction_CRATE;
+		editorCategory = "EdCat_Supplies";		
 		class TransportItems
 		{
 			item_xx(G_Diving,20)
@@ -223,6 +233,7 @@
 		displayName = "Box [Heavy Weapons]";
 		vehicleClass = "SOR_SupplyBoxes";
 		faction = SOR_Faction_CRATE;
+		editorCategory = "EdCat_Supplies";		
 		icon = "iconCrateAmmo";
 		class TransportItems{};
 		class TransportWeapons{};
@@ -243,6 +254,7 @@
 		vehicleClass = "SOR_SupplyBoxes";
 		displayName = "Recon Resupply [Ammo&Equipment]";
 		faction = SOR_Faction_CRATE;
+		editorCategory = "EdCat_Supplies";
 		class TransportItems
 		{
 			item_xx(rhsusf_acc_ACOG3,6);
@@ -266,6 +278,7 @@
 		vehicleClass = "SOR_SupplyBoxes";
 		displayName = "Recon Training [Ammo&Equipment]";
 		faction = SOR_Faction_CRATE;
+		editorCategory = "EdCat_Supplies";
 		class TransportItems
 		{
 			item_xx(rhsusf_acc_SR25S,6);

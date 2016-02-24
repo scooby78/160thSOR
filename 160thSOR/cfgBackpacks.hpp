@@ -70,7 +70,7 @@
 		displayName = "Pack Desert M249";
 		class TransportMagazines
 		{
-			mag_xx(rhs_200rnd_556x45_M_SAW,2);
+			mag_xx(rhs_200rnd_556x45_M_SAW,1);
 		};
 	};
 	
@@ -80,7 +80,7 @@
 		displayName = "Pack Desert M240";
 		class TransportMagazines
 		{
-			mag_xx(rhsusf_100Rnd_762x51,2);
+			mag_xx(rhsusf_100Rnd_762x51,3);
 		};
 	};
 

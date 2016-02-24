@@ -39,6 +39,7 @@ class SOR_UH60M : RHS_UH60M
 		faction = SOR_Faction_D;
 		vehicleclass = "SOR_Aircraft";
 		displayName = "UH-60M (C4/P12)";
+		hiddenSelections[] = {"camo1","camo2","160thSOR_Air_Logo"};
 		class UserActions
 		{
 			class SOR_AutoDrop
@@ -161,14 +162,13 @@ class SOR_CH_47F : RHS_CH_47F
 		{
 			item_xx(ACE_FieldDressing,10);
 		};
-		class TransportWeapons{};
+		class TransportWeapons
+		{
+			weap_xx(rhs_weap_m4a1_carryhandle_grip,2)
+		};
 		class TransportMagazines
 		{
-			mag_xx(30Rnd_556x45_Stanag_Tracer_Red,40)
-			mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,10)
-			mag_xx(rhsusf_mag_7x45acp_MHP,10)
-			mag_xx(rhs_200rnd_556x45_M_SAW,4)
-			mag_xx(rhsusf_100Rnd_762x51,4)
+			mag_xx(30Rnd_556x45_Stanag_Tracer_Red,6)
 		};
 		class TransportBackpacks
 		{
@@ -195,8 +195,14 @@ class SOR_UH60M_MEV2 : RHS_UH60M_MEV2
 			item_xx(U_B_Wetsuit,3)
 			item_xx(V_RebreatherB,3)
 		};		
-		class TransportWeapons{};
-		class TransportMagazines{};
+		class TransportWeapons
+		{
+			weap_xx(rhs_weap_m4a1_carryhandle_grip,2)
+		};
+		class TransportMagazines
+		{
+			mag_xx(30Rnd_556x45_Stanag_Tracer_Red,6)
+		};
 		class TransportBackpacks
 		{
 			pack_xx(SOR_Repair_Pack_D,1)
@@ -215,11 +221,7 @@ class SOR_MELB_H6M : MELB_H6M
 			item_xx(ACE_FieldDressing,10);
 		};
 		class TransportWeapons{};
-		class TransportMagazines
-		{
-			mag_xx(30Rnd_556x45_Stanag_Tracer_Red,5)
-			mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,4)
-		};
+		class TransportMagazines{};
 		class TransportBackpacks
 		{
 			pack_xx(SOR_Repair_Pack_D,1)
@@ -238,11 +240,7 @@ class SOR_MELB_MH6M : MELB_MH6M
 			item_xx(ACE_FieldDressing,10);
 		};
 		class TransportWeapons{};
-		class TransportMagazines
-		{
-			mag_xx(30Rnd_556x45_Stanag_Tracer_Red,5)
-			mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,4)
-		};
+		class TransportMagazines{};
 		class TransportBackpacks
 		{
 			pack_xx(SOR_Repair_Pack_D,1)
@@ -287,11 +285,7 @@ class SOR_MELB_AH6M_L : MELB_AH6M_L
 			item_xx(ACE_FieldDressing,10);
 		};
 		class TransportWeapons{};
-		class TransportMagazines
-		{
-			mag_xx(30Rnd_556x45_Stanag_Tracer_Red,5)
-			mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,4)
-		};
+		class TransportMagazines{};
 		class TransportBackpacks
 		{
 			pack_xx(SOR_Repair_Pack_D,1)
@@ -310,11 +304,7 @@ class SOR_MELB_AH6M_M : MELB_AH6M_M
 			item_xx(ACE_FieldDressing,10);
 		};
 		class TransportWeapons{};
-		class TransportMagazines
-		{
-			mag_xx(30Rnd_556x45_Stanag_Tracer_Red,5)
-			mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,4)
-		};
+		class TransportMagazines{};
 		class TransportBackpacks
 		{
 			pack_xx(SOR_Repair_Pack_D,1)
@@ -333,11 +323,7 @@ class SOR_MELB_AH6M_H : MELB_AH6M_H
 			item_xx(ACE_FieldDressing,10);
 		};
 		class TransportWeapons{};
-		class TransportMagazines
-		{
-			mag_xx(30Rnd_556x45_Stanag_Tracer_Red,5)
-			mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,4)
-		};
+		class TransportMagazines{};
 		class TransportBackpacks
 		{
 			pack_xx(SOR_Repair_Pack_D,1)
@@ -357,11 +343,7 @@ class SOR_RHS_AH64D_AA : RHS_AH64D_AA
 			item_xx(ACE_morphine,4);			
 		};
 		class TransportWeapons{};
-		class TransportMagazines
-		{
-			mag_xx(30Rnd_556x45_Stanag_Tracer_Red,5)
-			mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,4)
-		};
+		class TransportMagazines{};
 		class TransportBackpacks
 		{
 			pack_xx(SOR_Repair_Pack_D,1)
@@ -380,11 +362,7 @@ class SOR_RHS_AH64D_CS : RHS_AH64D_CS
 			item_xx(ACE_FieldDressing,10);
 		};
 		class TransportWeapons{};
-		class TransportMagazines
-		{
-			mag_xx(30Rnd_556x45_Stanag_Tracer_Red,5)
-			mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,4)
-		};
+		class TransportMagazines{};
 		class TransportBackpacks
 		{
 			pack_xx(SOR_Repair_Pack_D,1)
@@ -403,20 +381,16 @@ class SOR_RHS_AH64D_GS : RHS_AH64D_GS
 			item_xx(ACE_FieldDressing,10);
 		};
 		class TransportWeapons{};
-		class TransportMagazines
-		{
-			mag_xx(30Rnd_556x45_Stanag_Tracer_Red,5)
-			mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,4)
-		};
+		class TransportMagazines{};
 		class TransportBackpacks
 		{
 			pack_xx(SOR_Repair_Pack_D,1)
 		};
 	};		
 	
-//////////	
-// Jets //
-//////////
+////////////	
+// Planes //
+////////////
 class SOR_RHS_C130J : RHS_C130J
 	{
 
@@ -474,15 +448,6 @@ class SOR_RHS_C130J : RHS_C130J
 				radius = 6;
 				statement = "this animateDoor ['door_2_2',0];this setVariable ['doorhandler_R',0,true]";
 				
-			};
-			class MoveInside
-			{
-				condition = "player in this and ((getpos this select 2)>50)";
-				displayName = "Move inside";
-				onlyforplayer = 1;
-				position = "pos_gunner";
-				radius = 6;
-				statement = "[this] spawn rhs_fnc_moveInside";
 			};
 			class openfdoor
 			{
@@ -714,7 +679,6 @@ class SOR_O_Heli_Transport_04_F : O_Heli_Transport_04_F
 	{
 		side=1;
 		faction = SOR_Faction_D;
-//		_generalMacro = "SOR_O_Heli_Transport_04_F";
 		vehicleClass = "SOR_Aircraft_Captured";
 		displayName = "MI-290 Taru (C3/POD)";
 		class eventHandlers

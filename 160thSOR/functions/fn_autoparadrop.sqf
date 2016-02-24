@@ -15,3 +15,4 @@ _trooparray = crew _vehicle;
 		[[_x],"SOR_fnc_chute",_x,false] spawn BIS_fnc_MP;
 	};
 } foreach _trooparray;
+

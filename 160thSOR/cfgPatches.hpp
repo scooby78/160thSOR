@@ -17,9 +17,9 @@ class CfgPatches
 					,"SOR_UH60M","SOR_CH_47F","SOR_UH60M_MEV2","SOR_MELB_H6M","SOR_MELB_MH6M","SOR_MELB_AH6M_L","SOR_MELB_AH6M_M","SOR_FIR_F16C_TWAS","SOR_FIR_F16C_TWAS2","SOR_FIR_F16C_OPFOR","SOR_FIR_F16C_AA";"SOR_FIR_F16C_TWAS3","SOR_MELB_MH6M_MEV"
 					,"SOR_O_Heli_Transport_04_medevac_F","SOR_O_Heli_Transport_04_covered_F","SOR_O_Heli_Attack_02_F","SOR_O_Heli_Attack_02_black_F","SOR_O_Plane_CAS_02_F","SOR_O_Heli_Light_02_v2_F"
 					,"SOR_I_Plane_Fighter_03_CAS_F","SOR_I_Plane_Fighter_03_AA_F","SOR_I_Plane_Fighter_03_AA_B","SOR_I_Plane_Fighter_03_CAS_B","SOR_RHS_Mi8amt_civilian","SOR_RHS_AH64D_AA","SOR_FIR_F16C_CAS"
-					,"SOR_Land_Medevac_HQ_V1_F","SOR_B_Slingload3","SOR_B_Slingload2","SOR_B_Slingload","SOR_RHS_AH64D_CS","SOR_RHS_AH64D_GS","SOR_MELB_AH6M_H","SOR_Box_NATO_WpsSpecial_F"
-					,"SOR_M2A3_BUSKIII","SOR_rhsusf_m113d_usarmy","SOR_rhsusf_m1a2sep1tuskid_usarmy","SOR_rhsusf_m1a2sep1tuskiid_usarmy","SOR_rhsusf_m1025_d_Mk19","SOR_HW_Box_F"
-					,"SOR_Land_Flush_Light_green_F","SOR_Land_Flush_Light_red_F","SOR_Land_Flush_Light_yellow_F","SOR_Land_PortableLight_double_F","SOR_B_Slingload_01_Cargo_F",
+					,"SOR_Land_Medevac_HQ_V1_F","SOR_B_Slingload3","SOR_B_Slingload2","SOR_B_Slingload","SOR_RHS_AH64D_CS","SOR_RHS_AH64D_GS","SOR_MELB_AH6M_H","SOR_Box_NATO_WpsSpecial_F","SOR_PJ_Pack_Box_F","SOR_rhsusf_M1083A1P2_d_fmtv_usarmy_eng"
+					,"SOR_M2A3_BUSKIII","SOR_rhsusf_m113d_usarmy","SOR_rhsusf_m1a2sep1tuskid_usarmy","SOR_rhsusf_m1a2sep1tuskiid_usarmy","SOR_rhsusf_m1025_d_Mk19","SOR_HW_Box_F","SOR_rhsusf_m113d_usarmy_supply"
+					,"SOR_Land_Flush_Light_green_F","SOR_Land_Flush_Light_red_F","SOR_Land_Flush_Light_yellow_F","SOR_Land_PortableLight_double_F","SOR_B_Slingload_01_Cargo_F","SOR_rhsusf_m1025_d_s_eng","SOR_rhsusf_m113d_usarmy_unarmed"
 					,"SOR_Gunrack1","SOR_PJ_Box_F","SOR_Air_LP","SOR_A_Box_F","SOR_M_Box_F","SOR_E_Box_F","SOR_G_Box_F","SOR_S_Box_F","SOR_divegear","SOR_A_Crate_F","SOR_AM_Crate_F","SOR_HMG_Crate_F","SOR_MOR_Crate_F"
 					,"SOR_rhsusf_m1025_d","SOR_rhsusf_m1025_d_m2","SOR_B_SDV_01_F","SOR_rhsusf_m1025_d_s","SOR_B_APC_Tracked_01_rcws_F","SOR_Box_NATO_WpsSpecial_F_Training","SOR_rhsusf_m113d_usarmy_medical","SOR_RHS_C130J","SOR_rhsusf_m1a1aim_tuski_d"
 					,"SOR_Land_Pod_Heli_Transport_04_medevac_F","SOR_O_Heli_Transport_04_F","SOR_Land_Pod_Heli_Transport_04_ammo_F","SOR_Land_Pod_Heli_Transport_04_bench_F","SOR_Land_Pod_Heli_Transport_04_covered_F"};
