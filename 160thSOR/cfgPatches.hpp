@@ -35,7 +35,8 @@ class CfgPatches
 					,"160_m4a1_blockII_grip2_KAC"
 					,"160_m4a1_carryhandle_grip_holo"
 					,"160_rhs_weap_m16a4_carryhandle_grip_pmag"
-					,"160_rhs_weap_m16a4_carryhandle"};
+					,"160_rhs_weap_m16a4_carryhandle"
+					,"160_rhs_weap_m4a1_carryhandle_grip2"};
 
 					requiredVersion = 0.1;
 

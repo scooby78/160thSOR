@@ -459,7 +459,7 @@ class SOR_Rifleman_D : B_Soldier_F
 		faction = SOR_Faction_D;
 		vehicleclass = "SOR_Infantry";
 		uniformClass = "rhs_uniform_cu_ocp";
-		displayName = "Rifleman Ammo Bearer (M249)";
+		displayName = "Rifleman AT Ammo Bearer (M249)";
 		backpack = "SOR_Rifleman_Pack_D";
 		weapons[] = {"160_m4a1_carryhandle_grip_acog", "rhsusf_weap_m9","rhs_weap_M136_hp","Throw","Put"};
 		respawnWeapons[] = {"160_m4a1_carryhandle_grip_acog", "rhsusf_weap_m9","rhs_weap_M136_hp","Throw","Put"};
@@ -521,7 +521,7 @@ class SOR_RiflemanAT_D : B_soldier_AT_F
 		};
 	};	
 		
-//Heli Pilots
+//Heli Pilot & CO-Pilot
 class SOR_HeliPilot_D : B_Pilot_F
 	
 	{
@@ -552,13 +552,13 @@ class SOR_HeliPilot_D : B_Pilot_F
 		};	
 		linkedItems[] = 
 		{	
-			"rhsusf_iotv_ocp_Rifleman", 
+			"rhsusf_iotv_ocp", 
 			"H_PilotHelmetHeli_O",
 			Airborne_Equipment
 		};              
         respawnLinkedItems[] = 
 		{	
-			"rhsusf_iotv_ocp_Rifleman", 
+			"rhsusf_iotv_ocp", 
 			"H_PilotHelmetHeli_O",
 			Airborne_Equipment
 		};
@@ -575,8 +575,8 @@ class SOR_HeliCrew_D : B_crew_F
 		backpack = "SOR_Repair_Pack_D";
 		uavHacker = 1; // allows UAV control		
 		engineer = 1; // allows unit to repair 
-		weapons[] = {"rhs_weap_m4a1_carryhandle_grip", "rhsusf_weap_m9","Throw", "Put","Laserdesignator"};
-		respawnWeapons[] = {"rhs_weap_m4a1_carryhandle_grip", "rhsusf_weap_m9","Throw", "Put","Laserdesignator"};
+		weapons[] = {"rhs_weap_m4a1_carryhandle_grip2", "rhsusf_weap_m9","Throw", "Put","Laserdesignator"};
+		respawnWeapons[] = {"rhs_weap_m4a1_carryhandle_grip2", "rhsusf_weap_m9","Throw", "Put","Laserdesignator"};
 		Items[] = {Standard_Meds,SL_Equip};  
         RespawnItems[] = {Standard_Meds,SL_Equip}; 
 		magazines[] = 
@@ -593,13 +593,13 @@ class SOR_HeliCrew_D : B_crew_F
 		};		
 		linkedItems[] = 
 		{	
-			"rhsusf_iotv_ocp_Rifleman", 
+			"rhsusf_iotv_ocp_Repair", 
 			"H_PilotHelmetHeli_O", 
 			Airborne_Equipment
 		};              
         respawnLinkedItems[] = 
 		{	
-			"rhsusf_iotv_ocp_Rifleman", 
+			"rhsusf_iotv_ocp_Repair", 
 			"H_PilotHelmetHeli_O", 
 			Airborne_Equipment
 		};
@@ -611,6 +611,7 @@ class SOR_JetPilot_D : B_Pilot_F
 	{
 		faction = SOR_Faction_D;
 		vehicleclass = "SOR_Infantry_AIR";
+		uniformClass = "U_I_pilotCoveralls";
 		displayName = "Jet Pilot";		
 		backpack = "B_Parachute";
 		weapons[] = {"rhsusf_weap_m9","Throw", "Put","Laserdesignator"};
@@ -633,13 +634,13 @@ class SOR_JetPilot_D : B_Pilot_F
 		};
 		linkedItems[] = 
 		{	
-			"V_TacVest_blk",
+			"V_Rangemaster_belt",
 			"H_PilotHelmetFighter_B",
 			Airborne_Equipment
 		};
         respawnLinkedItems[] = 
 		{	
-			"V_TacVest_blk", 
+			"V_Rangemaster_belt", 
 			"H_PilotHelmetFighter_B",
 			Airborne_Equipment
 		};
@@ -654,13 +655,13 @@ class SOR_MEVPilot_D : 	SOR_HeliPilot_D
 		displayName = "MEV Pilot";
 		linkedItems[] = 
 		{	
-			"rhsusf_iotv_ocp_Rifleman",
+			"rhsusf_iotv_ocp",
 			"rhsusf_hgu56p_mask", 
 			Airborne_Equipment
 		};
         respawnLinkedItems[] = 
 		{	
-			"rhsusf_iotv_ocp_Rifleman", 
+			"rhsusf_iotv_ocp", 
 			"rhsusf_hgu56p_mask", 
 			"ItemGPS",
 			Airborne_Equipment
@@ -677,8 +678,8 @@ class SOR_ParaJumper_D : B_medic_F
 		uniformClass = "U_B_CombatUniform_mcam_vest";
 		uavHacker = 1; // allows UAV control
 		engineer = 1; // allows unit to repair 		
-		weapons[] = {"160_m4a1_carryhandle_grip_holo", "rhsusf_weap_m9","Throw", "Put","Laserdesignator"};
-		respawnWeapons[] = {"160_m4a1_carryhandle_grip_holo", "rhsusf_weap_m9","Throw", "Put","Laserdesignator"};
+		weapons[] = {"160_rhs_weap_m4a1_carryhandle_grip2", "rhsusf_weap_m9","Throw", "Put","Laserdesignator"};
+		respawnWeapons[] = {"160_rhs_weap_m4a1_carryhandle_grip2", "rhsusf_weap_m9","Throw", "Put","Laserdesignator"};
 		Items[] = {Standard_Meds,SL_Equip};  
         RespawnItems[] = {Standard_Meds,SL_Equip}; 
 		magazines[] = 
