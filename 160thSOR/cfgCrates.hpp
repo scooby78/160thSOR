@@ -109,7 +109,6 @@
 		{
 			mag_xx(30Rnd_556x45_Stanag_Tracer_Red,40)
 			mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,10)
-			mag_xx(rhsusf_mag_7x45acp_MHP,10)
 			mag_xx(rhs_200rnd_556x45_M_SAW,3)	
 			mag_xx(rhsusf_100Rnd_762x51,3)
 		};
@@ -172,11 +171,10 @@
 		class TransportWeapons{};
 		class TransportMagazines
 		{
-			mag_xx(rhs_mag_M433_HEDP,20)
+			mag_xx(rhs_mag_M433_HEDP,10)
+			mag_xx(rhs_mag_M441_HE,10)
 			mag_xx(rhs_mag_m714_White,10)			
 			mag_xx(rhs_mag_m713_Red,10)			
-			mag_xx(MAAWS_HEAT,4)
-			mag_xx(MAAWS_HEDP,4)
 			mag_xx(rhs_mag_m67,20)
 			mag_xx(rhs_mag_an_m8hc,20)
 			mag_xx(rhs_mag_m18_green,20)			
@@ -311,7 +309,10 @@
 		faction = SOR_Faction_CRATE;
 		icon = "iconCrateAmmo";
 		class TransportItems{};
-		class TransportWeapons{};
+		class TransportWeapons
+		{
+			weap_xx(rhs_weap_M136_hp,4)
+		};
 		class TransportMagazines
 		{
 			mag_xx(30Rnd_556x45_Stanag_Tracer_Red,100)
@@ -320,10 +321,9 @@
 			mag_xx(rhs_200rnd_556x45_M_SAW,8)	
 			mag_xx(rhsusf_100Rnd_762x51,8)		
 			mag_xx(rhs_mag_M433_HEDP,10)
+			mag_xx(rhs_mag_M441_HE,10)			
 			mag_xx(rhs_mag_m714_White,10)			
 			mag_xx(rhs_mag_m713_Red,10)	
-			mag_xx(MAAWS_HEAT,8)
-			mag_xx(MAAWS_HEDP,8)			
 			mag_xx(rhs_mag_m67,20)
 			mag_xx(rhs_mag_an_m8hc,20)
 			mag_xx(rhs_mag_m18_green,20)
@@ -344,7 +344,10 @@
 			item_xx(ACE_FieldDressing,90);
 			item_xx(ACE_morphine,50);
 		};		
-		class TransportWeapons{};
+		class TransportWeapons
+		{
+			weap_xx(rhs_weap_M136_hp,4)
+		};
 		class TransportMagazines
 		{
 			mag_xx(30Rnd_556x45_Stanag_Tracer_Red,80)
@@ -353,10 +356,9 @@
 			mag_xx(rhs_200rnd_556x45_M_SAW,8)	
 			mag_xx(rhsusf_100Rnd_762x51,8)		
 			mag_xx(rhs_mag_M433_HEDP,10)
+			mag_xx(rhs_mag_M441_HE,10)
 			mag_xx(rhs_mag_m714_White,10)			
 			mag_xx(rhs_mag_m713_Red,10)	
-			mag_xx(MAAWS_HEAT,5)
-			mag_xx(MAAWS_HEDP,5)			
 			mag_xx(rhs_mag_m67,20)
 			mag_xx(rhs_mag_an_m8hc,20)
 			mag_xx(rhs_mag_m18_green,20)
@@ -424,10 +426,9 @@
 			mag_xx(rhs_200rnd_556x45_M_SAW,8)	
 			mag_xx(rhsusf_100Rnd_762x51,8)		
 			mag_xx(rhs_mag_M433_HEDP,10)
+			mag_xx(rhs_mag_M441_HE,10)
 			mag_xx(rhs_mag_m714_White,10)			
 			mag_xx(rhs_mag_m713_Red,10)	
-			mag_xx(MAAWS_HEAT,5)
-			mag_xx(MAAWS_HEDP,5)			
 			mag_xx(rhs_mag_m67,20)
 			mag_xx(rhs_mag_an_m8hc,20)
 			mag_xx(rhs_mag_m18_green,20)
