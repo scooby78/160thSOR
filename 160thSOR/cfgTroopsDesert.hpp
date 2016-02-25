@@ -126,15 +126,11 @@
 		respawnWeapons[] = {"160_m4a1_carryhandle_grip_holo", "rhsusf_weap_m9", "Throw", "Put", "Laserdesignator"};
 		Items[] =
 		{
-			"ACE_epinephrine",
-			"ACE_epinephrine",
 			Standard_Meds,
 			SL_Equip
 		};  
         RespawnItems[] = 
 		{
-			"ACE_epinephrine",
-			"ACE_epinephrine",
 			Standard_Meds,
 			SL_Equip
 		};
@@ -202,13 +198,13 @@
 		engineer = 1; // allows unit to repair 
 		linkedItems[] = 
 		{	
-			"rhsusf_iotv_ocp_Rifleman", 
+			"rhsusf_iotv_ocp", 
 			"H_PilotHelmetHeli_O",
 			Airborne_Equipment
 		};              
         respawnLinkedItems[] = 
 		{	
-			"rhsusf_iotv_ocp_Rifleman", 
+			"rhsusf_iotv_ocp", 
 			"H_PilotHelmetHeli_O",
 			Airborne_Equipment
 		};
@@ -581,14 +577,22 @@ class SOR_HeliCrew_D : B_crew_F
         RespawnItems[] = {Standard_Meds,SL_Equip}; 
 		magazines[] = 
 		{
-			Standard_Mags,
 			Std_Pistol,
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"rhs_mag_m18_green",
+			"rhs_mag_an_m8hc",
 			"Laserbatteries"
 		};
 		respawnMagazines[] =
 		{
-			Standard_Mags,
 			Std_Pistol,
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"30Rnd_556x45_Stanag_Tracer_Red",
+			"rhs_mag_m18_green",
+			"rhs_mag_an_m8hc",
 			"Laserbatteries"
 		};		
 		linkedItems[] = 
@@ -611,7 +615,6 @@ class SOR_JetPilot_D : B_Pilot_F
 	{
 		faction = SOR_Faction_D;
 		vehicleclass = "SOR_Infantry_AIR";
-		uniformClass = "U_I_pilotCoveralls";
 		displayName = "Jet Pilot";		
 		backpack = "B_Parachute";
 		weapons[] = {"rhsusf_weap_m9","Throw", "Put","Laserdesignator"};
@@ -796,15 +799,17 @@ class SOR_ParaJumper_D : B_medic_F
 	{
 		icon =  "iconMan";
 		backpack = "tf_rt1523g_rhs";
-		displayName = "Recon JTAC";		
+		displayName = "Recon JTAC";	
+		weapons[] = {"160_rhs_weap_m16a4_carryhandle_grip_pmag","Throw","Put","ACE_Vector"};
+		respawnWeapons[] = {"160_rhs_weap_m16a4_carryhandle_grip_pmag","Throw","Put","ACE_Vector"};		
 	};
 
 	class SOR_ReconRifleman_D : SOR_ReconLeader_D	
 	{
 		icon =  "iconMan";
 		displayName = "Recon Rifleman";
-		weapons[] = {"160_rhs_weap_m16a4_carryhandle_grip_pmag","Throw","Put"};
-		respawnWeapons[] = {"160_rhs_weap_m16a4_carryhandle_grip_pmag","Throw","Put"};
+		weapons[] = {"160_rhs_weap_m16a4_carryhandle_grip_pmag","Throw","Put","ACE_Vector"};
+		respawnWeapons[] = {"160_rhs_weap_m16a4_carryhandle_grip_pmag","Throw","Put","ACE_Vector"};
 		magazines[] =
 		{
 			Recon_Mags

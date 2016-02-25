@@ -32,6 +32,7 @@
 	class RHS_AH64D_CS;
 	class RHS_AH64D_GS;
 	class RHS_C130J;
+	class RHS_A10;
 
 // Transport Helos	
 class SOR_UH60M : RHS_UH60M
@@ -100,14 +101,13 @@ class SOR_UH60M : RHS_UH60M
 		{
 			item_xx(ACE_FieldDressing,10);
 		};
-		class TransportWeapons{};
+		class TransportWeapons
+		{
+			weap_xx(rhs_weap_m4a1_carryhandle_grip2,2)
+		};
 		class TransportMagazines
 		{
-			mag_xx(30Rnd_556x45_Stanag_Tracer_Red,20)
-			mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,10)
-			mag_xx(rhsusf_mag_7x45acp_MHP,10)
-			mag_xx(rhs_200rnd_556x45_M_SAW,2)
-			mag_xx(rhsusf_100Rnd_762x51,2)
+			mag_xx(30Rnd_556x45_Stanag_Tracer_Red,6)
 		};
 		class TransportBackpacks
 		{
@@ -164,7 +164,7 @@ class SOR_CH_47F : RHS_CH_47F
 		};
 		class TransportWeapons
 		{
-			weap_xx(rhs_weap_m4a1_carryhandle_grip,2)
+			weap_xx(rhs_weap_m4a1_carryhandle_grip2,2)
 		};
 		class TransportMagazines
 		{
@@ -197,7 +197,7 @@ class SOR_UH60M_MEV2 : RHS_UH60M_MEV2
 		};		
 		class TransportWeapons
 		{
-			weap_xx(rhs_weap_m4a1_carryhandle_grip,2)
+			weap_xx(rhs_weap_m4a1_carryhandle_grip2,2)
 		};
 		class TransportMagazines
 		{
@@ -340,7 +340,6 @@ class SOR_RHS_AH64D_AA : RHS_AH64D_AA
 		class TransportItems 
 		{
 			item_xx(ACE_FieldDressing,10);
-			item_xx(ACE_morphine,4);			
 		};
 		class TransportWeapons{};
 		class TransportMagazines{};
@@ -391,9 +390,26 @@ class SOR_RHS_AH64D_GS : RHS_AH64D_GS
 ////////////	
 // Planes //
 ////////////
+class SOR_RHS_A10 : RHS_A10
+	{
+		faction = SOR_Faction_D;
+		vehicleClass = "SOR_Aircraft";
+		class TransportItems 
+		{
+			item_xx(ACE_FieldDressing,10);
+		};
+		class TransportWeapons{};
+		class TransportMagazines{};
+		class TransportBackpacks
+		{
+			pack_xx(SOR_Repair_Pack_D,1)
+		};
+	};
+/*
+C130 broken and buggy do not use 25/02/2016
+
 class SOR_RHS_C130J : RHS_C130J
 	{
-
 		faction = SOR_Faction_D;
 		vehicleClass = "SOR_Aircraft";
 		displayName = "C130J (C3/P24/V1)";
@@ -503,10 +519,7 @@ class SOR_RHS_C130J : RHS_C130J
 			pack_xx(SOR_Repair_Pack_D,1)
 		};
 	};
-
-
-
-
+*/
 
 /*  
 

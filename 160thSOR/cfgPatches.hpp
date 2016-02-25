@@ -10,7 +10,7 @@ class CfgPatches
 	class SOR_Desert_Loadouts 
 	{
 		units[] = {"SOR_Base","SOR_Actual_D","SOR_TeamLeader_D","SOR_Medic_D","SOR_M249AR_D","SOR_M240AR_D","SOR_Grenadier_D","SOR_Rifleman_D","SOR_RiflemanAT_D","SOR_Teamleader_DT"
-					,"SOR_ReconSpotter_D","SOR_Recon_M249AR_D","SOR_Marksman_D","SOR_ReconRifleman_D","SOR_ReconJTAC_D","SOR_ReconLeader_D","SOR_Spotter_D","SOR_Sniper_D"
+					,"SOR_ReconSpotter_D","SOR_Recon_M249AR_D","SOR_Marksman_D","SOR_ReconRifleman_D","SOR_ReconJTAC_D","SOR_ReconLeader_D","SOR_Spotter_D","SOR_Sniper_D","SOR_RHS_A10"
 					,"SOR_HeliPilot_D","SOR_HeliCrew_D","SOR_RTO_D","SOR_Commander_D","SOR_JetPilot_D","SOR_MEVPilot_D","SOR_ParaJumper_D","SOR_MechOperator_D","SOR_MechCrewCommander_D"
 					,"SOR_MechCrew_D","SOR_MechCommand_D","SOR_M2A3_BUSKIII","SOR_HelipadRescue_F","SOR_Land_HelipadCircle_F","SOR_MechService","SOR_MechDriver_D","SOR_Engineer_D"
 					,"SOR_MORRFL_D","SOR_MORCarrier_D","SOR_MORGunner_D","SOR_MORActual_D","SOR_HMGRFL_D","SOR_HMGCarrier_D","SOR_HMGGunner_D","SOR_HMGActual_D","SOR_Rilfeman_Ammo_D"
