@@ -14,6 +14,24 @@ class cfgWeapons
 	class rhs_weap_m16a4_carryhandle_grip_pmag;
 	class rhs_weap_m4a1_carryhandle_grip2;
 	
+
+	class 160_rhs_weap_m4a1_carryhandle_grip2: rhs_weap_m4a1_carryhandle_grip2 
+	{
+		class LinkedItems 
+		{
+			class LinkedItemsOptic 
+			{
+				item = "rhsusf_acc_eotech_552";
+				slot = "CowsSlot";
+			};
+			class LinkedItemsAcc 
+			{
+				item = "rhsusf_acc_anpeq15_light";
+				slot = "PointerSlot";
+			};
+		};
+	};	
+
 	class 160_m4a1_carryhandle_grip_holo: rhs_weap_m4a1_carryhandle_grip 
 	{
 		class LinkedItems 

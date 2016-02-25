@@ -10,13 +10,11 @@
 							"ItemWatch",\
 							"tf_anprc152"
 
-
 #define Airborne_Equipment  "ItemMap",\
 							"ItemCompass",\
 							"ACE_Altimeter",\
 							"tf_anprc152",\
 							"ItemGPS"
-
 							
 #define Recon_Equipment 	"ItemMap",\
 							"ItemCompass",\
@@ -24,7 +22,6 @@
 							"tf_microdagr",\
 							"tf_anprc152",\
 							"ItemGPS" 						
-
 						
 #define Standard_Meds   "ACE_fieldDressing",\
 						"ACE_fieldDressing",\
@@ -63,8 +60,19 @@
 						"ACE_MapTools",\
 						"ACE_Flashlight_XL50"
 
-
 #define Standard_Mags 	"30Rnd_556x45_Stanag_Tracer_Red",\
+						"30Rnd_556x45_Stanag_Tracer_Red",\
+						"30Rnd_556x45_Stanag_Tracer_Red",\
+						"30Rnd_556x45_Stanag_Tracer_Red",\
+						"30Rnd_556x45_Stanag_Tracer_Red",\
+						"30Rnd_556x45_Stanag_Tracer_Red",\
+						"rhs_mag_m67","rhs_mag_m67",\
+						"rhs_mag_an_m8hc",\
+						"rhs_mag_an_m8hc",\
+						"rhs_mag_an_m8hc",\
+						"rhs_mag_m18_green"
+
+#define SL_Mags	 		"30Rnd_556x45_Stanag_Tracer_Red",\
 						"30Rnd_556x45_Stanag_Tracer_Red",\
 						"30Rnd_556x45_Stanag_Tracer_Red",\
 						"30Rnd_556x45_Stanag_Tracer_Red",\

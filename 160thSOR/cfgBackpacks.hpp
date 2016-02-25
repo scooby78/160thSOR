@@ -49,8 +49,7 @@
 		displayName = "Pack Desert Rifleman (M249)";
 		class TransportMagazines
 		{
-			mag_xx(rhsusf_100Rnd_556x45_soft_pouch,1);
-			mag_xx(rhs_200rnd_556x45_M_SAW,2);
+			mag_xx(rhs_200rnd_556x45_M_SAW,1);
 		};
 	};
 	
@@ -60,7 +59,7 @@
 		displayName = "Pack Desert Rifleman (M240)";
 		class TransportMagazines
 		{
-			mag_xx(rhsusf_100Rnd_762x51,3);
+			mag_xx(rhsusf_100Rnd_762x51,2);
 		};
 	};
 
@@ -70,7 +69,7 @@
 		displayName = "Pack Desert M249";
 		class TransportMagazines
 		{
-			mag_xx(rhs_200rnd_556x45_M_SAW,2);
+			mag_xx(rhs_200rnd_556x45_M_SAW,1);
 		};
 	};
 	
@@ -80,7 +79,7 @@
 		displayName = "Pack Desert M240";
 		class TransportMagazines
 		{
-			mag_xx(rhsusf_100Rnd_762x51,2);
+			mag_xx(rhsusf_100Rnd_762x51,3);
 		};
 	};
 
@@ -123,7 +122,6 @@
 			mag_xx(rhs_mag_m713_Red,8);
 			mag_xx(rhs_mag_m715_Green,2);
 			mag_xx(rhs_mag_m716_yellow,2);
-//			mag_xx(rhs_mag_m714_White,3);
 		};	
 	};
 
