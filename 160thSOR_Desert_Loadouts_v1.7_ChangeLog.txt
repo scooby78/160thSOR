@@ -23,6 +23,7 @@ CHANGED	- "160_m249_pip" is now called "160_rhs_weap_m249_pip_L_para" and uses "
 CHANGED	- "rhs_200rnd_556x45_M_SAW" replaced with "rhsusf_200Rnd_556x45_soft_pouch"											[cfgTroopsDesert.hpp][cfgWeapons.hpp][cfgArmor.hpp][cfgPatches.hpp][cfgCrates.hpp][cfgAircraft.hpp]
 CHANGED - Macro "Std_Pistol" to 3 x "rhsusf_mag_15Rnd_9x19_FMJ" instead of "11Rnd_45ACP_Mag"										[define_macros.hpp]
 CHANGED - All backpacks using "B_AssaultPack_cbr" now use "rhsusf_assault_eagleaiii_ocp" model instead									[cfgBackpacks.hpp]
+CHANGED	- "Fnc_Markunits" now allows for cusomisable time delay														[\functions\]
 
 V1.6a**************************************************************************************************************************************************************************************************************************
 
