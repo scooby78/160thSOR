@@ -57,8 +57,8 @@ class SOR_Opfor_Rifleman_D : O_Soldier_F
 		vehicleclass = "SOR_Infantry";
 		uniformClass = "rhs_uniform_vdv_emr";
 	    backpack = "";
-		weapons[] = {"rhs_weap_ak74m_pkas","Throw","Put"};
-		respawnWeapons[] = {"rhs_weap_ak74m_pkas","Throw","Put"};
+		weapons[] = {"160_rhs_weap_ak74m_pkas","Throw","Put"};
+		respawnWeapons[] = {"160_rhs_weap_ak74m_pkas","Throw","Put"};
 		Items[] = {Standard_Meds};
         RespawnItems[] = {Standard_Meds};
 		magazines[] = {Opfor_Mags};
@@ -129,6 +129,6 @@ class SOR_Opfor_TL_D : SOR_Opfor_Rifleman_D
 	{
 		displayName = "Team Leader";
 	    backpack = "SOR_OpFor_TL_Pack_D";
-		weapons[] = {"rhs_weap_ak74m_pkas", "Throw", "Put", "Rangefinder"};
-		respawnWeapons[] = {"rhs_weap_ak74m_pkas", "Throw", "Put", "Rangefinder"};
+		weapons[] = {"160_rhs_weap_ak74m_pkas", "Throw", "Put", "Rangefinder"};
+		respawnWeapons[] = {"160_rhs_weap_ak74m_pkas", "Throw", "Put", "Rangefinder"};
 	};

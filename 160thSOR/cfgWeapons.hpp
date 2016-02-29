@@ -13,7 +13,19 @@ class cfgWeapons
 	class rhs_weap_sr25_ec;
 	class rhs_weap_m16a4_carryhandle_grip_pmag;
 	class rhs_weap_m4a1_carryhandle_grip2;
-	
+	class rhs_weap_ak74m_pkas;
+
+	class 160_rhs_weap_ak74m_pkas: rhs_weap_ak74m_pkas 
+	{
+		class LinkedItems 
+		{
+			class LinkedItemsOptic 
+			{
+				item = "rhs_acc_1p78";
+				slot = "CowsSlot";
+			};
+		};
+	};	
 
 	class 160_rhs_weap_m4a1_carryhandle_grip2: rhs_weap_m4a1_carryhandle_grip2 
 	{

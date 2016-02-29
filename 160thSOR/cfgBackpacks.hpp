@@ -39,7 +39,6 @@
 			item_xx(ACE_FieldDressing,30);
 			item_xx(ACE_morphine,20);
 			item_xx(ACE_epinephrine,20);
-			item_xx(rhsusf_acc_ACOG,1)			
 		};		
 	};
 

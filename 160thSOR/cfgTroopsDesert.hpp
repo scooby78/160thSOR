@@ -702,13 +702,15 @@ class SOR_ParaJumper_D : B_medic_F
 			"rhsusf_iotv_ocp_Medic",
 			"H_HelmetSpecB_paint2",
 			"rhs_ess_black", 
+			"rhsusf_acc_ACOG",
 			Airborne_Equipment
 		};
         respawnLinkedItems[] = 
 		{	
-			"rhsusf_iotv_ocp_Medic", 
-			"H_HelmetSpecB_paint2", 
-			"rhs_ess_black",  
+			"rhsusf_iotv_ocp_Medic",
+			"H_HelmetSpecB_paint2",
+			"rhs_ess_black", 
+			"rhsusf_acc_ACOG",
 			Airborne_Equipment
 		};
 		class UserActions
