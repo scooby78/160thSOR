@@ -479,7 +479,7 @@ class SOR_Rifleman_D : B_Soldier_F
 		};
 	};					
 
-class SOR_Rilfeman_Ammo_D : SOR_Rifleman_D	
+class SOR_Rifleman_ammo_D : SOR_Rifleman_D	
 	{
 		displayName = "Rifleman Ammo Bearer (M240)";
 		backpack = "SOR_Rifleman_Ammo_Pack_D";
@@ -683,8 +683,8 @@ class SOR_ParaJumper_D : B_medic_F
 		engineer = 1; // allows unit to repair 		
 		weapons[] = {"160_rhs_weap_m4a1_carryhandle_grip2", "rhsusf_weap_m9","Throw", "Put","Laserdesignator"};
 		respawnWeapons[] = {"160_rhs_weap_m4a1_carryhandle_grip2", "rhsusf_weap_m9","Throw", "Put","Laserdesignator"};
-		Items[] = {Standard_Meds,SL_Equip};  
-        RespawnItems[] = {Standard_Meds,SL_Equip}; 
+		Items[] = {Standard_Meds,SL_Equip,"rhsusf_acc_ACOG"};  
+        RespawnItems[] = {Standard_Meds,SL_Equip,"rhsusf_acc_ACOG"}; 
 		magazines[] = 
 		{
 			Standard_Mags,
@@ -706,9 +706,9 @@ class SOR_ParaJumper_D : B_medic_F
 		};
         respawnLinkedItems[] = 
 		{	
-			"rhsusf_iotv_ocp_Medic", 
-			"H_HelmetSpecB_paint2", 
-			"rhs_ess_black",  
+			"rhsusf_iotv_ocp_Medic",
+			"H_HelmetSpecB_paint2",
+			"rhs_ess_black", 
 			Airborne_Equipment
 		};
 		class UserActions

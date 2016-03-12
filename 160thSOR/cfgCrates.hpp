@@ -204,6 +204,11 @@
 			item_xx(muzzle_snds_acp,20)
 			item_xx(Laserdesignator,3)
 			item_xx(Laserbatteries,6)
+			item_xx(ACE_EntrenchingTool,6)
+			item_xx(ACE_SpraypaintRed,10)
+			item_xx(ACE_SpraypaintGreen,10)
+			item_xx(ACE_SpraypaintBlue,10)			
+			item_xx(ACE_SpraypaintBlack,10)				
 		};		
 		class TransportWeapons{};
 		class TransportMagazines{};

@@ -1,6 +1,9 @@
 ******************************************************
 ****Best viewed in full screen with word wrap off*****
 ******************************************************
+V1.8 onwards see https://github.com/scooby78/160thSOR for changes
+
+
 V1.7**************************************************************************************************************************************************************************************************************************
 
 ADDED	- New units "SOR_Opfor_Rifleman_D","SOR_OpFor_PKM_D", "SOR_Opfor_TL_D" russian vdv loadouts for FTT training 							[cfgOpForDesert.hpp]

@@ -1,9 +1,12 @@
-//Custom Backpacks
-	class B_Kitbag_cbr;
-	class B_AssaultPack_cbr;
+/*
+	Name: 160th SOR Mod
+	Author: Scooby, AmTheAgent
+	Date: 28/09/15
+	Description: cfgBackpacks.hpp
+*/
+
+//Call base backpacks
 	class tf_rt1523g_rhs;
-	class B_Kitbag_mcamo;
-	class B_AssaultPack_mcamo;
 	class rhsusf_assault_eagleaiii_ocp;
 
 	
@@ -39,7 +42,6 @@
 			item_xx(ACE_FieldDressing,30);
 			item_xx(ACE_morphine,20);
 			item_xx(ACE_epinephrine,20);
-			item_xx(rhsusf_acc_ACOG,1)			
 		};		
 	};
 
@@ -69,7 +71,7 @@
 		displayName = "Pack Desert M249";
 		class TransportMagazines
 		{
-			mag_xx(rhs_200rnd_556x45_M_SAW,1);
+			mag_xx(rhs_200rnd_556x45_M_SAW,2);
 		};
 	};
 	
@@ -137,7 +139,7 @@
 	};
 
 //Custom Sniper Pack	
-	class SOR_Sniper_Camo : B_AssaultPack_mcamo
+	class SOR_Sniper_Camo : rhsusf_assault_eagleaiii_ocp
 	{
 		displayName = "Pack Camo Sniper";
 		class TransportItems
