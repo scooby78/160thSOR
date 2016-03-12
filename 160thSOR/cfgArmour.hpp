@@ -22,7 +22,7 @@
 	class B_APC_Tracked_01_rcws_F;
 	class rhsusf_M1083A1P2_d_fmtv_usarmy;
 	class RHS_M6;
-
+	class B_APC_Tracked_01_CRV_F;
 
 //M6A2	
 class SOR_RHS_M6 : RHS_M6
@@ -348,7 +348,7 @@ class SOR_rhsusf_M1083A1P2_d_fmtv_usarmy_eng : rhsusf_M1083A1P2_d_fmtv_usarmy
 	};
 };	
 	
-//Engineer armored transport
+//Engineer armored recovery
 class SOR_B_APC_Tracked_01_rcws_F : B_APC_Tracked_01_rcws_F
 {
 	faction = SOR_Faction_D;
@@ -359,13 +359,34 @@ class SOR_B_APC_Tracked_01_rcws_F : B_APC_Tracked_01_rcws_F
 	};
 	class TransportWeapons
 	{
-		weap_xx(rhs_weap_m4a1_carryhandle_grip,4)
+		weap_xx(rhs_weap_m4a1_carryhandle_grip,2)
 		weap_xx(rhs_weap_M136_hp,2)			
 	};
 	class TransportMagazines{};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_CombatPack_D,4)
+		pack_xx(SOR_CombatPack_D,2)
+		pack_xx(SOR_OrdanancePack_D,2)		
+	};
+};	
+
+class SOR_B_APC_Tracked_01_CRV_F : B_APC_Tracked_01_CRV_F
+{
+	faction = SOR_Faction_D;
+	vehicleclass = "SOR_Vehicles";
+	class TransportItems
+	{
+		item_xx(ToolKit,1)			
+	};
+	class TransportWeapons
+	{
+		weap_xx(rhs_weap_m4a1_carryhandle_grip,2)
+		weap_xx(rhs_weap_M136_hp,2)			
+	};
+	class TransportMagazines{};
+	class TransportBackpacks
+	{
+		pack_xx(SOR_CombatPack_D,2)
 		pack_xx(SOR_OrdanancePack_D,2)		
 	};
 };	

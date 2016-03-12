@@ -130,6 +130,7 @@ class CfgPatches
 			"SOR_rhsusf_m1025_d_s",
 			"SOR_rhsusf_M1083A1P2_d_fmtv_usarmy_eng",
 			"SOR_B_APC_Tracked_01_rcws_F",
+			"SOR_B_APC_Tracked_01_CRV_F",
 			"SOR_rhsusf_m1025_d",
 			"SOR_rhsusf_m1025_d_Mk19",			
 			"SOR_rhsusf_m1025_d_m2"
