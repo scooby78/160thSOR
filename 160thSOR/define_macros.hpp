@@ -53,7 +53,8 @@
 
 #define SL_Equip 		"ACE_CableTie",\
 						"ACE_CableTie",\
-						"ACE_MapTools"
+						"ACE_MapTools",\
+						"ACE_Flashlight_XL50"
 						
 #define Recon_Equip 	"ACE_CableTie",\
 						"ACE_CableTie",\

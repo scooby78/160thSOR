@@ -23,7 +23,7 @@ class CfgPatches
 			"SOR_M240AR_D",
 			"SOR_Grenadier_D",
 			"SOR_Rifleman_D",
-			"SOR_Rilfeman_Ammo_D",			
+			"SOR_Rifleman_ammo_D",			
 			"SOR_RiflemanAT_D",
 			"SOR_HeliPilot_D",
 			"SOR_HeliCrew_D",

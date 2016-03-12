@@ -33,14 +33,45 @@
 	class RHS_AH64D_GS;
 	class RHS_C130J;
 	class RHS_A10;
+	class B_Heli_Transport_01_camo_F;
 
-// Transport Helos	
+
+// Transport Helos
+class SOR_B_Heli_Transport_01_camo_F : B_Heli_Transport_01_camo_F
+	{
+		faction = SOR_Faction_D;
+		vehicleclass = "SOR_Aircraft";
+		displayName = "UH-80 Ghost Hawk (C4/P12)";
+		class eventHandlers
+		{
+			Init = "[_this select 0] call ace_fastroping_fnc_equipFRIES;";
+		};	
+		class TransportItems 
+		{
+			item_xx(ACE_FieldDressing,10);
+			item_xx(V_RebreatherB,2);
+		};
+		class TransportWeapons
+		{
+			weap_xx(rhs_weap_m4a1_carryhandle_grip2,2)
+		};
+		class TransportMagazines
+		{
+			mag_xx(30Rnd_556x45_Stanag_Tracer_Red,6)
+		};
+		class TransportBackpacks
+		{
+			pack_xx(SOR_Repair_Pack_D,1)			
+		};
+	};
+	
 class SOR_UH60M : RHS_UH60M
 	{
 		faction = SOR_Faction_D;
 		vehicleclass = "SOR_Aircraft";
 		displayName = "UH-60M (C4/P12)";
-		hiddenSelections[] = {"camo1","camo2","160thSOR_Air_Logo"};
+		ace_fastroping_enabled = 1;
+		ace_fastroping_ropeOrigins[] = {{1.4, 1.9, -.4}};
 		class UserActions
 		{
 			class SOR_AutoDrop
@@ -100,6 +131,7 @@ class SOR_UH60M : RHS_UH60M
 		class TransportItems 
 		{
 			item_xx(ACE_FieldDressing,10);
+			item_xx(V_RebreatherB,2);
 		};
 		class TransportWeapons
 		{
@@ -120,8 +152,12 @@ class SOR_CH_47F : RHS_CH_47F
 		faction = SOR_Faction_D;
 		vehicleclass = "SOR_Aircraft";
 		displayName = "CH-47F (C4/P24)[Refuel]";
-		transportFuel = 30000;
-		supplyRadius = 30;
+//		transportFuel = 30000;
+//		supplyRadius = 30;
+//		ace_fastroping_enabled = 1;
+//		ace_fastroping_ropeOrigins[] = {{0,-0.6,-3}};		
+		ace_refuel_fuelCargo = 10000;
+		ace_refuel_hooks[] = {[0.28,-4.99,-0.3],[-0.25,-4.99,-0.3]};
 		class UserActions
 		{
 			class SOR_AutoDrop
@@ -161,6 +197,7 @@ class SOR_CH_47F : RHS_CH_47F
 		class TransportItems 
 		{
 			item_xx(ACE_FieldDressing,10);
+			item_xx(V_RebreatherB,2);			
 		};
 		class TransportWeapons
 		{
@@ -184,8 +221,10 @@ class SOR_UH60M_MEV2 : RHS_UH60M_MEV2
 		driverCanEject = 1; // was 0, Allows pilot to exit heli with engine running
 		ejectDeadCargo = 1; //test dead eject
 		crewCrashProtection = 0.20; /// Was 0.25, multiplier of damage to crew of the vehicle => low number means better protection //test
-		getInRadius = 4;
+		getInRadius = 4;		
 		crew = "SOR_MEVPilot_D";
+//		ace_fastroping_enabled = 1;
+//		ace_fastroping_ropeOrigins[] = {{1.4, 1.9, -.4}};		
 		class TransportItems
 		{
 			item_xx(ACE_Fielddressing,24)
@@ -219,6 +258,7 @@ class SOR_MELB_H6M : MELB_H6M
 		class TransportItems 
 		{
 			item_xx(ACE_FieldDressing,10);
+			item_xx(V_RebreatherB,2);
 		};
 		class TransportWeapons{};
 		class TransportMagazines{};
@@ -235,9 +275,13 @@ class SOR_MELB_MH6M : MELB_MH6M
 		displayName = "MH-6M (C2/P6)";
 		fuelCapacity = 110; //was fuelCapacity = 242;
 		fuelConsumptionRate = 0.0555; //was 0.0368;
+//		ace_fastroping_enabled = 1;
+//		ace_fastroping_ropeOrigins[] = {{1.2,.8,0},{-1.2,.8,0}}; // outwards from ctr, forwards from ctr, vertical	(Gets stuck on seat)
+//		ace_fastroping_ropeOrigins[] = {{1,1.2,-1.9},{-1,1.2,-1.9}}; // outwards from ctr, forwards from ctr, vertical	
 		class TransportItems 
 		{
 			item_xx(ACE_FieldDressing,10);
+			item_xx(V_RebreatherB,2);			
 		};
 		class TransportWeapons{};
 		class TransportMagazines{};
@@ -255,6 +299,8 @@ class SOR_MELB_MH6M_MEV : MELB_MH6M
 		driverCanEject = 1; // was 0 test eject
 		ejectDeadCargo = 1; //test dead eject	
 		getInRadius = 4;
+//		ace_fastroping_enabled = 1;
+//		ace_fastroping_ropeOrigins[] = {{1.2,.8,0},{-1.2,.8,0}};
 		class TransportItems 
 		{
 			item_xx(ACE_Fielddressing,24)
@@ -278,11 +324,12 @@ class SOR_MELB_AH6M_L : MELB_AH6M_L
 		faction = SOR_Faction_D;
 		vehicleclass = "SOR_Aircraft";
 		displayName = "AH-6M_L (C2/P1)";
-		fuelCapacity = 200; //was fuelCapacity = 242;
-		fuelConsumptionRate = 0.0555; //was 0.0368;
+//		fuelCapacity = 200; //was fuelCapacity = 242;
+//		fuelConsumptionRate = 0.0555; //was 0.0368;
 		class TransportItems 
 		{
 			item_xx(ACE_FieldDressing,10);
+			item_xx(V_RebreatherB,2);			
 		};
 		class TransportWeapons{};
 		class TransportMagazines{};
@@ -302,6 +349,7 @@ class SOR_MELB_AH6M_M : MELB_AH6M_M
 		class TransportItems 
 		{
 			item_xx(ACE_FieldDressing,10);
+			item_xx(V_RebreatherB,2);			
 		};
 		class TransportWeapons{};
 		class TransportMagazines{};
@@ -321,6 +369,7 @@ class SOR_MELB_AH6M_H : MELB_AH6M_H
 		class TransportItems 
 		{
 			item_xx(ACE_FieldDressing,10);
+			item_xx(V_RebreatherB,2);			
 		};
 		class TransportWeapons{};
 		class TransportMagazines{};
@@ -340,6 +389,7 @@ class SOR_RHS_AH64D_AA : RHS_AH64D_AA
 		class TransportItems 
 		{
 			item_xx(ACE_FieldDressing,10);
+			item_xx(V_RebreatherB,2);			
 		};
 		class TransportWeapons{};
 		class TransportMagazines{};
@@ -359,6 +409,7 @@ class SOR_RHS_AH64D_CS : RHS_AH64D_CS
 		class TransportItems 
 		{
 			item_xx(ACE_FieldDressing,10);
+			item_xx(V_RebreatherB,2);			
 		};
 		class TransportWeapons{};
 		class TransportMagazines{};
@@ -378,6 +429,7 @@ class SOR_RHS_AH64D_GS : RHS_AH64D_GS
 		class TransportItems 
 		{
 			item_xx(ACE_FieldDressing,10);
+			item_xx(V_RebreatherB,2);			
 		};
 		class TransportWeapons{};
 		class TransportMagazines{};
@@ -698,7 +750,11 @@ class SOR_O_Heli_Transport_04_F : O_Heli_Transport_04_F
 		{
 			init="_this call SLX_XEH_EH_Init;";
 		};
-		class TransportItems{};		
+		class TransportItems 
+		{
+			item_xx(ACE_FieldDressing,10);
+			item_xx(V_RebreatherB,2);			
+		};	
 		class TransportWeapons{};
 		class TransportMagazines{};
 		class TransportBackpacks
@@ -754,7 +810,11 @@ class SOR_O_Heli_Transport_04_bench_F : O_Heli_Transport_04_bench_F
 				statement = "[this] spawn sor_fnc_autoparadrop";
 			};
 		};		
-		class TransportItems{};
+		class TransportItems 
+		{
+			item_xx(ACE_FieldDressing,10);
+			item_xx(V_RebreatherB,2);			
+		};
 		class TransportWeapons{};
 		class TransportMagazines{};
 		class TransportBackpacks
@@ -770,7 +830,11 @@ class SOR_O_Heli_Transport_04_covered_F : O_Heli_Transport_04_covered_F
 		faction = SOR_Faction_D;
 		vehicleclass = "SOR_Aircraft_Captured";
 		displayName = "MI-290 Taru (Covered C3/P16)";
-		class TransportItems{};
+		class TransportItems 
+		{
+			item_xx(ACE_FieldDressing,10);
+			item_xx(V_RebreatherB,2);			
+		};
 		class TransportWeapons{};
 		class TransportMagazines{};
 		class TransportBackpacks
@@ -786,7 +850,11 @@ class SOR_RHS_Mi8amt_civilian : RHS_Mi8amt_civilian
 		faction = SOR_Faction_D;
 		vehicleclass = "SOR_Aircraft_Captured";
 		displayName = "MI-8AMT (C2/P20)";
-		class TransportItems{};
+		class TransportItems 
+		{
+			item_xx(ACE_FieldDressing,10);
+			item_xx(V_RebreatherB,2);			
+		};
 		class TransportWeapons{};
 		class TransportMagazines{};
 		class TransportBackpacks
@@ -805,7 +873,8 @@ class SOR_O_Heli_Attack_02_F : O_Heli_Attack_02_F
 		displayName = "MI-48 Kajman (C2/P8)";
 		class TransportItems 
 		{
-			item_xx(ACE_FieldDressing,16);
+			item_xx(ACE_FieldDressing,10);
+			item_xx(V_RebreatherB,2);			
 		};
 		class TransportWeapons{};
 		class TransportMagazines
@@ -827,7 +896,8 @@ class SOR_O_Heli_Attack_02_black_F : O_Heli_Attack_02_black_F
 		displayName = "MI-48 Kajman (Black C2/P8)";
 		class TransportItems 
 		{
-			item_xx(ACE_FieldDressing,16);
+			item_xx(ACE_FieldDressing,10);
+			item_xx(V_RebreatherB,2);			
 		};
 		class TransportWeapons{};
 		class TransportMagazines
@@ -849,7 +919,8 @@ class SOR_O_Heli_Light_02_v2_F : O_Heli_Light_02_v2_F
 		displayName = "PO-30 Orca (B&W C2/P8)";
 		class TransportItems 
 		{
-			item_xx(ACE_FieldDressing,16);
+			item_xx(ACE_FieldDressing,10);
+			item_xx(V_RebreatherB,2);			
 		};
 		class TransportWeapons{};
 		class TransportMagazines
