@@ -158,30 +158,44 @@ class CfgGroups
 					class Unit16 
 					{
 						side = 1;
-						vehicle = "SOR_Rilfeman_Ammo_D";
+						vehicle = "SOR_Rifleman_Ammo_D";
 						rank = PRIVATE;
 						position[] = {0, -22, 0};
 					};
 				};
 				class SOR_Recon_D
 					{
-						name = "Sniper Team";
+						name = "Viper Team";
 						faction = "SOR_Faction_D";
 						side = 1;
 						rarityGroup = 0.75;
 						class Unit0 
 						{
 							side = 1;
-							vehicle = "SOR_Sniper_D";
+							vehicle = "SOR_ReconLeader_D";
 							rank = SERGEANT;
 							position[] = {0, 0, 0};
 						};
 						class Unit1
 						{
 							side = 1;
-							vehicle = "SOR_Spotter_D";
+							vehicle = "SOR_ReconJTAC_D";
 							rank = SERGEANT;
 							position[] = {0, -2, 0};
+						};
+						class Unit2
+						{
+							side = 1;
+							vehicle = "SOR_ReconRifleman_D";
+							rank = SERGEANT;
+							position[] = {0, -4, 0};
+						};						
+						class Unit3
+						{
+							side = 1;
+							vehicle = "SOR_ReconRifleman_D";
+							rank = SERGEANT;
+							position[] = {0, -6, 0};
 						};
 					};				
 				class SOR_AngGroup1_D 
@@ -201,7 +215,7 @@ class CfgGroups
 						class Unit1 
 						{
 							side = 1;
-							vehicle = "SOR_HeliCrew_D";
+							vehicle = "SOR_HeliPilot_D";
 							rank = CORPORAL;
 							position[] = {-2, 0, 0};
 						};						
@@ -237,7 +251,7 @@ class CfgGroups
 					class Unit1 
 					{
 						side = 1;
-						vehicle = "SOR_HeliCrew_D";
+						vehicle = "SOR_HeliPilot_D";
 						rank = CORPORAL;
 						position[] = {-2, 0, 0};
 					};
@@ -508,7 +522,7 @@ class CfgGroups
 					class Unit3
 					{
 						side = 1;
-						vehicle = "SOR_Rilfeman_Ammo_D";
+						vehicle = "SOR_Rifleman_Ammo_D";
 						rank = PRIVATE;
 						position[] = {0, -6, 0};
 					};
@@ -544,7 +558,7 @@ class CfgGroups
 					class Unit3
 					{
 						side = 1;
-						vehicle = "SOR_Rilfeman_Ammo_D";
+						vehicle = "SOR_Rifleman_Ammo_D";
 						rank = PRIVATE;
 						position[] = {0, -6, 0};
 					};
@@ -581,7 +595,7 @@ class CfgGroups
 					class Unit3
 					{
 						side = 1;
-						vehicle = "SOR_Recon_M249AR_D";
+						vehicle = "SOR_ReconRifleman_D";
 						rank = PRIVATE;
 						position[] = {0, -6, 0};
 					};
