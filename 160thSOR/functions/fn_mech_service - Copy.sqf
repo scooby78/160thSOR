@@ -38,8 +38,7 @@ if (gunner _veh == player) exitwith
 if !(driver _veh == player) exitWith {};
 
 if (driver _veh == player) then {
-	_veh setHit ["motor", 1];
-//	_veh setFuel 0;
+	_veh setFuel 0;
 	if (_veh isKindOf "car") exitWith {
 		1001 cuttext [format ["Servicing %1... Please stand by...",  _vehType],"PLAIN DOWN",1];		
 		sleep 3;
@@ -131,7 +130,5 @@ if (driver _veh == player) then {
 	1001 cutText ["Refuelled (100%).","PLAIN DOWN"];
 	sleep 3;
 	1001 cuttext [format ["%1 service is complete.",  _vehType],"PLAIN DOWN",1];
-	_veh setHit ["motor", 0];
 	_veh setFuel 1;
-	_veh engineOn true;
 };

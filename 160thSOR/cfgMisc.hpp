@@ -1,6 +1,6 @@
 /*
 	Name: 160th SOR Mod
-	Author: Darce
+	Author: Darce & Scooby
 	Date: 27/09/15 01:09
 	Description: cfgMisc.hpp
 */
@@ -43,14 +43,15 @@
 		};
 */	
 	};	
-
 	
 // Containers
 	class SOR_MechService : B_Slingload_01_Repair_F 
 	{
-		displayName = "Mech Service Container";
+		editorCategory = "EdCat_Supplies";
+		editorSubcategory = "SOR_SubCat_SupplyContainers";
 		vehicleClass = "SOR_SupplyContainers";
 		faction = SOR_Faction_CRATE;
+		displayName = "Mech Service Container";
 		class eventHandlers
 		{
 			init="_null = [(_this select 0)] call SOR_fnc_trigger_mech;";

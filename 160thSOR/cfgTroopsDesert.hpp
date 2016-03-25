@@ -23,9 +23,10 @@
 		scope = 0;
 		scopeCurator = 0;
 		Author_Macro
-		faction = SOR_Faction_D;
-		_generalMacro = "SOR_Base";
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Infantry";
 		vehicleclass = "SOR_Infantry";
+		faction = SOR_Faction_D;
 		displayName = "SOR_Base";
 		icon =  "iconManLeader";
 		picture = "";
@@ -72,8 +73,10 @@
 //Squad Actual	
 	class SOR_Actual_D : B_officer_F
 	{
-		faction = SOR_Faction_D;
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Infantry";
 		vehicleclass = "SOR_Infantry";
+		faction = SOR_Faction_D;
 		uniformClass = "rhs_uniform_cu_ocp";
 		displayName = "Squad Actual";
 		accuracy = 3.5;
@@ -116,10 +119,12 @@
 	class SOR_Commander_D : B_officer_F
 
 	{
-		faction = SOR_Faction_D;
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Infantry";
 		vehicleclass = "SOR_Infantry";
+		faction = SOR_Faction_D;
 		uniformClass = "rhs_uniform_cu_ocp";
-		displayName = "Commander";
+		displayName = "Havoc Commander";
 		accuracy = 3.5;
 		backpack = "tf_rt1523g_rhs";
 		weapons[] = {"160_m4a1_carryhandle_grip_holo", "rhsusf_weap_m9", "Throw", "Put", "Laserdesignator"};
@@ -168,6 +173,7 @@
 	class SOR_MechCommand_D : SOR_Commander_D
 	
 	{
+		editorSubcategory = "SOR_SubCat_Infantry_MECH";
 		vehicleclass = "SOR_Infantry_MECH";
 		displayName = "Mechanised Commander";
 		uniformClass = "rhs_uniform_cu_ocp";
@@ -193,9 +199,40 @@
 	class SOR_AirCommand_D : SOR_Commander_D
 	
 	{
+		editorSubcategory = "SOR_SubCat_Infantry_AIR";
 		vehicleclass = "SOR_Infantry_AIR";
+		displayName = "Air Commander";
 		uavHacker = 1; // allows UAV control
 		engineer = 1; // allows unit to repair 
+		weapons[] = {"rhsusf_weap_m9","Throw", "Put","Laserdesignator"};
+		respawnWeapons[] = {"rhsusf_weap_m9","Throw", "Put","Laserdesignator"};
+		class UserActions
+		{
+			class radar_off
+			{
+				condition = "(this getVariable ['AWACS_ACTIVE',false]) && (alive this)";
+				displayName = "<t color='#F088ff'>Turn Radar OFF</t>";
+				priority = 8;
+				showWindow = 0;
+				hideOnUse = 1;
+				radius= 8;
+				position = "";
+				onlyForPlayer = 1;
+				statement = "[this] spawn SOR_fnc_AWACSTARGETING";
+			};
+			class radar_on
+			{
+				condition = "!(this getVariable ['AWACS_ACTIVE',false]) && (alive this) && ((this distance (nearestObject [this, ""Land_Laptop_unfolded_F""]) < 2) and (damage (nearestObject [this, ""Land_Laptop_unfolded_F""]) < 1))";
+				displayName = "<t color='#F088ff'>Turn Radar ON</t>";
+				priority = 8;
+				showWindow = 1;
+				hideOnUse = 1;
+				radius= 8;
+				position = "";
+				onlyForPlayer = 1;
+				statement = "[this] spawn SOR_fnc_AWACSTARGETING";
+			};
+		};		
 		linkedItems[] = 
 		{	
 			"rhsusf_iotv_ocp", 
@@ -214,10 +251,12 @@
 	class SOR_RTO_D : B_Soldier_F
 	
 	{
-		faction = SOR_Faction_D;
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Infantry";
 		vehicleclass = "SOR_Infantry";
+		faction = SOR_Faction_D;
+		displayName = "RTO";		
 		uniformClass = "rhs_uniform_cu_ocp";
-		displayName = "RTO";
 		backpack = "SOR_RTO_Pack_D";
 		weapons[] = {"160_m4a1_m320","rhsusf_weap_m9","Throw","Put","Laserdesignator"};
 		respawnWeapons[] = {"160_m4a1_m320","rhsusf_weap_m9","Throw","Put","Laserdesignator"};
@@ -257,13 +296,15 @@
 	class SOR_Teamleader_D : B_Soldier_TL_F
 	
 	{
-		faction = SOR_Faction_D;
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Infantry";
 		vehicleclass = "SOR_Infantry";
+		faction = SOR_Faction_D;
 		uniformClass = "rhs_uniform_cu_ocp";
 		accuracy = 3.5;		
 	    backpack = "rhsusf_assault_eagleaiii_ocp";
-		weapons[] = {"160_m4a1_carryhandle_grip_acog", "rhsusf_weap_m9","Throw","Put","ACE_Vector"};
-		respawnWeapons[] = {"160_m4a1_carryhandle_grip_acog", "rhsusf_weap_m9","Throw","Put","ACE_Vector"};
+		weapons[] = {"160_m4a1_carryhandle_grip_acog", "rhsusf_weap_m9","rhs_weap_M136_hp","Throw","Put","ACE_Vector"};
+		respawnWeapons[] = {"160_m4a1_carryhandle_grip_acog", "rhsusf_weap_m9","rhs_weap_M136_hp","Throw","Put","ACE_Vector"};
 		Items[] = {Standard_Meds,SL_Equip};
         RespawnItems[] = {Standard_Meds,SL_Equip};
 		magazines[] = {SL_Mags, Std_Pistol};
@@ -290,8 +331,10 @@
 class SOR_Medic_D : B_medic_F
 	
 	{
-		faction = SOR_Faction_D;
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Infantry";
 		vehicleclass = "SOR_Infantry";
+		faction = SOR_Faction_D;
 		displayName = "Combat Medic";
 		uniformClass = "rhs_uniform_cu_ocp";
 		backpack = "SOR_Medic_Pack_D";
@@ -323,8 +366,10 @@ class SOR_Medic_D : B_medic_F
 class SOR_M249AR_D : B_soldier_AR_F
 	
 	{
-		faction = SOR_Faction_D;
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Infantry";
 		vehicleclass = "SOR_Infantry";
+		faction = SOR_Faction_D;
 		uniformClass = "rhs_uniform_cu_ocp";
 		displayName = "AutoRifleman M249";
 		backpack = "SOR_M249_Pack_D";
@@ -373,8 +418,10 @@ class SOR_M249AR_D : B_soldier_AR_F
 class SOR_M240AR_D : B_soldier_AR_F
 	
 	{
-		faction = SOR_Faction_D;
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Infantry";
 		vehicleclass = "SOR_Infantry";
+		faction = SOR_Faction_D;
 		uniformClass = "rhs_uniform_cu_ocp";
 		displayName = "AutoRifleman M240";
 		backpack = "SOR_M240_Pack_D";
@@ -423,8 +470,10 @@ class SOR_M240AR_D : B_soldier_AR_F
 class SOR_Grenadier_D : B_Soldier_GL_F
 	
 	{
-		faction = SOR_Faction_D;
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Infantry";
 		vehicleclass = "SOR_Infantry";
+		faction = SOR_Faction_D;
 		uniformClass = "rhs_uniform_cu_ocp";
 		backpack = "SOR_GD_Pack_D";
 		weapons[] = {"160_m4a1_m320","rhsusf_weap_m9","Throw", "Put"};
@@ -452,13 +501,15 @@ class SOR_Grenadier_D : B_Soldier_GL_F
 class SOR_Rifleman_D : B_Soldier_F
 	
 	{
-		faction = SOR_Faction_D;
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Infantry";
 		vehicleclass = "SOR_Infantry";
+		faction = SOR_Faction_D;
 		uniformClass = "rhs_uniform_cu_ocp";
 		displayName = "Rifleman AT Ammo Bearer (M249)";
 		backpack = "SOR_Rifleman_Pack_D";
-		weapons[] = {"160_m4a1_carryhandle_grip_acog", "rhsusf_weap_m9","rhs_weap_M136_hp","Throw","Put"};
-		respawnWeapons[] = {"160_m4a1_carryhandle_grip_acog", "rhsusf_weap_m9","rhs_weap_M136_hp","Throw","Put"};
+		weapons[] = {"160_m4a1_carryhandle_grip_acog", "rhsusf_weap_m9","Throw","Put"};
+		respawnWeapons[] = {"160_m4a1_carryhandle_grip_acog", "rhsusf_weap_m9","Throw","Put"};
 		Items[] = {Standard_Meds};
         RespawnItems[] = {Standard_Meds};
 		magazines[] = {Standard_Mags,Std_Pistol};
@@ -490,8 +541,10 @@ class SOR_Rifleman_ammo_D : SOR_Rifleman_D
 class SOR_RiflemanAT_D : B_soldier_AT_F
 	
 	{
-		faction = SOR_Faction_D;
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Infantry";
 		vehicleclass = "SOR_Infantry";
+		faction = SOR_Faction_D;
 		uniformClass = "rhs_uniform_cu_ocp";
 		displayName = "Rifleman AT";
 		backpack = "SOR_RFLAT_Pack_D";
@@ -521,8 +574,10 @@ class SOR_RiflemanAT_D : B_soldier_AT_F
 class SOR_HeliPilot_D : B_Pilot_F
 	
 	{
-		faction = SOR_Faction_D;
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Infantry_AIR";
 		vehicleclass = "SOR_Infantry_AIR";
+		faction = SOR_Faction_D;
 		uniformClass = "rhs_uniform_cu_ocp";
 		uavHacker = 1; // allows UAV control
 		engineer = 1; // allows unit to repair 
@@ -564,8 +619,10 @@ class SOR_HeliPilot_D : B_Pilot_F
 class SOR_HeliCrew_D : B_crew_F
 	
 	{
-		faction = SOR_Faction_D;
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Infantry_AIR";
 		vehicleclass = "SOR_Infantry_AIR";
+		faction = SOR_Faction_D;
 		uniformClass = "rhs_uniform_cu_ocp";
 		displayName = "Heli Crew";
 		backpack = "SOR_Repair_Pack_D";
@@ -613,8 +670,10 @@ class SOR_HeliCrew_D : B_crew_F
 class SOR_JetPilot_D : B_Pilot_F
 	
 	{
-		faction = SOR_Faction_D;
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Infantry_AIR";
 		vehicleclass = "SOR_Infantry_AIR";
+		faction = SOR_Faction_D;
 		displayName = "Jet Pilot";		
 		backpack = "B_Parachute";
 		weapons[] = {"rhsusf_weap_m9","Throw", "Put","Laserdesignator"};
@@ -653,8 +712,10 @@ class SOR_JetPilot_D : B_Pilot_F
 class SOR_MEVPilot_D : 	SOR_HeliPilot_D
 
 	{
-		faction = SOR_Faction_D;
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Infantry_AIR";
 		vehicleclass = "SOR_Infantry_AIR";
+		faction = SOR_Faction_D;
 		displayName = "MEV Pilot";
 		linkedItems[] = 
 		{	
@@ -674,8 +735,10 @@ class SOR_MEVPilot_D : 	SOR_HeliPilot_D
 class SOR_ParaJumper_D : B_medic_F
 	
 	{
-		faction = SOR_Faction_D;
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Infantry_AIR";
 		vehicleclass = "SOR_Infantry_AIR";
+		faction = SOR_Faction_D;
 		displayName = "Para Jumper";
 		backpack = "SOR_PJMedicPack_D";
 		uniformClass = "U_B_CombatUniform_mcam_vest";
@@ -732,8 +795,10 @@ class SOR_ParaJumper_D : B_medic_F
 //Recon Units
 	class SOR_ReconLeader_D : B_recon_TL_F	
 	{
-		faction = SOR_Faction_D;
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Infantry_Recon";
 		vehicleclass = "SOR_Infantry_Recon";
+		faction = SOR_Faction_D;
 		uniformClass = "rhs_uniform_cu_ocp";
 		displayName = "Recon Lead";
 		accuracy = 3.5;
@@ -928,8 +993,10 @@ class SOR_ParaJumper_D : B_medic_F
 //Snipers
 	class SOR_Sniper_D : B_sniper_F		
 	{
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Infantry_Recon";
+		vehicleclass = "SOR_Infantry_Recon";
 		faction = SOR_Faction_D;
-		vehicleclass = "SOR_Infantry_Recon";		
 		accuracy = 3.5;
 		cost = 700000;
 		camouflage = 0.3;
@@ -973,8 +1040,10 @@ class SOR_ParaJumper_D : B_medic_F
 	class SOR_Spotter_D : B_spotter_F
 	
 	{
-		faction = SOR_Faction_D;
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Infantry_Recon";
 		vehicleclass = "SOR_Infantry_Recon";
+		faction = SOR_Faction_D;
 		accuracy = 3.5;
 		cost = 700000;
 		camouflage = 0.3;
@@ -1020,8 +1089,10 @@ class SOR_ParaJumper_D : B_medic_F
 class SOR_MechCrew_D : B_crew_F
 	
 	{
-		faction = SOR_Faction_D;
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Infantry_MECH";
 		vehicleclass = "SOR_Infantry_MECH";
+		faction = SOR_Faction_D;
 		displayName = "Mechanised Gunner";
 		uniformClass = "rhs_uniform_cu_ocp"; 
 		backpack = "";
@@ -1120,6 +1191,7 @@ class SOR_MechDriver_D : SOR_MechCrew_D
 //HMG Team
 class SOR_HMGActual_D : SOR_Actual_D
 	{
+		editorSubcategory = "SOR_SubCat_Infantry_Support";
 		vehicleclass = "SOR_Infantry_Support";
 		displayName = "HMG Actual";
 		icon =  "iconManLeader";
@@ -1129,6 +1201,7 @@ class SOR_HMGActual_D : SOR_Actual_D
 class SOR_HMGGunner_D : SOR_Rifleman_D
 	
 	{
+		editorSubcategory = "SOR_SubCat_Infantry_Support";
 		vehicleclass = "SOR_Infantry_Support";
 		displayName = "HMG Gunner";
 		backpack = "RHS_Mk19_Gun_Bag";
@@ -1137,6 +1210,7 @@ class SOR_HMGGunner_D : SOR_Rifleman_D
 class SOR_HMGCarrier_D : SOR_Rifleman_D
 	
 	{
+		editorSubcategory = "SOR_SubCat_Infantry_Support";
 		vehicleclass = "SOR_Infantry_Support";
 		displayName = "HMG Carrier";
 		backpack = "RHS_M2_MiniTripod_Bag";
@@ -1145,6 +1219,7 @@ class SOR_HMGCarrier_D : SOR_Rifleman_D
 class SOR_HMGRFL_D : SOR_Grenadier_D
 	
 	{
+		editorSubcategory = "SOR_SubCat_Infantry_Support";
 		vehicleclass = "SOR_Infantry_Support";
 		displayName = "HMG Rifleman M320";
 		backpack = "SOR_GD_Pack_D";
@@ -1153,6 +1228,7 @@ class SOR_HMGRFL_D : SOR_Grenadier_D
 //Mortar Team
 class SOR_MORActual_D : SOR_Actual_D
 	{
+		editorSubcategory = "SOR_SubCat_Infantry_Support";
 		vehicleclass = "SOR_Infantry_Support";
 		displayName = "Mortar Actual";
 		backpack = "tf_rt1523g_rhs";
@@ -1161,6 +1237,7 @@ class SOR_MORActual_D : SOR_Actual_D
 class SOR_MORGunner_D : SOR_Rifleman_D
 	
 	{
+		editorSubcategory = "SOR_SubCat_Infantry_Support";
 		vehicleclass = "SOR_Infantry_Support";
 		displayName = "Mortar Gunner";
 		backpack = "B_Mortar_01_weapon_F";
@@ -1169,6 +1246,7 @@ class SOR_MORGunner_D : SOR_Rifleman_D
 class SOR_MORCarrier_D : SOR_Rifleman_D
 	
 	{
+		editorSubcategory = "SOR_SubCat_Infantry_Support";
 		vehicleclass = "SOR_Infantry_Support";
 		displayName = "Mortar Carrier";
 		backpack = "B_Mortar_01_support_F";
@@ -1177,6 +1255,7 @@ class SOR_MORCarrier_D : SOR_Rifleman_D
 class SOR_MORRFL_D : SOR_Grenadier_D
 	
 	{
+		editorSubcategory = "SOR_SubCat_Infantry_Support";
 		vehicleclass = "SOR_Infantry_Support";
 		displayName = "Mortar Rifleman M320";
 		backpack = "SOR_GD_Pack_D";
@@ -1187,8 +1266,10 @@ class SOR_MORRFL_D : SOR_Grenadier_D
 class SOR_Engineer_D : B_engineer_F
 	
 	{
-		faction = SOR_Faction_D;
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Infantry_Support";
 		vehicleclass = "SOR_Infantry_Support";
+		faction = SOR_Faction_D;		
 		uniformClass = "rhs_uniform_cu_ocp";
 		backpack = "SOR_Repair_Pack_D";
 		weapons[] = {"Throw", "Put"};

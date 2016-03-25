@@ -27,8 +27,9 @@
 //M6A2	
 class SOR_RHS_M6 : RHS_M6
 {
-	faction = SOR_Faction_D;
+	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
+	faction = SOR_Faction_D;
 	armor = 500; //was 300 protection against missiles, collisions and explosions
 	class TransportItems 
 	{
@@ -54,8 +55,9 @@ class SOR_RHS_M6 : RHS_M6
 //M2A3 (BUSK III)	
 class SOR_M2A3_BUSKIII : RHS_M2A3_BUSKIII
 {
-	faction = SOR_Faction_D;
+	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
+	faction = SOR_Faction_D;
 	armor = 500; //was 325 protection against missiles, collisions and explosions
 	class TransportItems 
 	{
@@ -81,8 +83,9 @@ class SOR_M2A3_BUSKIII : RHS_M2A3_BUSKIII
 //M113A3	
 class SOR_rhsusf_m113d_usarmy : rhsusf_m113d_usarmy
 {
-	faction = SOR_Faction_D;
+	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
+	faction = SOR_Faction_D;
 	armor = 500; //was 200 protection against missiles, collisions and explosions
 	class TransportItems 
 	{
@@ -108,8 +111,9 @@ class SOR_rhsusf_m113d_usarmy : rhsusf_m113d_usarmy
 //M113A3 (Supply)	
 class SOR_rhsusf_m113d_usarmy_supply : rhsusf_m113d_usarmy_supply
 {
-	faction = SOR_Faction_D;
+	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
+	faction = SOR_Faction_D;
 	armor = 500; //was 200 protection against missiles, collisions and explosions
 	class TransportItems 
 	{
@@ -135,8 +139,9 @@ class SOR_rhsusf_m113d_usarmy_supply : rhsusf_m113d_usarmy_supply
 //M113A3 (Unarmed)	
 class SOR_rhsusf_m113d_usarmy_unarmed : rhsusf_m113d_usarmy_unarmed
 {
-	faction = SOR_Faction_D;
+	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
+	faction = SOR_Faction_D;
 	armor = 500; //was 200 protection against missiles, collisions and explosions
 	class TransportItems 
 	{
@@ -162,8 +167,9 @@ class SOR_rhsusf_m113d_usarmy_unarmed : rhsusf_m113d_usarmy_unarmed
 //M113A3 (Medical)
 class SOR_rhsusf_m113d_usarmy_medical : rhsusf_m113d_usarmy_medical
 {
-	faction = SOR_Faction_D;
+	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
+	faction = SOR_Faction_D;
 	armor = 500; //was 200 protection against missiles, collisions and explosions
 	class TransportItems 
 	{
@@ -189,8 +195,9 @@ class SOR_rhsusf_m113d_usarmy_medical : rhsusf_m113d_usarmy_medical
 //M1A1 (Tusk I)
 class SOR_rhsusf_m1a1aim_tuski_d : rhsusf_m1a1aim_tuski_d
 {
-	faction = SOR_Faction_D;
+	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
+	faction = SOR_Faction_D;
 	armor = 700; //was 600 protection against missiles, collisions and explosions
 	class TransportItems 
 	{
@@ -216,8 +223,9 @@ class SOR_rhsusf_m1a1aim_tuski_d : rhsusf_m1a1aim_tuski_d
 //M1A2 (Tusk I)
 class SOR_rhsusf_m1a2sep1tuskid_usarmy : rhsusf_m1a2sep1tuskid_usarmy
 {
-	faction = SOR_Faction_D;
+	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
+	faction = SOR_Faction_D;
 	armor = 700; //was 600 protection against missiles, collisions and explosions
 	class TransportItems 
 	{
@@ -243,8 +251,9 @@ class SOR_rhsusf_m1a2sep1tuskid_usarmy : rhsusf_m1a2sep1tuskid_usarmy
 //M1A2 (Tusk II)
 class SOR_rhsusf_m1a2sep1tuskiid_usarmy : rhsusf_m1a2sep1tuskiid_usarmy
 {
-	faction = SOR_Faction_D;
+	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
+	faction = SOR_Faction_D;
 	armor = 800; //was 600 protection against missiles, collisions and explosions
 	class TransportItems
 	{
@@ -270,8 +279,9 @@ class SOR_rhsusf_m1a2sep1tuskiid_usarmy : rhsusf_m1a2sep1tuskiid_usarmy
 //Sub	
 class SOR_B_SDV_01_F : B_SDV_01_F
 {
-	faction = SOR_Faction_D;
-	vehicleclass = "SOR_Vehicles";		
+	editorCategory = "SOR_Cat_Faction_D";
+	vehicleclass = "SOR_Vehicles";
+	faction = SOR_Faction_D;	
 	class TransportItems
 	{
 		item_xx(G_Diving,3)
@@ -286,8 +296,9 @@ class SOR_B_SDV_01_F : B_SDV_01_F
 //Troop transport
 class SOR_rhsusf_M1083A1P2_d_fmtv_usarmy : rhsusf_M1083A1P2_d_fmtv_usarmy
 {
-	faction = SOR_Faction_D;
+	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
+	faction = SOR_Faction_D;
 	displayName = "M1083";		
 	class TransportItems{};
 	class TransportWeapons{};
@@ -301,8 +312,9 @@ class SOR_rhsusf_M1083A1P2_d_fmtv_usarmy : rhsusf_M1083A1P2_d_fmtv_usarmy
 //Engineer transport
 class SOR_rhsusf_m1025_d_s : rhsusf_m1025_d_s
 {
-	faction = SOR_Faction_D;
+	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
+	faction = SOR_Faction_D;
 	displayName = "M1025 (Engineer)";		
 	class TransportItems{};
 	class TransportWeapons
@@ -324,8 +336,9 @@ class SOR_rhsusf_m1025_d_s : rhsusf_m1025_d_s
 //Engineer transport truck	
 class SOR_rhsusf_M1083A1P2_d_fmtv_usarmy_eng : rhsusf_M1083A1P2_d_fmtv_usarmy
 {
-	faction = SOR_Faction_D;
+	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
+	faction = SOR_Faction_D;
 	displayName = "M1083 (Engineer)";		
 	class TransportItems
 	{
@@ -351,8 +364,9 @@ class SOR_rhsusf_M1083A1P2_d_fmtv_usarmy_eng : rhsusf_M1083A1P2_d_fmtv_usarmy
 //Engineer armored recovery
 class SOR_B_APC_Tracked_01_rcws_F : B_APC_Tracked_01_rcws_F
 {
-	faction = SOR_Faction_D;
+	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
+	faction = SOR_Faction_D;
 	class TransportItems
 	{
 		item_xx(ToolKit,1)			
@@ -372,8 +386,9 @@ class SOR_B_APC_Tracked_01_rcws_F : B_APC_Tracked_01_rcws_F
 
 class SOR_B_APC_Tracked_01_CRV_F : B_APC_Tracked_01_CRV_F
 {
-	faction = SOR_Faction_D;
+	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
+	faction = SOR_Faction_D;
 	class TransportItems
 	{
 		item_xx(ToolKit,1)			
@@ -394,8 +409,9 @@ class SOR_B_APC_Tracked_01_CRV_F : B_APC_Tracked_01_CRV_F
 //Troop transport
 class SOR_rhsusf_m1025_d : rhsusf_m1025_d
 {
-	faction = SOR_Faction_D;
+	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
+	faction = SOR_Faction_D;
 	displayName = "M1025 (Unarmed)";		
 	class TransportItems{};
 	class TransportWeapons{};
@@ -409,8 +425,9 @@ class SOR_rhsusf_m1025_d : rhsusf_m1025_d
 //Troop armed transport GL
 class SOR_rhsusf_m1025_d_Mk19 : rhsusf_m1025_d_Mk19
 {
-	faction = SOR_Faction_D;
+	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
+	faction = SOR_Faction_D;
 	displayName = "M1025 (Mk19)";			
 	class TransportItems{};
 	class TransportWeapons{};
@@ -424,8 +441,9 @@ class SOR_rhsusf_m1025_d_Mk19 : rhsusf_m1025_d_Mk19
 //Troop armed transport MG
 class SOR_rhsusf_m1025_d_m2 : rhsusf_m1025_d_m2
 {
-	faction = SOR_Faction_D;
+	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
+	faction = SOR_Faction_D;
 	displayName = "M1025 (M2)";			
 	class TransportItems{};
 	class TransportWeapons{};

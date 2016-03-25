@@ -62,7 +62,6 @@ class CfgPatches
 			"SOR_Land_Flush_Light_red_F",
 			"SOR_Land_Flush_Light_yellow_F",
 			"SOR_Land_PortableLight_double_F",
-			"SOR_Gunrack1",
 			"SOR_PJ_Box_F",
 			"SOR_PJ_Pack_Box_F",
 			"SOR_Air_LP",

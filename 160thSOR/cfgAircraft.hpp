@@ -39,8 +39,10 @@
 // Transport Helos
 class SOR_B_Heli_Transport_01_camo_F : B_Heli_Transport_01_camo_F
 	{
-		faction = SOR_Faction_D;
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Aircraft";
 		vehicleclass = "SOR_Aircraft";
+		faction = SOR_Faction_D;
 		displayName = "UH-80 Ghost Hawk (C4/P12)";
 		class eventHandlers
 		{
@@ -67,11 +69,13 @@ class SOR_B_Heli_Transport_01_camo_F : B_Heli_Transport_01_camo_F
 	
 class SOR_UH60M : RHS_UH60M
 	{
-		faction = SOR_Faction_D;
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Aircraft";
 		vehicleclass = "SOR_Aircraft";
+		faction = SOR_Faction_D;
 		displayName = "UH-60M (C4/P12)";
-		ace_fastroping_enabled = 1;
-		ace_fastroping_ropeOrigins[] = {{1.4, 1.9, -.4}};
+//		ace_fastroping_enabled = 1;
+//		ace_fastroping_ropeOrigins[] = {{1.4, 1.9, -.4}};
 		class UserActions
 		{
 			class SOR_AutoDrop
@@ -149,8 +153,10 @@ class SOR_UH60M : RHS_UH60M
 	
 class SOR_CH_47F : RHS_CH_47F
 	{
-		faction = SOR_Faction_D;
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Aircraft";
 		vehicleclass = "SOR_Aircraft";
+		faction = SOR_Faction_D;
 		displayName = "CH-47F (C4/P24)[Refuel]";
 //		transportFuel = 30000;
 //		supplyRadius = 30;
@@ -215,8 +221,10 @@ class SOR_CH_47F : RHS_CH_47F
 	
 class SOR_UH60M_MEV2 : RHS_UH60M_MEV2
 	{
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Aircraft";
+		vehicleclass = "SOR_Aircraft";
 		faction = SOR_Faction_D;
-		vehicleClass = "SOR_Aircraft";
 		displayName = "UH-60 MEV (C5/P7)";
 		driverCanEject = 1; // was 0, Allows pilot to exit heli with engine running
 		ejectDeadCargo = 1; //test dead eject
@@ -250,8 +258,10 @@ class SOR_UH60M_MEV2 : RHS_UH60M_MEV2
 	
 class SOR_MELB_H6M : MELB_H6M
 	{
-		faction = SOR_Faction_D;
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Aircraft";
 		vehicleclass = "SOR_Aircraft";
+		faction = SOR_Faction_D;
 		displayName = "H-6M (C2/P2)";
 		fuelCapacity = 110; //was fuelCapacity = 242;
 		fuelConsumptionRate = 0.0555; //was 0.0368;
@@ -270,8 +280,10 @@ class SOR_MELB_H6M : MELB_H6M
 	
 class SOR_MELB_MH6M : MELB_MH6M
 	{
-		faction = SOR_Faction_D;
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Aircraft";
 		vehicleclass = "SOR_Aircraft";
+		faction = SOR_Faction_D;
 		displayName = "MH-6M (C2/P6)";
 		fuelCapacity = 110; //was fuelCapacity = 242;
 		fuelConsumptionRate = 0.0555; //was 0.0368;
@@ -293,8 +305,10 @@ class SOR_MELB_MH6M : MELB_MH6M
 	
 class SOR_MELB_MH6M_MEV : MELB_MH6M
 	{
-		faction = SOR_Faction_D;
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Aircraft";
 		vehicleclass = "SOR_Aircraft";
+		faction = SOR_Faction_D;
 		displayName = "MH-6M MEV (C2/P6)";
 		driverCanEject = 1; // was 0 test eject
 		ejectDeadCargo = 1; //test dead eject	
@@ -321,8 +335,10 @@ class SOR_MELB_MH6M_MEV : MELB_MH6M
 // Attack Helos	
 class SOR_MELB_AH6M_L : MELB_AH6M_L
 	{
-		faction = SOR_Faction_D;
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Aircraft";
 		vehicleclass = "SOR_Aircraft";
+		faction = SOR_Faction_D;
 		displayName = "AH-6M_L (C2/P1)";
 //		fuelCapacity = 200; //was fuelCapacity = 242;
 //		fuelConsumptionRate = 0.0555; //was 0.0368;
@@ -341,8 +357,10 @@ class SOR_MELB_AH6M_L : MELB_AH6M_L
 	
 class SOR_MELB_AH6M_M : MELB_AH6M_M
 	{
-		faction = SOR_Faction_D;
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Aircraft";
 		vehicleclass = "SOR_Aircraft";
+		faction = SOR_Faction_D;
 		displayName = "AH-6M_M (C2/P1)";
 		fuelCapacity = 200; //was fuelCapacity = 242;
 		fuelConsumptionRate = 0.0555; //was 0.0368;
@@ -361,8 +379,10 @@ class SOR_MELB_AH6M_M : MELB_AH6M_M
 
 class SOR_MELB_AH6M_H : MELB_AH6M_H
 	{
-		faction = SOR_Faction_D;
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Aircraft";
 		vehicleclass = "SOR_Aircraft";
+		faction = SOR_Faction_D;
 		displayName = "AH-6M_H (C2/P1)";
 		fuelCapacity = 200; //was fuelCapacity = 242;
 		fuelConsumptionRate = 0.0555; //was 0.0368;
@@ -381,8 +401,10 @@ class SOR_MELB_AH6M_H : MELB_AH6M_H
 	
 class SOR_RHS_AH64D_AA : RHS_AH64D_AA
 	{
-		faction = SOR_Faction_D;
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Aircraft";
 		vehicleclass = "SOR_Aircraft";
+		faction = SOR_Faction_D;
 		displayName = "AH-64D (AA)";
 		armor = 80; //was 50 (UH-60 is 60!) 
 		fuelCapacity = 200; //was 500 
@@ -401,8 +423,10 @@ class SOR_RHS_AH64D_AA : RHS_AH64D_AA
 
 class SOR_RHS_AH64D_CS : RHS_AH64D_CS
 	{
-		faction = SOR_Faction_D;
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Aircraft";
 		vehicleclass = "SOR_Aircraft";
+		faction = SOR_Faction_D;
 		displayName = "AH-64D (Close-Support)";
 		armor = 80; //was 50 (UH-60 is 60!) 
 		fuelCapacity = 200; //was 500 
@@ -421,8 +445,10 @@ class SOR_RHS_AH64D_CS : RHS_AH64D_CS
 	
 class SOR_RHS_AH64D_GS : RHS_AH64D_GS
 	{
-		faction = SOR_Faction_D;
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Aircraft";
 		vehicleclass = "SOR_Aircraft";
+		faction = SOR_Faction_D;
 		displayName = "AH-64D (Ground-Suppression)";
 		armor = 80; //was 50 (UH-60 is 60!) 
 		fuelCapacity = 200; //was 500 
@@ -444,8 +470,10 @@ class SOR_RHS_AH64D_GS : RHS_AH64D_GS
 ////////////
 class SOR_RHS_A10 : RHS_A10
 	{
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Aircraft";
+		vehicleclass = "SOR_Aircraft";
 		faction = SOR_Faction_D;
-		vehicleClass = "SOR_Aircraft";
 		class TransportItems 
 		{
 			item_xx(ACE_FieldDressing,10);
@@ -462,8 +490,10 @@ C130 broken and buggy do not use 25/02/2016
 
 class SOR_RHS_C130J : RHS_C130J
 	{
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Aircraft";
+		vehicleclass = "SOR_Aircraft";
 		faction = SOR_Faction_D;
-		vehicleClass = "SOR_Aircraft";
 		displayName = "C130J (C3/P24/V1)";
 		class UserActions
 		{
@@ -581,8 +611,10 @@ Currently broken since latest FIR F16 mod update
 //Training ammo (non leathal)
 class SOR_FIR_F16C_TWAS : FIR_F16C_TWAS
 	{
-		faction = SOR_Faction_D;
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Aircraft";
 		vehicleclass = "SOR_Aircraft";
+		faction = SOR_Faction_D;
 		displayName = "F16-C Non-Lethal Training Aircraft [Blue Team]";
 		class TransportItems{};
 		class TransportWeapons{};
@@ -612,8 +644,10 @@ if you want don't add weapon in hardpoint, just leave empty.
 
 class SOR_FIR_F16C_AA : FIR_F16C
 	{
-		faction = SOR_Faction_D;
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Aircraft";
 		vehicleclass = "SOR_Aircraft";
+		faction = SOR_Faction_D;
 		displayName = "F16-C [AA]";
 		maxSpeed = 1200; //test
 		threat[] = {0.1,0.8,1};
@@ -676,8 +710,10 @@ class SOR_FIR_F16C_AA : FIR_F16C
 
 class SOR_FIR_F16C_CAS : FIR_F16C
 	{
-		faction = SOR_Faction_D;
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Aircraft";
 		vehicleclass = "SOR_Aircraft";
+		faction = SOR_Faction_D;
 		displayName = "F16-C [CAS]";
 		maxSpeed = 1200; //test
 		threat[] = {0.5,1,0.8};
@@ -720,8 +756,10 @@ class SOR_FIR_F16C_CAS : FIR_F16C
 
 class SOR_FIR_F16C_TWAS3 : FIR_F16C_TWAS2
 	{
-		faction = SOR_Faction_D;
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Aircraft";
 		vehicleclass = "SOR_Aircraft";
+		faction = SOR_Faction_D;
 		displayName = "F16-C Non-Lethal Training Aircraft [Red Team]";
 		maxSpeed = 1200; //test
 		class eventHandlers
@@ -742,9 +780,11 @@ class SOR_FIR_F16C_TWAS3 : FIR_F16C_TWAS2
 //Transport (This is the only one that can attach and drop pods)
 class SOR_O_Heli_Transport_04_F : O_Heli_Transport_04_F
 	{
-		side=1;
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Aircraft_Captured";
+		vehicleclass = "SOR_Aircraft_Captured";
 		faction = SOR_Faction_D;
-		vehicleClass = "SOR_Aircraft_Captured";
+		side=1;		
 		displayName = "MI-290 Taru (C3/POD)";
 		class eventHandlers
 		{
@@ -766,9 +806,11 @@ class SOR_O_Heli_Transport_04_F : O_Heli_Transport_04_F
 // Medivac Taru (Fixed pod)
 class SOR_O_Heli_Transport_04_medevac_F : O_Heli_Transport_04_medevac_F
 	{
-		side=1;
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Aircraft_Captured";
+		vehicleclass = "SOR_Aircraft_Captured";
 		faction = SOR_Faction_D;
-		vehicleClass = "SOR_Aircraft_Captured";
+		side=1;	
 		displayName = "MI-290 Taru (Medical C3/P4)";
 		class TransportItems
 		{
@@ -790,9 +832,11 @@ class SOR_O_Heli_Transport_04_medevac_F : O_Heli_Transport_04_medevac_F
 // Troop transport Taru (fixed pod)	
 class SOR_O_Heli_Transport_04_bench_F : O_Heli_Transport_04_bench_F
 	{
-		side=1;
-		faction = SOR_Faction_D;
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Aircraft_Captured";
 		vehicleclass = "SOR_Aircraft_Captured";
+		faction = SOR_Faction_D;
+		side=1;	
 		displayName = "MI-290 Taru (Bench C3/P8)";
 		class UserActions
 		{
@@ -826,9 +870,11 @@ class SOR_O_Heli_Transport_04_bench_F : O_Heli_Transport_04_bench_F
 // Covered Troop transport Taru (fixed pod)
 class SOR_O_Heli_Transport_04_covered_F : O_Heli_Transport_04_covered_F
 	{
-		side=1;
-		faction = SOR_Faction_D;
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Aircraft_Captured";
 		vehicleclass = "SOR_Aircraft_Captured";
+		faction = SOR_Faction_D;
+		side=1;	
 		displayName = "MI-290 Taru (Covered C3/P16)";
 		class TransportItems 
 		{
@@ -846,9 +892,11 @@ class SOR_O_Heli_Transport_04_covered_F : O_Heli_Transport_04_covered_F
 // Civilial troop transport	
 class SOR_RHS_Mi8amt_civilian : RHS_Mi8amt_civilian
 	{
-		side=1;
-		faction = SOR_Faction_D;
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Aircraft_Captured";
 		vehicleclass = "SOR_Aircraft_Captured";
+		faction = SOR_Faction_D;
+		side=1;	
 		displayName = "MI-8AMT (C2/P20)";
 		class TransportItems 
 		{
@@ -867,9 +915,11 @@ class SOR_RHS_Mi8amt_civilian : RHS_Mi8amt_civilian
 //Attack
 class SOR_O_Heli_Attack_02_F : O_Heli_Attack_02_F
 	{
-		side=1;
-		faction = SOR_Faction_D;
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Aircraft_Captured";
 		vehicleclass = "SOR_Aircraft_Captured";
+		faction = SOR_Faction_D;
+		side=1;	
 		displayName = "MI-48 Kajman (C2/P8)";
 		class TransportItems 
 		{
@@ -890,9 +940,11 @@ class SOR_O_Heli_Attack_02_F : O_Heli_Attack_02_F
 
 class SOR_O_Heli_Attack_02_black_F : O_Heli_Attack_02_black_F
 	{
-		side=1;
-		faction = SOR_Faction_D;
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Aircraft_Captured";
 		vehicleclass = "SOR_Aircraft_Captured";
+		faction = SOR_Faction_D;
+		side=1;	
 		displayName = "MI-48 Kajman (Black C2/P8)";
 		class TransportItems 
 		{
@@ -913,9 +965,11 @@ class SOR_O_Heli_Attack_02_black_F : O_Heli_Attack_02_black_F
 
 class SOR_O_Heli_Light_02_v2_F : O_Heli_Light_02_v2_F
 	{
-		side=1;
-		faction = SOR_Faction_D;
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Aircraft_Captured";
 		vehicleclass = "SOR_Aircraft_Captured";
+		faction = SOR_Faction_D;
+		side=1;	
 		displayName = "PO-30 Orca (B&W C2/P8)";
 		class TransportItems 
 		{
@@ -937,9 +991,11 @@ class SOR_O_Heli_Light_02_v2_F : O_Heli_Light_02_v2_F
 //Jets	
 class SOR_O_Plane_CAS_02_B : O_Plane_CAS_02_F
 	{
-		side=1;
-		faction = SOR_Faction_D;
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Aircraft_Captured";
 		vehicleclass = "SOR_Aircraft_Captured";
+		faction = SOR_Faction_D;
+		side=1;	
 		displayName = "Yak-130 [CAS]";
 		class TransportItems{};
 		class TransportWeapons{};
@@ -949,9 +1005,11 @@ class SOR_O_Plane_CAS_02_B : O_Plane_CAS_02_F
 
 class SOR_I_Plane_Fighter_03_AA_B : I_Plane_Fighter_03_AA_F
 	{
-		side=1;
-		faction = SOR_Faction_D;
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Aircraft_Captured";
 		vehicleclass = "SOR_Aircraft_Captured";
+		faction = SOR_Faction_D;
+		side=1;	
 		displayName = "L159 ALCA [AA]";
 		class TransportItems{};
 		class TransportWeapons{};
@@ -961,9 +1019,11 @@ class SOR_I_Plane_Fighter_03_AA_B : I_Plane_Fighter_03_AA_F
 
 class SOR_I_Plane_Fighter_03_CAS_B : I_Plane_Fighter_03_CAS_F
 	{
-		side=1;
-		faction = SOR_Faction_D;
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Aircraft_Captured";
 		vehicleclass = "SOR_Aircraft_Captured";
+		faction = SOR_Faction_D;
+		side=1;	
 		displayName = "L159 ALCA [CAS]";
 		class TransportItems{};
 		class TransportWeapons{};
@@ -1015,9 +1075,11 @@ class SOR_FIR_F16C_TWAS2 : FIR_F16C_TWAS2
 */
 class SOR_I_Plane_Fighter_03_AA_F : I_Plane_Fighter_03_AA_F
 	{
-		side=0;
-		faction = SOR_Faction_D;
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Aircraft";
 		vehicleclass = "SOR_Aircraft";
+		faction = SOR_Faction_D;
+		side=0;
 		displayName = "L159 ALCA [AA] OpFor";
 		class TransportItems{};
 		class TransportWeapons{};
@@ -1027,9 +1089,11 @@ class SOR_I_Plane_Fighter_03_AA_F : I_Plane_Fighter_03_AA_F
 
 class SOR_I_Plane_Fighter_03_CAS_F : I_Plane_Fighter_03_CAS_F
 	{
-		side=0;
-		faction = SOR_Faction_D;
+		editorCategory = "SOR_Cat_Faction_D";
+		editorSubcategory = "SOR_SubCat_Aircraft";
 		vehicleclass = "SOR_Aircraft";
+		faction = SOR_Faction_D;
+		side=0;
 		displayName = "L159 ALCA [CAS] OpFor";
 		class TransportItems{};
 		class TransportWeapons{};
