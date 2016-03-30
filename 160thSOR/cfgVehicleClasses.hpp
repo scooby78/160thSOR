@@ -1,6 +1,6 @@
 /*
 	Name: 160th SOR Mod
-	Author: AmTheAgent
+	Author: AmTheAgent & Scooby
 	Date: 27/09/15 01:09
 	Description: cfgVehicleClasses.hpp
 */
@@ -52,6 +52,11 @@ class CfgVehicleClasses
 		displayName = "160th Objects";
 		priority = 4; 
 	};
+	class SOR_Lights
+	{
+		displayName = "160th Lights";
+		priority = 4; 
+	};
 	class SOR_Vehicles
 	{
 		displayName = "160th Armour";
@@ -62,7 +67,7 @@ class CfgVehicleClasses
 		displayName = "160th Aircraft";
 		priority = 6; 
 	};
-		class SOR_Aircraft_Captured
+	class SOR_Aircraft_Captured
 	{
 		displayName = "160th Captured Aircraft";
 		priority = 6; 

@@ -12,42 +12,13 @@ class CfgGroups
 		
 		class SOR_Groups_D
 		{
-			name = "SOR Infantry (Desert)";
+			name = "160th Infantry (Desert)";
 			
 			class SOR_InfGroups_D 
 			{
-				name = "SOR Infantry";
+				name = "Infantry";
 				aliveCategory = "Infantry";
 				
-				class SOR_ComGroup_D 
-				{
-					name = "Command Unit";
-					faction = "SOR_Faction_D";
-					side = 1;
-					rarityGroup = 0.75;
-					
-					class Unit0 
-					{
-						side = 1;
-						vehicle = "SOR_Commander_D";
-						rank = CAPTAIN;
-						position[] = {0, 0, 0};
-					};					
-					class Unit1 
-					{
-						side = 1;
-						vehicle = "SOR_Commander_D";
-						rank = CAPTAIN;
-						position[] = {-2, 0, 0};
-					};					
-					class Unit2 
-					{
-						side = 1;
-						vehicle = "SOR_Commander_D";
-						rank = CAPTAIN;
-						position[] = {-4, 0, 0};
-					};
-				};
 				class SOR_HavocGroup_D 
 				{
 					name = "HAVOC";
@@ -158,71 +129,14 @@ class CfgGroups
 					class Unit16 
 					{
 						side = 1;
-						vehicle = "SOR_Rilfeman_Ammo_D";
+						vehicle = "SOR_Rifleman_Ammo_D";
 						rank = PRIVATE;
 						position[] = {0, -22, 0};
 					};
 				};
-				class SOR_Recon_D
-					{
-						name = "Sniper Team";
-						faction = "SOR_Faction_D";
-						side = 1;
-						rarityGroup = 0.75;
-						class Unit0 
-						{
-							side = 1;
-							vehicle = "SOR_Sniper_D";
-							rank = SERGEANT;
-							position[] = {0, 0, 0};
-						};
-						class Unit1
-						{
-							side = 1;
-							vehicle = "SOR_Spotter_D";
-							rank = SERGEANT;
-							position[] = {0, -2, 0};
-						};
-					};				
-				class SOR_AngGroup1_D 
-					{
-						name = "Angel Crew";
-						faction = "SOR_Faction_D";
-						side = 1;
-						rarityGroup = 0.75;
-		
-						class Unit0 
-						{
-							side = 1;
-							vehicle = "SOR_HeliPilot_D";
-							rank = LIEUTENANT;
-							position[] = {-0, 0, 0};
-						};						
-						class Unit1 
-						{
-							side = 1;
-							vehicle = "SOR_HeliCrew_D";
-							rank = CORPORAL;
-							position[] = {-2, 0, 0};
-						};						
-						class Unit2 
-						{
-							side = 1;
-							vehicle = "SOR_HeliCrew_D";
-							rank = CORPORAL;
-							position[] = {-4, 0, 0};
-						};
-						class Unit3 						
-						{
-							side = 1;
-							vehicle = "SOR_HeliCrew_D";
-							rank = CORPORAL;
-							position[] = {-6, 0, 0};
-						};
-					};		
-				class SOR_PegGroup2_D 
+				class SOR_FireTeamLead_D
 				{
-					name = "Pegasus Crew";
+					name = "Fire Team Lead/Medic";
 					faction = "SOR_Faction_D";
 					side = 1;
 					rarityGroup = 0.75;
@@ -230,120 +144,133 @@ class CfgGroups
 					class Unit0 
 					{
 						side = 1;
-						vehicle = "SOR_HeliPilot_D";
-						rank = LIEUTENANT;
+						vehicle = "SOR_Actual_D";
+						rank = CAPTAIN;
 						position[] = {0, 0, 0};
-					};					
+					};
+					
 					class Unit1 
 					{
 						side = 1;
-						vehicle = "SOR_HeliCrew_D";
+						vehicle = "SOR_Medic_D";
+						rank = CAPTAIN;
+						position[] = {0, -2, 0};
+					};
+					
+				};				
+				class SOR_FireTeam1_D
+				{
+					name = "Fire Team (1)";
+					faction = "SOR_Faction_D";
+					side = 1;
+					rarityGroup = 0.75;
+					
+					class Unit0
+					{
+						side = 1;
+						vehicle = "SOR_Teamleader_D";
+						rank = SERGEANT;
+						position[] = {0, 0, 0};
+					};
+					class Unit1
+					{
+						side = 1;
+						vehicle = "SOR_M249AR_D";
 						rank = CORPORAL;
-						position[] = {-2, 0, 0};
+						position[] = {0, -2, 0};
+					};
+					class Unit2
+					{
+						side = 1;
+						vehicle = "SOR_Grenadier_D";
+						rank = PRIVATE;
+						position[] = {0, -4, 0};
+					};
+					class Unit3
+					{
+						side = 1;
+						vehicle = "SOR_Rifleman_D";
+						rank = PRIVATE;
+						position[] = {0, -6, 0};
+					};
+				};					
+				class SOR_FireTeam2_D
+				{
+					name = "Fire Team (2)";
+					faction = "SOR_Faction_D";
+					side = 1;
+					rarityGroup = 0.75;
+					
+					class Unit0
+					{
+						side = 1;
+						vehicle = "SOR_Teamleader_D";
+						rank = SERGEANT;
+						position[] = {0, 0, 0};
+					};
+					class Unit1
+					{
+						side = 1;
+						vehicle = "SOR_M240AR_D";
+						rank = CORPORAL;
+						position[] = {0, -2, 0};
+					};
+					class Unit2
+					{
+						side = 1;
+						vehicle = "SOR_Grenadier_D";
+						rank = PRIVATE;
+						position[] = {0, -4, 0};
+					};
+					class Unit3
+					{
+						side = 1;
+						vehicle = "SOR_Rifleman_Ammo_D";
+						rank = PRIVATE;
+						position[] = {0, -6, 0};
+					};
+				};					
+			};
+			class SOR_InfGroups_Support_D 
+			{
+				name = "Infantry (Support)";
+				aliveCategory = "Infantry";
+
+				class SOR_Recon_D
+				{
+					name = "Viper Team";
+					faction = "SOR_Faction_D";
+					side = 1;
+					rarityGroup = 0.75;
+					class Unit0 
+					{
+						side = 1;
+						vehicle = "SOR_ReconLeader_D";
+						rank = SERGEANT;
+						position[] = {0, 0, 0};
+					};
+					class Unit1
+					{
+						side = 1;
+						vehicle = "SOR_ReconJTAC_D";
+						rank = SERGEANT;
+						position[] = {0, -2, 0};
+					};
+					class Unit2
+					{
+						side = 1;
+						vehicle = "SOR_ReconRifleman_D";
+						rank = SERGEANT;
+						position[] = {0, -4, 0};
+					};						
+					class Unit3
+					{
+						side = 1;
+						vehicle = "SOR_ReconRifleman_D";
+						rank = SERGEANT;
+						position[] = {0, -6, 0};
 					};
 				};	
-				class SOR_MEVGroup2_D 
-				{
-					name = "Medivac Crew";
-					faction = "SOR_Faction_D";
-					side = 1;
-					rarityGroup = 0.75;
-					
-					class Unit0 
-					{
-						side = 1;
-						vehicle = "SOR_MEVPilot_D";
-						rank = LIEUTENANT;
-						position[] = {0, 0, 0};
-					};					
-					class Unit1 
-					{
-						side = 1;
-						vehicle = "SOR_MEVPilot_D";
-						rank = SERGEANT;
-						position[] = {-2, 0, 0};
-					};					
-					class Unit2 
-					{
-						side = 1;
-						vehicle = "SOR_ParaJumper_D";
-						rank = PRIVATE;
-						position[] = {-4, 0, 0};
-					};
-					class Unit3 
-					
-					{
-						side = 1;
-						vehicle = "SOR_ParaJumper_D";
-						rank = PRIVATE;
-						position[] = {-6, 0, 0};
-					};
-					class Unit4
-					{
-						side = 1;
-						vehicle = "SOR_ParaJumper_D";
-						rank = PRIVATE;
-						position[] = {-8, 0, 0};
-					};
-				};
-				class SOR_EagleGroup2_D 
-				{
-					name = "Eagle Pilots";
-					faction = "SOR_Faction_D";
-					side = 1;
-					rarityGroup = 0.75;
-					
-					class Unit0 
-					{
-						side = 1;
-						vehicle = "SOR_JetPilot_D";
-						rank = LIEUTENANT;
-						position[] = {0, 0, 0};
-					};
-					class Unit1 
-					{
-						side = 1;
-						vehicle = "SOR_JetPilot_D";
-						rank = LIEUTENANT;
-						position[] = {-2, 0, 0};
-					};
-				};						
-				class SOR_SabGroup2_D 
-				{
-					name = "Mechanised Crew";
-					faction = "SOR_Faction_D";
-					side = 1;
-					rarityGroup = 0.75;
-					
-					class Unit0 
-					{
-						side = 1;
-						vehicle = "SOR_MechCrewCommander_D";
-						rank = LIEUTENANT;
-						position[] = {0, 0, 0};
-					};						
-					class Unit1 
-					{
-						side = 1;
-						vehicle = "SOR_MechCrew_D";
-						rank = CORPORAL;
-						position[] = {-2, 0, 0};
-					};						
-					class Unit2 
-					{
-						side = 1;
-						vehicle = "SOR_MechOperator_D";
-						rank = CORPORAL;
-						position[] = {-4, 0, 0};
-					};
-					class Unit3 						
-					{
-						side = 1;
-						vehicle = "SOR_MechDriver_D";
-						rank = CORPORAL;
-						position[] = {-6, 0, 0};
-					};		
-				};
 				class SOR_SupGroup2_D
 				{
 					name = "HMG Team";
@@ -415,10 +342,16 @@ class CfgGroups
 						rank = PRIVATE;
 						position[] = {-6, 0, 0};
 					};	
-				};					
-				class SOR_FireTeamLead_D
+				};				
+			};
+			class SOR_InfGroups_Mech_D 
+			{
+				name = "Infantry (Mech)";
+				aliveCategory = "Infantry";
+			
+				class SOR_SabGroup2_D 
 				{
-					name = "Fire Team Lead/Medic";
+					name = "Saber Crew";
 					faction = "SOR_Faction_D";
 					side = 1;
 					rarityGroup = 0.75;
@@ -426,178 +359,225 @@ class CfgGroups
 					class Unit0 
 					{
 						side = 1;
-						vehicle = "SOR_Actual_D";
-						rank = CAPTAIN;
+						vehicle = "SOR_MechCrewCommander_D";
+						rank = LIEUTENANT;
 						position[] = {0, 0, 0};
-					};
-					
+					};						
 					class Unit1 
 					{
 						side = 1;
-						vehicle = "SOR_Medic_D";
-						rank = CAPTAIN;
-						position[] = {0, -2, 0};
+						vehicle = "SOR_MechCrew_D";
+						rank = CORPORAL;
+						position[] = {-2, 0, 0};
+					};						
+					class Unit2 
+					{
+						side = 1;
+						vehicle = "SOR_MechOperator_D";
+						rank = CORPORAL;
+						position[] = {-4, 0, 0};
 					};
-					
-				};				
-				class SOR_FireTeam1_D
+					class Unit3 						
+					{
+						side = 1;
+						vehicle = "SOR_MechDriver_D";
+						rank = CORPORAL;
+						position[] = {-6, 0, 0};
+					};		
+				};
+				class SOR_RhinoGroup_D 
 				{
-					name = "Fire Team (1)";
+					name = "Rhino Crew";
 					faction = "SOR_Faction_D";
 					side = 1;
 					rarityGroup = 0.75;
 					
-					class Unit0
+					class Unit0 
 					{
 						side = 1;
-						vehicle = "SOR_Teamleader_D";
-						rank = SERGEANT;
+						vehicle = "SOR_MechCrewCommander_D";
+						rank = LIEUTENANT;
 						position[] = {0, 0, 0};
-					};
-					class Unit1
+					};						
+					class Unit1 
 					{
 						side = 1;
-						vehicle = "SOR_M249AR_D";
+						vehicle = "SOR_MechDriver_D";
 						rank = CORPORAL;
-						position[] = {0, -2, 0};
-					};
-					class Unit2
+						position[] = {-2, 0, 0};
+					};						
+					class Unit2 
 					{
 						side = 1;
-						vehicle = "SOR_Grenadier_D";
-						rank = PRIVATE;
-						position[] = {0, -4, 0};
-					};
-					class Unit3
-					{
-						side = 1;
-						vehicle = "SOR_Rifleman_D";
-						rank = PRIVATE;
-						position[] = {0, -6, 0};
-					};
-				};					
-				class SOR_FireTeam2_D
-				{
-					name = "Fire Team (2)";
-					faction = "SOR_Faction_D";
-					side = 1;
-					rarityGroup = 0.75;
-				
-					
-					class Unit0
-					{
-						side = 1;
-						vehicle = "SOR_Teamleader_D";
-						rank = SERGEANT;
-						position[] = {0, 0, 0};
-					};
-					class Unit1
-					{
-						side = 1;
-						vehicle = "SOR_M240AR_D";
+						vehicle = "SOR_MechCrew_D";
 						rank = CORPORAL;
-						position[] = {0, -2, 0};
+						position[] = {-4, 0, 0};
 					};
-					class Unit2
-					{
-						side = 1;
-						vehicle = "SOR_Grenadier_D";
-						rank = PRIVATE;
-						position[] = {0, -4, 0};
-					};
-					class Unit3
-					{
-						side = 1;
-						vehicle = "SOR_Rilfeman_Ammo_D";
-						rank = PRIVATE;
-						position[] = {0, -6, 0};
-					};
-				};					
-				class SOR_FireTeam3_D
+				};
+				class SOR_OutlawGroup_D 
 				{
-					name = "Fire Team (3)";
+					name = "Outlaw Crew";
 					faction = "SOR_Faction_D";
 					side = 1;
 					rarityGroup = 0.75;
 					
-					class Unit0
+					class Unit0 
 					{
 						side = 1;
-						vehicle = "SOR_Teamleader_D";
-						rank = SERGEANT;
+						vehicle = "SOR_MechCrewCommander_D";
+						rank = LIEUTENANT;
 						position[] = {0, 0, 0};
-					};
-					class Unit1
+					};						
+					class Unit1 
 					{
 						side = 1;
-						vehicle = "SOR_M249AR_D";
+						vehicle = "SOR_MechDriver_D";
 						rank = CORPORAL;
-						position[] = {0, -2, 0};
-					};
-					class Unit2
-					{
-						side = 1;
-						vehicle = "SOR_Grenadier_D";
-						rank = PRIVATE;
-						position[] = {0, -4, 0};
-					};
-					class Unit3
-					{
-						side = 1;
-						vehicle = "SOR_Rilfeman_Ammo_D";
-						rank = PRIVATE;
-						position[] = {0, -6, 0};
-					};
-				};			
-				class SOR_ReconTeam2_D
+						position[] = {-2, 0, 0};
+					};						
+				}				
+			};
+			class SOR_InfGroups_Air_D 
+			{
+				name = "Infantry (Air)";
+				aliveCategory = "Infantry";
+
+				class SOR_AngGroup1_D 
 				{
-					name = "Recon Team";
+					name = "Angel Crew";
+					faction = "SOR_Faction_D";
+					side = 1;
+					rarityGroup = 0.75;
+	
+					class Unit0 
+					{
+						side = 1;
+						vehicle = "SOR_HeliPilot_D";
+						rank = LIEUTENANT;
+						position[] = {-0, 0, 0};
+					};						
+					class Unit1 
+					{
+						side = 1;
+						vehicle = "SOR_HeliPilot_D";
+						rank = CORPORAL;
+						position[] = {-2, 0, 0};
+					};						
+					class Unit2 
+					{
+						side = 1;
+						vehicle = "SOR_HeliCrew_D";
+						rank = CORPORAL;
+						position[] = {-4, 0, 0};
+					};
+					class Unit3 						
+					{
+						side = 1;
+						vehicle = "SOR_HeliCrew_D";
+						rank = CORPORAL;
+						position[] = {-6, 0, 0};
+					};
+				};		
+				class SOR_PegGroup2_D 
+				{
+					name = "Pegasus Crew";
 					faction = "SOR_Faction_D";
 					side = 1;
 					rarityGroup = 0.75;
 					
-					class Unit0
+					class Unit0 
 					{
 						side = 1;
-						vehicle = "SOR_ReconLeader_D";
-						rank = SERGEANT;
+						vehicle = "SOR_HeliPilot_D";
+						rank = LIEUTENANT;
 						position[] = {0, 0, 0};
-						
-					};
-					class Unit1
+					};					
+					class Unit1 
 					{
 						side = 1;
-						vehicle = "SOR_ReconJTAC_D";
+						vehicle = "SOR_HeliPilot_D";
 						rank = CORPORAL;
-						position[] = {0, -2, 0};
+						position[] = {-2, 0, 0};
 					};
-					class Unit2
+				};	
+				class SOR_MEVGroup2_D 
+				{
+					name = "Medivac Crew";
+					faction = "SOR_Faction_D";
+					side = 1;
+					rarityGroup = 0.75;
+					
+					class Unit0 
 					{
 						side = 1;
-						vehicle = "SOR_ReconRifleman_D";
-						rank = PRIVATE;
-						position[] = {0, -4, 0};
-					};
-					class Unit3
+						vehicle = "SOR_MEVPilot_D";
+						rank = LIEUTENANT;
+						position[] = {0, 0, 0};
+					};					
+					class Unit1 
 					{
 						side = 1;
-						vehicle = "SOR_Recon_M249AR_D";
+						vehicle = "SOR_MEVPilot_D";
+						rank = SERGEANT;
+						position[] = {-2, 0, 0};
+					};					
+					class Unit2 
+					{
+						side = 1;
+						vehicle = "SOR_ParaJumper_D";
 						rank = PRIVATE;
-						position[] = {0, -6, 0};
+						position[] = {-4, 0, 0};
+					};
+					class Unit3 
+					
+					{
+						side = 1;
+						vehicle = "SOR_ParaJumper_D";
+						rank = PRIVATE;
+						position[] = {-6, 0, 0};
 					};
 					class Unit4
 					{
 						side = 1;
-						vehicle = "SOR_ReconSpotter_D";
+						vehicle = "SOR_ParaJumper_D";
 						rank = PRIVATE;
-						position[] = {0, -8, 0};
+						position[] = {-8, 0, 0};
 					};
-					class Unit5
+				};
+				class SOR_EagleGroup2_D 
+				{
+					name = "Eagle Pilots";
+					faction = "SOR_Faction_D";
+					side = 1;
+					rarityGroup = 0.75;
+					
+					class Unit0 
 					{
 						side = 1;
-						vehicle = "SOR_Marksman_D";
-						rank = PRIVATE;
-						position[] = {0, -10, 0};
+						vehicle = "SOR_JetPilot_D";
+						rank = LIEUTENANT;
+						position[] = {0, 0, 0};
+					};
+					class Unit1 
+					{
+						side = 1;
+						vehicle = "SOR_JetPilot_D";
+						rank = LIEUTENANT;
+						position[] = {-2, 0, 0};
+					};
+					class Unit2 
+					{
+						side = 1;
+						vehicle = "SOR_JetPilot_D";
+						rank = LIEUTENANT;
+						position[] = {-4, 0, 0};
+					};
+					class Unit3 
+					{
+						side = 1;
+						vehicle = "SOR_JetPilot_D";
+						rank = LIEUTENANT;
+						position[] = {-6, 0, 0};
 					};
 				};
 			};

@@ -8,6 +8,7 @@
 //Call base backpacks
 	class tf_rt1523g_rhs;
 	class rhsusf_assault_eagleaiii_ocp;
+	class tf_anarc210;
 
 	
 //Custom Medic Pack	
@@ -116,14 +117,14 @@
 	};
 
 //Custom RTO Pack	
-	class SOR_RTO_Pack_D : tf_rt1523g_rhs
+	class SOR_RTO_Pack_D : tf_anarc210
 	{
 		displayName = "Pack Desert Radio";
 		class TransportMagazines
 		{
-			mag_xx(rhs_mag_m713_Red,8);
+			mag_xx(rhs_mag_m713_Red,1);
 			mag_xx(rhs_mag_m715_Green,2);
-			mag_xx(rhs_mag_m716_yellow,2);
+			mag_xx(rhs_mag_m714_White,2);
 		};	
 	};
 

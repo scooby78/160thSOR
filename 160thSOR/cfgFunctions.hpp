@@ -24,6 +24,10 @@ class CfgFunctions
 			class mech_service;
 			class trigger_mech;
 			class Taru_Pod_Mod;
+			class AWACSTARGETING;
+			class intelAction;
+			class SelfDestruct;
+			class radarInit;
 		};
 	};
 };
