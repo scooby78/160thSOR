@@ -12,6 +12,18 @@ class CfgEditorCategories
 	{
 		displayName = "160th SOR (Desert)";
 	};
+	class SOR_Cat_Supplies
+	{
+		displayName = "160th Supplies";
+	};
+	class SOR_Cat_Objects
+	{
+		displayName = "160th Objects";
+	};	
+	class SOR_Cat_Objects_Scripted
+	{
+		displayName = "160th Objects (Scripted)";
+	};	
 };
 
 // 3DEN Sub Catagories
@@ -19,16 +31,28 @@ class CfgEditorSubcategories
 {
 	class SOR_SubCat_SupplyBoxes 
 	{
-		displayName = "160th Boxes"; 
+		displayName = "Boxes"; 
 	};
 	class SOR_SubCat_SupplyCrates
 	{
-		displayName = "160th Crates";
+		displayName = "Crates";
 	};
 	class SOR_SubCat_SupplyContainers
 	{
-		displayName = "160th Containers";
-	};	
+		displayName = "Containers";
+	};
+	class SOR_SubCat_Lights
+	{
+		displayName = "Lights";
+	};
+	class SOR_SubCat_Pads
+	{
+		displayName = "Helipads";
+	};
+	class SOR_SubCat_Radar
+	{
+		displayName = "Radar items";
+	};
 	class SOR_SubCat_Infantry
 	{
 		displayName = "Men (Infantry)";
@@ -48,10 +72,6 @@ class CfgEditorSubcategories
 	class SOR_SubCat_Infantry_Recon
 	{
 		displayName = "Men (Recon)";
-	};	
-	class SOR_SubCat_Objects
-	{
-		displayName = "160th Objects";
 	};	
 	class SOR_SubCat_Vehicles
 	{

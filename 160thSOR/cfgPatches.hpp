@@ -50,6 +50,7 @@ class CfgPatches
 			"SOR_MORGunner_D",			
 			"SOR_MORCarrier_D",			
 			"SOR_MORRFL_D",
+			"SOR_Engineer_Teamleader_D",
 			"SOR_Engineer_D",
 			"SOR_Opfor_Rifleman_D",
 			"SOR_OpFor_PKM_D",
@@ -58,6 +59,8 @@ class CfgPatches
 			"SOR_HelipadRescue_F",
 			"SOR_MechService",
 			"SOR_Land_Medevac_HQ_V1_F",
+			"SOR_Land_Radar",
+			"SOR_Land_Screen",
 			"SOR_Land_Flush_Light_green_F",
 			"SOR_Land_Flush_Light_red_F",
 			"SOR_Land_Flush_Light_yellow_F",
@@ -126,13 +129,18 @@ class CfgPatches
 			"SOR_rhsusf_m1a2sep1tuskiid_usarmy",
 			"SOR_B_SDV_01_F",
 			"SOR_rhsusf_M1083A1P2_d_fmtv_usarmy",
-			"SOR_rhsusf_m1025_d_s",
-			"SOR_rhsusf_M1083A1P2_d_fmtv_usarmy_eng",
-			"SOR_B_APC_Tracked_01_rcws_F",
-			"SOR_B_APC_Tracked_01_CRV_F",
 			"SOR_rhsusf_m1025_d",
 			"SOR_rhsusf_m1025_d_Mk19",			
-			"SOR_rhsusf_m1025_d_m2"
+			"SOR_rhsusf_m1025_d_m2",
+			"SOR_rhsusf_m998_d_4dr",
+			"SOR_rhsusf_m998_d_2dr",
+			"SOR_Eng_Car_Transport_D",			
+			"SOR_Eng_Truck_Transport_D",			
+			"SOR_Eng_Truck_ammo_D",
+			"SOR_Eng_Truck_fuel_D",
+			"SOR_Eng_Truck_Repair_D",
+			"SOR_Eng_APC_Tracked_01",
+			"SOR_B_APC_Tracked_02"		
 		};
 		weapons[] = 
 		{

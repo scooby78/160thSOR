@@ -52,6 +52,11 @@ class CfgVehicleClasses
 		displayName = "160th Objects";
 		priority = 4; 
 	};
+	class SOR_Lights
+	{
+		displayName = "160th Lights";
+		priority = 4; 
+	};
 	class SOR_Vehicles
 	{
 		displayName = "160th Armour";

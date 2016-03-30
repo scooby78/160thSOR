@@ -3,7 +3,7 @@ _var = (_AWACST getVariable ["AWACS_ACTIVE",false]);
 if (_var) exitWith {_AWACST setVariable ["AWACS_ACTIVE",false,true];};
 if (!_var) then {_AWACST setVariable ["AWACS_ACTIVE",true,true];};
 
-_radarsize = 25000;
+_radarsize = 10000;
 _allCreatedMarkers = [];
 _enemysides = [];
 _friendlysides = [];

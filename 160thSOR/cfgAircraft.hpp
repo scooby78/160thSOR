@@ -36,7 +36,7 @@
 	class B_Heli_Transport_01_camo_F;
 
 
-// Transport Helos
+// Transport Helos fast rope
 class SOR_B_Heli_Transport_01_camo_F : B_Heli_Transport_01_camo_F
 	{
 		editorCategory = "SOR_Cat_Faction_D";
@@ -74,6 +74,7 @@ class SOR_UH60M : RHS_UH60M
 		vehicleclass = "SOR_Aircraft";
 		faction = SOR_Faction_D;
 		displayName = "UH-60M (C4/P12)";
+		armorStructural = 4; // Was 2	
 //		ace_fastroping_enabled = 1;
 //		ace_fastroping_ropeOrigins[] = {{1.4, 1.9, -.4}};
 		class UserActions
@@ -157,13 +158,14 @@ class SOR_CH_47F : RHS_CH_47F
 		editorSubcategory = "SOR_SubCat_Aircraft";
 		vehicleclass = "SOR_Aircraft";
 		faction = SOR_Faction_D;
-		displayName = "CH-47F (C4/P24)[Refuel]";
+		displayName = "CH-47F (C4/P24)";
 //		transportFuel = 30000;
 //		supplyRadius = 30;
 //		ace_fastroping_enabled = 1;
 //		ace_fastroping_ropeOrigins[] = {{0,-0.6,-3}};		
-		ace_refuel_fuelCargo = 10000;
-		ace_refuel_hooks[] = {[0.28,-4.99,-0.3],[-0.25,-4.99,-0.3]};
+//		ace_refuel_fuelCargo = 10000;
+//		ace_refuel_hooks[] = {[0.28,-4.99,-0.3],[-0.25,-4.99,-0.3]};
+		armorStructural = 4; // Was 2	
 		class UserActions
 		{
 			class SOR_AutoDrop
@@ -229,7 +231,9 @@ class SOR_UH60M_MEV2 : RHS_UH60M_MEV2
 		driverCanEject = 1; // was 0, Allows pilot to exit heli with engine running
 		ejectDeadCargo = 1; //test dead eject
 		crewCrashProtection = 0.20; /// Was 0.25, multiplier of damage to crew of the vehicle => low number means better protection //test
-		getInRadius = 4;		
+		getInRadius = 4;	
+		radarType = 4;	
+		armorStructural = 4; // Was 2			
 		crew = "SOR_MEVPilot_D";
 //		ace_fastroping_enabled = 1;
 //		ace_fastroping_ropeOrigins[] = {{1.4, 1.9, -.4}};		
@@ -263,6 +267,7 @@ class SOR_MELB_H6M : MELB_H6M
 		vehicleclass = "SOR_Aircraft";
 		faction = SOR_Faction_D;
 		displayName = "H-6M (C2/P2)";
+		armorStructural = 4; // Was 50
 		fuelCapacity = 110; //was fuelCapacity = 242;
 		fuelConsumptionRate = 0.0555; //was 0.0368;
 		class TransportItems 
@@ -285,6 +290,7 @@ class SOR_MELB_MH6M : MELB_MH6M
 		vehicleclass = "SOR_Aircraft";
 		faction = SOR_Faction_D;
 		displayName = "MH-6M (C2/P6)";
+		armorStructural = 4; // Was 50
 		fuelCapacity = 110; //was fuelCapacity = 242;
 		fuelConsumptionRate = 0.0555; //was 0.0368;
 //		ace_fastroping_enabled = 1;
@@ -310,6 +316,7 @@ class SOR_MELB_MH6M_MEV : MELB_MH6M
 		vehicleclass = "SOR_Aircraft";
 		faction = SOR_Faction_D;
 		displayName = "MH-6M MEV (C2/P6)";
+		armorStructural = 4; // Was 50
 		driverCanEject = 1; // was 0 test eject
 		ejectDeadCargo = 1; //test dead eject	
 		getInRadius = 4;
@@ -340,8 +347,9 @@ class SOR_MELB_AH6M_L : MELB_AH6M_L
 		vehicleclass = "SOR_Aircraft";
 		faction = SOR_Faction_D;
 		displayName = "AH-6M_L (C2/P1)";
-//		fuelCapacity = 200; //was fuelCapacity = 242;
-//		fuelConsumptionRate = 0.0555; //was 0.0368;
+		armorStructural = 4; // Was 50		
+		fuelCapacity = 200; //was fuelCapacity = 242;
+		fuelConsumptionRate = 0.0555; //was 0.0368;
 		class TransportItems 
 		{
 			item_xx(ACE_FieldDressing,10);
@@ -362,6 +370,7 @@ class SOR_MELB_AH6M_M : MELB_AH6M_M
 		vehicleclass = "SOR_Aircraft";
 		faction = SOR_Faction_D;
 		displayName = "AH-6M_M (C2/P1)";
+		armorStructural = 4; // Was 50
 		fuelCapacity = 200; //was fuelCapacity = 242;
 		fuelConsumptionRate = 0.0555; //was 0.0368;
 		class TransportItems 
@@ -384,6 +393,7 @@ class SOR_MELB_AH6M_H : MELB_AH6M_H
 		vehicleclass = "SOR_Aircraft";
 		faction = SOR_Faction_D;
 		displayName = "AH-6M_H (C2/P1)";
+		armorStructural = 4; // Was 50		
 		fuelCapacity = 200; //was fuelCapacity = 242;
 		fuelConsumptionRate = 0.0555; //was 0.0368;
 		class TransportItems 
