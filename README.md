@@ -1,4 +1,4 @@
-# 160thSOR
+# 160thSOR Desert Loadouts
 Features:
 
 - US styled loadouts, vehicles and weapons
