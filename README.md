@@ -1,5 +1,4 @@
-# 160thSOR
-160th SOR Desert Loadout Mod
+# 160th SOR Desert Loadout Mod
 
 Features:
 
