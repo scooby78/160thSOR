@@ -1178,6 +1178,8 @@ class SOR_MechDriver_D : SOR_MechCrew_D
 {
 	displayName = "Mechanised Driver";
 	backpack = "SOR_Repair_Pack_D";
+	icon = "iconManEngineer";
+	engineer = 1; // allows unit to repair 	
 };	
 
 //HMG Team
@@ -1268,8 +1270,16 @@ class SOR_Engineer_Teamleader_D : B_engineer_F
 	{
 		Standard_Mags
 	};
-	Items[] = {Standard_Meds};
-	RespawnItems[] = {Standard_Meds};
+	Items[] = 
+	{
+		"ACE_EntrenchingTool",
+		Standard_Meds
+	};
+	RespawnItems[] =
+	{
+		"ACE_EntrenchingTool",
+		Standard_Meds
+	};
 	linkedItems[] = 
 	{	
 		"rhsusf_iotv_ocp_Repair",

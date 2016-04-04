@@ -11,7 +11,6 @@ if (isServer) then
 		_mrk setMarkerType "selector_selectedMission";
 		_mrk setMarkerColor "ColorBlue";
 		_mrk setMarkerSize [1,1];
-
 	};
 
 	/*

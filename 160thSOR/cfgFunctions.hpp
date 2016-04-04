@@ -5,7 +5,7 @@ class CfgFunctions
 		class init
 		{
 			file = "160thSOR\functions";
-			class SORsettings { preInit = 1; };
+			class settings { preInit = 1; };
 		};
 		tag = "SOR";
 		class functions
