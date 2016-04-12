@@ -1,4 +1,7 @@
 # 160thSOR Desert Loadouts
+
+[Desert Loadout Wiki](https://github.com/scooby78/160thSOR/wiki)
+
 Features:
 
 - US styled loadouts, vehicles and weapons
