@@ -88,8 +88,18 @@ class SOR_OpFor_PKM_D : O_Soldier_AR_F
 		backpack = "SOR_OpFor_AR_Pack_D";
 		weapons[] = {"caf_pkm","Throw","Put"};
 		respawnWeapons[] = {"caf_pkm","Throw","Put"};
-		Items[] = {Standard_Meds};
-        RespawnItems[] = {Standard_Meds};		
+		Items[] = 
+		{
+			"ACE_SpareBarrel",
+			"ACE_SpareBarrel",			
+			Standard_Meds
+		};
+        RespawnItems[] =
+		{
+			"ACE_SpareBarrel",
+			"ACE_SpareBarrel",			
+			Standard_Meds
+		};	
 		magazines[] =
 		{
 			"rhs_mag_rgo",

@@ -1,6 +1,6 @@
 /*
 	Name: 160th SOR Mod
-	Author: AmTheAgent
+	Author: AmTheAgent (updated by Scooby)
 	Date: 27/09/15 01:09
 	Description: config.cpp
 */

@@ -428,7 +428,8 @@ class SOR_Eng_Truck_Transport_D : rhsusf_M1083A1P2_d_fmtv_usarmy
 	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_D;
-	displayName = "M1083 (Engineer)";		
+	displayName = "M1083 (Engineer)";	
+	ace_cargo_space = 16;	
 	class TransportItems
 	{
 		item_xx(ToolKit,1)			

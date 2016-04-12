@@ -28,6 +28,7 @@ class CfgFunctions
 			class intelAction;
 			class SelfDestruct;
 			class radarInit;
+			class airtraining;
 		};
 	};
 };
