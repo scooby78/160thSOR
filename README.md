@@ -1,6 +1,6 @@
 # 160thSOR Desert Loadouts
 
-[Desert Loadout Wiki](https://github.com/scooby78/160thSOR/wiki)
+[Click here](https://github.com/scooby78/160thSOR/wiki) for the wiki
 
 ##Features:
 
