@@ -6,7 +6,7 @@
 	1) Call the function by inserting into the unit's init.. "nul = [this,"enter_marker's_name_here"] spawn SOR_fnc_markUnits;" 
 	2) Add custom time delay by adding "nul = [this,"enter_marker's_name_here",time_in_seconds] spawn SOR_fnc_markUnits;" 
 */
-
+if(isNil "MARKERS_OFF") then {MARKERS_OFF = false};
 if (MARKERS_OFF) exitWith {};
 if (!isServer) exitWith {};
 _unit = _this select 0;

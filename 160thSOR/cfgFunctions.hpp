@@ -29,6 +29,7 @@ class CfgFunctions
 			class SelfDestruct;
 			class radarInit;
 			class airtraining;
+			class zeusTools;
 		};
 	};
 };

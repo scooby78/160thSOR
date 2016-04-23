@@ -257,6 +257,28 @@ class SOR_AirCommand_D : SOR_Commander_D
 */	
 };	
 
+//Zeus unit
+class SOR_ZeusCommand_D : SOR_Commander_D
+{
+	displayName = "Zeus";
+	cost = 10;
+	class UserActions
+	{
+		class SOR_CountUnitsAction
+		{
+			condition = "(alive this) && !(this getVariable ['ZEUSTOOLS_ACTIVE',false])";
+			displayName = "<t color='#F088ff'>Initialise Zeus Tools</t>";
+			priority = 8;
+			showWindow = 0;
+			hideOnUse = true;
+			radius= 2;
+			position = "";
+			onlyForPlayer = 1;
+			statement = "[this] spawn SOR_fnc_zeusTools";
+		};
+	};
+};	
+
 //Platoon RTO
 class SOR_RTO_D : B_Soldier_F
 {
@@ -1300,4 +1322,4 @@ class SOR_Engineer_D : SOR_Engineer_Teamleader_D
 {
 	displayName = "Engineer";
 	backpack = "SOR_Repair_Pack_D";
-};		
+};
