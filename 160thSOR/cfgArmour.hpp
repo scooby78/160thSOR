@@ -36,6 +36,12 @@ class SOR_RHS_M6 : RHS_M6
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_D;
 	armor = 500; //was 300 protection against missiles, collisions and explosions
+	peakTorque = 3660; // was 1660
+//	torqueCurve[] = {["(0/8000)","(2300/2300)"],["(1143/8000)","(2300/2300)"],["(2286/8000)","(2300/2300)"],["(3429/8000)","(2300/2300)"],["(4572/8000)","(2300/2300)"],["(5715/8000)","(2300/2300)"],["(6858/8000)","(2300/2300)"],["(8000/8000)","(2300/2300)"};
+	maxSpeed = 67;
+	maxOmega = 272.27;
+	enginePower = 1000; //was 447
+	engineLosses = 25;
 	class TransportItems 
 	{
 		item_xx(ACE_FieldDressing,20);
@@ -63,6 +69,8 @@ class SOR_M2A3_BUSKIII : RHS_M2A3_BUSKIII
 	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_D;
+	peakTorque = 3660; 
+	enginePower = 1000; 
 	armor = 500; //was 325 protection against missiles, collisions and explosions
 	class TransportItems 
 	{
@@ -203,6 +211,8 @@ class SOR_rhsusf_m1a1aim_tuski_d : rhsusf_m1a1aim_tuski_d
 	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_D;
+	peakTorque = 10355;
+	enginePower = 3000; 
 	armor = 700; //was 600 protection against missiles, collisions and explosions
 	class TransportItems 
 	{
@@ -231,6 +241,8 @@ class SOR_rhsusf_m1a2sep1tuskid_usarmy : rhsusf_m1a2sep1tuskid_usarmy
 	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_D;
+	peakTorque = 10355;
+	enginePower = 3000; 
 	armor = 700; //was 600 protection against missiles, collisions and explosions
 	class TransportItems 
 	{
@@ -259,6 +271,8 @@ class SOR_rhsusf_m1a2sep1tuskiid_usarmy : rhsusf_m1a2sep1tuskiid_usarmy
 	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_D;
+	peakTorque = 10355;
+	enginePower = 3000; 
 	armor = 800; //was 600 protection against missiles, collisions and explosions
 	class TransportItems
 	{
@@ -430,6 +444,9 @@ class SOR_Eng_Truck_Transport_D : rhsusf_M1083A1P2_d_fmtv_usarmy
 	faction = SOR_Faction_D;
 	displayName = "M1083 (Engineer)";	
 	ace_cargo_space = 16;	
+	gearBox[] = {-8,0,11,8.15,7.44,5.33};
+	enginePower = 850;  //was 268
+	peakTorque = 2450; //was 254
 	class TransportItems
 	{
 		item_xx(ToolKit,1)			
@@ -457,6 +474,8 @@ class SOR_Eng_Truck_ammo_D : B_Truck_01_ammo_F
 	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_D;
+	enginePower = 850;  //was 450
+	peakTorque = 2450; //was 1450
 	crew = "SOR_Engineer_D";
 	class TransportItems{};
 	class TransportWeapons{};
@@ -473,6 +492,8 @@ class SOR_Eng_Truck_fuel_D : B_Truck_01_fuel_F
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_D;
 	ace_refuel_fuelCargo = 30000;
+	enginePower = 850;  //was 450
+	peakTorque = 2450; //was 1450
 	crew = "SOR_Engineer_D";	
 	class TransportItems{};
 	class TransportWeapons{};
@@ -489,6 +510,8 @@ class SOR_Eng_Truck_Repair_D : B_Truck_01_Repair_F
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_D;
 	ace_cargo_space = 16;
+	enginePower = 850;  //was 450
+	peakTorque = 2450; //was 1450
 	crew = "SOR_Engineer_D";
 	class TransportItems{};
 	class TransportWeapons{};
