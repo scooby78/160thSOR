@@ -213,6 +213,8 @@ class SOR_rhsusf_m1a1aim_tuski_d : rhsusf_m1a1aim_tuski_d
 	faction = SOR_Faction_D;
 	peakTorque = 10355;
 	enginePower = 3000; 
+	brakeDistance = 1;
+	maxBrakeTorque = 24500;
 	armor = 700; //was 600 protection against missiles, collisions and explosions
 	class TransportItems 
 	{
@@ -243,6 +245,7 @@ class SOR_rhsusf_m1a2sep1tuskid_usarmy : rhsusf_m1a2sep1tuskid_usarmy
 	faction = SOR_Faction_D;
 	peakTorque = 10355;
 	enginePower = 3000; 
+	brakeDistance = 1;
 	armor = 700; //was 600 protection against missiles, collisions and explosions
 	class TransportItems 
 	{
@@ -273,6 +276,7 @@ class SOR_rhsusf_m1a2sep1tuskiid_usarmy : rhsusf_m1a2sep1tuskiid_usarmy
 	faction = SOR_Faction_D;
 	peakTorque = 10355;
 	enginePower = 3000; 
+	brakeDistance = 1;
 	armor = 800; //was 600 protection against missiles, collisions and explosions
 	class TransportItems
 	{
