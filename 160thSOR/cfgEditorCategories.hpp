@@ -23,7 +23,7 @@ class CfgEditorCategories
 	class SOR_Cat_Objects_Scripted
 	{
 		displayName = "160th Objects (Scripted)";
-	};	
+	};
 };
 
 // 3DEN Sub Catagories
