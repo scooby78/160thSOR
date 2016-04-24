@@ -322,7 +322,11 @@ class SOR_rhsusf_M1083A1P2_d_fmtv_usarmy : rhsusf_M1083A1P2_d_fmtv_usarmy
 	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_D;
-	displayName = "M1083";		
+	displayName = "M1083";	
+	ace_cargo_space = 16;	
+	gearBox[] = {-8,0,11,8.15,7.44,5.33};
+	enginePower = 850;  //was 268
+	peakTorque = 2450; //was 254	
 	class TransportItems{};
 	class TransportWeapons{};
 	class TransportMagazines{};
