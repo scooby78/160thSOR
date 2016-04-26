@@ -1,5 +1,7 @@
 if (!hasInterface) exitwith {};
 player setVariable ["ZEUSTOOLS_ACTIVE",true];
+
+//Count Units Action
 SOR_CountUnits = [];
 SOR_CountUnits set [0, player addAction ["<t color='#03F243'>Count Units On Map</t", 
 {

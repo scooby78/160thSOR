@@ -128,6 +128,7 @@ class CfgPatches
 			"SOR_rhsusf_m1a2sep1tuskid_usarmy",
 			"SOR_rhsusf_m1a2sep1tuskiid_usarmy",
 			"SOR_B_SDV_01_F",
+			"SOR_B_Boat_Transport_01_F",
 			"SOR_rhsusf_M1083A1P2_d_fmtv_usarmy",
 			"SOR_rhsusf_m1025_d",
 			"SOR_rhsusf_m1025_d_Mk19",			
@@ -140,7 +141,8 @@ class CfgPatches
 			"SOR_Eng_Truck_fuel_D",
 			"SOR_Eng_Truck_Repair_D",
 			"SOR_Eng_APC_Tracked_01",
-			"SOR_B_APC_Tracked_02"		
+			"SOR_B_APC_Tracked_02",	
+			"SOR_B_APC_Wheeled_01_cannon_F"
 		};
 		weapons[] = 
 		{
