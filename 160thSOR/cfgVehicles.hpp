@@ -5,6 +5,25 @@
 	Description: cfgVehicles.hpp
 */
 
+class DefaultEventhandlers;
+class WeaponFireGun;
+class WeaponCloudsGun;
+class WeaponFireMGun;
+class WeaponCloudsMGun;
+class RCWSOptics;
+class Optics_Armored;
+class Optics_Commander_01: Optics_Armored
+{
+	class Wide;
+	class Medium;
+	class Narrow;
+};
+class Optics_Gunner_APC_01: Optics_Armored
+{
+	class Wide;
+	class Medium;
+	class Narrow;
+};
 class cfgVehicles 
 {	 
 #include "cfgBackpacks.hpp"
@@ -14,4 +33,5 @@ class cfgVehicles
 #include "cfgCrates.hpp"
 #include "cfgAircraft.hpp"
 #include "cfgArmour.hpp"
+#include "cfgArmour2.hpp"
 };

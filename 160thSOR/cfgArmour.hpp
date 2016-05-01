@@ -28,6 +28,7 @@ class B_APC_Tracked_01_CRV_F;
 class B_Truck_01_ammo_F;
 class B_Truck_01_fuel_F;
 class B_Truck_01_Repair_F;
+class B_Boat_Transport_01_F;
 
 //M6A2	
 class SOR_RHS_M6 : RHS_M6
@@ -100,6 +101,8 @@ class SOR_rhsusf_m113d_usarmy : rhsusf_m113d_usarmy
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_D;
 	armor = 500; //was 200 protection against missiles, collisions and explosions
+	peakTorque = 1540; // was 770
+	enginePower = 410; //was 205	
 	class TransportItems 
 	{
 		item_xx(ACE_FieldDressing,20);
@@ -128,6 +131,8 @@ class SOR_rhsusf_m113d_usarmy_supply : rhsusf_m113d_usarmy_supply
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_D;
 	armor = 500; //was 200 protection against missiles, collisions and explosions
+	peakTorque = 1540; // was 770
+	enginePower = 410; //was 205	
 	class TransportItems 
 	{
 		item_xx(ACE_FieldDressing,20);
@@ -156,6 +161,8 @@ class SOR_rhsusf_m113d_usarmy_unarmed : rhsusf_m113d_usarmy_unarmed
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_D;
 	armor = 500; //was 200 protection against missiles, collisions and explosions
+	peakTorque = 1540; // was 770
+	enginePower = 410; //was 205
 	class TransportItems 
 	{
 		item_xx(ACE_FieldDressing,20);
@@ -184,6 +191,8 @@ class SOR_rhsusf_m113d_usarmy_medical : rhsusf_m113d_usarmy_medical
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_D;
 	armor = 500; //was 200 protection against missiles, collisions and explosions
+	peakTorque = 1540; // was 770
+	enginePower = 410; //was 205
 	class TransportItems 
 	{
 		item_xx(ACE_Fielddressing,24)
@@ -315,6 +324,34 @@ class SOR_B_SDV_01_F : B_SDV_01_F
 	class TransportMagazines{};
 	class TransportBackpacks{};
 };	
+
+//rubber duck
+class SOR_B_Boat_Transport_01_F : B_Boat_Transport_01_F
+{
+	editorCategory = "SOR_Cat_Faction_D";
+	vehicleclass = "SOR_Vehicles";
+	faction = SOR_Faction_D;	
+	driverCanEject = 0; //was 1
+	cargoCanEject = 0; //was 1
+	maxSpeed = 70; //was 70
+	enginePower = 40; //was 18.5
+	engineShiftY = 0; //was 0
+	waterResistance = 10; //was 10
+	waterResistanceCoef = 0.01; // was 0.01
+	waterLinearDampingCoefX = 2; //was 2
+	rudderForceCoef = 0.08; //was 0.08
+	rudderForceCoefAtMaxSpeed = 0.001; //was 0.001
+	class TransportItems
+	{
+		item_xx(G_Diving,3)
+		item_xx(U_B_Wetsuit,3)
+		item_xx(V_RebreatherB,3)
+	};
+	class TransportWeapons{};
+	class TransportMagazines{};
+	class TransportBackpacks{};
+};
+
 
 //Troop transport
 class SOR_rhsusf_M1083A1P2_d_fmtv_usarmy : rhsusf_M1083A1P2_d_fmtv_usarmy
@@ -542,13 +579,11 @@ class SOR_Eng_APC_Tracked_01 : B_APC_Tracked_01_rcws_F
 	};
 	class TransportWeapons
 	{
-		weap_xx(rhs_weap_m4a1_carryhandle_grip,2)
 		weap_xx(rhs_weap_M136_hp,2)			
 	};
 	class TransportMagazines{};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_CombatPack_D,2)
 		pack_xx(SOR_OrdanancePack_D,2)		
 	};
 };	
@@ -564,13 +599,11 @@ class SOR_B_APC_Tracked_02 : B_APC_Tracked_01_CRV_F
 	};
 	class TransportWeapons
 	{
-		weap_xx(rhs_weap_m4a1_carryhandle_grip,2)
 		weap_xx(rhs_weap_M136_hp,2)			
 	};
 	class TransportMagazines{};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_CombatPack_D,2)
 		pack_xx(SOR_OrdanancePack_D,2)		
 	};
 };	

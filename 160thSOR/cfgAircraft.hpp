@@ -5,35 +5,35 @@
 	Description: cfgAircraft.hpp
 */
 
-	class RHS_UH60M;
-	class RHS_UH60M_MEV2;
-	class RHS_CH_47F;
-	class MELB_AH6M_H;
-	class MELB_AH6M_L;
-	class MELB_AH6M_M;
-	class MELB_H6M;
-	class MELB_MH6M;
-	class FIR_F16C_TWAS;
-	class FIR_F16C_TWAS2;
-	class FIR_F16C;
-	class FIR_F16C_Polish_CFT;
-	class O_Heli_Transport_04_F;
-	class O_Heli_Transport_04_medevac_F;
-	class O_Heli_Transport_04_bench_F;
-	class O_Heli_Transport_04_covered_F;
-	class O_Heli_Attack_02_F;
-	class O_Heli_Attack_02_black_F;
-	class O_Heli_Light_02_v2_F;
-	class O_Plane_CAS_02_F;
-	class RHS_Mi8amt_civilian;
-	class I_Plane_Fighter_03_AA_F;
-	class I_Plane_Fighter_03_CAS_F;
-	class RHS_AH64D_AA;
-	class RHS_AH64D_CS;
-	class RHS_AH64D_GS;
-	class RHS_C130J;
-	class RHS_A10;
-	class B_Heli_Transport_01_camo_F;
+class RHS_UH60M;
+class RHS_UH60M_MEV2;
+class RHS_CH_47F;
+class MELB_AH6M_H;
+class MELB_AH6M_L;
+class MELB_AH6M_M;
+class MELB_H6M;
+class MELB_MH6M;
+class FIR_F16C_TWAS;
+class FIR_F16C_TWAS2;
+class FIR_F16C;
+class FIR_F16C_Polish_CFT;
+class O_Heli_Transport_04_F;
+class O_Heli_Transport_04_medevac_F;
+class O_Heli_Transport_04_bench_F;
+class O_Heli_Transport_04_covered_F;
+class O_Heli_Attack_02_F;
+class O_Heli_Attack_02_black_F;
+class O_Heli_Light_02_v2_F;
+class O_Plane_CAS_02_F;
+class RHS_Mi8amt_civilian;
+class I_Plane_Fighter_03_AA_F;
+class I_Plane_Fighter_03_CAS_F;
+class RHS_AH64D_AA;
+class RHS_AH64D_CS;
+class RHS_AH64D_GS;
+class RHS_C130J;
+class RHS_A10;
+class B_Heli_Transport_01_camo_F;
 
 
 // Transport Helos fast rope
