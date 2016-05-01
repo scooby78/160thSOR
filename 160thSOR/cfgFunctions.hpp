@@ -30,6 +30,7 @@ class CfgFunctions
 			class radarInit;
 			class airtraining;
 			class zeusTools;
+			class eject;
 		};
 	};
 };
