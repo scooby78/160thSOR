@@ -175,7 +175,6 @@ class CfgPatches
 			"ace_common",
 			"MELB",
 			"FIR_F16_F",
-			"aia_misc3_config"
 		};
 	};
 };
