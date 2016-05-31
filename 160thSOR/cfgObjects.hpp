@@ -19,8 +19,6 @@ class Land_HelipadCircle_F;
 class B_Slingload_01_Fuel_F;
 class B_Slingload_01_Ammo_F;
 class B_Slingload_01_Repair_F;
-class US_WarfareBAntiAirRadar_Base_EP1;
-class Land_Laptop_unfolded_F;
 
 ////////////////////////
 // Objects (Scripted) //
@@ -121,26 +119,6 @@ class SOR_Land_Medevac_HQ_V1_F : Land_Medevac_HQ_V1_F
 	vehicleClass = "SOR_Objects";
 	faction = SOR_Faction_OBJ;
 	displayName = "Medevac HQ";
-};
-
-//Radar installations for AWACS system
-class SOR_Land_Radar : US_WarfareBAntiAirRadar_Base_EP1
-{
-	editorCategory = "SOR_Cat_Objects";
-	editorSubcategory = "SOR_SubCat_Radar";
-	vehicleClass = "SOR_Objects";
-	faction = SOR_Faction_OBJ;
-	displayName = "Air Radar Installation";
-};
-
-// Laptop for AWACS system
-class SOR_Land_Screen : Land_Laptop_unfolded_F
-{
-	editorCategory = "SOR_Cat_Objects";
-	editorSubcategory = "SOR_SubCat_Radar";
-	vehicleClass = "SOR_Objects";
-	faction = SOR_Faction_OBJ;
-	displayName = "Air Radar Interface";
 };
 
 //////////
