@@ -49,6 +49,10 @@ class CfgEditorSubcategories
 	{
 		displayName = "Helipads";
 	};
+	class SOR_SubCat_Objects
+	{
+		displayName = "Objects";	
+	}
 	class SOR_SubCat_Radar
 	{
 		displayName = "Radar items";
