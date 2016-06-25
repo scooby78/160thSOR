@@ -204,6 +204,18 @@ class SOR_AirCommand_D : SOR_Commander_D
 	engineer = 1; // allows unit to repair 
 	weapons[] = {"rhsusf_weap_m9","Throw", "Put","Laserdesignator"};
 	respawnWeapons[] = {"rhsusf_weap_m9","Throw", "Put","Laserdesignator"};
+	Items[] =
+	{
+		"B_UavTerminal",
+		Standard_Meds,
+		SL_Equip
+	};  
+	RespawnItems[] = 
+	{
+		"B_UavTerminal",
+		Standard_Meds,
+		SL_Equip
+	};
 	magazines[] = 
 	{
 		Std_Pistol,
@@ -465,7 +477,7 @@ class SOR_M240AR_D : B_soldier_AR_F
 		"rhs_mag_an_m8hc",
 		"rhs_mag_an_m8hc",
 		"rhs_mag_m18_green",
-		"rhsusf_100Rnd_762x51"
+		"SOR_rhsusf_100Rnd_762x51_m62_tracer"
 	};
 	respawnMagazines[] =
 	{
@@ -476,7 +488,7 @@ class SOR_M240AR_D : B_soldier_AR_F
 		"rhs_mag_an_m8hc",
 		"rhs_mag_an_m8hc",
 		"rhs_mag_m18_green",
-		"rhsusf_100Rnd_762x51"
+		"SOR_rhsusf_100Rnd_762x51_m62_tracer"
 	};
 	linkedItems[] = 
 	{	
@@ -819,6 +831,7 @@ class SOR_ReconLeader_D : B_recon_TL_F
 	vehicleclass = "SOR_Infantry_Recon";
 	faction = SOR_Faction_D;
 	uniformClass = "rhs_uniform_cu_ocp";
+	backpack = "tf_anarc210";
 	displayName = "Recon Lead";
 	accuracy = 3.5;
 //		cost = 500000;

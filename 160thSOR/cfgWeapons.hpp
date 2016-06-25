@@ -131,6 +131,22 @@ class cfgWeapons
 	
 	class 160_rhs_weap_m240B: rhs_weap_m240B 
 	{
+		magazines[] = 
+		{
+			"SOR_rhsusf_100Rnd_762x51_m62_tracer",
+			"rhsusf_50Rnd_762x51",
+			"rhsusf_50Rnd_762x51_m61_ap",
+			"rhsusf_50Rnd_762x51_m62_tracer",
+			"rhsusf_50Rnd_762x51_m80a1epr",
+			"rhsusf_50Rnd_762x51_m82_blank",
+			"rhsusf_100Rnd_762x51",
+			"rhsusf_100Rnd_762x51_m61_ap",
+			"rhsusf_100Rnd_762x51_m62_tracer",
+			"rhsusf_100Rnd_762x51_m80a1epr",
+			"rhsusf_100Rnd_762x51_m82_blank",
+			"rhsusf_50Rnd_762x51_m993",
+			"rhsusf_100Rnd_762x51_m993"
+		};
 		class LinkedItems 
 		{
 			class LinkedItemsOptic 

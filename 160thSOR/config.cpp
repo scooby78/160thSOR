@@ -12,6 +12,7 @@
 #include "cfgVehicleClasses.hpp"
 #include "cfgGroups.hpp"
 #include "cfgWeapons.hpp"
+#include "cfgMagazines.hpp"
 #include "cfgEditorCategories.hpp"
 #include "cfgUnitInsignias.hpp"
 

@@ -56,7 +56,7 @@ class SOR_RHS_M6 : RHS_M6
 	{
 		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,20)
 		mag_xx(rhs_200rnd_556x45_M_SAW,4)
-		mag_xx(rhsusf_100Rnd_762x51,4)
+		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,4)
 	};
 	class TransportBackpacks
 	{
@@ -86,7 +86,7 @@ class SOR_M2A3_BUSKIII : RHS_M2A3_BUSKIII
 	{
 		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,20)
 		mag_xx(rhs_200rnd_556x45_M_SAW,4)
-		mag_xx(rhsusf_100Rnd_762x51,4)
+		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,4)
 	};
 	class TransportBackpacks
 	{
@@ -116,7 +116,7 @@ class SOR_rhsusf_m113d_usarmy : rhsusf_m113d_usarmy
 	{
 		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,20)
 		mag_xx(rhs_200rnd_556x45_M_SAW,4)
-		mag_xx(rhsusf_100Rnd_762x51,4)
+		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,4)
 	};
 	class TransportBackpacks
 	{
@@ -146,7 +146,7 @@ class SOR_rhsusf_m113d_usarmy_supply : rhsusf_m113d_usarmy_supply
 	{
 		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,20)
 		mag_xx(rhs_200rnd_556x45_M_SAW,4)
-		mag_xx(rhsusf_100Rnd_762x51,4)
+		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,4)
 	};
 	class TransportBackpacks
 	{
@@ -176,7 +176,7 @@ class SOR_rhsusf_m113d_usarmy_unarmed : rhsusf_m113d_usarmy_unarmed
 	{
 		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,20)
 		mag_xx(rhs_200rnd_556x45_M_SAW,4)
-		mag_xx(rhsusf_100Rnd_762x51,4)
+		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,4)
 	};
 	class TransportBackpacks
 	{
@@ -238,7 +238,7 @@ class SOR_rhsusf_m1a1aim_tuski_d : rhsusf_m1a1aim_tuski_d
 	{
 		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,20)
 		mag_xx(rhs_200rnd_556x45_M_SAW,4)
-		mag_xx(rhsusf_100Rnd_762x51,4)
+		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,4)
 	};
 	class TransportBackpacks
 	{
@@ -269,7 +269,7 @@ class SOR_rhsusf_m1a2sep1tuskid_usarmy : rhsusf_m1a2sep1tuskid_usarmy
 	{
 		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,20)
 		mag_xx(rhs_200rnd_556x45_M_SAW,4)
-		mag_xx(rhsusf_100Rnd_762x51,4)
+		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,4)
 	};
 	class TransportBackpacks
 	{
@@ -300,7 +300,7 @@ class SOR_rhsusf_m1a2sep1tuskiid_usarmy : rhsusf_m1a2sep1tuskiid_usarmy
 	{
 		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,20)
 		mag_xx(rhs_200rnd_556x45_M_SAW,4)
-		mag_xx(rhsusf_100Rnd_762x51,4)
+		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,4)
 	};
 	class TransportBackpacks
 	{
@@ -470,7 +470,7 @@ class SOR_Eng_Car_Transport_D : rhsusf_m1025_d_s
 	class TransportMagazines
 	{
 		mag_xx(rhs_200rnd_556x45_M_SAW,2)
-		mag_xx(rhsusf_100Rnd_762x51,2)
+		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,2)
 	};
 	class TransportBackpacks
 	{
@@ -503,7 +503,7 @@ class SOR_Eng_Truck_Transport_D : rhsusf_M1083A1P2_d_fmtv_usarmy
 	class TransportMagazines
 	{
 		mag_xx(rhs_200rnd_556x45_M_SAW,2)
-		mag_xx(rhsusf_100Rnd_762x51,2)
+		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,2)
 	};
 	class TransportBackpacks
 	{
