@@ -1,14 +1,16 @@
 /*
 	Name: 160th SOR Mod
-	Author: AmTheAgent & Scooby
-	Date: 27/09/15 01:09
+	Author: Scooby
+	Date: 13/07/16 01:09
 	Description: cfgPatches.hpp
 */
 
 class CfgPatches 
 {
-	class SOR_Desert_Loadouts 
+	class 160th_SOR_Loadouts 
 	{
+		author="160th SOR (Scooby)";
+		url="http://www.160th.net";
 		units[] = 
 		{
 			"SOR_Base",
@@ -52,6 +54,47 @@ class CfgPatches
 			"SOR_MORRFL_D",
 			"SOR_Engineer_Teamleader_D",
 			"SOR_Engineer_D",
+			
+			"SOR_Actual_W",
+			"SOR_Commander_W",
+			"SOR_MechCommand_W",
+			"SOR_AirCommand_W",
+			"SOR_RTO_W",			
+			"SOR_Teamleader_W",
+			"SOR_Medic_W",
+			"SOR_M249AR_W",
+			"SOR_M240AR_W",
+			"SOR_Grenadier_W",
+			"SOR_Rifleman_W",
+			"SOR_Rifleman_ammo_W",
+			"SOR_RiflemanAT_W",
+			"SOR_HeliPilot_W",
+			"SOR_HeliCrew_W",
+			"SOR_JetPilot_W",
+			"SOR_MEVPilot_W",
+			"SOR_ParaJumper_W",	
+			"SOR_ReconLeader_W",
+			"SOR_ReconJTAC_W",
+			"SOR_ReconRifleman_W",
+			"SOR_Recon_M249AR_W",
+			"SOR_ReconSpotter_W",
+			"SOR_Marksman_W",			
+			"SOR_Sniper_W",
+			"SOR_Spotter_W",
+			"SOR_MechCrew_W",
+			"SOR_MechOperator_W",
+			"SOR_MechCrewCommander_W",
+			"SOR_MechDriver_W",
+			"SOR_HMGActual_W",
+			"SOR_HMGGunner_W",
+			"SOR_HMGCarrier_W",
+			"SOR_HMGRFL_W",
+			"SOR_MORActual_W",
+			"SOR_MORGunner_W",
+			"SOR_MORCarrier_W",
+			"SOR_MORRFL_W",
+			"SOR_Engineer_W",
+			
 			"SOR_Opfor_Rifleman_D",
 			"SOR_OpFor_PKM_D",
 			"SOR_Opfor_TL_D",
