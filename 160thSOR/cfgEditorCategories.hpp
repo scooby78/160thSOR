@@ -4,10 +4,12 @@
 	Date: 25/03/16 02:05
 	Description: cfgEditorCategories.hpp
 */
-
-// 3DEN Catagories
+/////////////////////
+// 3DEN Catagories //
+/////////////////////
 class CfgEditorCategories
 {
+// Desert	
 	class SOR_Cat_Faction_D
 	{
 		displayName = "160th SOR (Desert)";
@@ -24,9 +26,15 @@ class CfgEditorCategories
 	{
 		displayName = "160th Objects (Scripted)";
 	};
+// Woodland
+	class SOR_Cat_Faction_W
+	{
+		displayName = "160th SOR (Woodland)";
+	};
 };
-
-// 3DEN Sub Catagories
+/////////////////////////
+// 3DEN Sub Catagories //
+/////////////////////////
 class CfgEditorSubcategories
 {
 	class SOR_SubCat_SupplyBoxes 

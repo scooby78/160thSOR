@@ -14,18 +14,25 @@ class cfgFactionClasses
 		priority = 1;
 		side = 1;
 	};
+	class SOR_Faction_W
+	{
+		displayName = "160th SOR (WoodLand)";
+		icon = "160thSOR\data\160th.paa";
+		priority = 2;
+		side = 1;
+	};	
 	class SOR_Faction_OBJ
 	{
 		displayName = "160th SOR Objects";
 		icon = "160thSOR\data\160th.paa";
-		priority = 2;
+		priority = 3;
 		side = 1;
 	};
 	class SOR_Faction_CRATE
 	{
 		displayName = "160th SOR Supplies";
 		icon = "160thSOR\data\160th.paa";
-		priority = 3;
+		priority = 4;
 		side = 1;
 	};
 };

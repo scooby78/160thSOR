@@ -26,12 +26,21 @@ class Optics_Gunner_APC_01: Optics_Armored
 };
 class cfgVehicles 
 {	 
-#include "cfgBackpacks.hpp"
-#include "cfgObjects.hpp"
-#include "cfgTroopsDesert.hpp"
-#include "cfgOpForDesert.hpp"
-#include "cfgCrates.hpp"
-#include "cfgAircraft.hpp"
-#include "cfgArmour.hpp"
-#include "cfgArmour2.hpp"
+	#include "cfgBackpacks.hpp"
+	#include "cfgBackpacksWoodland.hpp"
+	
+	#include "cfgObjects.hpp"
+	
+	#include "cfgTroopsDesert.hpp"
+	#include "cfgTroopsWoodland.hpp"	
+	#include "cfgOpForDesert.hpp"
+	
+	#include "cfgCrates.hpp"
+
+	#include "cfgAircraft.hpp"
+	#include "cfgAircraftWoodland.hpp"
+
+	#include "cfgArmour.hpp"
+	#include "cfgArmour2.hpp"
+	#include "cfgArmourWoodland.hpp"
 };

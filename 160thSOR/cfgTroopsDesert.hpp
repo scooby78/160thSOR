@@ -905,6 +905,7 @@ class SOR_ReconRifleman_D : SOR_ReconLeader_D
 {
 	icon =  "iconMan";
 	displayName = "Recon Rifleman";
+	backpack = "";
 	weapons[] = {"160_rhs_weap_m16a4_carryhandle_grip_pmag","Throw","Put","ACE_Vector"};
 	respawnWeapons[] = {"160_rhs_weap_m16a4_carryhandle_grip_pmag","Throw","Put","ACE_Vector"};
 	magazines[] =

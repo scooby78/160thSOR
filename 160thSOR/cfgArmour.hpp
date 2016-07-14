@@ -352,7 +352,6 @@ class SOR_B_Boat_Transport_01_F : B_Boat_Transport_01_F
 	class TransportBackpacks{};
 };
 
-
 //Troop transport
 class SOR_rhsusf_M1083A1P2_d_fmtv_usarmy : rhsusf_M1083A1P2_d_fmtv_usarmy
 {
