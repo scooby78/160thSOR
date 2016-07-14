@@ -56,9 +56,8 @@ class SOR_rhsusf_m113_usarmy : SOR_rhsusf_m113d_usarmy
 	editorCategory = "SOR_Cat_Faction_W";
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_W;
-	model = "\rhsusf\addons\rhsusf_m113\m113a3_wd_M2";
-	picture = "\rhsusf\addons\rhsusf_m113\UI\M113A3_M2_ca";
-	Icon = "\rhsusf\addons\rhsusf_m113\data\icom113_ca";
+	hiddenSelections[] = {"camo1","camo2","camo3","camo4","camo5","camo6"};
+	hiddenSelectionsTextures[] = {"rhsusf\addons\rhsusf_m113\data_new\m113a3_01_wd_h_co.paa","rhsusf\addons\rhsusf_m113\data_new\m113a3_02_wd_h_co.paa","rhsusf\addons\rhsusf_m113\data_new\m113a3_03_wd_co.paa","rhsusf\addons\rhsusf_m113\data_new\m113a3_int03_wd_co.paa","rhsusf\addons\rhsusf_m113\data_new\m23_pintle_wd_co.paa","rhsusf\addons\rhsusf_m113\data_new\m113a3_shield_wd_co.paa"};
 };
 	
 //M113A3 (Supply)	
@@ -67,9 +66,8 @@ class SOR_rhsusf_m113_usarmy_supply : SOR_rhsusf_m113d_usarmy_supply
 	editorCategory = "SOR_Cat_Faction_W";
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_W;
-	model = "\rhsusf\addons\rhsusf_m113\m113a3_wd_supply";
-	picture = "\rhsusf\addons\rhsusf_m113\UI\M113A3_AMMO_ca";
-	Icon = "\rhsusf\addons\rhsusf_m113\data\icom113_ca";
+	hiddenSelections[] = {"camo1","camo2","camo3","camo4","camo5","camo6"};
+	hiddenSelectionsTextures[] = {"rhsusf\addons\rhsusf_m113\data_new\m113a3_01_sup_wd_co.paa","rhsusf\addons\rhsusf_m113\data_new\m113a3_02_sup_wd_co.paa","rhsusf\addons\rhsusf_m113\data_new\m113a3_03_wd_co.paa","rhsusf\addons\rhsusf_m113\data_new\m113a3_int03_wd_co.paa","rhsusf\addons\rhsusf_m113\data_new\m23_pintle_wd_co.paa"};
 };
 
 //M113A3 (Unarmed)	
@@ -78,9 +76,8 @@ class SOR_rhsusf_m113_usarmy_unarmed : SOR_rhsusf_m113d_usarmy_unarmed
 	editorCategory = "SOR_Cat_Faction_W";
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_W;
-	model = "\rhsusf\addons\rhsusf_m113\m113a3_wd_unarmed";
-	picture = "\rhsusf\addons\rhsusf_m113\UI\M113A3_UNARMED_ca";
-	Icon = "\rhsusf\addons\rhsusf_m113\data\icom113_ca";
+	hiddenSelections[] = {"camo1","camo2","camo3","camo4","camo5","camo6"};
+	hiddenSelectionsTextures[] = {"rhsusf\addons\rhsusf_m113\data_new\m113a3_01_wd_l_co.paa","rhsusf\addons\rhsusf_m113\data_new\m113a3_02_wd_l_co.paa","rhsusf\addons\rhsusf_m113\data_new\m113a3_03_wd_co.paa","rhsusf\addons\rhsusf_m113\data_new\m113a3_int03_wd_co.paa"};
 };
 	
 //M113A3 (Medical)
@@ -89,9 +86,8 @@ class SOR_rhsusf_m113_usarmy_medical : SOR_rhsusf_m113d_usarmy_medical
 	editorCategory = "SOR_Cat_Faction_W";
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_W;
-	model = "\rhsusf\addons\rhsusf_m113\m113a3_wd_medical";
-	picture = "\rhsusf\addons\rhsusf_m113\UI\M113A3_MEDICAL_ca";
-	Icon = "\rhsusf\addons\rhsusf_m113\data\icom113_ca";
+	hiddenSelections[] = {"camo1","camo2","camo3","camo4","camo5","camo6"};
+	hiddenSelectionsTextures[] = {"rhsusf\addons\rhsusf_m113\data_new\m113a3_01_wd_med_co.paa","rhsusf\addons\rhsusf_m113\data_new\m113a3_02_wd_l_co.paa","rhsusf\addons\rhsusf_m113\data_new\m113a3_03_wd_co.paa","rhsusf\addons\rhsusf_m113\data_new\m113a3_int03_wd_co.paa"};
 };
 	
 //M1A1 (Tusk I)
@@ -100,9 +96,9 @@ class SOR_rhsusf_m1a1aim_tuski_wd : SOR_rhsusf_m1a1aim_tuski_d
 	editorCategory = "SOR_Cat_Faction_W";
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_W;
-	model = "\rhsusf\addons\rhsusf_m1a1\m1a1aim_tuski_wd";
-	Icon = "\rhsusf\addons\rhsusf_m1a1\icons\M1A1AIMTUSKI.paa";
-	picture = "\rhsusf\addons\rhsusf_m1a1\icons\M1A1TUSKSIDE_ca.paa";
+	hiddenSelections[] = {"camo1","camo2","camo3","camo4","camo5","camo6","","n1","n2","n3","i1","i2","i3"};
+	hiddenSelectionsMaterials[] = {"rhsusf\addons\rhsusf_m1a1\data\rhsusf_m1a1aimtusk_wd_01.rvmat","rhsusf\addons\rhsusf_m1a1\data\rhsusf_m1a1aimtusk_wd_02.rvmat","rhsusf\addons\rhsusf_m1a1\data\rhsusf_m1a1aim_03.rvmat","rhsusf\addons\rhsusf_m1a1\loaderspintle\data\loaderspintle_wd.rvmat","rhsusf\addons\rhsusf_m1a1\data\rhsusf_tuski_wd.rvmat","rhsusf\addons\rhsusf_m1a2\data\rhsusf_m1slat_wd.rvmat"};
+	hiddenSelectionsTextures[] = {"rhsusf\addons\rhsusf_m1a1\data\rhsusf_m1a1aimtusk_wd_01_co.paa","rhsusf\addons\rhsusf_m1a1\data\rhsusf_m1a1aimtusk_wd_02_co.paa","rhsusf\addons\rhsusf_m1a1\data\rhsusf_m1a1aim_03_co.paa","rhsusf\addons\rhsusf_m1a1\loaderspintle\data\loaderspintle_tuski_wd_co.paa","rhsusf\addons\rhsusf_m1a1\data\rhsusf_tuski_wd_co.paa","rhsusf\addons\rhsusf_m1a2\data\rhsusf_m1slat_wd_co.paa"};
 };	
 
 //M1A2 (Tusk I)
@@ -111,7 +107,9 @@ class SOR_rhsusf_m1a2sep1tuskiwd_usarmy : SOR_rhsusf_m1a2sep1tuskid_usarmy
 	editorCategory = "SOR_Cat_Faction_W";
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_W;
-    model = "\rhsusf\addons\rhsusf_m1a2\m1a2v1_tuski_wd";
+	hiddenSelections[] = {"camo1","camo2","camo3","camo4","camo5","camo6","","n1","n2","n3","i1","i2","i3"};
+	hiddenSelectionsMaterials[] = {"rhsusf\addons\rhsusf_m1a2\data\rhsusf_m1a2_wd_01.rvmat","rhsusf\addons\rhsusf_m1a2\data\rhsusf_m1a2_wd_02.rvmat","rhsusf\addons\rhsusf_m1a1\data\rhsusf_m1a1aim_03.rvmat","rhsusf\addons\rhsusf_m1a1\loaderspintle\data\loaderspintle_wd.rvmat","rhsusf\addons\rhsusf_m1a2\data\rhsusf_tuskia2_wd.rvmat","rhsusf\addons\rhsusf_m1a2\data\rhsusf_m1slat_wd.rvmat"};
+	hiddenSelectionsTextures[] = {"rhsusf\addons\rhsusf_m1a2\data\rhsusf_m1a2sepv1tusk_wd_01_co.paa","rhsusf\addons\rhsusf_m1a2\data\rhsusf_m1a2sepv1tusk_wd_02_co.paa","rhsusf\addons\rhsusf_m1a1\data\rhsusf_m1a1aim_03_co.paa","rhsusf\addons\rhsusf_m1a1\loaderspintle\data\loaderspintle_tuski_wd_co.paa","rhsusf\addons\rhsusf_m1a2\data\rhsusf_tuskia2_wd_co.paa","rhsusf\addons\rhsusf_m1a2\data\rhsusf_m1slat_wd_co.paa"};
 };	
 
 //M1A2 (Tusk II)
@@ -120,9 +118,9 @@ class SOR_rhsusf_m1a2sep1tuskiiwd_usarmy : SOR_rhsusf_m1a2sep1tuskiid_usarmy
 	editorCategory = "SOR_Cat_Faction_W";
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_W;
-	model = "\rhsusf\addons\rhsusf_m1a2\m1a2v1_tuskii_wd";
-	Icon = "\rhsusf\addons\rhsusf_m1a2\icons\M1A2SEPV1TUSKII.paa";
-	picture = "\rhsusf\addons\rhsusf_m1a2\icons\M1A2TUSKIISIDE_ca.paa";
+	hiddenSelections[] = {"camo1","camo2","camo3","camo4","camo5","camo6","","n1","n2","n3","i1","i2","i3"};
+	hiddenSelectionsMaterials[] = {"rhsusf\addons\rhsusf_m1a2\data\rhsusf_m1a2_wd_01.rvmat","rhsusf\addons\rhsusf_m1a2\data\rhsusf_m1a2_wd_02.rvmat","rhsusf\addons\rhsusf_m1a1\data\rhsusf_m1a1aim_03.rvmat","rhsusf\addons\rhsusf_m1a1\loaderspintle\data\loaderspintle_wd.rvmat","rhsusf\addons\rhsusf_m1a2\data\rhsusf_tuskiia2_wd.rvmat","rhsusf\addons\rhsusf_m1a2\data\rhsusf_m1slat_wd.rvmat"};
+	hiddenSelectionsTextures[] = {"rhsusf\addons\rhsusf_m1a2\data\rhsusf_m1a2sepv1tuskii_wd_01_co.paa","rhsusf\addons\rhsusf_m1a2\data\rhsusf_m1a2sepv1tuskii_wd_02_co.paa","rhsusf\addons\rhsusf_m1a1\data\rhsusf_m1a1aim_03_co.paa","rhsusf\addons\rhsusf_m1a1\loaderspintle\data\loaderspintle_tuski_wd_co.paa","rhsusf\addons\rhsusf_m1a2\data\rhsusf_tuskiia2_wd_co.paa","rhsusf\addons\rhsusf_m1a2\data\rhsusf_m1slat_wd_co.paa"};
 };
 
 //Sub	
