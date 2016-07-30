@@ -82,7 +82,7 @@ class cfgWeapons
 		};
 	};
 	
-	class 160_weap_inf_tl: rhs_weap_m4a1_carryhandle 
+	class 160_weap_inf_tl: rhs_weap_m4a1_carryhandle_grip 
 	{
 		class LinkedItems 
 		{
@@ -96,6 +96,11 @@ class cfgWeapons
 				item = "rhsusf_acc_anpeq15_bk_light";
 				slot = "PointerSlot";
 			};
+			class LinkedItemsUnder
+			{
+				item = "rhsusf_acc_grip1";
+				slot = "UnderBarrelSlot";
+			};	
 		};
 	};
 	
@@ -116,7 +121,7 @@ class cfgWeapons
 		};
 	};
 	
-	class 160_weap_inf_std: rhs_weap_m4a1_carryhandle 
+	class 160_weap_inf_std: rhs_weap_m4a1_carryhandle_grip 
 	{
 		class LinkedItems 
 		{
@@ -129,6 +134,11 @@ class cfgWeapons
 			{
 				item = "rhsusf_acc_anpeq15_bk_light";
 				slot = "PointerSlot";
+			};
+			class LinkedItemsUnder
+			{
+				item = "rhsusf_acc_grip1";
+				slot = "UnderBarrelSlot";
 			};
 		};
 	};
