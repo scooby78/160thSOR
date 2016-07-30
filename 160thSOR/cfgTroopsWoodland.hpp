@@ -45,7 +45,6 @@ class SOR_Engineer_Teamleader_D;
 //SOR Woodland Faction Units//
 //////////////////////////////		
 
-
 class SOR_Actual_W : SOR_Actual_D
 {
 	editorCategory = "SOR_Cat_Faction_W";
@@ -82,6 +81,7 @@ class SOR_Commander_W : SOR_Commander_D
 		"V_PlateCarrier1_tna_F", 
 		"H_HelmetB_Enh_tna_F", 
 		"rhs_googles_clear",
+		"ItemGPS", 		
 		Standard_Equipment
 	};             
 	respawnLinkedItems[] = 
@@ -89,37 +89,41 @@ class SOR_Commander_W : SOR_Commander_D
 		"V_PlateCarrier1_tna_F", 
 		"H_HelmetB_Enh_tna_F", 
 		"rhs_googles_clear",
+		"ItemGPS", 		
 		Standard_Equipment
 	}; 
 };
 	
 //Zeus unit
-class SOR_ZeusCommand_W : SOR_Commander_W
+class SOR_ZeusCommand_W : SOR_ZeusCommand_D
 {
-	displayName = "Zeus";
-	cost = 10;
-	backpack = "tf_rt1523g_black";	
-	class UserActions
-	{
-		class SOR_CountUnitsAction
-		{
-			condition = "(alive this) && !(this getVariable ['ZEUSTOOLS_ACTIVE',false])";
-			displayName = "<t color='#F088ff'>Initialise Zeus Tools</t>";
-			priority = 8;
-			showWindow = 0;
-			hideOnUse = true;
-			radius= 2;
-			position = "";
-			onlyForPlayer = 1;
-			statement = "[this] spawn SOR_fnc_zeusTools";
-		};
-	};
+	editorCategory = "SOR_Cat_Faction_W";
+	faction = SOR_Faction_W;
+	backpack = "tf_rt1523g_green";	
+	uniformClass = "U_B_T_Soldier_F"; 
+	linkedItems[] = 
+	{	
+		"V_PlateCarrier1_tna_F", 
+		"H_HelmetB_tna_F", 
+		"ItemGPS", 	
+		Standard_Equipment
+	};             
+	respawnLinkedItems[] = 
+	{	
+		"V_PlateCarrier1_tna_F", 
+		"H_HelmetB_tna_F", 
+		"ItemGPS", 	
+		Standard_Equipment
+	}; 	
 };
 	
 //Mechanised Commander 	
-class SOR_MechCommand_W : SOR_Commander_W
+class SOR_MechCommand_W : SOR_MechCommand_D
 {
-	backpack = "tf_rt1523g_black";		
+	editorCategory = "SOR_Cat_Faction_W";
+	faction = SOR_Faction_W;
+	uniformClass = "U_B_T_Soldier_F"; 
+	backpack = "tf_rt1523g_green";		
 	linkedItems[] = 
 	{	
 		"V_PlateCarrier2_tna_F" , 
@@ -139,19 +143,24 @@ class SOR_MechCommand_W : SOR_Commander_W
 };
 	
 //Air Commander 	
-class SOR_AirCommand_W : SOR_Commander_W
+class SOR_AirCommand_W : SOR_AirCommand_D
 {
-	backpack = "tf_rt1523g_black";		
+	editorCategory = "SOR_Cat_Faction_W";
+	faction = SOR_Faction_W;
+	uniformClass = "U_B_HeliPilotCoveralls"; 
+	backpack = "tf_rt1523g_green";		
 	linkedItems[] = 
 	{	
-		"V_PlateCarrier2_tna_F", 
+		"V_Rangemaster_belt", 
 		"rhsusf_hgu56p", 
+		"ItemGPS", 	
 		Airborne_Equipment
 	};              
 	respawnLinkedItems[] = 
 	{	
-		"V_PlateCarrier2_tna_F", 
-		"rhsusf_hgu56p",
+		"V_Rangemaster_belt", 
+		"rhsusf_hgu56p", 
+		"ItemGPS", 	
 		Airborne_Equipment
 	};  
 };
@@ -168,6 +177,7 @@ class SOR_RTO_W : SOR_RTO_D
 		"V_PlateCarrier1_tna_F", 
 		"H_HelmetB_Enh_tna_F", 
 		"rhs_googles_clear",
+		"ItemGPS", 	
 		Standard_Equipment
 	};              
 	respawnLinkedItems[] = 
@@ -175,6 +185,7 @@ class SOR_RTO_W : SOR_RTO_D
 		"V_PlateCarrier1_tna_F", 
 		"H_HelmetB_Enh_tna_F", 
 		"rhs_googles_clear",
+		"ItemGPS", 	
 		Standard_Equipment
 	}; 
 };	
@@ -212,7 +223,7 @@ class SOR_Medic_W : SOR_Medic_D
 	linkedItems[] = 
 	{	
 		"V_PlateCarrier1_tna_F", 
-		"H_HelmetB_Enh_tna_F",
+		"H_HelmetB_tna_F",
 		"rhs_googles_clear",
 		"ItemGPS",
 		Standard_Equipment
@@ -220,7 +231,7 @@ class SOR_Medic_W : SOR_Medic_D
 	respawnLinkedItems[] = 
 	{	
 		"V_PlateCarrier1_tna_F", 
-		"H_HelmetB_Enh_tna_F",
+		"H_HelmetB_tna_F",
 		"rhs_googles_clear",
 		"ItemGPS",
 		Standard_Equipment
@@ -236,14 +247,14 @@ class SOR_M249AR_W : SOR_M249AR_D
 	linkedItems[] = 
 	{	
 		"V_PlateCarrier1_tna_F" , 
-		"H_HelmetB_Enh_tna_F", 
+		"H_HelmetB_tna_F", 
 		"rhs_ess_black",
 		Standard_Equipment
 	};              
 	respawnLinkedItems[] = 
 	{	
 		"V_PlateCarrier1_tna_F", 
-		"H_HelmetB_Enh_tna_F", 
+		"H_HelmetB_tna_F", 
 		"rhs_ess_black",
 		Standard_Equipment
 	};   
@@ -258,14 +269,14 @@ class SOR_M240AR_W : SOR_M240AR_D
 	linkedItems[] = 
 	{	
 		"V_PlateCarrier1_tna_F" , 
-		"H_HelmetB_Enh_tna_F", 
+		"H_HelmetB_tna_F", 
 		"rhs_ess_black",
 		Standard_Equipment
 	};              
 	respawnLinkedItems[] = 
 	{	
 		"V_PlateCarrier1_tna_F", 
-		"H_HelmetB_Enh_tna_F", 
+		"H_HelmetB_tna_F", 
 		"rhs_ess_black",
 		Standard_Equipment
 	};   
@@ -280,14 +291,14 @@ class SOR_Grenadier_W : SOR_Grenadier_D
 	linkedItems[] = 
 	{	
 		"V_PlateCarrier1_tna_F", 
-		"H_HelmetB_Enh_tna_F", 
+		"H_HelmetB_tna_F", 
 		"rhs_googles_clear",
 		Standard_Equipment
 	};             
 	respawnLinkedItems[] = 
 	{	
 		"V_PlateCarrier1_tna_F", 
-		"H_HelmetB_Enh_tna_F", 
+		"H_HelmetB_tna_F", 
 		"rhs_googles_clear",
 		Standard_Equipment
 	};  
@@ -302,14 +313,14 @@ class SOR_Rifleman_W : SOR_Rifleman_D
 	linkedItems[] = 
 	{	
 		"V_PlateCarrier1_tna_F",
-		"H_HelmetB_Enh_tna_F", 
+		"H_HelmetB_tna_F", 
 		"rhs_googles_clear",
 		Standard_Equipment
 	};
 	respawnLinkedItems[] = 
 	{	
 		"V_PlateCarrier1_tna_F",
-		"H_HelmetB_Enh_tna_F",
+		"H_HelmetB_tna_F",
 		"rhs_googles_clear",
 		Standard_Equipment
 	};
@@ -325,14 +336,14 @@ class SOR_Rifleman_ammo_W : SOR_Rifleman_ammo_D
 	linkedItems[] = 
 	{	
 		"V_PlateCarrier1_tna_F",
-		"H_HelmetB_Enh_tna_F", 
+		"H_HelmetB_tna_F", 
 		"rhs_googles_clear",
 		Standard_Equipment
 	};
 	respawnLinkedItems[] = 
 	{	
 		"V_PlateCarrier1_tna_F",
-		"H_HelmetB_Enh_tna_F",
+		"H_HelmetB_tna_F",
 		"rhs_googles_clear",
 		Standard_Equipment
 	};
@@ -347,14 +358,14 @@ class SOR_RiflemanAT_W : SOR_RiflemanAT_D
 	linkedItems[] = 
 	{	
 		"V_PlateCarrier1_tna_F",
-		"H_HelmetB_Enh_tna_F", 
+		"H_HelmetB_tna_F", 
 		"rhs_googles_clear",  
 		Standard_Equipment
 	};
 	respawnLinkedItems[] = 
 	{	
 		"V_PlateCarrier1_tna_F", 
-		"H_HelmetB_Enh_tna_F", 
+		"H_HelmetB_tna_F", 
 		"rhs_googles_clear",  
 		Standard_Equipment
 	};
@@ -432,19 +443,19 @@ class SOR_ParaJumper_W : SOR_ParaJumper_D
 	editorCategory = "SOR_Cat_Faction_W";
 	faction = SOR_Faction_W;
 	backpack = "SOR_PJMedicPack_W";		
-	uniformClass = "U_B_T_Soldier_F"; 
+	uniformClass = "U_B_T_Soldier_SL_F"; 
 	linkedItems[] = 
 	{	
-		"V_PlateCarrier2_tna_F", 
-		"H_HelmetB_Enh_tna_F",
-		"rhs_ess_black", 		
+		"V_PlateCarrier2_rgr", 
+		"rhsusf_opscore_fg_pelt_cam",
+		"rhs_googles_black", 		
 		Airborne_Equipment
 	};              
 	respawnLinkedItems[] = 
 	{	
-		"V_PlateCarrier2_tna_F", 
-		"H_HelmetB_Enh_tna_F", 
-		"rhs_ess_black", 
+		"V_PlateCarrier2_rgr", 
+		"rhsusf_opscore_fg_pelt_cam", 
+		"rhs_googles_black", 
 		Airborne_Equipment
 	};   
 };
@@ -461,6 +472,7 @@ class SOR_ReconLeader_W : SOR_ReconLeader_D
 		"V_PlateCarrier1_tna_F", 
 		"H_HelmetB_Enh_tna_F", 
 		"rhs_googles_clear",
+		"G_Bandanna_oli",
 		Recon_Equipment
 	};              
 	respawnLinkedItems[] = 
@@ -468,6 +480,7 @@ class SOR_ReconLeader_W : SOR_ReconLeader_D
 		"V_PlateCarrier1_tna_F", 
 		"H_HelmetB_Enh_tna_F", 
 		"rhs_googles_clear",
+		"G_Bandanna_oli",
 		Recon_Equipment
 	};			
 };
@@ -477,7 +490,7 @@ class SOR_ReconJTAC_W : SOR_ReconLeader_W
 	editorCategory = "SOR_Cat_Faction_W";
 	faction = SOR_Faction_W;
 	uniformClass = "U_B_T_Soldier_F";	
-	backpack = "tf_rt1523g_black";
+	backpack = "tf_rt1523g_green";
 	displayName = "Recon JTAC";
 };
 
@@ -501,6 +514,7 @@ class SOR_Recon_M249AR_W : SOR_Recon_M249AR_D
 		"V_PlateCarrier1_tna_F", 
 		"H_HelmetB_Enh_tna_F", 
 		"rhs_googles_clear",
+		"G_Bandanna_oli",
 		Recon_Equipment
 	};              
 	respawnLinkedItems[] = 
@@ -508,6 +522,7 @@ class SOR_Recon_M249AR_W : SOR_Recon_M249AR_D
 		"V_PlateCarrier1_tna_F", 
 		"H_HelmetB_Enh_tna_F", 
 		"rhs_googles_clear",
+		"G_Bandanna_oli",
 		Recon_Equipment
 	};			
 };	
@@ -522,6 +537,7 @@ class SOR_ReconSpotter_W : SOR_ReconSpotter_D
 		"V_PlateCarrier1_tna_F", 
 		"H_HelmetB_Enh_tna_F", 
 		"rhs_googles_clear",
+		"G_Bandanna_oli",
 		Recon_Equipment
 	};              
 	respawnLinkedItems[] = 
@@ -529,6 +545,7 @@ class SOR_ReconSpotter_W : SOR_ReconSpotter_D
 		"V_PlateCarrier1_tna_F", 
 		"H_HelmetB_Enh_tna_F", 
 		"rhs_googles_clear",
+		"G_Bandanna_oli",
 		Recon_Equipment
 	};			
 };
@@ -543,6 +560,7 @@ class SOR_Marksman_W : SOR_Marksman_D
 		"V_PlateCarrier1_tna_F", 
 		"H_HelmetB_Enh_tna_F", 
 		"rhs_googles_clear",
+		"G_Bandanna_oli",
 		Recon_Equipment
 	};              
 	respawnLinkedItems[] = 
@@ -550,6 +568,7 @@ class SOR_Marksman_W : SOR_Marksman_D
 		"V_PlateCarrier1_tna_F", 
 		"H_HelmetB_Enh_tna_F", 
 		"rhs_googles_clear",
+		"G_Bandanna_oli",
 		Recon_Equipment
 	};			
 };
@@ -578,7 +597,7 @@ class SOR_MechCrew_W : SOR_MechCrew_D
 	uniformClass = "U_B_T_Soldier_F"; 
 	linkedItems[] = 
 	{	
-		"V_PlateCarrier2_tna_F", 
+		"V_PlateCarrier1_tna_F", 
 		"rhsusf_cvc_green_helmet", 
 		"rhs_balaclava",
 		"ItemGPS",
@@ -586,7 +605,7 @@ class SOR_MechCrew_W : SOR_MechCrew_D
 	};              
 	respawnLinkedItems[] = 
 	{	
-		"V_PlateCarrier2_tna_F", 
+		"V_PlateCarrier1_tna_F", 
 		"rhsusf_cvc_green_helmet", 
 		"rhs_balaclava",
 		"ItemGPS",
@@ -624,7 +643,7 @@ class SOR_MechOperator_W : SOR_MechCrew_W
 	};
 	linkedItems[] = 
 	{	
-		"V_PlateCarrier2_tna_F", 
+		"V_PlateCarrier1_tna_F", 
 		"rhsusf_cvc_green_ess",
 		"rhs_balaclava",
 		"ItemGPS",
@@ -632,7 +651,7 @@ class SOR_MechOperator_W : SOR_MechCrew_W
 	};
 	respawnLinkedItems[] = 
 	{	
-		"V_PlateCarrier2_tna_F", 
+		"V_PlateCarrier1_tna_F", 
 		"rhsusf_cvc_green_ess",
 		"rhs_balaclava",
 		"ItemGPS",
@@ -714,14 +733,14 @@ class SOR_Engineer_Teamleader_W : SOR_Engineer_Teamleader_D
 	backpack = "tf_rt1523g_bwmod";
 	linkedItems[] =
 	{
-		"V_PlateCarrier2_tna_F",
+		"V_PlateCarrierGL_rgr",
 		"H_HelmetB_Enh_tna_F", 
 		"rhs_googles_clear",
 		Standard_Equipment
 	};
 	respawnLinkedItems[] =
 	{
-		"V_PlateCarrier2_tna_F",
+		"V_PlateCarrierGL_rgr",
 		"H_HelmetB_Enh_tna_F", 
 		"rhs_googles_clear",
 		Standard_Equipment

@@ -8,7 +8,7 @@
 
 //Custom Backpacks
 class tf_rt1523g_bwmod;
-class tf_rt1523g_black;
+class tf_rt1523g_green;
 class B_AssaultPack_tna_F;
 
 /////////////////////////
@@ -121,7 +121,7 @@ class SOR_GD_Pack_W : B_AssaultPack_tna_F
 };
 
 //Custom RTO Pack	
-class SOR_RTO_Pack_W : tf_rt1523g_black
+class SOR_RTO_Pack_W : tf_rt1523g_green
 {
 	displayName = "Pack woodland Radio";
 	class TransportMagazines
@@ -161,7 +161,7 @@ class SOR_Sniper_Camo_W : B_AssaultPack_tna_F
 };
 
 //Custom Spotter Pack	
-class SOR_Spotter_Radio_W: tf_rt1523g_black
+class SOR_Spotter_Radio_W: tf_rt1523g_green
 {
 	displayName = "Pack Radio Spotter Woodland";
 	class TransportItems{};

@@ -11,3 +11,11 @@ SOR_CountUnits set [0, player addAction ["<t color='#03F243'>Count Units On Map<
 	_totalUnits = _civUnits + _eastunits + _indUnits;
 	hint format ["Opfor AI Unit count..%1 \n Civilian AI Unit count.. %2 \n Independant AI Unit Count.. %3 \n Total AI Units on Map.. %4",_eastunits,_civUnits,_indUnits,_totalUnits];
 }, [], 10, false, false]];
+
+//Zeus group cache clean
+SOR_CountUnits = [];
+SOR_CountUnits set [0, player addAction ["<t color='#03F243'>Clear Zeus Group Bug</t", 
+{
+	{deleteGroup _X} foreach allGroups;
+	hint "Group cache cleared";
+}, [], 10, false, false]];

@@ -40,7 +40,7 @@ class SOR_OpFor_AR_Pack_D : B_AssaultPack_khk
 	displayName = "Opfor AR Pack";
 	class TransportMagazines
 	{
-		mag_xx(CAF_100Rnd_762x54_PKM,3);
+		mag_xx(rhs_100Rnd_762x54mmR,3);
 	};
 };	
 
@@ -89,8 +89,8 @@ class SOR_OpFor_PKM_D : O_Soldier_AR_F
 	faction = SOR_Faction_D;
 	uniformClass = "rhs_uniform_vdv_emr";
 	backpack = "SOR_OpFor_AR_Pack_D";
-	weapons[] = {"caf_pkm","Throw","Put"};
-	respawnWeapons[] = {"caf_pkm","Throw","Put"};
+	weapons[] = {"rhs_weap_pkm","Throw","Put"};
+	respawnWeapons[] = {"rhs_weap_pkm","Throw","Put"};
 	Items[] = 
 	{
 		"ACE_SpareBarrel",
@@ -111,7 +111,7 @@ class SOR_OpFor_PKM_D : O_Soldier_AR_F
 		"rhs_mag_an_m8hc",
 		"rhs_mag_an_m8hc",
 		"rhs_mag_an_m8hc",
-		"CAF_100Rnd_762x54_PKM"
+		"rhs_100Rnd_762x54mmR"
 	};
 	respawnMagazines[] =
 	{
@@ -121,7 +121,7 @@ class SOR_OpFor_PKM_D : O_Soldier_AR_F
 		"rhs_mag_an_m8hc",
 		"rhs_mag_an_m8hc",
 		"rhs_mag_an_m8hc",
-		"CAF_100Rnd_762x54_PKM"
+		"rhs_100Rnd_762x54mmR"
 	};
 	linkedItems[] = 
 	{	

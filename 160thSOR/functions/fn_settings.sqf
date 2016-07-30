@@ -18,6 +18,7 @@ tf_same_lr_frequencies_for_side = true;											// same LR freqs for each side
 _settingsSwWest = false call TFAR_fnc_generateSwSettings;						// pre define the SW freqs
 _settingsSwWest set [2, ["311","312","313","314","315","316","317","318"]];
 tf_freq_west = _settingsSwWest;
+tf_freq_east = _settingsSwWest;
 _settingsLRWest = false call TFAR_fnc_generateLRSettings;						 // pre define the LR freqs
 _settingsLRWest set [2, ["50","51","52","53","54","55","56","57","58"]]; 
 tf_freq_west_lr = _settingsLRWest; 
