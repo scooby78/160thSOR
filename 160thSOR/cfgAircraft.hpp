@@ -13,10 +13,12 @@ class RHS_MELB_AH6M_L;
 class RHS_MELB_AH6M_M;
 class RHS_MELB_H6M;
 class RHS_MELB_MH6M;
+/*
 class FIR_F16C_TWAS;
 class FIR_F16C_TWAS2;
 class FIR_F16C;
 class FIR_F16C_Polish_CFT;
+*/
 class O_Heli_Transport_04_F;
 class O_Heli_Transport_04_medevac_F;
 class O_Heli_Transport_04_bench_F;
@@ -34,9 +36,38 @@ class RHS_AH64D_GS;
 class RHS_C130J;
 class RHS_A10;
 class B_Heli_Transport_01_camo_F;
+class B_T_VTOL_01_infantry_F;
 
 
-// Transport Helos fast rope
+
+class SOR_VTOL_Troop_D : B_T_VTOL_01_infantry_F
+{
+	editorCategory = "SOR_Cat_Faction_D";
+	editorSubcategory = "SOR_SubCat_Aircraft";
+	vehicleclass = "SOR_Aircraft";
+	faction = SOR_Faction_D;
+	displayName = "V-44 X Blackfish (Infantry C4/P32)";
+	armorStructural = 4; //was 1
+	damageResistance = 0.004; //was 0.001
+	class TransportItems 
+	{
+		item_xx(ACE_FieldDressing,10);
+		item_xx(V_RebreatherB,2);
+	};
+	class TransportWeapons
+	{
+		weap_xx(rhs_weap_m4a1_carryhandle_grip2,2)
+	};
+	class TransportMagazines
+	{
+		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,6)
+	};
+	class TransportBackpacks
+	{
+		pack_xx(SOR_Repair_Pack_D,1)			
+	};
+};
+// Transport Helos
 class SOR_B_Heli_Transport_01_camo_F : B_Heli_Transport_01_camo_F
 {
 	editorCategory = "SOR_Cat_Faction_D";
@@ -183,23 +214,47 @@ class SOR_CH_47F : RHS_CH_47F
 		};
 		class CloseCargoDoor
 		{
-			condition = "this doorPhase 'ramp_anim' > 0 and (alive this) and (alive this) and ({player == _x} count [driver this,  this turretUnit [3], this turretUnit [4]] > 0);";
+			condition = "[this,'ramp_anim'] call ace_compat_rhs_usf3_fnc_canCloseDoor";
 			displayName = "Close Ramp";
 			onlyforplayer = 1;
 			position = "pos driver";
 			radius = 15;
+			shortcut = "user12";
 			showwindow = 0;
-			statement = "this animateDoor ['ramp_anim', 0];";
+			statement = "this animateSource ['ramp_anim', 0];[this] call rhs_fnc_cargoAttach";
 		};
 		class OpenCargoDoor
 		{
-			condition = "this doorPhase 'ramp_anim' == 0 and (alive this) and ({player == _x} count [driver this,  this turretUnit [3], this turretUnit [4]] > 0)";
+			condition = "this animationSourcePhase 'ramp_anim' < 1 and (alive this) and ({player == _x} count [driver this,  this turretUnit [3], this turretUnit [4]] > 0)";
 			displayName = "Open Ramp";
 			onlyforplayer = 1;
 			position = "pos driver";
 			radius = 15;
+			shortcut = "user12";
 			showwindow = 0;
-			statement = "this animateDoor ['ramp_anim', 1];";
+			statement = "this animateSource ['ramp_anim', 1];{if(not(_x isKindOf 'Man'))then{detach _x}}foreach attachedObjects this;";
+		};
+		class LeverRamp
+		{
+			condition = "this animationSourcePhase 'ramp_anim' != 0.6 and (alive this) and (alive this) and ({player == _x} count [driver this,  this turretUnit [3], this turretUnit [4]] > 0);";
+			displayName = "Lever Ramp";
+			onlyforplayer = 1;
+			position = "pos driver";
+			radius = 15;
+			shortcut = "user13";
+			showwindow = 0;
+			statement = "this animateSource ['ramp_anim', 0.6];";
+		};
+		class VehicleParadrop
+		{
+			condition = "(count (attachedObjects this) > 0) AND ('man' countType (attachedObjects this) == 0) AND Alive(this)";
+			displayName = "Paradrop cargo";
+			onlyforplayer = 1;
+			position = "pos driver";
+			radius = 15;
+			shortcut = "";
+			showwindow = 0;
+			statement = "[this] spawn rhs_fnc_vehPara";
 		};
 	};
 	class TransportItems 

@@ -17,6 +17,7 @@ class B_crew_F;
 class B_recon_TL_F;
 class B_engineer_F;
 
+/*
 class SOR_Base: B_Soldier_base_F	
 {
 	side = 1;
@@ -31,8 +32,8 @@ class SOR_Base: B_Soldier_base_F
 	icon =  "iconManLeader";
 	picture = "";
 	backpack = "";
-	weapons[] = {"160_m4a1_carryhandle_grip_acog", "rhsusf_weap_m9", "Throw", "Put"};
-	respawnWeapons[] = {"160_m4a1_carryhandle_grip_acog", "rhsusf_weap_m9","Throw", "Put"};
+	weapons[] = {"160_weap_inf_std", "rhsusf_weap_m9", "Throw", "Put"};
+	respawnWeapons[] = {"160_weap_inf_std", "rhsusf_weap_m9","Throw", "Put"};
 	Items[] = {Standard_Meds};
 	RespawnItems[] = {Standard_Meds};
 	magazines[] = {Standard_Mags,Std_Pistol};
@@ -65,6 +66,7 @@ class SOR_Base: B_Soldier_base_F
 		"rhsusf\addons\rhsusf_infantry\data\rhsusf_combat01_ocp_pockets_co.paa",
 	};
 };
+*/
 
 ////////////////////////////		    
 //SOR Desert Faction Units//
@@ -81,8 +83,8 @@ class SOR_Actual_D : B_officer_F
 	displayName = "Squad Actual";
 	accuracy = 3.5;
 	backpack = "tf_rt1523g_rhs";
-	weapons[] = {"160_m4a1_carryhandle_grip_holo", "rhsusf_weap_m9", "Throw", "Put", "Laserdesignator"};
-	respawnWeapons[] = {"160_m4a1_carryhandle_grip_holo", "rhsusf_weap_m9", "Throw", "Put", "Laserdesignator"};
+	weapons[] = {"160_weap_inf_tl", "rhsusf_weap_m9", "Throw", "Put", "Laserdesignator"};
+	respawnWeapons[] = {"160_weap_inf_tl", "rhsusf_weap_m9", "Throw", "Put", "Laserdesignator"};
 	Items[] = {Standard_Meds,SL_Equip};  
 	RespawnItems[] = {Standard_Meds,SL_Equip}; 
 	magazines[] = 
@@ -126,8 +128,8 @@ class SOR_Commander_D : B_officer_F
 	displayName = "Havoc Commander";
 	accuracy = 3.5;
 	backpack = "tf_rt1523g_rhs";
-	weapons[] = {"160_m4a1_carryhandle_grip_holo", "rhsusf_weap_m9", "Throw", "Put", "Laserdesignator"};
-	respawnWeapons[] = {"160_m4a1_carryhandle_grip_holo", "rhsusf_weap_m9", "Throw", "Put", "Laserdesignator"};
+	weapons[] = {"160_weap_inf_tl", "rhsusf_weap_m9", "Throw", "Put", "Laserdesignator"};
+	respawnWeapons[] = {"160_weap_inf_tl", "rhsusf_weap_m9", "Throw", "Put", "Laserdesignator"};
 	Items[] =
 	{
 		Standard_Meds,
@@ -228,13 +230,13 @@ class SOR_AirCommand_D : SOR_Commander_D
 	};
 	linkedItems[] = 
 	{	
-		"rhsusf_iotv_ocp", 
+		"V_Rangemaster_belt", 
 		"H_PilotHelmetHeli_O",
 		Airborne_Equipment
 	};              
 	respawnLinkedItems[] = 
 	{	
-		"rhsusf_iotv_ocp", 
+		"V_Rangemaster_belt", 
 		"H_PilotHelmetHeli_O",
 		Airborne_Equipment
 	};
@@ -345,8 +347,8 @@ class SOR_Teamleader_D : B_Soldier_TL_F
 	uniformClass = "rhs_uniform_cu_ocp";
 	accuracy = 3.5;		
 	backpack = "rhsusf_assault_eagleaiii_ocp";
-	weapons[] = {"160_m4a1_carryhandle_grip_acog", "rhsusf_weap_m9","rhs_weap_M136_hp","Throw","Put","ACE_Vector"};
-	respawnWeapons[] = {"160_m4a1_carryhandle_grip_acog", "rhsusf_weap_m9","rhs_weap_M136_hp","Throw","Put","ACE_Vector"};
+	weapons[] = {"160_weap_inf_std", "rhsusf_weap_m9","rhs_weap_M136_hp","Throw","Put","ACE_Vector"};
+	respawnWeapons[] = {"160_weap_inf_std", "rhsusf_weap_m9","rhs_weap_M136_hp","Throw","Put","ACE_Vector"};
 	Items[] = {Standard_Meds,SL_Equip};
 	RespawnItems[] = {Standard_Meds,SL_Equip};
 	magazines[] = {SL_Mags, Std_Pistol};
@@ -379,8 +381,8 @@ class SOR_Medic_D : B_medic_F
 	displayName = "Combat Medic";
 	uniformClass = "rhs_uniform_cu_ocp";
 	backpack = "SOR_Medic_Pack_D";
-	weapons[] = {"160_m4a1_carryhandle_grip_holo", "rhsusf_weap_m9", "Throw", "Put"};
-	respawnWeapons[] = {"160_m4a1_carryhandle_grip_holo", "rhsusf_weap_m9","Throw", "Put"};
+	weapons[] = {"160_weap_inf_tl", "rhsusf_weap_m9", "Throw", "Put"};
+	respawnWeapons[] = {"160_weap_inf_tl", "rhsusf_weap_m9","Throw", "Put"};
 	Items[] = {Standard_Meds};
 	RespawnItems[] = {Standard_Meds};
 	magazines[] = {Standard_Mags,Std_Pistol};
@@ -413,8 +415,8 @@ class SOR_M249AR_D : B_soldier_AR_F
 	uniformClass = "rhs_uniform_cu_ocp";
 	displayName = "AutoRifleman M249";
 	backpack = "SOR_M249_Pack_D";
-	weapons[] = {"160_rhs_weap_m249_pip_L_para", "rhsusf_weap_m9", "Throw", "Put"};
-	respawnWeapons[] = {"160_rhs_weap_m249_pip_L_para", "rhsusf_weap_m9","Throw", "Put"};
+	weapons[] = {"160_weap_inf_m249", "rhsusf_weap_m9", "Throw", "Put"};
+	respawnWeapons[] = {"160_weap_inf_m249", "rhsusf_weap_m9","Throw", "Put"};
 	Items[] = {Standard_Meds};
 	RespawnItems[] = {Standard_Meds};		
 	magazines[] =
@@ -464,8 +466,8 @@ class SOR_M240AR_D : B_soldier_AR_F
 	uniformClass = "rhs_uniform_cu_ocp";
 	displayName = "AutoRifleman M240";
 	backpack = "SOR_M240_Pack_D";
-	weapons[] = {"160_rhs_weap_m240B", "rhsusf_weap_m9", "Throw", "Put"};
-	respawnWeapons[] = {"160_rhs_weap_m240B", "rhsusf_weap_m9","Throw", "Put"};
+	weapons[] = {"160_weap_inf_m240", "rhsusf_weap_m9", "Throw", "Put"};
+	respawnWeapons[] = {"160_weap_inf_m240", "rhsusf_weap_m9","Throw", "Put"};
 	Items[] = {Standard_Meds};
 	RespawnItems[] = {Standard_Meds};	
 	magazines[] =
@@ -514,8 +516,8 @@ class SOR_Grenadier_D : B_Soldier_GL_F
 	faction = SOR_Faction_D;
 	uniformClass = "rhs_uniform_cu_ocp";
 	backpack = "SOR_GD_Pack_D";
-	weapons[] = {"160_m4a1_m320","rhsusf_weap_m9","Throw", "Put"};
-	respawnWeapons[] = {"160_m4a1_m320","rhsusf_weap_m9","Throw", "Put"};
+	weapons[] = {"160_weap_inf_gl","rhsusf_weap_m9","Throw", "Put"};
+	respawnWeapons[] = {"160_weap_inf_gl","rhsusf_weap_m9","Throw", "Put"};
 	Items[] = {Standard_Meds};
 	RespawnItems[] = {Standard_Meds};
 	magazines[] = {Standard_Mags,Std_Pistol};
@@ -545,8 +547,8 @@ class SOR_Rifleman_D : B_Soldier_F
 	uniformClass = "rhs_uniform_cu_ocp";
 	displayName = "Rifleman AT Ammo Bearer (M249)";
 	backpack = "SOR_Rifleman_Pack_D";
-	weapons[] = {"160_m4a1_carryhandle_grip_acog", "rhsusf_weap_m9","Throw","Put"};
-	respawnWeapons[] = {"160_m4a1_carryhandle_grip_acog", "rhsusf_weap_m9","Throw","Put"};
+	weapons[] = {"160_weap_inf_std", "rhsusf_weap_m9","Throw","Put"};
+	respawnWeapons[] = {"160_weap_inf_std", "rhsusf_weap_m9","Throw","Put"};
 	Items[] = {Standard_Meds};
 	RespawnItems[] = {Standard_Meds};
 	magazines[] = {Standard_Mags,Std_Pistol};
@@ -571,8 +573,8 @@ class SOR_Rifleman_ammo_D : SOR_Rifleman_D
 {
 	displayName = "Rifleman Ammo Bearer (M240)";
 	backpack = "SOR_Rifleman_Ammo_Pack_D";
-	weapons[] = {"160_m4a1_carryhandle_grip_acog","rhsusf_weap_m9","Throw","Put"};
-	respawnWeapons[] = {"160_m4a1_carryhandle_grip_acog","rhsusf_weap_m9","Throw","Put"};
+	weapons[] = {"160_weap_inf_std","rhsusf_weap_m9","Throw","Put"};
+	respawnWeapons[] = {"160_weap_inf_std","rhsusf_weap_m9","Throw","Put"};
 };
 	
 class SOR_RiflemanAT_D : B_soldier_AT_F
@@ -584,8 +586,8 @@ class SOR_RiflemanAT_D : B_soldier_AT_F
 	uniformClass = "rhs_uniform_cu_ocp";
 	displayName = "Rifleman AT";
 	backpack = "SOR_RFLAT_Pack_D";
-	weapons[] = {"160_m4a1_carryhandle_grip_acog", "rhsusf_weap_m9","rhs_weap_M136_hp", "Throw", "Put"};
-	respawnWeapons[] = {"160_m4a1_carryhandle_grip_acog", "rhsusf_weap_m9","rhs_weap_M136_hp","Throw", "Put"};
+	weapons[] = {"160_weap_inf_std", "rhsusf_weap_m9","rhs_weap_M136_hp", "Throw", "Put"};
+	respawnWeapons[] = {"160_weap_inf_std", "rhsusf_weap_m9","rhs_weap_M136_hp","Throw", "Put"};
 	Items[] = {Standard_Meds};
 	RespawnItems[] = {Standard_Meds};
 	magazines[] = {Standard_Mags,Std_Pistol};
@@ -638,13 +640,13 @@ class SOR_HeliPilot_D : B_Pilot_F
 	};	
 	linkedItems[] = 
 	{	
-		"rhsusf_iotv_ocp", 
+		"V_Rangemaster_belt", 
 		"H_PilotHelmetHeli_O",
 		Airborne_Equipment
 	};              
 	respawnLinkedItems[] = 
 	{	
-		"rhsusf_iotv_ocp", 
+		"V_Rangemaster_belt", 
 		"H_PilotHelmetHeli_O",
 		Airborne_Equipment
 	};
@@ -688,13 +690,13 @@ class SOR_HeliCrew_D : B_crew_F
 	};		
 	linkedItems[] = 
 	{	
-		"rhsusf_iotv_ocp_Repair", 
+		"V_Rangemaster_belt", 
 		"H_PilotHelmetHeli_O", 
 		Airborne_Equipment
 	};              
 	respawnLinkedItems[] = 
 	{	
-		"rhsusf_iotv_ocp_Repair", 
+		"V_Rangemaster_belt", 
 		"H_PilotHelmetHeli_O", 
 		Airborne_Equipment
 	};
@@ -751,13 +753,13 @@ class SOR_MEVPilot_D : 	SOR_HeliPilot_D
 	displayName = "MEV Pilot";
 	linkedItems[] = 
 	{	
-		"rhsusf_iotv_ocp",
+		"V_Rangemaster_belt",
 		"rhsusf_hgu56p_mask", 
 		Airborne_Equipment
 	};
 	respawnLinkedItems[] = 
 	{	
-		"rhsusf_iotv_ocp", 
+		"V_Rangemaster_belt", 
 		"rhsusf_hgu56p_mask", 
 		"ItemGPS",
 		Airborne_Equipment
@@ -772,11 +774,11 @@ class SOR_ParaJumper_D : B_medic_F
 	faction = SOR_Faction_D;
 	displayName = "Para Jumper";
 	backpack = "SOR_PJMedicPack_D";
-	uniformClass = "U_B_CombatUniform_mcam_vest";
+	uniformClass = "rhs_uniform_g3_mc";
 	uavHacker = 1; // allows UAV control
 	engineer = 1; // allows unit to repair 		
-	weapons[] = {"160_rhs_weap_m4a1_carryhandle_grip2", "rhsusf_weap_m9","Throw", "Put","Laserdesignator"};
-	respawnWeapons[] = {"160_rhs_weap_m4a1_carryhandle_grip2", "rhsusf_weap_m9","Throw", "Put","Laserdesignator"};
+	weapons[] = {"160_weap_PJ", "rhsusf_weap_m9","Throw", "Put","Laserdesignator"};
+	respawnWeapons[] = {"160_weap_PJ", "rhsusf_weap_m9","Throw", "Put","Laserdesignator"};
 	Items[] = {Standard_Meds,SL_Equip,"rhsusf_acc_ACOG"};  
 	RespawnItems[] = {Standard_Meds,SL_Equip,"rhsusf_acc_ACOG"}; 
 	magazines[] = 
@@ -793,16 +795,16 @@ class SOR_ParaJumper_D : B_medic_F
 	};	
 	linkedItems[] = 
 	{	
-		"rhsusf_iotv_ocp_Medic",
-		"H_HelmetSpecB_paint2",
-		"rhs_ess_black", 
+		"rhsusf_spcs_ocp_rifleman",
+		"rhsusf_opscore_mc_cover_pelt_cam",
+		"rhs_googles_black", 
 		Airborne_Equipment
 	};
 	respawnLinkedItems[] = 
 	{	
-		"rhsusf_iotv_ocp_Medic",
-		"H_HelmetSpecB_paint2",
-		"rhs_ess_black", 
+		"rhsusf_spcs_ocp_rifleman",
+		"rhsusf_opscore_mc_cover_pelt_cam",
+		"rhs_googles_black", 
 		Airborne_Equipment
 	};
 	class UserActions
@@ -837,8 +839,8 @@ class SOR_ReconLeader_D : B_recon_TL_F
 //		cost = 500000;
 //		camouflage = 0.6;
 //		threat[] = {1.2,0.2,0.2};
-	weapons[] = {"160_rhs_weap_m16a4_carryhandle_grip_pmag","Throw","Put","Laserdesignator"};
-	respawnWeapons[] = {"160_rhs_weap_m16a4_carryhandle_grip_pmag","Throw","Put","Laserdesignator"};
+	weapons[] = {"160_weap_recon","Throw","Put","Laserdesignator"};
+	respawnWeapons[] = {"160_weap_recon","Throw","Put","Laserdesignator"};
 	Items[] = 		
 	{
 		Recon_Equip,
@@ -880,11 +882,11 @@ class SOR_ReconLeader_D : B_recon_TL_F
 		{
 			displayName = "<t color='#FF0000'>HALO</t>";
 			displayNameDefault = "<t color='#FF0000'>HALO</t>";
-			condition = "((getPosATL player) select 2 > 50) && SOR_ParaJump_Active && !((surfaceIsWater getPos player) && ((getPosASL player) select 2 < 1))";
+			condition = "((getPosVisual player) select 2 > 50) && SOR_ParaJump_Active";
 			priority = 8;
 			showWindow = 1;
 			hideOnUse = 1;
-			radius= 8;
+			radius= 1;
 			position = "";
 			onlyForPlayer = 1;
 			statement = "[this] spawn SOR_fnc_parajump; SOR_ParaJump_Active = false;";
@@ -897,8 +899,8 @@ class SOR_ReconJTAC_D : SOR_ReconLeader_D
 	icon =  "iconMan";
 	backpack = "tf_anarc210";
 	displayName = "Recon JTAC";	
-	weapons[] = {"160_rhs_weap_m16a4_carryhandle_grip_pmag","Throw","Put","ACE_Vector"};
-	respawnWeapons[] = {"160_rhs_weap_m16a4_carryhandle_grip_pmag","Throw","Put","ACE_Vector"};		
+	weapons[] = {"160_weap_recon","Throw","Put","ACE_Vector"};
+	respawnWeapons[] = {"160_weap_recon","Throw","Put","ACE_Vector"};		
 };
 
 class SOR_ReconRifleman_D : SOR_ReconLeader_D	
@@ -906,8 +908,8 @@ class SOR_ReconRifleman_D : SOR_ReconLeader_D
 	icon =  "iconMan";
 	displayName = "Recon Rifleman";
 	backpack = "";
-	weapons[] = {"160_rhs_weap_m16a4_carryhandle_grip_pmag","Throw","Put","ACE_Vector"};
-	respawnWeapons[] = {"160_rhs_weap_m16a4_carryhandle_grip_pmag","Throw","Put","ACE_Vector"};
+	weapons[] = {"160_weap_recon","Throw","Put","ACE_Vector"};
+	respawnWeapons[] = {"160_weap_recon","Throw","Put","ACE_Vector"};
 	magazines[] =
 	{
 		Recon_Mags
@@ -923,8 +925,8 @@ class SOR_Recon_M249AR_D : SOR_ReconLeader_D
 	icon =  "iconManMG";
 	backpack = "SOR_M249_Pack_D";
 	displayName = "Recon AutoRifleman M249";
-	weapons[] = {"160_rhs_weap_m249_pip_L_para", "Throw", "Put"};
-	respawnWeapons[] = {"160_rhs_weap_m249_pip_L_para", "Throw", "Put"};
+	weapons[] = {"160_weap_inf_m249", "Throw", "Put"};
+	respawnWeapons[] = {"160_weap_inf_m249", "Throw", "Put"};
 	Items[] = 		
 	{
 		Recon_Equip,
@@ -957,8 +959,8 @@ class SOR_ReconSpotter_D : SOR_ReconLeader_D
 {
 	icon =  "iconMan";
 	displayName = "Recon Spotter";
-	weapons[] = {"160_rhs_weap_m16a4_carryhandle_grip_pmag","Throw","Put","ACE_Vector"};
-	respawnWeapons[] = {"160_rhs_weap_m16a4_carryhandle_grip_pmag","Throw","Put","ACE_Vector"};
+	weapons[] = {"160_weap_recon","Throw","Put","ACE_Vector"};
+	respawnWeapons[] = {"160_weap_recon","Throw","Put","ACE_Vector"};
 	Items[] = 		
 	{
 		"ACE_ATragMX",
@@ -1296,8 +1298,8 @@ class SOR_Engineer_Teamleader_D : B_engineer_F
 	displayName = "Engineer Team Leader";
 	uniformClass = "rhs_uniform_cu_ocp";
 	backpack = "tf_anarc210";
-	weapons[] = {"rhs_weap_m4a1_carryhandle_grip","Throw","Put"};
-	respawnWeapons[] = {"rhs_weap_m4a1_carryhandle_grip","Throw","Put"};
+	weapons[] = {"rhs_weap_m4a1_carryhandle_grip","Throw","Put","ACE_Vector"};
+	respawnWeapons[] = {"rhs_weap_m4a1_carryhandle_grip","Throw","Put","ACE_Vector"};
 	magazines[] = 
 	{
 		Standard_Mags

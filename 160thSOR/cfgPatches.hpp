@@ -9,7 +9,7 @@ class CfgPatches
 {
 	class 160th_SOR_Loadouts 
 	{
-		author="160th SOR (Scooby)";
+		author="160th SOR";
 		url="http://www.160th.net";
 		units[] = 
 		{
@@ -166,6 +166,7 @@ class CfgPatches
 			"SOR_Land_Pod_Heli_Transport_04_medevac_F",			
 			"SOR_Land_Pod_Heli_Transport_04_bench_F",
 			"SOR_Land_Pod_Heli_Transport_04_covered_F",
+			"SOR_VTOL_Troop_D",
 			"SOR_UH60M",			
 			"SOR_CH_47F",
 			"SOR_UH60M_MEV2",
@@ -227,6 +228,13 @@ class CfgPatches
 		};
 		weapons[] = 
 		{
+			"160_weap_pj",
+			"160_weap_inf_std",
+			"160_weap_inf_tl",
+			"160_weap_recon",
+			"160_weap_inf_m249",
+			"160_weap_inf_m240",
+			"160_weap_inf_gl",
 			"160_rhs_weap_ak74m_pkas",
 			"160_rhs_weap_m4a1_carryhandle_grip2",
 			"160_m4a1_carryhandle_grip_holo",			
@@ -245,16 +253,15 @@ class CfgPatches
 			"160_rhs_weap_m16a4_carryhandle_grip_pmag_1",
 			"160_rhs_weap_m4a1_carryhandle_grip2_1"			
 		};
-		requiredVersion = 0.1;
+//		requiredVersion = 0.1;
 		requiredAddons[] = 
 		{
 			"rhsusf_main",
 			"rhsusf_c_weapons",
 			"A3_Characters_F",
-			"task_force_radio_items",
 			"ace_medical",
 			"ace_common",
-			"FIR_F16_F",
+			"task_force_radio_items"
 		};
 	};
 };

@@ -1,6 +1,9 @@
 class cfgWeapons 
 {
+	class rhs_weap_m4a1_carryhandle;
+	class rhs_weap_m4a1_carryhandle_m203;
 	class rhs_weap_m4a1_carryhandle_grip;
+	class rhs_weap_m16a4;
 	class rhs_weap_m4a1_grip2;
 	class rhs_weap_m4a1_m320;
 	class rhs_weap_m249_pip_L_para;
@@ -8,6 +11,7 @@ class cfgWeapons
 	class srifle_LRR_camo_F;
 	class rhs_weap_m4a1_blockII_M203;
 	class rhs_weap_m4a1_blockII_grip2_KAC;
+	class rhs_weap_m4a1_blockII;
 	class rhs_weap_m16a4_carryhandle;
 	class rhs_weap_sr25;
 	class rhs_weap_sr25_ec;
@@ -27,7 +31,24 @@ class cfgWeapons
 		};
 	};	
 
-	class 160_rhs_weap_m4a1_carryhandle_grip2: rhs_weap_m4a1_carryhandle_grip2 
+	class 160_weap_inf_std4a1_carryhandle_grip2: rhs_weap_m4a1_carryhandle_grip2 
+	{
+		class LinkedItems 
+		{
+			class LinkedItemsOptic 
+			{
+				item = "rhsusf_acc_eotech_552";
+				slot = "CowsSlot";
+			};
+			class LinkedItemsAcc 
+			{
+				item = "rhsusf_acc_anpeq15_bk_light";
+				slot = "PointerSlot";
+			};
+		};
+	};	
+
+	class 160_weap_pj: rhs_weap_m4a1_blockII 
 	{
 		class LinkedItems 
 		{
@@ -42,8 +63,8 @@ class cfgWeapons
 				slot = "PointerSlot";
 			};
 		};
-	};	
-
+	};		
+	
 	class 160_m4a1_carryhandle_grip_holo: rhs_weap_m4a1_carryhandle_grip 
 	{
 		class LinkedItems 
@@ -55,7 +76,24 @@ class cfgWeapons
 			};
 			class LinkedItemsAcc 
 			{
-				item = "rhsusf_acc_anpeq15_light";
+				item = "rhsusf_acc_anpeq15_bk_light";
+				slot = "PointerSlot";
+			};
+		};
+	};
+	
+	class 160_weap_inf_tl: rhs_weap_m4a1_carryhandle 
+	{
+		class LinkedItems 
+		{
+			class LinkedItemsOptic 
+			{
+				item = "rhsusf_acc_eotech_552";
+				slot = "CowsSlot";
+			};
+			class LinkedItemsAcc 
+			{
+				item = "rhsusf_acc_anpeq15_bk_light";
 				slot = "PointerSlot";
 			};
 		};
@@ -72,7 +110,24 @@ class cfgWeapons
 			};
 			class LinkedItemsAcc 
 			{
-				item = "rhsusf_acc_anpeq15_light";
+				item = "rhsusf_acc_anpeq15_bk_light";
+				slot = "PointerSlot";
+			};
+		};
+	};
+	
+	class 160_weap_inf_std: rhs_weap_m4a1_carryhandle 
+	{
+		class LinkedItems 
+		{
+			class LinkedItemsOptic 
+			{
+				item = "rhsusf_acc_ACOG";
+				slot = "CowsSlot";
+			};
+			class LinkedItemsAcc 
+			{
+				item = "rhsusf_acc_anpeq15_bk_light";
 				slot = "PointerSlot";
 			};
 		};
@@ -89,7 +144,7 @@ class cfgWeapons
 			};
 			class LinkedItemsAcc 
 			{
-				item = "rhsusf_acc_anpeq15_light";
+				item = "rhsusf_acc_anpeq15_bk_light";
 				slot = "PointerSlot";
 			};
 		};
@@ -106,7 +161,24 @@ class cfgWeapons
 			};
 			class LinkedItemsAcc 
 			{
-				item = "rhsusf_acc_anpeq15_light";
+				item = "rhsusf_acc_anpeq15_bk_light";
+				slot = "PointerSlot";
+			};
+		};
+	};
+	
+	class 160_weap_inf_gl: rhs_weap_m4a1_m320 
+	{
+		class LinkedItems 
+		{
+			class LinkedItemsOptic 
+			{
+				item = "rhsusf_acc_ACOG";
+				slot = "CowsSlot";
+			};
+			class LinkedItemsAcc 
+			{
+				item = "rhsusf_acc_anpeq15_bk_light";
 				slot = "PointerSlot";
 			};
 		};
@@ -123,7 +195,24 @@ class cfgWeapons
 			};
 			class LinkedItemsAcc 
 			{
-				item = "rhsusf_acc_anpeq15side";
+				item = "rhsusf_acc_anpeq15side_bk";
+				slot = "PointerSlot";
+			};
+		};
+	};
+	
+	class 160_weap_inf_m249: rhs_weap_m249_pip_L_para 
+	{
+		class LinkedItems 
+		{
+			class LinkedItemsOptic 
+			{
+				item = "rhsusf_acc_eotech_552";
+				slot = "CowsSlot";
+			};
+			class LinkedItemsAcc 
+			{
+				item = "rhsusf_acc_anpeq15side_bk";
 				slot = "PointerSlot";
 			};
 		};
@@ -161,6 +250,39 @@ class cfgWeapons
 			};
 		};
 	};
+	
+	class 160_weap_inf_m240: rhs_weap_m240B 
+	{
+		magazines[] = 
+		{
+			"SOR_rhsusf_100Rnd_762x51_m62_tracer",
+			"rhsusf_50Rnd_762x51",
+			"rhsusf_50Rnd_762x51_m61_ap",
+			"rhsusf_50Rnd_762x51_m62_tracer",
+			"rhsusf_50Rnd_762x51_m80a1epr",
+			"rhsusf_50Rnd_762x51_m82_blank",
+			"rhsusf_100Rnd_762x51",
+			"rhsusf_100Rnd_762x51_m61_ap",
+			"rhsusf_100Rnd_762x51_m62_tracer",
+			"rhsusf_100Rnd_762x51_m80a1epr",
+			"rhsusf_100Rnd_762x51_m82_blank",
+			"rhsusf_50Rnd_762x51_m993",
+			"rhsusf_100Rnd_762x51_m993"
+		};
+		class LinkedItems 
+		{
+			class LinkedItemsOptic 
+			{
+				item = "rhsusf_acc_eotech_552";
+				slot = "CowsSlot";
+			};
+			class LinkedItemsAcc 
+			{
+				item = "rhsusf_acc_anpeq15A";
+				slot = "PointerSlot";
+			};
+		};
+	};	
 	
 	class 160_srifle_LRR_camo_F: srifle_LRR_camo_F
 	{
@@ -224,7 +346,7 @@ class cfgWeapons
 			};
 			class LinkedItemsAcc 
 			{
-				item = "rhsusf_acc_anpeq15_light";
+				item = "rhsusf_acc_anpeq15_bk_light";
 				slot = "PointerSlot";
 			};
 		};
@@ -269,6 +391,28 @@ class cfgWeapons
 			class LinkedItemsAcc 
 			{
 				item = "rhsusf_acc_anpeq15side";
+				slot = "PointerSlot";
+			};
+			class LinkedItemsMuzzle
+			{
+				item = "rhsusf_acc_nt4_black";
+				slot = "MuzzleSlot";
+			};		
+		};
+	};
+	
+	class 160_weap_recon: rhs_weap_m16a4 
+	{
+		class LinkedItems 
+		{
+			class LinkedItemsOptic 
+			{
+				item = "rhsusf_acc_ELCAN";
+				slot = "CowsSlot";
+			};
+			class LinkedItemsAcc 
+			{
+				item = "rhsusf_acc_anpeq15side_bk";
 				slot = "PointerSlot";
 			};
 			class LinkedItemsMuzzle

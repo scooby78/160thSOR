@@ -36,6 +36,7 @@ class cfgVehicles
 	#include "cfgOpForDesert.hpp"
 	
 	#include "cfgCrates.hpp"
+	#include "cfgCratesWoodland.hpp"
 
 	#include "cfgAircraft.hpp"
 	#include "cfgAircraftWoodland.hpp"

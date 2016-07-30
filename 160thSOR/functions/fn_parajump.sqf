@@ -20,7 +20,7 @@ sleep 1;
 while{(alive player)&&(vehicle _paraguy == player)} do
 {
 	sleep 0.2;
-	if ((getPosATL player) select 2 < 15) then
+	if ((getPosVisual player) select 2 < 15) then
 	{
 		_chute = "Steerable_Parachute_F" createVehicle [0,0,0];  
 		_chute setPos [getPos player select 0, getPos player select 1, getPos player select 2];
