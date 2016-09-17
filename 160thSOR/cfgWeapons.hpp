@@ -18,26 +18,20 @@ class cfgWeapons
 	class rhs_weap_m16a4_carryhandle_grip_pmag;
 	class rhs_weap_m4a1_carryhandle_grip2;
 	class rhs_weap_ak74m_pkas;
+	
+	class arifle_SPAR_01_blk_F;
+	class arifle_SPAR_01_GL_blk_F;
+	class LMG_03_F;
+	
 
-	class 160_rhs_weap_ak74m_pkas: rhs_weap_ak74m_pkas 
+
+	class 160_weap_inf_std: arifle_SPAR_01_blk_F 
 	{
 		class LinkedItems 
 		{
 			class LinkedItemsOptic 
 			{
-				item = "rhs_acc_1p78";
-				slot = "CowsSlot";
-			};
-		};
-	};	
-
-	class 160_weap_inf_std4a1_carryhandle_grip2: rhs_weap_m4a1_carryhandle_grip2 
-	{
-		class LinkedItems 
-		{
-			class LinkedItemsOptic 
-			{
-				item = "rhsusf_acc_eotech_552";
+				item = "optic_Arco_blk_F";
 				slot = "CowsSlot";
 			};
 			class LinkedItemsAcc 
@@ -48,6 +42,23 @@ class cfgWeapons
 		};
 	};	
 
+	class 160_weap_inf_tl: arifle_SPAR_01_blk_F 
+	{
+		class LinkedItems 
+		{
+			class LinkedItemsOptic 
+			{
+				item = "optic_Arco_blk_F";
+				slot = "CowsSlot";
+			};
+			class LinkedItemsAcc 
+			{
+				item = "rhsusf_acc_anpeq15_bk_light";
+				slot = "PointerSlot";
+			};
+		};
+	};	
+	
 	class 160_weap_pj: rhs_weap_m4a1_blockII 
 	{
 		class LinkedItems 
@@ -63,8 +74,42 @@ class cfgWeapons
 				slot = "PointerSlot";
 			};
 		};
-	};		
+	};	
 	
+	class 160_weap_inf_m249: LMG_03_F 
+	{
+		class LinkedItems 
+		{
+			class LinkedItemsOptic 
+			{
+				item = "optic_Holosight_blk_F";
+				slot = "CowsSlot";
+			};
+			class LinkedItemsAcc 
+			{
+				item = "rhsusf_acc_anpeq15_bk_light";
+				slot = "PointerSlot";
+			};
+		};
+	};
+	
+	class 160_weap_inf_gl: arifle_SPAR_01_GL_blk_F 
+	{
+		class LinkedItems 
+		{
+			class LinkedItemsOptic 
+			{
+				item = "optic_Arco_blk_F";
+				slot = "CowsSlot";
+			};
+			class LinkedItemsAcc 
+			{
+				item = "rhsusf_acc_anpeq15_bk_light";
+				slot = "PointerSlot";
+			};
+		};
+	};
+
 	class 160_m4a1_carryhandle_grip_holo: rhs_weap_m4a1_carryhandle_grip 
 	{
 		class LinkedItems 
@@ -82,28 +127,6 @@ class cfgWeapons
 		};
 	};
 	
-	class 160_weap_inf_tl: rhs_weap_m4a1_carryhandle_grip 
-	{
-		class LinkedItems 
-		{
-			class LinkedItemsOptic 
-			{
-				item = "rhsusf_acc_eotech_552";
-				slot = "CowsSlot";
-			};
-			class LinkedItemsAcc 
-			{
-				item = "rhsusf_acc_anpeq15_bk_light";
-				slot = "PointerSlot";
-			};
-			class LinkedItemsUnder
-			{
-				item = "rhsusf_acc_grip1";
-				slot = "UnderBarrelSlot";
-			};	
-		};
-	};
-	
 	class 160_m4a1_carryhandle_grip_acog: rhs_weap_m4a1_carryhandle_grip 
 	{
 		class LinkedItems 
@@ -117,28 +140,6 @@ class cfgWeapons
 			{
 				item = "rhsusf_acc_anpeq15_bk_light";
 				slot = "PointerSlot";
-			};
-		};
-	};
-	
-	class 160_weap_inf_std: rhs_weap_m4a1_carryhandle_grip 
-	{
-		class LinkedItems 
-		{
-			class LinkedItemsOptic 
-			{
-				item = "rhsusf_acc_ACOG";
-				slot = "CowsSlot";
-			};
-			class LinkedItemsAcc 
-			{
-				item = "rhsusf_acc_anpeq15_bk_light";
-				slot = "PointerSlot";
-			};
-			class LinkedItemsUnder
-			{
-				item = "rhsusf_acc_grip1";
-				slot = "UnderBarrelSlot";
 			};
 		};
 	};
@@ -177,41 +178,7 @@ class cfgWeapons
 		};
 	};
 	
-	class 160_weap_inf_gl: rhs_weap_m4a1_m320 
-	{
-		class LinkedItems 
-		{
-			class LinkedItemsOptic 
-			{
-				item = "rhsusf_acc_ACOG";
-				slot = "CowsSlot";
-			};
-			class LinkedItemsAcc 
-			{
-				item = "rhsusf_acc_anpeq15_bk_light";
-				slot = "PointerSlot";
-			};
-		};
-	};
-	
 	class 160_rhs_weap_m249_pip_L_para: rhs_weap_m249_pip_L_para 
-	{
-		class LinkedItems 
-		{
-			class LinkedItemsOptic 
-			{
-				item = "rhsusf_acc_eotech_552";
-				slot = "CowsSlot";
-			};
-			class LinkedItemsAcc 
-			{
-				item = "rhsusf_acc_anpeq15side_bk";
-				slot = "PointerSlot";
-			};
-		};
-	};
-	
-	class 160_weap_inf_m249: rhs_weap_m249_pip_L_para 
 	{
 		class LinkedItems 
 		{
@@ -294,6 +261,35 @@ class cfgWeapons
 		};
 	};	
 	
+	class 160_rhs_weap_ak74m_pkas: rhs_weap_ak74m_pkas 
+	{
+		class LinkedItems 
+		{
+			class LinkedItemsOptic 
+			{
+				item = "rhs_acc_1p78";
+				slot = "CowsSlot";
+			};
+		};
+	};	
+
+	class 160_weap_inf_std4a1_carryhandle_grip2: rhs_weap_m4a1_carryhandle_grip2 
+	{
+		class LinkedItems 
+		{
+			class LinkedItemsOptic 
+			{
+				item = "rhsusf_acc_eotech_552";
+				slot = "CowsSlot";
+			};
+			class LinkedItemsAcc 
+			{
+				item = "rhsusf_acc_anpeq15_bk_light";
+				slot = "PointerSlot";
+			};
+		};
+	};	
+
 	class 160_srifle_LRR_camo_F: srifle_LRR_camo_F
 	{
 		class LinkedItems 

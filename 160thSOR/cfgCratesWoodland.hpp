@@ -30,10 +30,11 @@ class Box_NATO_Wps_F;
 /////////////////
 class SOR_PJ_Pack_Box_F_W : Land_PlasticCase_01_large_F
 {
+	editorCategory = "SOR_Cat_Supplies";
+	editorSubcategory = "SOR_SubCat_SupplyBoxes";
+	vehicleClass = "SOR_SupplyBoxes";	
+	faction = SOR_Faction_CRATE;		
 	displayName = "Box PJ Pack Storage Woodland [Static]";
-	vehicleClass = "SOR_SupplyBoxes";
-	faction = SOR_Faction_CRATE;
-	editorCategory = "EdCat_Supplies";
 	class TransportItems{};		
 	class TransportWeapons{};
 	class TransportMagazines{};
@@ -49,10 +50,11 @@ class SOR_PJ_Pack_Box_F_W : Land_PlasticCase_01_large_F
 // Medical Box 
 class SOR_M_Box_F_W : ACE_medicalSupplyCrate
 {
+	editorCategory = "SOR_Cat_Supplies";
+	editorSubcategory = "SOR_SubCat_SupplyBoxes";
+	vehicleClass = "SOR_SupplyBoxes";	
+	faction = SOR_Faction_CRATE;		
 	displayName = "Box [Woodland Medical]";
-	vehicleClass = "SOR_SupplyBoxes";
-	faction = SOR_Faction_CRATE;
-	editorCategory = "EdCat_Supplies";
 	class TransportItems
 	{
 		item_xx(ACE_FieldDressing,40);
@@ -73,9 +75,11 @@ class SOR_M_Box_F_W : ACE_medicalSupplyCrate
 // All in one Crate		
 class SOR_AM_Crate_F_W : B_supplyCrate_F
 {
-	displayName = "Crate [Woodland Ammo&Med]";
-	vehicleClass = "SOR_SupplyCrates";
+	editorCategory = "SOR_Cat_Supplies";
+	editorSubcategory = "SOR_SubCat_SupplyCrates";
+	vehicleClass = "SOR_SupplyCrates";	
 	faction = SOR_Faction_CRATE;
+	displayName = "Crate [Woodland Ammo&Med]";
 	icon = "iconCrateAmmo";
 	class TransportItems
 	{
@@ -92,8 +96,8 @@ class SOR_AM_Crate_F_W : B_supplyCrate_F
 		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,80)
 		mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,40)
 		mag_xx(rhsusf_mag_7x45acp_MHP,40)
-		mag_xx(rhs_200rnd_556x45_M_SAW,8)	
-		mag_xx(rhsusf_100Rnd_762x51,8)		
+		mag_xx(200Rnd_556x45_Box_Tracer_F,8)	
+		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,8)		
 		mag_xx(rhs_mag_M433_HEDP,10)
 		mag_xx(rhs_mag_M441_HE,10)
 		mag_xx(rhs_mag_m714_White,10)			
@@ -114,9 +118,11 @@ class SOR_AM_Crate_F_W : B_supplyCrate_F
 // Medical pod	
 class SOR_Land_Pod_Heli_Transport_04_medevac_F_W : Land_Pod_Heli_Transport_04_medevac_F
 {
-	displayName = "Taru Pod [Woodland Medical CCP]";
-	vehicleClass = "SOR_SupplyCrates";
+	editorCategory = "SOR_Cat_Supplies";
+	editorSubcategory = "SOR_SubCat_SupplyCrates";
+	vehicleClass = "SOR_SupplyCrates";	
 	faction = SOR_Faction_CRATE;
+	displayName = "Taru Pod [Woodland Medical CCP]";
 	class TransportItems
 	{
 		item_xx(ACE_FieldDressing,40);

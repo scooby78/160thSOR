@@ -20,7 +20,9 @@ class CfgPatches
 			"SOR_AirCommand_D",
 			"SOR_RTO_D",	
 			"SOR_TeamLeader_D",
+			"SOR_TeamLeader2_D",
 			"SOR_Medic_D",
+			"SOR_HMedic_D",
 			"SOR_M249AR_D",
 			"SOR_M240AR_D",
 			"SOR_Grenadier_D",
@@ -61,7 +63,9 @@ class CfgPatches
 			"SOR_AirCommand_W",
 			"SOR_RTO_W",			
 			"SOR_Teamleader_W",
+			"SOR_Teamleader2_W",
 			"SOR_Medic_W",
+			"SOR_HMedic_W",
 			"SOR_M249AR_W",
 			"SOR_M240AR_W",
 			"SOR_Grenadier_W",
@@ -253,7 +257,7 @@ class CfgPatches
 			"160_rhs_weap_m16a4_carryhandle_grip_pmag_1",
 			"160_rhs_weap_m4a1_carryhandle_grip2_1"			
 		};
-		version="2.1.0";
+		version="2.2.1";
 //		requiredVersion = 0.1;
 		requiredAddons[] = 
 		{

@@ -194,7 +194,7 @@ class SOR_Teamleader_W : SOR_Teamleader_D
 {
 	editorCategory = "SOR_Cat_Faction_W";
 	faction = SOR_Faction_W;
-	backpack = "B_AssaultPack_tna_F";		
+	backpack = "tf_rt1523g_bwmod";		
 	uniformClass = "U_B_T_Soldier_F"; 
 	linkedItems[] = 
 	{	
@@ -213,6 +213,31 @@ class SOR_Teamleader_W : SOR_Teamleader_D
 		Standard_Equipment
 	};   
 };
+
+class SOR_Teamleader2_W : SOR_Teamleader2_D
+{
+	editorCategory = "SOR_Cat_Faction_W";
+	faction = SOR_Faction_W;
+	backpack = "tf_rt1523g_bwmod";		
+	uniformClass = "U_B_T_Soldier_F"; 
+	linkedItems[] = 
+	{	
+		"V_PlateCarrier1_tna_F", 
+		"H_HelmetB_Enh_tna_F",
+		"rhs_googles_clear",		
+		"ItemGPS",
+		Standard_Equipment
+	};              
+	respawnLinkedItems[] = 
+	{	
+		"V_PlateCarrier1_tna_F", 
+		"H_HelmetB_Enh_tna_F", 
+		"rhs_googles_clear",
+		"ItemGPS", 	
+		Standard_Equipment
+	};   
+};
+
 
 class SOR_Medic_W : SOR_Medic_D
 {
@@ -238,11 +263,17 @@ class SOR_Medic_W : SOR_Medic_D
 	};   
 };
 
+class SOR_HMedic_W : SOR_Medic_W
+{
+	displayName = "Havoc Medic";
+	backpack = "SOR_PJMedicPack_W";		
+};
+
 class SOR_M249AR_W : SOR_M249AR_D
 {
 	editorCategory = "SOR_Cat_Faction_W";
 	faction = SOR_Faction_W;
-	backpack = "SOR_M249_Pack_W";		
+	backpack = "";		
 	uniformClass = "U_B_T_Soldier_F"; 
 	linkedItems[] = 
 	{	
@@ -264,7 +295,7 @@ class SOR_M240AR_W : SOR_M240AR_D
 {
 	editorCategory = "SOR_Cat_Faction_W";
 	faction = SOR_Faction_W;
-	backpack = "SOR_M240_Pack_W";		
+	backpack = "";		
 	uniformClass = "U_B_T_Soldier_F"; 
 	linkedItems[] = 
 	{	
@@ -286,7 +317,7 @@ class SOR_Grenadier_W : SOR_Grenadier_D
 {
 	editorCategory = "SOR_Cat_Faction_W";
 	faction = SOR_Faction_W;
-	backpack = "SOR_GD_Pack_W";		
+	backpack = "";		
 	uniformClass = "U_B_T_Soldier_F"; 
 	linkedItems[] = 
 	{	
@@ -332,7 +363,7 @@ class SOR_Rifleman_ammo_W : SOR_Rifleman_ammo_D
 	faction = SOR_Faction_W
 	displayName = "Rifleman Ammo Bearer (M240)";
 	uniformClass = "U_B_T_Soldier_F";
-	backpack = "SOR_Rifleman_Ammo_Pack_W";
+	backpack = "";
 	linkedItems[] = 
 	{	
 		"V_PlateCarrier1_tna_F",
@@ -354,7 +385,7 @@ class SOR_RiflemanAT_W : SOR_RiflemanAT_D
 	editorCategory = "SOR_Cat_Faction_W";
 	faction = SOR_Faction_W;
 	uniformClass = "U_B_T_Soldier_F"; 
-	backpack = "SOR_RFLAT_Pack_W";
+	backpack = "";
 	linkedItems[] = 
 	{	
 		"V_PlateCarrier1_tna_F",
@@ -395,7 +426,7 @@ class SOR_HeliCrew_W : SOR_HeliCrew_D
 {
 	editorCategory = "SOR_Cat_Faction_W";
 	faction = SOR_Faction_W;
-	backpack = "";		
+	backpack = "SOR_Repair_Pack_W";		
 	uniformClass = "U_B_HeliPilotCoveralls"; 
 	linkedItems[] = 
 	{	
@@ -588,7 +619,7 @@ class SOR_Spotter_W : SOR_Spotter_D
 	uniformClass = "U_B_FullGhillie_lsh";
 };
 
-//Mechanised Crew/Driver/Gunner Engineers	
+//Mechanised Crew	
 class SOR_MechCrew_W : SOR_MechCrew_D
 {
 	editorCategory = "SOR_Cat_Faction_W";
@@ -669,7 +700,7 @@ class SOR_MechCrewCommander_W : SOR_MechOperator_W
 class SOR_MechDriver_W : SOR_MechCrew_W
 {
 	displayName = "Mechanised Driver";
-	backpack = "";
+	backpack = "SOR_Repair_Pack_W";
 };
 
 //HMG Team
@@ -750,5 +781,5 @@ class SOR_Engineer_Teamleader_W : SOR_Engineer_Teamleader_D
 class SOR_Engineer_W : SOR_Engineer_Teamleader_W
 {   
 	displayName = "Engineer";
-	backpack = "SOR_Repair_Pack_W";
+	backpack = "SOR_Eng_Repair_Pack_W";
 };
