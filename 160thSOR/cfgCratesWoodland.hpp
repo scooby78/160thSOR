@@ -96,7 +96,7 @@ class SOR_AM_Crate_F_W : B_supplyCrate_F
 		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,80)
 		mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,40)
 		mag_xx(rhsusf_mag_7x45acp_MHP,40)
-		mag_xx(200Rnd_556x45_Box_Tracer_F,8)	
+		mag_xx(200Rnd_556x45_Box_Tracer_Red_F,8)	
 		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,8)		
 		mag_xx(rhs_mag_M433_HEDP,10)
 		mag_xx(rhs_mag_M441_HE,10)
