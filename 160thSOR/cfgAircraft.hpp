@@ -34,7 +34,7 @@ class RHS_AH64D_AA;
 class RHS_AH64D_CS;
 class RHS_AH64D_GS;
 class RHS_C130J;
-class RHS_A10;
+class RHS_A10_AT;
 class B_Heli_Transport_01_camo_F;
 class B_T_VTOL_01_infantry_F;
 
@@ -52,7 +52,7 @@ class SOR_VTOL_Troop_D : B_T_VTOL_01_infantry_F
 	class TransportItems 
 	{
 		item_xx(ACE_FieldDressing,10);
-		item_xx(V_RebreatherB,2);
+		item_xx(V_RebreatherB,4);
 	};
 	class TransportWeapons
 	{
@@ -64,7 +64,7 @@ class SOR_VTOL_Troop_D : B_T_VTOL_01_infantry_F
 	};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_Repair_Pack_D,1)			
+		pack_xx(SOR_Repair_Pack_veh_D,1)			
 	};
 };
 // Transport Helos
@@ -82,7 +82,7 @@ class SOR_B_Heli_Transport_01_camo_F : B_Heli_Transport_01_camo_F
 	class TransportItems 
 	{
 		item_xx(ACE_FieldDressing,10);
-		item_xx(V_RebreatherB,2);
+		item_xx(V_RebreatherB,4);
 	};
 	class TransportWeapons
 	{
@@ -94,7 +94,7 @@ class SOR_B_Heli_Transport_01_camo_F : B_Heli_Transport_01_camo_F
 	};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_Repair_Pack_D,1)			
+		pack_xx(SOR_Repair_Pack_veh_D,1)			
 	};
 };
 
@@ -167,7 +167,7 @@ class SOR_UH60M : RHS_UH60M
 	class TransportItems 
 	{
 		item_xx(ACE_FieldDressing,10);
-		item_xx(V_RebreatherB,2);
+		item_xx(V_RebreatherB,4);
 	};
 	class TransportWeapons
 	{
@@ -179,7 +179,7 @@ class SOR_UH60M : RHS_UH60M
 	};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_Repair_Pack_D,1)			
+		pack_xx(SOR_Repair_Pack_veh_D,1)			
 	};
 };
 
@@ -260,7 +260,7 @@ class SOR_CH_47F : RHS_CH_47F
 	class TransportItems 
 	{
 		item_xx(ACE_FieldDressing,10);
-		item_xx(V_RebreatherB,2);			
+		item_xx(V_RebreatherB,4);			
 	};
 	class TransportWeapons
 	{
@@ -272,7 +272,7 @@ class SOR_CH_47F : RHS_CH_47F
 	};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_Repair_Pack_D,1)			
+		pack_xx(SOR_Repair_Pack_veh_D,1)			
 	};
 };
 
@@ -286,7 +286,7 @@ class SOR_UH60M_MEV2 : RHS_UH60M_MEV2
 	driverCanEject = 1; // was 0, Allows pilot to exit heli with engine running
 	ejectDeadCargo = 1; //test dead eject
 	crewCrashProtection = 0.20; /// Was 0.25, multiplier of damage to crew of the vehicle => low number means better protection //test
-	getInRadius = 4;	
+	getInRadius = 5;	
 	radarType = 4;	
 	armorStructural = 4; // Was 2			
 	crew = "SOR_MEVPilot_D";
@@ -299,7 +299,7 @@ class SOR_UH60M_MEV2 : RHS_UH60M_MEV2
 		item_xx(ACE_epinephrine,16)
 		item_xx(G_Diving,3)
 		item_xx(U_B_Wetsuit,3)
-		item_xx(V_RebreatherB,3)
+		item_xx(V_RebreatherB,5)
 	};		
 	class TransportWeapons
 	{
@@ -311,7 +311,7 @@ class SOR_UH60M_MEV2 : RHS_UH60M_MEV2
 	};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_Repair_Pack_D,1)
+		pack_xx(SOR_Repair_Pack_veh_D,1)
 	};
 };
 
@@ -334,7 +334,7 @@ class SOR_MELB_H6M : RHS_MELB_H6M
 	class TransportMagazines{};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_Repair_Pack_D,1)
+		pack_xx(SOR_Repair_Pack_veh_D,1)
 	};
 };	
 
@@ -360,7 +360,7 @@ class SOR_MELB_MH6M : RHS_MELB_MH6M
 	class TransportMagazines{};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_Repair_Pack_D,1)
+		pack_xx(SOR_Repair_Pack_veh_D,1)
 	};
 };	
 
@@ -374,7 +374,7 @@ class SOR_MELB_MH6M_MEV : RHS_MELB_MH6M
 	armorStructural = 4; // Was 50
 	driverCanEject = 1; // was 0 test eject
 	ejectDeadCargo = 1; //test dead eject	
-	getInRadius = 4;
+	getInRadius = 5;
 //		ace_fastroping_enabled = 1;
 //		ace_fastroping_ropeOrigins[] = {{1.2,.8,0},{-1.2,.8,0}};
 	class TransportItems 
@@ -384,13 +384,13 @@ class SOR_MELB_MH6M_MEV : RHS_MELB_MH6M
 		item_xx(ACE_epinephrine,16)
 		item_xx(G_Diving,3)
 		item_xx(U_B_Wetsuit,3)
-		item_xx(V_RebreatherB,3)
+		item_xx(V_RebreatherB,5)
 	};
 	class TransportWeapons{};
 	class TransportMagazines{};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_Repair_Pack_D,1)
+		pack_xx(SOR_Repair_Pack_veh_D,1)
 	};
 };	
 
@@ -414,7 +414,7 @@ class SOR_MELB_AH6M_L : RHS_MELB_AH6M_L
 	class TransportMagazines{};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_Repair_Pack_D,1)
+		pack_xx(SOR_Repair_Pack_veh_D,1)
 	};
 };	
 
@@ -437,7 +437,7 @@ class SOR_MELB_AH6M_M : RHS_MELB_AH6M_M
 	class TransportMagazines{};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_Repair_Pack_D,1)
+		pack_xx(SOR_Repair_Pack_veh_D,1)
 	};
 };	
 
@@ -460,7 +460,7 @@ class SOR_MELB_AH6M_H : RHS_MELB_AH6M_H
 	class TransportMagazines{};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_Repair_Pack_D,1)
+		pack_xx(SOR_Repair_Pack_veh_D,1)
 	};
 };	
 
@@ -482,7 +482,7 @@ class SOR_RHS_AH64D_AA : RHS_AH64D_AA
 	class TransportMagazines{};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_Repair_Pack_D,1)
+		pack_xx(SOR_Repair_Pack_veh_D,1)
 	};
 };	
 
@@ -504,7 +504,7 @@ class SOR_RHS_AH64D_CS : RHS_AH64D_CS
 	class TransportMagazines{};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_Repair_Pack_D,1)
+		pack_xx(SOR_Repair_Pack_veh_D,1)
 	};
 };		
 
@@ -526,14 +526,14 @@ class SOR_RHS_AH64D_GS : RHS_AH64D_GS
 	class TransportMagazines{};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_Repair_Pack_D,1)
+		pack_xx(SOR_Repair_Pack_veh_D,1)
 	};
 };		
 
 ////////////	
 // Planes //
 ////////////
-class SOR_RHS_A10 : RHS_A10
+class SOR_RHS_A10 : RHS_A10_AT
 {
 	editorCategory = "SOR_Cat_Faction_D";
 	editorSubcategory = "SOR_SubCat_Aircraft";
@@ -547,7 +547,7 @@ class SOR_RHS_A10 : RHS_A10
 	class TransportMagazines{};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_Repair_Pack_D,1)
+		pack_xx(SOR_Repair_Pack_veh_D,1)
 	};
 };
 /*
@@ -663,7 +663,7 @@ class SOR_RHS_C130J : RHS_C130J
 	class TransportMagazines{};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_Repair_Pack_D,1)
+		pack_xx(SOR_Repair_Pack_veh_D,1)
 	};
 };
 */
@@ -858,13 +858,13 @@ class SOR_O_Heli_Transport_04_F : O_Heli_Transport_04_F
 	class TransportItems 
 	{
 		item_xx(ACE_FieldDressing,10);
-		item_xx(V_RebreatherB,2);			
+		item_xx(V_RebreatherB,3);			
 	};	
 	class TransportWeapons{};
 	class TransportMagazines{};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_Repair_Pack_D,1)
+		pack_xx(SOR_Repair_Pack_veh_D,1)
 	};
 };
 
@@ -884,13 +884,13 @@ class SOR_O_Heli_Transport_04_medevac_F : O_Heli_Transport_04_medevac_F
 		item_xx(ACE_epinephrine,16)
 		item_xx(G_Diving,3)
 		item_xx(U_B_Wetsuit,3)
-		item_xx(V_RebreatherB,3)
+		item_xx(V_RebreatherB,5)
 	};		
 	class TransportWeapons{};
 	class TransportMagazines{};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_Repair_Pack_D,1)
+		pack_xx(SOR_Repair_Pack_veh_D,1)
 	};
 };
 
@@ -922,13 +922,13 @@ class SOR_O_Heli_Transport_04_bench_F : O_Heli_Transport_04_bench_F
 	class TransportItems 
 	{
 		item_xx(ACE_FieldDressing,10);
-		item_xx(V_RebreatherB,2);			
+		item_xx(V_RebreatherB,3);			
 	};
 	class TransportWeapons{};
 	class TransportMagazines{};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_Repair_Pack_D,1)
+		pack_xx(SOR_Repair_Pack_veh_D,1)
 	};
 };
 
@@ -944,13 +944,13 @@ class SOR_O_Heli_Transport_04_covered_F : O_Heli_Transport_04_covered_F
 	class TransportItems 
 	{
 		item_xx(ACE_FieldDressing,10);
-		item_xx(V_RebreatherB,2);			
+		item_xx(V_RebreatherB,3);			
 	};
 	class TransportWeapons{};
 	class TransportMagazines{};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_Repair_Pack_D,1)
+		pack_xx(SOR_Repair_Pack_veh_D,1)
 	};
 };
 
@@ -972,7 +972,7 @@ class SOR_RHS_Mi8amt_civilian : RHS_Mi8amt_civilian
 	class TransportMagazines{};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_Repair_Pack_D,1)
+		pack_xx(SOR_Repair_Pack_veh_D,1)
 	};
 };
 
@@ -999,7 +999,7 @@ class SOR_O_Heli_Attack_02_F : O_Heli_Attack_02_F
 	};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_Repair_Pack_D,1)
+		pack_xx(SOR_Repair_Pack_veh_D,1)
 	};
 };	
 
@@ -1024,7 +1024,7 @@ class SOR_O_Heli_Attack_02_black_F : O_Heli_Attack_02_black_F
 	};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_Repair_Pack_D,1)
+		pack_xx(SOR_Repair_Pack_veh_D,1)
 	};
 };
 
@@ -1049,7 +1049,7 @@ class SOR_O_Heli_Light_02_v2_F : O_Heli_Light_02_v2_F
 	};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_Repair_Pack_D,1)
+		pack_xx(SOR_Repair_Pack_veh_D,1)
 	};
 };	
 

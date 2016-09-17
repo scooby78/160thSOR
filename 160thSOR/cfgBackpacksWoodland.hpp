@@ -93,7 +93,8 @@ class SOR_M240_Pack_W : B_AssaultPack_tna_F
 //Repair Pack With Toolkit	
 class SOR_Repair_Pack_W : B_AssaultPack_tna_F
 {
-	displayName = "Pack woodland Repair";
+/*
+	displayName = "Pack Repair";
 	class TransportItems
 	{
 		item_xx(Toolkit,1);
@@ -103,6 +104,23 @@ class SOR_Repair_Pack_W : B_AssaultPack_tna_F
 	{
 		mag_xx(rhs_mag_an_m8hc,2);
 	};
+*/
+};
+
+//Vehicle Repair Pack With Toolkit	
+class SOR_Repair_Pack_veh_W : SOR_Repair_Pack_veh_D
+{
+/*
+	displayName = "Pack Vehicle Repair";
+	class TransportItems
+	{
+		item_xx(Toolkit,1);		
+	};
+	class TransportMagazines
+	{
+		mag_xx(rhs_mag_an_m8hc,2);
+	};
+*/
 };
 
 //Custom Grenadier Pack	
@@ -189,14 +207,17 @@ class SOR_Mech_Radio_W : tf_rt1523g_bwmod
 //Custom Engineer Repair Pack	
 class SOR_Eng_Repair_Pack_W : B_AssaultPack_tna_F
 {
-	displayName = "Pack woodland Eng Repair";
-	class TransportMagazines{};
+	displayName = "Pack Engineer Repair";
 	class TransportItems
 	{
-		item_xx(ACE_wirecutter,1);
-		item_xx(Toolkit,1);		
-	};		
-};	
+		item_xx(Toolkit,1);
+		item_xx(ACE_EntrenchingTool,1)		
+	};
+	class TransportMagazines
+	{
+		mag_xx(rhs_mag_an_m8hc,2);
+	};	
+};
 
 //Custom Engineer Ordanance Pack		
 class SOR_Ordanance_Pack_W : B_AssaultPack_tna_F

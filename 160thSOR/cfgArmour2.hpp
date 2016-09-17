@@ -1911,12 +1911,12 @@ class SOR_B_APC_Wheeled_01_cannon_F: B_APC_Wheeled_01_base_F
 	class TransportMagazines
 	{
 		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,20)
-		mag_xx(rhs_200rnd_556x45_M_SAW,4)
+		mag_xx(200Rnd_556x45_Box_Tracer_F,4)
 		mag_xx(rhsusf_100Rnd_762x51,4)
 	};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_Repair_Pack_D,1)			
+		pack_xx(SOR_Repair_Pack_veh_D,1)			
 	};
 	class Turrets: Turrets
 	{

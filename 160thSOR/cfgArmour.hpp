@@ -55,12 +55,12 @@ class SOR_RHS_M6 : RHS_M6
 	class TransportMagazines
 	{
 		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,20)
-		mag_xx(rhs_200rnd_556x45_M_SAW,4)
+		mag_xx(200Rnd_556x45_Box_Tracer_F,4)
 		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,4)
 	};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_Repair_Pack_D,1)			
+		pack_xx(SOR_Repair_Pack_veh_D,1)			
 	};
 };
 
@@ -85,12 +85,12 @@ class SOR_M2A3_BUSKIII : RHS_M2A3_BUSKIII
 	class TransportMagazines
 	{
 		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,20)
-		mag_xx(rhs_200rnd_556x45_M_SAW,4)
+		mag_xx(200Rnd_556x45_Box_Tracer_F,4)
 		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,4)
 	};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_Repair_Pack_D,1)			
+		pack_xx(SOR_Repair_Pack_veh_D,1)			
 	};
 };
 
@@ -103,6 +103,7 @@ class SOR_rhsusf_m113d_usarmy : rhsusf_m113d_usarmy
 	armor = 500; //was 200 protection against missiles, collisions and explosions
 	peakTorque = 1540; // was 770
 	enginePower = 410; //was 205	
+	ace_cargo_space = 12;
 	class TransportItems 
 	{
 		item_xx(ACE_FieldDressing,20);
@@ -115,12 +116,12 @@ class SOR_rhsusf_m113d_usarmy : rhsusf_m113d_usarmy
 	class TransportMagazines
 	{
 		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,20)
-		mag_xx(rhs_200rnd_556x45_M_SAW,4)
+		mag_xx(200Rnd_556x45_Box_Tracer_F,4)
 		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,4)
 	};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_Repair_Pack_D,1)			
+		pack_xx(SOR_Repair_Pack_veh_D,1)			
 	};
 };
 	
@@ -133,6 +134,7 @@ class SOR_rhsusf_m113d_usarmy_supply : rhsusf_m113d_usarmy_supply
 	armor = 500; //was 200 protection against missiles, collisions and explosions
 	peakTorque = 1540; // was 770
 	enginePower = 410; //was 205	
+	ace_cargo_space = 12;
 	class TransportItems 
 	{
 		item_xx(ACE_FieldDressing,20);
@@ -145,12 +147,12 @@ class SOR_rhsusf_m113d_usarmy_supply : rhsusf_m113d_usarmy_supply
 	class TransportMagazines
 	{
 		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,20)
-		mag_xx(rhs_200rnd_556x45_M_SAW,4)
+		mag_xx(200Rnd_556x45_Box_Tracer_F,4)
 		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,4)
 	};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_Repair_Pack_D,1)			
+		pack_xx(SOR_Repair_Pack_veh_D,1)			
 	};
 };
 
@@ -163,6 +165,7 @@ class SOR_rhsusf_m113d_usarmy_unarmed : rhsusf_m113d_usarmy_unarmed
 	armor = 500; //was 200 protection against missiles, collisions and explosions
 	peakTorque = 1540; // was 770
 	enginePower = 410; //was 205
+	ace_cargo_space = 12;
 	class TransportItems 
 	{
 		item_xx(ACE_FieldDressing,20);
@@ -175,12 +178,12 @@ class SOR_rhsusf_m113d_usarmy_unarmed : rhsusf_m113d_usarmy_unarmed
 	class TransportMagazines
 	{
 		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,20)
-		mag_xx(rhs_200rnd_556x45_M_SAW,4)
+		mag_xx(200Rnd_556x45_Box_Tracer_F,4)
 		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,4)
 	};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_Repair_Pack_D,1)			
+		pack_xx(SOR_Repair_Pack_veh_D,1)			
 	};
 };
 
@@ -193,6 +196,7 @@ class SOR_rhsusf_m113d_usarmy_medical : rhsusf_m113d_usarmy_medical
 	armor = 500; //was 200 protection against missiles, collisions and explosions
 	peakTorque = 1540; // was 770
 	enginePower = 410; //was 205
+	ace_cargo_space = 12;
 	class TransportItems 
 	{
 		item_xx(ACE_Fielddressing,24)
@@ -210,7 +214,7 @@ class SOR_rhsusf_m113d_usarmy_medical : rhsusf_m113d_usarmy_medical
 	};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_Repair_Pack_D,1)			
+		pack_xx(SOR_Repair_Pack_veh_D,1)			
 	};
 };	
 
@@ -237,12 +241,12 @@ class SOR_rhsusf_m1a1aim_tuski_d : rhsusf_m1a1aim_tuski_d
 	class TransportMagazines
 	{
 		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,20)
-		mag_xx(rhs_200rnd_556x45_M_SAW,4)
+		mag_xx(200Rnd_556x45_Box_Tracer_F,4)
 		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,4)
 	};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_Repair_Pack_D,1)			
+		pack_xx(SOR_Repair_Pack_veh_D,1)			
 	};
 };		
 
@@ -268,12 +272,12 @@ class SOR_rhsusf_m1a2sep1tuskid_usarmy : rhsusf_m1a2sep1tuskid_usarmy
 	class TransportMagazines
 	{
 		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,20)
-		mag_xx(rhs_200rnd_556x45_M_SAW,4)
+		mag_xx(200Rnd_556x45_Box_Tracer_F,4)
 		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,4)
 	};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_Repair_Pack_D,1)			
+		pack_xx(SOR_Repair_Pack_veh_D,1)			
 	};
 };	
 
@@ -299,12 +303,12 @@ class SOR_rhsusf_m1a2sep1tuskiid_usarmy : rhsusf_m1a2sep1tuskiid_usarmy
 	class TransportMagazines
 	{
 		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,20)
-		mag_xx(rhs_200rnd_556x45_M_SAW,4)
+		mag_xx(200Rnd_556x45_Box_Tracer_F,4)
 		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,4)
 	};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_Repair_Pack_D,1)			
+		pack_xx(SOR_Repair_Pack_veh_D,1)			
 	};
 };
 
@@ -363,12 +367,29 @@ class SOR_rhsusf_M1083A1P2_d_fmtv_usarmy : rhsusf_M1083A1P2_d_fmtv_usarmy
 	gearBox[] = {-8,0,11,8.15,7.44,5.33};
 	enginePower = 850;  //was 268
 	peakTorque = 2450; //was 254	
-	class TransportItems{};
-	class TransportWeapons{};
-	class TransportMagazines{};
+	class TransportItems
+	{
+		item_xx(ACE_FieldDressing,10);
+		item_xx(ACE_EntrenchingTool,2);		
+	};
+	class TransportWeapons
+	{
+		weap_xx(rhs_weap_M136_hp,1)
+	};
+	class TransportMagazines
+	{
+		mag_xx(Laserbatteries,1)
+		mag_xx(200Rnd_556x45_Box_Tracer_F,1)		
+		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,1)	
+		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,10)
+		mag_xx(ClaymoreDirectionalMine_Remote_Mag,2)		
+		mag_xx(rhs_mag_m67,2)	
+		mag_xx(rhs_mag_an_m8hc,4)			
+	};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_Repair_Pack_D,1)
+		pack_xx(SOR_Repair_Pack_veh_D,1)	
+		pack_xx(B_AssaultPack_khk,1)			
 	};
 };
 	
@@ -379,12 +400,29 @@ class SOR_rhsusf_m1025_d : rhsusf_m1025_d
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_D;
 	displayName = "M1025 (Unarmed)";		
-	class TransportItems{};
-	class TransportWeapons{};
-	class TransportMagazines{};
+	class TransportItems
+	{
+		item_xx(ACE_FieldDressing,10);
+		item_xx(ACE_EntrenchingTool,2);		
+	};
+	class TransportWeapons
+	{
+		weap_xx(rhs_weap_M136_hp,1)
+	};
+	class TransportMagazines
+	{
+		mag_xx(Laserbatteries,1)
+		mag_xx(200Rnd_556x45_Box_Tracer_F,1)		
+		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,1)	
+		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,10)
+		mag_xx(ClaymoreDirectionalMine_Remote_Mag,2)		
+		mag_xx(rhs_mag_m67,2)	
+		mag_xx(rhs_mag_an_m8hc,4)			
+	};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_Repair_Pack_D,1)			
+		pack_xx(SOR_Repair_Pack_veh_D,1)	
+		pack_xx(B_AssaultPack_khk,1)			
 	};
 };
 	
@@ -395,12 +433,29 @@ class SOR_rhsusf_m1025_d_Mk19 : rhsusf_m1025_d_Mk19
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_D;
 	displayName = "M1025 (Mk19)";			
-	class TransportItems{};
-	class TransportWeapons{};
-	class TransportMagazines{};
+	class TransportItems
+	{
+		item_xx(ACE_FieldDressing,10);
+		item_xx(ACE_EntrenchingTool,2);		
+	};
+	class TransportWeapons
+	{
+		weap_xx(rhs_weap_M136_hp,1)
+	};
+	class TransportMagazines
+	{
+		mag_xx(Laserbatteries,1)
+		mag_xx(200Rnd_556x45_Box_Tracer_F,1)		
+		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,1)	
+		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,10)
+		mag_xx(ClaymoreDirectionalMine_Remote_Mag,2)		
+		mag_xx(rhs_mag_m67,2)	
+		mag_xx(rhs_mag_an_m8hc,4)			
+	};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_Repair_Pack_D,1)			
+		pack_xx(SOR_Repair_Pack_veh_D,1)	
+		pack_xx(B_AssaultPack_khk,1)			
 	};
 };
 	
@@ -411,12 +466,29 @@ class SOR_rhsusf_m1025_d_m2 : rhsusf_m1025_d_m2
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_D;
 	displayName = "M1025 (M2)";			
-	class TransportItems{};
-	class TransportWeapons{};
-	class TransportMagazines{};
+	class TransportItems
+	{
+		item_xx(ACE_FieldDressing,10);
+		item_xx(ACE_EntrenchingTool,2);		
+	};
+	class TransportWeapons
+	{
+		weap_xx(rhs_weap_M136_hp,1)
+	};
+	class TransportMagazines
+	{
+		mag_xx(Laserbatteries,1)
+		mag_xx(200Rnd_556x45_Box_Tracer_F,1)		
+		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,1)	
+		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,10)
+		mag_xx(ClaymoreDirectionalMine_Remote_Mag,2)		
+		mag_xx(rhs_mag_m67,2)	
+		mag_xx(rhs_mag_an_m8hc,4)			
+	};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_Repair_Pack_D,1)			
+		pack_xx(SOR_Repair_Pack_veh_D,1)	
+		pack_xx(B_AssaultPack_khk,1)			
 	};
 };	
 
@@ -426,12 +498,29 @@ class SOR_rhsusf_m998_d_4dr : rhsusf_m998_d_4dr
 	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_D;
-	class TransportItems{};
-	class TransportWeapons{};
-	class TransportMagazines{};
+	class TransportItems
+	{
+		item_xx(ACE_FieldDressing,10);
+		item_xx(ACE_EntrenchingTool,2);		
+	};
+	class TransportWeapons
+	{
+		weap_xx(rhs_weap_M136_hp,1)
+	};
+	class TransportMagazines
+	{
+		mag_xx(Laserbatteries,1)
+		mag_xx(200Rnd_556x45_Box_Tracer_F,1)		
+		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,1)	
+		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,10)
+		mag_xx(ClaymoreDirectionalMine_Remote_Mag,2)		
+		mag_xx(rhs_mag_m67,2)	
+		mag_xx(rhs_mag_an_m8hc,4)			
+	};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_Repair_Pack_D,1)			
+		pack_xx(SOR_Repair_Pack_veh_D,1)	
+		pack_xx(B_AssaultPack_khk,1)			
 	};
 };	
 
@@ -441,12 +530,29 @@ class SOR_rhsusf_m998_d_2dr : rhsusf_m998_d_2dr
 	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_D;
-	class TransportItems{};
-	class TransportWeapons{};
-	class TransportMagazines{};
+	class TransportItems
+	{
+		item_xx(ACE_FieldDressing,10);
+		item_xx(ACE_EntrenchingTool,2);		
+	};
+	class TransportWeapons
+	{
+		weap_xx(rhs_weap_M136_hp,1)
+	};
+	class TransportMagazines
+	{
+		mag_xx(Laserbatteries,1)
+		mag_xx(200Rnd_556x45_Box_Tracer_F,1)		
+		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,1)	
+		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,10)
+		mag_xx(ClaymoreDirectionalMine_Remote_Mag,2)		
+		mag_xx(rhs_mag_m67,2)	
+		mag_xx(rhs_mag_an_m8hc,4)			
+	};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_Repair_Pack_D,1)			
+		pack_xx(SOR_Repair_Pack_veh_D,1)	
+		pack_xx(B_AssaultPack_khk,1)			
 	};
 };
 	
@@ -461,19 +567,23 @@ class SOR_Eng_Car_Transport_D : rhsusf_m1025_d_s
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_D;
 	displayName = "M1025 (Engineer)";		
-	class TransportItems{};
+	class TransportItems
+	{
+		item_xx(ACE_FieldDressing,10);
+		item_xx(ACE_EntrenchingTool,2);		
+	};
 	class TransportWeapons
 	{
 		weap_xx(rhs_weap_M136_hp,2)
 	};
 	class TransportMagazines
 	{
-		mag_xx(rhs_200rnd_556x45_M_SAW,2)
+		mag_xx(200Rnd_556x45_Box_Tracer_F,2)
 		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,2)
 	};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_Repair_Pack_D,1)
+		pack_xx(SOR_Repair_Pack_veh_D,1)
 		pack_xx(SOR_OrdanancePack_D,2)	
 		pack_xx(B_Mortar_01_weapon_F,1)	
 		pack_xx(B_Mortar_01_support_F,1)				
@@ -493,7 +603,8 @@ class SOR_Eng_Truck_Transport_D : rhsusf_M1083A1P2_d_fmtv_usarmy
 	peakTorque = 2450; //was 254
 	class TransportItems
 	{
-		item_xx(ToolKit,1)			
+		item_xx(ACE_FieldDressing,10);
+		item_xx(ACE_EntrenchingTool,2);		
 	};
 	class TransportWeapons
 	{
@@ -501,12 +612,12 @@ class SOR_Eng_Truck_Transport_D : rhsusf_M1083A1P2_d_fmtv_usarmy
 	};
 	class TransportMagazines
 	{
-		mag_xx(rhs_200rnd_556x45_M_SAW,2)
+		mag_xx(200Rnd_556x45_Box_Tracer_F,2)
 		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,2)
 	};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_Repair_Pack_D,1)
+		pack_xx(SOR_Repair_Pack_veh_D,1)
 		pack_xx(SOR_OrdanancePack_D,2)	
 		pack_xx(B_Mortar_01_weapon_F,1)	
 		pack_xx(B_Mortar_01_support_F,1)	
@@ -521,12 +632,16 @@ class SOR_Eng_Truck_ammo_D : B_Truck_01_ammo_F
 	enginePower = 850;  //was 450
 	peakTorque = 2450; //was 1450
 	crew = "SOR_Engineer_D";
-	class TransportItems{};
+	class TransportItems
+	{
+		item_xx(ACE_FieldDressing,10);
+		item_xx(ACE_EntrenchingTool,2);		
+	};
 	class TransportWeapons{};
 	class TransportMagazines{};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_Repair_Pack_D,1)			
+		pack_xx(SOR_Repair_Pack_veh_D,1)			
 	};
 };
 
@@ -539,12 +654,16 @@ class SOR_Eng_Truck_fuel_D : B_Truck_01_fuel_F
 	enginePower = 850;  //was 450
 	peakTorque = 2450; //was 1450
 	crew = "SOR_Engineer_D";	
-	class TransportItems{};
+	class TransportItems
+	{
+		item_xx(ACE_FieldDressing,10);
+		item_xx(ACE_EntrenchingTool,2);		
+	};
 	class TransportWeapons{};
 	class TransportMagazines{};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_Repair_Pack_D,1)			
+		pack_xx(SOR_Repair_Pack_veh_D,1)			
 	};
 };	
 
@@ -557,12 +676,16 @@ class SOR_Eng_Truck_Repair_D : B_Truck_01_Repair_F
 	enginePower = 850;  //was 450
 	peakTorque = 2450; //was 1450
 	crew = "SOR_Engineer_D";
-	class TransportItems{};
+	class TransportItems
+	{
+		item_xx(ACE_FieldDressing,10);
+		item_xx(ACE_EntrenchingTool,2);		
+	};
 	class TransportWeapons{};
 	class TransportMagazines{};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_Repair_Pack_D,1)			
+		pack_xx(SOR_Repair_Pack_veh_D,1)			
 	};
 };		
 	
@@ -574,7 +697,8 @@ class SOR_Eng_APC_Tracked_01 : B_APC_Tracked_01_rcws_F
 	faction = SOR_Faction_D;
 	class TransportItems
 	{
-		item_xx(ToolKit,1)			
+		item_xx(ACE_FieldDressing,10);
+		item_xx(ACE_EntrenchingTool,2);		
 	};
 	class TransportWeapons
 	{
@@ -583,7 +707,8 @@ class SOR_Eng_APC_Tracked_01 : B_APC_Tracked_01_rcws_F
 	class TransportMagazines{};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_OrdanancePack_D,2)		
+		pack_xx(SOR_OrdanancePack_D,2)	
+		pack_xx(SOR_Repair_Pack_veh_D,1)			
 	};
 };	
 
@@ -594,7 +719,8 @@ class SOR_B_APC_Tracked_02 : B_APC_Tracked_01_CRV_F
 	faction = SOR_Faction_D;
 	class TransportItems
 	{
-		item_xx(ToolKit,1)			
+		item_xx(ACE_FieldDressing,10);
+		item_xx(ACE_EntrenchingTool,2);		
 	};
 	class TransportWeapons
 	{
@@ -603,6 +729,7 @@ class SOR_B_APC_Tracked_02 : B_APC_Tracked_01_CRV_F
 	class TransportMagazines{};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_OrdanancePack_D,2)		
+		pack_xx(SOR_OrdanancePack_D,2)
+		pack_xx(SOR_Repair_Pack_veh_D,1)			
 	};
 };	
