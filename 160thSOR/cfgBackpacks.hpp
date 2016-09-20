@@ -121,8 +121,7 @@ class SOR_GD_Pack_D : rhsusf_assault_eagleaiii_ocp
 	displayName = "Pack Desert GD";
 	class TransportMagazines
 	{
-		mag_xx(rhs_mag_M433_HEDP,10);
-		mag_xx(rhs_mag_M441_HE,5);
+		mag_xx(rhs_mag_M441_HE,15);
 		mag_xx(rhs_mag_m713_Red,5);
 		mag_xx(rhs_mag_m715_Green,2);
 		mag_xx(rhs_mag_m67,2);
@@ -136,9 +135,9 @@ class SOR_RTO_Pack_D : tf_anarc210
 	displayName = "Pack Desert Radio";
 	class TransportMagazines
 	{
-		mag_xx(rhs_mag_m713_Red,1);
-		mag_xx(rhs_mag_m715_Green,2);
-		mag_xx(rhs_mag_m714_White,2);
+		mag_xx(1Rnd_SmokeRed_Grenade_shell,8);
+		mag_xx(1Rnd_SmokeGreen_Grenade_shell,2);
+		mag_xx(1Rnd_SmokeYellow_Grenade_shell,2);
 	};	
 };
 
