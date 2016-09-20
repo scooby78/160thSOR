@@ -356,13 +356,13 @@ class SOR_Teamleader_D : B_Soldier_TL_F
 	{
 		SL_Mags,
 		Std_Pistol,
-		"200Rnd_556x45_Box_Tracer_F"		
+		"200Rnd_556x45_Box_Tracer_Red_F"		
 	};
 	respawnMagazines[] = 
 	{
 		SL_Mags,
 		Std_Pistol,
-		"200Rnd_556x45_Box_Tracer_F"		
+		"200Rnd_556x45_Box_Tracer_Red_F"		
 	};
 	linkedItems[] = 
 	{	
@@ -459,8 +459,8 @@ class SOR_M249AR_D : B_soldier_AR_F
 		"rhs_mag_an_m8hc",
 		"rhs_mag_an_m8hc",
 		"rhs_mag_an_m8hc",
-		"rhs_mag_m18_green",
-		"200Rnd_556x45_Box_Tracer_F"
+		"200Rnd_556x45_Box_Tracer_Red_F",
+		"200Rnd_556x45_Box_Tracer_Red_F"
 	};
 	respawnMagazines[] =
 	{
@@ -468,8 +468,8 @@ class SOR_M249AR_D : B_soldier_AR_F
 		"rhs_mag_an_m8hc",
 		"rhs_mag_an_m8hc",
 		"rhs_mag_an_m8hc",
-		"rhs_mag_m18_green",
-		"200Rnd_556x45_Box_Tracer_F"
+		"200Rnd_556x45_Box_Tracer_Red_F",
+		"200Rnd_556x45_Box_Tracer_Red_F"
 	};
 	linkedItems[] = 
 	{	
@@ -503,24 +503,20 @@ class SOR_M240AR_D : B_soldier_AR_F
 	magazines[] =
 	{
 		"rhsusf_mag_15Rnd_9x19_FMJ",
-		"rhsusf_mag_15Rnd_9x19_FMJ",
-		"rhsusf_mag_15Rnd_9x19_FMJ",
 		"rhs_mag_an_m8hc",
 		"rhs_mag_an_m8hc",
 		"rhs_mag_an_m8hc",
-		"rhs_mag_m18_green",
-		"SOR_rhsusf_100Rnd_762x51_m62_tracer"
+		"SOR_rhsusf_100Rnd_762x51_m62_tracer",
+		"SOR_rhsusf_100Rnd_762x51_m62_tracer"		
 	};
 	respawnMagazines[] =
 	{
 		"rhsusf_mag_15Rnd_9x19_FMJ",
-		"rhsusf_mag_15Rnd_9x19_FMJ",
-		"rhsusf_mag_15Rnd_9x19_FMJ",
 		"rhs_mag_an_m8hc",
 		"rhs_mag_an_m8hc",
 		"rhs_mag_an_m8hc",
-		"rhs_mag_m18_green",
-		"SOR_rhsusf_100Rnd_762x51_m62_tracer"
+		"SOR_rhsusf_100Rnd_762x51_m62_tracer",
+		"SOR_rhsusf_100Rnd_762x51_m62_tracer"		
 	};
 	linkedItems[] = 
 	{	
@@ -550,8 +546,18 @@ class SOR_Grenadier_D : B_Soldier_GL_F
 	respawnWeapons[] = {"160_weap_inf_gl","rhsusf_weap_m9","Throw", "Put"};
 	Items[] = {Standard_Meds};
 	RespawnItems[] = {Standard_Meds};
-	magazines[] = {Standard_Mags,Std_Pistol};
-	respawnMagazines[] = {Standard_Mags,Std_Pistol};
+	magazines[] = 
+	{
+		Standard_Mags,
+		Std_Pistol,
+		GL_Mags		
+	};
+	respawnMagazines[] = 
+	{
+		Standard_Mags,
+		Std_Pistol,
+		GL_Mags		
+	};
 	linkedItems[] = 
 	{	
 		"rhsusf_iotv_ocp_Grenadier",
@@ -585,13 +591,13 @@ class SOR_Rifleman_D : B_Soldier_F
 	{
 		Standard_Mags,
 		Std_Pistol,
-		"200Rnd_556x45_Box_Tracer_F"
+		"200Rnd_556x45_Box_Tracer_Red_F"
 	};
 	respawnMagazines[] = 
 	{
 		Standard_Mags,
 		Std_Pistol,
-		"200Rnd_556x45_Box_Tracer_F"
+		"200Rnd_556x45_Box_Tracer_Red_F"
 	};	
 	linkedItems[] = 
 	{	
@@ -995,7 +1001,8 @@ class SOR_Recon_M249AR_D : SOR_ReconLeader_D
 		"rhs_mag_m67",
 		"rhs_mag_an_m8hc",
 		"rhs_mag_an_m8hc",
-		"rhs_200rnd_556x45_M_SAW"
+		"rhs_200rnd_556x45_M_SAW",
+		"rhs_200rnd_556x45_M_SAW"	
 	};
 	respawnMagazines[] =
 	{
@@ -1003,7 +1010,8 @@ class SOR_Recon_M249AR_D : SOR_ReconLeader_D
 		"rhs_mag_m67",
 		"rhs_mag_an_m8hc",
 		"rhs_mag_an_m8hc",
-		"rhs_200rnd_556x45_M_SAW"
+		"rhs_200rnd_556x45_M_SAW",
+		"rhs_200rnd_556x45_M_SAW"	
 	};			
 };	
 

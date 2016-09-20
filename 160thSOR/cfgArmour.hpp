@@ -55,7 +55,7 @@ class SOR_RHS_M6 : RHS_M6
 	class TransportMagazines
 	{
 		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,20)
-		mag_xx(200Rnd_556x45_Box_Tracer_F,4)
+		mag_xx(200Rnd_556x45_Box_Tracer_Red_F,4)
 		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,4)
 	};
 	class TransportBackpacks
@@ -85,7 +85,7 @@ class SOR_M2A3_BUSKIII : RHS_M2A3_BUSKIII
 	class TransportMagazines
 	{
 		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,20)
-		mag_xx(200Rnd_556x45_Box_Tracer_F,4)
+		mag_xx(200Rnd_556x45_Box_Tracer_Red_F,4)
 		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,4)
 	};
 	class TransportBackpacks
@@ -116,7 +116,7 @@ class SOR_rhsusf_m113d_usarmy : rhsusf_m113d_usarmy
 	class TransportMagazines
 	{
 		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,20)
-		mag_xx(200Rnd_556x45_Box_Tracer_F,4)
+		mag_xx(200Rnd_556x45_Box_Tracer_Red_F,4)
 		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,4)
 	};
 	class TransportBackpacks
@@ -147,7 +147,7 @@ class SOR_rhsusf_m113d_usarmy_supply : rhsusf_m113d_usarmy_supply
 	class TransportMagazines
 	{
 		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,20)
-		mag_xx(200Rnd_556x45_Box_Tracer_F,4)
+		mag_xx(200Rnd_556x45_Box_Tracer_Red_F,4)
 		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,4)
 	};
 	class TransportBackpacks
@@ -178,7 +178,7 @@ class SOR_rhsusf_m113d_usarmy_unarmed : rhsusf_m113d_usarmy_unarmed
 	class TransportMagazines
 	{
 		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,20)
-		mag_xx(200Rnd_556x45_Box_Tracer_F,4)
+		mag_xx(200Rnd_556x45_Box_Tracer_Red_F,4)
 		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,4)
 	};
 	class TransportBackpacks
@@ -241,7 +241,7 @@ class SOR_rhsusf_m1a1aim_tuski_d : rhsusf_m1a1aim_tuski_d
 	class TransportMagazines
 	{
 		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,20)
-		mag_xx(200Rnd_556x45_Box_Tracer_F,4)
+		mag_xx(200Rnd_556x45_Box_Tracer_Red_F,4)
 		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,4)
 	};
 	class TransportBackpacks
@@ -272,7 +272,7 @@ class SOR_rhsusf_m1a2sep1tuskid_usarmy : rhsusf_m1a2sep1tuskid_usarmy
 	class TransportMagazines
 	{
 		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,20)
-		mag_xx(200Rnd_556x45_Box_Tracer_F,4)
+		mag_xx(200Rnd_556x45_Box_Tracer_Red_F,4)
 		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,4)
 	};
 	class TransportBackpacks
@@ -303,7 +303,7 @@ class SOR_rhsusf_m1a2sep1tuskiid_usarmy : rhsusf_m1a2sep1tuskiid_usarmy
 	class TransportMagazines
 	{
 		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,20)
-		mag_xx(200Rnd_556x45_Box_Tracer_F,4)
+		mag_xx(200Rnd_556x45_Box_Tracer_Red_F,4)
 		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,4)
 	};
 	class TransportBackpacks
@@ -379,7 +379,7 @@ class SOR_rhsusf_M1083A1P2_d_fmtv_usarmy : rhsusf_M1083A1P2_d_fmtv_usarmy
 	class TransportMagazines
 	{
 		mag_xx(Laserbatteries,1)
-		mag_xx(200Rnd_556x45_Box_Tracer_F,1)		
+		mag_xx(200Rnd_556x45_Box_Tracer_Red_F,1)		
 		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,1)	
 		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,10)
 		mag_xx(ClaymoreDirectionalMine_Remote_Mag,2)		
@@ -412,7 +412,7 @@ class SOR_rhsusf_m1025_d : rhsusf_m1025_d
 	class TransportMagazines
 	{
 		mag_xx(Laserbatteries,1)
-		mag_xx(200Rnd_556x45_Box_Tracer_F,1)		
+		mag_xx(200Rnd_556x45_Box_Tracer_Red_F,1)		
 		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,1)	
 		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,10)
 		mag_xx(ClaymoreDirectionalMine_Remote_Mag,2)		
@@ -445,7 +445,7 @@ class SOR_rhsusf_m1025_d_Mk19 : rhsusf_m1025_d_Mk19
 	class TransportMagazines
 	{
 		mag_xx(Laserbatteries,1)
-		mag_xx(200Rnd_556x45_Box_Tracer_F,1)		
+		mag_xx(200Rnd_556x45_Box_Tracer_Red_F,1)		
 		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,1)	
 		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,10)
 		mag_xx(ClaymoreDirectionalMine_Remote_Mag,2)		
@@ -478,7 +478,7 @@ class SOR_rhsusf_m1025_d_m2 : rhsusf_m1025_d_m2
 	class TransportMagazines
 	{
 		mag_xx(Laserbatteries,1)
-		mag_xx(200Rnd_556x45_Box_Tracer_F,1)		
+		mag_xx(200Rnd_556x45_Box_Tracer_Red_F,1)		
 		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,1)	
 		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,10)
 		mag_xx(ClaymoreDirectionalMine_Remote_Mag,2)		
@@ -510,7 +510,7 @@ class SOR_rhsusf_m998_d_4dr : rhsusf_m998_d_4dr
 	class TransportMagazines
 	{
 		mag_xx(Laserbatteries,1)
-		mag_xx(200Rnd_556x45_Box_Tracer_F,1)		
+		mag_xx(200Rnd_556x45_Box_Tracer_Red_F,1)		
 		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,1)	
 		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,10)
 		mag_xx(ClaymoreDirectionalMine_Remote_Mag,2)		
@@ -542,7 +542,7 @@ class SOR_rhsusf_m998_d_2dr : rhsusf_m998_d_2dr
 	class TransportMagazines
 	{
 		mag_xx(Laserbatteries,1)
-		mag_xx(200Rnd_556x45_Box_Tracer_F,1)		
+		mag_xx(200Rnd_556x45_Box_Tracer_Red_F,1)		
 		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,1)	
 		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,10)
 		mag_xx(ClaymoreDirectionalMine_Remote_Mag,2)		
@@ -578,7 +578,7 @@ class SOR_Eng_Car_Transport_D : rhsusf_m1025_d_s
 	};
 	class TransportMagazines
 	{
-		mag_xx(200Rnd_556x45_Box_Tracer_F,2)
+		mag_xx(200Rnd_556x45_Box_Tracer_Red_F,2)
 		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,2)
 	};
 	class TransportBackpacks
@@ -612,7 +612,7 @@ class SOR_Eng_Truck_Transport_D : rhsusf_M1083A1P2_d_fmtv_usarmy
 	};
 	class TransportMagazines
 	{
-		mag_xx(200Rnd_556x45_Box_Tracer_F,2)
+		mag_xx(200Rnd_556x45_Box_Tracer_Red_F,2)
 		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,2)
 	};
 	class TransportBackpacks

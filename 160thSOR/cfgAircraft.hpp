@@ -384,7 +384,7 @@ class SOR_MELB_MH6M_MEV : RHS_MELB_MH6M
 		item_xx(ACE_epinephrine,16)
 		item_xx(G_Diving,3)
 		item_xx(U_B_Wetsuit,3)
-		item_xx(V_RebreatherB,5)
+		item_xx(V_RebreatherB,3)
 	};
 	class TransportWeapons{};
 	class TransportMagazines{};
