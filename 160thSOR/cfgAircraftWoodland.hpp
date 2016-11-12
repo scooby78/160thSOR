@@ -5,27 +5,6 @@
 	Description: cfgAircraft.hpp
 */
 
-/*
-class SOR_UH60M;
-class SOR_CH_47F;
-class SOR_UH60M_MEV2;
-class SOR_RHS_AH64D_AA;
-class SOR_RHS_AH64D_CS;
-class SOR_RHS_AH64D_GS;
-class SOR_RHS_A10;
-
-class MELB_AH6M_H;
-class MELB_AH6M_L;
-class MELB_AH6M_M;
-class MELB_H6M;
-class MELB_MH6M;
-
-class FIR_F16C_TWAS;
-class FIR_F16C_TWAS2;
-class FIR_F16C;
-class FIR_F16C_Polish_CFT;
-*/
-
 // Transport Helos	
 class SOR_UH60M_W : SOR_UH60M
 {

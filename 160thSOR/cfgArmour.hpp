@@ -11,8 +11,10 @@ class rhsusf_m113d_usarmy;
 class rhsusf_m113d_usarmy_medical;
 class rhsusf_m113d_usarmy_supply;
 class rhsusf_m113d_usarmy_unarmed;
+class rhsusf_m1a2sep1d_usarmy;
 class rhsusf_m1a2sep1tuskid_usarmy;
 class rhsusf_m1a2sep1tuskiid_usarmy;
+class rhsusf_m1a1aimd_usarmy;
 class rhsusf_m1a1aim_tuski_d;
 class B_SDV_01_F;
 class rhsusf_m1025_d_s;
@@ -218,6 +220,38 @@ class SOR_rhsusf_m113d_usarmy_medical : rhsusf_m113d_usarmy_medical
 	};
 };	
 
+//M1A1
+class SOR_rhsusf_m1a1aimd_usarmy : rhsusf_m1a1aimd_usarmy
+{
+	editorCategory = "SOR_Cat_Faction_D";
+	vehicleclass = "SOR_Vehicles";
+	faction = SOR_Faction_D;
+	peakTorque = 10355;
+	enginePower = 3000; 
+	brakeDistance = 1;
+	maxBrakeTorque = 24500;
+	armor = 700; //was 600 protection against missiles, collisions and explosions
+	class TransportItems 
+	{
+		item_xx(ACE_FieldDressing,20);
+	};
+	class TransportWeapons
+	{
+		weap_xx(rhs_weap_M136_hp,2)
+		weap_xx(rhs_weap_m4a1_carryhandle_grip,2)
+	};
+	class TransportMagazines
+	{
+		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,20)
+		mag_xx(200Rnd_556x45_Box_Tracer_Red_F,4)
+		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,4)
+	};
+	class TransportBackpacks
+	{
+		pack_xx(SOR_Repair_Pack_veh_D,1)			
+	};
+};
+
 //M1A1 (Tusk I)
 class SOR_rhsusf_m1a1aim_tuski_d : rhsusf_m1a1aim_tuski_d
 {
@@ -249,6 +283,37 @@ class SOR_rhsusf_m1a1aim_tuski_d : rhsusf_m1a1aim_tuski_d
 		pack_xx(SOR_Repair_Pack_veh_D,1)			
 	};
 };		
+
+//M1A2
+class SOR_rhsusf_m1a2sep1d_usarmy : rhsusf_m1a2sep1d_usarmy
+{
+	editorCategory = "SOR_Cat_Faction_D";
+	vehicleclass = "SOR_Vehicles";
+	faction = SOR_Faction_D;
+	peakTorque = 10355;
+	enginePower = 3000; 
+	brakeDistance = 1;
+	armor = 700; //was 600 protection against missiles, collisions and explosions
+	class TransportItems 
+	{
+		item_xx(ACE_FieldDressing,20);
+	};
+	class TransportWeapons
+	{
+		weap_xx(rhs_weap_M136_hp,2)
+		weap_xx(rhs_weap_m4a1_carryhandle_grip,2)
+	};
+	class TransportMagazines
+	{
+		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,20)
+		mag_xx(200Rnd_556x45_Box_Tracer_Red_F,4)
+		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,4)
+	};
+	class TransportBackpacks
+	{
+		pack_xx(SOR_Repair_Pack_veh_D,1)			
+	};
+};
 
 //M1A2 (Tusk I)
 class SOR_rhsusf_m1a2sep1tuskid_usarmy : rhsusf_m1a2sep1tuskid_usarmy

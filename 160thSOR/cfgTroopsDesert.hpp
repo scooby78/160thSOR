@@ -1270,6 +1270,18 @@ class SOR_MechCrewCommander_D : SOR_MechOperator_D
 	displayName = "Mechanised Crew Commander";
 	backpack = "SOR_Mech_Radio";
 	cost = 100000;
+	Items[] =
+	{
+		Standard_Meds,
+		"ACE_epinephrine",
+		"ACE_epinephrine"
+	};  
+	RespawnItems[] = 
+	{
+		Standard_Meds,
+		"ACE_epinephrine",
+		"ACE_epinephrine"
+	};
 };	
 
 class SOR_MechDriver_D : SOR_MechCrew_D

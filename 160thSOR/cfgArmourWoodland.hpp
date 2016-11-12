@@ -5,32 +5,7 @@
 	Description:cfgArmour.hpp 
 	Note: Only Armour units that are proven not "buggy" should be put in here.
 */
-/*
-class SOR_RHS_M6;
-class SOR_M2A3_BUSKIII;
-class SOR_rhsusf_m113d_usarmy;
-class SOR_rhsusf_m113d_usarmy_supply;
-class SOR_rhsusf_m113d_usarmy_unarmed;
-class SOR_rhsusf_m113d_usarmy_medical;
-class SOR_rhsusf_m1a1aim_tuski_d;
-class SOR_rhsusf_m1a2sep1tuskid_usarmy;
-class SOR_rhsusf_m1a2sep1tuskiid_usarmy;
-class SOR_B_SDV_01_F;
-class SOR_B_Boat_Transport_01_F;
-class SOR_rhsusf_M1083A1P2_d_fmtv_usarmy;
-class SOR_rhsusf_m1025_d;
-class SOR_rhsusf_m1025_d_Mk19;
-class SOR_rhsusf_m1025_d_m2;
-class SOR_rhsusf_m998_d_4dr;
-class SOR_rhsusf_m998_d_2dr;
-class SOR_Eng_Car_Transport_D;
-class SOR_Eng_Truck_Transport_D;
-class SOR_Eng_Truck_ammo_D;
-class SOR_Eng_Truck_fuel_D;
-class SOR_Eng_Truck_Repair_D;
-class SOR_Eng_APC_Tracked_01;
-class SOR_B_APC_Tracked_02;
-*/
+
 //M6A2	
 class SOR_RHS_M6_wd : SOR_RHS_M6
 {
@@ -90,6 +65,19 @@ class SOR_rhsusf_m113_usarmy_medical : SOR_rhsusf_m113d_usarmy_medical
 	hiddenSelectionsTextures[] = {"rhsusf\addons\rhsusf_m113\data_new\m113a3_01_wd_med_co.paa","rhsusf\addons\rhsusf_m113\data_new\m113a3_02_wd_l_co.paa","rhsusf\addons\rhsusf_m113\data_new\m113a3_03_wd_co.paa","rhsusf\addons\rhsusf_m113\data_new\m113a3_int03_wd_co.paa"};
 };
 	
+//M1A1
+class SOR_rhsusf_m1a1aimd_usarmy_wd : rhsusf_m1a1aimd_usarmy
+{
+	editorCategory = "SOR_Cat_Faction_W";
+	vehicleclass = "SOR_Vehicles";
+	faction = SOR_Faction_W;
+	model = "\rhsusf\addons\rhsusf_m1a1\m1a1aim";
+	rhs_decalParameters[] = {"['Label', cM1PlnSymPlaces, 'ArmyPlt_Abrams_D']","['Label', cM1BarrelSymPlaces, 'BarrelArt_Abrams_WD']"};
+	hiddenSelections[] = {"camo1","camo2","camo3","camo4","","","","n1","n2","n3","i1","i2","i3"};
+	hiddenSelectionsMaterials[] = {"rhsusf\addons\rhsusf_m1a1\data\rhsusf_m1a1aim_01.rvmat","rhsusf\addons\rhsusf_m1a1\data\rhsusf_m1a1aim_02.rvmat","rhsusf\addons\rhsusf_m1a1\data\rhsusf_m1a1aim_03.rvmat","rhsusf\addons\rhsusf_m1a1\loaderspintle\data\loaderspintle_wd.rvmat"};
+	hiddenSelectionsTextures[] = {"rhsusf\addons\rhsusf_m1a1\data\rhsusf_m1a1aim_01_co.paa","rhsusf\addons\rhsusf_m1a1\data\rhsusf_m1a1aim_02_co.paa","rhsusf\addons\rhsusf_m1a1\data\rhsusf_m1a1aim_03_co.paa","rhsusf\addons\rhsusf_m1a1\loaderspintle\data\loaderspintle_wd_co.paa"};
+};
+	
 //M1A1 (Tusk I)
 class SOR_rhsusf_m1a1aim_tuski_wd : SOR_rhsusf_m1a1aim_tuski_d
 {
@@ -100,6 +88,19 @@ class SOR_rhsusf_m1a1aim_tuski_wd : SOR_rhsusf_m1a1aim_tuski_d
 	hiddenSelectionsMaterials[] = {"rhsusf\addons\rhsusf_m1a1\data\rhsusf_m1a1aimtusk_wd_01.rvmat","rhsusf\addons\rhsusf_m1a1\data\rhsusf_m1a1aimtusk_wd_02.rvmat","rhsusf\addons\rhsusf_m1a1\data\rhsusf_m1a1aim_03.rvmat","rhsusf\addons\rhsusf_m1a1\loaderspintle\data\loaderspintle_wd.rvmat","rhsusf\addons\rhsusf_m1a1\data\rhsusf_tuski_wd.rvmat","rhsusf\addons\rhsusf_m1a2\data\rhsusf_m1slat_wd.rvmat"};
 	hiddenSelectionsTextures[] = {"rhsusf\addons\rhsusf_m1a1\data\rhsusf_m1a1aimtusk_wd_01_co.paa","rhsusf\addons\rhsusf_m1a1\data\rhsusf_m1a1aimtusk_wd_02_co.paa","rhsusf\addons\rhsusf_m1a1\data\rhsusf_m1a1aim_03_co.paa","rhsusf\addons\rhsusf_m1a1\loaderspintle\data\loaderspintle_tuski_wd_co.paa","rhsusf\addons\rhsusf_m1a1\data\rhsusf_tuski_wd_co.paa","rhsusf\addons\rhsusf_m1a2\data\rhsusf_m1slat_wd_co.paa"};
 };	
+
+//M1A2
+class SOR_rhsusf_m1a2sep1d_usarmy_wd : rhsusf_m1a2sep1d_usarmy
+{
+	editorCategory = "SOR_Cat_Faction_W";
+	vehicleclass = "SOR_Vehicles";
+	faction = SOR_Faction_W;
+	model = "\rhsusf\addons\rhsusf_m1a2\m1a2v1";
+	rhs_decalParameters[] = {"['Label', cM1PlnSymPlaces, 'ArmyPlt_Abrams_D']","['Label', cM1BarrelSymPlaces, 'BarrelArt_Abrams_WD']"};
+	hiddenSelections[] = {"camo1","camo2","camo3","camo4","","","","n1","n2","n3","i1","i2","i3"};
+	hiddenSelectionsMaterials[] = {"rhsusf\addons\rhsusf_m1a2\data\rhsusf_m1a2_wd_01.rvmat","rhsusf\addons\rhsusf_m1a2\data\rhsusf_m1a2_wd_02.rvmat","rhsusf\addons\rhsusf_m1a1\data\rhsusf_m1a1aim_03.rvmat","rhsusf\addons\rhsusf_m1a1\loaderspintle\data\loaderspintle_wd.rvmat"};
+	hiddenSelectionsTextures[] = {"rhsusf\addons\rhsusf_m1a2\data\rhsusf_m1a2_wd_01_co.paa","rhsusf\addons\rhsusf_m1a2\data\rhsusf_m1a2_wd_02_co.paa","rhsusf\addons\rhsusf_m1a1\data\rhsusf_m1a1aim_03_co.paa","rhsusf\addons\rhsusf_m1a1\loaderspintle\data\loaderspintle_wd_co.paa"};
+};
 
 //M1A2 (Tusk I)
 class SOR_rhsusf_m1a2sep1tuskiwd_usarmy : SOR_rhsusf_m1a2sep1tuskid_usarmy
