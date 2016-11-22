@@ -75,6 +75,7 @@ class SOR_Base: B_Soldier_base_F
 //Squad Actual	
 class SOR_Actual_D : B_officer_F
 {
+	editorPreview = "\160thSOR\data\SOR_Actual_D.jpg";
 	editorCategory = "SOR_Cat_Faction_D";
 	editorSubcategory = "SOR_SubCat_Infantry";
 	vehicleclass = "SOR_Infantry";
@@ -120,6 +121,7 @@ class SOR_Actual_D : B_officer_F
 //Commander		
 class SOR_Commander_D : B_officer_F
 {
+	editorPreview = "\160thSOR\data\SOR_Commander_D.jpg";
 	editorCategory = "SOR_Cat_Faction_D";
 	editorSubcategory = "SOR_SubCat_Infantry";
 	vehicleclass = "SOR_Infantry";
@@ -173,6 +175,7 @@ class SOR_Commander_D : B_officer_F
 //Mechanised Commander 
 class SOR_MechCommand_D : SOR_Commander_D
 {
+	editorPreview = "\160thSOR\data\SOR_MechCommand_D.jpg";
 	editorSubcategory = "SOR_SubCat_Infantry_MECH";
 	vehicleclass = "SOR_Infantry_MECH";
 	displayName = "Mechanised Commander";
@@ -198,6 +201,7 @@ class SOR_MechCommand_D : SOR_Commander_D
 //Air Commander 
 class SOR_AirCommand_D : SOR_Commander_D
 {
+	editorPreview = "\160thSOR\data\SOR_AirCommand_D.jpg";
 	editorSubcategory = "SOR_SubCat_Infantry_AIR";
 	vehicleclass = "SOR_Infantry_AIR";
 	displayName = "Air Commander";
@@ -276,6 +280,7 @@ class SOR_ZeusCommand_D : SOR_Commander_D
 {
 	displayName = "Zeus";
 	cost = 10;
+	editorPreview = "\160thSOR\data\SOR_ZeusCommand_D.jpg";
 	class UserActions
 	{
 		class SOR_CountUnitsAction
@@ -296,6 +301,7 @@ class SOR_ZeusCommand_D : SOR_Commander_D
 //Platoon RTO
 class SOR_RTO_D : B_Soldier_F
 {
+	editorPreview = "\160thSOR\data\SOR_RTO_D.jpg";
 	editorCategory = "SOR_Cat_Faction_D";
 	editorSubcategory = "SOR_SubCat_Infantry";
 	vehicleclass = "SOR_Infantry";
@@ -340,6 +346,7 @@ class SOR_RTO_D : B_Soldier_F
 //Teamleader	
 class SOR_Teamleader_D : B_Soldier_TL_F
 {
+	editorPreview = "\160thSOR\data\SOR_Teamleader_D.jpg";
 	editorCategory = "SOR_Cat_Faction_D";
 	editorSubcategory = "SOR_SubCat_Infantry";
 	vehicleclass = "SOR_Infantry";
@@ -402,6 +409,7 @@ class SOR_Teamleader2_D : SOR_Teamleader_D
 //Combat Medics
 class SOR_Medic_D : B_medic_F
 {
+	editorPreview = "\160thSOR\data\SOR_Medic_D.jpg";
 	editorCategory = "SOR_Cat_Faction_D";
 	editorSubcategory = "SOR_SubCat_Infantry";
 	vehicleclass = "SOR_Infantry";
@@ -442,6 +450,7 @@ class SOR_HMedic_D : SOR_Medic_D
 // Auto rifleman
 class SOR_M249AR_D : B_soldier_AR_F
 {
+	editorPreview = "\160thSOR\data\SOR_M249AR_D.jpg";
 	editorCategory = "SOR_Cat_Faction_D";
 	editorSubcategory = "SOR_SubCat_Infantry";
 	vehicleclass = "SOR_Infantry";
@@ -489,6 +498,7 @@ class SOR_M249AR_D : B_soldier_AR_F
 
 class SOR_M240AR_D : B_soldier_AR_F
 {
+	editorPreview = "\160thSOR\data\SOR_M240AR_D.jpg";
 	editorCategory = "SOR_Cat_Faction_D";
 	editorSubcategory = "SOR_SubCat_Infantry";
 	vehicleclass = "SOR_Infantry";
@@ -536,6 +546,7 @@ class SOR_M240AR_D : B_soldier_AR_F
 
 class SOR_Grenadier_D : B_Soldier_GL_F
 {
+	editorPreview = "\160thSOR\data\SOR_Grenadier_D.jpg";
 	editorCategory = "SOR_Cat_Faction_D";
 	editorSubcategory = "SOR_SubCat_Infantry";
 	vehicleclass = "SOR_Infantry";
@@ -576,6 +587,7 @@ class SOR_Grenadier_D : B_Soldier_GL_F
 
 class SOR_Rifleman_D : B_Soldier_F
 {
+	editorPreview = "\160thSOR\data\SOR_Rifleman_D.jpg";
 	editorCategory = "SOR_Cat_Faction_D";
 	editorSubcategory = "SOR_SubCat_Infantry";
 	vehicleclass = "SOR_Infantry";
@@ -637,6 +649,7 @@ class SOR_Rifleman_ammo_D : SOR_Rifleman_D
 	
 class SOR_RiflemanAT_D : B_soldier_AT_F
 {
+	editorPreview = "\160thSOR\data\SOR_RiflemanAT_D.jpg";
 	editorCategory = "SOR_Cat_Faction_D";
 	editorSubcategory = "SOR_SubCat_Infantry";
 	vehicleclass = "SOR_Infantry";
@@ -669,6 +682,7 @@ class SOR_RiflemanAT_D : B_soldier_AT_F
 //Heli Pilot & CO-Pilot
 class SOR_HeliPilot_D : B_Pilot_F
 {
+	editorPreview = "\160thSOR\data\SOR_HeliPilot_D.jpg";
 	editorCategory = "SOR_Cat_Faction_D";
 	editorSubcategory = "SOR_SubCat_Infantry_AIR";
 	vehicleclass = "SOR_Infantry_AIR";
@@ -713,6 +727,7 @@ class SOR_HeliPilot_D : B_Pilot_F
 //Heli Crew Engineers
 class SOR_HeliCrew_D : B_crew_F
 {
+	editorPreview = "\160thSOR\data\SOR_HeliCrew_D.jpg";
 	editorCategory = "SOR_Cat_Faction_D";
 	editorSubcategory = "SOR_SubCat_Infantry_AIR";
 	vehicleclass = "SOR_Infantry_AIR";
@@ -763,6 +778,7 @@ class SOR_HeliCrew_D : B_crew_F
 //Jet Pilots
 class SOR_JetPilot_D : B_Pilot_F
 {
+	editorPreview = "\160thSOR\data\SOR_JetPilot_D.jpg";
 	editorCategory = "SOR_Cat_Faction_D";
 	editorSubcategory = "SOR_SubCat_Infantry_AIR";
 	vehicleclass = "SOR_Infantry_AIR";
@@ -804,10 +820,7 @@ class SOR_JetPilot_D : B_Pilot_F
 // MEV Pilot & CO-Pilot
 class SOR_MEVPilot_D : 	SOR_HeliPilot_D
 {
-	editorCategory = "SOR_Cat_Faction_D";
-	editorSubcategory = "SOR_SubCat_Infantry_AIR";
-	vehicleclass = "SOR_Infantry_AIR";
-	faction = SOR_Faction_D;
+	editorPreview = "\160thSOR\data\SOR_MEVPilot_D.jpg";
 	displayName = "MEV Pilot";
 	linkedItems[] = 
 	{	
@@ -826,6 +839,7 @@ class SOR_MEVPilot_D : 	SOR_HeliPilot_D
 	
 class SOR_ParaJumper_D : B_medic_F
 {
+	editorPreview = "\160thSOR\data\SOR_ParaJumper_D.jpg";
 	editorCategory = "SOR_Cat_Faction_D";
 	editorSubcategory = "SOR_SubCat_Infantry_AIR";
 	vehicleclass = "SOR_Infantry_AIR";
@@ -886,6 +900,7 @@ class SOR_ParaJumper_D : B_medic_F
 //Recon Units
 class SOR_ReconLeader_D : B_recon_TL_F	
 {
+	editorPreview = "\160thSOR\data\SOR_ReconLeader_D.jpg";
 	editorCategory = "SOR_Cat_Faction_D";
 	editorSubcategory = "SOR_SubCat_Infantry_Recon";
 	vehicleclass = "SOR_Infantry_Recon";
@@ -1088,6 +1103,7 @@ class SOR_Marksman_D : SOR_ReconLeader_D
 //Snipers
 class SOR_Sniper_D : B_sniper_F		
 {
+	editorPreview = "\160thSOR\data\SOR_Sniper_D.jpg";
 	editorCategory = "SOR_Cat_Faction_D";
 	editorSubcategory = "SOR_SubCat_Infantry_Recon";
 	vehicleclass = "SOR_Infantry_Recon";
@@ -1134,6 +1150,7 @@ class SOR_Sniper_D : B_sniper_F
 
 class SOR_Spotter_D : B_spotter_F
 {
+	editorPreview = "\160thSOR\data\SOR_Spotter_D.jpg";
 	editorCategory = "SOR_Cat_Faction_D";
 	editorSubcategory = "SOR_SubCat_Infantry_Recon";
 	vehicleclass = "SOR_Infantry_Recon";
@@ -1182,6 +1199,7 @@ class SOR_Spotter_D : B_spotter_F
 //Mechanised Crew
 class SOR_MechCrew_D : B_crew_F
 {
+	editorPreview = "\160thSOR\data\SOR_MechCrew_D.jpg";
 	editorCategory = "SOR_Cat_Faction_D";
 	editorSubcategory = "SOR_SubCat_Infantry_MECH";
 	vehicleclass = "SOR_Infantry_MECH";
@@ -1221,6 +1239,7 @@ class SOR_MechCrew_D : B_crew_F
 
 class SOR_MechOperator_D : SOR_MechCrew_D
 {
+	editorPreview = "\160thSOR\data\SOR_MechOperator_D.jpg";
 	displayName = "Mechanised Operator";
 	backpack = "SOR_Mech_Radio";
 	weapons[] = {"rhs_weap_m4a1_carryhandle_grip","rhsusf_weap_m9","Throw","Put","Laserdesignator"};
@@ -1363,6 +1382,7 @@ class SOR_MORRFL_D : SOR_Grenadier_D
 //Repair Team
 class SOR_Engineer_Teamleader_D : B_engineer_F
 {
+	editorPreview = "\160thSOR\data\SOR_Engineer_D.jpg";
 	editorCategory = "SOR_Cat_Faction_D";
 	editorSubcategory = "SOR_SubCat_Infantry_Support";
 	vehicleclass = "SOR_Infantry_Support";

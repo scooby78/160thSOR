@@ -114,3 +114,19 @@ class SOR_RHS_A10_W : SOR_RHS_A10
 	vehicleclass = "SOR_Aircraft";
 	faction = SOR_Faction_W;
 };
+
+class SOR_FIGHTER_W : FIR_F15_Base
+{
+	editorCategory = "SOR_Cat_Faction_W";
+	editorSubcategory = "SOR_SubCat_Aircraft";
+	vehicleclass = "SOR_Aircraft";
+	faction = SOR_Faction_W;			
+};
+
+class SOR_STRIKE_FIGHTER_W : FIR_F15E_Base
+{
+	editorCategory = "SOR_Cat_Faction_W";
+	editorSubcategory = "SOR_SubCat_Aircraft";
+	vehicleclass = "SOR_Aircraft";
+	faction = SOR_Faction_W;
+};

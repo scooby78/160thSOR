@@ -62,6 +62,7 @@ class SOR_MechService : B_Slingload_01_Repair_F
 	vehicleClass = "SOR_SupplyContainers";
 	faction = SOR_Faction_CRATE;
 	displayName = "Mech Service Container";
+	ace_repair_canRepair = 1;
 	class eventHandlers
 	{
 		init="_null = [(_this select 0)] call SOR_fnc_trigger_mech;";
@@ -106,6 +107,7 @@ class SOR_RepairContainer : B_Slingload_01_Repair_F
 	vehicleClass = "SOR_SupplyContainers";
 	faction = SOR_Faction_CRATE;
 	displayName = "Service Container";
+	ace_repair_canRepair = 1;
 };
 
 // Buildings
