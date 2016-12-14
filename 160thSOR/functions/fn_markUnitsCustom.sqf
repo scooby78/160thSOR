@@ -1,10 +1,10 @@
 /*
-	Description: fn_markUnits.sqf
+	Description: fn_markUnitsCustom.sqf
 	Author: Scooby
 	Date: 5/03/16
 	Syntax: 2 possible options:
-	1) Call the function by inserting into the unit's init.. "nul = [this,"enter_marker's_name_here"] spawn SOR_fnc_markUnits;" 
-	2) Add custom time delay by adding "nul = [this,"enter_marker's_name_here",time_in_seconds] spawn SOR_fnc_markUnits;" 
+	1) Call the function by inserting into the unit's init.. "nul = [this,"enter_marker's_name_here"] spawn SOR_fnc_markUnitsCustom;" 
+	2) Add custom time delay by adding "nul = [this,"enter_marker's_name_here",time_in_seconds] spawn SOR_fnc_markUnitsCustom;" 
 */
 if(isNil "MARKERS_OFF") then {MARKERS_OFF = false};
 if (MARKERS_OFF) exitWith {};

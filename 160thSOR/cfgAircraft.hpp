@@ -68,10 +68,12 @@ class SOR_B_Heli_Transport_01_camo_F : B_Heli_Transport_01_camo_F
 	vehicleclass = "SOR_Aircraft";
 	faction = SOR_Faction_D;
 	displayName = "UH-80 Ghost Hawk (C4/P12)";
+/*	
 	class eventHandlers
 	{
 		Init = "[_this select 0] call ace_fastroping_fnc_equipFRIES;";
-	};	
+	};
+*/	
 	class TransportItems 
 	{
 		item_xx(ACE_FieldDressing,10);
@@ -595,6 +597,20 @@ class SOR_O_Heli_Transport_04_F : O_Heli_Transport_04_F
 	faction = SOR_Faction_D;
 	side=1;		
 	displayName = "MI-290 Taru (C3/POD)";
+	hiddenSelections[]=
+	{
+		"Camo_1",
+		"Camo_2",
+		"Camo_3",
+		"Camo_4"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_base_01_black_co.paa",
+		"\A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_base_02_black_co.paa",
+		"\A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_black_CO.paa",
+		"\A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_black_CO.paa"
+	};
 	class eventHandlers
 	{
 		init="_this call SLX_XEH_EH_Init;";
@@ -604,92 +620,6 @@ class SOR_O_Heli_Transport_04_F : O_Heli_Transport_04_F
 		item_xx(ACE_FieldDressing,10);
 		item_xx(V_RebreatherB,3);			
 	};	
-	class TransportWeapons{};
-	class TransportMagazines{};
-	class TransportBackpacks
-	{
-		pack_xx(SOR_Repair_Pack_veh_D,1)
-	};
-};
-
-// Medivac Taru (Fixed pod)
-class SOR_O_Heli_Transport_04_medevac_F : O_Heli_Transport_04_medevac_F
-{
-	editorCategory = "SOR_Cat_Faction_D";
-	editorSubcategory = "SOR_SubCat_Aircraft_Captured";
-	vehicleclass = "SOR_Aircraft_Captured";
-	faction = SOR_Faction_D;
-	side=1;	
-	displayName = "MI-290 Taru (Medical C3/P4)";
-	class TransportItems
-	{
-		item_xx(ACE_Fielddressing,24)
-		item_xx(ACE_morphine,16)
-		item_xx(ACE_epinephrine,16)
-		item_xx(G_Diving,3)
-		item_xx(U_B_Wetsuit,3)
-		item_xx(V_RebreatherB,5)
-	};		
-	class TransportWeapons{};
-	class TransportMagazines{};
-	class TransportBackpacks
-	{
-		pack_xx(SOR_Repair_Pack_veh_D,1)
-	};
-};
-
-// Troop transport Taru (fixed pod)	
-class SOR_O_Heli_Transport_04_bench_F : O_Heli_Transport_04_bench_F
-{
-	editorCategory = "SOR_Cat_Faction_D";
-	editorSubcategory = "SOR_SubCat_Aircraft_Captured";
-	vehicleclass = "SOR_Aircraft_Captured";
-	faction = SOR_Faction_D;
-	side=1;	
-	displayName = "MI-290 Taru (Bench C3/P8)";
-	class UserActions
-	{
-		class SOR_AutoDrop
-		{
-			displayName = "<t color='#008000'>Start Drop!</t>";
-			displayNameDefault = "<t color='#008000'>Start Drop!</t>";
-			condition = "(player == driver this)&&((getPosATL this) select 2 > 200)";
-			priority = 1;
-			showWindow = 0;
-			hideOnUse = 1;
-			radius= 8;
-			position = "";
-			onlyForPlayer = 0;
-			statement = "[this] spawn sor_fnc_autoparadrop";
-		};
-	};		
-	class TransportItems 
-	{
-		item_xx(ACE_FieldDressing,10);
-		item_xx(V_RebreatherB,3);			
-	};
-	class TransportWeapons{};
-	class TransportMagazines{};
-	class TransportBackpacks
-	{
-		pack_xx(SOR_Repair_Pack_veh_D,1)
-	};
-};
-
-// Covered Troop transport Taru (fixed pod)
-class SOR_O_Heli_Transport_04_covered_F : O_Heli_Transport_04_covered_F
-{
-	editorCategory = "SOR_Cat_Faction_D";
-	editorSubcategory = "SOR_SubCat_Aircraft_Captured";
-	vehicleclass = "SOR_Aircraft_Captured";
-	faction = SOR_Faction_D;
-	side=1;	
-	displayName = "MI-290 Taru (Covered C3/P16)";
-	class TransportItems 
-	{
-		item_xx(ACE_FieldDressing,10);
-		item_xx(V_RebreatherB,3);			
-	};
 	class TransportWeapons{};
 	class TransportMagazines{};
 	class TransportBackpacks
@@ -840,34 +770,3 @@ class SOR_I_Plane_Fighter_03_CAS_B : I_Plane_Fighter_03_CAS_F
 	class TransportBackpacks{};
 };
 
-//////////////////
-//OpFor Versions//	
-//////////////////
-
-class SOR_I_Plane_Fighter_03_AA_F : I_Plane_Fighter_03_AA_F
-{
-	editorCategory = "SOR_Cat_Faction_D";
-	editorSubcategory = "SOR_SubCat_Aircraft";
-	vehicleclass = "SOR_Aircraft";
-	faction = SOR_Faction_D;
-	side=0;
-	displayName = "L159 ALCA [AA] OpFor";
-	class TransportItems{};
-	class TransportWeapons{};
-	class TransportMagazines{};
-	class TransportBackpacks{};
-};
-
-class SOR_I_Plane_Fighter_03_CAS_F : I_Plane_Fighter_03_CAS_F
-{
-	editorCategory = "SOR_Cat_Faction_D";
-	editorSubcategory = "SOR_SubCat_Aircraft";
-	vehicleclass = "SOR_Aircraft";
-	faction = SOR_Faction_D;
-	side=0;
-	displayName = "L159 ALCA [CAS] OpFor";
-	class TransportItems{};
-	class TransportWeapons{};
-	class TransportMagazines{};
-	class TransportBackpacks{};
-};	

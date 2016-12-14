@@ -79,6 +79,7 @@ if (driver _veh == player) then {
 		};
 		1001 cutText ["Refuelled (100%).","PLAIN DOWN"];
 		sleep 3;
+		_veh setDamage 0;		
 		1001 cuttext [format ["%1 service is complete.",  _vehType],"PLAIN DOWN",1];
 	};
 	1001 cuttext [format ["Servicing %1... Please stand by...",  _vehType],"PLAIN DOWN",1];	
@@ -129,5 +130,6 @@ if (driver _veh == player) then {
 	1001 cutText ["Refuelled (100%).","PLAIN DOWN"];
 	sleep 3;
 	1001 cuttext [format ["%1 service is complete.",  _vehType],"PLAIN DOWN",1];
+	_veh setDamage 0;
 	_veh setFuel 1;
 };

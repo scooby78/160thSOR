@@ -432,70 +432,94 @@ class SOR_MOR_Crate_F : B_supplyCrate_F
 //////////////////////////////	
 
 // All in one pod	
-class SOR_Land_Pod_Heli_Transport_04_ammo_F : Land_Pod_Heli_Transport_04_ammo_F
+class SOR_Taru_Pod_ammo_black : Land_Pod_Heli_Transport_04_ammo_F
 {
 	editorCategory = "SOR_Cat_Supplies";
 	editorSubcategory = "SOR_SubCat_SupplyCrates";
 	vehicleClass = "SOR_SupplyCrates";	
 	faction = SOR_Faction_CRATE;
 	displayName = "Taru Pod [Ammo]";
-	class TransportItems{};		
-	class TransportWeapons{};
+	side=1;	
+	hiddenSelections[]=
+	{
+		"Camo_1",
+		"Camo_2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_black_CO.paa",
+		"\A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_black_CO.paa"
+	};
+	class TransportItems{};
+	class TransportWeapons
+	{
+		weap_xx(rhs_weap_M136_hp,12)
+	};
 	class TransportMagazines
 	{
-		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,80)
+		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,200)
 		mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,20)
-		mag_xx(200Rnd_556x45_Box_Tracer_Red_F,8)	
-		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,8)		
-		mag_xx(1Rnd_HE_Grenade_shell,10)
-		mag_xx(1Rnd_Smoke_Grenade_shell,10)			
-		mag_xx(1Rnd_SmokeRed_Grenade_shell,10)	
-		mag_xx(rhs_mag_m67,20)
-		mag_xx(rhs_mag_an_m8hc,20)
-		mag_xx(1Rnd_SmokeGreen_Grenade_shell,20)
+		mag_xx(200Rnd_556x45_Box_Tracer_Red_F,16)	
+		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,16)		
+		mag_xx(1Rnd_HE_Grenade_shell,40)			
+		mag_xx(1Rnd_Smoke_Grenade_shell,40)			
+		mag_xx(1Rnd_SmokeRed_Grenade_shell,40)	
+		mag_xx(rhs_mag_m67,40)
+		mag_xx(rhs_mag_an_m8hc,40)
+		mag_xx(1Rnd_SmokeGreen_Grenade_shell,40)
 	};
 	class TransportBackpacks{};
 };
 
 // Medical pod	
-class SOR_Land_Pod_Heli_Transport_04_medevac_F : Land_Pod_Heli_Transport_04_medevac_F
+class SOR_Taru_Pod_medevac_Black : Land_Pod_Heli_Transport_04_medevac_F
 {
 	editorCategory = "SOR_Cat_Supplies";
 	editorSubcategory = "SOR_SubCat_SupplyCrates";
 	vehicleClass = "SOR_SupplyCrates";	
 	faction = SOR_Faction_CRATE;
 	displayName = "Taru Pod [Medical CCP]";
+	side=1;	
+	hiddenSelections[]=
+	{
+		"Camo_1",
+		"Camo_2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_black_CO.paa",
+		"\A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_black_CO.paa"
+	};
 	class TransportItems
 	{
-		item_xx(ACE_FieldDressing,40);
-		item_xx(ACE_morphine,20);
-		item_xx(ACE_epinephrine,20);			
-		item_xx(ACE_bloodIV_500,10);
+		item_xx(ACE_FieldDressing,60);
+		item_xx(ACE_morphine,30);
+		item_xx(ACE_epinephrine,30);			
+		item_xx(ACE_bloodIV_500,30);
 	};		
 	class TransportWeapons{};
 	class TransportMagazines
 	{
+		mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,10)
 		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,5)
-		mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,5)
-		mag_xx(rhs_mag_m67,10)
 		mag_xx(rhs_mag_an_m8hc,10)
-		mag_xx(1Rnd_SmokeGreen_Grenade_shell,10)
 	};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_Medic_Pack_D,3)
-		pack_xx(SOR_PJMedicPack_D,3)
+		pack_xx(SOR_Medic_Pack_W,3)
+		pack_xx(SOR_PJMedicPack_W,3)
 	};
 };
 
 // Troop transport bench pod	
-class SOR_Land_Pod_Heli_Transport_04_bench_F : Land_Pod_Heli_Transport_04_bench_F
+class SOR_Taru_Pod_bench_Black : Land_Pod_Heli_Transport_04_bench_F
 {
 	editorCategory = "SOR_Cat_Supplies";
 	editorSubcategory = "SOR_SubCat_SupplyCrates";
 	vehicleClass = "SOR_SupplyCrates";	
 	faction = SOR_Faction_CRATE;
 	displayName = "Taru Pod [Bench P8]";
+	side=1;	
 	class TransportItems{};		
 	class TransportWeapons{};
 	class TransportMagazines{};
@@ -503,15 +527,72 @@ class SOR_Land_Pod_Heli_Transport_04_bench_F : Land_Pod_Heli_Transport_04_bench_
 };
 
 // Covered troop transport pod		
-class SOR_Land_Pod_Heli_Transport_04_covered_F : Land_Pod_Heli_Transport_04_covered_F
+class SOR_Taru_Pod_covered_Black : Land_Pod_Heli_Transport_04_covered_F
 {
 	editorCategory = "SOR_Cat_Supplies";
 	editorSubcategory = "SOR_SubCat_SupplyCrates";
 	vehicleClass = "SOR_SupplyCrates";	
 	faction = SOR_Faction_CRATE;
 	displayName = "Taru Pod [Covered P16]";
+	side=1;	
+	hiddenSelections[]=
+	{
+		"Camo_1",
+		"Camo_2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_black_CO.paa",
+		"\A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_black_CO.paa"
+	};
 	class TransportItems{};		
 	class TransportWeapons{};
 	class TransportMagazines{};
 	class TransportBackpacks{};
 };	
+
+// Fuel pod		
+class SOR_Taru_Pod_fuel_Black: Land_Pod_Heli_Transport_04_fuel_F
+{
+	editorCategory = "SOR_Cat_Supplies";
+	editorSubcategory = "SOR_SubCat_SupplyCrates";
+	vehicleClass = "SOR_SupplyCrates";	
+	faction = SOR_Faction_CRATE;
+	displayName = "Taru Pod [Fuel]";
+	hiddenSelections[]=
+	{
+		"Camo_1"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_fuel_black_CO.paa"
+	};
+	class TransportItems{};		
+	class TransportWeapons{};
+	class TransportMagazines{};
+	class TransportBackpacks{};	
+};
+
+// Repair pod	
+class SOR_Taru_Pod_repair_Black: Land_Pod_Heli_Transport_04_repair_F
+{
+	editorCategory = "SOR_Cat_Supplies";
+	editorSubcategory = "SOR_SubCat_SupplyCrates";
+	vehicleClass = "SOR_SupplyCrates";	
+	faction = SOR_Faction_CRATE;
+	displayName = "Taru Pod [Repair]";
+	hiddenSelections[]=
+	{
+		"Camo_1",
+		"Camo_2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_black_CO.paa",
+		"\A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_black_CO.paa"
+	};
+	class TransportItems{};		
+	class TransportWeapons{};
+	class TransportMagazines{};
+	class TransportBackpacks{};	
+};

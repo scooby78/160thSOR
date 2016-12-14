@@ -42,13 +42,18 @@ _unit = _this select 0;
 _marker = _this select 1;
 _delay = _this select 2; 
 if(isNil "_delay") then {_delay = 5};
+if(isNil "MARKER_DIAG") then {MARKER_DIAG = false};
 _unitpos = position _unit;
 
 // Check for duplicate conflicts
 {
 	if !(getMarkerColor _x == "") exitWith 
 	{
-		hint format ["%1 marker duplicate found", _x];
+		if (MARKER_DIAG) then 
+		{
+			hint format ["%1 marker already exists exiting", _x];
+			diag_log format ["[SOR_fnc_markUnits] (%2) %1 marker already exists exiting", _x,_unit];	
+		};
 	};
 } forEach ["G","H1","T","J","AA","A1","A2","BA","B1","B2","CA","C1","C2","DA","D1","D2","V","HM","PJ1","PJ2","PJ3","PJ4","TPJ1","TPJ2","TPJ3","TPJ4","AG1","AG2","AG3","AG4","P1","P2","P3","P4","MEV","E1","E2","E3","E4","S1","S2","R1","R2","R3","O1","O2","O3","BS1","BS2","BS3","BS4","FUEL1","FUEL2","FUEL3","AMMO1","AMMO2","AMMO3","REPAIR1","REPAIR2","REPAIR3","AC","AC2","AC3","AMC","AMC2","AMC3","HM1","HM2","HM3"];
 

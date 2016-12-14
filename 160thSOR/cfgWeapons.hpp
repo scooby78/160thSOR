@@ -1,3 +1,10 @@
+/*
+	Name: 160th SOR Mod
+	Author: Scooby
+	Date: 24/06/16
+	Description: cfgWeapons.hpp
+*/
+
 class cfgWeapons 
 {
 	class rhs_weap_m4a1_carryhandle;
@@ -22,8 +29,6 @@ class cfgWeapons
 	class arifle_SPAR_01_blk_F;
 	class arifle_SPAR_01_GL_blk_F;
 	class LMG_03_F;
-	
-
 
 	class 160_weap_inf_std: arifle_SPAR_01_blk_F 
 	{
