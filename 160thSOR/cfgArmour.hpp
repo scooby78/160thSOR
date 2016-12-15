@@ -50,6 +50,7 @@ class SOR_RHS_M6 : RHS_M6
 	maxOmega = 272.27;
 	enginePower = 1000; //was 447
 	engineLosses = 25;
+	ace_cargo_space = 12;	
 	class TransportItems 
 	{
 		item_xx(ACE_FieldDressing,20);
@@ -80,6 +81,7 @@ class SOR_M2A3_BUSKIII : RHS_M2A3_BUSKIII
 	peakTorque = 3660; 
 	enginePower = 1000; 
 	armor = 500; //was 325 protection against missiles, collisions and explosions
+	ace_cargo_space = 12;	
 	class TransportItems 
 	{
 		item_xx(ACE_FieldDressing,20);
@@ -236,6 +238,7 @@ class SOR_rhsusf_m1a1aimd_usarmy : rhsusf_m1a1aimd_usarmy
 	brakeDistance = 1;
 	maxBrakeTorque = 24500;
 	armor = 700; //was 600 protection against missiles, collisions and explosions
+	ace_cargo_space = 12;	
 	class TransportItems 
 	{
 		item_xx(ACE_FieldDressing,20);
@@ -268,6 +271,7 @@ class SOR_rhsusf_m1a1aim_tuski_d : rhsusf_m1a1aim_tuski_d
 	brakeDistance = 1;
 	maxBrakeTorque = 24500;
 	armor = 700; //was 600 protection against missiles, collisions and explosions
+	ace_cargo_space = 12;	
 	class TransportItems 
 	{
 		item_xx(ACE_FieldDressing,20);
@@ -299,6 +303,7 @@ class SOR_rhsusf_m1a2sep1d_usarmy : rhsusf_m1a2sep1d_usarmy
 	enginePower = 3000; 
 	brakeDistance = 1;
 	armor = 700; //was 600 protection against missiles, collisions and explosions
+	ace_cargo_space = 12;	
 	class TransportItems 
 	{
 		item_xx(ACE_FieldDressing,20);
@@ -330,6 +335,7 @@ class SOR_rhsusf_m1a2sep1tuskid_usarmy : rhsusf_m1a2sep1tuskid_usarmy
 	enginePower = 3000; 
 	brakeDistance = 1;
 	armor = 700; //was 600 protection against missiles, collisions and explosions
+	ace_cargo_space = 12;	
 	class TransportItems 
 	{
 		item_xx(ACE_FieldDressing,20);
@@ -361,6 +367,7 @@ class SOR_rhsusf_m1a2sep1tuskiid_usarmy : rhsusf_m1a2sep1tuskiid_usarmy
 	enginePower = 3000; 
 	brakeDistance = 1;
 	armor = 800; //was 600 protection against missiles, collisions and explosions
+	ace_cargo_space = 12;	
 	class TransportItems
 	{
 		item_xx(ACE_FieldDressing,20);

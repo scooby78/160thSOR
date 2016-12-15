@@ -330,20 +330,20 @@ class SOR_A_Crate_F : B_CargoNet_01_ammo_F
 	class TransportItems{};
 	class TransportWeapons
 	{
-		weap_xx(rhs_weap_M136_hp,4)
+		weap_xx(rhs_weap_M136_hp,16)
 	};
 	class TransportMagazines
 	{
-		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,100)
-		mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,20)
-		mag_xx(200Rnd_556x45_Box_Tracer_Red_F,8)	
-		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,8)		
-		mag_xx(1Rnd_HE_Grenade_shell,10)			
-		mag_xx(1Rnd_Smoke_Grenade_shell,10)			
-		mag_xx(1Rnd_SmokeRed_Grenade_shell,10)	
-		mag_xx(rhs_mag_m67,20)
-		mag_xx(rhs_mag_an_m8hc,20)
-		mag_xx(1Rnd_SmokeGreen_Grenade_shell,20)
+		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,200)
+		mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,40)
+		mag_xx(200Rnd_556x45_Box_Tracer_Red_F,16)	
+		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,16)		
+		mag_xx(1Rnd_HE_Grenade_shell,20)			
+		mag_xx(1Rnd_Smoke_Grenade_shell,20)			
+		mag_xx(1Rnd_SmokeRed_Grenade_shell,20)	
+		mag_xx(rhs_mag_m67,40)
+		mag_xx(rhs_mag_an_m8hc,40)
+		mag_xx(1Rnd_SmokeGreen_Grenade_shell,40)
 	};
 	class TransportBackpacks{};
 };
@@ -359,30 +359,30 @@ class SOR_AM_Crate_F : B_CargoNet_01_ammo_F
 	icon = "iconCrateAmmo";
 	class TransportItems
 	{
-		item_xx(ACE_CableTie,5)
-		item_xx(ACE_FieldDressing,90);
-		item_xx(ACE_morphine,50);
+		item_xx(ACE_CableTie,10)
+		item_xx(ACE_FieldDressing,200);
+		item_xx(ACE_morphine,100);
 	};		
 	class TransportWeapons
 	{
-		weap_xx(rhs_weap_M136_hp,4)
+		weap_xx(rhs_weap_M136_hp,8)
 	};
 	class TransportMagazines
 	{
-		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,80)
-		mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,20)
-		mag_xx(200Rnd_556x45_Box_Tracer_Red_F,8)	
-		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,8)		
-		mag_xx(1Rnd_HE_Grenade_shell,10)
-		mag_xx(1Rnd_Smoke_Grenade_shell,10)			
-		mag_xx(1Rnd_SmokeRed_Grenade_shell,10)	
-		mag_xx(rhs_mag_m67,20)
-		mag_xx(rhs_mag_an_m8hc,20)
-		mag_xx(1Rnd_SmokeGreen_Grenade_shell,20)
+		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,200)
+		mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,40)
+		mag_xx(200Rnd_556x45_Box_Tracer_Red_F,16)	
+		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,16)		
+		mag_xx(1Rnd_HE_Grenade_shell,20)
+		mag_xx(1Rnd_Smoke_Grenade_shell,20)			
+		mag_xx(1Rnd_SmokeRed_Grenade_shell,20)	
+		mag_xx(rhs_mag_m67,40)
+		mag_xx(rhs_mag_an_m8hc,40)
+		mag_xx(1Rnd_SmokeGreen_Grenade_shell,40)
 	};
 	class TransportBackpacks
 	{
-		pack_xx(SOR_Medic_Pack_D,3)
+		pack_xx(SOR_Medic_Pack_D,6)
 	};
 };
 

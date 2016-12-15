@@ -599,8 +599,16 @@ class SOR_Rifleman_D : B_Soldier_F
 	backpack = "";
 	weapons[] = {"160_weap_inf_std", "rhsusf_weap_m9","rhs_weap_M136_hp","Throw","Put"};
 	respawnWeapons[] = {"160_weap_inf_std", "rhsusf_weap_m9","rhs_weap_M136_hp","Throw","Put"};
-	Items[] = {Standard_Meds};
-	RespawnItems[] = {Standard_Meds};
+	Items[] = 
+	{
+		"ACE_EntrenchingTool",
+		Standard_Meds
+	};
+	RespawnItems[] =
+	{
+		"ACE_EntrenchingTool",
+		Standard_Meds
+	};
 	magazines[] = 
 	{
 		Standard_Mags,
