@@ -180,6 +180,8 @@ class SOR_MechCommand_D : SOR_Commander_D
 	vehicleclass = "SOR_Infantry_MECH";
 	displayName = "Mechanised Commander";
 	uniformClass = "rhs_uniform_cu_ocp";
+	weapons[] = {"rhs_weap_m4a1_carryhandle_grip", "rhsusf_weap_m9", "Throw", "Put", "Laserdesignator"};
+	respawnWeapons[] = {"rhs_weap_m4a1_carryhandle_grip", "rhsusf_weap_m9", "Throw", "Put", "Laserdesignator"};
 	linkedItems[] = 
 	{	
 		"rhsusf_iotv_ocp_Repair",
