@@ -15,6 +15,7 @@ class CfgFunctions
 			class autoparadrop;
 			class chute;
 			class markUnits;
+			class markUnitsCustom;
 			class service;
 			class parajump;
 			class trigger;
@@ -23,8 +24,6 @@ class CfgFunctions
 			class objPlaced;
 			class mech_service;
 			class trigger_mech;
-			class Taru_Pod_Mod;
-			class AWACSTARGETING;
 			class intelAction;
 			class SelfDestruct;
 			class radarInit;

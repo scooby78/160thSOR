@@ -4,6 +4,7 @@
 	Date: 27/09/15 01:09
 	Description: config.cpp
 */
+
 #include "cfgFunctions.hpp"
 #include "define_macros.hpp"
 #include "cfgPatches.hpp"
@@ -12,19 +13,8 @@
 #include "cfgVehicleClasses.hpp"
 #include "cfgGroups.hpp"
 #include "cfgWeapons.hpp"
+#include "cfgAmmo.hpp"
 #include "cfgMagazines.hpp"
 #include "cfgEditorCategories.hpp"
 #include "cfgUnitInsignias.hpp"
-
-class cfgMarkers
-{
-	class Flag
-	{
-		name = "160th SOR";
-		icon = "160thSOR\data\160thSOR_flag_ca.paa";
-		scope = 2;
-		size = 32;
-		shadow = true;
-	};
-};
-
+#include "cfgMarkers.hpp"

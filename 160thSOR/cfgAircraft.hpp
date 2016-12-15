@@ -13,12 +13,6 @@ class RHS_MELB_AH6M_L;
 class RHS_MELB_AH6M_M;
 class RHS_MELB_H6M;
 class RHS_MELB_MH6M;
-/*
-class FIR_F16C_TWAS;
-class FIR_F16C_TWAS2;
-class FIR_F16C;
-class FIR_F16C_Polish_CFT;
-*/
 class O_Heli_Transport_04_F;
 class O_Heli_Transport_04_medevac_F;
 class O_Heli_Transport_04_bench_F;
@@ -33,12 +27,11 @@ class I_Plane_Fighter_03_CAS_F;
 class RHS_AH64D_AA;
 class RHS_AH64D_CS;
 class RHS_AH64D_GS;
-class RHS_C130J;
 class RHS_A10_AT;
+class FIR_F15_Base;
+class FIR_F15E_Base;
 class B_Heli_Transport_01_camo_F;
 class B_T_VTOL_01_infantry_F;
-
-
 
 class SOR_VTOL_Troop_D : B_T_VTOL_01_infantry_F
 {
@@ -75,10 +68,12 @@ class SOR_B_Heli_Transport_01_camo_F : B_Heli_Transport_01_camo_F
 	vehicleclass = "SOR_Aircraft";
 	faction = SOR_Faction_D;
 	displayName = "UH-80 Ghost Hawk (C4/P12)";
+/*	
 	class eventHandlers
 	{
 		Init = "[_this select 0] call ace_fastroping_fnc_equipFRIES;";
-	};	
+	};
+*/	
 	class TransportItems 
 	{
 		item_xx(ACE_FieldDressing,10);
@@ -550,294 +545,45 @@ class SOR_RHS_A10 : RHS_A10_AT
 		pack_xx(SOR_Repair_Pack_veh_D,1)
 	};
 };
-/*
-C130 broken and buggy do not use 25/02/2016
 
-class SOR_RHS_C130J : RHS_C130J
+class SOR_FIGHTER : FIR_F15_Base
 {
 	editorCategory = "SOR_Cat_Faction_D";
 	editorSubcategory = "SOR_SubCat_Aircraft";
 	vehicleclass = "SOR_Aircraft";
 	faction = SOR_Faction_D;
-	displayName = "C130J (C3/P24/V1)";
-	class UserActions
-	{
-		class SOR_AutoDrop
-		{
-			condition = "(player == driver this)&&((getPosATL this) select 2 > 200)";
-			displayName = "<t color='#008000'>Start Drop!</t>";
-			displayNameDefault = "<t color='#008000'>Start Drop!</t>";
-			onlyForPlayer = 0;
-			position = "";
-			radius= 8;				
-			priority = 1;
-			showWindow = 0;
-			hideOnUse = 1;
-			statement = "[this] spawn sor_fnc_autoparadrop";
-		};
-		class closefdoor
-		{
-			condition = "(this doorPhase 'door_1' == 1) AND Alive(this)";
-			displayName = "Close Crew Door";
-			onlyforplayer = 1;
-			position = "pos_gunner";
-			radius = 6;
-			statement = "this animateDoor ['door_1',0]";
-		};
-		class Closeldoor
-		{
-			condition = "(this doorPhase 'door_2_1' == 1) AND Alive(this)";
-			displayName = "Close Left Door";
-			onlyforplayer = 1;
-			position = "pos_gunner";
-			radius = 6;
-			statement = "this animateDoor ['door_2_1',0];this setVariable ['doorhandler_L',0,true]";
-		};
-		class CloseRamp
-		{
-			condition = "(this doorPhase 'ramp' == 1) AND Alive(this)";
-			displayName = "Close Cargo Ramp";
-			onlyforplayer = 1;
-			position = "pos_gunner";
-			radius = 6;
-			statement = "this animateDoor ['ramp',0];[this] call rhs_fnc_cargoAttach";
-		};
-		class Closerdoor
-		{
-			condition = "(this doorPhase 'door_2_2' == 1) AND Alive(this)";
-			displayName = "Close Right Door";
-			onlyforplayer = 1;
-			position = "pos_gunner";
-			radius = 6;
-			statement = "this animateDoor ['door_2_2',0];this setVariable ['doorhandler_R',0,true]";
-			
-		};
-		class openfdoor
-		{
-			condition = "(this doorPhase 'door_1' == 0) AND Alive(this)";
-			displayName = "Open Crew Door";
-			onlyforplayer = 1;
-			position = "pos_gunner";
-			radius = 6;
-			statement = "this animateDoor ['door_1',1]";
-		};
-		class OpenLdoor
-		{
-			condition = "(this doorPhase 'door_2_1' == 0) AND Alive(this)";
-			displayName = "Open Left Door";
-			onlyforplayer = 1;
-			position = "pos_gunner";
-			radius = 6;
-			statement = "this animateDoor ['door_2_1',1];this setVariable ['doorhandler_L',1,true]";
-		};
-		class OpenRamp
-		{
-			condition = "(this doorPhase 'ramp' == 0) AND Alive(this)";
-			displayName = "Open Cargo Ramp";
-			onlyforplayer = 1;
-			position = "pos_gunner";
-			radius = 6;
-			statement = "this animateDoor ['ramp',1];{if(not(_x isKindOf 'Man'))then{detach _x}}foreach attachedObjects this";
-		};
-		class OpenRdoor
-		{
-			condition = "(this doorPhase 'door_2_2' == 0) AND Alive(this)";
-			displayName = "Open Right Door";
-			onlyforplayer = 1;
-			position = "pos_gunner";
-			radius = 6;
-			statement = "this animateDoor ['door_2_2',1];this setVariable ['doorhandler_R',1,true]";
-		};
-		class VehicleParadrop
-		{
-			condition = "(count (attachedObjects this) > 0) AND ('man' countType (attachedObjects this) == 0) AND Alive(this)";
-			displayName = "Paradrop cargo";
-			onlyforplayer = 1;
-			position = "pos_gunner";
-			radius = 6;
-			statement = "[this] spawn rhs_fnc_vehPara";
-		};
-	};
-	class TransportItems{};		
-	class TransportWeapons{};
-	class TransportMagazines{};
-	class TransportBackpacks
-	{
-		pack_xx(SOR_Repair_Pack_veh_D,1)
-	};
-};
-*/
-
-/*  
-
-Currently broken since latest FIR F16 mod update
-
-
-//Training ammo (non leathal)
-class SOR_FIR_F16C_TWAS : FIR_F16C_TWAS
-{
-	editorCategory = "SOR_Cat_Faction_D";
-	editorSubcategory = "SOR_SubCat_Aircraft";
-	vehicleclass = "SOR_Aircraft";
-	faction = SOR_Faction_D;
-	displayName = "F16-C Non-Lethal Training Aircraft [Blue Team]";
-	class TransportItems{};
-	class TransportWeapons{};
-	class TransportMagazines{};
-	class TransportBackpacks{};
-};	
-
-//Attack Jets
-
-/* F16C custom loadout function by Firewill
-
-how to use
-"hardpoint1","hardpoint2","hardpoint3","hardpoint4","hardpoint5","hardpoint5A","hardpoint6","hardpoint7","hardpoint8","hardpoint9"
-
-example
-[(_this select 0),"aim9l","","","fueltank","ecmjammer","","fueltank","","","aim9l"] call FIR_Fnc_F16_SetLoadout;
-
-support weapon classname list
-hardpoint 1,2,8,9 = aim9l / aim9x / aim120 / aim9twas / aim120twas
-hardpoint 3,7 = aim9l / aim9x / aim120 /aim9twas/aim120twas / gbu10 / gbu12x1 / gbu12x2 / gbu31 / gbu32 / gbu38x1 / gbu38x2 / gbu38x3 / agm65dx1 / agm65dx3 / agm65g / agm65l / agm88 / mk82x3 / cbu103 / hydrax1 / hydrax2 / hydrax3 / zuni / mk82gpx3
-hardpoint 4,6 = fueltank / gbu10 / gbu12x1 / gbu12x2 / gbu12x3 / gbu31 / gbu32 / gbu38x1 / gbu38x2 / gbu38x3 / agm65dx1 / agm65g / agm65l / mk82x3 / cbu103 / hydrax1 / hydrax2 / hydrax3 / zuni / mk82gpx3
-hardpoint 5 = ecmpod / twaspod / fueltank_300gal
-hardpoint 5a = htspod / lantirnpod
-
-if you want don't add weapon in hardpoint, just leave empty.
-
-
-class SOR_FIR_F16C_AA : FIR_F16C
-{
-	editorCategory = "SOR_Cat_Faction_D";
-	editorSubcategory = "SOR_SubCat_Aircraft";
-	vehicleclass = "SOR_Aircraft";
-	faction = SOR_Faction_D;
-	displayName = "F16-C [AA]";
-	maxSpeed = 1200; //test
-	threat[] = {0.1,0.8,1};
-	class eventHandlers
-	{
-		Init = "[_this select 0] execVM ""\FIR_F16\sqs\init\init.sqf"";_null = [(_this select 0),""aim9x"",""aim120"",""agm88"","""","""",""htspod"","""",""agm88"",""aim120"",""aim9x""] call FIR_Fnc_F16_SetLoadout;";
-	};
-	class UserActions
-	{
-		class Eject
-		{
-			condition = "player in this and isengineon this";
-			displayName = "<t color='#a72121'>Ejection Seat</t>";
-			hideOnUse = 1;
-			onlyforplayer = 1;
-			position = "pos cano";
-			priority = 6;
-			radius = 10;
-			shortcut = "Eject";
-			showWindow = 0;
-			statement = "[this] execVM ""\FIR_F16\sqs\Ejection\Ejection.sqf"";";
-		};
-		class F16_Gui_Open
-		{
-			condition = "((this distance (nearestObject [this, ""FIR_Baseplate""]) < 25) and (damage (nearestObject [this, ""FIR_Baseplate""]) < 1) and (speed this < 1)) or ((this distance (nearestObject [this, ""B_Truck_01_ammo_F""]) < 25) and (damage (nearestObject [this, ""B_Truck_01_ammo_F""]) < 1) and (speed this < 1)) or ((this distance (nearestObject [this, ""Land_TentHangar_V1_F""]) < 25) and (damage (nearestObject [this, ""Land_TentHangar_V1_F""]) < 1) and (speed this < 1)) or ((this distance (nearestObject [this, ""Land_Hangar_F""]) < 25) and (damage (nearestObject [this, ""Land_Hangar_F""]) < 1) and (speed this < 1)) or ((this distance (nearestObject [this, ""B_Slingload_01_Ammo_F""]) < 25) and (damage (nearestObject [this, ""B_Slingload_01_Ammo_F""]) < 1) and (speed this < 1))";
-			displayName = "<t color='#739eff'>Open Dialog</t>";
-			onlyforplayer = "false";
-			position = "pos cano";
-			priority = 6;
-			radius = 15;
-			shortcut = "User6";
-			statement = "this execVM ""\FIR_F16\sqs\loadout\F16_GUI_Open.sqf""";
-		};
-		class ClearRadarTGT
-		{
-			condition = "currentweapon this == ""FIR_AGM88"" and this animationPhase ""WWSwitch"" >= 0.9 ;";
-			displayName = "Clear Radar Target";
-			onlyforplayer = "False";
-			position = "pos cano";
-			radius = 15;
-			shortcut = "User5";
-			statement = "[this] execVM ""\FIR_F16\sqs\SEAD\harmoff.sqf"";";
-		};
-		class FindRadarTGT
-		{
-			condition = "currentweapon this == ""FIR_AGM88"" and this animationPhase ""WWSwitch"" <= 0.1";
-			displayName = "Find Radar Target";
-			onlyforplayer = "False";
-			position = "pos cano";
-			radius = 15;
-			shortcut = "User5";
-			statement = "[this] execVM ""\FIR_F16\sqs\SEAD\harm.sqf"";";
-		};
-	};
-	class TransportItems{};
-	class TransportWeapons{};
-	class TransportMagazines{};
-	class TransportBackpacks{};
+	author="Firewill";
+	scope = 2;
+	displayName = "F-15C Eagle";
+	fir_f15c_custom_skin = 0;
+	editorPreview = "\FIR_F15\ui\preview\pic_c_usaf.paa";
+	hiddenselectionstextures[] = {"\FIR_F15\Data\c\nose_co.paa","\FIR_F15\Data\c\body_co.paa","\FIR_F15\Data\c\fuse_co.paa","\FIR_F15\Data\c\leftwing_co.paa","\FIR_F15\Data\c\rightwing_co.paa"};
+	weapons[] = {"FIR_MasterArm","FIR_M61A2","FIR_AIM9L","FIR_AIM120","FIR_CMLauncher"};
+	magazines[] = {"FIR_M61A2_940rnd_M","FIR_AIM9L_1rnd_M","FIR_AIM9L_1rnd_M","FIR_AIM9L_1rnd_M","FIR_AIM9L_1rnd_M","FIR_AIM120_1rnd_M","FIR_AIM120_1rnd_M","FIR_AIM120_1rnd_M","FIR_AIM120_1rnd_M","FIR_F15C_Fueltank_1rnd_M","FIR_F15C_Fueltank_1rnd_M","FIR_F15C_Fueltank_1rnd_M","FIR_240rnd_CMFlare_Chaff_Magazine"};
+	fir_f15_aux = "msip";/*no = no aux / msip = MSIP II Antenna on nose / irst = IRST for JASDF on nose*/
+	fir_f15_vwt = "usaf"; /* usaf = standard antenna / small = small antenna */				
 };
 
-class SOR_FIR_F16C_CAS : FIR_F16C
+class SOR_STRIKE_FIGHTER : FIR_F15E_Base
 {
 	editorCategory = "SOR_Cat_Faction_D";
 	editorSubcategory = "SOR_SubCat_Aircraft";
 	vehicleclass = "SOR_Aircraft";
 	faction = SOR_Faction_D;
-	displayName = "F16-C [CAS]";
-	maxSpeed = 1200; //test
-	threat[] = {0.5,1,0.8};
-	class eventHandlers
-	{
-		Init = "[_this select 0] execVM ""\FIR_F16\sqs\init\init.sqf"";_null = [(_this select 0),""aim9x"","""",""agm65l"",""gbu38x3"","""","""",""gbu38x3"",""agm65l"","""",""aim9x""] call FIR_Fnc_F16_SetLoadout; _null = (_this select 0) setvariable [""F16_Tex"",""ROKAF""];";
-	};
-	class UserActions
-	{
-		class Eject
-		{
-			condition = "player in this and isengineon this";
-			displayName = "<t color='#a72121'>Ejection Seat</t>";
-			hideOnUse = 1;
-			onlyforplayer = 1;
-			position = "pos cano";
-			priority = 6;
-			radius = 10;
-			shortcut = "Eject";
-			showWindow = 0;
-			statement = "[this] execVM ""\FIR_F16\sqs\Ejection\Ejection.sqf"";";
-		};
-		class F16_Gui_Open
-		{
-			condition = "((this distance (nearestObject [this, ""FIR_Baseplate""]) < 25) and (damage (nearestObject [this, ""FIR_Baseplate""]) < 1) and (speed this < 1)) or ((this distance (nearestObject [this, ""B_Truck_01_ammo_F""]) < 25) and (damage (nearestObject [this, ""B_Truck_01_ammo_F""]) < 1) and (speed this < 1)) or ((this distance (nearestObject [this, ""Land_TentHangar_V1_F""]) < 25) and (damage (nearestObject [this, ""Land_TentHangar_V1_F""]) < 1) and (speed this < 1)) or ((this distance (nearestObject [this, ""Land_Hangar_F""]) < 25) and (damage (nearestObject [this, ""Land_Hangar_F""]) < 1) and (speed this < 1)) or ((this distance (nearestObject [this, ""B_Slingload_01_Ammo_F""]) < 25) and (damage (nearestObject [this, ""B_Slingload_01_Ammo_F""]) < 1) and (speed this < 1))";
-			displayName = "<t color='#739eff'>Open Dialog</t>";
-			onlyforplayer = "false";
-			position = "pos cano";
-			priority = 6;
-			radius = 15;
-			shortcut = "User6";
-			statement = "this execVM ""\FIR_F16\sqs\loadout\F16_GUI_Open.sqf""";
-		};			
-	};
-	class TransportItems{};
-	class TransportWeapons{};
-	class TransportMagazines{};
-	class TransportBackpacks{};
-};	
-
-class SOR_FIR_F16C_TWAS3 : FIR_F16C_TWAS2
-{
-	editorCategory = "SOR_Cat_Faction_D";
-	editorSubcategory = "SOR_SubCat_Aircraft";
-	vehicleclass = "SOR_Aircraft";
-	faction = SOR_Faction_D;
-	displayName = "F16-C Non-Lethal Training Aircraft [Red Team]";
-	maxSpeed = 1200; //test
-	class eventHandlers
-	{
-		Init = "[_this select 0] execVM ""\FIR_F16\sqs\init\init.sqf"";_null = (_this select 0) setvariable [""F16_Tex"",""Ag_Flanker""];";
-	};
-	class TransportItems{};
-	class TransportWeapons{};
-	class TransportMagazines{};
-	class TransportBackpacks{};
-};		
-
-*/	
+	author="Firewill";
+	scope = 2;
+	displayName = "F-15E Strike Eagle";
+	fir_f15e_custom_skin = 1;		
+	fir_f15e_custom_name = "Blank";
+	fir_f15e_custom_code = "FIR_F15E_Blank";	
+	editorPreview = "\FIR_F15\ui\preview\pic_e_usaf.paa";
+	hiddenselectionstextures[] = {"\FIR_F15\skin\e\nose_blank_co.paa","\FIR_F15\skin\e\body_blank_co.paa","\FIR_F15\skin\e\fuse_blank_co.paa","\FIR_F15\skin\e\leftwing_blank_co.paa","\FIR_F15\skin\e\rightwing_blank_co.paa","\FIR_F15\skin\e\tgtpod_blank_co.paa"};
+	weapons[] = {"FIR_MasterArm","FIR_M61A2","FIR_AIM9X","FIR_AIM120","FIR_GBU12","FIR_CMLauncher"};
+	magazines[] = {"FIR_M61A2_511rnd_M","FIR_AIM9X_1rnd_M","FIR_AIM9X_1rnd_M","FIR_AIM9X_1rnd_M","FIR_AIM9X_1rnd_M","FIR_AGM65L_1rnd_M","FIR_AGM65L_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_gbu53_1rnd_M","FIR_gbu53_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_GBU12_1rnd_M","FIR_GBU12_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_AGM65G_1rnd_M","FIR_AGM65G_1rnd_M","FIR_F15E_Fueltank_1rnd_M","FIR_240rnd_CMFlare_Chaff_Magazine"};
+	fir_f15_engine = "PW"; /*GE = F110-GE-129 Model / PW = F100-PW-229 Model*/	
+	fir_f15_vwt = "usaf"; /* usaf = standard antenna / small = small antenna */		
+	fir_f15e_aux = "standard";/*standard = iff standard / rokaf = iff rokaf ver*/
+};
 /////////////////////
 //Captured Aircraft//
 /////////////////////
@@ -851,6 +597,20 @@ class SOR_O_Heli_Transport_04_F : O_Heli_Transport_04_F
 	faction = SOR_Faction_D;
 	side=1;		
 	displayName = "MI-290 Taru (C3/POD)";
+	hiddenSelections[]=
+	{
+		"Camo_1",
+		"Camo_2",
+		"Camo_3",
+		"Camo_4"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"\A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_base_01_black_co.paa",
+		"\A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_base_02_black_co.paa",
+		"\A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_black_CO.paa",
+		"\A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_black_CO.paa"
+	};
 	class eventHandlers
 	{
 		init="_this call SLX_XEH_EH_Init;";
@@ -860,92 +620,6 @@ class SOR_O_Heli_Transport_04_F : O_Heli_Transport_04_F
 		item_xx(ACE_FieldDressing,10);
 		item_xx(V_RebreatherB,3);			
 	};	
-	class TransportWeapons{};
-	class TransportMagazines{};
-	class TransportBackpacks
-	{
-		pack_xx(SOR_Repair_Pack_veh_D,1)
-	};
-};
-
-// Medivac Taru (Fixed pod)
-class SOR_O_Heli_Transport_04_medevac_F : O_Heli_Transport_04_medevac_F
-{
-	editorCategory = "SOR_Cat_Faction_D";
-	editorSubcategory = "SOR_SubCat_Aircraft_Captured";
-	vehicleclass = "SOR_Aircraft_Captured";
-	faction = SOR_Faction_D;
-	side=1;	
-	displayName = "MI-290 Taru (Medical C3/P4)";
-	class TransportItems
-	{
-		item_xx(ACE_Fielddressing,24)
-		item_xx(ACE_morphine,16)
-		item_xx(ACE_epinephrine,16)
-		item_xx(G_Diving,3)
-		item_xx(U_B_Wetsuit,3)
-		item_xx(V_RebreatherB,5)
-	};		
-	class TransportWeapons{};
-	class TransportMagazines{};
-	class TransportBackpacks
-	{
-		pack_xx(SOR_Repair_Pack_veh_D,1)
-	};
-};
-
-// Troop transport Taru (fixed pod)	
-class SOR_O_Heli_Transport_04_bench_F : O_Heli_Transport_04_bench_F
-{
-	editorCategory = "SOR_Cat_Faction_D";
-	editorSubcategory = "SOR_SubCat_Aircraft_Captured";
-	vehicleclass = "SOR_Aircraft_Captured";
-	faction = SOR_Faction_D;
-	side=1;	
-	displayName = "MI-290 Taru (Bench C3/P8)";
-	class UserActions
-	{
-		class SOR_AutoDrop
-		{
-			displayName = "<t color='#008000'>Start Drop!</t>";
-			displayNameDefault = "<t color='#008000'>Start Drop!</t>";
-			condition = "(player == driver this)&&((getPosATL this) select 2 > 200)";
-			priority = 1;
-			showWindow = 0;
-			hideOnUse = 1;
-			radius= 8;
-			position = "";
-			onlyForPlayer = 0;
-			statement = "[this] spawn sor_fnc_autoparadrop";
-		};
-	};		
-	class TransportItems 
-	{
-		item_xx(ACE_FieldDressing,10);
-		item_xx(V_RebreatherB,3);			
-	};
-	class TransportWeapons{};
-	class TransportMagazines{};
-	class TransportBackpacks
-	{
-		pack_xx(SOR_Repair_Pack_veh_D,1)
-	};
-};
-
-// Covered Troop transport Taru (fixed pod)
-class SOR_O_Heli_Transport_04_covered_F : O_Heli_Transport_04_covered_F
-{
-	editorCategory = "SOR_Cat_Faction_D";
-	editorSubcategory = "SOR_SubCat_Aircraft_Captured";
-	vehicleclass = "SOR_Aircraft_Captured";
-	faction = SOR_Faction_D;
-	side=1;	
-	displayName = "MI-290 Taru (Covered C3/P16)";
-	class TransportItems 
-	{
-		item_xx(ACE_FieldDressing,10);
-		item_xx(V_RebreatherB,3);			
-	};
 	class TransportWeapons{};
 	class TransportMagazines{};
 	class TransportBackpacks
@@ -1096,72 +770,3 @@ class SOR_I_Plane_Fighter_03_CAS_B : I_Plane_Fighter_03_CAS_F
 	class TransportBackpacks{};
 };
 
-//////////////////
-//OpFor Versions//	
-//////////////////
-
-//Live ammo
-/*
-class SOR_FIR_F16C_OPFOR : FIR_F16C_Polish_CFT
-{
-	side=0;
-	faction = SOR_Faction_D;
-	vehicleclass = "SOR_Aircraft";
-	displayName = "F16-C OpFor";
-	maxSpeed = 1200; //test
-	class eventHandlers
-	{
-		Init = "[_this select 0] execVM ""\FIR_F16\sqs\init\init.sqf"";_null = (_this select 0) setvariable [""F16_Tex"",""Ag_Flanker""];";
-	};
-	class TransportItems{};
-	class TransportWeapons{};
-	class TransportMagazines{};
-	class TransportBackpacks{};
-};
-
-//Training ammo (non leathal)	
-class SOR_FIR_F16C_TWAS2 : FIR_F16C_TWAS2
-{
-	side=0;
-	faction = SOR_Faction_D;
-	vehicleclass = "SOR_Aircraft";
-	displayName = "F16-C Non-Lethal Training Aircraft [Red Team OpFor]";
-	maxSpeed = 1200; //test		
-	class eventHandlers
-	{
-		Init = "[_this select 0] execVM ""\FIR_F16\sqs\init\init.sqf"";_null = (_this select 0) setvariable [""F16_Tex"",""Ag_Flanker""];";
-	};
-	class TransportItems{};
-	class TransportWeapons{};
-	class TransportMagazines{};
-	class TransportBackpacks{};
-};	
-
-*/
-class SOR_I_Plane_Fighter_03_AA_F : I_Plane_Fighter_03_AA_F
-{
-	editorCategory = "SOR_Cat_Faction_D";
-	editorSubcategory = "SOR_SubCat_Aircraft";
-	vehicleclass = "SOR_Aircraft";
-	faction = SOR_Faction_D;
-	side=0;
-	displayName = "L159 ALCA [AA] OpFor";
-	class TransportItems{};
-	class TransportWeapons{};
-	class TransportMagazines{};
-	class TransportBackpacks{};
-};
-
-class SOR_I_Plane_Fighter_03_CAS_F : I_Plane_Fighter_03_CAS_F
-{
-	editorCategory = "SOR_Cat_Faction_D";
-	editorSubcategory = "SOR_SubCat_Aircraft";
-	vehicleclass = "SOR_Aircraft";
-	faction = SOR_Faction_D;
-	side=0;
-	displayName = "L159 ALCA [CAS] OpFor";
-	class TransportItems{};
-	class TransportWeapons{};
-	class TransportMagazines{};
-	class TransportBackpacks{};
-};	

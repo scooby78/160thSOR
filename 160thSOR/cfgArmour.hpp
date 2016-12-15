@@ -11,8 +11,10 @@ class rhsusf_m113d_usarmy;
 class rhsusf_m113d_usarmy_medical;
 class rhsusf_m113d_usarmy_supply;
 class rhsusf_m113d_usarmy_unarmed;
+class rhsusf_m1a2sep1d_usarmy;
 class rhsusf_m1a2sep1tuskid_usarmy;
 class rhsusf_m1a2sep1tuskiid_usarmy;
+class rhsusf_m1a1aimd_usarmy;
 class rhsusf_m1a1aim_tuski_d;
 class B_SDV_01_F;
 class rhsusf_m1025_d_s;
@@ -30,6 +32,11 @@ class B_Truck_01_fuel_F;
 class B_Truck_01_Repair_F;
 class B_Boat_Transport_01_F;
 
+// new supply suggestions by Bean
+class rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_d;
+class rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d;
+class rhsusf_M978A4_BKIT_usarmy_d;
+
 //M6A2	
 class SOR_RHS_M6 : RHS_M6
 {
@@ -43,6 +50,7 @@ class SOR_RHS_M6 : RHS_M6
 	maxOmega = 272.27;
 	enginePower = 1000; //was 447
 	engineLosses = 25;
+	ace_cargo_space = 12;	
 	class TransportItems 
 	{
 		item_xx(ACE_FieldDressing,20);
@@ -73,6 +81,7 @@ class SOR_M2A3_BUSKIII : RHS_M2A3_BUSKIII
 	peakTorque = 3660; 
 	enginePower = 1000; 
 	armor = 500; //was 325 protection against missiles, collisions and explosions
+	ace_cargo_space = 12;	
 	class TransportItems 
 	{
 		item_xx(ACE_FieldDressing,20);
@@ -218,6 +227,39 @@ class SOR_rhsusf_m113d_usarmy_medical : rhsusf_m113d_usarmy_medical
 	};
 };	
 
+//M1A1
+class SOR_rhsusf_m1a1aimd_usarmy : rhsusf_m1a1aimd_usarmy
+{
+	editorCategory = "SOR_Cat_Faction_D";
+	vehicleclass = "SOR_Vehicles";
+	faction = SOR_Faction_D;
+	peakTorque = 10355;
+	enginePower = 3000; 
+	brakeDistance = 1;
+	maxBrakeTorque = 24500;
+	armor = 700; //was 600 protection against missiles, collisions and explosions
+	ace_cargo_space = 12;	
+	class TransportItems 
+	{
+		item_xx(ACE_FieldDressing,20);
+	};
+	class TransportWeapons
+	{
+		weap_xx(rhs_weap_M136_hp,2)
+		weap_xx(rhs_weap_m4a1_carryhandle_grip,2)
+	};
+	class TransportMagazines
+	{
+		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,20)
+		mag_xx(200Rnd_556x45_Box_Tracer_Red_F,4)
+		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,4)
+	};
+	class TransportBackpacks
+	{
+		pack_xx(SOR_Repair_Pack_veh_D,1)			
+	};
+};
+
 //M1A1 (Tusk I)
 class SOR_rhsusf_m1a1aim_tuski_d : rhsusf_m1a1aim_tuski_d
 {
@@ -229,6 +271,7 @@ class SOR_rhsusf_m1a1aim_tuski_d : rhsusf_m1a1aim_tuski_d
 	brakeDistance = 1;
 	maxBrakeTorque = 24500;
 	armor = 700; //was 600 protection against missiles, collisions and explosions
+	ace_cargo_space = 12;	
 	class TransportItems 
 	{
 		item_xx(ACE_FieldDressing,20);
@@ -250,6 +293,38 @@ class SOR_rhsusf_m1a1aim_tuski_d : rhsusf_m1a1aim_tuski_d
 	};
 };		
 
+//M1A2
+class SOR_rhsusf_m1a2sep1d_usarmy : rhsusf_m1a2sep1d_usarmy
+{
+	editorCategory = "SOR_Cat_Faction_D";
+	vehicleclass = "SOR_Vehicles";
+	faction = SOR_Faction_D;
+	peakTorque = 10355;
+	enginePower = 3000; 
+	brakeDistance = 1;
+	armor = 700; //was 600 protection against missiles, collisions and explosions
+	ace_cargo_space = 12;	
+	class TransportItems 
+	{
+		item_xx(ACE_FieldDressing,20);
+	};
+	class TransportWeapons
+	{
+		weap_xx(rhs_weap_M136_hp,2)
+		weap_xx(rhs_weap_m4a1_carryhandle_grip,2)
+	};
+	class TransportMagazines
+	{
+		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,20)
+		mag_xx(200Rnd_556x45_Box_Tracer_Red_F,4)
+		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,4)
+	};
+	class TransportBackpacks
+	{
+		pack_xx(SOR_Repair_Pack_veh_D,1)			
+	};
+};
+
 //M1A2 (Tusk I)
 class SOR_rhsusf_m1a2sep1tuskid_usarmy : rhsusf_m1a2sep1tuskid_usarmy
 {
@@ -260,6 +335,7 @@ class SOR_rhsusf_m1a2sep1tuskid_usarmy : rhsusf_m1a2sep1tuskid_usarmy
 	enginePower = 3000; 
 	brakeDistance = 1;
 	armor = 700; //was 600 protection against missiles, collisions and explosions
+	ace_cargo_space = 12;	
 	class TransportItems 
 	{
 		item_xx(ACE_FieldDressing,20);
@@ -291,6 +367,7 @@ class SOR_rhsusf_m1a2sep1tuskiid_usarmy : rhsusf_m1a2sep1tuskiid_usarmy
 	enginePower = 3000; 
 	brakeDistance = 1;
 	armor = 800; //was 600 protection against missiles, collisions and explosions
+	ace_cargo_space = 12;	
 	class TransportItems
 	{
 		item_xx(ACE_FieldDressing,20);
@@ -629,6 +706,7 @@ class SOR_Eng_Truck_ammo_D : B_Truck_01_ammo_F
 	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_D;
+	ace_cargo_space = 16;
 	enginePower = 850;  //was 450
 	peakTorque = 2450; //was 1450
 	crew = "SOR_Engineer_D";
@@ -645,6 +723,27 @@ class SOR_Eng_Truck_ammo_D : B_Truck_01_ammo_F
 	};
 };
 
+class SOR_Eng_Truck_ammo2_D : rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d
+{
+	editorCategory = "SOR_Cat_Faction_D";
+	vehicleclass = "SOR_Vehicles";
+	faction = SOR_Faction_D;
+	ace_cargo_space = 16;
+	enginePower = 850;  //was 450
+	peakTorque = 2450; //was 1450
+	crew = "SOR_Engineer_D";
+	class TransportItems
+	{
+		item_xx(ACE_FieldDressing,10);
+		item_xx(ACE_EntrenchingTool,2);		
+	};
+	class TransportWeapons{};
+	class TransportMagazines{};
+	class TransportBackpacks
+	{
+		pack_xx(SOR_Repair_Pack_veh_D,1)			
+	};
+};
 class SOR_Eng_Truck_fuel_D : B_Truck_01_fuel_F
 {
 	editorCategory = "SOR_Cat_Faction_D";
@@ -667,6 +766,29 @@ class SOR_Eng_Truck_fuel_D : B_Truck_01_fuel_F
 	};
 };	
 
+class SOR_Eng_Truck_AutoRepair_D : rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_d
+{
+	editorCategory = "SOR_Cat_Faction_D";
+	vehicleclass = "SOR_Vehicles";
+	faction = SOR_Faction_D;
+	ace_cargo_space = 16;
+	enginePower = 850;  //was 450
+	peakTorque = 2450; //was 1450
+	crew = "SOR_Engineer_D";
+	class TransportItems
+	{
+		item_xx(ACE_DefusalKit,2);
+		item_xx(ACE_FieldDressing,10);
+		item_xx(ACE_EntrenchingTool,2);		
+	};
+	class TransportWeapons{};
+	class TransportMagazines{};
+	class TransportBackpacks
+	{
+		pack_xx(SOR_Repair_Pack_veh_D,1)			
+	};
+};		
+	
 class SOR_Eng_Truck_Repair_D : B_Truck_01_Repair_F
 {
 	editorCategory = "SOR_Cat_Faction_D";
@@ -678,6 +800,7 @@ class SOR_Eng_Truck_Repair_D : B_Truck_01_Repair_F
 	crew = "SOR_Engineer_D";
 	class TransportItems
 	{
+		item_xx(ACE_DefusalKit,2);
 		item_xx(ACE_FieldDressing,10);
 		item_xx(ACE_EntrenchingTool,2);		
 	};
@@ -688,6 +811,7 @@ class SOR_Eng_Truck_Repair_D : B_Truck_01_Repair_F
 		pack_xx(SOR_Repair_Pack_veh_D,1)			
 	};
 };		
+	
 	
 //Engineer armored recovery
 class SOR_Eng_APC_Tracked_01 : B_APC_Tracked_01_rcws_F

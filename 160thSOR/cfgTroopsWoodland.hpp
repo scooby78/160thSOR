@@ -4,49 +4,13 @@
 	Date: 28/09/15 01:09
 	Description: cfgTroopsWoodland.hpp
 */
-/*
-class SOR_Actual_D;
-class SOR_Commander_D;	
-class SOR_MechCommand_D;	
-class SOR_RTO_D;	
-class SOR_Teamleader_D;
-class SOR_Medic_D;
-class SOR_M249AR_D;
-class SOR_M240AR_D;
-class SOR_Grenadier_D;
-class SOR_Rifleman_D;
-class SOR_Rifleman_ammo_D;
-class SOR_RiflemanAT_D;
-class SOR_HeliPilot_D;
-class SOR_HeliCrew_D;
-class SOR_JetPilot_D;
-class SOR_MEVPilot_D;
-class SOR_ParaJumper_D;	
-class SOR_ReconLeader_D;
-class SOR_ReconJTAC_D;	
-class SOR_Recon_M249AR_D;
-class SOR_Marksman_D;
-class SOR_ReconSpotter_D;
-class SOR_ReconRifleman_D;
-class SOR_MechCrew_D;
-class SOR_Sniper_D;
-class SOR_Spotter_D;
-class SOR_HMGActual_D;
-class SOR_HMGGunner_D;
-class SOR_HMGCarrier_D;
-class SOR_HMGRFL_D;
-class SOR_MORActual_D;
-class SOR_MORGunner_D;
-class SOR_MORCarrier_D;
-class SOR_MORRFL_D;	
-class SOR_Engineer_Teamleader_D;	
-*/	 	
 //////////////////////////////
 //SOR Woodland Faction Units//
 //////////////////////////////		
 
 class SOR_Actual_W : SOR_Actual_D
 {
+	editorPreview = "\160thSOR\data\SOR_Actual_W.jpg";
 	editorCategory = "SOR_Cat_Faction_W";
 	faction = SOR_Faction_W;
 	backpack = "tf_rt1523g_bwmod";
@@ -72,6 +36,7 @@ class SOR_Actual_W : SOR_Actual_D
 //Commander	
 class SOR_Commander_W : SOR_Commander_D
 {
+	editorPreview = "\160thSOR\data\SOR_Commander_W.jpg";
 	editorCategory = "SOR_Cat_Faction_W";
 	faction = SOR_Faction_W;
 	backpack = "tf_rt1523g_bwmod";		
@@ -97,6 +62,7 @@ class SOR_Commander_W : SOR_Commander_D
 //Zeus unit
 class SOR_ZeusCommand_W : SOR_ZeusCommand_D
 {
+	editorPreview = "\160thSOR\data\SOR_Commander_W.jpg";
 	editorCategory = "SOR_Cat_Faction_W";
 	faction = SOR_Faction_W;
 	backpack = "tf_rt1523g_green";	
@@ -120,6 +86,7 @@ class SOR_ZeusCommand_W : SOR_ZeusCommand_D
 //Mechanised Commander 	
 class SOR_MechCommand_W : SOR_MechCommand_D
 {
+	editorPreview = "\160thSOR\data\SOR_MechCommand_W.jpg";
 	editorCategory = "SOR_Cat_Faction_W";
 	faction = SOR_Faction_W;
 	uniformClass = "U_B_T_Soldier_F"; 
@@ -145,6 +112,7 @@ class SOR_MechCommand_W : SOR_MechCommand_D
 //Air Commander 	
 class SOR_AirCommand_W : SOR_AirCommand_D
 {
+	editorPreview = "\160thSOR\data\SOR_AirCommand_W.jpg";
 	editorCategory = "SOR_Cat_Faction_W";
 	faction = SOR_Faction_W;
 	uniformClass = "U_B_HeliPilotCoveralls"; 
@@ -168,6 +136,7 @@ class SOR_AirCommand_W : SOR_AirCommand_D
 //Platoon RTO
 class SOR_RTO_W : SOR_RTO_D
 {
+	editorPreview = "\160thSOR\data\SOR_RTO_W.jpg";
 	editorCategory = "SOR_Cat_Faction_W";
 	faction = SOR_Faction_W;
 	backpack = "SOR_RTO_Pack_W";		
@@ -192,6 +161,7 @@ class SOR_RTO_W : SOR_RTO_D
 
 class SOR_Teamleader_W : SOR_Teamleader_D
 {
+	editorPreview = "\160thSOR\data\SOR_Teamleader_W.jpg";
 	editorCategory = "SOR_Cat_Faction_W";
 	faction = SOR_Faction_W;
 	backpack = "tf_rt1523g_bwmod";		
@@ -216,6 +186,7 @@ class SOR_Teamleader_W : SOR_Teamleader_D
 
 class SOR_Teamleader2_W : SOR_Teamleader2_D
 {
+	editorPreview = "\160thSOR\data\SOR_Teamleader_W.jpg";
 	editorCategory = "SOR_Cat_Faction_W";
 	faction = SOR_Faction_W;
 	backpack = "tf_rt1523g_bwmod";		
@@ -241,6 +212,7 @@ class SOR_Teamleader2_W : SOR_Teamleader2_D
 
 class SOR_Medic_W : SOR_Medic_D
 {
+	editorPreview = "\160thSOR\data\SOR_Medic_W.jpg";
 	editorCategory = "SOR_Cat_Faction_W";
 	faction = SOR_Faction_W;
 	backpack = "SOR_Medic_Pack_W";		
@@ -271,6 +243,7 @@ class SOR_HMedic_W : SOR_Medic_W
 
 class SOR_M249AR_W : SOR_M249AR_D
 {
+	editorPreview = "\160thSOR\data\SOR_M249AR_W.jpg";
 	editorCategory = "SOR_Cat_Faction_W";
 	faction = SOR_Faction_W;
 	backpack = "";		
@@ -293,6 +266,7 @@ class SOR_M249AR_W : SOR_M249AR_D
 
 class SOR_M240AR_W : SOR_M240AR_D
 {
+	editorPreview = "\160thSOR\data\SOR_M240AR_W.jpg";
 	editorCategory = "SOR_Cat_Faction_W";
 	faction = SOR_Faction_W;
 	backpack = "";		
@@ -315,6 +289,7 @@ class SOR_M240AR_W : SOR_M240AR_D
 
 class SOR_Grenadier_W : SOR_Grenadier_D
 {
+	editorPreview = "\160thSOR\data\SOR_Grenadier_W.jpg";
 	editorCategory = "SOR_Cat_Faction_W";
 	faction = SOR_Faction_W;
 	backpack = "";		
@@ -337,6 +312,7 @@ class SOR_Grenadier_W : SOR_Grenadier_D
 
 class SOR_Rifleman_W : SOR_Rifleman_D
 {
+	editorPreview = "\160thSOR\data\SOR_Rifleman_W.jpg";
 	editorCategory = "SOR_Cat_Faction_W";
 	faction = SOR_Faction_W;
 	uniformClass = "U_B_T_Soldier_F";
@@ -359,6 +335,7 @@ class SOR_Rifleman_W : SOR_Rifleman_D
 
 class SOR_Rifleman_ammo_W : SOR_Rifleman_ammo_D
 {
+	editorPreview = "\160thSOR\data\SOR_Rifleman_W.jpg";
 	editorCategory = "SOR_Cat_Faction_W";
 	faction = SOR_Faction_W
 	displayName = "Rifleman Ammo Bearer (M240)";
@@ -382,6 +359,7 @@ class SOR_Rifleman_ammo_W : SOR_Rifleman_ammo_D
 
 class SOR_RiflemanAT_W : SOR_RiflemanAT_D
 {
+	editorPreview = "\160thSOR\data\SOR_RiflemanAT_W.jpg";
 	editorCategory = "SOR_Cat_Faction_W";
 	faction = SOR_Faction_W;
 	uniformClass = "U_B_T_Soldier_F"; 
@@ -404,6 +382,7 @@ class SOR_RiflemanAT_W : SOR_RiflemanAT_D
 
 class SOR_HeliPilot_W : SOR_HeliPilot_D
 {
+	editorPreview = "\160thSOR\data\SOR_HeliPilot_W.jpg";
 	editorCategory = "SOR_Cat_Faction_W";
 	faction = SOR_Faction_W;
 	backpack = "tf_rt1523g_bwmod";		
@@ -424,6 +403,7 @@ class SOR_HeliPilot_W : SOR_HeliPilot_D
 
 class SOR_HeliCrew_W : SOR_HeliCrew_D
 {
+	editorPreview = "\160thSOR\data\SOR_HeliCrew_W.jpg";
 	editorCategory = "SOR_Cat_Faction_W";
 	faction = SOR_Faction_W;
 	backpack = "SOR_Repair_Pack_W";		
@@ -451,6 +431,7 @@ class SOR_JetPilot_W : SOR_JetPilot_D
 // MEV Pilot & CO-Pilot
 class SOR_MEVPilot_W : SOR_MEVPilot_D
 {
+	editorPreview = "\160thSOR\data\SOR_MEVPilot_W.jpg";
 	editorCategory = "SOR_Cat_Faction_W";
 	faction = SOR_Faction_W;
 	backpack = "tf_rt1523g_bwmod";		
@@ -471,6 +452,7 @@ class SOR_MEVPilot_W : SOR_MEVPilot_D
 
 class SOR_ParaJumper_W : SOR_ParaJumper_D
 {
+	editorPreview = "\160thSOR\data\SOR_ParaJumper_W.jpg";
 	editorCategory = "SOR_Cat_Faction_W";
 	faction = SOR_Faction_W;
 	backpack = "SOR_PJMedicPack_W";		
@@ -494,6 +476,7 @@ class SOR_ParaJumper_W : SOR_ParaJumper_D
 //Recon Units
 class SOR_ReconLeader_W : SOR_ReconLeader_D	
 {
+	editorPreview = "\160thSOR\data\SOR_ReconLeader_W.jpg";
 	editorCategory = "SOR_Cat_Faction_W";
 	faction = SOR_Faction_W;
 	uniformClass = "U_B_T_Soldier_F";	
@@ -536,6 +519,7 @@ class SOR_ReconRifleman_W : SOR_ReconLeader_W
 
 class SOR_Recon_M249AR_W : SOR_Recon_M249AR_D
 {
+	editorPreview = "\160thSOR\data\SOR_Recon_M249AR_W.jpg";
 	editorCategory = "SOR_Cat_Faction_W";
 	faction = SOR_Faction_W;
 	uniformClass = "U_B_T_Soldier_F";
@@ -560,6 +544,7 @@ class SOR_Recon_M249AR_W : SOR_Recon_M249AR_D
 
 class SOR_ReconSpotter_W : SOR_ReconSpotter_D	
 {
+	editorPreview = "\160thSOR\data\SOR_ReconLeader_W.jpg";
 	editorCategory = "SOR_Cat_Faction_W";
 	faction = SOR_Faction_W;
 	uniformClass = "U_B_T_Soldier_F";
@@ -583,6 +568,7 @@ class SOR_ReconSpotter_W : SOR_ReconSpotter_D
 
 class SOR_Marksman_W : SOR_Marksman_D
 {
+	editorPreview = "\160thSOR\data\SOR_ReconLeader_W.jpg";
 	editorCategory = "SOR_Cat_Faction_W";
 	faction = SOR_Faction_W;
 	uniformClass = "U_B_T_Soldier_F";
@@ -607,6 +593,7 @@ class SOR_Marksman_W : SOR_Marksman_D
 //Snipers
 class SOR_Sniper_W : SOR_Sniper_D
 {
+	editorPreview = "\160thSOR\data\SOR_Sniper_W.jpg";
 	editorCategory = "SOR_Cat_Faction_W";
 	faction = SOR_Faction_W;
 	uniformClass = "U_B_FullGhillie_lsh";		
@@ -614,6 +601,7 @@ class SOR_Sniper_W : SOR_Sniper_D
 
 class SOR_Spotter_W : SOR_Spotter_D
 {
+	editorPreview = "\160thSOR\data\SOR_Spotter_W.jpg";
 	editorCategory = "SOR_Cat_Faction_W";
 	faction = SOR_Faction_W;	
 	uniformClass = "U_B_FullGhillie_lsh";
@@ -622,6 +610,7 @@ class SOR_Spotter_W : SOR_Spotter_D
 //Mechanised Crew	
 class SOR_MechCrew_W : SOR_MechCrew_D
 {
+	editorPreview = "\160thSOR\data\SOR_MechCrew_W.jpg";
 	editorCategory = "SOR_Cat_Faction_W";
 	faction = SOR_Faction_W;
 	backpack = "";		
@@ -646,6 +635,7 @@ class SOR_MechCrew_W : SOR_MechCrew_D
 
 class SOR_MechOperator_W : SOR_MechCrew_W
 {
+	editorPreview = "\160thSOR\data\SOR_MechOperator_W.jpg";
 	displayName = "Mechanised Operator";
 	backpack = "SOR_Mech_Radio_W";
 	weapons[] = {"rhs_weap_m4a1_carryhandle_grip","rhsusf_weap_m9","Throw","Put","Laserdesignator"};
@@ -757,6 +747,7 @@ class SOR_MORRFL_W : SOR_Grenadier_W
 //Repair Team
 class SOR_Engineer_Teamleader_W : SOR_Engineer_Teamleader_D
 {   
+	editorPreview = "\160thSOR\data\SOR_Engineer_W.jpg";
 	editorCategory = "SOR_Cat_Faction_W";
 	faction = SOR_Faction_W;
 	displayName = "Engineer Team Leader";

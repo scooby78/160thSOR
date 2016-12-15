@@ -87,7 +87,6 @@
 						"1Rnd_HE_Grenade_shell",\
 						"1Rnd_HE_Grenade_shell"					
 
-
 #define SL_Mags	 		"30Rnd_556x45_Stanag_Tracer_Red",\
 						"30Rnd_556x45_Stanag_Tracer_Red",\
 						"30Rnd_556x45_Stanag_Tracer_Red",\

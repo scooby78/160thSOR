@@ -12,55 +12,55 @@ class CfgUnitInsignia
 		displayName = "160th Special Operation Regiment (Badge)";
 		author = "Scooby";
 		texture = "160thSOR\data\160th_badge.paa";
-		textureVehicle = "";
+		textureVehicle = "160thSOR\data\160th_badge.paa";
 	};
 	class 160thSOR_Logo
 	{
 		displayName = "160th Special Operation Regiment";
 		author = "Scooby";
 		texture = "160thSOR\data\160th_logo.paa";
-		textureVehicle = "";
+		textureVehicle = "160thSOR\data\160th_logo.paa";
 	};
 	class 160thSOR_Air_Logo
 	{
 		displayName = "160th SOR 10th Aviation Regiment";
 		author = "Scooby";
 		texture = "160thSOR\data\160th_logo_air.paa";
-		textureVehicle = "";
+		textureVehicle = "160thSOR\data\160th_logo_air.paa";
 	};
 	class 160thSOR_Air_Badge
 	{
 		displayName = "160th SOR 10th Aviation Regiment (Badge)";
 		author = "Scooby";
 		texture = "160thSOR\data\160th_badge_air.paa";
-		textureVehicle = "";
+		textureVehicle = "160thSOR\data\160th_badge_air.paa";
 	};	
 	class 160thSOR_Mech_Logo
 	{
 		displayName = "160th SOR 69th Armor Regiment";
 		author = "Scooby";
 		texture = "160thSOR\data\160th_logo_mech.paa";
-		textureVehicle = "";
+		textureVehicle = "160thSOR\data\160th_logo_mech.paa";
 	};
 	class 160thSOR_Mech_Badge
 	{
 		displayName = "160th SOR 69th Armor Regiment (Badge)";
 		author = "Scooby";
 		texture = "160thSOR\data\160th_badge_mech.paa";
-		textureVehicle = "";
+		textureVehicle = "160thSOR\data\160th_badge_mech.paa";
 	};
 	class 160thSOR_Inf_Logo
 	{
 		displayName = "160th SOR 28th Infantry Regiment";
 		author = "Scooby";
 		texture = "160thSOR\data\160th_logo_inf.paa";
-		textureVehicle = "";
+		textureVehicle = "160thSOR\data\160th_logo_inf.paa";
 	};
 	class 160thSOR_Inf_Badge
 	{
 		displayName = "160th SOR 28th Infantry Regiment (Badge)";
 		author = "Scooby";
 		texture = "160thSOR\data\160th_badge_inf.paa";
-		textureVehicle = "";
+		textureVehicle = "160thSOR\data\160th_badge_inf.paa";
 	};	
 };
