@@ -58,7 +58,7 @@ class SOR_Base: B_Soldier_base_F
 	canCarryBackPack = 1;
 	model = "\rhsusf\addons\rhsusf_infantry\rhsusf_army_base.p3d";
 	modelSides[] = {1};
-	uniformClass = "rhs_uniform_cu_ocp";
+	uniformClass = "U_B_CombatUniform_mcam";
 	nakedUniform = "U_BasicBody";
 	hiddenSelections[] = {"camo1","camo2","camo3","insignia"};
 	hiddenSelectionTextures[] = {
@@ -80,7 +80,7 @@ class SOR_Actual_D : B_officer_F
 	editorSubcategory = "SOR_SubCat_Infantry";
 	vehicleclass = "SOR_Infantry";
 	faction = SOR_Faction_D;
-	uniformClass = "rhs_uniform_cu_ocp";
+	uniformClass = "U_B_CombatUniform_mcam";
 	displayName = "Squad Actual";
 	accuracy = 3.5;
 	backpack = "tf_rt1523g_rhs";
@@ -126,7 +126,7 @@ class SOR_Commander_D : B_officer_F
 	editorSubcategory = "SOR_SubCat_Infantry";
 	vehicleclass = "SOR_Infantry";
 	faction = SOR_Faction_D;
-	uniformClass = "rhs_uniform_cu_ocp";
+	uniformClass = "U_B_CombatUniform_mcam";
 	displayName = "Havoc Commander";
 	accuracy = 3.5;
 	backpack = "tf_rt1523g_rhs";
@@ -179,7 +179,7 @@ class SOR_MechCommand_D : SOR_Commander_D
 	editorSubcategory = "SOR_SubCat_Infantry_MECH";
 	vehicleclass = "SOR_Infantry_MECH";
 	displayName = "Mechanised Commander";
-	uniformClass = "rhs_uniform_cu_ocp";
+	uniformClass = "U_B_CombatUniform_mcam";
 	weapons[] = {"rhs_weap_m4a1_carryhandle_grip", "rhsusf_weap_m9", "Throw", "Put", "Laserdesignator"};
 	respawnWeapons[] = {"rhs_weap_m4a1_carryhandle_grip", "rhsusf_weap_m9", "Throw", "Put", "Laserdesignator"};
 	linkedItems[] = 
@@ -309,7 +309,7 @@ class SOR_RTO_D : B_Soldier_F
 	vehicleclass = "SOR_Infantry";
 	faction = SOR_Faction_D;
 	displayName = "RTO";		
-	uniformClass = "rhs_uniform_cu_ocp";
+	uniformClass = "U_B_CombatUniform_mcam";
 	backpack = "SOR_RTO_Pack_D";
 	weapons[] = {"160_weap_inf_gl","rhsusf_weap_m9","Throw","Put","Laserdesignator"};
 	respawnWeapons[] = {"160_weap_inf_gl","rhsusf_weap_m9","Throw","Put","Laserdesignator"};
@@ -354,7 +354,7 @@ class SOR_Teamleader_D : B_Soldier_TL_F
 	vehicleclass = "SOR_Infantry";
 	faction = SOR_Faction_D;
 	displayName = "Team Leader";
-	uniformClass = "rhs_uniform_cu_ocp";
+	uniformClass = "U_B_CombatUniform_mcam";
 	accuracy = 3.5;		
 	backpack = "tf_rt1523g_rhs";
 	weapons[] = {"160_weap_inf_std", "rhsusf_weap_m9","Throw","Put","Rangefinder"};
@@ -417,7 +417,7 @@ class SOR_Medic_D : B_medic_F
 	vehicleclass = "SOR_Infantry";
 	faction = SOR_Faction_D;
 	displayName = "Combat Medic";
-	uniformClass = "rhs_uniform_cu_ocp";
+	uniformClass = "U_B_CombatUniform_mcam";
 	backpack = "SOR_Medic_Pack_D";
 	weapons[] = {"160_weap_inf_tl", "rhsusf_weap_m9", "Throw", "Put"};
 	respawnWeapons[] = {"160_weap_inf_tl", "rhsusf_weap_m9","Throw", "Put"};
@@ -457,7 +457,7 @@ class SOR_M249AR_D : B_soldier_AR_F
 	editorSubcategory = "SOR_SubCat_Infantry";
 	vehicleclass = "SOR_Infantry";
 	faction = SOR_Faction_D;
-	uniformClass = "rhs_uniform_cu_ocp";
+	uniformClass = "U_B_CombatUniform_mcam";
 	displayName = "AutoRifleman M249";
 	backpack = "";
 	weapons[] = {"160_weap_inf_m249", "rhsusf_weap_m9", "Throw", "Put"};
@@ -505,7 +505,7 @@ class SOR_M240AR_D : B_soldier_AR_F
 	editorSubcategory = "SOR_SubCat_Infantry";
 	vehicleclass = "SOR_Infantry";
 	faction = SOR_Faction_D;
-	uniformClass = "rhs_uniform_cu_ocp";
+	uniformClass = "U_B_CombatUniform_mcam";
 	displayName = "AutoRifleman M240";
 	backpack = "";
 	weapons[] = {"160_weap_inf_m240", "rhsusf_weap_m9", "Throw", "Put"};
@@ -553,7 +553,7 @@ class SOR_Grenadier_D : B_Soldier_GL_F
 	editorSubcategory = "SOR_SubCat_Infantry";
 	vehicleclass = "SOR_Infantry";
 	faction = SOR_Faction_D;
-	uniformClass = "rhs_uniform_cu_ocp";
+	uniformClass = "U_B_CombatUniform_mcam";
 	backpack = "";
 	weapons[] = {"160_weap_inf_gl","rhsusf_weap_m9","Throw", "Put"};
 	respawnWeapons[] = {"160_weap_inf_gl","rhsusf_weap_m9","Throw", "Put"};
@@ -594,11 +594,11 @@ class SOR_Rifleman_D : B_Soldier_F
 	editorSubcategory = "SOR_SubCat_Infantry";
 	vehicleclass = "SOR_Infantry";
 	faction = SOR_Faction_D;
-	uniformClass = "rhs_uniform_cu_ocp";
+	uniformClass = "U_B_CombatUniform_mcam";
 	displayName = "Rifleman AT Ammo Bearer (M249)";
 	backpack = "";
-	weapons[] = {"160_weap_inf_std", "rhsusf_weap_m9","rhs_weap_M136_hp","Throw","Put"};
-	respawnWeapons[] = {"160_weap_inf_std", "rhsusf_weap_m9","rhs_weap_M136_hp","Throw","Put"};
+	weapons[] = {"160_weap_inf_std", "rhsusf_weap_m9","rhs_weap_M136_hp","Throw","Put","Rangefinder"};
+	respawnWeapons[] = {"160_weap_inf_std", "rhsusf_weap_m9","rhs_weap_M136_hp","Throw","Put","Rangefinder"};
 	Items[] = 
 	{
 		"ACE_EntrenchingTool",
@@ -641,8 +641,8 @@ class SOR_Rifleman_ammo_D : SOR_Rifleman_D
 {
 	displayName = "Rifleman AT Ammo Bearer (M240)";
 	backpack = "";
-	weapons[] = {"160_weap_inf_std","rhsusf_weap_m9","rhs_weap_M136_hp","Throw","Put"};
-	respawnWeapons[] = {"160_weap_inf_std","rhsusf_weap_m9","rhs_weap_M136_hp","Throw","Put"};
+	weapons[] = {"160_weap_inf_std","rhsusf_weap_m9","rhs_weap_M136_hp","Throw","Put","Rangefinder"};
+	respawnWeapons[] = {"160_weap_inf_std","rhsusf_weap_m9","rhs_weap_M136_hp","Throw","Put","Rangefinder"};
 	magazines[] = 
 	{
 		Standard_Mags,
@@ -664,11 +664,11 @@ class SOR_RiflemanAT_D : B_soldier_AT_F
 	editorSubcategory = "SOR_SubCat_Infantry";
 	vehicleclass = "SOR_Infantry";
 	faction = SOR_Faction_D;
-	uniformClass = "rhs_uniform_cu_ocp";
+	uniformClass = "U_B_CombatUniform_mcam";
 	displayName = "Rifleman AT";
 	backpack = "SOR_RFLAT_Pack_D";
-	weapons[] = {"160_weap_inf_std", "rhsusf_weap_m9","rhs_weap_M136_hp", "Throw", "Put"};
-	respawnWeapons[] = {"160_weap_inf_std", "rhsusf_weap_m9","rhs_weap_M136_hp","Throw", "Put"};
+	weapons[] = {"160_weap_inf_std", "rhsusf_weap_m9","rhs_weap_M136_hp", "Throw", "Put","Rangefinder"};
+	respawnWeapons[] = {"160_weap_inf_std", "rhsusf_weap_m9","rhs_weap_M136_hp","Throw", "Put","Rangefinder"};
 	Items[] = {Standard_Meds};
 	RespawnItems[] = {Standard_Meds};
 	magazines[] = {Standard_Mags,Std_Pistol};
@@ -697,7 +697,7 @@ class SOR_HeliPilot_D : B_Pilot_F
 	editorSubcategory = "SOR_SubCat_Infantry_AIR";
 	vehicleclass = "SOR_Infantry_AIR";
 	faction = SOR_Faction_D;
-	uniformClass = "rhs_uniform_cu_ocp";
+	uniformClass = "U_B_CombatUniform_mcam";
 	uavHacker = 1; // allows UAV control
 	engineer = 1; // allows unit to repair 
 	displayName = "Heli Pilot";
@@ -742,7 +742,7 @@ class SOR_HeliCrew_D : B_crew_F
 	editorSubcategory = "SOR_SubCat_Infantry_AIR";
 	vehicleclass = "SOR_Infantry_AIR";
 	faction = SOR_Faction_D;
-	uniformClass = "rhs_uniform_cu_ocp";
+	uniformClass = "U_B_CombatUniform_mcam";
 	displayName = "Heli Crew";
 	backpack = "SOR_Repair_Pack_D";
 	uavHacker = 1; // allows UAV control		
@@ -856,7 +856,7 @@ class SOR_ParaJumper_D : B_medic_F
 	faction = SOR_Faction_D;
 	displayName = "Para Jumper";
 	backpack = "SOR_PJMedicPack_D";
-	uniformClass = "rhs_uniform_g3_mc";
+	uniformClass = "U_B_CombatUniform_mcam_vest";
 	uavHacker = 1; // allows UAV control
 	engineer = 1; // allows unit to repair 		
 	weapons[] = {"160_weap_PJ", "rhsusf_weap_m9","Throw", "Put","Laserdesignator"};
@@ -915,7 +915,7 @@ class SOR_ReconLeader_D : B_recon_TL_F
 	editorSubcategory = "SOR_SubCat_Infantry_Recon";
 	vehicleclass = "SOR_Infantry_Recon";
 	faction = SOR_Faction_D;
-	uniformClass = "rhs_uniform_cu_ocp";
+	uniformClass = "U_B_CombatUniform_mcam";
 	backpack = "tf_anarc210";
 	displayName = "Recon Lead";
 	accuracy = 3.5;
@@ -1215,7 +1215,7 @@ class SOR_MechCrew_D : B_crew_F
 	vehicleclass = "SOR_Infantry_MECH";
 	faction = SOR_Faction_D;
 	displayName = "Mechanised Gunner";
-	uniformClass = "rhs_uniform_cu_ocp"; 
+	uniformClass = "U_B_CombatUniform_mcam"; 
 	backpack = "";
 	weapons[] = {"rhsusf_weap_m9","Throw", "Put"};
 	respawnWeapons[] = {"rhsusf_weap_m9","Throw", "Put"};
@@ -1398,7 +1398,7 @@ class SOR_Engineer_Teamleader_D : B_engineer_F
 	vehicleclass = "SOR_Infantry_Support";
 	faction = SOR_Faction_D;		
 	displayName = "Engineer Team Leader";
-	uniformClass = "rhs_uniform_cu_ocp";
+	uniformClass = "U_B_CombatUniform_mcam";
 	backpack = "tf_anarc210";
 	weapons[] = {"rhs_weap_m4a1_carryhandle_grip","Throw","Put","Rangefinder"};
 	respawnWeapons[] = {"rhs_weap_m4a1_carryhandle_grip","Throw","Put","Rangefinder"};
