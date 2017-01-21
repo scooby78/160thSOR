@@ -116,6 +116,10 @@ class SOR_Actual_D : B_officer_F
 		"rhs_googles_clear",  
 		Standard_Equipment
 	};
+	class eventHandlers
+	{
+		init="_null = [[(_this select 0), '160thSOR_Inf_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
+	};	
 };
 
 //Commander		
@@ -170,6 +174,10 @@ class SOR_Commander_D : B_officer_F
 		"rhs_googles_clear",  
 		Standard_Equipment
 	};
+	class eventHandlers
+	{
+		init="_null = [[(_this select 0), '160thSOR_Inf_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
+	};	
 };
 
 //Mechanised Commander 
@@ -198,6 +206,10 @@ class SOR_MechCommand_D : SOR_Commander_D
 		"ItemGPS",
 		Standard_Equipment
 	};
+	class eventHandlers
+	{
+		init="_null = [[(_this select 0), '160thSOR_Mech_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
+	};	
 };	
 
 //Air Commander 
@@ -246,35 +258,10 @@ class SOR_AirCommand_D : SOR_Commander_D
 		"H_PilotHelmetHeli_O",
 		Airborne_Equipment
 	};
-/*
-	class UserActions
+	class eventHandlers
 	{
-		class radar_off
-		{
-			condition = "(this getVariable ['AWACS_ACTIVE',false]) && (alive this)";
-			displayName = "<t color='#F088ff'>Turn Radar OFF</t>";
-			priority = 8;
-			showWindow = 0;
-			hideOnUse = 1;
-			radius= 8;
-			position = "";
-			onlyForPlayer = 1;
-			statement = "[this] spawn SOR_fnc_AWACSTARGETING";
-		};
-		class radar_on
-		{
-			condition = "!(this getVariable ['AWACS_ACTIVE',false]) && (alive this) && (alive (nearestObject [this, ""SOR_Land_Radar""])) && ((this distance (nearestObject [this, ""Land_Laptop_unfolded_F""]) < 2) && (damage (nearestObject [this, ""Land_Laptop_unfolded_F""]) < 1))";
-			displayName = "<t color='#F088ff'>Turn Radar ON</t>";
-			priority = 8;
-			showWindow = 1;
-			hideOnUse = 1;
-			radius= 8;
-			position = "";
-			onlyForPlayer = 1;
-			statement = "[this] spawn SOR_fnc_AWACSTARGETING";
-		};
+		init="_null = [[(_this select 0), '160thSOR_Air_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
 	};
-*/	
 };	
 
 //Zeus unit
@@ -298,6 +285,10 @@ class SOR_ZeusCommand_D : SOR_Commander_D
 			statement = "[this] spawn SOR_fnc_zeusTools";
 		};
 	};
+	class eventHandlers
+	{
+		init="_null = [[(_this select 0), '160thSOR_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
+	};	
 };	
 
 //Platoon RTO
@@ -343,6 +334,10 @@ class SOR_RTO_D : B_Soldier_F
 		"ItemGPS", 
 		Standard_Equipment
 	};
+	class eventHandlers
+	{
+		init="_null = [[(_this select 0), '160thSOR_Inf_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
+	};	
 };
 	
 //Teamleader	
@@ -388,7 +383,11 @@ class SOR_Teamleader_D : B_Soldier_TL_F
 		"ItemGPS", 
 		"rhs_googles_clear",  
 		Standard_Equipment
-	};			
+	};
+	class eventHandlers
+	{
+		init="_null = [[(_this select 0), '160thSOR_Inf_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
+	};		
 };
 
 class SOR_Teamleader2_D : SOR_Teamleader_D
@@ -441,6 +440,10 @@ class SOR_Medic_D : B_medic_F
 		"rhs_googles_clear", 
 		Standard_Equipment
 	};
+	class eventHandlers
+	{
+		init="_null = [[(_this select 0), '160thSOR_Med_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
+	};	
 };
 
 class SOR_HMedic_D : SOR_Medic_D
@@ -496,6 +499,10 @@ class SOR_M249AR_D : B_soldier_AR_F
 		"rhs_ess_black",
 		Standard_Equipment
 	};
+	class eventHandlers
+	{
+		init="_null = [[(_this select 0), '160thSOR_Inf_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
+	};	
 };
 
 class SOR_M240AR_D : B_soldier_AR_F
@@ -544,6 +551,10 @@ class SOR_M240AR_D : B_soldier_AR_F
 		"rhs_ess_black",  
 		Standard_Equipment
 	};
+	class eventHandlers
+	{
+		init="_null = [[(_this select 0), '160thSOR_Inf_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
+	};	
 };
 
 class SOR_Grenadier_D : B_Soldier_GL_F
@@ -585,6 +596,10 @@ class SOR_Grenadier_D : B_Soldier_GL_F
 		"rhs_googles_clear",  
 		Standard_Equipment
 	};
+	class eventHandlers
+	{
+		init="_null = [[(_this select 0), '160thSOR_Inf_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
+	};	
 };
 
 class SOR_Rifleman_D : B_Soldier_F
@@ -635,6 +650,10 @@ class SOR_Rifleman_D : B_Soldier_F
 		"rhs_googles_clear",
 		Standard_Equipment
 	};
+	class eventHandlers
+	{
+		init="_null = [[(_this select 0), '160thSOR_Inf_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
+	};	
 };					
 
 class SOR_Rifleman_ammo_D : SOR_Rifleman_D	
@@ -687,6 +706,10 @@ class SOR_RiflemanAT_D : B_soldier_AT_F
 		"rhs_googles_clear",  
 		Standard_Equipment
 	};
+	class eventHandlers
+	{
+		init="_null = [[(_this select 0), '160thSOR_Inf_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
+	};	
 };	
 		
 //Heli Pilot & CO-Pilot
@@ -732,6 +755,10 @@ class SOR_HeliPilot_D : B_Pilot_F
 		"H_PilotHelmetHeli_O",
 		Airborne_Equipment
 	};
+	class eventHandlers
+	{
+		init="_null = [[(_this select 0), '160thSOR_Air_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
+	};	
 };
 
 //Heli Crew Engineers
@@ -783,6 +810,10 @@ class SOR_HeliCrew_D : B_crew_F
 		"H_PilotHelmetHeli_O", 
 		Airborne_Equipment
 	};
+	class eventHandlers
+	{
+		init="_null = [[(_this select 0), '160thSOR_Air_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
+	};	
 };
 
 //Jet Pilots
@@ -825,6 +856,10 @@ class SOR_JetPilot_D : B_Pilot_F
 		"H_PilotHelmetFighter_B",
 		Airborne_Equipment
 	};
+	class eventHandlers
+	{
+		init="_null = [[(_this select 0), '160thSOR_Air_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
+	};	
 };
 	
 // MEV Pilot & CO-Pilot
@@ -905,6 +940,10 @@ class SOR_ParaJumper_D : B_medic_F
 			statement = "[this] spawn SOR_fnc_parajump; SOR_ParaJump_Active = false;";
 		};
 	};
+	class eventHandlers
+	{
+		init="_null = [[(_this select 0), '160thSOR_Med_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
+	};	
 };
 
 //Recon Units
@@ -974,6 +1013,10 @@ class SOR_ReconLeader_D : B_recon_TL_F
 			onlyForPlayer = 1;
 			statement = "[this] spawn SOR_fnc_parajump; SOR_ParaJump_Active = false;";
 		};
+	};	
+	class eventHandlers
+	{
+		init="_null = [[(_this select 0), '160thSOR_Inf_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
 	};		
 };
 
@@ -1156,6 +1199,10 @@ class SOR_Sniper_D : B_sniper_F
 	{	
 		Recon_Equipment
 	};
+	class eventHandlers
+	{
+		init="_null = [[(_this select 0), '160thSOR_Inf_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
+	};	
 };
 
 class SOR_Spotter_D : B_spotter_F
@@ -1203,6 +1250,10 @@ class SOR_Spotter_D : B_spotter_F
 	respawnLinkedItems[] = 
 	{	
 		Recon_Equipment
+	};	
+	class eventHandlers
+	{
+		init="_null = [[(_this select 0), '160thSOR_Inf_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
 	};		
 };
 
@@ -1245,6 +1296,10 @@ class SOR_MechCrew_D : B_crew_F
 		"ItemGPS",
 		Standard_Equipment
 	};
+	class eventHandlers
+	{
+		init="_null = [[(_this select 0), '160thSOR_Mech_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
+	};	
 };
 
 class SOR_MechOperator_D : SOR_MechCrew_D
@@ -1422,18 +1477,24 @@ class SOR_Engineer_Teamleader_D : B_engineer_F
 	};
 	linkedItems[] = 
 	{	
-		"rhsusf_iotv_ocp_Repair",
+		"ItemGPS",
+		"V_PlateCarrierGL_mtp",
 		"H_HelmetSpecB_paint2", 
 		"rhs_googles_clear",
 		Standard_Equipment
 	};
 	respawnLinkedItems[] = 
 	{	
-		"rhsusf_iotv_ocp_Repair",
+		"ItemGPS",
+		"V_PlateCarrierGL_mtp",
 		"H_HelmetSpecB_paint2",
 		"rhs_googles_clear",
 		Standard_Equipment
 	};
+	class eventHandlers
+	{
+		init="_null = [[(_this select 0), '160thSOR_Eng_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
+	};	
 };
 
 class SOR_Engineer_D : SOR_Engineer_Teamleader_D
