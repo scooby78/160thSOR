@@ -58,7 +58,7 @@ class SOR_Base: B_Soldier_base_F
 	canCarryBackPack = 1;
 	model = "\rhsusf\addons\rhsusf_infantry\rhsusf_army_base.p3d";
 	modelSides[] = {1};
-	uniformClass = "rhs_uniform_cu_ocp";
+	uniformClass = "U_B_CombatUniform_mcam";
 	nakedUniform = "U_BasicBody";
 	hiddenSelections[] = {"camo1","camo2","camo3","insignia"};
 	hiddenSelectionTextures[] = {
@@ -80,7 +80,7 @@ class SOR_Actual_D : B_officer_F
 	editorSubcategory = "SOR_SubCat_Infantry";
 	vehicleclass = "SOR_Infantry";
 	faction = SOR_Faction_D;
-	uniformClass = "rhs_uniform_cu_ocp";
+	uniformClass = "U_B_CombatUniform_mcam";
 	displayName = "Squad Actual";
 	accuracy = 3.5;
 	backpack = "tf_rt1523g_rhs";
@@ -116,6 +116,10 @@ class SOR_Actual_D : B_officer_F
 		"rhs_googles_clear",  
 		Standard_Equipment
 	};
+	class eventHandlers
+	{
+		init="_null = [[(_this select 0), '160thSOR_Inf_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
+	};	
 };
 
 //Commander		
@@ -126,7 +130,7 @@ class SOR_Commander_D : B_officer_F
 	editorSubcategory = "SOR_SubCat_Infantry";
 	vehicleclass = "SOR_Infantry";
 	faction = SOR_Faction_D;
-	uniformClass = "rhs_uniform_cu_ocp";
+	uniformClass = "U_B_CombatUniform_mcam";
 	displayName = "Havoc Commander";
 	accuracy = 3.5;
 	backpack = "tf_rt1523g_rhs";
@@ -170,6 +174,10 @@ class SOR_Commander_D : B_officer_F
 		"rhs_googles_clear",  
 		Standard_Equipment
 	};
+	class eventHandlers
+	{
+		init="_null = [[(_this select 0), '160thSOR_Inf_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
+	};	
 };
 
 //Mechanised Commander 
@@ -179,7 +187,7 @@ class SOR_MechCommand_D : SOR_Commander_D
 	editorSubcategory = "SOR_SubCat_Infantry_MECH";
 	vehicleclass = "SOR_Infantry_MECH";
 	displayName = "Mechanised Commander";
-	uniformClass = "rhs_uniform_cu_ocp";
+	uniformClass = "U_B_CombatUniform_mcam";
 	weapons[] = {"rhs_weap_m4a1_carryhandle_grip", "rhsusf_weap_m9", "Throw", "Put", "Laserdesignator"};
 	respawnWeapons[] = {"rhs_weap_m4a1_carryhandle_grip", "rhsusf_weap_m9", "Throw", "Put", "Laserdesignator"};
 	linkedItems[] = 
@@ -198,6 +206,10 @@ class SOR_MechCommand_D : SOR_Commander_D
 		"ItemGPS",
 		Standard_Equipment
 	};
+	class eventHandlers
+	{
+		init="_null = [[(_this select 0), '160thSOR_Mech_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
+	};	
 };	
 
 //Air Commander 
@@ -246,35 +258,10 @@ class SOR_AirCommand_D : SOR_Commander_D
 		"H_PilotHelmetHeli_O",
 		Airborne_Equipment
 	};
-/*
-	class UserActions
+	class eventHandlers
 	{
-		class radar_off
-		{
-			condition = "(this getVariable ['AWACS_ACTIVE',false]) && (alive this)";
-			displayName = "<t color='#F088ff'>Turn Radar OFF</t>";
-			priority = 8;
-			showWindow = 0;
-			hideOnUse = 1;
-			radius= 8;
-			position = "";
-			onlyForPlayer = 1;
-			statement = "[this] spawn SOR_fnc_AWACSTARGETING";
-		};
-		class radar_on
-		{
-			condition = "!(this getVariable ['AWACS_ACTIVE',false]) && (alive this) && (alive (nearestObject [this, ""SOR_Land_Radar""])) && ((this distance (nearestObject [this, ""Land_Laptop_unfolded_F""]) < 2) && (damage (nearestObject [this, ""Land_Laptop_unfolded_F""]) < 1))";
-			displayName = "<t color='#F088ff'>Turn Radar ON</t>";
-			priority = 8;
-			showWindow = 1;
-			hideOnUse = 1;
-			radius= 8;
-			position = "";
-			onlyForPlayer = 1;
-			statement = "[this] spawn SOR_fnc_AWACSTARGETING";
-		};
+		init="_null = [[(_this select 0), '160thSOR_Air_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
 	};
-*/	
 };	
 
 //Zeus unit
@@ -298,6 +285,10 @@ class SOR_ZeusCommand_D : SOR_Commander_D
 			statement = "[this] spawn SOR_fnc_zeusTools";
 		};
 	};
+	class eventHandlers
+	{
+		init="_null = [[(_this select 0), '160thSOR_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
+	};	
 };	
 
 //Platoon RTO
@@ -309,7 +300,7 @@ class SOR_RTO_D : B_Soldier_F
 	vehicleclass = "SOR_Infantry";
 	faction = SOR_Faction_D;
 	displayName = "RTO";		
-	uniformClass = "rhs_uniform_cu_ocp";
+	uniformClass = "U_B_CombatUniform_mcam";
 	backpack = "SOR_RTO_Pack_D";
 	weapons[] = {"160_weap_inf_gl","rhsusf_weap_m9","Throw","Put","Laserdesignator"};
 	respawnWeapons[] = {"160_weap_inf_gl","rhsusf_weap_m9","Throw","Put","Laserdesignator"};
@@ -343,6 +334,10 @@ class SOR_RTO_D : B_Soldier_F
 		"ItemGPS", 
 		Standard_Equipment
 	};
+	class eventHandlers
+	{
+		init="_null = [[(_this select 0), '160thSOR_Inf_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
+	};	
 };
 	
 //Teamleader	
@@ -354,7 +349,7 @@ class SOR_Teamleader_D : B_Soldier_TL_F
 	vehicleclass = "SOR_Infantry";
 	faction = SOR_Faction_D;
 	displayName = "Team Leader";
-	uniformClass = "rhs_uniform_cu_ocp";
+	uniformClass = "U_B_CombatUniform_mcam";
 	accuracy = 3.5;		
 	backpack = "tf_rt1523g_rhs";
 	weapons[] = {"160_weap_inf_std", "rhsusf_weap_m9","Throw","Put","Rangefinder"};
@@ -388,7 +383,11 @@ class SOR_Teamleader_D : B_Soldier_TL_F
 		"ItemGPS", 
 		"rhs_googles_clear",  
 		Standard_Equipment
-	};			
+	};
+	class eventHandlers
+	{
+		init="_null = [[(_this select 0), '160thSOR_Inf_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
+	};		
 };
 
 class SOR_Teamleader2_D : SOR_Teamleader_D
@@ -417,7 +416,7 @@ class SOR_Medic_D : B_medic_F
 	vehicleclass = "SOR_Infantry";
 	faction = SOR_Faction_D;
 	displayName = "Combat Medic";
-	uniformClass = "rhs_uniform_cu_ocp";
+	uniformClass = "U_B_CombatUniform_mcam";
 	backpack = "SOR_Medic_Pack_D";
 	weapons[] = {"160_weap_inf_tl", "rhsusf_weap_m9", "Throw", "Put"};
 	respawnWeapons[] = {"160_weap_inf_tl", "rhsusf_weap_m9","Throw", "Put"};
@@ -441,6 +440,10 @@ class SOR_Medic_D : B_medic_F
 		"rhs_googles_clear", 
 		Standard_Equipment
 	};
+	class eventHandlers
+	{
+		init="_null = [[(_this select 0), '160thSOR_Med_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
+	};	
 };
 
 class SOR_HMedic_D : SOR_Medic_D
@@ -457,7 +460,7 @@ class SOR_M249AR_D : B_soldier_AR_F
 	editorSubcategory = "SOR_SubCat_Infantry";
 	vehicleclass = "SOR_Infantry";
 	faction = SOR_Faction_D;
-	uniformClass = "rhs_uniform_cu_ocp";
+	uniformClass = "U_B_CombatUniform_mcam";
 	displayName = "AutoRifleman M249";
 	backpack = "";
 	weapons[] = {"160_weap_inf_m249", "rhsusf_weap_m9", "Throw", "Put"};
@@ -496,6 +499,10 @@ class SOR_M249AR_D : B_soldier_AR_F
 		"rhs_ess_black",
 		Standard_Equipment
 	};
+	class eventHandlers
+	{
+		init="_null = [[(_this select 0), '160thSOR_Inf_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
+	};	
 };
 
 class SOR_M240AR_D : B_soldier_AR_F
@@ -505,7 +512,7 @@ class SOR_M240AR_D : B_soldier_AR_F
 	editorSubcategory = "SOR_SubCat_Infantry";
 	vehicleclass = "SOR_Infantry";
 	faction = SOR_Faction_D;
-	uniformClass = "rhs_uniform_cu_ocp";
+	uniformClass = "U_B_CombatUniform_mcam";
 	displayName = "AutoRifleman M240";
 	backpack = "";
 	weapons[] = {"160_weap_inf_m240", "rhsusf_weap_m9", "Throw", "Put"};
@@ -544,6 +551,10 @@ class SOR_M240AR_D : B_soldier_AR_F
 		"rhs_ess_black",  
 		Standard_Equipment
 	};
+	class eventHandlers
+	{
+		init="_null = [[(_this select 0), '160thSOR_Inf_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
+	};	
 };
 
 class SOR_Grenadier_D : B_Soldier_GL_F
@@ -553,7 +564,7 @@ class SOR_Grenadier_D : B_Soldier_GL_F
 	editorSubcategory = "SOR_SubCat_Infantry";
 	vehicleclass = "SOR_Infantry";
 	faction = SOR_Faction_D;
-	uniformClass = "rhs_uniform_cu_ocp";
+	uniformClass = "U_B_CombatUniform_mcam";
 	backpack = "";
 	weapons[] = {"160_weap_inf_gl","rhsusf_weap_m9","Throw", "Put"};
 	respawnWeapons[] = {"160_weap_inf_gl","rhsusf_weap_m9","Throw", "Put"};
@@ -585,6 +596,10 @@ class SOR_Grenadier_D : B_Soldier_GL_F
 		"rhs_googles_clear",  
 		Standard_Equipment
 	};
+	class eventHandlers
+	{
+		init="_null = [[(_this select 0), '160thSOR_Inf_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
+	};	
 };
 
 class SOR_Rifleman_D : B_Soldier_F
@@ -594,11 +609,11 @@ class SOR_Rifleman_D : B_Soldier_F
 	editorSubcategory = "SOR_SubCat_Infantry";
 	vehicleclass = "SOR_Infantry";
 	faction = SOR_Faction_D;
-	uniformClass = "rhs_uniform_cu_ocp";
+	uniformClass = "U_B_CombatUniform_mcam";
 	displayName = "Rifleman AT Ammo Bearer (M249)";
 	backpack = "";
-	weapons[] = {"160_weap_inf_std", "rhsusf_weap_m9","rhs_weap_M136_hp","Throw","Put"};
-	respawnWeapons[] = {"160_weap_inf_std", "rhsusf_weap_m9","rhs_weap_M136_hp","Throw","Put"};
+	weapons[] = {"160_weap_inf_std", "rhsusf_weap_m9","rhs_weap_M136_hp","Throw","Put","Rangefinder"};
+	respawnWeapons[] = {"160_weap_inf_std", "rhsusf_weap_m9","rhs_weap_M136_hp","Throw","Put","Rangefinder"};
 	Items[] = 
 	{
 		"ACE_EntrenchingTool",
@@ -635,14 +650,18 @@ class SOR_Rifleman_D : B_Soldier_F
 		"rhs_googles_clear",
 		Standard_Equipment
 	};
+	class eventHandlers
+	{
+		init="_null = [[(_this select 0), '160thSOR_Inf_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
+	};	
 };					
 
 class SOR_Rifleman_ammo_D : SOR_Rifleman_D	
 {
 	displayName = "Rifleman AT Ammo Bearer (M240)";
 	backpack = "";
-	weapons[] = {"160_weap_inf_std","rhsusf_weap_m9","rhs_weap_M136_hp","Throw","Put"};
-	respawnWeapons[] = {"160_weap_inf_std","rhsusf_weap_m9","rhs_weap_M136_hp","Throw","Put"};
+	weapons[] = {"160_weap_inf_std","rhsusf_weap_m9","rhs_weap_M136_hp","Throw","Put","Rangefinder"};
+	respawnWeapons[] = {"160_weap_inf_std","rhsusf_weap_m9","rhs_weap_M136_hp","Throw","Put","Rangefinder"};
 	magazines[] = 
 	{
 		Standard_Mags,
@@ -664,11 +683,11 @@ class SOR_RiflemanAT_D : B_soldier_AT_F
 	editorSubcategory = "SOR_SubCat_Infantry";
 	vehicleclass = "SOR_Infantry";
 	faction = SOR_Faction_D;
-	uniformClass = "rhs_uniform_cu_ocp";
+	uniformClass = "U_B_CombatUniform_mcam";
 	displayName = "Rifleman AT";
 	backpack = "SOR_RFLAT_Pack_D";
-	weapons[] = {"160_weap_inf_std", "rhsusf_weap_m9","rhs_weap_M136_hp", "Throw", "Put"};
-	respawnWeapons[] = {"160_weap_inf_std", "rhsusf_weap_m9","rhs_weap_M136_hp","Throw", "Put"};
+	weapons[] = {"160_weap_inf_std", "rhsusf_weap_m9","rhs_weap_M136_hp", "Throw", "Put","Rangefinder"};
+	respawnWeapons[] = {"160_weap_inf_std", "rhsusf_weap_m9","rhs_weap_M136_hp","Throw", "Put","Rangefinder"};
 	Items[] = {Standard_Meds};
 	RespawnItems[] = {Standard_Meds};
 	magazines[] = {Standard_Mags,Std_Pistol};
@@ -687,6 +706,10 @@ class SOR_RiflemanAT_D : B_soldier_AT_F
 		"rhs_googles_clear",  
 		Standard_Equipment
 	};
+	class eventHandlers
+	{
+		init="_null = [[(_this select 0), '160thSOR_Inf_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
+	};	
 };	
 		
 //Heli Pilot & CO-Pilot
@@ -697,7 +720,7 @@ class SOR_HeliPilot_D : B_Pilot_F
 	editorSubcategory = "SOR_SubCat_Infantry_AIR";
 	vehicleclass = "SOR_Infantry_AIR";
 	faction = SOR_Faction_D;
-	uniformClass = "rhs_uniform_cu_ocp";
+	uniformClass = "U_B_CombatUniform_mcam";
 	uavHacker = 1; // allows UAV control
 	engineer = 1; // allows unit to repair 
 	displayName = "Heli Pilot";
@@ -732,6 +755,10 @@ class SOR_HeliPilot_D : B_Pilot_F
 		"H_PilotHelmetHeli_O",
 		Airborne_Equipment
 	};
+	class eventHandlers
+	{
+		init="_null = [[(_this select 0), '160thSOR_Air_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
+	};	
 };
 
 //Heli Crew Engineers
@@ -742,7 +769,7 @@ class SOR_HeliCrew_D : B_crew_F
 	editorSubcategory = "SOR_SubCat_Infantry_AIR";
 	vehicleclass = "SOR_Infantry_AIR";
 	faction = SOR_Faction_D;
-	uniformClass = "rhs_uniform_cu_ocp";
+	uniformClass = "U_B_CombatUniform_mcam";
 	displayName = "Heli Crew";
 	backpack = "SOR_Repair_Pack_D";
 	uavHacker = 1; // allows UAV control		
@@ -783,6 +810,10 @@ class SOR_HeliCrew_D : B_crew_F
 		"H_PilotHelmetHeli_O", 
 		Airborne_Equipment
 	};
+	class eventHandlers
+	{
+		init="_null = [[(_this select 0), '160thSOR_Air_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
+	};	
 };
 
 //Jet Pilots
@@ -825,6 +856,10 @@ class SOR_JetPilot_D : B_Pilot_F
 		"H_PilotHelmetFighter_B",
 		Airborne_Equipment
 	};
+	class eventHandlers
+	{
+		init="_null = [[(_this select 0), '160thSOR_Air_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
+	};	
 };
 	
 // MEV Pilot & CO-Pilot
@@ -856,7 +891,7 @@ class SOR_ParaJumper_D : B_medic_F
 	faction = SOR_Faction_D;
 	displayName = "Para Jumper";
 	backpack = "SOR_PJMedicPack_D";
-	uniformClass = "rhs_uniform_g3_mc";
+	uniformClass = "U_B_CombatUniform_mcam_vest";
 	uavHacker = 1; // allows UAV control
 	engineer = 1; // allows unit to repair 		
 	weapons[] = {"160_weap_PJ", "rhsusf_weap_m9","Throw", "Put","Laserdesignator"};
@@ -905,6 +940,10 @@ class SOR_ParaJumper_D : B_medic_F
 			statement = "[this] spawn SOR_fnc_parajump; SOR_ParaJump_Active = false;";
 		};
 	};
+	class eventHandlers
+	{
+		init="_null = [[(_this select 0), '160thSOR_Med_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
+	};	
 };
 
 //Recon Units
@@ -915,7 +954,7 @@ class SOR_ReconLeader_D : B_recon_TL_F
 	editorSubcategory = "SOR_SubCat_Infantry_Recon";
 	vehicleclass = "SOR_Infantry_Recon";
 	faction = SOR_Faction_D;
-	uniformClass = "rhs_uniform_cu_ocp";
+	uniformClass = "U_B_CombatUniform_mcam";
 	backpack = "tf_anarc210";
 	displayName = "Recon Lead";
 	accuracy = 3.5;
@@ -974,6 +1013,10 @@ class SOR_ReconLeader_D : B_recon_TL_F
 			onlyForPlayer = 1;
 			statement = "[this] spawn SOR_fnc_parajump; SOR_ParaJump_Active = false;";
 		};
+	};	
+	class eventHandlers
+	{
+		init="_null = [[(_this select 0), '160thSOR_Inf_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
 	};		
 };
 
@@ -1156,6 +1199,10 @@ class SOR_Sniper_D : B_sniper_F
 	{	
 		Recon_Equipment
 	};
+	class eventHandlers
+	{
+		init="_null = [[(_this select 0), '160thSOR_Inf_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
+	};	
 };
 
 class SOR_Spotter_D : B_spotter_F
@@ -1203,6 +1250,10 @@ class SOR_Spotter_D : B_spotter_F
 	respawnLinkedItems[] = 
 	{	
 		Recon_Equipment
+	};	
+	class eventHandlers
+	{
+		init="_null = [[(_this select 0), '160thSOR_Inf_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
 	};		
 };
 
@@ -1215,7 +1266,7 @@ class SOR_MechCrew_D : B_crew_F
 	vehicleclass = "SOR_Infantry_MECH";
 	faction = SOR_Faction_D;
 	displayName = "Mechanised Gunner";
-	uniformClass = "rhs_uniform_cu_ocp"; 
+	uniformClass = "U_B_CombatUniform_mcam"; 
 	backpack = "";
 	weapons[] = {"rhsusf_weap_m9","Throw", "Put"};
 	respawnWeapons[] = {"rhsusf_weap_m9","Throw", "Put"};
@@ -1245,6 +1296,10 @@ class SOR_MechCrew_D : B_crew_F
 		"ItemGPS",
 		Standard_Equipment
 	};
+	class eventHandlers
+	{
+		init="_null = [[(_this select 0), '160thSOR_Mech_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
+	};	
 };
 
 class SOR_MechOperator_D : SOR_MechCrew_D
@@ -1398,7 +1453,7 @@ class SOR_Engineer_Teamleader_D : B_engineer_F
 	vehicleclass = "SOR_Infantry_Support";
 	faction = SOR_Faction_D;		
 	displayName = "Engineer Team Leader";
-	uniformClass = "rhs_uniform_cu_ocp";
+	uniformClass = "U_B_CombatUniform_mcam";
 	backpack = "tf_anarc210";
 	weapons[] = {"rhs_weap_m4a1_carryhandle_grip","Throw","Put","Rangefinder"};
 	respawnWeapons[] = {"rhs_weap_m4a1_carryhandle_grip","Throw","Put","Rangefinder"};
@@ -1422,18 +1477,24 @@ class SOR_Engineer_Teamleader_D : B_engineer_F
 	};
 	linkedItems[] = 
 	{	
-		"rhsusf_iotv_ocp_Repair",
+		"ItemGPS",
+		"V_PlateCarrierGL_mtp",
 		"H_HelmetSpecB_paint2", 
 		"rhs_googles_clear",
 		Standard_Equipment
 	};
 	respawnLinkedItems[] = 
 	{	
-		"rhsusf_iotv_ocp_Repair",
+		"ItemGPS",
+		"V_PlateCarrierGL_mtp",
 		"H_HelmetSpecB_paint2",
 		"rhs_googles_clear",
 		Standard_Equipment
 	};
+	class eventHandlers
+	{
+		init="_null = [[(_this select 0), '160thSOR_Eng_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
+	};	
 };
 
 class SOR_Engineer_D : SOR_Engineer_Teamleader_D

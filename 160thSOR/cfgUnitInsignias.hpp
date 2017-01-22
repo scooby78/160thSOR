@@ -62,5 +62,19 @@ class CfgUnitInsignia
 		author = "Scooby";
 		texture = "160thSOR\data\160th_badge_inf.paa";
 		textureVehicle = "160thSOR\data\160th_badge_inf.paa";
+	};
+	class 160thSOR_Med_Badge
+	{
+		displayName = "160th SOR 28th Infantry Medic (Badge)";
+		author = "Yettie";
+		texture = "160thSOR\data\160th_badge_med.paa";
+		textureVehicle = "160thSOR\data\160th_badge_med.paa";
+	};	
+	class 160thSOR_Eng_Badge
+	{
+		displayName = "160th SOR Engineering (Badge)";
+		author = "Scooby";
+		texture = "160thSOR\data\160th_badge_eng.paa";
+		textureVehicle = "160thSOR\data\160th_badge_eng.paa";
 	};	
 };

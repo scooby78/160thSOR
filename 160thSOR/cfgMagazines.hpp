@@ -12,7 +12,7 @@ class CfgMagazines
 	
 	class SOR_rhsusf_100Rnd_762x51_m62_tracer: rhsusf_100Rnd_762x51_m62_tracer 
 	{
-		ammo = "B_762x51_Tracer_Red";
+		ammo = "B_338_Ball";		
 	};
 	class 1Rnd_Smoke_Grenade_shell: 1Rnd_HE_Grenade_shell
 	{
