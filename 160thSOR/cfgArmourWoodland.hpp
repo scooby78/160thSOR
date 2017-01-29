@@ -6,16 +6,26 @@
 	Note: Only Armour units that are proven not "buggy" should be put in here.
 */
 
-// LAV25A
+// LAV25A2
 class SOR_LAV_wd : SOR_LAV
 {
-	editorPreview = "rhsusf\addons\rhsusf_editorPreviews\data\RHS_M6_wd.paa";
 	editorCategory = "SOR_Cat_Faction_W";
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_W;
 	hiddenSelections[]= {"Camo1","Camo2","clan","clan_sign"};
 	hiddenSelectionsTextures[]= {"\Cha\Cha_LAV25\data\lavbody_co.paa","\Cha\Cha_LAV25\data\lavbody2_co.paa","",""};
 };
+
+// LAV25A2
+class SOR_LAV_HQ_wd : SOR_LAV_HQ
+{
+	editorCategory = "SOR_Cat_Faction_W";
+	vehicleclass = "SOR_Vehicles";
+	faction = SOR_Faction_W;
+	hiddenSelections[]= {"Camo1","Camo2","Camo3"};
+	hiddenSelectionsTextures[]= {"\Cha\Cha_LAV25\data\lavbody_co.paa","\Cha\Cha_LAV25\data\lavbody2_co.paa","\Cha\Cha_LAV25\data\lav_hq_co.paa"};
+};
+
 
 //M6A2	
 class SOR_RHS_M6_wd : SOR_RHS_M6

@@ -32,15 +32,46 @@ class B_Truck_01_fuel_F;
 class B_Truck_01_Repair_F;
 class B_Boat_Transport_01_F;
 class Cha_Des1_LAV25A2;
+class Cha_Des1_LAV25_HQ;
 
 // new supply suggestions by Bean
 class rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_d;
 class rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d;
 class rhsusf_M978A4_BKIT_usarmy_d;
 
-// LAV25A
+// LAV25A2
 class SOR_LAV : Cha_Des1_LAV25A2
 {
+	editorPreview = "\Cha\Cha_Lav25\Data\UI\Picture_LAV25_CA.paa";
+	editorCategory = "SOR_Cat_Faction_D";
+	vehicleclass = "SOR_Vehicles";
+	faction = SOR_Faction_D;
+	ace_cargo_space = 12;
+	class TransportItems 
+	{
+		item_xx(ACE_FieldDressing,20);
+	};
+	class TransportWeapons
+	{
+		weap_xx(rhs_weap_M136_hp,2)
+		weap_xx(rhs_weap_m4a1_carryhandle_grip,2)
+	};
+	class TransportMagazines
+	{
+		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,20)
+		mag_xx(200Rnd_556x45_Box_Tracer_Red_F,4)
+		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,4)
+	};
+	class TransportBackpacks
+	{
+		pack_xx(SOR_Repair_Pack_veh_D,1)			
+	};
+};
+
+// LAV25A2
+class SOR_LAV_HQ : Cha_Des1_LAV25_HQ
+{
+	editorPreview = "\Cha\Cha_LAV25\data\UI\Picture_LAV25_CA.paa";
 	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_D;

@@ -100,6 +100,7 @@ class CfgPatches
 			"SOR_Engineer_W",
 			
 			"SOR_LAV_wd",
+			"SOR_LAV_HQ_wd",
 			"SOR_RHS_M6_wd",
 			"SOR_RHS_M2A3_BUSKIII_wd",
 			"SOR_rhsusf_m113_usarmy",
@@ -205,6 +206,7 @@ class CfgPatches
 			"SOR_FIR_F16C_OPFOR",
 			"SOR_FIR_F16C_TWAS2",
 			"SOR_LAV",
+			"SOR_LAV_HQ",
 			"SOR_RHS_M6",
 			"SOR_M2A3_BUSKIII",
 			"SOR_rhsusf_m113d_usarmy",			
