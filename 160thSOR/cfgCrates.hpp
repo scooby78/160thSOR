@@ -386,7 +386,7 @@ class SOR_AM_Crate_F : B_CargoNet_01_ammo_F
 	};
 };
 
-// M2 and Mortar Crate	
+// M2, Mortar and TOW Crate	
 class SOR_HMG_Crate_F : B_supplyCrate_F
 {
 	editorCategory = "SOR_Cat_Supplies";
@@ -404,26 +404,26 @@ class SOR_HMG_Crate_F : B_supplyCrate_F
 		pack_xx(RHS_M2_Tripod_Bag,2)
 		pack_xx(RHS_M2_Gun_Bag,3)
 		pack_xx(B_Mortar_01_weapon_F,3)
-		pack_xx(B_Mortar_01_support_F,2)			
+		pack_xx(B_Mortar_01_support_F,2)
 	};
 };
 
-// Mortar Crate	//// To be phased out?????
+// TOW Crate
 class SOR_MOR_Crate_F : B_supplyCrate_F
 {
 	editorCategory = "SOR_Cat_Supplies";
 	editorSubcategory = "SOR_SubCat_SupplyCrates";
 	vehicleClass = "SOR_SupplyCrates";	
 	faction = SOR_Faction_CRATE;
-	displayName = "Crate [MORTAR]";
+	displayName = "Crate [TOW]";
 	icon = "iconCrateAmmo";
 	class TransportItems{};
 	class TransportWeapons{};
 	class TransportMagazines{};
 	class TransportBackpacks
 	{
-		pack_xx(B_Mortar_01_weapon_F,2)
-		pack_xx(B_Mortar_01_support_F,2)
+		pack_xx(rhs_Tow_Gun_Bag,2)
+		pack_xx(rhs_TOW_Tripod_Bag,2)
 	};
 };
 

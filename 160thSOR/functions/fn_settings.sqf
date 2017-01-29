@@ -7,7 +7,7 @@
 //Fixed settings
 enableSaving [false,false];
 SOR_ParaJump_Active = true;
-setWind [5, 5, false];  
+setWind [5, 5, false]; 
 
 // TFR mod configuration
 tf_give_personal_radio_to_regular_soldier = false;								// all players radios assigned by loadout script

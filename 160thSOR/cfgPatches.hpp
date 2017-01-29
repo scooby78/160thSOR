@@ -99,6 +99,7 @@ class CfgPatches
 			"SOR_MORRFL_W",
 			"SOR_Engineer_W",
 			
+			"SOR_LAV_wd",
 			"SOR_RHS_M6_wd",
 			"SOR_RHS_M2A3_BUSKIII_wd",
 			"SOR_rhsusf_m113_usarmy",
@@ -203,6 +204,7 @@ class CfgPatches
 			"SOR_I_Plane_Fighter_03_CAS_B",
 			"SOR_FIR_F16C_OPFOR",
 			"SOR_FIR_F16C_TWAS2",
+			"SOR_LAV",
 			"SOR_RHS_M6",
 			"SOR_M2A3_BUSKIII",
 			"SOR_rhsusf_m113d_usarmy",			
@@ -260,7 +262,7 @@ class CfgPatches
 			"160_rhs_weap_m16a4_carryhandle_grip_pmag_1",
 			"160_rhs_weap_m4a1_carryhandle_grip2_1"			
 		};
-		version="2.2.4";
+		version="2.2.5";
 //		requiredVersion = 0.1;
 		requiredAddons[] = 
 		{
