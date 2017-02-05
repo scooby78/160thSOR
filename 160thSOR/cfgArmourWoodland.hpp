@@ -6,6 +6,27 @@
 	Note: Only Armour units that are proven not "buggy" should be put in here.
 */
 
+// LAV25A2
+class SOR_LAV_wd : SOR_LAV
+{
+	editorCategory = "SOR_Cat_Faction_W";
+	vehicleclass = "SOR_Vehicles";
+	faction = SOR_Faction_W;
+	hiddenSelections[]= {"Camo1","Camo2","clan","clan_sign"};
+	hiddenSelectionsTextures[]= {"\Cha\Cha_LAV25\data\lavbody_co.paa","\Cha\Cha_LAV25\data\lavbody2_co.paa","",""};
+};
+
+// LAV25A2
+class SOR_LAV_HQ_wd : SOR_LAV_HQ
+{
+	editorCategory = "SOR_Cat_Faction_W";
+	vehicleclass = "SOR_Vehicles";
+	faction = SOR_Faction_W;
+	hiddenSelections[]= {"Camo1","Camo2","Camo3"};
+	hiddenSelectionsTextures[]= {"\Cha\Cha_LAV25\data\lavbody_co.paa","\Cha\Cha_LAV25\data\lavbody2_co.paa","\Cha\Cha_LAV25\data\lav_hq_co.paa"};
+};
+
+
 //M6A2	
 class SOR_RHS_M6_wd : SOR_RHS_M6
 {
@@ -133,22 +154,6 @@ class SOR_rhsusf_m1a2sep1tuskiiwd_usarmy : SOR_rhsusf_m1a2sep1tuskiid_usarmy
 	hiddenSelections[] = {"camo1","camo2","camo3","camo4","camo5","camo6","","n1","n2","n3","i1","i2","i3"};
 	hiddenSelectionsMaterials[] = {"rhsusf\addons\rhsusf_m1a2\data\rhsusf_m1a2_wd_01.rvmat","rhsusf\addons\rhsusf_m1a2\data\rhsusf_m1a2_wd_02.rvmat","rhsusf\addons\rhsusf_m1a1\data\rhsusf_m1a1aim_03.rvmat","rhsusf\addons\rhsusf_m1a1\loaderspintle\data\loaderspintle_wd.rvmat","rhsusf\addons\rhsusf_m1a2\data\rhsusf_tuskiia2_wd.rvmat","rhsusf\addons\rhsusf_m1a2\data\rhsusf_m1slat_wd.rvmat"};
 	hiddenSelectionsTextures[] = {"rhsusf\addons\rhsusf_m1a2\data\rhsusf_m1a2sepv1tuskii_wd_01_co.paa","rhsusf\addons\rhsusf_m1a2\data\rhsusf_m1a2sepv1tuskii_wd_02_co.paa","rhsusf\addons\rhsusf_m1a1\data\rhsusf_m1a1aim_03_co.paa","rhsusf\addons\rhsusf_m1a1\loaderspintle\data\loaderspintle_tuski_wd_co.paa","rhsusf\addons\rhsusf_m1a2\data\rhsusf_tuskiia2_wd_co.paa","rhsusf\addons\rhsusf_m1a2\data\rhsusf_m1slat_wd_co.paa"};
-};
-
-//Sub	
-class SOR_B_SDV_01_F_wd : SOR_B_SDV_01_F
-{
-	editorCategory = "SOR_Cat_Faction_W";
-	vehicleclass = "SOR_Vehicles";
-	faction = SOR_Faction_W;	
-};	
-
-//Rubber duck
-class SOR_B_Boat_Transport_01_F_wd : SOR_B_Boat_Transport_01_F
-{
-	editorCategory = "SOR_Cat_Faction_W";
-	vehicleclass = "SOR_Vehicles";
-	faction = SOR_Faction_W;	
 };
 
 //Troop transport

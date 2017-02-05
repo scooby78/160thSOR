@@ -16,7 +16,6 @@ class rhsusf_m1a2sep1tuskid_usarmy;
 class rhsusf_m1a2sep1tuskiid_usarmy;
 class rhsusf_m1a1aimd_usarmy;
 class rhsusf_m1a1aim_tuski_d;
-class B_SDV_01_F;
 class rhsusf_m1025_d_s;
 class rhsusf_m1025_d;
 class rhsusf_m1025_d_Mk19;
@@ -30,12 +29,71 @@ class B_APC_Tracked_01_CRV_F;
 class B_Truck_01_ammo_F;
 class B_Truck_01_fuel_F;
 class B_Truck_01_Repair_F;
-class B_Boat_Transport_01_F;
+class Cha_Des1_LAV25A2;
+class Cha_Des1_LAV25_HQ;
 
 // new supply suggestions by Bean
 class rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_d;
 class rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d;
 class rhsusf_M978A4_BKIT_usarmy_d;
+
+// LAV25A2
+class SOR_LAV : Cha_Des1_LAV25A2
+{
+	editorPreview = "\Cha\Cha_Lav25\Data\UI\Picture_LAV25_CA.paa";
+	editorCategory = "SOR_Cat_Faction_D";
+	vehicleclass = "SOR_Vehicles";
+	faction = SOR_Faction_D;
+	ace_cargo_space = 12;
+	class TransportItems 
+	{
+		item_xx(ACE_FieldDressing,20);
+	};
+	class TransportWeapons
+	{
+		weap_xx(rhs_weap_M136_hp,2)
+		weap_xx(rhs_weap_m4a1_carryhandle_grip,2)
+	};
+	class TransportMagazines
+	{
+		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,20)
+		mag_xx(200Rnd_556x45_Box_Tracer_Red_F,4)
+		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,4)
+	};
+	class TransportBackpacks
+	{
+		pack_xx(SOR_Repair_Pack_veh_D,1)			
+	};
+};
+
+// LAV25A2
+class SOR_LAV_HQ : Cha_Des1_LAV25_HQ
+{
+	editorPreview = "\Cha\Cha_LAV25\data\UI\Picture_LAV25_CA.paa";
+	editorCategory = "SOR_Cat_Faction_D";
+	vehicleclass = "SOR_Vehicles";
+	faction = SOR_Faction_D;
+	ace_cargo_space = 12;
+	class TransportItems 
+	{
+		item_xx(ACE_FieldDressing,20);
+	};
+	class TransportWeapons
+	{
+		weap_xx(rhs_weap_M136_hp,2)
+		weap_xx(rhs_weap_m4a1_carryhandle_grip,2)
+	};
+	class TransportMagazines
+	{
+		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,20)
+		mag_xx(200Rnd_556x45_Box_Tracer_Red_F,4)
+		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,4)
+	};
+	class TransportBackpacks
+	{
+		pack_xx(SOR_Repair_Pack_veh_D,1)			
+	};
+};
 
 //M6A2	
 class SOR_RHS_M6 : RHS_M6
@@ -387,50 +445,6 @@ class SOR_rhsusf_m1a2sep1tuskiid_usarmy : rhsusf_m1a2sep1tuskiid_usarmy
 	{
 		pack_xx(SOR_Repair_Pack_veh_D,1)			
 	};
-};
-
-//Sub	
-class SOR_B_SDV_01_F : B_SDV_01_F
-{
-	editorCategory = "SOR_Cat_Faction_D";
-	vehicleclass = "SOR_Vehicles";
-	faction = SOR_Faction_D;	
-	class TransportItems
-	{
-		item_xx(G_Diving,3)
-		item_xx(U_B_Wetsuit,3)
-		item_xx(V_RebreatherB,3)
-	};
-	class TransportWeapons{};
-	class TransportMagazines{};
-	class TransportBackpacks{};
-};	
-
-//rubber duck
-class SOR_B_Boat_Transport_01_F : B_Boat_Transport_01_F
-{
-	editorCategory = "SOR_Cat_Faction_D";
-	vehicleclass = "SOR_Vehicles";
-	faction = SOR_Faction_D;	
-	driverCanEject = 0; //was 1
-	cargoCanEject = 0; //was 1
-	maxSpeed = 70; //was 70
-	enginePower = 40; //was 18.5
-	engineShiftY = 0; //was 0
-	waterResistance = 10; //was 10
-	waterResistanceCoef = 0.01; // was 0.01
-	waterLinearDampingCoefX = 2; //was 2
-	rudderForceCoef = 0.08; //was 0.08
-	rudderForceCoefAtMaxSpeed = 0.001; //was 0.001
-	class TransportItems
-	{
-		item_xx(G_Diving,3)
-		item_xx(U_B_Wetsuit,3)
-		item_xx(V_RebreatherB,3)
-	};
-	class TransportWeapons{};
-	class TransportMagazines{};
-	class TransportBackpacks{};
 };
 
 //Troop transport

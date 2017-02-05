@@ -44,4 +44,6 @@ class cfgVehicles
 	#include "cfgArmour.hpp"
 	#include "cfgArmour2.hpp"
 	#include "cfgArmourWoodland.hpp"
+	
+	#include "cfgBoat.hpp"	
 };
