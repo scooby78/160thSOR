@@ -156,22 +156,6 @@ class SOR_rhsusf_m1a2sep1tuskiiwd_usarmy : SOR_rhsusf_m1a2sep1tuskiid_usarmy
 	hiddenSelectionsTextures[] = {"rhsusf\addons\rhsusf_m1a2\data\rhsusf_m1a2sepv1tuskii_wd_01_co.paa","rhsusf\addons\rhsusf_m1a2\data\rhsusf_m1a2sepv1tuskii_wd_02_co.paa","rhsusf\addons\rhsusf_m1a1\data\rhsusf_m1a1aim_03_co.paa","rhsusf\addons\rhsusf_m1a1\loaderspintle\data\loaderspintle_tuski_wd_co.paa","rhsusf\addons\rhsusf_m1a2\data\rhsusf_tuskiia2_wd_co.paa","rhsusf\addons\rhsusf_m1a2\data\rhsusf_m1slat_wd_co.paa"};
 };
 
-//Sub	
-class SOR_B_SDV_01_F_wd : SOR_B_SDV_01_F
-{
-	editorCategory = "SOR_Cat_Faction_W";
-	vehicleclass = "SOR_Vehicles";
-	faction = SOR_Faction_W;	
-};	
-
-//Rubber duck
-class SOR_B_Boat_Transport_01_F_wd : SOR_B_Boat_Transport_01_F
-{
-	editorCategory = "SOR_Cat_Faction_W";
-	vehicleclass = "SOR_Vehicles";
-	faction = SOR_Faction_W;	
-};
-
 //Troop transport
 class SOR_rhsusf_M1083A1P2_wd_fmtv_usarmy : SOR_rhsusf_M1083A1P2_d_fmtv_usarmy
 {

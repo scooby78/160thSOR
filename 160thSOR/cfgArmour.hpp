@@ -16,7 +16,6 @@ class rhsusf_m1a2sep1tuskid_usarmy;
 class rhsusf_m1a2sep1tuskiid_usarmy;
 class rhsusf_m1a1aimd_usarmy;
 class rhsusf_m1a1aim_tuski_d;
-class B_SDV_01_F;
 class rhsusf_m1025_d_s;
 class rhsusf_m1025_d;
 class rhsusf_m1025_d_Mk19;
@@ -30,7 +29,6 @@ class B_APC_Tracked_01_CRV_F;
 class B_Truck_01_ammo_F;
 class B_Truck_01_fuel_F;
 class B_Truck_01_Repair_F;
-class B_Boat_Transport_01_F;
 class Cha_Des1_LAV25A2;
 class Cha_Des1_LAV25_HQ;
 
@@ -447,50 +445,6 @@ class SOR_rhsusf_m1a2sep1tuskiid_usarmy : rhsusf_m1a2sep1tuskiid_usarmy
 	{
 		pack_xx(SOR_Repair_Pack_veh_D,1)			
 	};
-};
-
-//Sub	
-class SOR_B_SDV_01_F : B_SDV_01_F
-{
-	editorCategory = "SOR_Cat_Faction_D";
-	vehicleclass = "SOR_Vehicles";
-	faction = SOR_Faction_D;	
-	class TransportItems
-	{
-		item_xx(G_Diving,3)
-		item_xx(U_B_Wetsuit,3)
-		item_xx(V_RebreatherB,3)
-	};
-	class TransportWeapons{};
-	class TransportMagazines{};
-	class TransportBackpacks{};
-};	
-
-//rubber duck
-class SOR_B_Boat_Transport_01_F : B_Boat_Transport_01_F
-{
-	editorCategory = "SOR_Cat_Faction_D";
-	vehicleclass = "SOR_Vehicles";
-	faction = SOR_Faction_D;	
-	driverCanEject = 0; //was 1
-	cargoCanEject = 0; //was 1
-	maxSpeed = 70; //was 70
-	enginePower = 40; //was 18.5
-	engineShiftY = 0; //was 0
-	waterResistance = 10; //was 10
-	waterResistanceCoef = 0.01; // was 0.01
-	waterLinearDampingCoefX = 2; //was 2
-	rudderForceCoef = 0.08; //was 0.08
-	rudderForceCoefAtMaxSpeed = 0.001; //was 0.001
-	class TransportItems
-	{
-		item_xx(G_Diving,3)
-		item_xx(U_B_Wetsuit,3)
-		item_xx(V_RebreatherB,3)
-	};
-	class TransportWeapons{};
-	class TransportMagazines{};
-	class TransportBackpacks{};
 };
 
 //Troop transport
