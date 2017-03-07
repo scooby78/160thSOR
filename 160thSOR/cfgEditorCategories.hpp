@@ -96,5 +96,9 @@ class CfgEditorSubcategories
 	class SOR_SubCat_Aircraft_Captured
 	{
 		displayName = "Captured Aircraft";
+	};	
+	class SOR_SubCat_Vehicles_Truck
+	{
+		displayName = "Truck";
 	};		
 };

@@ -28,7 +28,7 @@ class SOR_LAV_HQ_wd : SOR_LAV_HQ
 
 
 //M6A2	
-class SOR_RHS_M6_wd : SOR_RHS_M6
+class SOR_M6A2_wd : SOR_M6A2
 {
 	editorPreview = "rhsusf\addons\rhsusf_editorPreviews\data\RHS_M6_wd.paa";
 	editorCategory = "SOR_Cat_Faction_W";
@@ -49,7 +49,7 @@ class SOR_RHS_M2A3_BUSKIII_wd : SOR_M2A3_BUSKIII
 };
 
 //M113A3	
-class SOR_rhsusf_m113_usarmy : SOR_rhsusf_m113d_usarmy
+class SOR_M113_WD : SOR_M113
 {
 	editorPreview = "rhsusf\addons\rhsusf_editorPreviews\data\rhsusf_m113_usarmy.paa";
 	editorCategory = "SOR_Cat_Faction_W";
@@ -60,7 +60,7 @@ class SOR_rhsusf_m113_usarmy : SOR_rhsusf_m113d_usarmy
 };
 	
 //M113A3 (Supply)	
-class SOR_rhsusf_m113_usarmy_supply : SOR_rhsusf_m113d_usarmy_supply
+class SOR_M113_SUPPLY_WD : SOR_M113_SUPPLY
 {
 	editorPreview = "rhsusf\addons\rhsusf_editorPreviews\data\rhsusf_m113_usarmy_supply.paa";
 	editorCategory = "SOR_Cat_Faction_W";
@@ -71,7 +71,7 @@ class SOR_rhsusf_m113_usarmy_supply : SOR_rhsusf_m113d_usarmy_supply
 };
 
 //M113A3 (Unarmed)	
-class SOR_rhsusf_m113_usarmy_unarmed : SOR_rhsusf_m113d_usarmy_unarmed
+class SOR_M113_UNARMED_WD : SOR_M113_UNARMED
 {
 	editorPreview = "rhsusf\addons\rhsusf_editorPreviews\data\rhsusf_m113_usarmy_unarmed.paa";
 	editorCategory = "SOR_Cat_Faction_W";
@@ -82,7 +82,7 @@ class SOR_rhsusf_m113_usarmy_unarmed : SOR_rhsusf_m113d_usarmy_unarmed
 };
 	
 //M113A3 (Medical)
-class SOR_rhsusf_m113_usarmy_medical : SOR_rhsusf_m113d_usarmy_medical
+class SOR_M113_MEDICAL_WD : SOR_M113_MEDICAL
 {
 	editorPreview = "rhsusf\addons\rhsusf_editorPreviews\data\rhsusf_m113_usarmy_medical.paa";
 	editorCategory = "SOR_Cat_Faction_W";
@@ -93,7 +93,7 @@ class SOR_rhsusf_m113_usarmy_medical : SOR_rhsusf_m113d_usarmy_medical
 };
 	
 //M1A1
-class SOR_rhsusf_m1a1aimd_usarmy_wd : rhsusf_m1a1aimd_usarmy
+class SOR_M1A1_WD : SOR_M1A1
 {
 	editorPreview = "rhsusf\addons\rhsusf_editorPreviews\data\rhsusf_m1a1aimwd_usarmy.paa";
 	editorCategory = "SOR_Cat_Faction_W";
@@ -107,7 +107,7 @@ class SOR_rhsusf_m1a1aimd_usarmy_wd : rhsusf_m1a1aimd_usarmy
 };
 	
 //M1A1 (Tusk I)
-class SOR_rhsusf_m1a1aim_tuski_wd : SOR_rhsusf_m1a1aim_tuski_d
+class SOR_M1A1_TUSKI_WD : SOR_M1A1_TUSKI
 {
 	editorPreview = "rhsusf\addons\rhsusf_editorPreviews\data\rhsusf_m1a1aim_tuski_wd.paa";
 	editorCategory = "SOR_Cat_Faction_W";
@@ -119,7 +119,7 @@ class SOR_rhsusf_m1a1aim_tuski_wd : SOR_rhsusf_m1a1aim_tuski_d
 };	
 
 //M1A2
-class SOR_rhsusf_m1a2sep1d_usarmy_wd : rhsusf_m1a2sep1d_usarmy
+class SOR_M1A2_WD : SOR_M1A2
 {
 	editorPreview = "rhsusf\addons\rhsusf_editorPreviews\data\rhsusf_m1a2sep1wd_usarmy.paa";
 	editorCategory = "SOR_Cat_Faction_W";
@@ -133,7 +133,7 @@ class SOR_rhsusf_m1a2sep1d_usarmy_wd : rhsusf_m1a2sep1d_usarmy
 };
 
 //M1A2 (Tusk I)
-class SOR_rhsusf_m1a2sep1tuskiwd_usarmy : SOR_rhsusf_m1a2sep1tuskid_usarmy
+class SOR_M1A2_TUSKI_WD : SOR_M1A2_TUSKI
 {
 	editorPreview = "rhsusf\addons\rhsusf_editorPreviews\data\rhsusf_m1a2sep1tuskiwd_usarmy.paa";
 	editorCategory = "SOR_Cat_Faction_W";
@@ -145,7 +145,7 @@ class SOR_rhsusf_m1a2sep1tuskiwd_usarmy : SOR_rhsusf_m1a2sep1tuskid_usarmy
 };	
 
 //M1A2 (Tusk II)
-class SOR_rhsusf_m1a2sep1tuskiiwd_usarmy : SOR_rhsusf_m1a2sep1tuskiid_usarmy
+class SOR_M1A2_TUSKII_WD : SOR_M1A2_TUSKII
 {
 	editorPreview = "rhsusf\addons\rhsusf_editorPreviews\data\rhsusf_m1a2sep1tuskiiwd_usarmy.paa";
 	editorCategory = "SOR_Cat_Faction_W";
@@ -157,7 +157,7 @@ class SOR_rhsusf_m1a2sep1tuskiiwd_usarmy : SOR_rhsusf_m1a2sep1tuskiid_usarmy
 };
 
 //Troop transport
-class SOR_rhsusf_M1083A1P2_wd_fmtv_usarmy : SOR_rhsusf_M1083A1P2_d_fmtv_usarmy
+class SOR_TROOP_TRUCK_WD : SOR_TROOP_TRUCK
 {
 
 	editorCategory = "SOR_Cat_Faction_W";
@@ -167,7 +167,7 @@ class SOR_rhsusf_M1083A1P2_wd_fmtv_usarmy : SOR_rhsusf_M1083A1P2_d_fmtv_usarmy
 };
 
 //Troop transport
-class SOR_rhsusf_m1025_w : SOR_rhsusf_m1025_d
+class SOR_TROOP_CAR_WD : SOR_TROOP_CAR
 {
 	editorCategory = "SOR_Cat_Faction_W";
 	vehicleclass = "SOR_Vehicles";
@@ -177,7 +177,7 @@ class SOR_rhsusf_m1025_w : SOR_rhsusf_m1025_d
 };
 
 //Troop armed transport GL
-class SOR_rhsusf_m1025_w_Mk19 : SOR_rhsusf_m1025_d_Mk19
+class SOR_TROOP_CAR_MK19_WD : SOR_TROOP_CAR_MK19
 {
 	editorCategory = "SOR_Cat_Faction_W";
 	vehicleclass = "SOR_Vehicles";
@@ -186,7 +186,7 @@ class SOR_rhsusf_m1025_w_Mk19 : SOR_rhsusf_m1025_d_Mk19
 };
 
 //Troop armed transport MG
-class SOR_rhsusf_m1025_w_m2 : SOR_rhsusf_m1025_d_m2
+class SOR_TROOP_CAR_M2_WD : SOR_TROOP_CAR_M2
 {
 	editorCategory = "SOR_Cat_Faction_W";
 	vehicleclass = "SOR_Vehicles";
@@ -196,7 +196,7 @@ class SOR_rhsusf_m1025_w_m2 : SOR_rhsusf_m1025_d_m2
 };
 	
 //Troop transport
-class SOR_rhsusf_m998_w_4dr : SOR_rhsusf_m998_d_4dr
+class SOR_TROOP_CAR_4DR_WD : SOR_TROOP_CAR_4DR
 {
 	editorCategory = "SOR_Cat_Faction_W";
 	vehicleclass = "SOR_Vehicles";
@@ -206,7 +206,7 @@ class SOR_rhsusf_m998_w_4dr : SOR_rhsusf_m998_d_4dr
 };
 
 //Troop transport
-class SOR_rhsusf_m998_w_2dr : SOR_rhsusf_m998_d_2dr
+class SOR_TROOP_CAR_2DR_WD : SOR_TROOP_CAR_2DR
 {
 	editorCategory = "SOR_Cat_Faction_W";
 	vehicleclass = "SOR_Vehicles";
@@ -220,7 +220,7 @@ class SOR_rhsusf_m998_w_2dr : SOR_rhsusf_m998_d_2dr
 ////////////////////////////////
 
 //Engineer transport
-class SOR_rhsusf_m1025_w_eng : SOR_Eng_Car_Transport_D
+class SOR_Eng_Car_Transport_WD : SOR_Eng_Car_Transport_D
 {
 	editorCategory = "SOR_Cat_Faction_W";
 	vehicleclass = "SOR_Vehicles";
@@ -230,7 +230,7 @@ class SOR_rhsusf_m1025_w_eng : SOR_Eng_Car_Transport_D
 };
 
 //Engineer transport truck	
-class SOR_rhsusf_M1083A1P2_wd_fmtv_usarmy_eng : SOR_Eng_Truck_Transport_D
+class SOR_Eng_Truck_Transport_WD : SOR_Eng_Truck_Transport_D
 {
 	editorCategory = "SOR_Cat_Faction_W";
 	vehicleclass = "SOR_Vehicles";

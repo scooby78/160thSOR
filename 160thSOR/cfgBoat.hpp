@@ -14,7 +14,7 @@ class B_SDV_01_F;
 ////////////////////////////////////////////////////////////////
 
 //rubber duck
-class SOR_B_Boat_Transport_01_F : B_Boat_Transport_01_F
+class SOR_Boat_Transport_01 : B_Boat_Transport_01_F
 {
 	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
@@ -48,7 +48,7 @@ class SOR_B_Boat_Transport_01_F : B_Boat_Transport_01_F
 };
 
 //Sub	
-class SOR_B_SDV_01_F : B_SDV_01_F
+class SOR_SUB : B_SDV_01_F
 {
 	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
@@ -70,7 +70,7 @@ class SOR_B_SDV_01_F : B_SDV_01_F
 ////////////////////////////////////////////////////////////////
 
 //Rubber duck
-class SOR_B_Boat_Transport_01_F_wd : SOR_B_Boat_Transport_01_F
+class SOR_Boat_Transport_01_wd : SOR_Boat_Transport_01
 {
 	editorCategory = "SOR_Cat_Faction_W";
 	vehicleclass = "SOR_Vehicles";
@@ -78,7 +78,7 @@ class SOR_B_Boat_Transport_01_F_wd : SOR_B_Boat_Transport_01_F
 };
 
 //Sub	
-class SOR_B_SDV_01_F_wd : SOR_B_SDV_01_F
+class SOR_SUB_wd : SOR_SUB
 {
 	editorCategory = "SOR_Cat_Faction_W";
 	vehicleclass = "SOR_Vehicles";

@@ -23,7 +23,7 @@ class SOR_CH_47F_W : SOR_CH_47F
 	faction = SOR_Faction_W;
 };
 
-class SOR_UH60M_MEV2_W : SOR_UH60M_MEV2
+class SOR_UH60M_MEV_W : SOR_UH60M_MEV
 {
 	editorCategory = "SOR_Cat_Faction_W";
 	editorSubcategory = "SOR_SubCat_Aircraft";

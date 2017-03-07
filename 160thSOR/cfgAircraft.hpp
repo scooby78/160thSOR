@@ -271,7 +271,7 @@ class SOR_CH_47F : RHS_CH_47F
 	};
 };
 
-class SOR_UH60M_MEV2 : RHS_UH60M_MEV2
+class SOR_UH60M_MEV : RHS_UH60M_MEV2
 {
 	editorCategory = "SOR_Cat_Faction_D";
 	editorSubcategory = "SOR_SubCat_Aircraft";
@@ -629,7 +629,7 @@ class SOR_O_Heli_Transport_04_F : O_Heli_Transport_04_F
 };
 
 // Civilial troop transport	
-class SOR_RHS_Mi8amt_civilian : RHS_Mi8amt_civilian
+class SOR_Mi8amt_civ : RHS_Mi8amt_civilian
 {
 	editorCategory = "SOR_Cat_Faction_D";
 	editorSubcategory = "SOR_SubCat_Aircraft_Captured";
