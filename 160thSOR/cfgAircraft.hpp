@@ -459,7 +459,7 @@ class SOR_MELB_AH6M_H : RHS_MELB_AH6M_H
 	};
 };	
 
-class SOR_RHS_AH64D_AA : RHS_AH64D_AA
+class SOR_AH64D_AA : RHS_AH64D_AA
 {
 	editorCategory = "SOR_Cat_Faction_D";
 	editorSubcategory = "SOR_SubCat_Aircraft";
@@ -481,7 +481,7 @@ class SOR_RHS_AH64D_AA : RHS_AH64D_AA
 	};
 };	
 
-class SOR_RHS_AH64D_CS : RHS_AH64D_CS
+class SOR_AH64D_CS : RHS_AH64D_CS
 {
 	editorCategory = "SOR_Cat_Faction_D";
 	editorSubcategory = "SOR_SubCat_Aircraft";
@@ -503,7 +503,7 @@ class SOR_RHS_AH64D_CS : RHS_AH64D_CS
 	};
 };		
 
-class SOR_RHS_AH64D_GS : RHS_AH64D_GS
+class SOR_AH64D_GS : RHS_AH64D_GS
 {
 	editorCategory = "SOR_Cat_Faction_D";
 	editorSubcategory = "SOR_SubCat_Aircraft";
@@ -528,7 +528,7 @@ class SOR_RHS_AH64D_GS : RHS_AH64D_GS
 ////////////	
 // Planes //
 ////////////
-class SOR_RHS_A10 : RHS_A10_AT
+class SOR_A10 : RHS_A10_AT
 {
 	editorCategory = "SOR_Cat_Faction_D";
 	editorSubcategory = "SOR_SubCat_Aircraft";

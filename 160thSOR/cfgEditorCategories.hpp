@@ -99,6 +99,6 @@ class CfgEditorSubcategories
 	};	
 	class SOR_SubCat_Vehicles_Truck
 	{
-		displayName = "Truck";
+		displayName = "Support Vehicles";
 	};		
 };

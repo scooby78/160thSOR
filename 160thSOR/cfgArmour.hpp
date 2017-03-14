@@ -656,6 +656,7 @@ class SOR_TROOP_CAR_2DR : rhsusf_m998_d_2dr
 class SOR_Eng_Car_Transport_D : rhsusf_m1025_d_s
 {
 	editorCategory = "SOR_Cat_Faction_D";
+	editorSubcategory = "SOR_SubCat_Vehicles_Truck";
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_D;
 	displayName = "M1025 (Engineer)";		
@@ -787,6 +788,7 @@ class SOR_Eng_Truck_fuel_D : B_Truck_01_fuel_F
 class SOR_Eng_Truck_AutoRepair_D : rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_d
 {
 	editorCategory = "SOR_Cat_Faction_D";
+	editorSubcategory = "SOR_SubCat_Vehicles_Truck";
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_D;
 	ace_cargo_space = 16;
@@ -810,6 +812,7 @@ class SOR_Eng_Truck_AutoRepair_D : rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_d
 class SOR_Eng_Truck_Repair_D : B_Truck_01_Repair_F
 {
 	editorCategory = "SOR_Cat_Faction_D";
+	editorSubcategory = "SOR_SubCat_Vehicles_Truck";	
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_D;
 	ace_cargo_space = 16;
