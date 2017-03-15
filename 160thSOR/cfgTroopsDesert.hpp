@@ -17,57 +17,6 @@ class B_crew_F;
 class B_recon_TL_F;
 class B_engineer_F;
 
-/*
-class SOR_Base: B_Soldier_base_F	
-{
-	side = 1;
-	scope = 0;
-	scopeCurator = 0;
-	Author_Macro
-	editorCategory = "SOR_Cat_Faction_D";
-	editorSubcategory = "SOR_SubCat_Infantry";
-	vehicleclass = "SOR_Infantry";
-	faction = SOR_Faction_D;
-	displayName = "SOR_Base";
-	icon =  "iconManLeader";
-	picture = "";
-	backpack = "";
-	weapons[] = {"160_weap_inf_std", "rhsusf_weap_m9", "Throw", "Put"};
-	respawnWeapons[] = {"160_weap_inf_std", "rhsusf_weap_m9","Throw", "Put"};
-	Items[] = {Standard_Meds};
-	RespawnItems[] = {Standard_Meds};
-	magazines[] = {Standard_Mags,Std_Pistol};
-	respawnMagazines[] = {Standard_Mags,Std_Pistol};
-	linkedItems[] = 
-	{
-		"rhsusf_iotv_ocp_Squadleader",
-		"H_HelmetB_light_black", 
-		"ItemGPS", 
-		"rhs_googles_clear",  
-		Standard_Equipment
-	};
-	respawnLinkedItems[] = 
-	{
-		"rhsusf_iotv_ocp_Squadleader",
-		"H_HelmetB_light_black",
-		"ItemGPS",
-		"rhs_googles_clear",
-		Standard_Equipment
-	};
-	threat[] = {1,1,1};
-	canCarryBackPack = 1;
-	model = "\rhsusf\addons\rhsusf_infantry\rhsusf_army_base.p3d";
-	modelSides[] = {1};
-	uniformClass = "U_B_CombatUniform_mcam";
-	nakedUniform = "U_BasicBody";
-	hiddenSelections[] = {"camo1","camo2","camo3","insignia"};
-	hiddenSelectionTextures[] = {
-		"rhsusf\addons\rhsusf_infantry\data\rhsusf_combat01_ocp_co.paa",
-		"rhsusf\addons\rhsusf_infantry\data\rhsusf_combat01_ocp_pockets_co.paa",
-	};
-};
-*/
-
 ////////////////////////////		    
 //SOR Desert Faction Units//
 ////////////////////////////
@@ -118,7 +67,7 @@ class SOR_Actual_D : B_officer_F
 	};
 	class eventHandlers
 	{
-		init="_null = [[(_this select 0), '160thSOR_Inf_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;SANDBAG_obj = objNull;";	
+		init="_null = [[(_this select 0), '160thSOR_Inf_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
 	};	
 };
 
@@ -176,7 +125,7 @@ class SOR_Commander_D : B_officer_F
 	};
 	class eventHandlers
 	{
-		init="_null = [[(_this select 0), '160thSOR_Inf_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;SANDBAG_obj = objNull;";	
+		init="_null = [[(_this select 0), '160thSOR_Inf_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
 	};	
 };
 
@@ -208,7 +157,7 @@ class SOR_MechCommand_D : SOR_Commander_D
 	};
 	class eventHandlers
 	{
-		init="_null = [[(_this select 0), '160thSOR_Mech_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;SANDBAG_obj = objNull;";	
+		init="_null = [[(_this select 0), '160thSOR_Mech_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
 	};	
 };	
 
@@ -260,7 +209,7 @@ class SOR_AirCommand_D : SOR_Commander_D
 	};
 	class eventHandlers
 	{
-		init="_null = [[(_this select 0), '160thSOR_Air_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;SANDBAG_obj = objNull;";	
+		init="_null = [[(_this select 0), '160thSOR_Air_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
 	};
 };	
 
@@ -287,7 +236,7 @@ class SOR_ZeusCommand_D : SOR_Commander_D
 	};
 	class eventHandlers
 	{
-		init="_null = [[(_this select 0), '160thSOR_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;SANDBAG_obj = objNull;";	
+		init="_null = [[(_this select 0), '160thSOR_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
 	};	
 };	
 
@@ -336,7 +285,7 @@ class SOR_RTO_D : B_Soldier_F
 	};
 	class eventHandlers
 	{
-		init="_null = [[(_this select 0), '160thSOR_Inf_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;SANDBAG_obj = objNull;";	
+		init="_null = [[(_this select 0), '160thSOR_Inf_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
 	};	
 };
 	
@@ -386,7 +335,7 @@ class SOR_Teamleader_D : B_Soldier_TL_F
 	};
 	class eventHandlers
 	{
-		init="_null = [[(_this select 0), '160thSOR_Inf_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;SANDBAG_obj = objNull;";	
+		init="_null = [[(_this select 0), '160thSOR_Inf_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
 	};		
 };
 
@@ -442,7 +391,7 @@ class SOR_Medic_D : B_medic_F
 	};
 	class eventHandlers
 	{
-		init="_null = [[(_this select 0), '160thSOR_Med_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;SANDBAG_obj = objNull;";	
+		init="_null = [[(_this select 0), '160thSOR_Med_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
 	};	
 };
 
@@ -501,7 +450,7 @@ class SOR_M249AR_D : B_soldier_AR_F
 	};
 	class eventHandlers
 	{
-		init="_null = [[(_this select 0), '160thSOR_Inf_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;SANDBAG_obj = objNull;";	
+		init="_null = [[(_this select 0), '160thSOR_Inf_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
 	};	
 };
 
@@ -553,7 +502,7 @@ class SOR_M240AR_D : B_soldier_AR_F
 	};
 	class eventHandlers
 	{
-		init="_null = [[(_this select 0), '160thSOR_Inf_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;SANDBAG_obj = objNull;";	
+		init="_null = [[(_this select 0), '160thSOR_Inf_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
 	};	
 };
 
@@ -598,7 +547,7 @@ class SOR_Grenadier_D : B_Soldier_GL_F
 	};
 	class eventHandlers
 	{
-		init="_null = [[(_this select 0), '160thSOR_Inf_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;SANDBAG_obj = objNull;";	
+		init="_null = [[(_this select 0), '160thSOR_Inf_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
 	};	
 };
 
@@ -652,7 +601,7 @@ class SOR_Rifleman_D : B_Soldier_F
 	};
 	class eventHandlers
 	{
-		init="_null = [[(_this select 0), '160thSOR_Inf_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;SANDBAG_obj = objNull;";	
+		init="_null = [[(_this select 0), '160thSOR_Inf_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
 	};	
 };					
 
@@ -708,7 +657,7 @@ class SOR_RiflemanAT_D : B_soldier_AT_F
 	};
 	class eventHandlers
 	{
-		init="_null = [[(_this select 0), '160thSOR_Inf_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;SANDBAG_obj = objNull;";	
+		init="_null = [[(_this select 0), '160thSOR_Inf_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
 	};	
 };	
 		
@@ -757,7 +706,7 @@ class SOR_HeliPilot_D : B_Pilot_F
 	};
 	class eventHandlers
 	{
-		init="_null = [[(_this select 0), '160thSOR_Air_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;SANDBAG_obj = objNull;";	
+		init="_null = [[(_this select 0), '160thSOR_Air_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
 	};	
 };
 
@@ -812,7 +761,7 @@ class SOR_HeliCrew_D : B_crew_F
 	};
 	class eventHandlers
 	{
-		init="_null = [[(_this select 0), '160thSOR_Air_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;SANDBAG_obj = objNull;";	
+		init="_null = [[(_this select 0), '160thSOR_Air_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
 	};	
 };
 
@@ -858,7 +807,7 @@ class SOR_JetPilot_D : B_Pilot_F
 	};
 	class eventHandlers
 	{
-		init="_null = [[(_this select 0), '160thSOR_Air_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;SANDBAG_obj = objNull;";	
+		init="_null = [[(_this select 0), '160thSOR_Air_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
 	};	
 };
 	
@@ -942,7 +891,7 @@ class SOR_ParaJumper_D : B_medic_F
 	};
 	class eventHandlers
 	{
-		init="_null = [[(_this select 0), '160thSOR_Med_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;SANDBAG_obj = objNull;";	
+		init="_null = [[(_this select 0), '160thSOR_Med_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
 	};	
 };
 
@@ -1016,7 +965,7 @@ class SOR_ReconLeader_D : B_recon_TL_F
 	};	
 	class eventHandlers
 	{
-		init="_null = [[(_this select 0), '160thSOR_Inf_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;SANDBAG_obj = objNull;";	
+		init="_null = [[(_this select 0), '160thSOR_Inf_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
 	};		
 };
 
@@ -1201,7 +1150,7 @@ class SOR_Sniper_D : B_sniper_F
 	};
 	class eventHandlers
 	{
-		init="_null = [[(_this select 0), '160thSOR_Inf_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;SANDBAG_obj = objNull;";	
+		init="_null = [[(_this select 0), '160thSOR_Inf_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
 	};	
 };
 
@@ -1253,7 +1202,7 @@ class SOR_Spotter_D : B_spotter_F
 	};	
 	class eventHandlers
 	{
-		init="_null = [[(_this select 0), '160thSOR_Inf_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;SANDBAG_obj = objNull;";	
+		init="_null = [[(_this select 0), '160thSOR_Inf_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
 	};		
 };
 
@@ -1298,7 +1247,7 @@ class SOR_MechCrew_D : B_crew_F
 	};
 	class eventHandlers
 	{
-		init="_null = [[(_this select 0), '160thSOR_Mech_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;SANDBAG_obj = objNull;";	
+		init="_null = [[(_this select 0), '160thSOR_Mech_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
 	};	
 };
 
@@ -1496,7 +1445,7 @@ class SOR_Engineer_Teamleader_D : B_engineer_F
 	};
 	class eventHandlers
 	{
-		init="_null = [[(_this select 0), '160thSOR_Eng_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;SANDBAG_obj = objNull;";	
+		init="_null = [[(_this select 0), '160thSOR_Eng_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
 	};	
 };
 

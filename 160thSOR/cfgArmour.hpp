@@ -96,7 +96,7 @@ class SOR_LAV_HQ : Cha_Des1_LAV25_HQ
 };
 
 //M6A2	
-class SOR_RHS_M6 : RHS_M6
+class SOR_M6A2 : RHS_M6
 {
 	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
@@ -162,7 +162,7 @@ class SOR_M2A3_BUSKIII : RHS_M2A3_BUSKIII
 };
 
 //M113A3	
-class SOR_rhsusf_m113d_usarmy : rhsusf_m113d_usarmy
+class SOR_M113 : rhsusf_m113d_usarmy
 {
 	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
@@ -193,7 +193,8 @@ class SOR_rhsusf_m113d_usarmy : rhsusf_m113d_usarmy
 };
 	
 //M113A3 (Supply)	
-class SOR_rhsusf_m113d_usarmy_supply : rhsusf_m113d_usarmy_supply
+class SOR_M113_SUPPLY : rhsusf_m113d_usarmy_supply
+
 {
 	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
@@ -224,7 +225,7 @@ class SOR_rhsusf_m113d_usarmy_supply : rhsusf_m113d_usarmy_supply
 };
 
 //M113A3 (Unarmed)	
-class SOR_rhsusf_m113d_usarmy_unarmed : rhsusf_m113d_usarmy_unarmed
+class SOR_M113_UNARMED : rhsusf_m113d_usarmy_unarmed
 {
 	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
@@ -255,7 +256,7 @@ class SOR_rhsusf_m113d_usarmy_unarmed : rhsusf_m113d_usarmy_unarmed
 };
 
 //M113A3 (Medical)
-class SOR_rhsusf_m113d_usarmy_medical : rhsusf_m113d_usarmy_medical
+class SOR_M113_MEDICAL : rhsusf_m113d_usarmy_medical
 {
 	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
@@ -286,7 +287,7 @@ class SOR_rhsusf_m113d_usarmy_medical : rhsusf_m113d_usarmy_medical
 };	
 
 //M1A1
-class SOR_rhsusf_m1a1aimd_usarmy : rhsusf_m1a1aimd_usarmy
+class SOR_M1A1 : rhsusf_m1a1aimd_usarmy
 {
 	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
@@ -319,7 +320,7 @@ class SOR_rhsusf_m1a1aimd_usarmy : rhsusf_m1a1aimd_usarmy
 };
 
 //M1A1 (Tusk I)
-class SOR_rhsusf_m1a1aim_tuski_d : rhsusf_m1a1aim_tuski_d
+class SOR_M1A1_TUSKI : rhsusf_m1a1aim_tuski_d
 {
 	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
@@ -352,7 +353,7 @@ class SOR_rhsusf_m1a1aim_tuski_d : rhsusf_m1a1aim_tuski_d
 };		
 
 //M1A2
-class SOR_rhsusf_m1a2sep1d_usarmy : rhsusf_m1a2sep1d_usarmy
+class SOR_M1A2 : rhsusf_m1a2sep1d_usarmy
 {
 	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
@@ -384,7 +385,7 @@ class SOR_rhsusf_m1a2sep1d_usarmy : rhsusf_m1a2sep1d_usarmy
 };
 
 //M1A2 (Tusk I)
-class SOR_rhsusf_m1a2sep1tuskid_usarmy : rhsusf_m1a2sep1tuskid_usarmy
+class SOR_M1A2_TUSKI : rhsusf_m1a2sep1tuskid_usarmy
 {
 	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
@@ -416,7 +417,7 @@ class SOR_rhsusf_m1a2sep1tuskid_usarmy : rhsusf_m1a2sep1tuskid_usarmy
 };	
 
 //M1A2 (Tusk II)
-class SOR_rhsusf_m1a2sep1tuskiid_usarmy : rhsusf_m1a2sep1tuskiid_usarmy
+class SOR_M1A2_TUSKII : rhsusf_m1a2sep1tuskiid_usarmy
 {
 	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
@@ -448,7 +449,7 @@ class SOR_rhsusf_m1a2sep1tuskiid_usarmy : rhsusf_m1a2sep1tuskiid_usarmy
 };
 
 //Troop transport
-class SOR_rhsusf_M1083A1P2_d_fmtv_usarmy : rhsusf_M1083A1P2_d_fmtv_usarmy
+class SOR_TROOP_TRUCK : rhsusf_M1083A1P2_d_fmtv_usarmy
 {
 	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
@@ -485,7 +486,7 @@ class SOR_rhsusf_M1083A1P2_d_fmtv_usarmy : rhsusf_M1083A1P2_d_fmtv_usarmy
 };
 	
 //Troop transport
-class SOR_rhsusf_m1025_d : rhsusf_m1025_d
+class SOR_TROOP_CAR : rhsusf_m1025_d
 {
 	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
@@ -518,7 +519,7 @@ class SOR_rhsusf_m1025_d : rhsusf_m1025_d
 };
 	
 //Troop armed transport GL
-class SOR_rhsusf_m1025_d_Mk19 : rhsusf_m1025_d_Mk19
+class SOR_TROOP_CAR_MK19 : rhsusf_m1025_d_Mk19
 {
 	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
@@ -551,7 +552,7 @@ class SOR_rhsusf_m1025_d_Mk19 : rhsusf_m1025_d_Mk19
 };
 	
 //Troop armed transport MG
-class SOR_rhsusf_m1025_d_m2 : rhsusf_m1025_d_m2
+class SOR_TROOP_CAR_M2 : rhsusf_m1025_d_m2
 {
 	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
@@ -584,7 +585,7 @@ class SOR_rhsusf_m1025_d_m2 : rhsusf_m1025_d_m2
 };	
 
 //Troop unarmed transport 4 door
-class SOR_rhsusf_m998_d_4dr : rhsusf_m998_d_4dr
+class SOR_TROOP_CAR_4DR : rhsusf_m998_d_4dr
 {
 	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
@@ -616,7 +617,7 @@ class SOR_rhsusf_m998_d_4dr : rhsusf_m998_d_4dr
 };	
 
 //Troop unarmed transport 2 door
-class SOR_rhsusf_m998_d_2dr : rhsusf_m998_d_2dr
+class SOR_TROOP_CAR_2DR : rhsusf_m998_d_2dr
 {
 	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
@@ -655,6 +656,7 @@ class SOR_rhsusf_m998_d_2dr : rhsusf_m998_d_2dr
 class SOR_Eng_Car_Transport_D : rhsusf_m1025_d_s
 {
 	editorCategory = "SOR_Cat_Faction_D";
+	editorSubcategory = "SOR_SubCat_Vehicles_Truck";
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_D;
 	displayName = "M1025 (Engineer)";		
@@ -718,6 +720,7 @@ class SOR_Eng_Truck_Transport_D : rhsusf_M1083A1P2_d_fmtv_usarmy
 class SOR_Eng_Truck_ammo_D : B_Truck_01_ammo_F
 {
 	editorCategory = "SOR_Cat_Faction_D";
+	editorSubcategory = "SOR_SubCat_Vehicles_Truck";
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_D;
 	ace_cargo_space = 16;
@@ -740,6 +743,7 @@ class SOR_Eng_Truck_ammo_D : B_Truck_01_ammo_F
 class SOR_Eng_Truck_ammo2_D : rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d
 {
 	editorCategory = "SOR_Cat_Faction_D";
+	editorSubcategory = "SOR_SubCat_Vehicles_Truck";
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_D;
 	ace_cargo_space = 16;
@@ -761,6 +765,7 @@ class SOR_Eng_Truck_ammo2_D : rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d
 class SOR_Eng_Truck_fuel_D : B_Truck_01_fuel_F
 {
 	editorCategory = "SOR_Cat_Faction_D";
+	editorSubcategory = "SOR_SubCat_Vehicles_Truck";
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_D;
 	ace_refuel_fuelCargo = 30000;
@@ -783,6 +788,7 @@ class SOR_Eng_Truck_fuel_D : B_Truck_01_fuel_F
 class SOR_Eng_Truck_AutoRepair_D : rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_d
 {
 	editorCategory = "SOR_Cat_Faction_D";
+	editorSubcategory = "SOR_SubCat_Vehicles_Truck";
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_D;
 	ace_cargo_space = 16;
@@ -806,6 +812,7 @@ class SOR_Eng_Truck_AutoRepair_D : rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_d
 class SOR_Eng_Truck_Repair_D : B_Truck_01_Repair_F
 {
 	editorCategory = "SOR_Cat_Faction_D";
+	editorSubcategory = "SOR_SubCat_Vehicles_Truck";	
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_D;
 	ace_cargo_space = 16;
