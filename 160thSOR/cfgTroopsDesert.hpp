@@ -99,12 +99,16 @@ class SOR_Commander_D : B_officer_F
 	{
 		Standard_Mags,
 		Std_Pistol,
+		"rhs_mag_m18_green",
+		"rhs_mag_m18_green",
 		"Laserbatteries"
 	};
 	respawnMagazines[] = 
 	{
 		Standard_Mags,
 		Std_Pistol,
+		"rhs_mag_m18_green",
+		"rhs_mag_m18_green",
 		"Laserbatteries"
 	};
 	linkedItems[] = 

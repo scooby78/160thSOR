@@ -264,7 +264,7 @@ class CfgPatches
 			"160_rhs_weap_m16a4_carryhandle_grip_pmag_1",
 			"160_rhs_weap_m4a1_carryhandle_grip2_1"			
 		};
-		version="2.3.0";
+		version="2.3.1";
 		requiredAddons[] = 
 		{
 			"rhsusf_main",
