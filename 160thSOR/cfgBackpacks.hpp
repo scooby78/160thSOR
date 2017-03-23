@@ -135,9 +135,8 @@ class SOR_RTO_Pack_D : tf_anarc210
 	displayName = "Pack Desert Radio";
 	class TransportMagazines
 	{
-		mag_xx(1Rnd_SmokeRed_Grenade_shell,8);
-		mag_xx(1Rnd_SmokeGreen_Grenade_shell,2);
-		mag_xx(1Rnd_SmokeYellow_Grenade_shell,2);
+		mag_xx(1Rnd_SmokeRed_Grenade_shell,9);
+		mag_xx(1Rnd_SmokeGreen_Grenade_shell,3);
 	};	
 };
 
