@@ -42,7 +42,7 @@ class SOR_PJ_Box_F : Land_MetalCase_01_large_F
 		item_xx(ACE_FieldDressing,40);
 		item_xx(ACE_morphine,20);
 		item_xx(ACE_epinephrine,20);			
-		item_xx(ACE_bloodIV_500,10);				
+		item_xx(ACE_bloodIV,10);				
 	};		
 	class TransportWeapons{};
 	class TransportMagazines{};
@@ -495,7 +495,7 @@ class SOR_Taru_Pod_medevac_Black : Land_Pod_Heli_Transport_04_medevac_F
 		item_xx(ACE_FieldDressing,60);
 		item_xx(ACE_morphine,30);
 		item_xx(ACE_epinephrine,30);			
-		item_xx(ACE_bloodIV_500,30);
+		item_xx(ACE_bloodIV,30);
 	};		
 	class TransportWeapons{};
 	class TransportMagazines

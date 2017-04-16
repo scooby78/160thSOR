@@ -137,7 +137,7 @@ class SOR_Taru_Pod_medevac_Black_W : Land_Pod_Heli_Transport_04_medevac_F
 		item_xx(ACE_FieldDressing,60);
 		item_xx(ACE_morphine,30);
 		item_xx(ACE_epinephrine,30);			
-		item_xx(ACE_bloodIV_500,30);
+		item_xx(ACE_bloodIV,30);
 	};		
 	class TransportWeapons{};
 	class TransportMagazines

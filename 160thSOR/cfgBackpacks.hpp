@@ -40,7 +40,7 @@ class SOR_PJMedicPack_D : rhsusf_assault_eagleaiii_ocp
 	};
 	class TransportItems
 	{
-		item_xx(ACE_bloodIV_500,6);
+		item_xx(ACE_bloodIV,6);
 		item_xx(ACE_FieldDressing,30);
 		item_xx(ACE_morphine,20);
 		item_xx(ACE_epinephrine,20);
@@ -158,7 +158,7 @@ class SOR_Sniper_Camo : rhsusf_assault_eagleaiii_ocp
 	class TransportItems
 	{
 		item_xx(ACE_FieldDressing,4);
-		item_xx(ACE_bloodIV_500,1);
+		item_xx(ACE_bloodIV,1);
 	};
 	class TransportMagazines
 	{

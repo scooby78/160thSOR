@@ -1327,6 +1327,10 @@ class SOR_MechDriver_D : SOR_MechCrew_D
 	backpack = "SOR_Repair_Pack_D";
 	icon = "iconManEngineer";
 	engineer = 1; // allows unit to repair 	
+	class eventHandlers
+	{
+		init="_null = [[(_this select 0), '160thSOR_Mech_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP; [(_this select 0)] spawn SOR_fnc_ExternalView;";	
+	};	
 };	
 
 //HMG Team
