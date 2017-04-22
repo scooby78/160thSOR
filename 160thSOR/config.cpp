@@ -18,3 +18,4 @@
 #include "cfgEditorCategories.hpp"
 #include "cfgUnitInsignias.hpp"
 #include "cfgMarkers.hpp"
+#include "cfgAISkill.hpp"

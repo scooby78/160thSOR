@@ -45,6 +45,9 @@ class SOR_LAV : Cha_Des1_LAV25A2
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_D;
 	ace_cargo_space = 12;
+	waterResistanceCoef = 0.009; // was 0.01
+	enginePower = 590; // was 295
+	peakTorque = 4434; // was 2217
 	class TransportItems 
 	{
 		item_xx(ACE_FieldDressing,20);
@@ -656,7 +659,6 @@ class SOR_TROOP_CAR_2DR : rhsusf_m998_d_2dr
 class SOR_Eng_Car_Transport_D : rhsusf_m1025_d_s
 {
 	editorCategory = "SOR_Cat_Faction_D";
-	editorSubcategory = "SOR_SubCat_Vehicles_Truck";
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_D;
 	displayName = "M1025 (Engineer)";		

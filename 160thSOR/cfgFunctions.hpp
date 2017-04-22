@@ -5,7 +5,8 @@ class CfgFunctions
 		class init
 		{
 			file = "160thSOR\functions";
-			class settings { preInit = 1; };
+			class settings {preInit = 1;};
+			class TFAR_AI_Hearing {postInit = 1;};
 		};
 		tag = "SOR";
 		class functions
@@ -30,6 +31,7 @@ class CfgFunctions
 			class airtraining;
 			class zeusTools;
 			class eject;
+			class ExternalView;
 		};
 	};
 };
