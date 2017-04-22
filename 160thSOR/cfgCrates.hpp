@@ -42,7 +42,7 @@ class SOR_PJ_Box_F : Land_MetalCase_01_large_F
 		item_xx(ACE_FieldDressing,40);
 		item_xx(ACE_morphine,20);
 		item_xx(ACE_epinephrine,20);			
-		item_xx(ACE_bloodIV,10);				
+		item_xx(ACE_bloodIV_500,10);				
 	};		
 	class TransportWeapons{};
 	class TransportMagazines{};
@@ -261,6 +261,44 @@ class SOR_Launcher_Box_F : Box_NATO_WpsLaunch_F
 	class TransportBackpacks{};
 };	
 
+class SOR_Launcher_Box_F_Stinger : Box_NATO_WpsLaunch_F
+{
+	editorCategory = "SOR_Cat_Supplies";
+	editorSubcategory = "SOR_SubCat_SupplyBoxes";
+	vehicleClass = "SOR_SupplyBoxes";	
+	faction = SOR_Faction_CRATE;		
+	displayName = "Box [Stinger Launcher]";
+	class TransportItems{};
+	class TransportWeapons
+	{
+		weap_xx(rhs_weap_fim92,1)
+	};	
+	class TransportMagazines
+	{
+		mag_xx(rhs_fim92_mag,2)
+	};
+	class TransportBackpacks{};
+};	
+
+class SOR_Launcher_Box_F_Javelin  : Box_NATO_WpsLaunch_F
+{
+	editorCategory = "SOR_Cat_Supplies";
+	editorSubcategory = "SOR_SubCat_SupplyBoxes";
+	vehicleClass = "SOR_SupplyBoxes";	
+	faction = SOR_Faction_CRATE;		
+	displayName = "Box [Javelin  Launcher]";
+	class TransportItems{};
+	class TransportWeapons
+	{
+		weap_xx(rhs_weap_fgm148,1)
+	};	
+	class TransportMagazines
+	{
+		mag_xx(rhs_fgm148_magazine_AT,2)
+	};
+	class TransportBackpacks{};
+};	
+
 //Special weapons boxes//
 class SOR_Box_NATO_WpsSpecial_F : Box_NATO_Wps_F
 {
@@ -386,7 +424,7 @@ class SOR_AM_Crate_F : B_CargoNet_01_ammo_F
 	};
 };
 
-// M2, Mortar and TOW Crate	
+// M2, Mortar Crate	
 class SOR_HMG_Crate_F : B_supplyCrate_F
 {
 	editorCategory = "SOR_Cat_Supplies";
@@ -408,22 +446,30 @@ class SOR_HMG_Crate_F : B_supplyCrate_F
 	};
 };
 
-// TOW Crate
+// TOW / Javelin / Stinger Crate
 class SOR_MOR_Crate_F : B_supplyCrate_F
 {
 	editorCategory = "SOR_Cat_Supplies";
 	editorSubcategory = "SOR_SubCat_SupplyCrates";
 	vehicleClass = "SOR_SupplyCrates";	
 	faction = SOR_Faction_CRATE;
-	displayName = "Crate [TOW]";
+	displayName = "Crate [TOW/Javelin/Stinger]";
 	icon = "iconCrateAmmo";
 	class TransportItems{};
-	class TransportWeapons{};
-	class TransportMagazines{};
+	class TransportWeapons
+	{
+		weap_xx(rhs_weap_fim92,1)	
+		weap_xx(rhs_weap_fgm148,1)			
+	};
+	class TransportMagazines
+	{
+		mag_xx(rhs_fgm148_magazine_AT,4)
+		mag_xx(rhs_fim92_mag,8)	
+	};
 	class TransportBackpacks
 	{
 		pack_xx(rhs_Tow_Gun_Bag,2)
-		pack_xx(rhs_TOW_Tripod_Bag,2)
+		pack_xx(rhs_TOW_Tripod_Bag,2)		
 	};
 };
 
@@ -495,7 +541,7 @@ class SOR_Taru_Pod_medevac_Black : Land_Pod_Heli_Transport_04_medevac_F
 		item_xx(ACE_FieldDressing,60);
 		item_xx(ACE_morphine,30);
 		item_xx(ACE_epinephrine,30);			
-		item_xx(ACE_bloodIV,30);
+		item_xx(ACE_bloodIV_500,30);
 	};		
 	class TransportWeapons{};
 	class TransportMagazines

@@ -32,6 +32,7 @@ class FIR_F15_Base;
 class FIR_F15E_Base;
 class B_Heli_Transport_01_camo_F;
 class B_T_VTOL_01_infantry_F;
+class RHS_C130J;
 
 class SOR_VTOL_Troop_D : B_T_VTOL_01_infantry_F
 {
@@ -185,6 +186,7 @@ class SOR_CH_47F : RHS_CH_47F
 	vehicleclass = "SOR_Aircraft";
 	faction = SOR_Faction_D;
 	displayName = "CH-47F (C4/P24)";
+	ace_cargo_space = 20;
 //		transportFuel = 30000;
 //		supplyRadius = 30;
 //		ace_fastroping_enabled = 1;
@@ -528,6 +530,25 @@ class SOR_AH64D_GS : RHS_AH64D_GS
 ////////////	
 // Planes //
 ////////////
+class SOR_Transport : RHS_C130J
+{
+	editorCategory = "SOR_Cat_Faction_D";
+	editorSubcategory = "SOR_SubCat_Aircraft";
+	vehicleclass = "SOR_Aircraft";
+	faction = SOR_Faction_D;
+	ace_cargo_space = 40;
+	class TransportItems 
+	{
+		item_xx(ACE_FieldDressing,10);
+	};
+	class TransportWeapons{};
+	class TransportMagazines{};
+	class TransportBackpacks
+	{
+		pack_xx(SOR_Repair_Pack_veh_D,1)
+	};
+};
+
 class SOR_A10 : RHS_A10_AT
 {
 	editorCategory = "SOR_Cat_Faction_D";

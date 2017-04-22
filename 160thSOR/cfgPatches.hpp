@@ -167,6 +167,9 @@ class CfgPatches
 			"SOR_S_Box_F",
 			"SOR_divegear",
 			"SOR_HW_Box_F",	
+			"SOR_Launcher_Box_F",
+			"SOR_Launcher_Box_F_Stinger",
+			"SOR_Launcher_Box_F_Javelin ",
 			"SOR_Box_NATO_WpsSpecial_F",
 			"SOR_Box_NATO_WpsSpecial_F_Training",			
 			"SOR_A_Crate_F",
@@ -192,6 +195,7 @@ class CfgPatches
 			"SOR_AH64D_AA",		
 			"SOR_AH64D_CS",
 			"SOR_AH64D_GS",	
+			"SOR_Transport",
 			"SOR_A10",
 			"SOR_FIGHTER",
 			"SOR_STRIKE_FIGHTER",
@@ -264,7 +268,7 @@ class CfgPatches
 			"160_rhs_weap_m16a4_carryhandle_grip_pmag_1",
 			"160_rhs_weap_m4a1_carryhandle_grip2_1"			
 		};
-		version="2.3.1";
+		version="2.3.2";
 		requiredAddons[] = 
 		{
 			"rhsusf_main",
