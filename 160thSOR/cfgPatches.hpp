@@ -169,7 +169,7 @@ class CfgPatches
 			"SOR_HW_Box_F",	
 			"SOR_Launcher_Box_F",
 			"SOR_Launcher_Box_F_Stinger",
-			"SOR_Launcher_Box_F_Javelin ",
+			"SOR_Launcher_Box_F_Javelin",
 			"SOR_Box_NATO_WpsSpecial_F",
 			"SOR_Box_NATO_WpsSpecial_F_Training",			
 			"SOR_A_Crate_F",
