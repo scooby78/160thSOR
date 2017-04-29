@@ -468,6 +468,7 @@ class SOR_MOR_Crate_F : B_supplyCrate_F
 	};
 	class TransportBackpacks
 	{
+		pack_xx(B_Kitbag_rgr,1)
 		pack_xx(rhs_Tow_Gun_Bag,2)
 		pack_xx(rhs_TOW_Tripod_Bag,2)		
 	};
