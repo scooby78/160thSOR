@@ -7,31 +7,29 @@
 
 class cfgWeapons 
 {
-	class rhs_weap_m4a1_carryhandle;
-	class rhs_weap_m4a1_carryhandle_m203;
-	class rhs_weap_m4a1_carryhandle_grip;
-	class rhs_weap_m16a4;
-	class rhs_weap_m4a1_grip2;
-	class rhs_weap_m4a1_m320;
-	class rhs_weap_m249_pip_L_para;
-	class rhs_weap_m240B;
+//Black
+
+	class SMA_HK416afg;
+	class SMA_M4afg;
+	class rhsusf_weap_m9;	
+	class SMA_HK416GLOD;	
+	class sma_minimi_mk3_762tlb;
+//	class rhs_weap_m240B;
+	class rhs_weap_M136_hp;
+	class rhs_weap_m4a1_blockII;	
 	class srifle_LRR_camo_F;
-	class rhs_weap_m4a1_blockII_M203;
-	class rhs_weap_m4a1_blockII_grip2_KAC;
-	class rhs_weap_m4a1_blockII;
-	class rhs_weap_m16a4_carryhandle;
-	class rhs_weap_sr25;
-	class rhs_weap_sr25_ec;
-	class rhs_weap_m16a4_carryhandle_grip_pmag;
-	class rhs_weap_m4a1_carryhandle_grip2;
-	class rhs_weap_ak74m_pkas;
-	
-	class arifle_SPAR_01_blk_F;
-	class arifle_SPAR_01_GL_blk_F;
-	class LMG_03_F;
+	class rhs_weap_ak74m_pkas;	
+	class SMA_MK18afg;
+//Desert
+	class SMA_HK416CUSTOMvfg;
+	class sma_minimi_mk3_762tlb_des;
 
-	class 160_weap_inf_std: arifle_SPAR_01_blk_F 
+
+	
+// TL and higher standard issue
+	class 160_weap_inf_tl: SMA_HK416afg 
 	{
+/* 	Not used with SMA weapons
 		class LinkedItems 
 		{
 			class LinkedItemsOptic 
@@ -41,14 +39,29 @@ class cfgWeapons
 			};
 			class LinkedItemsAcc 
 			{
-				item = "rhsusf_acc_anpeq15_bk_light";
+				item = "SMA_SFPEQ_HKTOP_BLK";
 				slot = "PointerSlot";
 			};
 		};
+*/	
 	};	
-
-	class 160_weap_inf_tl: arifle_SPAR_01_blk_F 
+	
+// Basic issue rifle for vehicle crew	
+	class 160_weap_inf_basic: SMA_M4afg 
 	{
+
+	};
+
+// Standard pistol	
+	class 160_weap_inf_handgun: rhsusf_weap_m9 
+	{
+
+	};
+
+// Grenadier class standard issue	
+	class 160_weap_inf_gl: SMA_HK416GLOD 
+	{
+/* 	Not used with SMA weapons
 		class LinkedItems 
 		{
 			class LinkedItemsOptic 
@@ -58,48 +71,17 @@ class cfgWeapons
 			};
 			class LinkedItemsAcc 
 			{
-				item = "rhsusf_acc_anpeq15_bk_light";
+				item = "SMA_SFPEQ_HKTOP_BLK";
 				slot = "PointerSlot";
 			};
 		};
-	};	
-	
-	class 160_weap_pj: rhs_weap_m4a1_blockII 
-	{
-		class LinkedItems 
-		{
-			class LinkedItemsOptic 
-			{
-				item = "rhsusf_acc_eotech_552";
-				slot = "CowsSlot";
-			};
-			class LinkedItemsAcc 
-			{
-				item = "rhsusf_acc_anpeq15_light";
-				slot = "PointerSlot";
-			};
-		};
-	};	
-	
-	class 160_weap_inf_m249: LMG_03_F 
-	{
-		class LinkedItems 
-		{
-			class LinkedItemsOptic 
-			{
-				item = "optic_Holosight_blk_F";
-				slot = "CowsSlot";
-			};
-			class LinkedItemsAcc 
-			{
-				item = "rhsusf_acc_anpeq15_bk_light";
-				slot = "PointerSlot";
-			};
-		};
+*/	
 	};
-	
-	class 160_weap_inf_gl: arifle_SPAR_01_GL_blk_F 
+
+// Standard Inf weapon issue	
+	class 160_weap_inf_std: SMA_HK416afg 
 	{
+/* 	Not used with SMA weapons
 		class LinkedItems 
 		{
 			class LinkedItemsOptic 
@@ -109,98 +91,58 @@ class cfgWeapons
 			};
 			class LinkedItemsAcc 
 			{
-				item = "rhsusf_acc_anpeq15_bk_light";
+				item = "SMA_SFPEQ_HKTOP_BLK";
 				slot = "PointerSlot";
 			};
 		};
+*/	
+	};	
+
+// AutoRifleman M249
+	class 160_weap_inf_AR1: sma_minimi_mk3_762tlb 
+	{
+		displayName = "Maximi Mk3 7.62 Tactical Long";
+/* 	Not used with SMA weapons
+		class LinkedItems 
+		{
+			class LinkedItemsOptic 
+			{
+				item = "SMA_BARSKA";
+				slot = "CowsSlot";
+			};	
+		};
+*/	
+	};
+	
+// AutoRifleman M240
+	class 160_weap_inf_AR2: sma_minimi_mk3_762tlb 
+	{
+		displayName = "Maximi Mk3 7.62 Tactical Long";
+/* 	Not used with SMA weapons
+		class LinkedItems 
+		{
+			class LinkedItemsOptic 
+			{
+				item = "rhsusf_acc_ELCAN";
+				slot = "CowsSlot";
+			};
+			class LinkedItemsAcc 
+			{
+				item = "SMA_SFPEQ_HKTOP_TAN";
+				slot = "PointerSlot";
+			};
+			class LinkedItemsMuzzle
+			{
+				item = "sma_gemtech_one_blk";
+				slot = "MuzzleSlot";
+			};		
+		};
+*/	
 	};
 
-	class 160_m4a1_carryhandle_grip_holo: rhs_weap_m4a1_carryhandle_grip 
-	{
-		class LinkedItems 
-		{
-			class LinkedItemsOptic 
-			{
-				item = "rhsusf_acc_eotech_552";
-				slot = "CowsSlot";
-			};
-			class LinkedItemsAcc 
-			{
-				item = "rhsusf_acc_anpeq15_bk_light";
-				slot = "PointerSlot";
-			};
-		};
-	};
-	
-	class 160_m4a1_carryhandle_grip_acog: rhs_weap_m4a1_carryhandle_grip 
-	{
-		class LinkedItems 
-		{
-			class LinkedItemsOptic 
-			{
-				item = "rhsusf_acc_ACOG";
-				slot = "CowsSlot";
-			};
-			class LinkedItemsAcc 
-			{
-				item = "rhsusf_acc_anpeq15_bk_light";
-				slot = "PointerSlot";
-			};
-		};
-	};
-	
-	class 160_m4a1_grip2: rhs_weap_m4a1_grip2 
-	{
-		class LinkedItems 
-		{
-			class LinkedItemsOptic 
-			{
-				item = "rhsusf_acc_ACOG";
-				slot = "CowsSlot";
-			};
-			class LinkedItemsAcc 
-			{
-				item = "rhsusf_acc_anpeq15_bk_light";
-				slot = "PointerSlot";
-			};
-		};
-	};
-	
-	class 160_m4a1_m320: rhs_weap_m4a1_m320 
-	{
-		class LinkedItems 
-		{
-			class LinkedItemsOptic 
-			{
-				item = "rhsusf_acc_ACOG";
-				slot = "CowsSlot";
-			};
-			class LinkedItemsAcc 
-			{
-				item = "rhsusf_acc_anpeq15_bk_light";
-				slot = "PointerSlot";
-			};
-		};
-	};
-	
-	class 160_rhs_weap_m249_pip_L_para: rhs_weap_m249_pip_L_para 
-	{
-		class LinkedItems 
-		{
-			class LinkedItemsOptic 
-			{
-				item = "rhsusf_acc_eotech_552";
-				slot = "CowsSlot";
-			};
-			class LinkedItemsAcc 
-			{
-				item = "rhsusf_acc_anpeq15side_bk";
-				slot = "PointerSlot";
-			};
-		};
-	};
-	
-	class 160_rhs_weap_m240B: rhs_weap_m240B 
+//RHS version
+/*
+	class 160_weap_inf_AR2: rhs_weap_m240B 
 	{
 		magazines[] = 
 		{
@@ -231,8 +173,10 @@ class cfgWeapons
 				slot = "PointerSlot";
 			};
 		};
-	};
-	
+	};	
+*/
+
+/*	
 	class 160_weap_inf_m240: rhs_weap_m240B 
 	{
 		magazines[] = 
@@ -265,21 +209,18 @@ class cfgWeapons
 			};
 		};
 	};	
+*/	
 	
-	class 160_rhs_weap_ak74m_pkas: rhs_weap_ak74m_pkas 
+// Basic issue RPG 	
+	class 160_weap_inf_RPG: rhs_weap_M136_hp 
 	{
-		class LinkedItems 
-		{
-			class LinkedItemsOptic 
-			{
-				item = "rhs_acc_1p78";
-				slot = "CowsSlot";
-			};
-		};
-	};	
 
-	class 160_weap_inf_std4a1_carryhandle_grip2: rhs_weap_m4a1_carryhandle_grip2 
+	};	
+	
+// Standard Parajumper weapon issue		
+	class 160_weap_inf_pj: SMA_MK18afg 
 	{
+/* 	Not used with SMA weapons
 		class LinkedItems 
 		{
 			class LinkedItemsOptic 
@@ -289,13 +230,63 @@ class cfgWeapons
 			};
 			class LinkedItemsAcc 
 			{
-				item = "rhsusf_acc_anpeq15_bk_light";
+				item = "rhsusf_acc_anpeq15_light";
 				slot = "PointerSlot";
 			};
 		};
-	};	
+*/	
+	};
+	
+// Standard Viper weapon issue	
+	class 160_weap_inf_recon_rifle: SMA_HK416CUSTOMvfg 
+	{
+/* 	Not used with SMA weapons
+		class LinkedItems 
+		{
+			class LinkedItemsOptic 
+			{
+				item = "SMA_ELCAN_SPECTER_TAN_ARDRDS";
+				slot = "CowsSlot";
+			};
+			class LinkedItemsAcc 
+			{
+				item = "SMA_SFPEQ_HKTOP_TAN";
+				slot = "PointerSlot";
+			};
+			class LinkedItemsMuzzle
+			{
+				item = "SMA_supp1tan_556";
+				slot = "MuzzleSlot";
+			};		
+		};
+*/	
+	};
+	class 160_weap_inf_recon_AR: sma_minimi_mk3_762tlb_des 
+	{
+		displayName = "Maximi Mk3 7.62 Tactical Long";
+/* 	Not used with SMA weapons
+		class LinkedItems 
+		{
+			class LinkedItemsOptic 
+			{
+				item = "SMA_BARSKA";
+				slot = "CowsSlot";
+			};
+			class LinkedItemsAcc 
+			{
 
-	class 160_srifle_LRR_camo_F: srifle_LRR_camo_F
+			};
+			class LinkedItemsMuzzle
+			{
+				item = "sma_gemtech_one_des";
+				slot = "MuzzleSlot";
+			};		
+		};
+*/	
+	};
+	
+// Sniper issue	
+	class 160_weap_inf_sniper: srifle_LRR_camo_F
 	{
 		class LinkedItems 
 		{
@@ -306,92 +297,9 @@ class cfgWeapons
 			};
 		};
 	};
-	
-	class 160_m4a1_blockII_M203: rhs_weap_m4a1_blockII_M203 
+	class 160_weap_inf_spotter: SMA_HK416CUSTOMvfg 
 	{
-		class LinkedItems 
-		{
-			class LinkedItemsOptic
-			{
-				item = "optic_Hamr";
-				slot = "CowsSlot";
-			};
-			class LinkedItemsAcc 
-			{
-				item = "acc_pointer_IR";
-				slot = "PointerSlot";
-			};
-		};
-	};
-	
-	class 160_m4a1_blockII_grip2_KAC: rhs_weap_m4a1_blockII_grip2_KAC 
-	{
-		class LinkedItems 
-		{
-			class LinkedItemsOptic 
-			{
-				item = "optic_Hamr";
-				slot = "CowsSlot";
-			};
-			class LinkedItemsAcc 
-			{
-				item = "acc_pointer_IR";
-				slot = "PointerSlot";
-			};
-			class LinkedItemsMuzzle
-			{
-				item = "rhsusf_acc_nt4_black";
-				slot = "MuzzleSlot";
-			};	
-		};
-	};
-	
-	class 160_rhs_weap_m16a4_carryhandle: rhs_weap_m16a4_carryhandle 
-	{
-		class LinkedItems 
-		{
-			class LinkedItemsOptic 
-			{
-				item = "rhsusf_acc_ACOG3";
-				slot = "CowsSlot";
-			};
-			class LinkedItemsAcc 
-			{
-				item = "rhsusf_acc_anpeq15_bk_light";
-				slot = "PointerSlot";
-			};
-		};
-	};
-	
-	class 160_rhs_weap_sr25: rhs_weap_sr25_ec 
-	{
-		class LinkedItems 
-		{
-			class LinkedItemsOptic 
-			{
-				item = "rhsusf_acc_LEUPOLDMK4_2";
-				slot = "CowsSlot";
-			};
-			class LinkedItemsAcc 
-			{
-				item = "rhsusf_acc_anpeq15side";
-				slot = "PointerSlot";
-			};
-			class LinkedItemsMuzzle
-			{
-				item = "rhsusf_acc_SR25S";
-				slot = "MuzzleSlot";
-			};
-			class LinkedItemsUnder
-			{
-				item = "rhsusf_acc_harris_bipod";
-				slot = "UnderBarrelSlot";
-			};			
-		};
-	};
-	
-	class 160_rhs_weap_m16a4_carryhandle_grip_pmag: rhs_weap_m16a4_carryhandle_grip_pmag 
-	{
+/* 	Not used with SMA weapons
 		class LinkedItems 
 		{
 			class LinkedItemsOptic 
@@ -401,85 +309,28 @@ class cfgWeapons
 			};
 			class LinkedItemsAcc 
 			{
-				item = "rhsusf_acc_anpeq15side";
+				item = "SMA_SFPEQ_HKTOP_TAN";
 				slot = "PointerSlot";
 			};
 			class LinkedItemsMuzzle
 			{
-				item = "rhsusf_acc_nt4_black";
+				item = "SMA_supp1tan_556";
 				slot = "MuzzleSlot";
 			};		
 		};
+*/	
 	};
 	
-	class 160_weap_recon: rhs_weap_m16a4 
+// OPFOR	
+	class 160_rhs_weap_ak74m_pkas: rhs_weap_ak74m_pkas 
 	{
 		class LinkedItems 
 		{
 			class LinkedItemsOptic 
 			{
-				item = "rhsusf_acc_ELCAN";
+				item = "rhs_acc_1p78";
 				slot = "CowsSlot";
 			};
-			class LinkedItemsAcc 
-			{
-				item = "rhsusf_acc_anpeq15side_bk";
-				slot = "PointerSlot";
-			};
-			class LinkedItemsMuzzle
-			{
-				item = "rhsusf_acc_nt4_black";
-				slot = "MuzzleSlot";
-			};		
-		};
-	};
-	
-	class 160_rhs_weap_m16a4_carryhandle_grip_pmag_1: rhs_weap_m16a4_carryhandle_grip_pmag 
-	{
-		class LinkedItems 
-		{
-			class LinkedItemsOptic 
-			{
-				item = "rhsusf_acc_ELCAN";
-				slot = "CowsSlot";
-			};
-			class LinkedItemsAcc 
-			{
-				item = "rhsusf_acc_anpeq15side";
-				slot = "PointerSlot";
-			};
-			class LinkedItemsMuzzle
-			{
-				item = "rhsusf_acc_nt4_black";
-				slot = "MuzzleSlot";
-			};
-			class LinkedItemsUnder
-			{
-				item = "rhsusf_acc_harris_bipod";
-				slot = "UnderBarrelSlot";
-			};				
-		};
-	};
-	
-	class 160_rhs_weap_m4a1_carryhandle_grip2_1: rhs_weap_m4a1_carryhandle_grip2 
-	{
-		class LinkedItems 
-		{
-			class LinkedItemsOptic 
-			{
-				item = "rhsusf_acc_ELCAN";
-				slot = "CowsSlot";
-			};
-			class LinkedItemsAcc 
-			{
-				item = "rhsusf_acc_anpeq15side";
-				slot = "PointerSlot";
-			};
-			class LinkedItemsMuzzle
-			{
-				item = "rhsusf_acc_nt4_black";
-				slot = "MuzzleSlot";
-			};			
 		};
 	};	
 };

@@ -243,36 +243,27 @@ class CfgPatches
 		};
 		weapons[] = 
 		{
-			"160_weap_pj",
-			"160_weap_inf_std",
 			"160_weap_inf_tl",
-			"160_weap_recon",
-			"160_weap_inf_m249",
-			"160_weap_inf_m240",
-			"160_weap_inf_gl",
-			"160_rhs_weap_ak74m_pkas",
-			"160_rhs_weap_m4a1_carryhandle_grip2",
-			"160_m4a1_carryhandle_grip_holo",			
-			"160_m4a1_carryhandle_grip_acog",
-			"160_m4a1_grip2",
-			"160_m4a1_m320",
-			"160_rhs_weap_m249_pip_L_para",
-			"160_rhs_weap_m240B",
-			"160_srifle_LRR_camo_F",
-			"160_rhs_weap_sr25",
-			"160_m4a1_blockII_M203",
-			"160_m4a1_blockII_grip2_KAC",
-			"160_rhs_weap_m16a4_carryhandle",
-			"160_rhs_weap_sr25",			
-			"160_rhs_weap_m16a4_carryhandle_grip_pmag",
-			"160_rhs_weap_m16a4_carryhandle_grip_pmag_1",
-			"160_rhs_weap_m4a1_carryhandle_grip2_1"			
+			"160_weap_inf_basic",
+			"160_weap_inf_handgun",
+			"160_weap_inf_gl",	
+			"160_weap_inf_std",	
+			"160_weap_inf_AR1",
+			"160_weap_inf_AR2",
+//			"160_weap_inf_m240",
+			"160_weap_inf_RPG",
+			"160_weap_inf_pj",
+			"160_weap_inf_recon_rifle",
+			"160_weap_inf_recon_AR",			
+			"160_weap_inf_sniper",
+			"160_weap_inf_spotter"	
 		};
 		version="2.3.2";
 		requiredAddons[] = 
 		{
 			"rhsusf_main",
 			"rhsusf_c_weapons",
+			"SMA_Weapons",
 			"A3_Characters_F",
 			"ace_medical",
 			"ace_common",

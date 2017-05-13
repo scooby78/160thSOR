@@ -192,7 +192,6 @@ class SOR_S_Box_F : Box_NATO_Support_F
 		item_xx(ACE_Kestrel4500,3)
 		item_xx(ACE_RangeCard,3)
 		item_xx(rhsusf_acc_nt4_black,20)
-		item_xx(muzzle_snds_acp,20)
 		item_xx(Laserdesignator,3)
 		item_xx(Laserbatteries,6)
 		item_xx(ACE_EntrenchingTool,6)
