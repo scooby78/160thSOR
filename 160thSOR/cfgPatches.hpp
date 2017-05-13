@@ -256,7 +256,7 @@ class CfgPatches
 			"160_weap_inf_sniper",
 			"160_weap_inf_spotter"	
 		};
-		version="2.3.2";
+		version="2.4.0";
 		requiredAddons[] = 
 		{
 			"rhsusf_main",
