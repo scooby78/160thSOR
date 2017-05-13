@@ -207,8 +207,6 @@ class CfgPatches
 			"SOR_O_Plane_CAS_02_F",
 			"SOR_I_Plane_Fighter_03_AA_B",
 			"SOR_I_Plane_Fighter_03_CAS_B",
-			"SOR_FIR_F16C_OPFOR",
-			"SOR_FIR_F16C_TWAS2",
 			"SOR_LAV",
 			"SOR_LAV_HQ",
 			"SOR_M6A2",
