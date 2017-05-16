@@ -259,6 +259,7 @@ class CfgPatches
 		version="2.4.0";
 		requiredAddons[] = 
 		{
+			"cba_settings",
 			"rhsusf_main",
 			"rhsusf_c_weapons",
 			"SMA_Weapons",
