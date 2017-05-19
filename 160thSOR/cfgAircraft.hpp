@@ -28,11 +28,11 @@ class RHS_AH64D_AA;
 class RHS_AH64D_CS;
 class RHS_AH64D_GS;
 class RHS_A10_AT;
-class FIR_F15_Base;
-class FIR_F15E_Base;
 class B_Heli_Transport_01_camo_F;
 class B_T_VTOL_01_infantry_F;
 class RHS_C130J;
+class B_Plane_Fighter_01_F;
+class B_Plane_Fighter_01_Stealth_F;
 
 class SOR_VTOL_Troop_D : B_T_VTOL_01_infantry_F
 {
@@ -549,12 +549,15 @@ class SOR_Transport : RHS_C130J
 	};
 };
 
-class SOR_A10 : RHS_A10_AT
+//class SOR_A10 : RHS_A10_AT temporary change due to A-10 eject bug
+class SOR_A10 : B_Plane_Fighter_01_F
+
 {
 	editorCategory = "SOR_Cat_Faction_D";
 	editorSubcategory = "SOR_SubCat_Aircraft";
 	vehicleclass = "SOR_Aircraft";
 	faction = SOR_Faction_D;
+/*
 	class TransportItems 
 	{
 		item_xx(ACE_FieldDressing,10);
@@ -565,45 +568,24 @@ class SOR_A10 : RHS_A10_AT
 	{
 		pack_xx(SOR_Repair_Pack_veh_D,1)
 	};
+*/	
 };
 
-class SOR_FIGHTER : FIR_F15_Base
+//Fighters
+class SOR_FIGHTER : B_Plane_Fighter_01_Stealth_F
+{
+	editorCategory = "SOR_Cat_Faction_D";
+	editorSubcategory = "SOR_SubCat_Aircraft";
+	vehicleclass = "SOR_Aircraft";
+	faction = SOR_Faction_D;	
+};
+
+class SOR_STRIKE_FIGHTER : B_Plane_Fighter_01_Stealth_F
 {
 	editorCategory = "SOR_Cat_Faction_D";
 	editorSubcategory = "SOR_SubCat_Aircraft";
 	vehicleclass = "SOR_Aircraft";
 	faction = SOR_Faction_D;
-	author="Firewill";
-	scope = 2;
-	displayName = "F-15C Eagle";
-	fir_f15c_custom_skin = 0;
-	editorPreview = "\FIR_F15\ui\preview\pic_c_usaf.paa";
-	hiddenselectionstextures[] = {"\FIR_F15\Data\c\nose_co.paa","\FIR_F15\Data\c\body_co.paa","\FIR_F15\Data\c\fuse_co.paa","\FIR_F15\Data\c\leftwing_co.paa","\FIR_F15\Data\c\rightwing_co.paa"};
-	weapons[] = {"FIR_MasterArm","FIR_M61A2","FIR_AIM9L","FIR_AIM120","FIR_CMLauncher"};
-	magazines[] = {"FIR_M61A2_940rnd_M","FIR_AIM9L_1rnd_M","FIR_AIM9L_1rnd_M","FIR_AIM9L_1rnd_M","FIR_AIM9L_1rnd_M","FIR_AIM120_1rnd_M","FIR_AIM120_1rnd_M","FIR_AIM120_1rnd_M","FIR_AIM120_1rnd_M","FIR_F15C_Fueltank_1rnd_M","FIR_F15C_Fueltank_1rnd_M","FIR_F15C_Fueltank_1rnd_M","FIR_240rnd_CMFlare_Chaff_Magazine"};
-	fir_f15_aux = "msip";/*no = no aux / msip = MSIP II Antenna on nose / irst = IRST for JASDF on nose*/
-	fir_f15_vwt = "usaf"; /* usaf = standard antenna / small = small antenna */				
-};
-
-class SOR_STRIKE_FIGHTER : FIR_F15E_Base
-{
-	editorCategory = "SOR_Cat_Faction_D";
-	editorSubcategory = "SOR_SubCat_Aircraft";
-	vehicleclass = "SOR_Aircraft";
-	faction = SOR_Faction_D;
-	author="Firewill";
-	scope = 2;
-	displayName = "F-15E Strike Eagle";
-	fir_f15e_custom_skin = 1;		
-	fir_f15e_custom_name = "Blank";
-	fir_f15e_custom_code = "FIR_F15E_Blank";	
-	editorPreview = "\FIR_F15\ui\preview\pic_e_usaf.paa";
-	hiddenselectionstextures[] = {"\FIR_F15\skin\e\nose_blank_co.paa","\FIR_F15\skin\e\body_blank_co.paa","\FIR_F15\skin\e\fuse_blank_co.paa","\FIR_F15\skin\e\leftwing_blank_co.paa","\FIR_F15\skin\e\rightwing_blank_co.paa","\FIR_F15\skin\e\tgtpod_blank_co.paa"};
-	weapons[] = {"FIR_MasterArm","FIR_M61A2","FIR_AIM9X","FIR_AIM120","FIR_GBU12","FIR_CMLauncher"};
-	magazines[] = {"FIR_M61A2_511rnd_M","FIR_AIM9X_1rnd_M","FIR_AIM9X_1rnd_M","FIR_AIM9X_1rnd_M","FIR_AIM9X_1rnd_M","FIR_AGM65L_1rnd_M","FIR_AGM65L_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_gbu53_1rnd_M","FIR_gbu53_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_GBU12_1rnd_M","FIR_GBU12_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_Empty_1rnd_M","FIR_AGM65G_1rnd_M","FIR_AGM65G_1rnd_M","FIR_F15E_Fueltank_1rnd_M","FIR_240rnd_CMFlare_Chaff_Magazine"};
-	fir_f15_engine = "PW"; /*GE = F110-GE-129 Model / PW = F100-PW-229 Model*/	
-	fir_f15_vwt = "usaf"; /* usaf = standard antenna / small = small antenna */		
-	fir_f15e_aux = "standard";/*standard = iff standard / rokaf = iff rokaf ver*/
 };
 /////////////////////
 //Captured Aircraft//

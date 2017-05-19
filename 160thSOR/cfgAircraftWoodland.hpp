@@ -115,7 +115,7 @@ class SOR_A10_W : SOR_A10
 	faction = SOR_Faction_W;
 };
 
-class SOR_FIGHTER_W : FIR_F15_Base
+class SOR_FIGHTER_W : SOR_FIGHTER
 {
 	editorCategory = "SOR_Cat_Faction_W";
 	editorSubcategory = "SOR_SubCat_Aircraft";
@@ -123,7 +123,7 @@ class SOR_FIGHTER_W : FIR_F15_Base
 	faction = SOR_Faction_W;			
 };
 
-class SOR_STRIKE_FIGHTER_W : FIR_F15E_Base
+class SOR_STRIKE_FIGHTER_W : SOR_STRIKE_FIGHTER
 {
 	editorCategory = "SOR_Cat_Faction_W";
 	editorSubcategory = "SOR_SubCat_Aircraft";
