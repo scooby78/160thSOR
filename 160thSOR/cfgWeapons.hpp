@@ -12,7 +12,7 @@ class cfgWeapons
 	class SMA_HK416afg;
 	class SMA_M4afg;
 	class rhsusf_weap_m9;	
-	class SMA_HK416GLOD;	
+	class SMA_HK416GL;
 	class sma_minimi_mk3_762tlb;
 //	class rhs_weap_m240B;
 	class rhs_weap_M136_hp;
@@ -59,7 +59,7 @@ class cfgWeapons
 	};
 
 // Grenadier class standard issue	
-	class 160_weap_inf_gl: SMA_HK416GLOD 
+	class 160_weap_inf_gl: SMA_HK416GL 
 	{
 /* 	Not used with SMA weapons
 		class LinkedItems 
