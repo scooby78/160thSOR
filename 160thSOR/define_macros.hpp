@@ -73,6 +73,32 @@
 						"rhs_mag_an_m8hc",\
 						"rhs_mag_an_m8hc"
 
+#define Standard_Mags_crew 	"30Rnd_556x45_Stanag_Tracer_Red",\
+							"30Rnd_556x45_Stanag_Tracer_Red",\
+							"30Rnd_556x45_Stanag_Tracer_Red",\
+							"30Rnd_556x45_Stanag_Tracer_Red",\
+							"rhs_mag_an_m8hc",\
+							"rhs_mag_an_m8hc",\
+							"Laserbatteries"	
+							
+#define Standard_Mags_AR1 	"rhsusf_mag_15Rnd_9x19_FMJ",\
+							"rhs_mag_an_m8hc",\
+							"rhs_mag_an_m8hc",\
+							"rhs_mag_an_m8hc",\
+							"SMA_150Rnd_762_M80A1_Tracer",\
+							"SMA_150Rnd_762_M80A1_Tracer"
+							
+#define Standard_Mags_AR1_ammo 	"SMA_150Rnd_762_M80A1_Tracer"
+							
+#define Standard_Mags_AR2 	"rhsusf_mag_15Rnd_9x19_FMJ",\
+							"rhs_mag_an_m8hc",\
+							"rhs_mag_an_m8hc",\
+							"rhs_mag_an_m8hc",\
+							"SMA_150Rnd_762_M80A1_Tracer",\
+							"SMA_150Rnd_762_M80A1_Tracer"	
+							
+#define Standard_Mags_AR2_ammo 	"SMA_150Rnd_762_M80A1_Tracer"		
+				
 #define GL_Mags 		"1Rnd_SmokeRed_Grenade_shell",\
 						"1Rnd_SmokeRed_Grenade_shell",\
 						"1Rnd_SmokeRed_Grenade_shell",\

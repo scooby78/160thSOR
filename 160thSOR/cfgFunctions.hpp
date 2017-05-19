@@ -31,7 +31,9 @@ class CfgFunctions
 			class airtraining;
 			class zeusTools;
 			class eject;
-			class ExternalView;
+			class externalView;
+			class bomber;
+			class mortar;
 		};
 	};
 };
