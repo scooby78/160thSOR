@@ -19,7 +19,6 @@ class cfgWeapons
 	class rhs_weap_m4a1_blockII;	
 	class srifle_LRR_camo_F;
 	class rhs_weap_ak74m_pkas;	
-	class SMA_MK18afg;
 //Desert
 	class SMA_HK416CUSTOMvfg;
 	class sma_minimi_mk3_762tlb_des;
@@ -218,7 +217,7 @@ class cfgWeapons
 	};	
 	
 // Standard Parajumper weapon issue		
-	class 160_weap_inf_pj: SMA_MK18afg 
+	class 160_weap_inf_pj: SMA_HK416afg 
 	{
 /* 	Not used with SMA weapons
 		class LinkedItems 
