@@ -97,8 +97,8 @@ class SOR_A_Box_F : Box_NATO_Ammo_F
 	{
 		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,40)
 		mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,10)
-		mag_xx(200Rnd_556x45_Box_Tracer_Red_F,3)	
-		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,3)
+		mag_xx(SMA_150Rnd_762_M80A1_Tracer,3)	
+		mag_xx(SMA_150Rnd_762_M80A1_Tracer,3)
 	};
 	class TransportBackpacks{};
 };	
@@ -373,8 +373,8 @@ class SOR_A_Crate_F : B_CargoNet_01_ammo_F
 	{
 		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,200)
 		mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,40)
-		mag_xx(200Rnd_556x45_Box_Tracer_Red_F,16)	
-		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,16)		
+		mag_xx(SMA_150Rnd_762_M80A1_Tracer,16)	
+		mag_xx(SMA_150Rnd_762_M80A1_Tracer,16)		
 		mag_xx(1Rnd_HE_Grenade_shell,20)			
 		mag_xx(1Rnd_Smoke_Grenade_shell,20)			
 		mag_xx(1Rnd_SmokeRed_Grenade_shell,20)	
@@ -408,8 +408,8 @@ class SOR_AM_Crate_F : B_CargoNet_01_ammo_F
 	{
 		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,200)
 		mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,40)
-		mag_xx(200Rnd_556x45_Box_Tracer_Red_F,16)	
-		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,16)		
+		mag_xx(SMA_150Rnd_762_M80A1_Tracer,16)	
+		mag_xx(SMA_150Rnd_762_M80A1_Tracer,16)		
 		mag_xx(1Rnd_HE_Grenade_shell,20)
 		mag_xx(1Rnd_Smoke_Grenade_shell,20)			
 		mag_xx(1Rnd_SmokeRed_Grenade_shell,20)	
@@ -505,8 +505,8 @@ class SOR_Taru_Pod_ammo_black : Land_Pod_Heli_Transport_04_ammo_F
 	{
 		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,200)
 		mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,20)
-		mag_xx(200Rnd_556x45_Box_Tracer_Red_F,16)	
-		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,16)		
+		mag_xx(SMA_150Rnd_762_M80A1_Tracer,16)	
+		mag_xx(SMA_150Rnd_762_M80A1_Tracer,16)		
 		mag_xx(1Rnd_HE_Grenade_shell,40)			
 		mag_xx(1Rnd_Smoke_Grenade_shell,40)			
 		mag_xx(1Rnd_SmokeRed_Grenade_shell,40)	
