@@ -6,17 +6,16 @@
 
 This is optimised for both SP and MP gameplay.
 
-Will take over an infantry unit (defined as a spotter) when a defined unit side (Blufor, Opfor, etc) moves within range (currently set to 400m). Once the unit is controlled by the script (spotting mode), it will pull out binoculars and will transfer 
-artillery coordinates to a singular artilery gunner (not the hardware).
+Will take over an infantry unit (defined as a spotter) when a defined unit side (Blufor, Opfor, etc) moves within range (currently set to 400m). 
+Once the unit is controlled by the script (spotting mode), it will pull out binoculars and will transfer artillery coordinates to a singular artillery  gunner (not the hardware).
 
-Coordinates are given both a fixed AND random error to stop the AI sniping the target. 
+Coordinates sent to the gunner have a fixed AND a random error to stop the AI sniping the target.
 
-The spotter will not be Zeus controllable while in spotting mode although after the selected target gets within 100m, the script will release control of the unit and allow the AI to return fire and runaway.
-If the AI successfully evaides the target, it will return to spotting mode automatically.
+The spotter will not be Zeus controllable while in spotting mode although after the currently selected target (the unit the spotter is watching) gets within 100m, the script will
+release control of the unit and allow the AI to return fire and runaway.
 
-If the Spotter or the Artillery gunner is killed the script will self-terminate.  
-
-The script will self-terminate once the bomber is dead.
+If the AI successfully evades the target, it will return to spotting mode automatically.
+If the Spotter or the Artillery gunner is killed the script will self-terminate. 
 
 syntax:
 If placed in the Spotter's init field:
@@ -25,7 +24,7 @@ nul= [this, Name_of_Mortar_unit,'Class_to_hunt'] spawn SOR_fnc_mortar;
 If placed in a trigger init field:
 nul= [Name_of_Spotter, Name_of_Mortar_unit,'Class_to_hunt'] spawn SOR_fnc_mortar;
 
-Base class a search for:
+Suggested classnames to set for target search criteria:
 'Civilian' (Civilian)
 'SoldierWB' (Blufor)
 'SoldierEB' (Opfor);
@@ -42,10 +41,13 @@ Opfor Artillery -
 
 
 E.g.
-nul= [this, mortar1 ,'SoldierWB'] spawn SOR_fnc_mortar; (If placed in the Spotter's init field will hunt Blufor units and call them in for mortar1 for fire mission.)
-nul= [spotter1, mortar1 ,'SoldierWB'] spawn SOR_fnc_mortar; (If placed anywhere (a waypoint or trigger's on activation field) will make Spotter1 hunt Blufor units and call them in for mortar1 for fire mission.)
+nul= [this, mortar1 ,'SoldierWB'] spawn SOR_fnc_mortar; 
+If placed in the Spotter's init field, Blufor units will be hunted and fire missions will be sent to **mortar1** (the gunner).
 
-Note: Do not use the same class of unit as the spotter as the class to be hunted or the spotter will kill itself.
+nul= [spotter1, mortar1 ,'SoldierWB'] spawn SOR_fnc_mortar; 
+If placed in a waypoint or a trigger 'on activation' field, will make **Spotter1** hunt Blufor units  and fire missions will be sent to **mortar1** (the gunner).
+
+Note: If the spotter is the same class as the uint hunted, the spotter will kill itself.
 
 Note: The script can be PAUSED via ZEUS or console by using the global execution... SOR_ARTI_PAUSE = true;
 
