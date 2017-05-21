@@ -12,7 +12,7 @@ If whilst returning to "home" the bomber finds another victim, it will re-engage
 The script will self-terminate once the bomber is dead.
 
 syntax:
-Base class a search for:
+Suggested classnames to set for target search criteria:
 "Civilian"; (Civilian)
 "SoldierWB"; (Blufor)
 "SoldierGB"; (Independent)
