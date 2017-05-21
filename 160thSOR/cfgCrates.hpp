@@ -340,8 +340,7 @@ class SOR_Box_NATO_WpsSpecial_F_Training : Box_NATO_Wps_F
 	};	
 	class TransportWeapons
 	{
-		weap_xx(160_rhs_weap_m16a4_carryhandle_grip_pmag_1,6)
-		weap_xx(160_rhs_weap_m4a1_carryhandle_grip2_1,6)
+		weap_xx(160_weap_inf_recon_rifle,6)
 	};
 	class TransportMagazines
 	{
