@@ -33,8 +33,8 @@ class SOR_Actual_D : B_officer_F
 	displayName = "Squad Actual";
 	accuracy = 3.5;
 	backpack = "tf_rt1523g_rhs";
-	weapons[] = {"160_weap_inf_tl", "160_weap_inf_handgun", "Throw", "Put", "Laserdesignator"};
-	respawnWeapons[] = {"160_weap_inf_tl", "160_weap_inf_handgun", "Throw", "Put", "Laserdesignator"};
+	weapons[] = {"160_weap_inf_std", "160_weap_inf_handgun", "Throw", "Put", "Laserdesignator"};
+	respawnWeapons[] = {"160_weap_inf_std", "160_weap_inf_handgun", "Throw", "Put", "Laserdesignator"};
 	Items[] = {Standard_Meds,SL_Equip};  
 	RespawnItems[] = {Standard_Meds,SL_Equip}; 
 	magazines[] = 
@@ -83,8 +83,8 @@ class SOR_Commander_D : B_officer_F
 	displayName = "Havoc Commander";
 	accuracy = 3.5;
 	backpack = "tf_rt1523g_rhs";
-	weapons[] = {"160_weap_inf_tl", "160_weap_inf_handgun", "Throw", "Put", "Laserdesignator"};
-	respawnWeapons[] = {"160_weap_inf_tl", "160_weap_inf_handgun", "Throw", "Put", "Laserdesignator"};
+	weapons[] = {"160_weap_inf_std", "160_weap_inf_handgun", "Throw", "Put", "Laserdesignator"};
+	respawnWeapons[] = {"160_weap_inf_std", "160_weap_inf_handgun", "Throw", "Put", "Laserdesignator"};
 	Items[] =
 	{
 		Standard_Meds,
@@ -371,8 +371,8 @@ class SOR_Medic_D : B_medic_F
 	displayName = "Combat Medic";
 	uniformClass = "U_B_CombatUniform_mcam";
 	backpack = "SOR_Medic_Pack_D";
-	weapons[] = {"160_weap_inf_tl", "160_weap_inf_handgun", "Throw", "Put"};
-	respawnWeapons[] = {"160_weap_inf_tl", "160_weap_inf_handgun","Throw", "Put"};
+	weapons[] = {"160_weap_inf_std", "160_weap_inf_handgun", "Throw", "Put"};
+	respawnWeapons[] = {"160_weap_inf_std", "160_weap_inf_handgun","Throw", "Put"};
 	Items[] = {Standard_Meds};
 	RespawnItems[] = {Standard_Meds};
 	magazines[] = {Standard_Mags,Std_Pistol};
