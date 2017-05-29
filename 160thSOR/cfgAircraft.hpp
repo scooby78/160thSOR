@@ -34,6 +34,7 @@ class RHS_C130J;
 class B_Plane_Fighter_01_F;
 class B_Plane_Fighter_01_Stealth_F;
 
+
 class SOR_VTOL_Troop_D : B_T_VTOL_01_infantry_F
 {
 	editorCategory = "SOR_Cat_Faction_D";
@@ -91,7 +92,7 @@ class SOR_B_Heli_Transport_01_camo_F : B_Heli_Transport_01_camo_F
 	class TransportBackpacks
 	{
 		pack_xx(SOR_Repair_Pack_veh_D,1)			
-	};
+	};	
 };
 
 class SOR_UH60M : RHS_UH60M
@@ -557,6 +558,7 @@ class SOR_A10 : B_Plane_Fighter_01_F
 	editorSubcategory = "SOR_SubCat_Aircraft";
 	vehicleclass = "SOR_Aircraft";
 	faction = SOR_Faction_D;
+	armor = 70; // was 60	
 /*
 	class TransportItems 
 	{
@@ -578,6 +580,7 @@ class SOR_FIGHTER : B_Plane_Fighter_01_Stealth_F
 	editorSubcategory = "SOR_SubCat_Aircraft";
 	vehicleclass = "SOR_Aircraft";
 	faction = SOR_Faction_D;	
+	armor = 70; // was 60
 };
 
 class SOR_STRIKE_FIGHTER : B_Plane_Fighter_01_Stealth_F
@@ -586,6 +589,7 @@ class SOR_STRIKE_FIGHTER : B_Plane_Fighter_01_Stealth_F
 	editorSubcategory = "SOR_SubCat_Aircraft";
 	vehicleclass = "SOR_Aircraft";
 	faction = SOR_Faction_D;
+	armor = 70; // was 60
 };
 /////////////////////
 //Captured Aircraft//
