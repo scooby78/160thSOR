@@ -55,7 +55,7 @@ class SOR_Rifleman_Pack_W : B_AssaultPack_tna_F
 	displayName = "Pack woodland Rifleman (M249)";
 	class TransportMagazines
 	{
-		mag_xx(rhs_200rnd_556x45_M_SAW,1);
+		mag_xx(SMA_150Rnd_762_M80A1_Tracer,1);
 		mag_xx(rhsusf_100Rnd_556x45_soft_pouch,1);
 	};
 };
@@ -71,12 +71,12 @@ class SOR_Rifleman_Ammo_Pack_W : B_AssaultPack_tna_F
 };
 
 //Custom m249 Pack		
-class SOR_M249_Pack_W : B_AssaultPack_tna_F
+class SOR_M249_Pack_W : tf_rt1523g_bwmod
 {
 	displayName = "Pack woodland M249";
 	class TransportMagazines
 	{
-		mag_xx(rhs_200rnd_556x45_M_SAW,2);
+		mag_xx(SMA_150Rnd_762_M80A1_Tracer,1);
 	};
 };
 

@@ -304,7 +304,7 @@ class SOR_Teamleader_D : B_Soldier_TL_F
 	displayName = "Team Leader";
 	uniformClass = "U_B_CombatUniform_mcam";
 	accuracy = 3.5;		
-	backpack = "tf_rt1523g_rhs";
+	backpack = "SOR_M249_Pack_D";
 	weapons[] = {"160_weap_inf_std", "160_weap_inf_handgun","Throw","Put","Rangefinder"};
 	respawnWeapons[] = {"160_weap_inf_std", "160_weap_inf_handgun","Throw","Put","Rangefinder"};
 	Items[] = {Standard_Meds,SL_Equip};
@@ -312,14 +312,12 @@ class SOR_Teamleader_D : B_Soldier_TL_F
 	magazines[] = 
 	{
 		SL_Mags,
-		Std_Pistol,
-		Standard_Mags_AR1_ammo		
+		Std_Pistol		
 	};
 	respawnMagazines[] = 
 	{
 		SL_Mags,
-		Std_Pistol,
-		Standard_Mags_AR1_ammo		
+		Std_Pistol				
 	};
 	linkedItems[] = 
 	{	
@@ -346,18 +344,6 @@ class SOR_Teamleader_D : B_Soldier_TL_F
 class SOR_Teamleader2_D : SOR_Teamleader_D
 {
 	displayName = "Team Leader 2";
-	magazines[] = 
-	{
-		SL_Mags,
-		Std_Pistol,
-		Standard_Mags_AR2_ammo		
-	};
-	respawnMagazines[] = 
-	{
-		SL_Mags,
-		Std_Pistol,
-		Standard_Mags_AR2_ammo		
-	};
 };
 
 //Combat Medics
