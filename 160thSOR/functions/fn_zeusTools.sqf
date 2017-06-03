@@ -2,8 +2,8 @@ if (!hasInterface) exitwith {};
 player setVariable ["ZEUSTOOLS_ACTIVE",true];
 
 //Count Units Action
-SOR_CountUnits = [];
-SOR_CountUnits set [0, player addAction ["<t color='#03F243'>Count Units On Map</t", 
+SOR_ZuesTool = [];
+SOR_ZuesTool set [0, player addAction ["<t color='#0900FF'>Count Units On Map</t", 
 {
 	_civUnits = civilian countSide allUnits;
 	_eastunits = east countSide allUnits;
@@ -15,9 +15,49 @@ SOR_CountUnits set [0, player addAction ["<t color='#03F243'>Count Units On Map<
 }, [], 10, false, false]];
 
 //Zeus group cache clean
-SOR_CountUnits = [];
-SOR_CountUnits set [0, player addAction ["<t color='#03F243'>Clear Zeus Group Bug</t", 
+SOR_ZuesTool = [];
+SOR_ZuesTool set [0, player addAction ["<t color='#03F243'>Clear Zeus Group Bug</t", 
 {
 	{deleteGroup _X} foreach allGroups;
 	hint "Group cache cleared";
+}, [], 10, false, false]];
+
+//Clear Fog
+SOR_ZuesTool = [];
+SOR_ZuesTool set [0, player addAction ["<t color='#FFA700'>Clear Fog</t", 
+{
+	hint "Fog clearing over 30 sec";
+	[30,0] remoteExec ["setFog",2]; 
+	sleep 30;
+	hint "Fog cleared";
+}, [], 10, false, false]];
+
+//Set Fog 50%
+SOR_ZuesTool = [];
+SOR_ZuesTool set [0, player addAction ["<t color='#FFA700'>Set Fog 50%</t", 
+{
+	hint "Fog rolling in over 30 sec";
+	[30,.5] remoteExec ["setFog",2]; 
+	sleep 30;
+	hint "Fog 50%";
+}, [], 10, false, false]];
+
+//Set Fog 70%
+SOR_ZuesTool = [];
+SOR_ZuesTool set [0, player addAction ["<t color='#FFA700'>Set Fog 70%</t", 
+{
+	hint "Fog rolling in over 30 sec";
+	[30,.7] remoteExec ["setFog",2]; 
+	sleep 30;
+	hint "Fog 70%";
+}, [], 10, false, false]];
+
+//Set Fog 100%
+SOR_ZuesTool = [];
+SOR_ZuesTool set [0, player addAction ["<t color='#FFA700'>Set Fog 100%</t", 
+{
+	hint "Fog rolling in over 30 sec";
+	[30,1] remoteExec ["setFog",2]; 
+	sleep 30;
+	hint "Fog 100%";
 }, [], 10, false, false]];
