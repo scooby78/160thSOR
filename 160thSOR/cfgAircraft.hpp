@@ -34,7 +34,6 @@ class RHS_C130J;
 class B_Plane_Fighter_01_F;
 class B_Plane_Fighter_01_Stealth_F;
 
-
 class SOR_VTOL_Troop_D : B_T_VTOL_01_infantry_F
 {
 	editorCategory = "SOR_Cat_Faction_D";
@@ -44,23 +43,7 @@ class SOR_VTOL_Troop_D : B_T_VTOL_01_infantry_F
 	displayName = "V-44 X Blackfish (Infantry C4/P32)";
 	armorStructural = 4; //was 1
 	damageResistance = 0.004; //was 0.001
-	class TransportItems 
-	{
-		item_xx(ACE_FieldDressing,10);
-		item_xx(V_RebreatherB,4);
-	};
-	class TransportWeapons
-	{
-		weap_xx(rhs_weap_m4a1_carryhandle_grip2,2)
-	};
-	class TransportMagazines
-	{
-		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,6)
-	};
-	class TransportBackpacks
-	{
-		pack_xx(SOR_Repair_Pack_veh_D,1)			
-	};
+	Airborne_Transport_Inventory
 };
 // Transport Helos
 class SOR_B_Heli_Transport_01_camo_F : B_Heli_Transport_01_camo_F
@@ -76,23 +59,7 @@ class SOR_B_Heli_Transport_01_camo_F : B_Heli_Transport_01_camo_F
 		Init = "[_this select 0] call ace_fastroping_fnc_equipFRIES;";
 	};
 */	
-	class TransportItems 
-	{
-		item_xx(ACE_FieldDressing,10);
-		item_xx(V_RebreatherB,4);
-	};
-	class TransportWeapons
-	{
-		weap_xx(rhs_weap_m4a1_carryhandle_grip2,2)
-	};
-	class TransportMagazines
-	{
-		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,6)
-	};
-	class TransportBackpacks
-	{
-		pack_xx(SOR_Repair_Pack_veh_D,1)			
-	};	
+	Airborne_Transport_Inventory	
 };
 
 class SOR_UH60M : RHS_UH60M
@@ -103,8 +70,6 @@ class SOR_UH60M : RHS_UH60M
 	faction = SOR_Faction_D;
 	displayName = "UH-60M (C4/P12)";
 	armorStructural = 4; // Was 2	
-//		ace_fastroping_enabled = 1;
-//		ace_fastroping_ropeOrigins[] = {{1.4, 1.9, -.4}};
 	class UserActions
 	{
 		class SOR_AutoDrop
@@ -161,23 +126,7 @@ class SOR_UH60M : RHS_UH60M
 			statement = "this animateDoor ['doorLB', 1];this animate ['doorHandler_L',1];";
 		};
 	};		
-	class TransportItems 
-	{
-		item_xx(ACE_FieldDressing,10);
-		item_xx(V_RebreatherB,4);
-	};
-	class TransportWeapons
-	{
-		weap_xx(rhs_weap_m4a1_carryhandle_grip2,2)
-	};
-	class TransportMagazines
-	{
-		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,6)
-	};
-	class TransportBackpacks
-	{
-		pack_xx(SOR_Repair_Pack_veh_D,1)			
-	};
+	Airborne_Transport_Inventory
 };
 
 class SOR_CH_47F : RHS_CH_47F
@@ -188,12 +137,6 @@ class SOR_CH_47F : RHS_CH_47F
 	faction = SOR_Faction_D;
 	displayName = "CH-47F (C4/P24)";
 	ace_cargo_space = 20;
-//		transportFuel = 30000;
-//		supplyRadius = 30;
-//		ace_fastroping_enabled = 1;
-//		ace_fastroping_ropeOrigins[] = {{0,-0.6,-3}};		
-//		ace_refuel_fuelCargo = 10000;
-//		ace_refuel_hooks[] = {[0.28,-4.99,-0.3],[-0.25,-4.99,-0.3]};
 	armorStructural = 4; // Was 2	
 	class UserActions
 	{
@@ -255,23 +198,7 @@ class SOR_CH_47F : RHS_CH_47F
 			statement = "[this] spawn rhs_fnc_vehPara";
 		};
 	};
-	class TransportItems 
-	{
-		item_xx(ACE_FieldDressing,10);
-		item_xx(V_RebreatherB,4);			
-	};
-	class TransportWeapons
-	{
-		weap_xx(rhs_weap_m4a1_carryhandle_grip2,2)
-	};
-	class TransportMagazines
-	{
-		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,6)
-	};
-	class TransportBackpacks
-	{
-		pack_xx(SOR_Repair_Pack_veh_D,1)			
-	};
+	Airborne_Transport_Inventory
 };
 
 class SOR_UH60M_MEV : RHS_UH60M_MEV2
@@ -288,29 +215,7 @@ class SOR_UH60M_MEV : RHS_UH60M_MEV2
 	radarType = 4;	
 	armorStructural = 4; // Was 2			
 	crew = "SOR_MEVPilot_D";
-//		ace_fastroping_enabled = 1;
-//		ace_fastroping_ropeOrigins[] = {{1.4, 1.9, -.4}};		
-	class TransportItems
-	{
-		item_xx(ACE_Fielddressing,24)
-		item_xx(ACE_morphine,16)
-		item_xx(ACE_epinephrine,16)
-		item_xx(G_Diving,3)
-		item_xx(U_B_Wetsuit,3)
-		item_xx(V_RebreatherB,5)
-	};		
-	class TransportWeapons
-	{
-		weap_xx(rhs_weap_m4a1_carryhandle_grip2,2)
-	};
-	class TransportMagazines
-	{
-		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,6)
-	};
-	class TransportBackpacks
-	{
-		pack_xx(SOR_Repair_Pack_veh_D,1)
-	};
+	Airborne_Medical_Inventory
 };
 
 class SOR_MELB_H6M : RHS_MELB_H6M
@@ -323,17 +228,7 @@ class SOR_MELB_H6M : RHS_MELB_H6M
 	armorStructural = 4; // Was 50
 	fuelCapacity = 110; //was fuelCapacity = 242;
 	fuelConsumptionRate = 0.0555; //was 0.0368;
-	class TransportItems 
-	{
-		item_xx(ACE_FieldDressing,10);
-		item_xx(V_RebreatherB,2);
-	};
-	class TransportWeapons{};
-	class TransportMagazines{};
-	class TransportBackpacks
-	{
-		pack_xx(SOR_Repair_Pack_veh_D,1)
-	};
+	Airborne_Transport_Inventory
 };	
 
 class SOR_MELB_MH6M : RHS_MELB_MH6M
@@ -346,20 +241,7 @@ class SOR_MELB_MH6M : RHS_MELB_MH6M
 	armorStructural = 4; // Was 50
 	fuelCapacity = 110; //was fuelCapacity = 242;
 	fuelConsumptionRate = 0.0555; //was 0.0368;
-//		ace_fastroping_enabled = 1;
-//		ace_fastroping_ropeOrigins[] = {{1.2,.8,0},{-1.2,.8,0}}; // outwards from ctr, forwards from ctr, vertical	(Gets stuck on seat)
-//		ace_fastroping_ropeOrigins[] = {{1,1.2,-1.9},{-1,1.2,-1.9}}; // outwards from ctr, forwards from ctr, vertical	
-	class TransportItems 
-	{
-		item_xx(ACE_FieldDressing,10);
-		item_xx(V_RebreatherB,2);			
-	};
-	class TransportWeapons{};
-	class TransportMagazines{};
-	class TransportBackpacks
-	{
-		pack_xx(SOR_Repair_Pack_veh_D,1)
-	};
+	Airborne_Attack_Inventory
 };	
 
 class SOR_MELB_MH6M_MEV : RHS_MELB_MH6M
@@ -373,23 +255,7 @@ class SOR_MELB_MH6M_MEV : RHS_MELB_MH6M
 	driverCanEject = 1; // was 0 test eject
 	ejectDeadCargo = 1; //test dead eject	
 	getInRadius = 5;
-//		ace_fastroping_enabled = 1;
-//		ace_fastroping_ropeOrigins[] = {{1.2,.8,0},{-1.2,.8,0}};
-	class TransportItems 
-	{
-		item_xx(ACE_Fielddressing,24)
-		item_xx(ACE_morphine,16)
-		item_xx(ACE_epinephrine,16)
-		item_xx(G_Diving,3)
-		item_xx(U_B_Wetsuit,3)
-		item_xx(V_RebreatherB,3)
-	};
-	class TransportWeapons{};
-	class TransportMagazines{};
-	class TransportBackpacks
-	{
-		pack_xx(SOR_Repair_Pack_veh_D,1)
-	};
+	Airborne_Medical_Inventory
 };	
 
 // Attack Helos	
@@ -403,17 +269,7 @@ class SOR_MELB_AH6M_L : RHS_MELB_AH6M_L
 	armorStructural = 4; // Was 50		
 	fuelCapacity = 200; //was fuelCapacity = 242;
 	fuelConsumptionRate = 0.0555; //was 0.0368;
-	class TransportItems 
-	{
-		item_xx(ACE_FieldDressing,10);
-		item_xx(V_RebreatherB,2);			
-	};
-	class TransportWeapons{};
-	class TransportMagazines{};
-	class TransportBackpacks
-	{
-		pack_xx(SOR_Repair_Pack_veh_D,1)
-	};
+	Airborne_Attack_Inventory
 };	
 
 class SOR_MELB_AH6M_M : RHS_MELB_AH6M_M
@@ -426,17 +282,7 @@ class SOR_MELB_AH6M_M : RHS_MELB_AH6M_M
 	armorStructural = 4; // Was 50
 	fuelCapacity = 200; //was fuelCapacity = 242;
 	fuelConsumptionRate = 0.0555; //was 0.0368;
-	class TransportItems 
-	{
-		item_xx(ACE_FieldDressing,10);
-		item_xx(V_RebreatherB,2);			
-	};
-	class TransportWeapons{};
-	class TransportMagazines{};
-	class TransportBackpacks
-	{
-		pack_xx(SOR_Repair_Pack_veh_D,1)
-	};
+	Airborne_Attack_Inventory
 };	
 
 class SOR_MELB_AH6M_H : RHS_MELB_AH6M_H
@@ -449,17 +295,7 @@ class SOR_MELB_AH6M_H : RHS_MELB_AH6M_H
 	armorStructural = 4; // Was 50		
 	fuelCapacity = 200; //was fuelCapacity = 242;
 	fuelConsumptionRate = 0.0555; //was 0.0368;
-	class TransportItems 
-	{
-		item_xx(ACE_FieldDressing,10);
-		item_xx(V_RebreatherB,2);			
-	};
-	class TransportWeapons{};
-	class TransportMagazines{};
-	class TransportBackpacks
-	{
-		pack_xx(SOR_Repair_Pack_veh_D,1)
-	};
+	Airborne_Attack_Inventory
 };	
 
 class SOR_AH64D_AA : RHS_AH64D_AA
@@ -471,17 +307,7 @@ class SOR_AH64D_AA : RHS_AH64D_AA
 	displayName = "AH-64D (AA)";
 	armor = 80; //was 50 (UH-60 is 60!) 
 	fuelCapacity = 200; //was 500 
-	class TransportItems 
-	{
-		item_xx(ACE_FieldDressing,10);
-		item_xx(V_RebreatherB,2);			
-	};
-	class TransportWeapons{};
-	class TransportMagazines{};
-	class TransportBackpacks
-	{
-		pack_xx(SOR_Repair_Pack_veh_D,1)
-	};
+	Airborne_Attack_Inventory
 };	
 
 class SOR_AH64D_CS : RHS_AH64D_CS
@@ -493,17 +319,7 @@ class SOR_AH64D_CS : RHS_AH64D_CS
 	displayName = "AH-64D (Close-Support)";
 	armor = 80; //was 50 (UH-60 is 60!) 
 	fuelCapacity = 200; //was 500 
-	class TransportItems 
-	{
-		item_xx(ACE_FieldDressing,10);
-		item_xx(V_RebreatherB,2);			
-	};
-	class TransportWeapons{};
-	class TransportMagazines{};
-	class TransportBackpacks
-	{
-		pack_xx(SOR_Repair_Pack_veh_D,1)
-	};
+	Airborne_Attack_Inventory
 };		
 
 class SOR_AH64D_GS : RHS_AH64D_GS
@@ -515,17 +331,7 @@ class SOR_AH64D_GS : RHS_AH64D_GS
 	displayName = "AH-64D (Ground-Suppression)";
 	armor = 80; //was 50 (UH-60 is 60!) 
 	fuelCapacity = 200; //was 500 
-	class TransportItems 
-	{
-		item_xx(ACE_FieldDressing,10);
-		item_xx(V_RebreatherB,2);			
-	};
-	class TransportWeapons{};
-	class TransportMagazines{};
-	class TransportBackpacks
-	{
-		pack_xx(SOR_Repair_Pack_veh_D,1)
-	};
+	Airborne_Attack_Inventory
 };		
 
 ////////////	
@@ -538,16 +344,7 @@ class SOR_Transport : RHS_C130J
 	vehicleclass = "SOR_Aircraft";
 	faction = SOR_Faction_D;
 	ace_cargo_space = 40;
-	class TransportItems 
-	{
-		item_xx(ACE_FieldDressing,10);
-	};
-	class TransportWeapons{};
-	class TransportMagazines{};
-	class TransportBackpacks
-	{
-		pack_xx(SOR_Repair_Pack_veh_D,1)
-	};
+	Airborne_Transport_Inventory
 };
 
 //class SOR_A10 : RHS_A10_AT temporary change due to A-10 eject bug
@@ -560,6 +357,10 @@ class SOR_A10 : B_Plane_Fighter_01_F
 	faction = SOR_Faction_D;
 	armor = 70; // was 60
 	armorStructural = 5; //was 1
+	class TransportItems{};
+	class TransportWeapons{};
+	class TransportMagazines{};
+	class TransportBackpacks{};
 };
 
 //Fighters
@@ -571,6 +372,10 @@ class SOR_FIGHTER : B_Plane_Fighter_01_Stealth_F
 	faction = SOR_Faction_D;	
 	armor = 70; // was 60
 	armorStructural = 5; //was 1
+	class TransportItems{};
+	class TransportWeapons{};
+	class TransportMagazines{};
+	class TransportBackpacks{};
 };
 
 class SOR_STRIKE_FIGHTER : B_Plane_Fighter_01_Stealth_F
@@ -581,6 +386,10 @@ class SOR_STRIKE_FIGHTER : B_Plane_Fighter_01_Stealth_F
 	faction = SOR_Faction_D;
 	armor = 70; // was 60
 	armorStructural = 5; //was 1
+	class TransportItems{};
+	class TransportWeapons{};
+	class TransportMagazines{};
+	class TransportBackpacks{};
 };
 /////////////////////
 //Captured Aircraft//
@@ -613,17 +422,7 @@ class SOR_O_Heli_Transport_04_F : O_Heli_Transport_04_F
 	{
 		init="_this call SLX_XEH_EH_Init;";
 	};
-	class TransportItems 
-	{
-		item_xx(ACE_FieldDressing,10);
-		item_xx(V_RebreatherB,3);			
-	};	
-	class TransportWeapons{};
-	class TransportMagazines{};
-	class TransportBackpacks
-	{
-		pack_xx(SOR_Repair_Pack_veh_D,1)
-	};
+	Airborne_Transport_Inventory
 };
 
 // Civilial troop transport	
@@ -635,17 +434,7 @@ class SOR_Mi8amt_civ : RHS_Mi8amt_civilian
 	faction = SOR_Faction_D;
 	side=1;	
 	displayName = "MI-8AMT (C2/P20)";
-	class TransportItems 
-	{
-		item_xx(ACE_FieldDressing,10);
-		item_xx(V_RebreatherB,2);			
-	};
-	class TransportWeapons{};
-	class TransportMagazines{};
-	class TransportBackpacks
-	{
-		pack_xx(SOR_Repair_Pack_veh_D,1)
-	};
+	Airborne_Transport_Inventory
 };
 
 
@@ -658,21 +447,7 @@ class SOR_O_Heli_Attack_02_F : O_Heli_Attack_02_F
 	faction = SOR_Faction_D;
 	side=1;	
 	displayName = "MI-48 Kajman (C2/P8)";
-	class TransportItems 
-	{
-		item_xx(ACE_FieldDressing,10);
-		item_xx(V_RebreatherB,2);			
-	};
-	class TransportWeapons{};
-	class TransportMagazines
-	{
-		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,5)
-		mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,4)
-	};
-	class TransportBackpacks
-	{
-		pack_xx(SOR_Repair_Pack_veh_D,1)
-	};
+	Airborne_Transport_Inventory
 };	
 
 class SOR_O_Heli_Attack_02_black_F : O_Heli_Attack_02_black_F
@@ -683,21 +458,7 @@ class SOR_O_Heli_Attack_02_black_F : O_Heli_Attack_02_black_F
 	faction = SOR_Faction_D;
 	side=1;	
 	displayName = "MI-48 Kajman (Black C2/P8)";
-	class TransportItems 
-	{
-		item_xx(ACE_FieldDressing,10);
-		item_xx(V_RebreatherB,2);			
-	};
-	class TransportWeapons{};
-	class TransportMagazines
-	{
-		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,5)
-		mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,4)
-	};
-	class TransportBackpacks
-	{
-		pack_xx(SOR_Repair_Pack_veh_D,1)
-	};
+	Airborne_Transport_Inventory
 };
 
 class SOR_O_Heli_Light_02_v2_F : O_Heli_Light_02_v2_F
@@ -708,21 +469,7 @@ class SOR_O_Heli_Light_02_v2_F : O_Heli_Light_02_v2_F
 	faction = SOR_Faction_D;
 	side=1;	
 	displayName = "PO-30 Orca (B&W C2/P8)";
-	class TransportItems 
-	{
-		item_xx(ACE_FieldDressing,10);
-		item_xx(V_RebreatherB,2);			
-	};
-	class TransportWeapons{};
-	class TransportMagazines
-	{
-		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,5)
-		mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,4)
-	};
-	class TransportBackpacks
-	{
-		pack_xx(SOR_Repair_Pack_veh_D,1)
-	};
+	Airborne_Transport_Inventory
 };	
 
 //Jets	
@@ -767,4 +514,3 @@ class SOR_I_Plane_Fighter_03_CAS_B : I_Plane_Fighter_03_CAS_F
 	class TransportMagazines{};
 	class TransportBackpacks{};
 };
-
