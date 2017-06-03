@@ -39,14 +39,14 @@ class SOR_PJ_Box_F : Box_NATO_Equip_F
 	editorSubcategory = "SOR_SubCat_SupplyBoxes";
 	vehicleClass = "SOR_SupplyBoxes";	
 	faction = SOR_Faction_CRATE;			
-	displayName = "Box PJ Medical[Static]";
+	displayName = "Box [PJ Medical Static]";
 	model = "\A3\Structures_F_Heli\Items\Luggage\MetalCase_01_large_F.p3d";
 		class TransportItems
 	{
-		item_xx(ACE_FieldDressing,40);
-		item_xx(ACE_morphine,20);
-		item_xx(ACE_epinephrine,20);			
-		item_xx(ACE_bloodIV_500,10);				
+		item_xx(ACE_FieldDressing,80);
+		item_xx(ACE_morphine,40);
+		item_xx(ACE_epinephrine,40);			
+		item_xx(ACE_bloodIV_500,30);				
 	};		
 	class TransportWeapons{};
 	class TransportMagazines{};
@@ -59,7 +59,7 @@ class SOR_PJ_Pack_Box_F : Box_NATO_Uniforms_F
 	editorSubcategory = "SOR_SubCat_SupplyBoxes";
 	vehicleClass = "SOR_SupplyBoxes";	
 	faction = SOR_Faction_CRATE;		
-	displayName = "Box PJ Pack Storage [Static]";
+	displayName = "Box [PJ Pack Storage Static]";
 	model = "\A3\Structures_F_Heli\Items\Luggage\PlasticCase_01_large_F.p3d";
 	class TransportItems{};		
 	class TransportWeapons{};
@@ -77,7 +77,7 @@ class SOR_Air_LP : Land_PlasticCase_01_medium_F
 	editorSubcategory = "SOR_SubCat_SupplyBoxes";
 	vehicleClass = "SOR_SupplyBoxes";	
 	faction = SOR_Faction_CRATE;			
-	displayName = "Box [Airborne Life Preservers][Static]";
+	displayName = "Box [Airborne Life Preservers Static]";
 	model = "\A3\Structures_F_Heli\Items\Luggage\PlasticCase_01_medium_F.p3d";
 	class TransportItems
 	{
@@ -255,7 +255,7 @@ class SOR_Launcher_Box_F : Box_NATO_WpsLaunch_F
 	editorSubcategory = "SOR_SubCat_SupplyBoxes";
 	vehicleClass = "SOR_SupplyBoxes";	
 	faction = SOR_Faction_CRATE;		
-	displayName = "Box [AT Launchers]";
+	displayName = "Box [Launcher AT]";
 	class TransportItems{};
 	class TransportWeapons
 	{
@@ -271,7 +271,7 @@ class SOR_Launcher_Box_F_Stinger : Box_NATO_WpsLaunch_F
 	editorSubcategory = "SOR_SubCat_SupplyBoxes";
 	vehicleClass = "SOR_SupplyBoxes";	
 	faction = SOR_Faction_CRATE;		
-	displayName = "Box [Stinger Launcher]";
+	displayName = "Box [Launcher Stinger]";
 	class TransportItems{};
 	class TransportWeapons
 	{
@@ -290,7 +290,7 @@ class SOR_Launcher_Box_F_Javelin  : Box_NATO_WpsLaunch_F
 	editorSubcategory = "SOR_SubCat_SupplyBoxes";
 	vehicleClass = "SOR_SupplyBoxes";	
 	faction = SOR_Faction_CRATE;		
-	displayName = "Box [Javelin  Launcher]";
+	displayName = "Box [Launcher Javelin]";
 	class TransportItems{};
 	class TransportWeapons
 	{
