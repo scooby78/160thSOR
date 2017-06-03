@@ -558,19 +558,8 @@ class SOR_A10 : B_Plane_Fighter_01_F
 	editorSubcategory = "SOR_SubCat_Aircraft";
 	vehicleclass = "SOR_Aircraft";
 	faction = SOR_Faction_D;
-	armor = 70; // was 60	
-/*
-	class TransportItems 
-	{
-		item_xx(ACE_FieldDressing,10);
-	};
-	class TransportWeapons{};
-	class TransportMagazines{};
-	class TransportBackpacks
-	{
-		pack_xx(SOR_Repair_Pack_veh_D,1)
-	};
-*/	
+	armor = 70; // was 60
+	armorStructural = 5; //was 1
 };
 
 //Fighters
@@ -581,6 +570,7 @@ class SOR_FIGHTER : B_Plane_Fighter_01_Stealth_F
 	vehicleclass = "SOR_Aircraft";
 	faction = SOR_Faction_D;	
 	armor = 70; // was 60
+	armorStructural = 5; //was 1
 };
 
 class SOR_STRIKE_FIGHTER : B_Plane_Fighter_01_Stealth_F
@@ -590,6 +580,7 @@ class SOR_STRIKE_FIGHTER : B_Plane_Fighter_01_Stealth_F
 	vehicleclass = "SOR_Aircraft";
 	faction = SOR_Faction_D;
 	armor = 70; // was 60
+	armorStructural = 5; //was 1
 };
 /////////////////////
 //Captured Aircraft//
