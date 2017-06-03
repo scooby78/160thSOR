@@ -19,3 +19,4 @@
 #include "cfgUnitInsignias.hpp"
 #include "cfgMarkers.hpp"
 #include "cfgAISkill.hpp"
+#include "cfgCloudlets.hpp"

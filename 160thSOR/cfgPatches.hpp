@@ -259,6 +259,8 @@ class CfgPatches
 		version="2.4.0";
 		requiredAddons[] = 
 		{
+			"A3_Data_F",
+			"A3_Weapons_F",
 			"cba_settings",
 			"rhsusf_main",
 			"rhsusf_c_weapons",
