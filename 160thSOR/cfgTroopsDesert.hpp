@@ -192,15 +192,11 @@ class SOR_AirCommand_D : SOR_Commander_D
 	magazines[] = 
 	{
 		Std_Pistol,
-		"rhs_mag_m18_green",
-		"rhs_mag_m18_green",
 		"Laserbatteries"
 	};
 	respawnMagazines[] = 
 	{
 		Std_Pistol,
-		"rhs_mag_m18_green",
-		"rhs_mag_m18_green",
 		"Laserbatteries"
 	};
 	linkedItems[] = 
