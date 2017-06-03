@@ -231,7 +231,7 @@ class SOR_ZeusCommand_D : SOR_Commander_D
 	{
 		class SOR_CountUnitsAction
 		{
-			condition = "(alive this) && !(this getVariable ['ZEUSTOOLS_ACTIVE',false])";
+			condition = "(alive this) && (player isKindOf 'SOR_ZeusCommand_D') && !(this getVariable ['ZEUSTOOLS_ACTIVE',false])";
 			displayName = "<t color='#F088ff'>Initialise Zeus Tools</t>";
 			priority = 8;
 			showWindow = 0;
@@ -843,7 +843,7 @@ class SOR_ParaJumper_D : B_medic_F
 		{
 			displayName = "<t color='#FF0000'>HALO</t>";
 			displayNameDefault = "<t color='#FF0000'>HALO</t>";
-			condition = "((getPosATL player) select 2 > 50) && SOR_ParaJump_Active && !((surfaceIsWater getPos player) && ((getPosASL player) select 2 < 1))";
+			condition = "((getPosATL player) select 2 > 50) && SOR_ParaJump_Active && !((surfaceIsWater getPos player) && ((getPosASL player) select 2 < 1)) && (player isKindOf 'SOR_ParaJumper_D' || player isKindOf 'SOR_ParaJumper_W')";
 			priority = 8;
 			showWindow = 1;
 			hideOnUse = 1;
