@@ -53,12 +53,6 @@ class SOR_B_Heli_Transport_01_camo_F : B_Heli_Transport_01_camo_F
 	vehicleclass = "SOR_Aircraft";
 	faction = SOR_Faction_D;
 	displayName = "UH-80 Ghost Hawk (C4/P12)";
-/*	
-	class eventHandlers
-	{
-		Init = "[_this select 0] call ace_fastroping_fnc_equipFRIES;";
-	};
-*/	
 	Airborne_Transport_Inventory	
 };
 
@@ -70,6 +64,7 @@ class SOR_UH60M : RHS_UH60M
 	faction = SOR_Faction_D;
 	displayName = "UH-60M (C4/P12)";
 	armorStructural = 4; // Was 2	
+	Airborne_Transport_Inventory
 	class UserActions
 	{
 		class SOR_AutoDrop
@@ -85,48 +80,46 @@ class SOR_UH60M : RHS_UH60M
 			onlyForPlayer = 0;
 			statement = "[this] spawn sor_fnc_autoparadrop";
 		};
-		class CloseCargoDoor
+		class OpenCargoDoor //sources - ["RHS_US_A2_AirImport"]
 		{
-			condition = "this doorPhase 'doorRB' > 0 and (alive this) and player in this;";
-			displayName = "Close right cargo door";
-			onlyforplayer = 1;
+			displayName = "Open right cargo door";
 			position = "pos driver";
 			radius = 15;
 			showwindow = 0;
+			condition = "this doorPhase 'doorRB' == 0 and (alive this) and player in this;";
+			statement = "this animateDoor ['doorRB', 1];this animate ['doorHandler_R',1]";
+			onlyforplayer = 1;
+		};
+		class CloseCargoDoor: OpenCargoDoor //inherits 7 parameters from bin\config.bin/CfgVehicles/RHS_UH60M/UserActions/OpenCargoDoor, sources - ["RHS_US_A2_AirImport"]
+		{
+			displayName = "Close right cargo door";
+			condition = "this doorPhase 'doorRB' > 0 and (alive this) and player in this;";
 			statement = "this animateDoor ['doorRB', 0];this animate ['doorHandler_R',0];";
 		};
-		class CloseCargoLDoor
+		class OpenCargoLDoor: OpenCargoDoor //inherits 7 parameters from bin\config.bin/CfgVehicles/RHS_UH60M/UserActions/OpenCargoDoor, sources - ["RHS_US_A2_AirImport"]
 		{
-			condition = "this doorPhase 'doorLB' > 0 and (alive this) and player in this;";
-			displayName = "Close left cargo door";
+			displayName = "Open left cargo door";
+			condition = "this doorPhase 'doorLB' == 0 and (alive this) and player in this;";
+			statement = "this animateDoor ['doorLB', 1];this animate ['doorHandler_L',1];";
 			onlyforplayer = 1;
-			position = "pos driver";
-			radius = 15;
-			showwindow = 0;
+		};
+		class CloseCargoLDoor: OpenCargoDoor //inherits 7 parameters from bin\config.bin/CfgVehicles/RHS_UH60M/UserActions/OpenCargoDoor, sources - ["RHS_US_A2_AirImport"]
+		{
+			displayName = "Close left cargo door";
+			condition = "this doorPhase 'doorLB' > 0 and (alive this) and player in this;";
 			statement = "this animateDoor ['doorLB', 0];this animate ['doorHandler_L',0];";
 		};
-		class OpenCargoDoor
+		class ToggleLight //sources - ["RHS_US_A2_AirImport"]
 		{
-			condition = "this doorPhase 'doorRB' == 0 and (alive this) and player in this;";
-			displayName = "Open right cargo door";
-			onlyforplayer = 1;
+			displayName = "Toggle interior light";
 			position = "pos driver";
 			radius = 15;
 			showwindow = 0;
-			statement = "this animateDoor ['doorRB', 1];this animate ['doorHandler_R',1]";
-		};
-		class OpenCargoLDoor
-		{
-			condition = "this doorPhase 'doorLB' == 0 and (alive this) and player in this;";
-			displayName = "Open left cargo door";
+			condition = "player in this && (player == driver this || player == gunner this);";
+			statement = "[this,'cargolights_hide'] call rhs_fnc_toggleIntLight";
 			onlyforplayer = 1;
-			position = "pos driver";
-			radius = 15;
-			showwindow = 0;
-			statement = "this animateDoor ['doorLB', 1];this animate ['doorHandler_L',1];";
 		};
 	};		
-	Airborne_Transport_Inventory
 };
 
 class SOR_CH_47F : RHS_CH_47F
@@ -138,13 +131,14 @@ class SOR_CH_47F : RHS_CH_47F
 	displayName = "CH-47F (C4/P24)";
 	ace_cargo_space = 20;
 	armorStructural = 4; // Was 2	
+	crew = "SOR_HeliPilot_D";
+	Airborne_Transport_Inventory
 	class UserActions
 	{
 		class SOR_AutoDrop
 		{
 			displayName = "<t color='#008000'>Start Drop!</t>";
 			displayNameDefault = "<t color='#008000'>Start Drop!</t>";
-			condition = "(player == driver this)&&((getPosATL this) select 2 > 200)";
 			priority = 1;
 			showWindow = 0;
 			hideOnUse = 1;
@@ -153,52 +147,52 @@ class SOR_CH_47F : RHS_CH_47F
 			onlyForPlayer = 0;
 			statement = "[this] spawn sor_fnc_autoparadrop";
 		};
-		class CloseCargoDoor
+		class OpenCargoDoor //sources - ["RHS_US_A2_AirImport"]
 		{
-			condition = "[this,'ramp_anim'] call ace_compat_rhs_usf3_fnc_canCloseDoor";
-			displayName = "Close Ramp";
-			onlyforplayer = 1;
+			displayName = "Open Ramp";
 			position = "pos driver";
 			radius = 15;
-			shortcut = "user12";
 			showwindow = 0;
+			condition = "this animationSourcePhase 'ramp_anim' < 1 and (alive this) && (player == driver this || player == gunner this || player isKindOf 'B_Pilot_F' || player isKindOf 'B_crew_F' || player isKindOf 'SOR_AirCommand_D')";
+			statement = "this animateSource ['ramp_anim', 1];{if(not(_x isKindOf 'Man'))then{detach _x}}foreach attachedObjects this;";
+			onlyforplayer = 1;
+			shortcut = "user12";
+		};
+		class LeverRamp: OpenCargoDoor //inherits 8 parameters from bin\config.bin/CfgVehicles/RHS_CH_47F/UserActions/OpenCargoDoor, sources - ["RHS_US_A2_AirImport"]
+		{
+			displayName = "Lever Ramp";
+			condition = "this animationSourcePhase 'ramp_anim' != 0.6 and (alive this) and (alive this) && (player == driver this || player == gunner this || player isKindOf 'B_Pilot_F' || player isKindOf 'B_crew_F' || player isKindOf 'SOR_AirCommand_D')";
+			statement = "this animateSource ['ramp_anim', 0.6];";
+			shortcut = "user13";
+		};
+		class CloseCargoDoor: OpenCargoDoor //inherits 8 parameters from bin\config.bin/CfgVehicles/RHS_CH_47F/UserActions/OpenCargoDoor, sources - ["RHS_US_A2_AirImport"]
+		{
+			displayName = "Close Ramp";
+			condition = "this animationSourcePhase 'ramp_anim' > 0 and (alive this) and (alive this) && (player == driver this || player == gunner this || player isKindOf 'B_Pilot_F' || player isKindOf 'B_crew_F' || player isKindOf 'SOR_AirCommand_D')";
 			statement = "this animateSource ['ramp_anim', 0];[this] call rhs_fnc_cargoAttach";
 		};
-		class OpenCargoDoor
+		class MoveInside: OpenCargoDoor //inherits 8 parameters from bin\config.bin/CfgVehicles/RHS_CH_47F/UserActions/OpenCargoDoor, sources - ["RHS_US_A2_AirImport"]
 		{
-			condition = "this animationSourcePhase 'ramp_anim' < 1 and (alive this) and ({player == _x} count [driver this,  this turretUnit [3], this turretUnit [4]] > 0)";
-			displayName = "Open Ramp";
-			onlyforplayer = 1;
-			position = "pos driver";
-			radius = 15;
-			shortcut = "user12";
-			showwindow = 0;
-			statement = "this animateSource ['ramp_anim', 1];{if(not(_x isKindOf 'Man'))then{detach _x}}foreach attachedObjects this;";
-		};
-		class LeverRamp
-		{
-			condition = "this animationSourcePhase 'ramp_anim' != 0.6 and (alive this) and (alive this) and ({player == _x} count [driver this,  this turretUnit [3], this turretUnit [4]] > 0);";
-			displayName = "Lever Ramp";
-			onlyforplayer = 1;
-			position = "pos driver";
-			radius = 15;
-			shortcut = "user13";
-			showwindow = 0;
-			statement = "this animateSource ['ramp_anim', 0.6];";
-		};
-		class VehicleParadrop
-		{
-			condition = "(count (attachedObjects this) > 0) AND ('man' countType (attachedObjects this) == 0) AND Alive(this)";
-			displayName = "Paradrop cargo";
-			onlyforplayer = 1;
-			position = "pos driver";
-			radius = 15;
+			displayName = "Move inside";
 			shortcut = "";
-			showwindow = 0;
+		};
+		class VehicleParadrop: MoveInside //inherits 4 parameters from bin\config.bin/CfgVehicles/RHS_CH_47F/UserActions/MoveInside, sources - ["RHS_US_A2_AirImport"]
+		{
+			displayName = "Paradrop cargo";
+			condition = "(count (attachedObjects this) > 0) AND ('man' countType (attachedObjects this) == 0) AND Alive(this) && (player == driver this || player == gunner this || player isKindOf 'B_Pilot_F' || player isKindOf 'B_crew_F' || player isKindOf 'SOR_AirCommand_D')";
 			statement = "[this] spawn rhs_fnc_vehPara";
 		};
+		class ToggleLight //sources - ["RHS_US_A2_AirImport"]
+		{
+			displayName = "Toggle interior light";
+			position = "pos driver";
+			radius = 15;
+			showwindow = 0;
+			condition = "player in this && (player == driver this || player == gunner this || player isKindOf 'B_Pilot_F' || player isKindOf 'B_crew_F' || player isKindOf 'SOR_AirCommand_D')";
+			statement = "[this,'cargolights_hide'] call rhs_fnc_toggleIntLight";
+			onlyforplayer = 1;
+		};
 	};
-	Airborne_Transport_Inventory
 };
 
 class SOR_UH60M_MEV : RHS_UH60M_MEV2
@@ -343,8 +337,74 @@ class SOR_Transport : RHS_C130J
 	editorSubcategory = "SOR_SubCat_Aircraft";
 	vehicleclass = "SOR_Aircraft";
 	faction = SOR_Faction_D;
+	displayName = "C130J (C2/P25)";
 	ace_cargo_space = 40;
-	Airborne_Transport_Inventory
+    maximumLoad = 5000;
+	crew = "SOR_HeliPilot_D";
+	class TransportItems
+	{
+		item_xx(ACE_FieldDressing,10);
+	};
+	class TransportWeapons {};
+	class TransportMagazines {};
+	class TransportBackpacks
+	{
+		pack_xx(SOR_Repair_Pack_veh_D,1)
+		pack_xx(B_Parachute,27)
+	};
+	class UserActions //sources - ["RHS_US_A2_AirImport"]
+	{
+		class OpenRamp //sources - ["RHS_US_A2_AirImport"]
+		{
+			displayName = "Open Cargo Ramp";
+			position = "pos_gunner";
+			onlyforplayer = 1;
+			showWindow = 0;
+			radius = 6;
+			condition = "(this animationSourcePhase 'ramp' <= 0.65) AND Alive(this) && (player == driver this || player == gunner this || player isKindOf 'B_Pilot_F' || player isKindOf 'B_crew_F' || player isKindOf 'SOR_AirCommand_D')";
+			statement = "this animateSource ['ramp',1];{if(not(_x isKindOf 'Man'))then{detach _x}}foreach attachedObjects this";
+			shortcut = "user12";
+		};
+		class LeverRamp: OpenRamp //inherits 8 parameters from bin\config.bin/CfgVehicles/RHS_C130J/UserActions/OpenRamp, sources - ["RHS_US_A2_AirImport"]
+		{
+			displayName = "Lever Ramp";
+			condition = "this animationSourcePhase 'ramp' != 0.65 and (alive this) && player in this && (player == driver this || player == gunner this || player isKindOf 'B_Pilot_F' || player isKindOf 'B_crew_F' || player isKindOf 'SOR_AirCommand_D')";
+			statement = "this animateSource ['ramp', 0.65];";
+			shortcut = "user13";
+		};
+		class CloseRamp: OpenRamp //inherits 8 parameters from bin\config.bin/CfgVehicles/RHS_C130J/UserActions/OpenRamp, sources - ["RHS_US_A2_AirImport"]
+		{
+			displayName = "Close Cargo Ramp";
+			condition = "(this animationSourcePhase 'ramp' >= 0.65) AND Alive(this) && (player == driver this || player == gunner this || player isKindOf 'B_Pilot_F' || player isKindOf 'B_crew_F' || player isKindOf 'SOR_AirCommand_D')";
+			statement = "this animateSource ['ramp',0];[this] call rhs_fnc_cargoAttach";
+			shortcut = "user12";
+		};
+		class MoveInside: OpenRamp //inherits 8 parameters from bin\config.bin/CfgVehicles/RHS_C130J/UserActions/OpenRamp, sources - ["RHS_US_A2_AirImport"]
+		{
+			displayName = "Move inside";
+			condition = "(this animationSourcePhase 'ramp' == 0.65) && !(player == driver this) && ((call rhsusf_fnc_findPlayer) in this) and ((getpos this select 2)>300)";
+			statement = "[this] spawn SOR_fnc_parajumpTroop; SOR_TroopParaJump_Active = false; [this] spawn rhs_fnc_moveInside";
+			shortcut = "";
+		};
+		class VehicleParadrop: MoveInside //inherits 4 parameters from bin\config.bin/CfgVehicles/RHS_C130J/UserActions/MoveInside, sources - ["RHS_US_A2_AirImport"]
+		{
+			displayName = "Paradrop cargo";
+			condition = "(count (attachedObjects this) > 0) AND ('man' countType (attachedObjects this) == 0) AND Alive(this) && (player == driver this || player == gunner this || player isKindOf 'B_Pilot_F' || player isKindOf 'B_crew_F' || player isKindOf 'SOR_AirCommand_D')";
+			statement = "[this] spawn rhs_fnc_vehPara";
+		};
+		class OpenMenu //sources - ["RHS_US_A2_AirImport"]
+		{
+			userActionID = 74;
+			priority = 11.008;
+			displayName = "<t color='#FDDE00'>Open control panel</t>";
+			position = "pos_gunner";
+			radius = 10;
+			animPeriod = 2;
+			onlyForplayer = 1;
+			condition = "((call rhsusf_fnc_findPlayer) in this) && (player == driver this || player == gunner this || player isKindOf 'B_Pilot_F' || player isKindOf 'B_crew_F' || player isKindOf 'SOR_AirCommand_D' || player isKindOf 'SOR_ParaJumper_D')";
+			statement = "[this] call rhs_fnc_c130j_openMenu";
+		};
+	};
 };
 
 //class SOR_A10 : RHS_A10_AT temporary change due to A-10 eject bug
