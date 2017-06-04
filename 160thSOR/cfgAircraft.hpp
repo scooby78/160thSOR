@@ -139,6 +139,7 @@ class SOR_CH_47F : RHS_CH_47F
 		{
 			displayName = "<t color='#008000'>Start Drop!</t>";
 			displayNameDefault = "<t color='#008000'>Start Drop!</t>";
+			condition = "(this animationSourcePhase 'ramp' == 0.6) && (player == driver this || player == gunner this || player isKindOf 'B_Pilot_F' || player isKindOf 'B_crew_F' || player isKindOf 'SOR_AirCommand_D') && ((getPosATL this) select 2 > 200)";
 			priority = 1;
 			showWindow = 0;
 			hideOnUse = 1;
@@ -174,6 +175,8 @@ class SOR_CH_47F : RHS_CH_47F
 		class MoveInside: OpenCargoDoor //inherits 8 parameters from bin\config.bin/CfgVehicles/RHS_CH_47F/UserActions/OpenCargoDoor, sources - ["RHS_US_A2_AirImport"]
 		{
 			displayName = "Move inside";
+			condition = "(this animationSourcePhase 'ramp_anim' == 0.6) && !(player == driver this) && ((call rhsusf_fnc_findPlayer) in this) and ((getpos this select 2)>200)";
+			statement = "[this] spawn SOR_fnc_parajumpTroop; SOR_TroopParaJump_Active = false; [this] spawn rhs_fnc_moveInside";
 			shortcut = "";
 		};
 		class VehicleParadrop: MoveInside //inherits 4 parameters from bin\config.bin/CfgVehicles/RHS_CH_47F/UserActions/MoveInside, sources - ["RHS_US_A2_AirImport"]
