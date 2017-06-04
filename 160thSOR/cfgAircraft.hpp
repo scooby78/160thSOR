@@ -172,18 +172,21 @@ class SOR_CH_47F : RHS_CH_47F
 			condition = "this animationSourcePhase 'ramp_anim' > 0 and (alive this) and (alive this) && (player == driver this || player == gunner this || player isKindOf 'B_Pilot_F' || player isKindOf 'B_crew_F' || player isKindOf 'SOR_AirCommand_D')";
 			statement = "this animateSource ['ramp_anim', 0];[this] call rhs_fnc_cargoAttach";
 		};
+/*
 		class MoveInside: OpenCargoDoor //inherits 8 parameters from bin\config.bin/CfgVehicles/RHS_CH_47F/UserActions/OpenCargoDoor, sources - ["RHS_US_A2_AirImport"]
 		{
 			displayName = "Move inside";
-			condition = "(this animationSourcePhase 'ramp_anim' == 0.6) && !(player == driver this) && ((call rhsusf_fnc_findPlayer) in this) and ((getpos this select 2)>200)";
+			condition = "!(player == driver this) && ((call rhsusf_fnc_findPlayer) in this) and ((getpos this select 2)>200)";
 			statement = "[this] spawn SOR_fnc_parajumpTroop; SOR_TroopParaJump_Active = false; [this] spawn rhs_fnc_moveInside";
 			shortcut = "";
 		};
-		class VehicleParadrop: MoveInside //inherits 4 parameters from bin\config.bin/CfgVehicles/RHS_CH_47F/UserActions/MoveInside, sources - ["RHS_US_A2_AirImport"]
+*/		
+		class VehicleParadrop: OpenCargoDoor //inherits 4 parameters from bin\config.bin/CfgVehicles/RHS_CH_47F/UserActions/MoveInside, sources - ["RHS_US_A2_AirImport"]
 		{
 			displayName = "Paradrop cargo";
 			condition = "(count (attachedObjects this) > 0) AND ('man' countType (attachedObjects this) == 0) AND Alive(this) && (player == driver this || player == gunner this || player isKindOf 'B_Pilot_F' || player isKindOf 'B_crew_F' || player isKindOf 'SOR_AirCommand_D')";
 			statement = "[this] spawn rhs_fnc_vehPara";
+			shortcut = "";
 		};
 		class ToggleLight //sources - ["RHS_US_A2_AirImport"]
 		{
@@ -382,6 +385,7 @@ class SOR_Transport : RHS_C130J
 			statement = "this animateSource ['ramp',0];[this] call rhs_fnc_cargoAttach";
 			shortcut = "user12";
 		};
+/*
 		class MoveInside: OpenRamp //inherits 8 parameters from bin\config.bin/CfgVehicles/RHS_C130J/UserActions/OpenRamp, sources - ["RHS_US_A2_AirImport"]
 		{
 			displayName = "Move inside";
@@ -389,11 +393,13 @@ class SOR_Transport : RHS_C130J
 			statement = "[this] spawn SOR_fnc_parajumpTroop; SOR_TroopParaJump_Active = false; [this] spawn rhs_fnc_moveInside";
 			shortcut = "";
 		};
-		class VehicleParadrop: MoveInside //inherits 4 parameters from bin\config.bin/CfgVehicles/RHS_C130J/UserActions/MoveInside, sources - ["RHS_US_A2_AirImport"]
+*/		
+		class VehicleParadrop: OpenRamp //inherits 4 parameters from bin\config.bin/CfgVehicles/RHS_C130J/UserActions/MoveInside, sources - ["RHS_US_A2_AirImport"]
 		{
 			displayName = "Paradrop cargo";
 			condition = "(count (attachedObjects this) > 0) AND ('man' countType (attachedObjects this) == 0) AND Alive(this) && (player == driver this || player == gunner this || player isKindOf 'B_Pilot_F' || player isKindOf 'B_crew_F' || player isKindOf 'SOR_AirCommand_D')";
 			statement = "[this] spawn rhs_fnc_vehPara";
+			shortcut = "";
 		};
 		class OpenMenu //sources - ["RHS_US_A2_AirImport"]
 		{
