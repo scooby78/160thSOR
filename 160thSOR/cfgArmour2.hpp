@@ -1899,24 +1899,7 @@ class SOR_B_APC_Wheeled_01_cannon_F: B_APC_Wheeled_01_base_F
 	radarType=8;
 	driverCanSee="4+8+2+32+16";
 	gunnerCanSee="4+2+8+32+16";
-	class TransportItems 
-	{
-		item_xx(ACE_FieldDressing,20);
-	};
-	class TransportWeapons
-	{
-		weap_xx(rhs_weap_M136_hp,2)
-		weap_xx(rhs_weap_m4a1_carryhandle_grip,2)
-	};
-	class TransportMagazines
-	{
-		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,20)
-		mag_xx(SMA_150Rnd_762_M80A1_Tracer,8)
-	};
-	class TransportBackpacks
-	{
-		pack_xx(SOR_Repair_Pack_veh_D,1)			
-	};
+	Mech_Inventory
 	class Turrets: Turrets
 	{
 		class MainTurret: MainTurret

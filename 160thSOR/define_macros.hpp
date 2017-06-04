@@ -151,3 +151,147 @@
 #define Std_Pistol		"rhsusf_mag_15Rnd_9x19_FMJ"
 
 #define Std_m1911a1		"rhsusf_mag_7x45acp_MHP"
+
+// Standard Mech Vehicle Loadout 
+#define Mech_Inventory 				class TransportItems \
+									{\
+										item_xx(ACE_FieldDressing,20);\
+									};\
+									class TransportWeapons\
+									{\
+										weap_xx(rhs_weap_M136_hp,2)\
+										weap_xx(rhs_weap_m4a1_carryhandle_grip,2)\
+									};\
+									class TransportMagazines\
+									{\
+										mag_xx(30Rnd_556x45_Stanag_Tracer_Red,20)\
+										mag_xx(SMA_150Rnd_762_M80A1_Tracer,8)\
+									};\
+									class TransportBackpacks\
+									{\
+										pack_xx(SOR_Repair_Pack_veh_D,1)\
+									};
+
+// Standard Troop Transport Loadout 									
+#define	Troop_Transport_Inventory	class TransportItems\
+									{\
+										item_xx(ACE_FieldDressing,10);\
+										item_xx(ACE_EntrenchingTool,2);\
+										};\
+									class TransportWeapons\
+									{\
+										weap_xx(rhs_weap_M136_hp,1)\
+									};\
+									class TransportMagazines\
+									{\
+										mag_xx(Laserbatteries,1)\
+										mag_xx(SMA_150Rnd_762_M80A1_Tracer,2)\
+										mag_xx(30Rnd_556x45_Stanag_Tracer_Red,10)\
+										mag_xx(ClaymoreDirectionalMine_Remote_Mag,2)\
+										mag_xx(rhs_mag_m67,2)\
+										mag_xx(rhs_mag_an_m8hc,4)\
+									};\
+									class TransportBackpacks\
+									{\
+										pack_xx(SOR_Repair_Pack_veh_D,1)\
+										pack_xx(B_AssaultPack_khk,1)\
+									};
+
+// Standard Engineer Transport Loadout 									
+#define	Eng_Inventory				class TransportItems\
+									{\
+										item_xx(ACE_FieldDressing,10);\
+										item_xx(ACE_EntrenchingTool,2);\
+									};\
+									class TransportWeapons\
+									{\
+										weap_xx(rhs_weap_M136_hp,2)\
+									};\
+									class TransportMagazines\
+									{\
+										mag_xx(SMA_150Rnd_762_M80A1_Tracer,4)\
+									};\
+									class TransportBackpacks\
+									{\
+										pack_xx(SOR_Repair_Pack_veh_D,1)\
+										pack_xx(SOR_OrdanancePack_D,2)\
+										pack_xx(B_Mortar_01_weapon_F,1)\
+										pack_xx(B_Mortar_01_support_F,1)\
+									};
+
+// Standard Medical Vehicle Loadout 
+#define Medical_Vehicle_Inventory	class TransportItems\
+									{\
+										item_xx(ACE_Fielddressing,24)\
+										item_xx(ACE_morphine,16)\
+										item_xx(ACE_epinephrine,16)\
+									};\
+									class TransportWeapons\
+									{\
+										weap_xx(rhs_weap_M136_hp,2)\
+										weap_xx(rhs_weap_m4a1_carryhandle_grip,2)\
+									};\
+									class TransportMagazines\
+									{\
+										mag_xx(30Rnd_556x45_Stanag_Tracer_Red,6)\
+									};\
+									class TransportBackpacks\
+									{\
+										pack_xx(SOR_Repair_Pack_veh_D,1)\
+									};
+
+// Standard Air Transport Vehicle Loadout 									
+#define	Airborne_Transport_Inventory class TransportItems\
+									{\
+										item_xx(ACE_FieldDressing,10);\
+										item_xx(V_RebreatherB,4);\
+									};\
+									class TransportWeapons\
+									{\
+										weap_xx(rhs_weap_m4a1_carryhandle_grip2,2)\
+									};\
+									class TransportMagazines\
+									{\
+										mag_xx(30Rnd_556x45_Stanag_Tracer_Red,6)\
+									};\
+									class TransportBackpacks\
+									{\
+										pack_xx(SOR_Repair_Pack_veh_D,1)\
+									};								
+
+// Standard Air Medical Vehicle Loadout 										
+#define	Airborne_Medical_Inventory	class TransportItems\
+									{\
+										item_xx(ACE_Fielddressing,24)\
+										item_xx(ACE_morphine,16)\
+										item_xx(ACE_epinephrine,16)\
+										item_xx(G_Diving,3)\
+										item_xx(U_B_Wetsuit,3)\
+										item_xx(V_RebreatherB,5)\
+									};\
+									class TransportWeapons\
+									{\
+										weap_xx(rhs_weap_m4a1_carryhandle_grip2,2)\
+									};\
+									class TransportMagazines\
+									{\
+										mag_xx(30Rnd_556x45_Stanag_Tracer_Red,6)\
+									};\
+									class TransportBackpacks\
+									{\
+										pack_xx(SOR_Repair_Pack_veh_D,1)\
+									};
+
+// Standard Air Attack Heli Vehicle Loadout 	
+#define	Airborne_Attack_Inventory	class TransportItems\
+									{\
+										item_xx(ACE_FieldDressing,10);\
+										item_xx(V_RebreatherB,2);\
+									};\
+									class TransportWeapons{};\
+									class TransportMagazines{};\
+									class TransportBackpacks\
+									{\
+										pack_xx(SOR_Repair_Pack_veh_D,1)\
+									};
+									

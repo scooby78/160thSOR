@@ -63,10 +63,21 @@ class SOR_Rifleman_Ammo_Pack_D : rhsusf_assault_eagleaiii_ocp
 	displayName = "Pack Desert Rifleman (M240)";
 	class TransportMagazines
 	{
-		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,2);
+		mag_xx(SMA_150Rnd_762_M80A1_Tracer,2);
 	};
 };
 
+//Custom TL Maximi Pack		
+class SOR_M249_Pack_D : tf_rt1523g_rhs
+{
+	displayName = "Pack Desert M249";
+	class TransportMagazines
+	{
+		mag_xx(SMA_150Rnd_762_M80A1_Tracer,1);
+	};
+};
+
+/*
 //Custom m249 Pack		
 class SOR_M249_Pack_D : rhsusf_assault_eagleaiii_ocp
 {
@@ -76,6 +87,8 @@ class SOR_M249_Pack_D : rhsusf_assault_eagleaiii_ocp
 		mag_xx(rhs_200rnd_556x45_M_SAW,2);
 	};
 };
+*/
+
 
 // Custom m240 Pack
 class SOR_M240_Pack_D : rhsusf_assault_eagleaiii_ocp
@@ -83,7 +96,7 @@ class SOR_M240_Pack_D : rhsusf_assault_eagleaiii_ocp
 	displayName = "Pack Desert M240";
 	class TransportMagazines
 	{
-		mag_xx(SOR_rhsusf_100Rnd_762x51_m62_tracer,3);
+		mag_xx(SMA_150Rnd_762_M80A1_Tracer,3);
 	};
 };
 

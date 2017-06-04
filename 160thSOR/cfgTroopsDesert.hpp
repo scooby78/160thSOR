@@ -33,8 +33,8 @@ class SOR_Actual_D : B_officer_F
 	displayName = "Squad Actual";
 	accuracy = 3.5;
 	backpack = "tf_rt1523g_rhs";
-	weapons[] = {"160_weap_inf_tl", "160_weap_inf_handgun", "Throw", "Put", "Laserdesignator"};
-	respawnWeapons[] = {"160_weap_inf_tl", "160_weap_inf_handgun", "Throw", "Put", "Laserdesignator"};
+	weapons[] = {"160_weap_inf_std", "160_weap_inf_handgun", "Throw", "Put", "Laserdesignator"};
+	respawnWeapons[] = {"160_weap_inf_std", "160_weap_inf_handgun", "Throw", "Put", "Laserdesignator"};
 	Items[] = {Standard_Meds,SL_Equip};  
 	RespawnItems[] = {Standard_Meds,SL_Equip}; 
 	magazines[] = 
@@ -83,8 +83,8 @@ class SOR_Commander_D : B_officer_F
 	displayName = "Havoc Commander";
 	accuracy = 3.5;
 	backpack = "tf_rt1523g_rhs";
-	weapons[] = {"160_weap_inf_tl", "160_weap_inf_handgun", "Throw", "Put", "Laserdesignator"};
-	respawnWeapons[] = {"160_weap_inf_tl", "160_weap_inf_handgun", "Throw", "Put", "Laserdesignator"};
+	weapons[] = {"160_weap_inf_std", "160_weap_inf_handgun", "Throw", "Put", "Laserdesignator"};
+	respawnWeapons[] = {"160_weap_inf_std", "160_weap_inf_handgun", "Throw", "Put", "Laserdesignator"};
 	Items[] =
 	{
 		Standard_Meds,
@@ -192,11 +192,15 @@ class SOR_AirCommand_D : SOR_Commander_D
 	magazines[] = 
 	{
 		Std_Pistol,
+		"rhs_mag_m18_green",
+		"rhs_mag_m18_green",
 		"Laserbatteries"
 	};
 	respawnMagazines[] = 
 	{
 		Std_Pistol,
+		"rhs_mag_m18_green",
+		"rhs_mag_m18_green",
 		"Laserbatteries"
 	};
 	linkedItems[] = 
@@ -227,7 +231,7 @@ class SOR_ZeusCommand_D : SOR_Commander_D
 	{
 		class SOR_CountUnitsAction
 		{
-			condition = "(alive this) && !(this getVariable ['ZEUSTOOLS_ACTIVE',false])";
+			condition = "(alive this) && (player isKindOf 'SOR_ZeusCommand_D') && !(this getVariable ['ZEUSTOOLS_ACTIVE',false])";
 			displayName = "<t color='#F088ff'>Initialise Zeus Tools</t>";
 			priority = 8;
 			showWindow = 0;
@@ -304,7 +308,7 @@ class SOR_Teamleader_D : B_Soldier_TL_F
 	displayName = "Team Leader";
 	uniformClass = "U_B_CombatUniform_mcam";
 	accuracy = 3.5;		
-	backpack = "tf_rt1523g_rhs";
+	backpack = "SOR_M249_Pack_D";
 	weapons[] = {"160_weap_inf_std", "160_weap_inf_handgun","Throw","Put","Rangefinder"};
 	respawnWeapons[] = {"160_weap_inf_std", "160_weap_inf_handgun","Throw","Put","Rangefinder"};
 	Items[] = {Standard_Meds,SL_Equip};
@@ -312,14 +316,12 @@ class SOR_Teamleader_D : B_Soldier_TL_F
 	magazines[] = 
 	{
 		SL_Mags,
-		Std_Pistol,
-		Standard_Mags_AR1_ammo		
+		Std_Pistol		
 	};
 	respawnMagazines[] = 
 	{
 		SL_Mags,
-		Std_Pistol,
-		Standard_Mags_AR1_ammo		
+		Std_Pistol				
 	};
 	linkedItems[] = 
 	{	
@@ -346,18 +348,6 @@ class SOR_Teamleader_D : B_Soldier_TL_F
 class SOR_Teamleader2_D : SOR_Teamleader_D
 {
 	displayName = "Team Leader 2";
-	magazines[] = 
-	{
-		SL_Mags,
-		Std_Pistol,
-		Standard_Mags_AR2_ammo		
-	};
-	respawnMagazines[] = 
-	{
-		SL_Mags,
-		Std_Pistol,
-		Standard_Mags_AR2_ammo		
-	};
 };
 
 //Combat Medics
@@ -371,8 +361,8 @@ class SOR_Medic_D : B_medic_F
 	displayName = "Combat Medic";
 	uniformClass = "U_B_CombatUniform_mcam";
 	backpack = "SOR_Medic_Pack_D";
-	weapons[] = {"160_weap_inf_tl", "160_weap_inf_handgun", "Throw", "Put"};
-	respawnWeapons[] = {"160_weap_inf_tl", "160_weap_inf_handgun","Throw", "Put"};
+	weapons[] = {"160_weap_inf_std", "160_weap_inf_handgun", "Throw", "Put"};
+	respawnWeapons[] = {"160_weap_inf_std", "160_weap_inf_handgun","Throw", "Put"};
 	Items[] = {Standard_Meds};
 	RespawnItems[] = {Standard_Meds};
 	magazines[] = {Standard_Mags,Std_Pistol};
@@ -853,7 +843,7 @@ class SOR_ParaJumper_D : B_medic_F
 		{
 			displayName = "<t color='#FF0000'>HALO</t>";
 			displayNameDefault = "<t color='#FF0000'>HALO</t>";
-			condition = "((getPosATL player) select 2 > 50) && SOR_ParaJump_Active && !((surfaceIsWater getPos player) && ((getPosASL player) select 2 < 1))";
+			condition = "((getPosATL player) select 2 > 50) && SOR_ParaJump_Active && !((surfaceIsWater getPos player) && ((getPosASL player) select 2 < 1)) && (player isKindOf 'SOR_ParaJumper_D' || player isKindOf 'SOR_ParaJumper_W')";
 			priority = 8;
 			showWindow = 1;
 			hideOnUse = 1;

@@ -34,6 +34,7 @@ class CfgFunctions
 			class externalView;
 			class bomber;
 			class mortar;
+			class parajumpTroop;
 		};
 	};
 };

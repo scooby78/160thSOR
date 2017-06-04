@@ -164,7 +164,7 @@ class SOR_Teamleader_W : SOR_Teamleader_D
 	editorPreview = "\160thSOR\data\SOR_Teamleader_W.jpg";
 	editorCategory = "SOR_Cat_Faction_W";
 	faction = SOR_Faction_W;
-	backpack = "tf_rt1523g_bwmod";		
+	backpack = "SOR_M249_Pack_W";		
 	uniformClass = "U_B_T_Soldier_F"; 
 	linkedItems[] = 
 	{	
@@ -189,7 +189,7 @@ class SOR_Teamleader2_W : SOR_Teamleader2_D
 	editorPreview = "\160thSOR\data\SOR_Teamleader_W.jpg";
 	editorCategory = "SOR_Cat_Faction_W";
 	faction = SOR_Faction_W;
-	backpack = "tf_rt1523g_bwmod";		
+	backpack = "SOR_M249_Pack_W";		
 	uniformClass = "U_B_T_Soldier_F"; 
 	linkedItems[] = 
 	{	

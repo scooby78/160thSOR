@@ -256,9 +256,11 @@ class CfgPatches
 			"160_weap_inf_sniper",
 			"160_weap_inf_spotter"	
 		};
-		version="2.4.0";
+		version="2.4.1";
 		requiredAddons[] = 
 		{
+			"A3_Data_F",
+			"A3_Weapons_F",
 			"cba_settings",
 			"rhsusf_main",
 			"rhsusf_c_weapons",
