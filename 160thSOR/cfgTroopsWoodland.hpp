@@ -337,7 +337,7 @@ class SOR_Rifleman_ammo_W : SOR_Rifleman_ammo_D
 {
 	editorPreview = "\160thSOR\data\SOR_Rifleman_W.jpg";
 	editorCategory = "SOR_Cat_Faction_W";
-	faction = SOR_Faction_W
+	faction = SOR_Faction_W;
 	displayName = "Rifleman Ammo Bearer (M240)";
 	uniformClass = "U_B_T_Soldier_F";
 	backpack = "";
