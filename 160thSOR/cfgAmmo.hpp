@@ -11,7 +11,7 @@ class CfgAmmo
 	class SmokeShell;
     class G_40mm_Smoke : SmokeShell
 	{
-		simulation = "shotSmoke"; //was "shotSmokeX";
+		simulation = "shotSmoke"; //was "shotSmokeX"
 		deflecting = 0;	
 		deflectionSlowDown = 0.1;	// smaller number = less bouncy	
 	};	
