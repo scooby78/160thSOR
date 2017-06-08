@@ -353,7 +353,50 @@ class SOR_Box_NATO_WpsSpecial_F_Training : Box_NATO_Wps_F
 		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,24)			
 	};
 	class TransportBackpacks{};
-};		
+};
+
+////////////////////////////////////
+// Sling loadable Training Crates //
+////////////////////////////////////
+
+// WTT Crate
+class SOR_Training_Crate_WTT : B_CargoNet_01_ammo_F
+{
+	editorCategory = "SOR_Cat_Supplies";
+	editorSubcategory = "SOR_SubCat_TrainingCrates";
+	vehicleClass = "SOR_SupplyCrates";	
+	faction = SOR_Faction_CRATE;
+	displayName = "Crate [WTT]";
+	icon = "iconCrateAmmo";
+	class TransportItems
+	{
+		item_xx(ACE_DefusalKit,20)
+		item_xx(ACE_M26_Clacker,20)
+		item_xx(ACE_Clacker,20)		
+	};	
+	class TransportWeapons
+	{
+		weap_xx(rhs_weap_M136_hp,100)
+		weap_xx(160_weap_inf_gl,30)		
+		weap_xx(160_weap_inf_AR1,30)	
+		weap_xx(Rangefinder,20)
+	};
+	class TransportMagazines
+	{
+		mag_xx(SatchelCharge_Remote_Mag,20)
+		mag_xx(APERSTripMine_Wire_Mag,20)
+		mag_xx(ATMine_Range_Mag,20)
+		mag_xx(SLAMDirectionalMine_Wire_Mag,20)
+		mag_xx(ClaymoreDirectionalMine_Remote_Mag,20)
+		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,50)
+		mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,10)
+		mag_xx(SMA_150Rnd_762_M80A1_Tracer,50)
+		mag_xx(1Rnd_HE_Grenade_shell,100)
+		mag_xx(1Rnd_SmokeRed_Grenade_shell,50)
+		mag_xx(1Rnd_Smoke_Grenade_shell,50)
+	};
+	class TransportBackpacks{};
+};
 
 ///////////////////////////
 // Sling loadable Crates //

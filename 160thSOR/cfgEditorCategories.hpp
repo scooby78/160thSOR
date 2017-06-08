@@ -41,6 +41,10 @@ class CfgEditorSubcategories
 	{
 		displayName = "Boxes"; 
 	};
+	class SOR_SubCat_TrainingCrates 
+	{
+		displayName = "Crates Training"; 
+	};	
 	class SOR_SubCat_SupplyCrates
 	{
 		displayName = "Crates";
