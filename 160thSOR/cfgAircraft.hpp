@@ -425,24 +425,13 @@ class SOR_Transport : RHS_C130J
 	};
 };
 
-//class SOR_A10 : RHS_A10_AT temporary change due to A-10 eject bug
-class SOR_A10 : B_Plane_Fighter_01_F
-
+//Fighters
+class SOR_FIGHTER_BASE: B_Plane_Fighter_01_Stealth_F
 {
-	editorCategory = "SOR_Cat_Faction_D";
-	editorSubcategory = "SOR_SubCat_Aircraft";
-	vehicleclass = "SOR_Aircraft";
-	faction = SOR_Faction_D;
-	armor = 70; // was 60
-	armorStructural = 5; //was 1
-	class TransportItems{};
-	class TransportWeapons{};
-	class TransportMagazines{};
-	class TransportBackpacks{};
+	class Components;
 };
 
-//Fighters
-class SOR_FIGHTER : B_Plane_Fighter_01_Stealth_F
+class SOR_FIGHTER : SOR_FIGHTER_BASE
 {
 	editorCategory = "SOR_Cat_Faction_D";
 	editorSubcategory = "SOR_SubCat_Aircraft";
@@ -454,9 +443,95 @@ class SOR_FIGHTER : B_Plane_Fighter_01_Stealth_F
 	class TransportWeapons{};
 	class TransportMagazines{};
 	class TransportBackpacks{};
+	class Components: Components //inherits 4 parameters from bin\config.bin/CfgVehicles/Plane_Fighter_01_Base_F/Components, sources - ["A3_Air_F_Jets_Plane_Fighter_01"]
+	{
+		class TransportPylonsComponent //sources - ["A3_Air_F_Jets_Plane_Fighter_01"]
+		{
+			UIPicture = "\A3\Air_F_Jets\Plane_Fighter_01\Data\UI\Fighter_01_3DEN_CA.paa";
+			class pylons //sources - ["A3_Air_F_Jets_Plane_Fighter_01"]
+			{
+				class pylonDummy1 //sources - ["A3_Air_F_Jets_Plane_Fighter_01"]
+				{
+					attachment = "";
+					UIposition[] = {10, 10};
+				};
+				class pylonDummy2: pylonDummy1 //inherits 2 parameters from bin\config.bin/CfgVehicles/B_Plane_Fighter_01_Stealth_F/Components/TransportPylonsComponent/pylons/pylonDummy1, sources - []
+				{
+				};
+				class pylonDummy3: pylonDummy1 //inherits 2 parameters from bin\config.bin/CfgVehicles/B_Plane_Fighter_01_Stealth_F/Components/TransportPylonsComponent/pylons/pylonDummy1, sources - []
+				{
+				};
+				class pylonDummy4: pylonDummy1 //inherits 2 parameters from bin\config.bin/CfgVehicles/B_Plane_Fighter_01_Stealth_F/Components/TransportPylonsComponent/pylons/pylonDummy1, sources - []
+				{
+				};
+				class pylonBayRight1 //sources - ["A3_Air_F_Jets_Plane_Fighter_01"]
+				{
+					hardpoints[] = {"B_BIM9X"};
+					priority = 10;
+					attachment = "PylonMissile_Missile_BIM9X_x1";
+					maxweight = 1200;
+					UIposition[] = {0.5, 0.25};
+					bay = 2;
+				};
+				class pylonBayLeft1: pylonBayRight1 //inherits 6 parameters from bin\config.bin/CfgVehicles/B_Plane_Fighter_01_Stealth_F/Components/TransportPylonsComponent/pylons/pylonBayRight1, sources - ["A3_Air_F_Jets_Plane_Fighter_01"]
+				{
+					UIposition[] = {0.16, 0.25};
+					mirroredMissilePos = 5;
+					bay = 1;
+				};
+				class pylonBayCenter1 //sources - ["A3_Air_F_Jets_Plane_Fighter_01"]
+				{
+					hardpoints[] = {"B_AMRAAM_D_INT"};
+					priority = 9;
+					attachment = "PylonMissile_Missile_AMRAAM_D_INT_x1";
+					maxweight = 1200;
+					UIposition[] = {0.33, 0.3};
+					bay = 3;
+				};
+				class pylonBayCenter2: pylonBayCenter1 //inherits 6 parameters from bin\config.bin/CfgVehicles/B_Plane_Fighter_01_Stealth_F/Components/TransportPylonsComponent/pylons/pylonBayCenter1, sources - ["A3_Air_F_Jets_Plane_Fighter_01"]
+				{
+					UIposition[] = {0.33, 0.35};
+					mirroredMissilePos = 7;
+				};
+				class pylonBayCenter3 //sources - ["A3_Air_F_Jets_Plane_Fighter_01"]
+				{
+					hardpoints[] = {"B_AMRAAM_D_INT"};
+					priority = 7;
+					attachment = "PylonMissile_Missile_AMRAAM_D_INT_x1";
+					maxweight = 1200;
+					UIposition[] = {0.33, 0.4};
+					bay = 3;
+				};
+				class pylonBayCenter4: pylonBayCenter3 //inherits 6 parameters from bin\config.bin/CfgVehicles/B_Plane_Fighter_01_Stealth_F/Components/TransportPylonsComponent/pylons/pylonBayCenter3, sources - ["A3_Air_F_Jets_Plane_Fighter_01"]
+				{
+					UIposition[] = {0.33, 0.45};
+					mirroredMissilePos = 9;
+				};
+				class pylonBayCenter5 //sources - ["A3_Air_F_Jets_Plane_Fighter_01"]
+				{
+					hardpoints[] = {"B_AMRAAM_D_INT", "B_GBU12"};
+					priority = 5;
+					attachment = "PylonMissile_Missile_AMRAAM_D_INT_x1";
+					maxweight = 1200;
+					UIposition[] = {0.33, 0.5};
+					bay = 3;
+				};
+				class pylonBayCenter6: pylonBayCenter5 //inherits 6 parameters from bin\config.bin/CfgVehicles/B_Plane_Fighter_01_Stealth_F/Components/TransportPylonsComponent/pylons/pylonBayCenter5, sources - ["A3_Air_F_Jets_Plane_Fighter_01"]
+				{
+					UIposition[] = {0.33, 0.55};
+					mirroredMissilePos = 11;
+				};
+			};
+		};
+	};	
 };
 
-class SOR_STRIKE_FIGHTER : B_Plane_Fighter_01_Stealth_F
+class SOR_STRIKE_FIGHTER_BASE: B_Plane_Fighter_01_F
+{
+	class Components;
+};
+
+class SOR_STRIKE_FIGHTER : SOR_STRIKE_FIGHTER_BASE
 {
 	editorCategory = "SOR_Cat_Faction_D";
 	editorSubcategory = "SOR_SubCat_Aircraft";
@@ -468,6 +543,116 @@ class SOR_STRIKE_FIGHTER : B_Plane_Fighter_01_Stealth_F
 	class TransportWeapons{};
 	class TransportMagazines{};
 	class TransportBackpacks{};
+	class Components: Components //inherits 4 parameters from bin\config.bin/CfgVehicles/Plane_Fighter_01_Base_F/Components, sources - ["A3_Air_F_Jets_Plane_Fighter_01"]
+	{
+		class TransportPylonsComponent //sources - ["A3_Air_F_Jets_Plane_Fighter_01"]
+		{
+			UIPicture = "\A3\Air_F_Jets\Plane_Fighter_01\Data\UI\Fighter_01_3DEN_CA.paa";
+			class pylons //sources - ["A3_Air_F_Jets_Plane_Fighter_01"]
+			{
+				class pylon1 //sources - ["A3_Air_F_Jets_Plane_Fighter_01"]
+				{
+					hardpoints[] = {"B_BIM9X_RAIL", "B_BIM9X_DUAL_RAIL", "B_AMRAAM_D_RAIL", "B_AMRAAM_D_DUAL_RAIL", "B_AGM65_RAIL", "B_GBU12"};
+					attachment = "PylonMissile_Bomb_GBU12_x1";
+					priority = 12;
+					maxweight = 300;
+					UIposition[] = {0.6, 0.45};
+				};
+				class pylon2: pylon1 //inherits 5 parameters from bin\config.bin/CfgVehicles/B_Plane_Fighter_01_F/Components/TransportPylonsComponent/pylons/pylon1, sources - ["A3_Air_F_Jets_Plane_Fighter_01"]
+				{
+					UIposition[] = {0.05, 0.45};
+					mirroredMissilePos = 1;
+				};
+				class pylon3 //sources - ["A3_Air_F_Jets_Plane_Fighter_01"]
+				{
+					hardpoints[] = {"B_BIM9X_RAIL", "B_BIM9X_DUAL_RAIL", "B_AMRAAM_D_RAIL", "B_AMRAAM_D_DUAL_RAIL", "B_AGM65_RAIL", "B_AGM65_DUAL_RAIL", "B_GBU12", "B_GBU12_DUAL_RAIL"};
+					priority = 11;
+					attachment = "PylonRack_Missile_AGM_02_x2";
+					maxweight = 1050;
+					UIposition[] = {0.55, 0.35};
+				};
+				class pylon4: pylon3 //inherits 5 parameters from bin\config.bin/CfgVehicles/B_Plane_Fighter_01_F/Components/TransportPylonsComponent/pylons/pylon3, sources - ["A3_Air_F_Jets_Plane_Fighter_01"]
+				{
+					UIposition[] = {0.1, 0.35};
+					mirroredMissilePos = 3;
+				};
+				class pylonBayRight1 //sources - ["A3_Air_F_Jets_Plane_Fighter_01"]
+				{
+					hardpoints[] = {"B_BIM9X"};
+					priority = 10;
+					attachment = "PylonMissile_Missile_BIM9X_x1";
+					maxweight = 1200;
+					UIposition[] = {0.5, 0.25};
+					bay = 2;
+				};
+				class pylonBayLeft1: pylonBayRight1 //inherits 6 parameters from bin\config.bin/CfgVehicles/B_Plane_Fighter_01_F/Components/TransportPylonsComponent/pylons/pylonBayRight1, sources - ["A3_Air_F_Jets_Plane_Fighter_01"]
+				{
+					UIposition[] = {0.16, 0.25};
+					mirroredMissilePos = 5;
+					bay = 1;
+				};
+				class pylonBayCenter1 //sources - ["A3_Air_F_Jets_Plane_Fighter_01"]
+				{
+					hardpoints[] = {"B_AMRAAM_D_INT"};
+					priority = 9;
+					attachment = "PylonMissile_Missile_AMRAAM_D_INT_x1";
+					maxweight = 1200;
+					UIposition[] = {0.33, 0.3};
+					bay = 3;
+				};
+				class pylonBayCenter2: pylonBayCenter1 //inherits 6 parameters from bin\config.bin/CfgVehicles/B_Plane_Fighter_01_F/Components/TransportPylonsComponent/pylons/pylonBayCenter1, sources - ["A3_Air_F_Jets_Plane_Fighter_01"]
+				{
+					UIposition[] = {0.33, 0.35};
+					mirroredMissilePos = 7;
+				};
+				class pylonBayCenter3 //sources - ["A3_Air_F_Jets_Plane_Fighter_01"]
+				{
+					hardpoints[] = {"B_AMRAAM_D_INT"};
+					priority = 7;
+					attachment = "";
+					maxweight = 1200;
+					UIposition[] = {0.33, 0.4};
+					bay = 3;
+				};
+				class pylonBayCenter4: pylonBayCenter3 //inherits 6 parameters from bin\config.bin/CfgVehicles/B_Plane_Fighter_01_F/Components/TransportPylonsComponent/pylons/pylonBayCenter3, sources - ["A3_Air_F_Jets_Plane_Fighter_01"]
+				{
+					UIposition[] = {0.33, 0.45};
+					mirroredMissilePos = 9;
+				};
+				class pylonBayCenter5 //sources - ["A3_Air_F_Jets_Plane_Fighter_01"]
+				{
+					hardpoints[] = {"B_AMRAAM_D_INT", "B_GBU12"};
+					priority = 5;
+					attachment = "PylonMissile_Bomb_GBU12_x1";
+					maxweight = 1200;
+					UIposition[] = {0.33, 0.5};
+					bay = 3;
+				};
+				class pylonBayCenter6: pylonBayCenter5 //inherits 6 parameters from bin\config.bin/CfgVehicles/B_Plane_Fighter_01_F/Components/TransportPylonsComponent/pylons/pylonBayCenter5, sources - ["A3_Air_F_Jets_Plane_Fighter_01"]
+				{
+					UIposition[] = {0.33, 0.55};
+					mirroredMissilePos = 11;
+				};
+			};
+		};
+	};
+};
+
+//class SOR_A10 : RHS_A10_AT temporary change due to A-10 eject bug
+class SOR_A10 : SOR_STRIKE_FIGHTER
+{
+/*
+	editorCategory = "SOR_Cat_Faction_D";
+	editorSubcategory = "SOR_SubCat_Aircraft";
+	vehicleclass = "SOR_Aircraft";
+	faction = SOR_Faction_D;
+	armor = 70; // was 60
+	armorStructural = 5; //was 1
+	class TransportItems{};
+	class TransportWeapons{};
+	class TransportMagazines{};
+	class TransportBackpacks{};
+*/	
 };
 /////////////////////
 //Captured Aircraft//
