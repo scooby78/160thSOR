@@ -71,7 +71,7 @@ class SOR_UH60M : RHS_UH60M
 		{
 			displayName = "<t color='#008000'>Start Drop!</t>";
 			displayNameDefault = "<t color='#008000'>Start Drop!</t>";
-			condition = "(player == driver this)&&((getPosATL this) select 2 > 200)";
+			condition = "(player == driver this || player == gunner this || player isKindOf 'B_Pilot_F' || player isKindOf 'B_crew_F' || player isKindOf 'SOR_AirCommand_D') && ((getPosATL this) select 2 > 200)";
 			priority = 1;
 			showWindow = 0;
 			hideOnUse = 1;
@@ -139,7 +139,7 @@ class SOR_CH_47F : RHS_CH_47F
 		{
 			displayName = "<t color='#008000'>Start Drop!</t>";
 			displayNameDefault = "<t color='#008000'>Start Drop!</t>";
-			condition = "(this animationSourcePhase 'ramp' == 0.6) && (player == driver this || player == gunner this || player isKindOf 'B_Pilot_F' || player isKindOf 'B_crew_F' || player isKindOf 'SOR_AirCommand_D') && ((getPosATL this) select 2 > 200)";
+			condition = "(player == driver this || player == gunner this || player isKindOf 'B_Pilot_F' || player isKindOf 'B_crew_F' || player isKindOf 'SOR_AirCommand_D') && ((getPosATL this) select 2 > 200)";
 			priority = 1;
 			showWindow = 0;
 			hideOnUse = 1;
@@ -172,15 +172,6 @@ class SOR_CH_47F : RHS_CH_47F
 			condition = "this animationSourcePhase 'ramp_anim' > 0 and (alive this) and (alive this) && (player == driver this || player == gunner this || player isKindOf 'B_Pilot_F' || player isKindOf 'B_crew_F' || player isKindOf 'SOR_AirCommand_D')";
 			statement = "this animateSource ['ramp_anim', 0];[this] call rhs_fnc_cargoAttach";
 		};
-/*
-		class MoveInside: OpenCargoDoor //inherits 8 parameters from bin\config.bin/CfgVehicles/RHS_CH_47F/UserActions/OpenCargoDoor, sources - ["RHS_US_A2_AirImport"]
-		{
-			displayName = "Move inside";
-			condition = "!(player == driver this) && ((call rhsusf_fnc_findPlayer) in this) and ((getpos this select 2)>200)";
-			statement = "[this] spawn SOR_fnc_parajumpTroop; SOR_TroopParaJump_Active = false; [this] spawn rhs_fnc_moveInside";
-			shortcut = "";
-		};
-*/		
 		class VehicleParadrop: OpenCargoDoor //inherits 4 parameters from bin\config.bin/CfgVehicles/RHS_CH_47F/UserActions/MoveInside, sources - ["RHS_US_A2_AirImport"]
 		{
 			displayName = "Paradrop cargo";
@@ -385,15 +376,32 @@ class SOR_Transport : RHS_C130J
 			statement = "this animateSource ['ramp',0];[this] call rhs_fnc_cargoAttach";
 			shortcut = "user12";
 		};
-/*
 		class MoveInside: OpenRamp //inherits 8 parameters from bin\config.bin/CfgVehicles/RHS_C130J/UserActions/OpenRamp, sources - ["RHS_US_A2_AirImport"]
 		{
-			displayName = "Move inside";
-			condition = "(this animationSourcePhase 'ramp' == 0.65) && !(player == driver this) && ((call rhsusf_fnc_findPlayer) in this) and ((getpos this select 2)>300)";
-			statement = "[this] spawn SOR_fnc_parajumpTroop; SOR_TroopParaJump_Active = false; [this] spawn rhs_fnc_moveInside";
+			priority = 11.007;
+			displayName = "<t color='#03F243'>Move inside</t>";
+			showWindow = 1;
+			hideOnUse = 1;
+			condition = "!(player == driver this) && ((call rhsusf_fnc_findPlayer) in this) and SOR_MoveInsideOK";
+			statement = "SOR_TroopParaJump_Active = false; [this] spawn SOR_fnc_parajumpTroop; [this] spawn rhs_fnc_moveInside";
 			shortcut = "";
 		};
-*/		
+		class MoveInsideOK: OpenRamp //inherits 8 parameters from bin\config.bin/CfgVehicles/RHS_C130J/UserActions/OpenRamp, sources - ["RHS_US_A2_AirImport"]
+		{
+			priority = 11.007
+			displayName = "<t color='#03F243'>Troop Jump Ready</t>";
+			condition = "(player == driver this || player == gunner this || player isKindOf 'B_Pilot_F' || player isKindOf 'B_crew_F' || player isKindOf 'SOR_AirCommand_D') && ((getPosATL this) select 2 > 300) && !SOR_MoveInsideOK && (this animationSourcePhase 'ramp' >= 0.65)";
+			statement = "SOR_MoveInsideOK = true; publicVariable 'SOR_MoveInsideOK'";
+			shortcut = "";
+		};
+		class MoveInsideNotOK: OpenRamp //inherits 8 parameters from bin\config.bin/CfgVehicles/RHS_C130J/UserActions/OpenRamp, sources - ["RHS_US_A2_AirImport"]
+		{
+			priority = 11.007;
+			displayName = "<t color='#FF0000'>Troop Jump Stop</t>";
+			condition = "(player == driver this || player == gunner this || player isKindOf 'B_Pilot_F' || player isKindOf 'B_crew_F' || player isKindOf 'SOR_AirCommand_D') && ((getPosATL this) select 2 > 300) && SOR_MoveInsideOK";
+			statement = "SOR_MoveInsideOK = false; publicVariable 'SOR_MoveInsideOK'";
+			shortcut = "";
+		};		
 		class VehicleParadrop: OpenRamp //inherits 4 parameters from bin\config.bin/CfgVehicles/RHS_C130J/UserActions/MoveInside, sources - ["RHS_US_A2_AirImport"]
 		{
 			displayName = "Paradrop cargo";
@@ -410,6 +418,7 @@ class SOR_Transport : RHS_C130J
 			radius = 10;
 			animPeriod = 2;
 			onlyForplayer = 1;
+			showWindow = 0;
 			condition = "((call rhsusf_fnc_findPlayer) in this) && (player == driver this || player == gunner this || player isKindOf 'B_Pilot_F' || player isKindOf 'B_crew_F' || player isKindOf 'SOR_AirCommand_D' || player isKindOf 'SOR_ParaJumper_D')";
 			statement = "[this] call rhs_fnc_c130j_openMenu";
 		};

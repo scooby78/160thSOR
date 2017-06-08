@@ -7,6 +7,7 @@
 //Fixed settings
 enableSaving [false,false];
 SOR_ParaJump_Active = true;
+SOR_MoveInsideOK = false;
 setWind [5, 5, false]; 
 
 
