@@ -29,5 +29,4 @@ class CfgAmmo
 		effectsSmoke = "SmokeShellWhiteEffect"; // was "SmokeShellWhiteSmall";
 		model = "\A3\weapons_f\ammo\shell_smoke";
 	};	
-
 };
