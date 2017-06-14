@@ -338,17 +338,7 @@ class SOR_Transport : RHS_C130J
 	ace_cargo_space = 40;
     maximumLoad = 5000;
 	crew = "SOR_HeliPilot_D";
-	class TransportItems
-	{
-		item_xx(ACE_FieldDressing,10);
-	};
-	class TransportWeapons {};
-	class TransportMagazines {};
-	class TransportBackpacks
-	{
-		pack_xx(SOR_Repair_Pack_veh_D,1)
-		pack_xx(B_Parachute,27)
-	};
+	Airborne_Transport_Inventory
 	class UserActions //sources - ["RHS_US_A2_AirImport"]
 	{
 		class OpenRamp //sources - ["RHS_US_A2_AirImport"]
@@ -373,31 +363,32 @@ class SOR_Transport : RHS_C130J
 		{
 			displayName = "Close Cargo Ramp";
 			condition = "(this animationSourcePhase 'ramp' >= 0.65) AND Alive(this) && (player == driver this || player == gunner this || player isKindOf 'B_Pilot_F' || player isKindOf 'B_crew_F' || player isKindOf 'SOR_AirCommand_D')";
-			statement = "this animateSource ['ramp',0];[this] call rhs_fnc_cargoAttach";
+			statement = "this animateSource ['ramp',0];[this] call rhs_fnc_cargoAttach; SOR_MoveInsideOK = false; publicVariable 'SOR_MoveInsideOK'";
 			shortcut = "user12";
 		};
 		class MoveInside: OpenRamp //inherits 8 parameters from bin\config.bin/CfgVehicles/RHS_C130J/UserActions/OpenRamp, sources - ["RHS_US_A2_AirImport"]
 		{
-			priority = 11.007;
-			displayName = "<t color='#03F243'>Move inside</t>";
+			displayName = "<t color='#03F243'>Stand up</t>";
 			showWindow = 1;
 			hideOnUse = 1;
 			condition = "!(player == driver this) && ((call rhsusf_fnc_findPlayer) in this) and SOR_MoveInsideOK";
-			statement = "SOR_TroopParaJump_Active = false; [this] spawn SOR_fnc_parajumpTroop; [this] spawn rhs_fnc_moveInside";
+			statement = "SOR_MOVEINSIDE = [this] spawn rhs_fnc_moveInside; SOR_TroopParaJump_Active = false; [this] spawn SOR_fnc_parajumpTroop";
 			shortcut = "";
 		};
 		class MoveInsideOK: OpenRamp //inherits 8 parameters from bin\config.bin/CfgVehicles/RHS_C130J/UserActions/OpenRamp, sources - ["RHS_US_A2_AirImport"]
 		{
-			priority = 11.007
-			displayName = "<t color='#03F243'>Troop Jump Ready</t>";
+			displayName = "<t color='#03F243'>Turn Off Seat Belt Sign</t>";
+			showWindow = 1;
+			hideOnUse = 1;
 			condition = "(player == driver this || player == gunner this || player isKindOf 'B_Pilot_F' || player isKindOf 'B_crew_F' || player isKindOf 'SOR_AirCommand_D') && ((getPosATL this) select 2 > 300) && !SOR_MoveInsideOK && (this animationSourcePhase 'ramp' >= 0.65)";
-			statement = "SOR_MoveInsideOK = true; publicVariable 'SOR_MoveInsideOK'";
+			statement = "SOR_MoveInsideOK = true; publicVariable 'SOR_MoveInsideOK';";
 			shortcut = "";
 		};
 		class MoveInsideNotOK: OpenRamp //inherits 8 parameters from bin\config.bin/CfgVehicles/RHS_C130J/UserActions/OpenRamp, sources - ["RHS_US_A2_AirImport"]
 		{
-			priority = 11.007;
-			displayName = "<t color='#FF0000'>Troop Jump Stop</t>";
+			displayName = "<t color='#FF0000'>Turn On Seat Belt Sign</t>";
+			showWindow = 1;
+			hideOnUse = 1;
 			condition = "(player == driver this || player == gunner this || player isKindOf 'B_Pilot_F' || player isKindOf 'B_crew_F' || player isKindOf 'SOR_AirCommand_D') && ((getPosATL this) select 2 > 300) && SOR_MoveInsideOK";
 			statement = "SOR_MoveInsideOK = false; publicVariable 'SOR_MoveInsideOK'";
 			shortcut = "";
