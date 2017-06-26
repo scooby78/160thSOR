@@ -219,6 +219,7 @@ class SOR_MELB_H6M : RHS_MELB_H6M
 	armorStructural = 4; // Was 50
 	fuelCapacity = 110; //was fuelCapacity = 242;
 	fuelConsumptionRate = 0.0555; //was 0.0368;
+	getInRadius = 5;
 	Airborne_Transport_Inventory
 };	
 
@@ -232,6 +233,7 @@ class SOR_MELB_MH6M : RHS_MELB_MH6M
 	armorStructural = 4; // Was 50
 	fuelCapacity = 110; //was fuelCapacity = 242;
 	fuelConsumptionRate = 0.0555; //was 0.0368;
+	getInRadius = 5;
 	Airborne_Attack_Inventory
 };	
 
