@@ -6,6 +6,16 @@
 	Note: Only Armour units that are proven not "buggy" should be put in here.
 */
 
+// M1117
+class SOR_MRAP_wd : SOR_MRAP
+{
+	editorCategory = "SOR_Cat_Faction_W";
+	vehicleclass = "SOR_Vehicles";
+	faction = SOR_Faction_W;
+	hiddenSelectionsTextures[] = {"rhsusf\addons\rhsusf_m1117\data\m1117_tex1_green_co.paa", "rhsusf\addons\rhsusf_m1117\data\m1117_armour_green_co.paa", "rhsusf\addons\rhsusf_m1117\data\m1117_turret_green_co.paa", "rhsusf\addons\rhsusf_m1117\data\m1117_wheel_green_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\A2_parts_g_co.paa", "rhsusf\addons\rhsusf_m1a1\duke\data\duke_antennae_wd_co.paa"};
+
+};
+
 // LAV25A2
 class SOR_LAV_wd : SOR_LAV
 {
