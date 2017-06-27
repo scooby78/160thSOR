@@ -46,9 +46,7 @@ class SOR_MRAP : rhsusf_M1117_D
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_D;
 	ace_cargo_space = 12;
-	waterResistanceCoef = 0.009; // was 0.01
-	enginePower = 590; // was 295
-	peakTorque = 4434; // was 2217
+	armor = 500; //was 150 protection against missiles, collisions and explosions
 	Mech_Inventory
 };
 
@@ -63,6 +61,7 @@ class SOR_LAV : Cha_Des1_LAV25A2
 	waterResistanceCoef = 0.009; // was 0.01
 	enginePower = 590; // was 295
 	peakTorque = 4434; // was 2217
+	armor = 200; //was 100 protection against missiles, collisions and explosions
 	Mech_Inventory
 };
 
@@ -74,6 +73,10 @@ class SOR_LAV_HQ : Cha_Des1_LAV25_HQ
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_D;
 	ace_cargo_space = 12;
+	waterResistanceCoef = 0.009; // was 0.01
+	enginePower = 590; // was 295
+	peakTorque = 4434; // was 2217	
+	armor = 200; //was 100 protection against missiles, collisions and explosions	
 	Mech_Inventory
 };
 
@@ -83,7 +86,6 @@ class SOR_M6A2 : RHS_M6
 	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_D;
-	armor = 700; //was 300 protection against missiles, collisions and explosions
 	peakTorque = 3660; // was 1660
 //	torqueCurve[] = {["(0/8000)","(2300/2300)"],["(1143/8000)","(2300/2300)"],["(2286/8000)","(2300/2300)"],["(3429/8000)","(2300/2300)"],["(4572/8000)","(2300/2300)"],["(5715/8000)","(2300/2300)"],["(6858/8000)","(2300/2300)"],["(8000/8000)","(2300/2300)"};
 	maxSpeed = 67;
@@ -91,6 +93,8 @@ class SOR_M6A2 : RHS_M6
 	enginePower = 1000; //was 447
 	engineLosses = 25;
 	ace_cargo_space = 12;	
+	armor = 1000; //was 300 protection against missiles, collisions and explosions	
+	crewExplosionProtection = 0.999; // was 0.9995;
 	Mech_Inventory
 };
 
@@ -104,6 +108,7 @@ class SOR_M2A3_BUSKIII : RHS_M2A3_BUSKIII
 	enginePower = 1000; 
 	armor = 700; //was 325 protection against missiles, collisions and explosions
 	ace_cargo_space = 12;	
+	crewExplosionProtection = 0.999; // was 0.9995;
 	Mech_Inventory
 };
 
