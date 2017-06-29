@@ -19,6 +19,9 @@ class Land_HelipadCircle_F;
 class B_Slingload_01_Fuel_F;
 class B_Slingload_01_Ammo_F;
 class B_Slingload_01_Repair_F;
+class Box_NATO_AmmoVeh_F;
+class Land_fs_feed_F;
+class Fuel_can;
 
 ////////////////////////
 // Objects (Scripted) //
@@ -89,6 +92,16 @@ class SOR_FuelContainer : B_Slingload_01_Fuel_F
 	displayName = "Fuel Container";
 };
 
+class SOR_fuel_tank_small  : Land_fs_feed_F 
+{
+	editorCategory = "SOR_Cat_Supplies";
+	editorSubcategory = "SOR_SubCat_SupplyContainers";
+	editorPreview = "cup\terrains\cup_terrains_editor_c\data\land_fuel_tank_small.jpg";
+	vehicleClass = "SOR_Objects";
+	faction = SOR_Faction_CRATE;
+	model = "\ca\misc\fuel_tank_small.p3d";
+};
+
 //Ammo (ACE interactive)
 class SOR_AmmoContainer : B_Slingload_01_Ammo_F 
 {
@@ -97,6 +110,15 @@ class SOR_AmmoContainer : B_Slingload_01_Ammo_F
 	vehicleClass = "SOR_SupplyContainers";
 	faction = SOR_Faction_CRATE;
 	displayName = "Ammunition Container";
+};
+
+class SOR_AmmoContainer2 : Box_NATO_AmmoVeh_F 
+{
+	editorCategory = "SOR_Cat_Supplies";
+	editorSubcategory = "SOR_SubCat_SupplyContainers";
+	vehicleClass = "SOR_SupplyContainers";
+	faction = SOR_Faction_CRATE;
+	displayName = "Ammunition Container Small";
 };
 
 //Repair (ACE interactive)
