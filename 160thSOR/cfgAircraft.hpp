@@ -34,6 +34,17 @@ class RHS_C130J;
 class B_Plane_Fighter_01_F;
 class B_Plane_Fighter_01_Stealth_F;
 
+class Plane;
+class Plane_Base_F: Plane
+{
+	featureType=2;
+};
+class Helicopter;
+class Helicopter_Base_F: Helicopter
+{
+	featureType=2;
+};
+
 class SOR_VTOL_Troop_D : B_T_VTOL_01_infantry_F
 {
 	editorCategory = "SOR_Cat_Faction_D";
