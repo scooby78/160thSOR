@@ -32,11 +32,23 @@ class B_Truck_01_Repair_F;
 class Cha_Des1_LAV25A2;
 class Cha_Des1_LAV25_HQ;
 class rhsusf_M1117_D;
+class rhsusf_m109d_usarmy;
 
 // new supply suggestions by Bean
 class rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_d;
 class rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d;
 class rhsusf_M978A4_BKIT_usarmy_d;
+
+
+// M109
+class SOR_ARTI : rhsusf_m109d_usarmy
+{
+	editorCategory = "SOR_Cat_Faction_D";
+	vehicleclass = "SOR_Vehicles";
+	faction = SOR_Faction_D;
+	Mech_Inventory
+};
+
 
 // M1117
 class SOR_MRAP : rhsusf_M1117_D

@@ -6,6 +6,15 @@
 	Note: Only Armour units that are proven not "buggy" should be put in here.
 */
 
+// M109
+class SOR_ARTI_wd : rhsusf_m109d_usarmy
+{
+	editorCategory = "SOR_Cat_Faction_W";
+	vehicleclass = "SOR_Vehicles";
+	faction = SOR_Faction_W;
+	hiddenSelectionsTextures[] = {"rhsusf\addons\rhsusf_m109\data\rhsusf_m109a6_01_wd_co.paa", "rhsusf\addons\rhsusf_m109\data\rhsusf_m109a6_02_wd_co.paa", "rhsusf\addons\rhsusf_m109\data\rhsusf_m109a6_03_wd_co.paa", "rhsusf\addons\rhsusf_m109\data\rhsusf_m109a6_mesh_wd_ca.paa", "rhsusf\addons\rhsusf_m109\data\rhsusf_m109a6_wheels_wd_co.paa"};
+};
+
 // M1117
 class SOR_MRAP_wd : SOR_MRAP
 {
