@@ -49,6 +49,7 @@
 						"ACE_epinephrine",\
 						"ACE_epinephrine",\
 						"ACE_bloodIV_500",\
+						"ACE_Flashlight_MX991",\
 						"ACE_EarPlugs"
 
 #define SL_Equip 		"ACE_CableTie",\
