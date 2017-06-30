@@ -1376,11 +1376,13 @@ class SOR_Engineer_Teamleader_D : B_engineer_F
 	Items[] = 
 	{
 		"ACE_EntrenchingTool",
+		"ACE_Flashlight_MX991",
 		Standard_Meds
 	};
 	RespawnItems[] =
 	{
 		"ACE_EntrenchingTool",
+		"ACE_Flashlight_MX991",
 		Standard_Meds
 	};
 	linkedItems[] = 

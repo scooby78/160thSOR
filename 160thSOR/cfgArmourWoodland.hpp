@@ -6,6 +6,25 @@
 	Note: Only Armour units that are proven not "buggy" should be put in here.
 */
 
+// M109
+class SOR_ARTI_wd : rhsusf_m109d_usarmy
+{
+	editorCategory = "SOR_Cat_Faction_W";
+	vehicleclass = "SOR_Vehicles";
+	faction = SOR_Faction_W;
+	hiddenSelectionsTextures[] = {"rhsusf\addons\rhsusf_m109\data\rhsusf_m109a6_01_wd_co.paa", "rhsusf\addons\rhsusf_m109\data\rhsusf_m109a6_02_wd_co.paa", "rhsusf\addons\rhsusf_m109\data\rhsusf_m109a6_03_wd_co.paa", "rhsusf\addons\rhsusf_m109\data\rhsusf_m109a6_mesh_wd_ca.paa", "rhsusf\addons\rhsusf_m109\data\rhsusf_m109a6_wheels_wd_co.paa"};
+};
+
+// M1117
+class SOR_MRAP_wd : SOR_MRAP
+{
+	editorCategory = "SOR_Cat_Faction_W";
+	vehicleclass = "SOR_Vehicles";
+	faction = SOR_Faction_W;
+	hiddenSelectionsTextures[] = {"rhsusf\addons\rhsusf_m1117\data\m1117_tex1_green_co.paa", "rhsusf\addons\rhsusf_m1117\data\m1117_armour_green_co.paa", "rhsusf\addons\rhsusf_m1117\data\m1117_turret_green_co.paa", "rhsusf\addons\rhsusf_m1117\data\m1117_wheel_green_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\A2_parts_g_co.paa", "rhsusf\addons\rhsusf_m1a1\duke\data\duke_antennae_wd_co.paa"};
+
+};
+
 // LAV25A2
 class SOR_LAV_wd : SOR_LAV
 {

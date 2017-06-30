@@ -34,6 +34,17 @@ class RHS_C130J;
 class B_Plane_Fighter_01_F;
 class B_Plane_Fighter_01_Stealth_F;
 
+class Plane;
+class Plane_Base_F: Plane
+{
+	featureType=2;
+};
+class Helicopter;
+class Helicopter_Base_F: Helicopter
+{
+	featureType=2;
+};
+
 class SOR_VTOL_Troop_D : B_T_VTOL_01_infantry_F
 {
 	editorCategory = "SOR_Cat_Faction_D";
@@ -219,6 +230,7 @@ class SOR_MELB_H6M : RHS_MELB_H6M
 	armorStructural = 4; // Was 50
 	fuelCapacity = 110; //was fuelCapacity = 242;
 	fuelConsumptionRate = 0.0555; //was 0.0368;
+	getInRadius = 5;
 	Airborne_Transport_Inventory
 };	
 
@@ -232,6 +244,7 @@ class SOR_MELB_MH6M : RHS_MELB_MH6M
 	armorStructural = 4; // Was 50
 	fuelCapacity = 110; //was fuelCapacity = 242;
 	fuelConsumptionRate = 0.0555; //was 0.0368;
+	getInRadius = 5;
 	Airborne_Attack_Inventory
 };	
 

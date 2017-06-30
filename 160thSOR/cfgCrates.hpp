@@ -402,7 +402,7 @@ class SOR_Training_Crate_WTT : B_CargoNet_01_ammo_F
 // Sling loadable Crates //
 ///////////////////////////
 
-// Ammo Crate		
+// Ammo Crate	
 class SOR_A_Crate_F : B_CargoNet_01_ammo_F
 {
 	editorCategory = "SOR_Cat_Supplies";

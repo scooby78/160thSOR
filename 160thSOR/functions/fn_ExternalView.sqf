@@ -7,7 +7,8 @@
 */
 
 if !(hasInterface) exitwith {};
-
+if !(isNil {SOR_EVF_ACTIVE}) exitwith {};
+SOR_EVF_ACTIVE = true;
 // Add any units that are allowed to have acces to this in the array.
 _whitelist = [ "SOR_MechDriver_D"];
 

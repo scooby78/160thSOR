@@ -31,11 +31,36 @@ class B_Truck_01_fuel_F;
 class B_Truck_01_Repair_F;
 class Cha_Des1_LAV25A2;
 class Cha_Des1_LAV25_HQ;
+class rhsusf_M1117_D;
+class rhsusf_m109d_usarmy;
 
 // new supply suggestions by Bean
 class rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_d;
 class rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d;
 class rhsusf_M978A4_BKIT_usarmy_d;
+
+
+// M109
+class SOR_ARTI : rhsusf_m109d_usarmy
+{
+	editorCategory = "SOR_Cat_Faction_D";
+	vehicleclass = "SOR_Vehicles";
+	faction = SOR_Faction_D;
+	Mech_Inventory
+};
+
+
+// M1117
+class SOR_MRAP : rhsusf_M1117_D
+{
+	editorPreview = "\Cha\Cha_Lav25\Data\UI\Picture_LAV25_CA.paa";
+	editorCategory = "SOR_Cat_Faction_D";
+	vehicleclass = "SOR_Vehicles";
+	faction = SOR_Faction_D;
+	ace_cargo_space = 12;
+	armor = 500; //was 150 protection against missiles, collisions and explosions
+	Mech_Inventory
+};
 
 // LAV25A2
 class SOR_LAV : Cha_Des1_LAV25A2
@@ -48,6 +73,7 @@ class SOR_LAV : Cha_Des1_LAV25A2
 	waterResistanceCoef = 0.009; // was 0.01
 	enginePower = 590; // was 295
 	peakTorque = 4434; // was 2217
+	armor = 200; //was 100 protection against missiles, collisions and explosions
 	Mech_Inventory
 };
 
@@ -59,6 +85,10 @@ class SOR_LAV_HQ : Cha_Des1_LAV25_HQ
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_D;
 	ace_cargo_space = 12;
+	waterResistanceCoef = 0.009; // was 0.01
+	enginePower = 590; // was 295
+	peakTorque = 4434; // was 2217	
+	armor = 200; //was 100 protection against missiles, collisions and explosions	
 	Mech_Inventory
 };
 
@@ -68,7 +98,6 @@ class SOR_M6A2 : RHS_M6
 	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_D;
-	armor = 500; //was 300 protection against missiles, collisions and explosions
 	peakTorque = 3660; // was 1660
 //	torqueCurve[] = {["(0/8000)","(2300/2300)"],["(1143/8000)","(2300/2300)"],["(2286/8000)","(2300/2300)"],["(3429/8000)","(2300/2300)"],["(4572/8000)","(2300/2300)"],["(5715/8000)","(2300/2300)"],["(6858/8000)","(2300/2300)"],["(8000/8000)","(2300/2300)"};
 	maxSpeed = 67;
@@ -76,6 +105,8 @@ class SOR_M6A2 : RHS_M6
 	enginePower = 1000; //was 447
 	engineLosses = 25;
 	ace_cargo_space = 12;	
+	armor = 1000; //was 300 protection against missiles, collisions and explosions	
+	crewExplosionProtection = 0.999; // was 0.9995;
 	Mech_Inventory
 };
 
@@ -87,8 +118,9 @@ class SOR_M2A3_BUSKIII : RHS_M2A3_BUSKIII
 	faction = SOR_Faction_D;
 	peakTorque = 3660; 
 	enginePower = 1000; 
-	armor = 500; //was 325 protection against missiles, collisions and explosions
+	armor = 700; //was 325 protection against missiles, collisions and explosions
 	ace_cargo_space = 12;	
+	crewExplosionProtection = 0.999; // was 0.9995;
 	Mech_Inventory
 };
 
@@ -98,7 +130,7 @@ class SOR_M113 : rhsusf_m113d_usarmy
 	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_D;
-	armor = 500; //was 200 protection against missiles, collisions and explosions
+	armor = 700; //was 200 protection against missiles, collisions and explosions
 	peakTorque = 1540; // was 770
 	enginePower = 410; //was 205	
 	ace_cargo_space = 12;
@@ -112,7 +144,7 @@ class SOR_M113_SUPPLY : rhsusf_m113d_usarmy_supply
 	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_D;
-	armor = 500; //was 200 protection against missiles, collisions and explosions
+	armor = 700; //was 200 protection against missiles, collisions and explosions
 	peakTorque = 1540; // was 770
 	enginePower = 410; //was 205	
 	ace_cargo_space = 12;
@@ -125,7 +157,7 @@ class SOR_M113_UNARMED : rhsusf_m113d_usarmy_unarmed
 	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_D;
-	armor = 500; //was 200 protection against missiles, collisions and explosions
+	armor = 700; //was 200 protection against missiles, collisions and explosions
 	peakTorque = 1540; // was 770
 	enginePower = 410; //was 205
 	ace_cargo_space = 12;
@@ -138,7 +170,7 @@ class SOR_M113_MEDICAL : rhsusf_m113d_usarmy_medical
 	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_D;
-	armor = 500; //was 200 protection against missiles, collisions and explosions
+	armor = 700; //was 200 protection against missiles, collisions and explosions
 	peakTorque = 1540; // was 770
 	enginePower = 410; //was 205
 	ace_cargo_space = 12;
@@ -198,7 +230,7 @@ class SOR_M1A2_TUSKI : rhsusf_m1a2sep1tuskid_usarmy
 	peakTorque = 10355;
 	enginePower = 3000; 
 	brakeDistance = 1;
-	armor = 700; //was 600 protection against missiles, collisions and explosions
+	armor = 900; //was 600 protection against missiles, collisions and explosions
 	ace_cargo_space = 12;	
 	Mech_Inventory
 };	
@@ -212,7 +244,7 @@ class SOR_M1A2_TUSKII : rhsusf_m1a2sep1tuskiid_usarmy
 	peakTorque = 10355;
 	enginePower = 3000; 
 	brakeDistance = 1;
-	armor = 800; //was 600 protection against missiles, collisions and explosions
+	armor = 1500; //was 600 protection against missiles, collisions and explosions
 	ace_cargo_space = 12;	
 	Mech_Inventory
 };

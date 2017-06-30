@@ -11,7 +11,7 @@ class CfgPatches
 	{
 		author="160th SOR";
 		url="http://www.160th.net";
-		version="2.4.3";
+		version="2.4.4";
 		units[] = 
 		{
 			// Desert Troops 
@@ -83,6 +83,8 @@ class CfgPatches
 			"SOR_O_Plane_CAS_02_F",
 			"SOR_I_Plane_Fighter_03_AA_B",
 			"SOR_I_Plane_Fighter_03_CAS_B",
+			"SOR_ARTI",
+			"SOR_MRAP",
 			"SOR_LAV",
 			"SOR_LAV_HQ",
 			"SOR_M6A2",
@@ -158,6 +160,8 @@ class CfgPatches
 			"SOR_MORRFL_W",
 			"SOR_Engineer_W",
 			// Woodland Vehicles 
+			"SOR_ARTI_wd",			
+			"SOR_MRAP_wd",
 			"SOR_LAV_wd",
 			"SOR_LAV_HQ_wd",
 			"SOR_M6A2_wd",
@@ -218,6 +222,9 @@ class CfgPatches
 			"SOR_Land_Flush_Light_red_F",
 			"SOR_Land_Flush_Light_yellow_F",
 			"SOR_Land_PortableLight_double_F",
+			"SOR_AmmoContainer2",
+			"SOR_FuelContainer",
+			"SOR_fuel_tank_small",
 			// Boxes
 			"SOR_PJ_Box_F",
 			"SOR_PJ_Pack_Box_F",
