@@ -57,7 +57,7 @@ class SOR_MRAP : rhsusf_M1117_D
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_D;
 	ace_cargo_space = 12;
-	armor = 700; //was 150 protection against missiles, collisions and explosions
+	armor = 500; //was 150 protection against missiles, collisions and explosions
 	Mech_Inventory
 };
 
@@ -72,7 +72,7 @@ class SOR_LAV : Cha_Des1_LAV25A2
 	waterResistanceCoef = 0.009; // was 0.01
 	enginePower = 590; // was 295
 	peakTorque = 4434; // was 2217
-	armor = 700; //was 100 protection against missiles, collisions and explosions
+	armor = 500; //was 100 protection against missiles, collisions and explosions
 	Mech_Inventory
 };
 
@@ -87,7 +87,7 @@ class SOR_LAV_HQ : Cha_Des1_LAV25_HQ
 	waterResistanceCoef = 0.009; // was 0.01
 	enginePower = 590; // was 295
 	peakTorque = 4434; // was 2217	
-	armor = 700; //was 100 protection against missiles, collisions and explosions	
+	armor = 500; //was 100 protection against missiles, collisions and explosions	
 	Mech_Inventory
 };
 
