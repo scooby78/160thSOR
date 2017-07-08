@@ -8,6 +8,7 @@
 enableSaving [false,false];
 SOR_ParaJump_Active = true;
 SOR_MoveInsideOK = false;
+SOR_SLIDESHOW = -1;
 setWind [5, 5, false]; 
 
 
