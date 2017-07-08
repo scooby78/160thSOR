@@ -134,15 +134,45 @@ class SOR_Commander_D : B_officer_F
 };
 
 //Mechanised Commander 
-class SOR_MechCommand_D : SOR_Commander_D
+class SOR_MechCommand_D : B_officer_F
 {
 	editorPreview = "\160thSOR\data\SOR_MechCommand_D.jpg";
-	editorSubcategory = "SOR_SubCat_Infantry_MECH";
-	vehicleclass = "SOR_Infantry_MECH";
-	displayName = "Mechanised Commander";
+	editorCategory = "SOR_Cat_Faction_D";
+	editorSubcategory = "SOR_SubCat_Infantry_MECH";	
+	faction = SOR_Faction_D;
+	vehicleclass = "SOR_Infantry_MECH";	
+	displayName = "Mechanised Commander";	
+	accuracy = 3.5;
+	backpack = "tf_rt1523g_rhs";
 	uniformClass = "U_B_CombatUniform_mcam";
 	weapons[] = {"160_weap_inf_basic", "160_weap_inf_handgun", "Throw", "Put", "Laserdesignator"};
 	respawnWeapons[] = {"160_weap_inf_basic", "160_weap_inf_handgun", "Throw", "Put", "Laserdesignator"};
+	Items[] =
+	{
+		Standard_Meds,
+		SL_Equip
+	};  
+	RespawnItems[] = 
+	{
+		Standard_Meds,
+		SL_Equip
+	};
+	magazines[] = 
+	{
+		Standard_Mags,
+		Std_Pistol,
+		"rhs_mag_m18_green",
+		"rhs_mag_m18_green",
+		"Laserbatteries"
+	};
+	respawnMagazines[] = 
+	{
+		Standard_Mags,
+		Std_Pistol,
+		"rhs_mag_m18_green",
+		"rhs_mag_m18_green",
+		"Laserbatteries"
+	};
 	linkedItems[] = 
 	{	
 		"rhsusf_iotv_ocp_Repair",
@@ -166,13 +196,17 @@ class SOR_MechCommand_D : SOR_Commander_D
 };	
 
 //Air Commander 
-class SOR_AirCommand_D : SOR_Commander_D
+class SOR_AirCommand_D : B_officer_F
 {
+	editorCategory = "SOR_Cat_Faction_D";
 	editorPreview = "\160thSOR\data\SOR_AirCommand_D.jpg";
 	editorSubcategory = "SOR_SubCat_Infantry_AIR";
 	vehicleclass = "SOR_Infantry_AIR";
+	faction = SOR_Faction_D;
+	uniformClass = "U_B_CombatUniform_mcam";	
 	displayName = "Air Commander";
 	backpack = "tf_anarc210";
+	accuracy = 3.5;
 	uavHacker = 1; // allows UAV control
 	engineer = 1; // allows unit to repair 
 	weapons[] = {"160_weap_inf_handgun","Throw", "Put","Laserdesignator"};
@@ -224,9 +258,60 @@ class SOR_AirCommand_D : SOR_Commander_D
 //Zeus unit
 class SOR_ZeusCommand_D : SOR_Commander_D
 {
+	editorPreview = "\160thSOR\data\SOR_ZeusCommand_D.jpg";
+	editorCategory = "SOR_Cat_Faction_D";
+	editorSubcategory = "SOR_SubCat_Infantry";
+	vehicleclass = "SOR_Infantry";
+	faction = SOR_Faction_D;
+	uniformClass = "U_B_CombatUniform_mcam";
 	displayName = "Zeus";
 	cost = 10;
-	editorPreview = "\160thSOR\data\SOR_ZeusCommand_D.jpg";
+	accuracy = 3.5;
+	backpack = "tf_rt1523g_rhs";
+	weapons[] = {"160_weap_inf_std", "160_weap_inf_handgun", "Throw", "Put", "Laserdesignator"};
+	respawnWeapons[] = {"160_weap_inf_std", "160_weap_inf_handgun", "Throw", "Put", "Laserdesignator"};
+	Items[] =
+	{
+		Standard_Meds,
+		SL_Equip
+	};  
+	RespawnItems[] = 
+	{
+		Standard_Meds,
+		SL_Equip
+	};
+	magazines[] = 
+	{
+		Standard_Mags,
+		Std_Pistol,
+		"rhs_mag_m18_green",
+		"rhs_mag_m18_green",
+		"Laserbatteries"
+	};
+	respawnMagazines[] = 
+	{
+		Standard_Mags,
+		Std_Pistol,
+		"rhs_mag_m18_green",
+		"rhs_mag_m18_green",
+		"Laserbatteries"
+	};
+	linkedItems[] = 
+	{	
+		"rhsusf_iotv_ocp_Squadleader",
+		"rhsusf_ach_helmet_headset_ocp", 
+		"ItemGPS", 
+		"rhs_googles_clear",  
+		Standard_Equipment
+	};
+	respawnLinkedItems[] = 
+	{	
+		"rhsusf_iotv_ocp_Squadleader",
+		"rhsusf_ach_helmet_headset_ocp", 
+		"ItemGPS", 
+		"rhs_googles_clear",  
+		Standard_Equipment
+	};
 	class UserActions
 	{
 		class SOR_CountUnitsAction
@@ -1257,12 +1342,14 @@ class SOR_MechCrewCommander_D : SOR_MechOperator_D
 	cost = 100000;
 	Items[] =
 	{
+		SL_Equip,
 		Standard_Meds,
 		"ACE_epinephrine",
 		"ACE_epinephrine"
 	};  
 	RespawnItems[] = 
 	{
+		SL_Equip,
 		Standard_Meds,
 		"ACE_epinephrine",
 		"ACE_epinephrine"
