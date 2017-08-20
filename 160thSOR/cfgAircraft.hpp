@@ -781,3 +781,71 @@ class SOR_I_Plane_Fighter_03_CAS_B : I_Plane_Fighter_03_CAS_F
 	class TransportMagazines{};
 	class TransportBackpacks{};
 };
+
+class SOR_UH60MT : RHS_UH60M
+{
+	editorCategory = "SOR_Cat_Faction_D";
+	editorSubcategory = "SOR_SubCat_Aircraft";
+	vehicleclass = "SOR_Aircraft";
+	faction = SOR_Faction_D;
+	displayName = "UH-60M (test)";
+	armorStructural = 4; // Was 2	
+	Airborne_Transport_Inventory
+	class UserActions
+	{
+		class SOR_AutoDrop
+		{
+			displayName = "<t color='#008000'>Start Drop!</t>";
+			displayNameDefault = "<t color='#008000'>Start Drop!</t>";
+//			condition = "(player == driver this || player == gunner this || player isKindOf 'B_Pilot_F' || player isKindOf 'B_crew_F' || player isKindOf 'SOR_AirCommand_D') && ((getPosATL this) select 2 > 200)";
+			condition = "((getPosATL this) select 2 > 200)";			
+			priority = 1;
+			showWindow = 0;
+			hideOnUse = 1;
+			radius= 8;
+			position = "";
+			onlyForPlayer = 0;
+//			statement = "[this] spawn sor_fnc_autoparadrop";
+			statement = "[this] spawn SOR_fnc_eject";			
+		};
+		class OpenCargoDoor //sources - ["RHS_US_A2_AirImport"]
+		{
+			displayName = "Open right cargo door";
+			position = "pos driver";
+			radius = 15;
+			showwindow = 0;
+			condition = "this doorPhase 'doorRB' == 0 and (alive this) and player in this;";
+			statement = "this animateDoor ['doorRB', 1];this animate ['doorHandler_R',1]";
+			onlyforplayer = 1;
+		};
+		class CloseCargoDoor: OpenCargoDoor //inherits 7 parameters from bin\config.bin/CfgVehicles/RHS_UH60M/UserActions/OpenCargoDoor, sources - ["RHS_US_A2_AirImport"]
+		{
+			displayName = "Close right cargo door";
+			condition = "this doorPhase 'doorRB' > 0 and (alive this) and player in this;";
+			statement = "this animateDoor ['doorRB', 0];this animate ['doorHandler_R',0];";
+		};
+		class OpenCargoLDoor: OpenCargoDoor //inherits 7 parameters from bin\config.bin/CfgVehicles/RHS_UH60M/UserActions/OpenCargoDoor, sources - ["RHS_US_A2_AirImport"]
+		{
+			displayName = "Open left cargo door";
+			condition = "this doorPhase 'doorLB' == 0 and (alive this) and player in this;";
+			statement = "this animateDoor ['doorLB', 1];this animate ['doorHandler_L',1];";
+			onlyforplayer = 1;
+		};
+		class CloseCargoLDoor: OpenCargoDoor //inherits 7 parameters from bin\config.bin/CfgVehicles/RHS_UH60M/UserActions/OpenCargoDoor, sources - ["RHS_US_A2_AirImport"]
+		{
+			displayName = "Close left cargo door";
+			condition = "this doorPhase 'doorLB' > 0 and (alive this) and player in this;";
+			statement = "this animateDoor ['doorLB', 0];this animate ['doorHandler_L',0];";
+		};
+		class ToggleLight //sources - ["RHS_US_A2_AirImport"]
+		{
+			displayName = "Toggle interior light";
+			position = "pos driver";
+			radius = 15;
+			showwindow = 0;
+			condition = "player in this && (player == driver this || player == gunner this);";
+			statement = "[this,'cargolights_hide'] call rhs_fnc_toggleIntLight";
+			onlyforplayer = 1;
+		};
+	};		
+};
