@@ -33,6 +33,21 @@ class B_T_VTOL_01_infantry_F;
 class RHS_C130J;
 class B_Plane_Fighter_01_F;
 class B_Plane_Fighter_01_Stealth_F;
+class C_UAV_06_medical_F;
+
+class SOR_UAV_medical_F: C_UAV_06_medical_F
+{
+	editorCategory = "SOR_Cat_Faction_D";
+	editorSubcategory = "SOR_SubCat_Aircraft";
+	vehicleclass = "SOR_Aircraft";
+	faction = SOR_Faction_D;
+	crew = "B_UAV_AI_F";
+	side = 1;
+	class TransportItems{};
+	class TransportWeapons{};
+	class TransportMagazines{};
+	class TransportBackpacks{};
+};
 
 class Plane;
 class Plane_Base_F: Plane
