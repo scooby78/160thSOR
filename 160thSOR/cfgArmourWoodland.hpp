@@ -295,7 +295,7 @@ class SOR_B_APC_Tracked_02_wd : SOR_B_APC_Tracked_02
 
 //Retexture by AmTheAgent
 
-class SOR_Leopard_W: 160_Leopard_D
+class SOR_Leopard_W: SOR_Leopard_D
 {
 	editorCategory = "SOR_Cat_Faction_W";
 	vehicleclass = "SOR_Vehicles";
@@ -309,7 +309,7 @@ class SOR_Leopard_W: 160_Leopard_D
 	};
 };
 
-class SOR_APC_WD: 160_APC_D
+class SOR_APC_WD: SOR_APC_D
 {
 	editorCategory = "SOR_Cat_Faction_W";
 	vehicleclass = "SOR_Vehicles";
