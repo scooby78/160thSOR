@@ -206,6 +206,8 @@ class SOR_AirCommand_D : B_officer_F
 	uniformClass = "U_B_CombatUniform_mcam";	
 	displayName = "Air Commander";
 	backpack = "tf_anarc210";
+	role = "Crewman";
+	ACE_GForceCoef = 0.55;
 	accuracy = 3.5;
 	uavHacker = 1; // allows UAV control
 	engineer = 1; // allows unit to repair 
@@ -822,7 +824,8 @@ class SOR_JetPilot_D : B_Pilot_F
 	editorSubcategory = "SOR_SubCat_Infantry_AIR";
 	vehicleclass = "SOR_Infantry_AIR";
 	faction = SOR_Faction_D;
-	displayName = "Jet Pilot";		
+	displayName = "Jet Pilot";	
+	ACE_GForceCoef = 0.55;	
 	backpack = "B_Parachute";
 	weapons[] = {"160_weap_inf_handgun","Throw", "Put","Laserdesignator"};
 	respawnWeapons[] = {"160_weap_inf_handgun","Throw", "Put","Laserdesignator"};
@@ -959,8 +962,8 @@ class SOR_ReconLeader_D : B_recon_TL_F
 //		cost = 500000;
 //		camouflage = 0.6;
 //		threat[] = {1.2,0.2,0.2};
-	weapons[] = {"160_weap_inf_recon_rifle","Throw","Put","Laserdesignator"};
-	respawnWeapons[] = {"160_weap_inf_recon_rifle","Throw","Put","Laserdesignator"};
+	weapons[] = {"160_weap_inf_tl","Throw","Put","Laserdesignator"};
+	respawnWeapons[] = {"160_weap_inf_tl","Throw","Put","Laserdesignator"};
 	Items[] = 		
 	{
 		Recon_Equip,
@@ -1018,22 +1021,34 @@ class SOR_ReconLeader_D : B_recon_TL_F
 	};		
 };
 
-class SOR_ReconJTAC_D : SOR_ReconLeader_D	
+class SOR_ReconJTAC_D : SOR_ReconLeader_D
 {
 	icon =  "iconMan";
-	backpack = "tf_anarc210";
-	displayName = "Recon JTAC";	
-	weapons[] = {"160_weap_inf_recon_rifle","Throw","Put","Rangefinder"};
-	respawnWeapons[] = {"160_weap_inf_recon_rifle","Throw","Put","Rangefinder"};		
+	displayName = "Recon JTAC";
+	weapons[] = {"160_weap_inf_gl","Throw","Put","Laserdesignator"};
+	respawnWeapons[] = {"160_weap_inf_gl","Throw","Put","Laserdesignator"};
+	magazines[] = 	
+	{
+		"Laserbatteries",
+		Recon_Mags,
+		Recon_GL_Mags
+	};
+					
+	respawnMagazines[] =
+	{
+		"Laserbatteries",
+		Recon_Mags,
+		Recon_GL_Mags
+	};	
 };
 
-class SOR_ReconRifleman_D : SOR_ReconLeader_D	
+class SOR_ReconRifleman_D : SOR_ReconLeader_D
 {
 	icon =  "iconMan";
 	displayName = "Recon Rifleman";
 	backpack = "";
-	weapons[] = {"160_weap_inf_recon_rifle","Throw","Put","Rangefinder"};
-	respawnWeapons[] = {"160_weap_inf_recon_rifle","Throw","Put","Rangefinder"};
+	weapons[] = {"160_weap_inf_std","Throw","Put","Rangefinder"};
+	respawnWeapons[] = {"160_weap_inf_std","Throw","Put","Rangefinder"};
 	magazines[] =
 	{
 		Recon_Mags
@@ -1044,45 +1059,26 @@ class SOR_ReconRifleman_D : SOR_ReconLeader_D
 	};
 };
 
-class SOR_Recon_M249AR_D : SOR_ReconLeader_D	
+class SOR_Recon_M249AR_D : SOR_ReconLeader_D
 {
 	icon =  "iconManMG";
-	backpack = "SOR_M249_Pack_D";
-	displayName = "Recon AutoRifleman M249";
-	weapons[] = {"160_weap_inf_recon_AR", "Throw", "Put"};
-	respawnWeapons[] = {"160_weap_inf_recon_AR", "Throw", "Put"};
-	Items[] = 		
-	{
-		Recon_Equip,
-		Recon_Meds
-	};                
-	RespawnItems[] = 
-	{
-		Recon_Equip,
-		Recon_Meds
-	};  
+	backpack = "";
+	displayName = "Recon AutoRifleman";
+	weapons[] = {"160_weap_inf_AR1", "Throw", "Put"};
+	respawnWeapons[] = {"160_weap_inf_AR1", "Throw", "Put"};
 	magazines[] =
 	{
-		"rhs_mag_m67",
-		"rhs_mag_m67",
-		"rhs_mag_an_m8hc",
-		"rhs_mag_an_m8hc",
-		"rhs_200rnd_556x45_M_SAW",
-		"rhs_200rnd_556x45_M_SAW"	
+		Standard_Mags_AR1
 	};
 	respawnMagazines[] =
 	{
-		"rhs_mag_m67",
-		"rhs_mag_m67",
-		"rhs_mag_an_m8hc",
-		"rhs_mag_an_m8hc",
-		"rhs_200rnd_556x45_M_SAW",
-		"rhs_200rnd_556x45_M_SAW"	
+		Standard_Mags_AR1
 	};			
 };	
 
-class SOR_ReconSpotter_D : SOR_ReconLeader_D	
+class SOR_ReconSpotter_D : SOR_ReconLeader_D
 {
+	scope = 0;
 	icon =  "iconMan";
 	displayName = "Recon Spotter";
 	weapons[] = {"160_weap_inf_recon_rifle","Throw","Put","Rangefinder"};
@@ -1117,8 +1113,9 @@ class SOR_Marksman_D : SOR_ReconLeader_D
 {
 	icon =  "iconMan";
 	displayName = "Recon Marksman";
-	weapons[] = {"160_rhs_weap_sr25","Throw","Put","Laserdesignator"};
-	respawnWeapons[] = {"160_rhs_weap_sr25","Throw","Put","Laserdesignator"};
+	backpack = "";
+	weapons[] = {"160_weap_inf_recon_mark","Throw","Put","Laserdesignator"};
+	respawnWeapons[] = {"160_weap_inf_recon_mark","Throw","Put","Laserdesignator"};
 	Items[] = 		
 	{
 		Recon_Equip,
@@ -1133,20 +1130,20 @@ class SOR_Marksman_D : SOR_ReconLeader_D
 	{
 		"rhs_mag_an_m8hc",
 		"rhs_mag_an_m8hc",
-		"rhsusf_20Rnd_762x51_m118_special_Mag",
-		"rhsusf_20Rnd_762x51_m118_special_Mag",
-		"rhsusf_20Rnd_762x51_m118_special_Mag",
-		"rhsusf_20Rnd_762x51_m118_special_Mag",
+		"20Rnd_762x51_Mag",
+		"20Rnd_762x51_Mag",
+		"20Rnd_762x51_Mag",
+		"20Rnd_762x51_Mag",
 		"Laserbatteries"
 	};						
 	respawnMagazines[] =
 	{
 		"rhs_mag_an_m8hc",
 		"rhs_mag_an_m8hc",
-		"rhsusf_20Rnd_762x51_m118_special_Mag",
-		"rhsusf_20Rnd_762x51_m118_special_Mag",
-		"rhsusf_20Rnd_762x51_m118_special_Mag",
-		"rhsusf_20Rnd_762x51_m118_special_Mag",
+		"20Rnd_762x51_Mag",
+		"20Rnd_762x51_Mag",
+		"20Rnd_762x51_Mag",
+		"20Rnd_762x51_Mag",
 		"Laserbatteries"
 	};	
 };
