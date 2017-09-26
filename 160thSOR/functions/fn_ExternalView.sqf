@@ -6,11 +6,13 @@
 	Description: Allows a player to use / overide forced first person view.  But only when occupying a driver position.  Can be toggled via useraction.
 */
 
-if !(hasInterface) exitwith {};
-if !(isNil {SOR_EVF_ACTIVE}) exitwith {};
-SOR_EVF_ACTIVE = true;
+// Check to make sure code runs local only
+waitUntil {!isNull player};
+_Sor_evf_unit = _this select 0;
+if ((_Sor_evf_unit != player)) exitwith {};
+
 // Add any units that are allowed to have acces to this in the array.
-_whitelist = [ "SOR_MechDriver_D"];
+_whitelist = ["SOR_MechDriver_D"];
 
 _top = typeof player;
 if !( _top in _whitelist ) exitWith {};
