@@ -59,7 +59,9 @@ class SOR_MRAP : rhsusf_M1117_D
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_D;
 	ace_cargo_space = 12;
-	armor = 500; //was 150 protection against missiles, collisions and explosions
+	enginePower = 779; // was 194
+	peakTorque = 4540; // was 1135
+	armor = 500; //was 150 protection against missiles, collisions and explosions	
 	Mech_Inventory
 };
 
