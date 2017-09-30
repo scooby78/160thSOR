@@ -22,27 +22,28 @@ class cfgWeapons
 //Desert
 	class SMA_HK416CUSTOMvfg;
 	class sma_minimi_mk3_762tlb_des;
+	class SMA_Mk16QCB;
+	
+	class SMA_Mk17_16;
 
 
 	
 // TL and higher standard issue
 	class 160_weap_inf_tl: SMA_HK416afg 
 	{
-/* 	Not used with SMA weapons
 		class LinkedItems 
 		{
 			class LinkedItemsOptic 
 			{
 				item = "optic_Arco_blk_F";
-				slot = "CowsSlot";
+				slot = "asdg_OpticRail_SMAAssault";
 			};
 			class LinkedItemsAcc 
 			{
 				item = "SMA_SFPEQ_HKTOP_BLK";
-				slot = "PointerSlot";
+				slot = "asdg_FrontSideRail_SMAAssault";
 			};
 		};
-*/	
 	};	
 	
 // Basic issue rifle for vehicle crew	
@@ -60,41 +61,37 @@ class cfgWeapons
 // Grenadier class standard issue	
 	class 160_weap_inf_gl: SMA_HK416GL 
 	{
-/* 	Not used with SMA weapons
 		class LinkedItems 
 		{
 			class LinkedItemsOptic 
 			{
 				item = "optic_Arco_blk_F";
-				slot = "CowsSlot";
+				slot = "asdg_OpticRail_SMAAssault";
 			};
 			class LinkedItemsAcc 
 			{
 				item = "SMA_SFPEQ_HKTOP_BLK";
-				slot = "PointerSlot";
+				slot = "asdg_FrontSideRail_SMAAssault";
 			};
 		};
-*/	
 	};
 
 // Standard Inf weapon issue	
 	class 160_weap_inf_std: SMA_HK416afg 
 	{
-/* 	Not used with SMA weapons
 		class LinkedItems 
 		{
 			class LinkedItemsOptic 
 			{
 				item = "optic_Arco_blk_F";
-				slot = "CowsSlot";
+				slot = "asdg_OpticRail_SMAAssault";
 			};
 			class LinkedItemsAcc 
 			{
 				item = "SMA_SFPEQ_HKTOP_BLK";
-				slot = "PointerSlot";
+				slot = "asdg_FrontSideRail_SMAAssault";
 			};
 		};
-*/	
 	};	
 
 // AutoRifleman M249
@@ -217,9 +214,8 @@ class cfgWeapons
 	};	
 	
 // Standard Parajumper weapon issue		
-	class 160_weap_inf_pj: SMA_HK416afg 
+	class 160_weap_inf_pj: rhs_weap_m4a1_blockII 
 	{
-/* 	Not used with SMA weapons
 		class LinkedItems 
 		{
 			class LinkedItemsOptic 
@@ -233,11 +229,10 @@ class cfgWeapons
 				slot = "PointerSlot";
 			};
 		};
-*/	
 	};
 	
 // Standard Viper weapon issue	
-	class 160_weap_inf_recon_rifle: SMA_HK416CUSTOMvfg 
+	class 160_weap_inf_recon_rifle: SMA_Mk16QCB
 	{
 /* 	Not used with SMA weapons
 		class LinkedItems 
@@ -283,6 +278,23 @@ class cfgWeapons
 		};
 */	
 	};
+
+	class 160_weap_inf_recon_mark: SMA_Mk17_16
+	{
+		class LinkedItems 
+		{
+			class LinkedItemsOptic 
+			{
+				item = "SMA_ELCAN_SPECTER_TAN_ARDRDS";
+				slot = "asdg_OpticRail_SMAAssault";
+			};
+			class LinkedItemsAcc 
+			{
+				item = "SMA_SFPEQ_HKTOP_TAN";
+				slot = "asdg_FrontSideRail_SMAAssault";
+			};
+		};
+	};	
 	
 // Sniper issue	
 	class 160_weap_inf_sniper: srifle_LRR_camo_F
@@ -298,26 +310,19 @@ class cfgWeapons
 	};
 	class 160_weap_inf_spotter: SMA_HK416CUSTOMvfg 
 	{
-/* 	Not used with SMA weapons
 		class LinkedItems 
 		{
 			class LinkedItemsOptic 
 			{
-				item = "rhsusf_acc_ELCAN";
-				slot = "CowsSlot";
+				item = "SMA_ELCAN_SPECTER_TAN_ARDRDS";
+				slot = "asdg_OpticRail_SMAAssault";
 			};
 			class LinkedItemsAcc 
 			{
 				item = "SMA_SFPEQ_HKTOP_TAN";
-				slot = "PointerSlot";
+				slot = "asdg_FrontSideRail_SMAAssault";
 			};
-			class LinkedItemsMuzzle
-			{
-				item = "SMA_supp1tan_556";
-				slot = "MuzzleSlot";
-			};		
 		};
-*/	
 	};
 	
 // OPFOR	

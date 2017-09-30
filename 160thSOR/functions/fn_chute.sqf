@@ -10,5 +10,6 @@ while{(alive player)&&(vehicle _paraguy == player)} do
 		_chute setPos [getPos player select 0, getPos player select 1, getPos player select 2];
 		player assignasdriver _chute;
 		player moveIndriver _chute;
+	    (vehicle player) allowDamage false;
 	};
 };

@@ -33,6 +33,8 @@ class Cha_Des1_LAV25A2;
 class Cha_Des1_LAV25_HQ;
 class rhsusf_M1117_D;
 class rhsusf_m109d_usarmy;
+class I_MBT_03_cannon_F;
+class I_APC_Wheeled_03_cannon_F;
 
 // new supply suggestions by Bean
 class rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_d;
@@ -57,7 +59,9 @@ class SOR_MRAP : rhsusf_M1117_D
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_D;
 	ace_cargo_space = 12;
-	armor = 500; //was 150 protection against missiles, collisions and explosions
+	enginePower = 779; // was 194
+	peakTorque = 4540; // was 1135
+	armor = 500; //was 150 protection against missiles, collisions and explosions	
 	Mech_Inventory
 };
 
@@ -417,5 +421,42 @@ class SOR_B_APC_Tracked_02 : B_APC_Tracked_01_CRV_F
 	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_D;
+	Mech_Inventory
+};
+
+//Retexture by AmTheAgent
+
+class SOR_Leopard_D: I_MBT_03_cannon_F
+{
+	side=1;
+	editorCategory = "SOR_Cat_Faction_D";
+	vehicleclass = "SOR_Vehicles";
+	faction = SOR_Faction_D;
+	displayName="Leopard II";
+	crew = "SOR_MechCrew_D";
+	hiddenSelectionsTextures[]=
+	{
+		"160thSOR\data\160th_MBT_03_ext01_co.paa",
+		"160thSOR\data\160th_MBT_03_ext02_co.paa",
+		"160thSOR\data\160th_MBT_03_rcws_co.paa"
+	};
+	Mech_Inventory
+};
+
+class SOR_APC_D: I_APC_Wheeled_03_cannon_F
+{
+	side=1;
+	editorCategory = "SOR_Cat_Faction_D";
+	vehicleclass = "SOR_Vehicles";
+	faction = SOR_Faction_D;
+	displayName="Pandur II";
+	crew = "SOR_MechCrew_D";
+	hiddenSelectionsTextures[]=
+	{
+		"160thSOR\data\adf_apc_pandur_ext01_co.paa",
+		"160thSOR\data\adf_apc_pandur_ext02_co.paa",
+		"160thSOR\data\adf_apc_pandur_rcws_co.paa",
+		"A3\armor_f_gamma\APC_Wheeled_03\data\APC_Wheeled_03_Ext_alpha_CO.paa"
+	};
 	Mech_Inventory
 };

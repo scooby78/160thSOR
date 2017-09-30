@@ -119,6 +119,7 @@ class SOR_AmmoContainer2 : Box_NATO_AmmoVeh_F
 	vehicleClass = "SOR_SupplyContainers";
 	faction = SOR_Faction_CRATE;
 	displayName = "Ammunition Container Small";
+	ace_dragging_canDrag = 1;
 };
 
 //Repair (ACE interactive)

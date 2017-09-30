@@ -71,7 +71,7 @@ _defending = false;
 _TargetsInRange = false;
 SOR_ARTI_DEBUG = false;
 SOR_ARTI_PAUSE = false;
-_spotterRange = 1000;
+_spotterRange = 700;
 
 //	Lobotomise the AI
 {
@@ -136,7 +136,7 @@ while {!SOR_ARTI_STOP && (alive _spotter) && (alive _arti)} do
 				if (_artiVehicle isKindOf "rhs_D30_vdv") then {_arti doArtilleryFire [[_targetX,_targetY,_targetZ], 'rhs_mag_3of56_10', 1];};						
 			};
 //	Spotter will defend himself is enemy units get too close (should opt to run away though)
-			while {!SOR_ARTI_STOP && !(isnil "_ArtiTgt") && (alive _spotter) && (alive _arti) && ((_spotter distance _ArtiTgt) < 100)} do 
+			while {!SOR_ARTI_STOP && !(isnil "_ArtiTgt") && (alive _spotter) && (alive _arti) && ((_spotter distance _ArtiTgt) < 400)} do 
 			{
 				if (SOR_ARTI_DEBUG) then {diag_log "Defending";};						
 				if !(_defending) then 

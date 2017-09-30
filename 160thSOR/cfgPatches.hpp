@@ -11,7 +11,7 @@ class CfgPatches
 	{
 		author="160th SOR";
 		url="http://www.160th.net";
-		version="2.4.5";
+		version="2.4.6";
 		units[] = 
 		{
 			// Desert Troops 
@@ -114,6 +114,8 @@ class CfgPatches
 			"SOR_Eng_APC_Tracked_01",
 			"SOR_B_APC_Tracked_02",
 			"SOR_B_APC_Wheeled_01_cannon_F",
+			"SOR_Leopard_D",
+			"SOR_APC_D",
 			// Desert Sea Vehicles
 			"SOR_SUB",
 			"SOR_Boat_Transport_01",
@@ -188,6 +190,8 @@ class CfgPatches
 			"SOR_Eng_Truck_Repair_wd",
 			"SOR_Eng_APC_Tracked_01_wd",
 			"SOR_B_APC_Tracked_02_wd",
+			"SOR_Leopard_W",
+			"SOR_APC_WD",
 			"SOR_UH60M_W",
 			"SOR_CH_47F_W",
 			"SOR_UH60M_MEV_W",
@@ -267,7 +271,8 @@ class CfgPatches
 			"160_weap_inf_RPG",
 			"160_weap_inf_pj",
 			"160_weap_inf_recon_rifle",
-			"160_weap_inf_recon_AR",			
+			"160_weap_inf_recon_AR",
+			"160_weap_inf_recon_mark",
 			"160_weap_inf_sniper",
 			"160_weap_inf_spotter"	
 		};
@@ -275,11 +280,22 @@ class CfgPatches
 		{
 			"A3_Data_F",
 			"A3_Weapons_F",
+			"A3_Air_F",
+			"A3_Soft_F_Exp",
+			"A3_Soft_F",
+			"A3_Soft_F_Beta",
+			"A3_Air_F_beta",
+			"A3_Air_F_Heli",
+			"A3_Characters_F",
+			"A3_Characters_F_EPA",
+			"A3_Characters_F_BLUFOR",
+			"A3_Weapons_F_Rifles_MX",
+			"A3_Weapons_F_Vests",
+			"A3_Weapons_F_Uniforms",		
 			"cba_settings",
 			"rhsusf_main",
 			"rhsusf_c_weapons",
 			"SMA_Weapons",
-			"A3_Characters_F",
 			"ace_medical",
 			"ace_common",
 			"task_force_radio_items"

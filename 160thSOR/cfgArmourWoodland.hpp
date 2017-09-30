@@ -292,3 +292,35 @@ class SOR_B_APC_Tracked_02_wd : SOR_B_APC_Tracked_02
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_W;
 };	
+
+//Retexture by AmTheAgent
+
+class SOR_Leopard_W: SOR_Leopard_D
+{
+	editorCategory = "SOR_Cat_Faction_W";
+	vehicleclass = "SOR_Vehicles";
+	faction = SOR_Faction_W;
+	crew = "SOR_MechCrew_W";
+	hiddenSelectionsTextures[]=
+	{
+		"160thSOR\data\160th_MBTwdl_03_ext01_co.paa",
+		"160thSOR\data\160th_MBTwdl_03_ext02_co.paa",
+		"160thSOR\data\160th_MBTwdl_03_rcws_co.paa"
+	};
+};
+
+class SOR_APC_WD: SOR_APC_D
+{
+	editorCategory = "SOR_Cat_Faction_W";
+	vehicleclass = "SOR_Vehicles";
+	faction = SOR_Faction_W;
+	crew = "SOR_MechCrew_W";
+	hiddenSelectionsTextures[]=
+	{
+		"160thSOR\data\adf_apc_pandur_ext01wdl_co.paa",
+		"160thSOR\data\adf_apc_pandur_ext02wdl_co.paa",
+		"160thSOR\data\adf_apc_pandur_rcwswdl_co.paa",
+		"A3\armor_f_gamma\APC_Wheeled_03\data\APC_Wheeled_03_Ext_alpha_CO.paa"
+	};
+};
+

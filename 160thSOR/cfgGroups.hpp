@@ -238,7 +238,7 @@ class CfgGroups
 
 				class SOR_Recon_D
 				{
-					name = "Viper Team";
+					name = "Recon Team";
 					faction = "SOR_Faction_D";
 					side = 1;
 					rarityGroup = 0.75;
@@ -252,14 +252,14 @@ class CfgGroups
 					class Unit1
 					{
 						side = 1;
-						vehicle = "SOR_ReconJTAC_D";
+						vehicle = "SOR_Marksman_D";
 						rank = SERGEANT;
 						position[] = {0, -2, 0};
 					};
 					class Unit2
 					{
 						side = 1;
-						vehicle = "SOR_ReconRifleman_D";
+						vehicle = "SOR_ReconJTAC_D";
 						rank = SERGEANT;
 						position[] = {0, -4, 0};
 					};						
@@ -1138,37 +1138,23 @@ class CfgGroups
 					class Unit1
 					{
 						side = 1;
-						vehicle = "SOR_ReconJTAC_W";
+						vehicle = "SOR_Marksman_W";
 						rank = CORPORAL;
 						position[] = {0, -2, 0};
 					};
 					class Unit2
 					{
 						side = 1;
-						vehicle = "SOR_ReconRifleman_W";
+						vehicle = "SOR_ReconJTAC_W";
 						rank = PRIVATE;
 						position[] = {0, -4, 0};
 					};
 					class Unit3
 					{
 						side = 1;
-						vehicle = "SOR_Recon_M249AR_W";
+						vehicle = "SOR_ReconRifleman_W";
 						rank = PRIVATE;
 						position[] = {0, -6, 0};
-					};
-					class Unit4
-					{
-						side = 1;
-						vehicle = "SOR_ReconSpotter_W";
-						rank = PRIVATE;
-						position[] = {0, -8, 0};
-					};
-					class Unit5
-					{
-						side = 1;
-						vehicle = "SOR_Marksman_W";
-						rank = PRIVATE;
-						position[] = {0, -10, 0};
 					};
 				};
 			};
