@@ -1263,8 +1263,8 @@ class SOR_MechCrew_D : B_crew_F
 	displayName = "Mechanised Gunner";
 	uniformClass = "U_B_CombatUniform_mcam"; 
 	backpack = "";
-	weapons[] = {"160_weap_inf_handgun","Throw", "Put"};
-	respawnWeapons[] = {"160_weap_inf_handgun","Throw", "Put"};
+	weapons[] = {"160_weap_inf_basic","160_weap_inf_handgun","Throw", "Put"};
+	respawnWeapons[] = {"160_weap_inf_basic","160_weap_inf_handgun","Throw", "Put"};
 	Items[] =
 	{
 		Standard_Meds
@@ -1273,8 +1273,16 @@ class SOR_MechCrew_D : B_crew_F
 	{
 		Standard_Meds
 	};
-	magazines[] = {Std_Pistol};
-	respawnMagazines[] = {Std_Pistol};
+	magazines[] = 	
+	{
+		Standard_Mags_crew,
+		Std_Pistol
+	};						
+	respawnMagazines[] =
+	{
+		Standard_Mags_crew,
+		Std_Pistol
+	};
 	linkedItems[] = 
 	{	
 		"rhsusf_iotv_ocp",
