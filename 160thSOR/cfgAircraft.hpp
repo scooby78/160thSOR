@@ -8,9 +8,7 @@
 class RHS_UH60M;
 class RHS_UH60M_MEV2;
 class RHS_CH_47F;
-class RHS_MELB_AH6M_H;
-class RHS_MELB_AH6M_L;
-class RHS_MELB_AH6M_M;
+class RHS_MELB_AH6M;
 class RHS_MELB_H6M;
 class RHS_MELB_MH6M;
 class O_Heli_Transport_04_F;
@@ -24,10 +22,8 @@ class O_Plane_CAS_02_F;
 class RHS_Mi8amt_civilian;
 class I_Plane_Fighter_03_AA_F;
 class I_Plane_Fighter_03_CAS_F;
-class RHS_AH64D_AA;
-class RHS_AH64D_CS;
-class RHS_AH64D_GS;
-class RHS_A10_AT;
+class RHS_AH64D;
+class RHS_A10;
 class B_Heli_Transport_01_camo_F;
 class B_T_VTOL_01_infantry_F;
 class RHS_C130J;
@@ -229,7 +225,6 @@ class SOR_UH60M_MEV : RHS_UH60M_MEV2
 	ejectDeadCargo = 1; //test dead eject
 	crewCrashProtection = 0.20; /// Was 0.25, multiplier of damage to crew of the vehicle => low number means better protection //test
 	getInRadius = 5;	
-	radarType = 4;	
 	armorStructural = 4; // Was 2			
 	crew = "SOR_MEVPilot_D";
 	Airborne_Medical_Inventory
@@ -242,9 +237,9 @@ class SOR_MELB_H6M : RHS_MELB_H6M
 	vehicleclass = "SOR_Aircraft";
 	faction = SOR_Faction_D;
 	displayName = "H-6M (C2/P2)";
-	armorStructural = 4; // Was 50
-	fuelCapacity = 110; //was fuelCapacity = 242;
-	fuelConsumptionRate = 0.0555; //was 0.0368;
+	armorStructural = 5; // Was 5	
+	fuelCapacity = 200; //was fuelCapacity = 242;
+	fuelConsumptionRate = 0.08; //was 0.08;
 	getInRadius = 5;
 	Airborne_Transport_Inventory
 };	
@@ -256,9 +251,9 @@ class SOR_MELB_MH6M : RHS_MELB_MH6M
 	vehicleclass = "SOR_Aircraft";
 	faction = SOR_Faction_D;
 	displayName = "MH-6M (C2/P6)";
-	armorStructural = 4; // Was 50
-	fuelCapacity = 110; //was fuelCapacity = 242;
-	fuelConsumptionRate = 0.0555; //was 0.0368;
+	armorStructural = 5; // Was 5	
+	fuelCapacity = 200; //was fuelCapacity = 242;
+	fuelConsumptionRate = 0.08; //was 0.08;
 	getInRadius = 5;
 	Airborne_Attack_Inventory
 };	
@@ -270,7 +265,9 @@ class SOR_MELB_MH6M_MEV : RHS_MELB_MH6M
 	vehicleclass = "SOR_Aircraft";
 	faction = SOR_Faction_D;
 	displayName = "MH-6M MEV (C2/P6)";
-	armorStructural = 4; // Was 50
+	armorStructural = 5; // Was 5	
+	fuelCapacity = 200; //was fuelCapacity = 242;
+	fuelConsumptionRate = 0.08; //was 0.08;
 	driverCanEject = 1; // was 0 test eject
 	ejectDeadCargo = 1; //test dead eject	
 	getInRadius = 5;
@@ -278,79 +275,483 @@ class SOR_MELB_MH6M_MEV : RHS_MELB_MH6M
 };	
 
 // Attack Helos	
-class SOR_MELB_AH6M_L : RHS_MELB_AH6M_L
+//MELB BASE CLASS
+class SOR_MELB_AH6M_BASE: RHS_MELB_AH6M
 {
+	scope = 0;
+	author = "Red Hammer Studios";
+	dlc = "RHS_USAF";
 	editorCategory = "SOR_Cat_Faction_D";
 	editorSubcategory = "SOR_SubCat_Aircraft";
 	vehicleclass = "SOR_Aircraft";
 	faction = SOR_Faction_D;
+	armorStructural = 5; // Was 5	
+	fuelCapacity = 200; //was fuelCapacity = 236;
+	fuelConsumptionRate = 0.08; //was 0.08;
+	Airborne_Attack_Inventory
+	class Components;
+};
+
+//Light
+class SOR_MELB_AH6M_L: SOR_MELB_AH6M_BASE
+{
+	scope = 2;
+	scopeCurator = 2;
 	displayName = "AH-6M_L (C2/P1)";
-	armorStructural = 4; // Was 50		
-	fuelCapacity = 200; //was fuelCapacity = 242;
-	fuelConsumptionRate = 0.0555; //was 0.0368;
-	Airborne_Attack_Inventory
-};	
+	class Components: Components
+	{
+		class TransportPylonsComponent
+		{
+			UIPicture = "\rhsusf\addons\rhsusf_melb\data\loadouts\RHS_AH6M_EDEN_CA.paa";
+			class pylons
+			{
+				class pylon1
+				{
+					hardpoints[] = {"RHS_HP_MELB", "RHS_HP_MELB_L"};
+					priority = 2;
+					attachment = "rhs_mag_M151_7";
+					maxweight = 1200;
+					UIposition[] = {0.625, 0.2};
+					bay = -1;
+					turret[] = {};
+				};
+				class pylon2: pylon1
+				{
+					hardpoints[] = {"RHS_HP_MELB_M134"};
+					UIposition[] = {0.562, 0.3};
+					priority = 1;
+					attachment = "rhs_mag_m134_pylon_3000";
+					turret[] = {};
+				};
+				class pylon3: pylon2
+				{
+					UIposition[] = {0.103, 0.3};
+					mirroredMissilePos = 2;
+					attachment = "rhs_mag_m134_pylon_3000";
+					turret[] = {};
+				};
+				class pylon4: pylon1
+				{
+					hardpoints[] = {"RHS_HP_MELB", "RHS_HP_MELB_R"};
+					UIposition[] = {0.04, 0.2};
+					mirroredMissilePos = 1;
+					turret[] = {};
+				};
+			};
+			class Presets
+			{
+				class Light
+				{
+					attachment[] = {"rhs_mag_M151_7", "rhs_mag_m134_pylon_3000", "rhs_mag_m134_pylon_3000", "rhs_mag_M151_7"};
+					displayname = "Light";
+				};
+				class Medium
+				{
+					attachment[] = {"rhsusf_mag_gau19_melb_left", "", "", "rhs_mag_M151_19"};
+					displayname = "Medium";
+				};
+				class Heavy
+				{
+					attachment[] = {"rhsusf_mag_gau19_melb_left", "", "", "rhs_mag_AGM114K_2"};
+					displayname = "Heavy";
+				};
+			};
+		};
+	};
+};
 
-class SOR_MELB_AH6M_M : RHS_MELB_AH6M_M
+/*
+// Flight screening
+class SOR_MELB_AH6M_FS: SOR_MELB_AH6M_L
 {
-	editorCategory = "SOR_Cat_Faction_D";
-	editorSubcategory = "SOR_SubCat_Aircraft";
-	vehicleclass = "SOR_Aircraft";
-	faction = SOR_Faction_D;
+	displayName = "AH-6M_L (Flight Screening)";
+	class UserActions
+	{
+		class SOR_PFL_ON
+		{
+			displayName = "<t color='#a883e2'>Activate PFL Trap</t>";
+			displayNameDefault = "<t color='#a883e2'>Activate PFL Trap</t>";
+			condition = "(player isKindOf 'SOR_FlightScreener_D' && !SOR_PFL)";
+			priority = 8;
+			showWindow = 0;
+			hideOnUse = 1;
+			radius= 2;
+			position = "pos_gunner";
+			onlyForPlayer = 1;
+			statement = "SOR_PFL = true; publicVariable 'SOR_PFL';";
+		};
+		class SOR_PFL_OFF : SOR_PFL_ON
+		{
+			displayName = "<t color='#a883e2'>De-Activate PFL Trap</t>";
+			displayNameDefault = "<t color='#a883e2'>De-Activate PFL Trap</t>";
+			condition = "(player isKindOf 'SOR_FlightScreener_D' && SOR_PFL)";
+			statement = "SOR_PFL = false; publicVariable 'SOR_PFL';";
+		};	
+		class SOR_FS1_CLEAR : SOR_PFL_ON
+		{
+			displayName = "<t color='#03F243'>Clear FS1</t>";
+			displayNameDefault = "<t color='#03F243'>Clear FS1</t>";
+			condition = "(player isKindOf 'SOR_FlightScreener_D')";
+			statement = "[fs1,0] remoteExec ['setDamage', fs1]; [fs1,1] remoteExec ['setfuel', fs1]; hint 'FS1 Cleared';";
+		};	
+		class SOR_FS1_FUEL : SOR_PFL_ON
+		{
+			displayName = "<t color='#F20303'>Kill Fuel FS1</t>";
+			displayNameDefault = "<t color='#F20303'>Kill Fuel FS1</t>";
+			condition = "(player isKindOf 'SOR_FlightScreener_D')";
+			statement = "[fs1,0] remoteExec ['setfuel', fs1]; hint 'FS1 Fuel Cut';";
+		};	
+		class SOR_FS1_ROTOR : SOR_PFL_ON
+		{
+			displayName = "<t color='#F20303'>Kill Rotor FS1</t>";
+			displayNameDefault = "<t color='#F20303'>Kill Rotor FS1</t>";
+			condition = "(player isKindOf 'SOR_FlightScreener_D')";
+			statement = "[fs1,['hitVRotor',1]] remoteExec ['setHitPointDamage', fs1]; hint 'FS1 Rotor Stopped';";			
+		};	
+	};
+	class eventHandlers
+	{
+		init = "this setVehicleVarName 'FS1'";
+	};	
+};
+*/
+
+//Medium
+class SOR_MELB_AH6M_M : SOR_MELB_AH6M_BASE
+{
+	scope = 2;
+	scopeCurator = 2;
 	displayName = "AH-6M_M (C2/P1)";
-	armorStructural = 4; // Was 50
-	fuelCapacity = 200; //was fuelCapacity = 242;
-	fuelConsumptionRate = 0.0555; //was 0.0368;
-	Airborne_Attack_Inventory
-};	
+	class Components: Components
+	{
+		class TransportPylonsComponent
+		{
+			UIPicture = "\rhsusf\addons\rhsusf_melb\data\loadouts\RHS_AH6M_EDEN_CA.paa";
+			class pylons
+			{
+				class pylon1
+				{
+					hardpoints[] = {"RHS_HP_MELB", "RHS_HP_MELB_L"};
+					priority = 2;
+					attachment = "rhsusf_mag_gau19_melb_left";
+					maxweight = 1200;
+					UIposition[] = {0.625, 0.2};
+					bay = -1;
+					turret[] = {};
+				};
+				class pylon2: pylon1
+				{
+					hardpoints[] = {"RHS_HP_MELB_M134"};
+					UIposition[] = {0.562, 0.3};
+					priority = 1;
+					attachment = "";
+					turret[] = {};
+				};
+				class pylon3: pylon2
+				{
+					UIposition[] = {0.103, 0.3};
+					mirroredMissilePos = 2;
+					attachment = "";
+					turret[] = {};
+				};
+				class pylon4: pylon1
+				{
+					hardpoints[] = {"RHS_HP_MELB", "RHS_HP_MELB_R"};
+					UIposition[] = {0.04, 0.2};
+					mirroredMissilePos = 1;
+					attachment = "rhs_mag_M151_19";
+					turret[] = {};
+				};
+			};
+			class Presets
+			{
+				class Light
+				{
+					attachment[] = {"rhs_mag_M151_7", "rhs_mag_m134_pylon_3000", "rhs_mag_m134_pylon_3000", "rhs_mag_M151_7"};
+					displayname = "Light";
+				};
+				class Medium
+				{
+					attachment[] = {"rhsusf_mag_gau19_melb_left", "", "", "rhs_mag_M151_19"};
+					displayname = "Medium";
+				};
+				class Heavy
+				{
+					attachment[] = {"rhsusf_mag_gau19_melb_left", "", "", "rhs_mag_AGM114K_2"};
+					displayname = "Heavy";
+				};
+			};
+		};
+	};
+};
 
-class SOR_MELB_AH6M_H : RHS_MELB_AH6M_H
+// Heavy	
+class SOR_MELB_AH6M_H : SOR_MELB_AH6M_BASE
 {
-	editorCategory = "SOR_Cat_Faction_D";
-	editorSubcategory = "SOR_SubCat_Aircraft";
-	vehicleclass = "SOR_Aircraft";
-	faction = SOR_Faction_D;
+	scope = 2;
+	scopeCurator = 2;
 	displayName = "AH-6M_H (C2/P1)";
-	armorStructural = 4; // Was 50		
-	fuelCapacity = 200; //was fuelCapacity = 242;
-	fuelConsumptionRate = 0.0555; //was 0.0368;
-	Airborne_Attack_Inventory
+	class Components: Components
+	{
+		class TransportPylonsComponent
+		{
+			UIPicture = "\rhsusf\addons\rhsusf_melb\data\loadouts\RHS_AH6M_EDEN_CA.paa";
+			class pylons
+			{
+				class pylon1
+				{
+					hardpoints[] = {"RHS_HP_MELB", "RHS_HP_MELB_L"};
+					priority = 2;
+					attachment = "rhsusf_mag_gau19_melb_left";
+					maxweight = 1200;
+					UIposition[] = {0.625, 0.2};
+					bay = -1;
+					turret[] = {};
+				};
+				class pylon2: pylon1
+				{
+					hardpoints[] = {"RHS_HP_MELB_M134"};
+					UIposition[] = {0.562, 0.3};
+					priority = 1;
+					attachment = "";
+					turret[] = {};
+				};
+				class pylon3: pylon2
+				{
+					UIposition[] = {0.103, 0.3};
+					mirroredMissilePos = 2;
+					attachment = "";
+					turret[] = {};
+				};
+				class pylon4: pylon1
+				{
+					hardpoints[] = {"RHS_HP_MELB", "RHS_HP_MELB_R"};
+					UIposition[] = {0.04, 0.2};
+					mirroredMissilePos = 1;
+					attachment = "rhs_mag_AGM114K_2";
+					turret[] = {};
+				};
+			};
+			class Presets
+			{
+				class Light
+				{
+					attachment[] = {"rhs_mag_M151_7", "rhs_mag_m134_pylon_3000", "rhs_mag_m134_pylon_3000", "rhs_mag_M151_7"};
+					displayname = "Light";
+				};
+				class Medium
+				{
+					attachment[] = {"rhsusf_mag_gau19_melb_left", "", "", "rhs_mag_M151_19"};
+					displayname = "Medium";
+				};
+				class Heavy
+				{
+					attachment[] = {"rhsusf_mag_gau19_melb_left", "", "", "rhs_mag_AGM114K_2"};
+					displayname = "Heavy";
+				};
+			};
+		};
+	};
 };	
 
-class SOR_AH64D_AA : RHS_AH64D_AA
+
+//AH64D BASE CLASS
+class SOR_AH64D_BASE: RHS_AH64D
 {
+	scope = 0;
+	author = "Red Hammer Studios";
+	dlc = "RHS_USAF";
 	editorCategory = "SOR_Cat_Faction_D";
 	editorSubcategory = "SOR_SubCat_Aircraft";
 	vehicleclass = "SOR_Aircraft";
 	faction = SOR_Faction_D;
-	displayName = "AH-64D (AA)";
+	armorStructural = 5; // Was 5	
 	armor = 80; //was 50 (UH-60 is 60!) 
 	fuelCapacity = 200; //was 500 
+	fuelConsumptionRate = 0.08; //was 0.08;
 	Airborne_Attack_Inventory
+	class Components;
+};
+
+class SOR_AH64D_AA : SOR_AH64D_BASE
+{
+	scope = 2;
+	displayName = "AH-64D (Mixed)";
+	Airborne_Attack_Inventory
+	class Components: Components
+	{
+		class TransportPylonsComponent
+		{
+			UIPicture = "\rhsusf\addons\rhsusf_a2port_air\data\loadouts\RHS_AH64_EDEN_CA.paa";
+			class pylons
+			{
+				class pylonTip1
+				{
+					hardpoints[] = {"RHS_HP_AIM9_HELI_ARMY"};
+					priority = 3;
+					attachment = "rhs_mag_Sidewinder_heli";
+					maxweight = 1200;
+					UIposition[] = {0.625, 0.28};
+					bay = -1;
+				};
+				class pylon2
+				{
+					hardpoints[] = {"RHS_HP_LONGBOW_RACK", "RHS_HP_FFAR_ARMY"};
+					priority = 2;
+					attachment = "rhs_mag_M151_19";
+					maxweight = 1200;
+					UIposition[] = {0.625, 0.4};
+					bay = -1;
+					turret[] = {};
+				};
+				class pylon3: pylon2
+				{
+					UIposition[] = {0.562, 0.45};
+					priority = 1;
+					attachment = "rhs_mag_AGM114L_4";
+					turret[] = {0};
+				};
+				class pylon4: pylon3
+				{
+					UIposition[] = {0.103, 0.45};
+					mirroredMissilePos = 3;
+					attachment = "rhs_mag_AGM114K_4";
+					turret[] = {0};
+				};
+				class pylon5: pylon2
+				{
+					UIposition[] = {0.04, 0.4};
+					mirroredMissilePos = 2;
+					turret[] = {};
+				};
+				class pylonTip6: pylonTip1
+				{
+					UIposition[] = {0.04, 0.28};
+					mirroredMissilePos = 1;
+				};
+			};
+		};
+	};
 };	
 
-class SOR_AH64D_CS : RHS_AH64D_CS
+class SOR_AH64D_CS : SOR_AH64D_BASE
 {
-	editorCategory = "SOR_Cat_Faction_D";
-	editorSubcategory = "SOR_SubCat_Aircraft";
-	vehicleclass = "SOR_Aircraft";
-	faction = SOR_Faction_D;
-	displayName = "AH-64D (Close-Support)";
-	armor = 80; //was 50 (UH-60 is 60!) 
-	fuelCapacity = 200; //was 500 
+	scope = 2;
+	displayName = "AH-64D (Ground-Suppression)";
 	Airborne_Attack_Inventory
+	class Components: Components
+	{
+		class TransportPylonsComponent
+		{
+			UIPicture = "\rhsusf\addons\rhsusf_a2port_air\data\loadouts\RHS_AH64_EDEN_CA.paa";
+			class pylons
+			{
+				class pylonTip1
+				{
+					hardpoints[] = {"RHS_HP_AIM9_HELI_ARMY"};
+					priority = 3;
+					attachment = "rhs_mag_Sidewinder_heli";
+					maxweight = 1200;
+					UIposition[] = {0.625, 0.28};
+					bay = -1;
+				};
+				class pylon2
+				{
+					hardpoints[] = {"RHS_HP_LONGBOW_RACK", "RHS_HP_FFAR_ARMY"};
+					priority = 2;
+					attachment = "rhs_mag_AGM114K_4";
+					maxweight = 1200;
+					UIposition[] = {0.625, 0.4};
+					bay = -1;
+					turret[] = {};
+				};
+				class pylon3: pylon2
+				{
+					UIposition[] = {0.562, 0.45};
+					priority = 1;
+					attachment = "rhs_mag_AGM114L_4";
+					turret[] = {0};
+				};
+				class pylon4: pylon3
+				{
+					UIposition[] = {0.103, 0.45};
+					mirroredMissilePos = 3;
+					turret[] = {0};
+				};
+				class pylon5: pylon2
+				{
+					UIposition[] = {0.04, 0.4};
+					mirroredMissilePos = 2;
+					turret[] = {};
+				};
+				class pylonTip6: pylonTip1
+				{
+					UIposition[] = {0.04, 0.28};
+					mirroredMissilePos = 1;
+				};
+			};
+		};
+	};
 };		
 
-class SOR_AH64D_GS : RHS_AH64D_GS
+class SOR_AH64D_GS : SOR_AH64D_BASE
 {
-	editorCategory = "SOR_Cat_Faction_D";
-	editorSubcategory = "SOR_SubCat_Aircraft";
-	vehicleclass = "SOR_Aircraft";
-	faction = SOR_Faction_D;
-	displayName = "AH-64D (Ground-Suppression)";
-	armor = 80; //was 50 (UH-60 is 60!) 
-	fuelCapacity = 200; //was 500 
+	scope = 2;
+	displayName = "AH-64D (Close-Support)";
 	Airborne_Attack_Inventory
+	class Components: Components
+	{
+		class TransportPylonsComponent
+		{
+			UIPicture = "\rhsusf\addons\rhsusf_a2port_air\data\loadouts\RHS_AH64_EDEN_CA.paa";
+			class pylons
+			{
+				class pylonTip1
+				{
+					hardpoints[] = {"RHS_HP_AIM9_HELI_ARMY"};
+					priority = 3;
+					attachment = "rhs_mag_Sidewinder_heli";
+					maxweight = 1200;
+					UIposition[] = {0.625, 0.28};
+					bay = -1;
+				};
+				class pylon2
+				{
+					hardpoints[] = {"RHS_HP_LONGBOW_RACK", "RHS_HP_FFAR_ARMY"};
+					priority = 2;
+					attachment = "rhs_mag_M151_19";
+					maxweight = 1200;
+					UIposition[] = {0.625, 0.4};
+					bay = -1;
+					turret[] = {};
+				};
+				class pylon3: pylon2
+				{
+					UIposition[] = {0.562, 0.45};
+					priority = 1;
+					attachment = "rhs_mag_M151_19";
+					turret[] = {0};
+				};
+				class pylon4: pylon3
+				{
+					UIposition[] = {0.103, 0.45};
+					mirroredMissilePos = 3;
+					turret[] = {0};
+				};
+				class pylon5: pylon2
+				{
+					UIposition[] = {0.04, 0.4};
+					mirroredMissilePos = 2;
+					turret[] = {};
+				};
+				class pylonTip6: pylonTip1
+				{
+					UIposition[] = {0.04, 0.28};
+					mirroredMissilePos = 1;
+				};
+			};
+		};
+	};	
 };		
 
 ////////////	
@@ -447,11 +848,13 @@ class SOR_Transport : RHS_C130J
 //Fighters
 class SOR_FIGHTER_BASE: B_Plane_Fighter_01_Stealth_F
 {
+	scope = 0;
 	class Components;
 };
 
 class SOR_FIGHTER : SOR_FIGHTER_BASE
 {
+	scope = 2;
 	editorCategory = "SOR_Cat_Faction_D";
 	editorSubcategory = "SOR_SubCat_Aircraft";
 	vehicleclass = "SOR_Aircraft";
@@ -547,11 +950,13 @@ class SOR_FIGHTER : SOR_FIGHTER_BASE
 
 class SOR_STRIKE_FIGHTER_BASE: B_Plane_Fighter_01_F
 {
+	scope = 0;
 	class Components;
 };
 
 class SOR_STRIKE_FIGHTER : SOR_STRIKE_FIGHTER_BASE
 {
+	scope = 2;
 	editorCategory = "SOR_Cat_Faction_D";
 	editorSubcategory = "SOR_SubCat_Aircraft";
 	vehicleclass = "SOR_Aircraft";
@@ -658,20 +1063,116 @@ class SOR_STRIKE_FIGHTER : SOR_STRIKE_FIGHTER_BASE
 };
 
 //class SOR_A10 : RHS_A10_AT temporary change due to A-10 eject bug
-class SOR_A10 : SOR_STRIKE_FIGHTER
+//A-10 BASE CLASS
+class SOR_A10_BASE: RHS_A10
 {
-/*
+	scope = 0;
+	class Components;
+};
+
+class SOR_A10 : SOR_A10_BASE
+{
+	scope = 2;
+	scopecurator = 2;
 	editorCategory = "SOR_Cat_Faction_D";
 	editorSubcategory = "SOR_SubCat_Aircraft";
 	vehicleclass = "SOR_Aircraft";
 	faction = SOR_Faction_D;
-	armor = 70; // was 60
-	armorStructural = 5; //was 1
 	class TransportItems{};
 	class TransportWeapons{};
 	class TransportMagazines{};
 	class TransportBackpacks{};
-*/	
+	class Components
+	{
+		class TransportPylonsComponent
+		{
+			UIPicture = "\rhsusf\addons\rhsusf_a2port_air\data\loadouts\RHS_A10_EDEN_CA.paa";
+			class pylons
+			{
+				class pylon1
+				{
+					hardpoints[] = {"RHS_HP_AIM9_2x", "RHS_HP_LGB_500", "RHS_HP_ECM"};
+					priority = 5;
+					maxweight = 1200;
+					UIposition[] = {0.3, 0.55};
+					bay = -1;
+					attachment = "rhs_mag_ANALQ131";
+				};
+				class pylon2
+				{
+					hardpoints[] = {"RHS_HP_LGB_500", "RHS_HP_FFAR_USAF"};
+					priority = 4;
+					maxweight = 1200;
+					UIposition[] = {0.3, 0.5};
+					bay = -1;
+					attachment = "rhs_mag_FFAR_7_USAF";
+				};
+				class pylon3
+				{
+					hardpoints[] = {"RHS_HP_LGB_500", "RHS_HP_FFAR_USAF", "RHS_HP_AGM65_3x", "RHS_HP_BOMB_500_3x"};
+					priority = 3;
+					maxweight = 1200;
+					UIposition[] = {0.3, 0.45};
+					bay = -1;
+					attachment = "rhs_mag_agm65d_3";
+				};
+				class pylon4
+				{
+					hardpoints[] = {"RHS_HP_LGB_500", "RHS_HP_FFAR_USAF", "RHS_HP_BOMB_500_3x"};
+					priority = 2;
+					maxweight = 1200;
+					UIposition[] = {0.35, 0.375};
+					bay = -1;
+					attachment = "rhs_mag_cbu87";
+				};
+				class pylon5
+				{
+					hardpoints[] = {"RHS_HP_LGB_500", "RHS_HP_FFAR_USAF"};
+					priority = 1;
+					maxweight = 1200;
+					UIposition[] = {0.35, 0.325};
+					bay = -1;
+					attachment = "rhs_mag_gbu12";
+				};
+				class pylon6
+				{
+					hardpoints[] = {};
+					priority = 1;
+					maxweight = 1200;
+					UIposition[] = {0.35, 0.275};
+					bay = -1;
+					attachment = "";
+				};
+				class pylon7: pylon5
+				{
+					UIposition[] = {0.35, 0.225};
+					mirroredMissilePos = 5;
+				};
+				class pylon8: pylon4
+				{
+					UIposition[] = {0.35, 0.175};
+					mirroredMissilePos = 4;
+				};
+				class pylon9: pylon3
+				{
+					UIposition[] = {0.3, 0.1};
+					mirroredMissilePos = 3;
+				};
+				class pylon10: pylon2
+				{
+					UIposition[] = {0.3, 0.05};
+					mirroredMissilePos = 2;
+				};
+				class pylon11: pylon1
+				{
+					hardpoints[] = {"RHS_HP_AIM9_2x", "RHS_HP_LGB_500"};
+					UIposition[] = {0.3, 0};
+					attachment = "rhs_mag_Sidewinder_2";
+					mirroredMissilePos = 1;
+				};
+			};
+		};
+	};
 };
 /////////////////////
 //Captured Aircraft//
