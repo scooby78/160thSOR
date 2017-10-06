@@ -178,11 +178,11 @@ class SOR_M1A2_TUSKII_WD : SOR_M1A2_TUSKII
 //Troop transport
 class SOR_TROOP_TRUCK_WD : SOR_TROOP_TRUCK
 {
-
+	editorPreview = "rhsusf\addons\rhsusf_editorPreviews\data\rhsusf_M1083A1P2_WD_fmtv_usarmy.paa";
 	editorCategory = "SOR_Cat_Faction_W";
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_W;
-	model = "\rhsusf\addons\rhsusf_fmtv\M1083A1P2_WD";
+	HiddenSelectionsTextures[] = {"rhsusf\addons\rhsusf_fmtv\data\FMTV_Cab_CO.paa", "rhsusf\addons\rhsusf_fmtv\data\FMTV_Chassis_CO.paa", "rhsusf\addons\rhsusf_fmtv\data\FMTV_wheel_wd_co.paa", "rhsusf\addons\rhsusf_fmtv\data\FMTV_25TRear_CO.paa", "rhsusf\addons\rhsusf_fmtv\data\FMTV_Canvas1_CO.paa", "rhsusf\addons\rhsusf_fmtv\data\FMTV_BKIT_CO.paa", "rhsusf\addons\rhsusf_rg33l\data\rg33_turretwd_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\mk64mount_w_co.paa", "rhsusf\addons\rhsusf_fmtv\data\FMTV_Chassis1_CO.paa", "rhsusf\addons\rhsusf_fmtv\data\FMTV_5TRear_CO.paa", "rhsusf\addons\rhsusf_fmtv\data\FMTV_Canvas2_CO.paa", "rhsusf\addons\rhsusf_fmtv\data\FMTV_Shelter_CO.paa", "rhsusf\addons\rhsusf_fmtv\data\FMTV_Hospital_CO.paa", "rhsusf\addons\rhsusf_fmtv\data\FMTV_5TRearLHC_CO.paa", "rhsusf\addons\rhsusf_fmtv\data\FMTV_Chassis2_CO.paa", "rhsusf\addons\rhsusf_fmtv\data\fmtv_sovchassis_co.paa", "rhsusf\addons\rhsusf_fmtv\data\fmtv_sovcab_co.paa", "rhsusf\addons\rhsusf_fmtv\data\fmtv_sovrear_co.paa"};
 };
 
 //Troop transport
@@ -251,10 +251,11 @@ class SOR_Eng_Car_Transport_WD : SOR_Eng_Car_Transport_D
 //Engineer transport truck	
 class SOR_Eng_Truck_Transport_WD : SOR_Eng_Truck_Transport_D
 {
+	editorPreview = "rhsusf\addons\rhsusf_editorPreviews\data\rhsusf_M1083A1P2_WD_fmtv_usarmy.paa";
 	editorCategory = "SOR_Cat_Faction_W";
 	vehicleclass = "SOR_Vehicles";
 	faction = SOR_Faction_W;
-    model = "\rhsusf\addons\rhsusf_fmtv\M1083A1P2_WD";
+	HiddenSelectionsTextures[] = {"rhsusf\addons\rhsusf_fmtv\data\FMTV_Cab_CO.paa", "rhsusf\addons\rhsusf_fmtv\data\FMTV_Chassis_CO.paa", "rhsusf\addons\rhsusf_fmtv\data\FMTV_wheel_wd_co.paa", "rhsusf\addons\rhsusf_fmtv\data\FMTV_25TRear_CO.paa", "rhsusf\addons\rhsusf_fmtv\data\FMTV_Canvas1_CO.paa", "rhsusf\addons\rhsusf_fmtv\data\FMTV_BKIT_CO.paa", "rhsusf\addons\rhsusf_rg33l\data\rg33_turretwd_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\mk64mount_w_co.paa", "rhsusf\addons\rhsusf_fmtv\data\FMTV_Chassis1_CO.paa", "rhsusf\addons\rhsusf_fmtv\data\FMTV_5TRear_CO.paa", "rhsusf\addons\rhsusf_fmtv\data\FMTV_Canvas2_CO.paa", "rhsusf\addons\rhsusf_fmtv\data\FMTV_Shelter_CO.paa", "rhsusf\addons\rhsusf_fmtv\data\FMTV_Hospital_CO.paa", "rhsusf\addons\rhsusf_fmtv\data\FMTV_5TRearLHC_CO.paa", "rhsusf\addons\rhsusf_fmtv\data\FMTV_Chassis2_CO.paa", "rhsusf\addons\rhsusf_fmtv\data\fmtv_sovchassis_co.paa", "rhsusf\addons\rhsusf_fmtv\data\fmtv_sovcab_co.paa", "rhsusf\addons\rhsusf_fmtv\data\fmtv_sovrear_co.paa"};
 };	
 
 class SOR_Eng_Truck_ammo_wd : SOR_Eng_Truck_ammo_D

@@ -368,6 +368,7 @@ class SOR_Training_Crate_WTT : B_CargoNet_01_ammo_F
 	faction = SOR_Faction_CRATE;
 	displayName = "Crate [WTT]";
 	icon = "iconCrateAmmo";
+	ace_dragging_canDrag = 1;	
 	class TransportItems
 	{
 		item_xx(ACE_DefusalKit,20)
@@ -411,6 +412,7 @@ class SOR_A_Crate_F : B_CargoNet_01_ammo_F
 	faction = SOR_Faction_CRATE;
 	displayName = "Crate [Ammo]";
 	icon = "iconCrateAmmo";
+	ace_dragging_canDrag = 1;	
 	class TransportItems{};
 	class TransportWeapons
 	{
@@ -440,6 +442,7 @@ class SOR_AM_Crate_F : B_CargoNet_01_ammo_F
 	faction = SOR_Faction_CRATE;
 	displayName = "Crate [Ammo&Med]";
 	icon = "iconCrateAmmo";
+	ace_dragging_canDrag = 1;	
 	class TransportItems
 	{
 		item_xx(ACE_CableTie,10)
@@ -477,6 +480,7 @@ class SOR_HMG_Crate_F : B_supplyCrate_F
 	faction = SOR_Faction_CRATE;
 	displayName = "Crate [M2/Mortar]";
 	icon = "iconCrateAmmo";
+	ace_dragging_canDrag = 1;	
 	class TransportItems{};
 	class TransportWeapons{};
 	class TransportMagazines{};
@@ -499,6 +503,7 @@ class SOR_MOR_Crate_F : B_supplyCrate_F
 	faction = SOR_Faction_CRATE;
 	displayName = "Crate [TOW/Javelin/Stinger]";
 	icon = "iconCrateAmmo";
+	ace_dragging_canDrag = 1;	
 	class TransportItems{};
 	class TransportWeapons
 	{
