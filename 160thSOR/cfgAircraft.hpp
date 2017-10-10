@@ -529,7 +529,7 @@ class SOR_MELB_AH6M_H : SOR_MELB_AH6M_BASE
 					UIposition[] = {0.04, 0.2};
 					mirroredMissilePos = 1;
 					attachment = "rhs_mag_AGM114K_2";
-					turret[] = {};
+					turret[] = {0};
 				};
 			};
 			class Presets
@@ -608,7 +608,7 @@ class SOR_AH64D_AA : SOR_AH64D_BASE
 				{
 					UIposition[] = {0.562, 0.45};
 					priority = 1;
-					attachment = "rhs_mag_AGM114L_4";
+					attachment = "rhs_mag_AGM114K_4";
 					turret[] = {0};
 				};
 				class pylon4: pylon3
@@ -659,7 +659,7 @@ class SOR_AH64D_CS : SOR_AH64D_BASE
 				{
 					hardpoints[] = {"RHS_HP_LONGBOW_RACK", "RHS_HP_FFAR_ARMY"};
 					priority = 2;
-					attachment = "rhs_mag_AGM114K_4";
+					attachment = "rhs_mag_AGM114L_4";
 					maxweight = 1200;
 					UIposition[] = {0.625, 0.4};
 					bay = -1;
@@ -669,7 +669,7 @@ class SOR_AH64D_CS : SOR_AH64D_BASE
 				{
 					UIposition[] = {0.562, 0.45};
 					priority = 1;
-					attachment = "rhs_mag_AGM114L_4";
+					attachment = "rhs_mag_AGM114K_4";
 					turret[] = {0};
 				};
 				class pylon4: pylon3
@@ -730,13 +730,13 @@ class SOR_AH64D_GS : SOR_AH64D_BASE
 					UIposition[] = {0.562, 0.45};
 					priority = 1;
 					attachment = "rhs_mag_M151_19";
-					turret[] = {0};
+					turret[] = {};
 				};
 				class pylon4: pylon3
 				{
 					UIposition[] = {0.103, 0.45};
 					mirroredMissilePos = 3;
-					turret[] = {0};
+					turret[] = {};
 				};
 				class pylon5: pylon2
 				{
