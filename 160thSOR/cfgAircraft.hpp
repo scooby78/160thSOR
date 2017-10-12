@@ -637,66 +637,6 @@ class SOR_AH64D_AA : SOR_AH64D_BASE
 class SOR_AH64D_CS : SOR_AH64D_BASE
 {
 	scope = 2;
-	displayName = "AH-64D (Ground-Suppression)";
-	Airborne_Attack_Inventory
-	class Components: Components
-	{
-		class TransportPylonsComponent
-		{
-			UIPicture = "\rhsusf\addons\rhsusf_a2port_air\data\loadouts\RHS_AH64_EDEN_CA.paa";
-			class pylons
-			{
-				class pylonTip1
-				{
-					hardpoints[] = {"RHS_HP_AIM9_HELI_ARMY"};
-					priority = 3;
-					attachment = "rhs_mag_Sidewinder_heli";
-					maxweight = 1200;
-					UIposition[] = {0.625, 0.28};
-					bay = -1;
-				};
-				class pylon2
-				{
-					hardpoints[] = {"RHS_HP_LONGBOW_RACK", "RHS_HP_FFAR_ARMY"};
-					priority = 2;
-					attachment = "rhs_mag_AGM114L_4";
-					maxweight = 1200;
-					UIposition[] = {0.625, 0.4};
-					bay = -1;
-					turret[] = {};
-				};
-				class pylon3: pylon2
-				{
-					UIposition[] = {0.562, 0.45};
-					priority = 1;
-					attachment = "rhs_mag_AGM114K_4";
-					turret[] = {0};
-				};
-				class pylon4: pylon3
-				{
-					UIposition[] = {0.103, 0.45};
-					mirroredMissilePos = 3;
-					turret[] = {0};
-				};
-				class pylon5: pylon2
-				{
-					UIposition[] = {0.04, 0.4};
-					mirroredMissilePos = 2;
-					turret[] = {};
-				};
-				class pylonTip6: pylonTip1
-				{
-					UIposition[] = {0.04, 0.28};
-					mirroredMissilePos = 1;
-				};
-			};
-		};
-	};
-};		
-
-class SOR_AH64D_GS : SOR_AH64D_BASE
-{
-	scope = 2;
 	displayName = "AH-64D (Close-Support)";
 	Airborne_Attack_Inventory
 	class Components: Components
@@ -752,7 +692,67 @@ class SOR_AH64D_GS : SOR_AH64D_BASE
 			};
 		};
 	};	
-};		
+};	
+
+class SOR_AH64D_GS : SOR_AH64D_BASE
+{
+	scope = 2;
+	displayName = "AH-64D (Ground-Suppression)";
+	Airborne_Attack_Inventory
+	class Components: Components
+	{
+		class TransportPylonsComponent
+		{
+			UIPicture = "\rhsusf\addons\rhsusf_a2port_air\data\loadouts\RHS_AH64_EDEN_CA.paa";
+			class pylons
+			{
+				class pylonTip1
+				{
+					hardpoints[] = {"RHS_HP_AIM9_HELI_ARMY"};
+					priority = 3;
+					attachment = "rhs_mag_Sidewinder_heli";
+					maxweight = 1200;
+					UIposition[] = {0.625, 0.28};
+					bay = -1;
+				};
+				class pylon2
+				{
+					hardpoints[] = {"RHS_HP_LONGBOW_RACK", "RHS_HP_FFAR_ARMY"};
+					priority = 2;
+					attachment = "rhs_mag_AGM114L_4";
+					maxweight = 1200;
+					UIposition[] = {0.625, 0.4};
+					bay = -1;
+					turret[] = {0};
+				};
+				class pylon3: pylon2
+				{
+					UIposition[] = {0.562, 0.45};
+					priority = 1;
+					attachment = "rhs_mag_AGM114K_4";
+					turret[] = {0};
+				};
+				class pylon4: pylon3
+				{
+					UIposition[] = {0.103, 0.45};
+					mirroredMissilePos = 3;
+					turret[] = {0};
+				};
+				class pylon5: pylon2
+				{
+					UIposition[] = {0.04, 0.4};
+					mirroredMissilePos = 2;
+					turret[] = {0};
+				};
+				class pylonTip6: pylonTip1
+				{
+					UIposition[] = {0.04, 0.28};
+					mirroredMissilePos = 1;
+				};
+			};
+		};
+	};
+};			
 
 ////////////	
 // Planes //
