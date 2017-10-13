@@ -966,11 +966,13 @@ class SOR_ReconLeader_D : B_recon_TL_F
 	respawnWeapons[] = {"160_weap_inf_tl","Throw","Put","Laserdesignator"};
 	Items[] = 		
 	{
+		"B_UavTerminal",		
 		Recon_Equip,
 		Recon_Meds
 	};                
 	RespawnItems[] = 
 	{
+		"B_UavTerminal",
 		Recon_Equip,
 		Recon_Meds
 	};  
@@ -1025,20 +1027,39 @@ class SOR_ReconJTAC_D : SOR_ReconLeader_D
 {
 	icon =  "iconMan";
 	displayName = "Recon JTAC";
-	weapons[] = {"160_weap_inf_gl","Throw","Put","Laserdesignator"};
-	respawnWeapons[] = {"160_weap_inf_gl","Throw","Put","Laserdesignator"};
+	weapons[] = {"160_weap_inf_recon_mark","Throw","Put","Laserdesignator"};
+	respawnWeapons[] = {"160_weap_inf_recon_mark","Throw","Put","Laserdesignator"};
+	Items[] = 		
+	{
+		Recon_Equip,
+		Recon_Meds
+	};                
+	RespawnItems[] = 
+	{
+		Recon_Equip,
+		Recon_Meds
+	};
 	magazines[] = 	
 	{
 		"Laserbatteries",
-		Recon_Mags,
-		Recon_GL_Mags
-	};
-					
+		"rhs_mag_an_m8hc",
+		"rhs_mag_an_m8hc",
+		"20Rnd_762x51_Mag",
+		"20Rnd_762x51_Mag",
+		"20Rnd_762x51_Mag",
+		"20Rnd_762x51_Mag",
+		"Laserbatteries"
+	};						
 	respawnMagazines[] =
 	{
 		"Laserbatteries",
-		Recon_Mags,
-		Recon_GL_Mags
+		"rhs_mag_an_m8hc",
+		"rhs_mag_an_m8hc",
+		"20Rnd_762x51_Mag",
+		"20Rnd_762x51_Mag",
+		"20Rnd_762x51_Mag",
+		"20Rnd_762x51_Mag",
+		"Laserbatteries"
 	};	
 };
 
@@ -1046,9 +1067,19 @@ class SOR_ReconRifleman_D : SOR_ReconLeader_D
 {
 	icon =  "iconMan";
 	displayName = "Recon Rifleman";
-	backpack = "";
+	backpack = "B_UAV_01_backpack_F";
 	weapons[] = {"160_weap_inf_std","Throw","Put","Rangefinder"};
 	respawnWeapons[] = {"160_weap_inf_std","Throw","Put","Rangefinder"};
+	Items[] = 		
+	{
+		Recon_Equip,
+		Recon_Meds
+	};                
+	RespawnItems[] = 
+	{
+		Recon_Equip,
+		Recon_Meds
+	};
 	magazines[] =
 	{
 		Recon_Mags
@@ -1076,36 +1107,21 @@ class SOR_Recon_M249AR_D : SOR_ReconLeader_D
 	};			
 };	
 
-class SOR_ReconSpotter_D : SOR_ReconLeader_D
+class SOR_ReconGrenadier_D : SOR_ReconRifleman_D
 {
-	scope = 0;
-	icon =  "iconMan";
-	displayName = "Recon Spotter";
-	weapons[] = {"160_weap_inf_recon_rifle","Throw","Put","Rangefinder"};
-	respawnWeapons[] = {"160_weap_inf_recon_rifle","Throw","Put","Rangefinder"};
-	Items[] = 		
-	{
-		"ACE_ATragMX",
-		"ACE_Kestrel4500",
-		"ACE_RangeCard",
-		Recon_Equip,
-		Recon_Meds
-	};                
-	RespawnItems[] = 
-	{
-		"ACE_ATragMX",
-		"ACE_Kestrel4500",
-		"ACE_RangeCard",
-		Recon_Equip,
-		Recon_Meds
-	}; 		
+	displayName = "Recon Grenadier";
+	backpack = "";
+	weapons[] = {"160_weap_inf_gl","Throw","Put","Rangefinder"};
+	respawnWeapons[] = {"160_weap_inf_gl","Throw","Put","Rangefinder"};
 	magazines[] =
 	{
-		Recon_Mags
+		Recon_Mags,
+		Recon_GL_Mags
 	};						
 	respawnMagazines[] =
 	{
-		Recon_Mags
+		Recon_Mags,
+		Recon_GL_Mags
 	};		
 };
 

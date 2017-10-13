@@ -209,7 +209,6 @@ class SOR_Teamleader2_W : SOR_Teamleader2_D
 	};   
 };
 
-
 class SOR_Medic_W : SOR_Medic_D
 {
 	editorPreview = "\160thSOR\data\SOR_Medic_W.jpg";
@@ -499,22 +498,54 @@ class SOR_ReconLeader_W : SOR_ReconLeader_D
 	};			
 };
 
-class SOR_ReconJTAC_W : SOR_ReconLeader_W
+class SOR_ReconJTAC_W : SOR_ReconJTAC_D
 {
 	editorCategory = "SOR_Cat_Faction_W";
 	faction = SOR_Faction_W;
 	uniformClass = "U_B_T_Soldier_F";	
 	backpack = "tf_rt1523g_green";
 	displayName = "Recon JTAC";
+	linkedItems[] = 
+	{	
+		"V_PlateCarrier1_tna_F", 
+		"H_HelmetB_Enh_tna_F", 
+		"rhs_googles_clear",
+		"G_Bandanna_oli",
+		Recon_Equipment
+	};              
+	respawnLinkedItems[] = 
+	{	
+		"V_PlateCarrier1_tna_F", 
+		"H_HelmetB_Enh_tna_F", 
+		"rhs_googles_clear",
+		"G_Bandanna_oli",
+		Recon_Equipment
+	};	
 };
 
-class SOR_ReconRifleman_W : SOR_ReconLeader_W
+class SOR_ReconRifleman_W : SOR_ReconRifleman_D
 {
 	editorCategory = "SOR_Cat_Faction_W";
 	faction = SOR_Faction_W;	
 	uniformClass = "U_B_T_Soldier_F";
-	backpack = "";	
+	backpack = "B_UAV_01_backpack_F";	
 	displayName = "Recon Riflemen";
+	linkedItems[] = 
+	{	
+		"V_PlateCarrier1_tna_F", 
+		"H_HelmetB_Enh_tna_F", 
+		"rhs_googles_clear",
+		"G_Bandanna_oli",
+		Recon_Equipment
+	};              
+	respawnLinkedItems[] = 
+	{	
+		"V_PlateCarrier1_tna_F", 
+		"H_HelmetB_Enh_tna_F", 
+		"rhs_googles_clear",
+		"G_Bandanna_oli",
+		Recon_Equipment
+	};		
 };
 
 class SOR_Recon_M249AR_W : SOR_Recon_M249AR_D
@@ -540,11 +571,11 @@ class SOR_Recon_M249AR_W : SOR_Recon_M249AR_D
 		"G_Bandanna_oli",
 		Recon_Equipment
 	};			
-};	
+};
 
-class SOR_ReconSpotter_W : SOR_ReconSpotter_D	
+class SOR_ReconGrenadier_W : SOR_ReconGrenadier_D
 {
-	editorPreview = "\160thSOR\data\SOR_ReconLeader_W.jpg";
+	editorPreview = "\160thSOR\data\SOR_Recon_M249AR_W.jpg";
 	editorCategory = "SOR_Cat_Faction_W";
 	faction = SOR_Faction_W;
 	uniformClass = "U_B_T_Soldier_F";
@@ -563,8 +594,8 @@ class SOR_ReconSpotter_W : SOR_ReconSpotter_D
 		"rhs_googles_clear",
 		"G_Bandanna_oli",
 		Recon_Equipment
-	};			
-};
+	};		
+};	
 
 class SOR_Marksman_W : SOR_Marksman_D
 {
