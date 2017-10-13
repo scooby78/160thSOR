@@ -290,7 +290,7 @@ class cfgWeapons
 			};
 			class LinkedItemsAcc 
 			{
-				item = "SMA_SFPEQ_HKTOP_TAN";
+				item = "SMA_SFPEQ_SCARTOP_TAN";
 				slot = "asdg_FrontSideRail_SMAAssault";
 			};
 		};
