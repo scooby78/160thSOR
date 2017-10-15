@@ -28,6 +28,7 @@ class CfgPatches
 			#include "Rus_VDV\cfgPatches.hpp"
 			#include "sites\cfgPatches.hpp"	
 			#include "SOR_ISIS\cfgPatches.hpp"
+			#include "SOR_PMC\cfgPatches.hpp"
 		};
 		weapons[] = 
 		{
@@ -84,7 +85,8 @@ class cfgVehicles
 	#include "Rus_VDV\cfgVehicles.hpp"
 	#include "4th_Reich\cfgVehicles.hpp"
 	#include "sites\cfgVehicles.hpp"	
-	#include "SOR_ISIS\cfgVehicles.hpp"	
+	#include "SOR_ISIS\cfgVehicles.hpp"
+	#include "SOR_PMC\cfgVehicles.hpp"		
 };
 
 class cfgWeapons 
@@ -92,6 +94,7 @@ class cfgWeapons
 	#include "Rus_VDV\CfgWeapons.hpp"
 	#include "4th_Reich\CfgWeapons.hpp"
 	#include "SOR_ISIS\CfgWeapons.hpp"	
+	#include "SOR_PMC\CfgWeapons.hpp"	
 };
 
 class CfgBrains
@@ -139,7 +142,8 @@ class CfgEditorCategories
 {
 	#include "4th_Reich\cfgEditorCategories.hpp"
 	#include "Rus_VDV\cfgEditorCategories.hpp"	
-	#include "SOR_ISIS\cfgEditorCategories.hpp"		
+	#include "SOR_ISIS\cfgEditorCategories.hpp"	
+	#include "SOR_PMC\cfgEditorCategories.hpp"		
 	class SOR_OPFor_Cat_Supplies
 	{
 		displayName = "160th Supplies Opfor";
@@ -235,6 +239,7 @@ class cfgFactionClasses
 	#include "Rus_VDV\cfgFactionClasses.hpp"
 	#include "4th_Reich\cfgFactionClasses.hpp"
 	#include "SOR_ISIS\cfgFactionClasses.hpp"	
+	#include "SOR_PMC\cfgFactionClasses.hpp"	
 };
 
 class CfgGroups 
@@ -245,6 +250,10 @@ class CfgGroups
 		#include "4th_Reich\CfgGroups.hpp"
 		#include "SOR_ISIS\CfgGroups.hpp"
 	};
+	class Independent
+	{
+		#include "SOR_PMC\CfgGroups.hpp"
+	};	
 };
 
 class CfgVehicleClasses
