@@ -1,0 +1,44 @@
+/*
+160th SOR Description File
+https://community.bistudio.com/wiki/Description.ext
+*/
+
+class Header
+{
+	gameType = COOP;
+	minPlayers = 1;
+	maxPlayers = 80;
+};
+
+disableChannels[]={0,1,2,5};
+disabledAI=1;
+debriefing=1;
+showGPS=1;
+
+Respawn = 3;
+RespawnDelay = 5;
+RespawnDialog = 0;
+
+corpseManagerMode = 1;
+corpseRemovalMinTime = 20;
+corpseRemovalMaxTime = 20;
+corpseLimit = 5;
+
+wreckManagerMode = 2;
+wreckLimit = 1;
+wreckRemovalMinTime = 20;
+wreckRemovalMaxTime = 20;
+respawnVehicleDelay = 30;
+
+onLoadIntroTime=false;
+onLoadMissionTime=false;
+
+allowFunctionsLog = 0;
+enableDebugConsole = 2;
+
+
+author = 160th Operations;
+onLoadName = E1 E2 E3 Training Space;
+onLoadMission = www.160th.net (Requires Loadouts v2.4.7);
+overviewPicture = "160thSOR\data\160th_day.paa"; 		
+

@@ -1,0 +1,538 @@
+version=53;
+center[]={14714.549,17.909893,16694.779};
+class items
+{
+	items=29;
+	class Item0
+	{
+		dataType="Marker";
+		position[]={-1.1347656,0.00010681152,-0.76757813};
+		name="smlbox";
+		text="Small resupply boxes";
+		type="selector_selectable";
+		colorName="ColorOrange";
+		angle=31.840992;
+		id=1;
+	};
+	class Item1
+	{
+		dataType="Marker";
+		position[]={11.536133,0.00010681152,11.044922};
+		name="misceqip";
+		text="Misc equipment/Eplosive ords";
+		type="selector_selectable";
+		colorName="ColorOrange";
+		angle=29.099993;
+		id=11;
+	};
+	class Item2
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-9.8164063,0.89252853,-12.345703};
+			angles[]={0,5.5449457,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			skill=0.60000002;
+			init="nul = [this,""HM2"",10] spawn SOR_fnc_markUnits;";
+			description="Med Crate 4";
+		};
+		id=85;
+		type="SOR_HMG_Crate_F";
+	};
+	class Item3
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-13.579102,0.89252853,-15.677734};
+			angles[]={0,5.5297966,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			skill=0.60000002;
+			init="nul = [this,""HM1"",10] spawn SOR_fnc_markUnits;";
+			description="Med Crate 3";
+		};
+		id=86;
+		type="SOR_HMG_Crate_F";
+	};
+	class Item4
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-16.385742,0.82540894,-12.875};
+			angles[]={0,2.3553393,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			skill=0.60000002;
+			lock="UNLOCKED";
+			init="nul = [this,""AMC"",10] spawn SOR_fnc_markUnits;";
+		};
+		id=87;
+		type="SOR_AM_Crate_F";
+	};
+	class Item5
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-12.526367,0.82540894,-9.1777344};
+			angles[]={0,5.5480175,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			skill=0.60000002;
+			lock="UNLOCKED";
+			init="nul = [this,""AC"",10] spawn SOR_fnc_markUnits;";
+		};
+		id=88;
+		type="SOR_A_Crate_F";
+	};
+	class Item6
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-3.1240234,0.2840538,1.8691406};
+			angles[]={0,0.73428231,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			skill=0.60000002;
+		};
+		id=89;
+		type="SOR_A_Box_F";
+		atlOffset=-0.00010681152;
+	};
+	class Item7
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-1.4150391,0.28405762,0.14257813};
+			angles[]={0,0.80073082,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			skill=0.60000002;
+		};
+		id=90;
+		type="SOR_A_Box_F";
+		atlOffset=-0.00010299683;
+	};
+	class Item8
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.29785156,0.28415298,-1.6542969};
+			angles[]={0,0.75926745,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			skill=0.60000002;
+		};
+		id=91;
+		type="SOR_A_Box_F";
+		atlOffset=-7.6293945e-006;
+	};
+	class Item9
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={1.8486328,0.28426933,-3.1796875};
+			angles[]={0,0.72372395,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			skill=0.60000002;
+		};
+		id=92;
+		type="SOR_A_Box_F";
+		atlOffset=0.00010871887;
+	};
+	class Item10
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={3.2958984,0.19139862,0.25585938};
+			angles[]={0,2.3735323,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			skill=0.60000002;
+			description="Infantry Command - GODFATHER";
+		};
+		id=98;
+		type="SOR_M_Box_F";
+	};
+	class Item11
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={1.9160156,0.1914959,1.7285156};
+			angles[]={0,2.3764687,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			skill=0.60000002;
+			lock="UNLOCKED";
+		};
+		id=99;
+		type="SOR_M_Box_F";
+		atlOffset=9.727478e-005;
+	};
+	class Item12
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.51953125,0.00010681152,-0.73242188};
+			angles[]={0,0.79803693,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			skill=0.60000002;
+			init="this enableSimulationGlobal false;";
+		};
+		id=100;
+		type="Land_JumpTarget_F";
+	};
+	class Item13
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-13.049805,0.00010681152,-12.451172};
+			angles[]={0,0.80873954,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			skill=0.60000002;
+			init="this enableSimulationGlobal false;";
+		};
+		id=101;
+		type="Land_JumpTarget_F";
+	};
+	class Item14
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-1.7753906,0.2841301,-5.2871094};
+			angles[]={0,3.9825964,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			skill=0.60000002;
+			description="Infantry Command - GODFATHER";
+		};
+		id=103;
+		type="SOR_G_Box_F";
+		atlOffset=-3.0517578e-005;
+	};
+	class Item15
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-3.4501953,0.28416061,-3.6738281};
+			angles[]={0,3.9575429,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			skill=0.60000002;
+			description="Infantry Command - GODFATHER";
+		};
+		id=104;
+		type="SOR_G_Box_F";
+	};
+	class Item16
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={15.107422,0.28414917,11.300781};
+			angles[]={0,0.83380455,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			skill=0.60000002;
+			description="Infantry Command - GODFATHER";
+		};
+		id=105;
+		type="SOR_E_Box_F";
+		atlOffset=-1.1444092e-005;
+	};
+	class Item17
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={12.362305,0.28413963,14.839844};
+			angles[]={0,0.84081984,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			skill=0.60000002;
+			description="Infantry Command - GODFATHER";
+		};
+		id=106;
+		type="SOR_E_Box_F";
+		atlOffset=-2.0980835e-005;
+	};
+	class Item18
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.2265625,0.19132233,3.5371094};
+			angles[]={0,2.405427,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			skill=0.60000002;
+			lock="UNLOCKED";
+		};
+		id=107;
+		type="SOR_M_Box_F";
+		atlOffset=-7.6293945e-005;
+	};
+	class Item19
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={11.385742,0.28413773,8.0703125};
+			angles[]={0,0.79642135,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			skill=0.60000002;
+			description="Infantry Command - GODFATHER";
+		};
+		id=108;
+		type="SOR_S_Box_F";
+		atlOffset=-2.2888184e-005;
+	};
+	class Item20
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={8.2871094,0.28416061,11.388672};
+			angles[]={0,0.7850489,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			skill=0.60000002;
+			description="Infantry Command - GODFATHER";
+		};
+		id=109;
+		type="SOR_S_Box_F";
+	};
+	class Item21
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-5.3652344,0.28416061,-1.7441406};
+			angles[]={0,3.8767009,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			skill=0.60000002;
+			description="Infantry Command - GODFATHER";
+		};
+		id=117;
+		type="SOR_G_Box_F";
+	};
+	class Item22
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={11.65918,0.00010681152,11.318359};
+			angles[]={0,2.3783312,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			skill=0.60000002;
+			init="this enableSimulationGlobal false;";
+		};
+		id=124;
+		type="Land_JumpTarget_F";
+	};
+	class Item23
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={13.154297,0.18883133,9.8144531};
+			angles[]={0,5.5108356,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			skill=0.60000002;
+		};
+		id=127;
+		type="SOR_Box_NATO_WpsSpecial_F";
+	};
+	class Item24
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={10.043945,0.18681145,13.123047};
+			angles[]={0,5.487802,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=435;
+		type="SOR_HW_Box_F";
+	};
+	class Item25
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.19628906,0.1497364,-4.1542969};
+			angles[]={0,5.496809,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=441;
+		type="SOR_Launcher_Box_F";
+		atlOffset=-1.9073486e-006;
+	};
+	class Item26
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-1.9414063,0.14973831,-2.1503906};
+			angles[]={0,5.496809,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=442;
+		type="SOR_Launcher_Box_F";
+	};
+	class Item27
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-3.7998047,0.14973831,-0.10742188};
+			angles[]={0,5.496809,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=443;
+		type="SOR_Launcher_Box_F";
+	};
+	class Item28
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-13.038086,0.78991508,-12.40625};
+			angles[]={0,3.9164488,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			init="call{nul = [this,""AMMO1""] spawn SOR_fnc_markUnits;}";
+		};
+		id=1362;
+		type="SOR_AmmoContainer2";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ammoBox";
+				expression="[_this,_value] call bis_fnc_initAmmoBox;";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+					};
+				};
+			};
+			nAttributes=1;
+		};
+	};
+};
