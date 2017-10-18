@@ -82,27 +82,14 @@ class SOR_Nam_VC_2 : SOR_Nam_VC
 	displayName = "VC LMG";
 	backpack = "";
 	side = 0;
-	weapons[] = {"rhs_weap_pkm", "Throw", "put"};
-	respawnweapons[] = {"rhs_weap_pkm", "Throw", "put"};
-		magazines[]=
-	{
-	Standard_Mags_VC_AR_Nam
-	};
-	respawnMagazines[]=
-	{
-	Standard_Mags_VC_AR_Nam
-	};
-	
 	linkedItems[] = 
 	{	
 		"V_BandollierB_khk", 
-		"vietsh_Head",
 		Standard_Equipment_Nam
 	};              
 	respawnLinkedItems[] = 
 	{	
 		"V_BandollierB_khk", 
-		"vietsh_Head", 
 		Standard_Equipment_Nam
 	};   
 };

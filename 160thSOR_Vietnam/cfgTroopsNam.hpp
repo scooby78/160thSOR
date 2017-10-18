@@ -51,8 +51,8 @@ class SOR_Actual_Nam : SOR_Actual_D
 	modelsides[] = {3,2,1,0};
 	hiddenSelections[] = {"Camo1","Camo2"};
 	hiddenSelectionsTextures[] = {"160thSOR_Vietnam\data\1.paa","160thSOR_Vietnam\data\ia_soldier_01_clothing_cw.paa"};
-	weapons[] = {"BOM16A1", "Throw", "put"};
-	respawnweapons[] = {"BOM16A1", "Throw", "put"};
+	weapons[] = {"bsoc_gus_m16a2_s", "Throw", "put"};
+	respawnweapons[] = {"bsoc_gus_m16a2_s", "Throw", "put"};
 	
 	linkedItems[] = 
 	{	
@@ -80,8 +80,8 @@ class SOR_Commander_Nam : SOR_Commander_D
 	modelsides[] = {3,2,1,0};
 	hiddenSelections[] = {"Camo1","Camo2"};
 	hiddenSelectionsTextures[] = {"160thSOR_Vietnam\data\1.paa","160thSOR_Vietnam\data\ia_soldier_01_clothing_cw.paa"};
-	weapons[] = {"BOM16A1", "Throw", "put"};
-	respawnweapons[] = {"BOM16A1", "Throw", "put"};
+	weapons[] = {"bsoc_gus_m16a2_s", "Throw", "put"};
+	respawnweapons[] = {"bsoc_gus_m16a2_s", "Throw", "put"};
 	linkedItems[] = 
 	{	
 		"rhsgref_alice_webbing", 
@@ -103,8 +103,8 @@ class SOR_ZeusCommand_Nam : SOR_ZeusCommand_D
 	editorCategory = "SOR_Cat_Faction_Nam";
 	faction = "SOR_Faction_Nam";
 	backpack = "SOR_Spotter_Radio_W";
-	weapons[] = {"BOM16A1", "Throw", "put"};
-	respawnweapons[] = {"BOM16A1", "Throw", "put"};	
+	weapons[] = {"bsoc_gus_m16a2_s", "Throw", "put"};
+	respawnweapons[] = {"bsoc_gus_m16a2_s", "Throw", "put"};	
 	uniformClass = "US_ARMY_Uniform";
 	model = "\A3\Characters_F_Beta\INDEP\ia_officer.p3d";
 	modelsides[] = {3,2,1,0};
@@ -135,8 +135,8 @@ class SOR_MechCommand_Nam : SOR_MechCommand_D
 	modelsides[] = {3,2,1,0};
 	hiddenSelections[] = {"Camo1","Camo2"};
 	hiddenSelectionsTextures[] = {"160thSOR_Vietnam\data\1.paa","160thSOR_Vietnam\data\ia_soldier_01_clothing_cw.paa"};
-	weapons[] = {"BOM16A1", "Throw", "put"};
-	respawnweapons[] = {"BOM16A1", "Throw", "put"};
+	weapons[] = {"bsoc_gus_m16a2_s", "Throw", "put"};
+	respawnweapons[] = {"bsoc_gus_m16a2_s", "Throw", "put"};
 	backpack = "SOR_Spotter_Radio_W";		
 	linkedItems[] = 
 	{	
@@ -164,8 +164,6 @@ class SOR_AirCommand_Nam : SOR_AirCommand_D
 	modelsides[] = {3,2,1,0};
 	hiddenSelections[] = {"Camo1","Camo2"};
 	hiddenSelectionsTextures[] = {"160thSOR_Vietnam\data\1.paa","160thSOR_Vietnam\data\ia_soldier_01_clothing_cw.paa"};
-	weapons[] = {"BOM16A1", "Throw", "put"};
-	respawnweapons[] = {"BOM16A1", "Throw", "put"};
 	backpack = "SOR_Spotter_Radio_W";		
 	linkedItems[] = 
 	{	
@@ -193,8 +191,8 @@ class SOR_RTO_Nam : SOR_RTO_D
 	modelsides[] = {3,2,1,0};
 	hiddenSelections[] = {"Camo1","Camo2"};
 	hiddenSelectionsTextures[] = {"160thSOR_Vietnam\data\1.paa","160thSOR_Vietnam\data\ia_soldier_01_clothing_cw.paa"};
-	weapons[] = {"BOM16A1M203", "Throw", "put"};
-	respawnweapons[] = {"BOM16A1M203", "Throw", "put"};
+	weapons[] = {"bsoc_gus_m16a2_gl", "Throw", "put"};
+	respawnweapons[] = {"bsoc_gus_m16a2_gl", "Throw", "put"};
 	linkedItems[] = 
 	{	
 		"rhsgref_alice_webbing", 
@@ -220,8 +218,8 @@ class SOR_Teamleader_Nam : SOR_Teamleader_D
 	modelsides[] = {3,2,1,0};
 	hiddenSelections[] = {"Camo1","Camo2"};
 	hiddenSelectionsTextures[] = {"\160thSOR_Vietnam\data\1.paa","\160thSOR_Vietnam\data\ia_soldier_01_clothing_cw.paa"};
-	weapons[] = {"BOM16A1", "Throw", "put"};
-	respawnweapons[] = {"BOM16A1", "Throw", "put"};
+	weapons[] = {"bsoc_gus_m16a2_s", "Throw", "put"};
+	respawnweapons[] = {"bsoc_gus_m16a2_s", "Throw", "put"};
 	linkedItems[] = 
 	{	
 		"rhsgref_alice_webbing", 
@@ -247,8 +245,8 @@ class SOR_Teamleader2_Nam : SOR_Teamleader2_D
 	modelsides[] = {3,2,1,0};
 	hiddenSelections[] = {"Camo1","Camo2"};
 	hiddenSelectionsTextures[] = {"\160thSOR_Vietnam\data\1.paa","\160thSOR_Vietnam\data\ia_soldier_01_clothing_cw.paa"};
-	weapons[] = {"BOM16A1", "Throw", "put"};
-	respawnweapons[] = {"BOM16A1", "Throw", "put"};
+	weapons[] = {"bsoc_gus_m16a2_s", "Throw", "put"};
+	respawnweapons[] = {"bsoc_gus_m16a2_s", "Throw", "put"};
 	linkedItems[] = 
 	{	
 		"rhsgref_alice_webbing", 
@@ -275,8 +273,8 @@ class SOR_Medic_Nam : SOR_Medic_D
 	modelsides[] = {3,2,1,0};
 	hiddenSelections[] = {"Camo1","Camo2"};
 	hiddenSelectionsTextures[] = {"\160thSOR_Vietnam\data\1.paa","\160thSOR_Vietnam\data\ia_soldier_01_clothing_cw.paa"};
-	weapons[] = {"BOM16A1", "Throw", "put"};
-	respawnweapons[] = {"BOM16A1", "Throw", "put"};
+	weapons[] = {"bsoc_gus_m16a2_s", "Throw", "put"};
+	respawnweapons[] = {"bsoc_gus_m16a2_s", "Throw", "put"};
 	linkedItems[] = 
 	{	
 		"rhsgref_alice_webbing", 
@@ -367,8 +365,8 @@ class SOR_Grenadier_Nam : SOR_Grenadier_D
 	modelsides[] = {3,2,1,0};
 	hiddenSelections[] = {"Camo1","Camo2"};
 	hiddenSelectionsTextures[] = {"\160thSOR_Vietnam\data\1.paa","\160thSOR_Vietnam\data\ia_soldier_01_clothing_cw.paa"};
-	weapons[] = {"BOM16A1M203", "Throw", "put"};
-	respawnweapons[] = {"BOM16A1M203", "Throw", "put"};
+	weapons[] = {"bsoc_gus_m16a2_gl", "Throw", "put"};
+	respawnweapons[] = {"bsoc_gus_m16a2_gl", "Throw", "put"};
 	linkedItems[] = 
 	{	
 		"rhsgref_alice_webbing", 
@@ -393,8 +391,8 @@ class SOR_Rifleman_Nam : SOR_Rifleman_D
 	modelsides[] = {3,2,1,0};
 	hiddenSelections[] = {"Camo1","Camo2"};
 	hiddenSelectionsTextures[] = {"\160thSOR_Vietnam\data\1.paa","\160thSOR_Vietnam\data\ia_soldier_01_clothing_cw.paa"};
-	weapons[] = {"BOM16A1", "Throw", "put"};
-	respawnweapons[] = {"BOM16A1", "Throw", "put"};
+	weapons[] = {"bsoc_gus_m16a2_s", "Throw", "put"};
+	respawnweapons[] = {"bsoc_gus_m16a2_s", "Throw", "put"};
 	backpack = "";
 	linkedItems[] = 
 	{	
@@ -421,8 +419,8 @@ class SOR_Rifleman_ammo_Nam : SOR_Rifleman_ammo_D
 	modelsides[] = {3,2,1,0};
 	hiddenSelections[] = {"Camo1","Camo2"};
 	hiddenSelectionsTextures[] = {"\160thSOR_Vietnam\data\1.paa","\160thSOR_Vietnam\data\ia_soldier_01_clothing_cw.paa"};
-	weapons[] = {"BOM16A1", "Throw", "put"};
-	respawnweapons[] = {"BOM16A1", "Throw", "put"};
+	weapons[] = {"bsoc_gus_m16a2_s", "Throw", "put"};
+	respawnweapons[] = {"bsoc_gus_m16a2_s", "Throw", "put"};
 	backpack = "";
 	linkedItems[] = 
 	{	
@@ -448,8 +446,8 @@ class SOR_RiflemanAT_Nam : SOR_RiflemanAT_D
 	modelsides[] = {3,2,1,0};
 	hiddenSelections[] = {"Camo1","Camo2"};
 	hiddenSelectionsTextures[] = {"\160thSOR_Vietnam\data\1.paa","\160thSOR_Vietnam\data\ia_soldier_01_clothing_cw.paa"};
-	weapons[] = {"BOM16A1","rhs_weap_m72a7","Throw", "put"};
-	respawnweapons[] = {"BOM16A1","rhs_weap_m72a7","Throw", "put"};
+	weapons[] = {"bsoc_gus_m16a2_s","rhs_weap_m72a7","Throw", "put"};
+	respawnweapons[] = {"bsoc_gus_m16a2_s","rhs_weap_m72a7","Throw", "put"};
 	backpack = "";
 	linkedItems[] = 
 	{	
@@ -533,8 +531,6 @@ class SOR_MEVPilot_Nam : SOR_MEVPilot_D
 	modelsides[] = {3,2,1,0};
 	hiddenSelections[] = {"Camo1","Camo2"};
 	hiddenSelectionsTextures[] = {"\160thSOR_Vietnam\data\1.paa","\160thSOR_Vietnam\data\ia_soldier_01_clothing_cw.paa"};
-	weapons[] = {"BOM16A1","Throw", "put"};
-	respawnweapons[] = {"BOM16A1","Throw", "put"};
 	linkedItems[] = 
 	{	
 		"rhs_vest_pistol_holster",			
@@ -560,18 +556,18 @@ class SOR_ParaJumper_Nam : SOR_ParaJumper_D
 	modelsides[] = {3,2,1,0};
 	hiddenSelections[] = {"Camo1","Camo2"};
 	hiddenSelectionsTextures[] = {"\160thSOR_Vietnam\data\1.paa","\160thSOR_Vietnam\data\ia_soldier_01_clothing_cw.paa"};
-	weapons[] = {"BOM16A1","Throw", "put"};
-	respawnweapons[] = {"BOM16A1","Throw", "put"};
+	weapons[] = {"bsoc_gus_m16a2_s","Throw", "put"};
+	respawnweapons[] = {"bsoc_gus_m16a2_s","Throw", "put"};
 	linkedItems[] = 
 	{	
-		"V_PlateCarrier2_rgr", 
-		"rhsusf_opscore_fg_pelt_cam",
+		"rhsgref_alice_webbing", 
+		"rhsgref_helmet_M1_bare",
 		Airborne_Equipment_Nam
 	};              
 	respawnLinkedItems[] = 
 	{	
-		"V_PlateCarrier2_rgr", 
-		"rhsusf_opscore_fg_pelt_cam", 
+		"rhsgref_alice_webbing", 
+		"rhsgref_helmet_M1_bare", 
 		Airborne_Equipment_Nam
 	};   
 };
@@ -587,8 +583,8 @@ class SOR_ReconLeader_Nam : SOR_ReconLeader_D
 	modelsides[] = {3,2,1,0};
 	hiddenSelections[] = {"Camo1","Camo2"};
 	hiddenSelectionsTextures[] = {"\160thSOR_Vietnam\data\1.paa","\160thSOR_Vietnam\data\ia_soldier_01_clothing_cw.paa"};
-	weapons[] = {"BOM16A1","rhs_weap_m72a7","Throw", "put"};
-	respawnweapons[] = {"BOM16A1","rhs_weap_m72a7","Throw", "put"};	
+	weapons[] = {"bsoc_gus_m16a2_s","rhs_weap_m72a7","Throw", "put"};
+	respawnweapons[] = {"bsoc_gus_m16a2_s","rhs_weap_m72a7","Throw", "put"};	
 	backpack = "SOR_Spotter_Radio_W";	
 	linkedItems[] = 
 	{	
@@ -615,8 +611,8 @@ class SOR_ReconJTAC_Nam : SOR_ReconLeader_Nam
 	modelsides[] = {3,2,1,0};
 	hiddenSelections[] = {"Camo1","Camo2"};
 	hiddenSelectionsTextures[] = {"\160thSOR_Vietnam\data\1.paa","\160thSOR_Vietnam\data\ia_soldier_01_clothing_cw.paa"};
-	weapons[] = {"BOM16A1", "Throw", "put"};
-	respawnweapons[] = {"BOM16A1", "Throw", "put"};
+	weapons[] = {"bsoc_gus_m16a2_s", "Throw", "put"};
+	respawnweapons[] = {"bsoc_gus_m16a2_s", "Throw", "put"};
 	backpack = "SOR_Spotter_Radio_W";
 	displayName = "Recon JTAC";
 };
@@ -630,8 +626,8 @@ class SOR_ReconRifleman_Nam : SOR_ReconLeader_Nam
 	modelsides[] = {3,2,1,0};
 	hiddenSelections[] = {"Camo1","Camo2"};
 	hiddenSelectionsTextures[] = {"\160thSOR_Vietnam\data\1.paa","\160thSOR_Vietnam\data\ia_soldier_01_clothing_cw.paa"};
-	weapons[] = {"BOM16A1", "Throw", "put"};
-	respawnweapons[] = {"BOM16A1", "Throw", "put"};
+	weapons[] = {"bsoc_gus_m16a2_s", "Throw", "put"};
+	respawnweapons[] = {"bsoc_gus_m16a2_s", "Throw", "put"};
 	backpack = "";	
 	displayName = "Recon Riflemen";
 };
@@ -675,8 +671,8 @@ class SOR_ReconGrenadier_Nam : SOR_ReconGrenadier_D
 	modelsides[] = {3,2,1,0};
 	hiddenSelections[] = {"Camo1","Camo2"};
 	hiddenSelectionsTextures[] = {"\160thSOR_Vietnam\data\1.paa","\160thSOR_Vietnam\data\ia_soldier_01_clothing_cw.paa"};
-	weapons[] = {"BOM16A1", "Throw", "put"};
-	respawnweapons[] = {"BOM16A1", "Throw", "put"};
+	weapons[] = {"bsoc_gus_m16a2_s", "Throw", "put"};
+	respawnweapons[] = {"bsoc_gus_m16a2_s", "Throw", "put"};
 	linkedItems[] = 
 	{	
 		"rhsgref_alice_webbing", 
@@ -703,8 +699,8 @@ class SOR_Marksman_Nam : SOR_Marksman_D
 	modelsides[] = {3,2,1,0};
 	hiddenSelections[] = {"Camo1","Camo2"};
 	hiddenSelectionsTextures[] = {"\160thSOR_Vietnam\data\1.paa","\160thSOR_Vietnam\data\ia_soldier_01_clothing_cw.paa"};
-	weapons[] = {"BOM16A1", "Throw", "put"};
-	respawnweapons[] = {"BOM16A1", "Throw", "put"};
+	weapons[] = {"bsoc_gus_m16a2_s", "Throw", "put"};
+	respawnweapons[] = {"bsoc_gus_m16a2_s", "Throw", "put"};
 	linkedItems[] = 
 	{	
 		"rhsgref_alice_webbing", 
@@ -732,8 +728,8 @@ class SOR_Sniper_Nam : SOR_Sniper_D
 	modelsides[] = {3,2,1,0};
 	hiddenSelections[] = {"Camo1","Camo2"};
 	hiddenSelectionsTextures[] = {"\160thSOR_Vietnam\data\1.paa","\160thSOR_Vietnam\data\ia_soldier_01_clothing_cw.paa"};
-	weapons[] = {"BOM16A1", "Throw", "put"};
-	respawnweapons[] = {"BOM16A1", "Throw", "put"};	
+	weapons[] = {"bsoc_gus_m16a2_s", "Throw", "put"};
+	respawnweapons[] = {"bsoc_gus_m16a2_s", "Throw", "put"};	
 };
 
 class SOR_Spotter_Nam : SOR_Spotter_D
@@ -746,8 +742,8 @@ class SOR_Spotter_Nam : SOR_Spotter_D
 	modelsides[] = {3,2,1,0};
 	hiddenSelections[] = {"Camo1","Camo2"};
 	hiddenSelectionsTextures[] = {"\160thSOR_Vietnam\data\1.paa","\160thSOR_Vietnam\data\ia_soldier_01_clothing_cw.paa"};
-	weapons[] = {"BOM16A1", "Throw", "put"};
-	respawnweapons[] = {"BOM16A1", "Throw", "put"};
+	weapons[] = {"bsoc_gus_m16a2_s", "Throw", "put"};
+	respawnweapons[] = {"bsoc_gus_m16a2_s", "Throw", "put"};
 };
 
 //Mechanised Crew	
@@ -762,8 +758,8 @@ class SOR_MechCrew_Nam : SOR_MechCrew_D
 	modelsides[] = {3,2,1,0};
 	hiddenSelections[] = {"Camo1","Camo2"};
 	hiddenSelectionsTextures[] = {"\160thSOR_Vietnam\data\1.paa","\160thSOR_Vietnam\data\ia_soldier_01_clothing_cw.paa"};
-	weapons[] = {"BOM16A1", "Throw", "put"};
-	respawnweapons[] = {"BOM16A1", "Throw", "put"};
+	weapons[] = {"bsoc_gus_m16a2_s", "Throw", "put"};
+	respawnweapons[] = {"bsoc_gus_m16a2_s", "Throw", "put"};
 	linkedItems[] = 
 	{	
 		"rhsgref_alice_webbing", 
@@ -788,8 +784,8 @@ class SOR_MechOperator_Nam : SOR_MechCrew_Nam
 	modelsides[] = {3,2,1,0};
 	hiddenSelections[] = {"Camo1","Camo2"};
 	hiddenSelectionsTextures[] = {"\160thSOR_Vietnam\data\1.paa","\160thSOR_Vietnam\data\ia_soldier_01_clothing_cw.paa"};
-	weapons[] = {"BOM16A1", "Throw", "put"};
-	respawnweapons[] = {"BOM16A1", "Throw", "put"};
+	weapons[] = {"bsoc_gus_m16a2_s", "Throw", "put"};
+	respawnweapons[] = {"bsoc_gus_m16a2_s", "Throw", "put"};
 	magazines[] = 	
 	{
 		"30Rnd_556x45_Stanag_Tracer_Red",
@@ -901,8 +897,8 @@ class SOR_Engineer_Teamleader_Nam : SOR_Engineer_Teamleader_D
 	modelsides[] = {3,2,1,0};
 	hiddenSelections[] = {"Camo1","Camo2"};
 	hiddenSelectionsTextures[] = {"\160thSOR_Vietnam\data\1.paa","\160thSOR_Vietnam\data\ia_soldier_01_clothing_cw.paa"};
-	weapons[] = {"BOM16A1", "Throw", "put"};
-	respawnweapons[] = {"BOM16A1", "Throw", "put"};
+	weapons[] = {"bsoc_gus_m16a2_s", "Throw", "put"};
+	respawnweapons[] = {"bsoc_gus_m16a2_s", "Throw", "put"};
 	backpack = "SOR_Spotter_Radio_W";
 	linkedItems[] =
 	{

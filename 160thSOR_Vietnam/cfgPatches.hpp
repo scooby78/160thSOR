@@ -55,7 +55,27 @@ class CfgPatches
 			"SOR_MORCarrier_Nam",
 			"SOR_MORRFL_Nam",
 			"SOR_Engineer_Teamleader_Nam",
-			"SOR_Engineer_Nam"
+			"SOR_Engineer_Nam",
+			"SOR_MOG_Nam",
+			"SOR_MOG_open_Nam",
+			"SOR_FORDGP_open_Nam",
+			"SOR_Rice_paddy_daddy",
+			"SOR_M11GetSome",
+			"SOR_M113_SPW",
+			"SOR_Rice_paddy_daddy_U",
+			"SOR_M11GetSome_u",
+			"SOR_M113_SPW_U",
+			"SOR_COBRA_Nam",
+			"SOR_Nam_VC",
+			"SOR_Nam_VC_1",
+			"SOR_Nam_VC_2",
+			"SOR_PJ_Pack_Box_F_Nam",
+			"SOR_A_Box_F_Nam",
+			"SOR_M_Box_F_Nam",
+			"SOR_Launcher_Box_F_Nam",
+			"SOR_A_Crate_F_Nam",
+			"SOR_AM_Crate_F_Nam"
+			
 		};
 		weapons[] = 
 		{
