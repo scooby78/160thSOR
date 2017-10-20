@@ -10,8 +10,30 @@
 	class Radio_Old;
 	class Nam_Radio_Old: Radio_Old {
 	    displayName = "Vietnam Radio";
-	    init = "_radio = _this select 0;_radio addaction ['Paint it black',{(_this select 0) say3d ['Nam_PaintItBlack',30,1]}];_radio addaction ['For what its worth',{(_this select 0) say3d ['Nam_ForWhatItsWorth',30,1]}];_radio addaction ['House of the rising sun',{(_this select 0) say3d ['Nam_houseoftherisingsun',30,1]}];_radio addaction ['No where to run',{(_this select 0) say3d ['Nam_nowheretorun',30,1]}];_radio addaction ['Run through the jungle',{(_this select 0) say3d ['Nam_runthroughthejungle',30,1]}];";	
+        class UserActions {
+            class PaintItBlack {
+                displayName = "Paint it black";
+                displayNameDefault = "Paint it black";
+                condition = "(vehicle player) isEqualTo player";
+                priority = 1;
+                showWindow = 0;
+                hideOnUse = 1;
+                radius = 2;
+                position = "";
+                onlyForPlayer = 0;
+                statement = "[this,'Nam_PaintItBlack',30] spawn NAM_fnc_playSound";
+            };
+            
+            class ForWhatItsWorth : PaintItBlack {
+                displayName = "For what its worth";
+                displayNameDefault = "Paint it black";
+                statement = "[this,'Nam_ForWhatItsWorth',30] spawn NAM_fnc_playSound";
+            }
+        };
 	};
+    
+    
+    
 	#include "cfgBackpacks.hpp"
 	#include "cfgTroopsNam.hpp"	
 	#include "cfgCrates.hpp"
