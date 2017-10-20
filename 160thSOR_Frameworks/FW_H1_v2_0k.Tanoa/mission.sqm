@@ -21,27 +21,7 @@ class EditorData
 binarizationWanted=0;
 addons[]=
 {
-	"A3_Ui_F",
-	"160th_SOR_Loadouts",
-	"ace_repair",
-	"ace_dragging",
-	"ace_map",
-	"A3_Structures_F_Mil_Helipads",
-	"ace_advanced_fatigue",
-	"A3_Modules_F_Curator_Curator",
-	"ace_nametags",
-	"ace_interaction",
-	"ace_medical",
-	"ace_zeus",
-	"ace_respawn",
-	"ace_hearing",
-	"ace_cargo",
-	"ace_finger",
-	"acex_sitting",
-	"ace_common",
-	"ace_advanced_throwing",
-	"ace_rearm",
-	"160_Selector"
+
 };
 class AddonsMetaData
 {
