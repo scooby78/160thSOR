@@ -30,11 +30,11 @@ while {true} do
 	} 
 	else 
 	{
-		SOR_ScriptThrottle = false;
+		SOR_ScriptThrottleOK = false;
 		diag_log "SOR Server Performance Script - Script 'Throttle Down' Command Sent.....";
 	};
 	publicVariable "SOR_ScriptThrottleKill";
 	publicVariable "SOR_ScriptThrottleOK";
 	publicVariable "SOR_FPS";
-	sleep 16;
+	sleep 5;
 };
