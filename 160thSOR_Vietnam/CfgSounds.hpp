@@ -25,9 +25,29 @@ class CfgSounds {
             sound[] = {"\160thSOR_Vietnam\sounds\nowheretorun.ogg", 30, 1};
             titles[] = {0,""}; 
 	}; 
-		class Nam_runthroughthejungle { 
+	class Nam_runthroughthejungle { 
             name = "run through the jungle"; 
             sound[] = {"\160thSOR_Vietnam\sounds\runthroughthejungle.ogg", 30, 1};
             titles[] = {0,""}; 
 	}; 
+	class Nam_goodmorning { 
+            name = "good morning"; 
+            sound[] = {"\160thSOR_Vietnam\sounds\goodmorning.ogg", 30, 1};
+            titles[] = {0,""}; 
+	}; 
+	class Nam_News { 
+            name = "news"; 
+            sound[] = {"\160thSOR_Vietnam\sounds\news.ogg", 30, 1};
+            titles[] = {0,""}; 
+	}; 
+	class Nam_showend { 
+            name = "show end"; 
+            sound[] = {"\160thSOR_Vietnam\sounds\showend.ogg", 30, 1};
+            titles[] = {0,""}; 
+	}; 
+	class Nam_News2 { 
+            name = "news 2"; 
+            sound[] = {"\160thSOR_Vietnam\sounds\news2.ogg", 30, 1};
+            titles[] = {0,""}; 
+	};
 };
