@@ -41,3 +41,16 @@
 								"rhs_100Rnd_762x54mmR",\
 								"rhsgref_mag_rkg3em",\
 								"rhs_mag_rdg2_black"
+								
+#define Standard_Mags_VC_GL_Nam 	"rhs_30Rnd_762x39mm",\
+								"rhs_30Rnd_762x39mm",\
+								"rhs_30Rnd_762x39mm",\
+								"rhs_30Rnd_762x39mm",\
+								"rhs_30Rnd_762x39mm",\
+								"rhs_VOG25",\
+								"rhs_VOG25",\
+								"rhs_VOG25",\
+								"rhs_VOG25",\
+								"rhs_VOG25",\
+								"rhs_VOG25",\
+								"rhs_VOG25"

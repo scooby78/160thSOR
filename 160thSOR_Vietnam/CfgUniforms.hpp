@@ -7,6 +7,7 @@
 
 class ItemCore; 
 class UniformItem; 
+class rhsgref_M56;
 class Uniform_Base: ItemCore 
 { 
 	class ItemInfo; 
@@ -50,3 +51,25 @@ class VC_Uniform_1 : Uniform_Base
             mass = 20;
 		};
 };	
+class NVA_Uniform : Uniform_Base 
+{
+        scope = 2;
+		displayName = "NVA Uniform";
+		modelsides[] = {3,2,1,0};
+		model="\A3\characters_F\OPFOR\o_officer.p3d";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"160thSOR_Vietnam\data\NVA_helmet.paa"};
+		author = "Yettie";
+	      
+        class ItemInfo : UniformItem 
+		{
+            uniformModel = "-";
+            uniformClass = "SOR_Nam_NAV";
+            containerClass = "Supply120";
+            mass = 20;
+		};
+};	
+
+
+
+ 

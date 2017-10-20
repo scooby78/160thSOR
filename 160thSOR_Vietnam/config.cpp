@@ -12,4 +12,5 @@
 #include "cfgGroups.hpp"
 #include "cfgWeapons.hpp"
 #include "cfgEditorCategories.hpp"
+#include "cfgsounds.hpp"
 
