@@ -71,11 +71,7 @@ class SOR_Rice_paddy_daddy: SOR_M113_SUPPLY_WD
 	crew="SOR_Rifleman_Nam";
 	typicalCargo[]=	{"SOR_Rifleman_Nam"};
 	hiddenSelections[] = {"camo1","camo2","camo3","camo4","camo5","camo6"};
-	hiddenSelectionsTextures[] = {"160thSOR_Vietnam\data\Sor_m113_rsp.paa","rhsusf\addons\rhsusf_m113\data_new\m113a3_02_wd_l_co.paa","rhsusf\addons\rhsusf_m113\data_new\m113a3_03_wd_co.paa","rhsusf\addons\rhsusf_m113\data_new\m113a3_int03_wd_co.paa"};
-	class TransportItems{};
-	class TransportWeapons{};
-	class TransportMagazines{};
-	class TransportBackpacks{};	
+	hiddenSelectionsTextures[] = {"160thSOR_Vietnam\data\Sor_m113_rsp.paa","rhsusf\addons\rhsusf_m113\data_new\m113a3_02_sup_wd_co.paa","rhsusf\addons\rhsusf_m113\data_new\m113a3_03_wd_co.paa","rhsusf\addons\rhsusf_m113\data_new\m113a3_int03_wd_co.paa","rhsusf\addons\rhsusf_m113\data_new\m23_pintle_wd_co.paa"};
 };
 class SOR_M11GetSome: SOR_M113_SUPPLY_WD
 {
@@ -87,11 +83,8 @@ class SOR_M11GetSome: SOR_M113_SUPPLY_WD
 	crew="SOR_Rifleman_Nam";
 	typicalCargo[]=	{"SOR_Rifleman_Nam"};
 	hiddenSelections[] = {"camo1","camo2","camo3","camo4","camo5","camo6"};
-	hiddenSelectionsTextures[] = {"160thSOR_Vietnam\data\M11GetSome.paa","rhsusf\addons\rhsusf_m113\data_new\m113a3_02_wd_l_co.paa","rhsusf\addons\rhsusf_m113\data_new\m113a3_03_wd_co.paa","rhsusf\addons\rhsusf_m113\data_new\m113a3_int03_wd_co.paa"};
-	class TransportItems{};
-	class TransportWeapons{};
-	class TransportMagazines{};
-	class TransportBackpacks{};	
+	hiddenSelectionsTextures[] = {"160thSOR_Vietnam\data\M11GetSome.paa","rhsusf\addons\rhsusf_m113\data_new\m113a3_02_sup_wd_co.paa","rhsusf\addons\rhsusf_m113\data_new\m113a3_03_wd_co.paa","rhsusf\addons\rhsusf_m113\data_new\m113a3_int03_wd_co.paa","rhsusf\addons\rhsusf_m113\data_new\m23_pintle_wd_co.paa"};
+
 };
 class SOR_M113_SPW: SOR_M113_SUPPLY_WD
 {
@@ -103,11 +96,7 @@ class SOR_M113_SPW: SOR_M113_SUPPLY_WD
 	crew="SOR_Rifleman_Nam";
 	typicalCargo[]=	{"SOR_Rifleman_Nam"};
 	hiddenSelections[] = {"camo1","camo2","camo3","camo4","camo5","camo6"};
-	hiddenSelectionsTextures[] = {"160thSOR_Vietnam\data\M113_SPW.paa","rhsusf\addons\rhsusf_m113\data_new\m113a3_02_wd_l_co.paa","rhsusf\addons\rhsusf_m113\data_new\m113a3_03_wd_co.paa","rhsusf\addons\rhsusf_m113\data_new\m113a3_int03_wd_co.paa"};
-	class TransportItems{};
-	class TransportWeapons{};
-	class TransportMagazines{};
-	class TransportBackpacks{};	
+	hiddenSelectionsTextures[] = {"160thSOR_Vietnam\data\M113_SPW.paa","rhsusf\addons\rhsusf_m113\data_new\m113a3_02_sup_wd_co.paa","rhsusf\addons\rhsusf_m113\data_new\m113a3_03_wd_co.paa","rhsusf\addons\rhsusf_m113\data_new\m113a3_int03_wd_co.paa","rhsusf\addons\rhsusf_m113\data_new\m23_pintle_wd_co.paa"};
 };
 
 class SOR_Rice_paddy_daddy_U: SOR_M113_UNARMED_WD

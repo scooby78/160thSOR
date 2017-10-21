@@ -58,7 +58,7 @@ class NVA_Uniform : Uniform_Base
 		modelsides[] = {3,2,1,0};
 		model="\A3\characters_F\OPFOR\o_officer.p3d";
 		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"160thSOR_Vietnam\data\NVA_helmet.paa"};
+		hiddenSelectionsTextures[] = {"160thSOR_Vietnam\data\NVA.paa"};
 		author = "Yettie";
 	      
         class ItemInfo : UniformItem 
@@ -69,7 +69,6 @@ class NVA_Uniform : Uniform_Base
             mass = 20;
 		};
 };	
-
 
 
  

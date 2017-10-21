@@ -178,13 +178,13 @@ class SOR_Nam_NAV : SOR_Nam_VC
 	linkedItems[] = 
 	{	
 		"V_TacChestrig_cbr_F", 
-		"H_Booniehat_khk",
+		"rhsgref_M56",
 		Standard_Equipment_Nam
 	};              
 	respawnLinkedItems[] = 
 	{	
 		"V_TacChestrig_cbr_F", 
-		"H_Booniehat_khk",
+		"rhsgref_M56",
 		Standard_Equipment_Nam
 	};   
 };
@@ -209,13 +209,13 @@ class SOR_Nam_NVA_2 : SOR_Nam_NAV
 	linkedItems[] = 
 	{	
 		"V_TacChestrig_cbr_F",
-		"H_Booniehat_khk",
+		"rhsgref_M56",
 		Standard_Equipment_Nam
 	};              
 	respawnLinkedItems[] = 
 	{	
 		"V_TacChestrig_cbr_F", 
-		"H_Booniehat_khk",
+		"rhsgref_M56",
 		Standard_Equipment_Nam
 	};   
 };
@@ -249,13 +249,13 @@ class SOR_Nam_NVA_3 : SOR_Nam_NAV
 	linkedItems[] = 
 	{	
 		"V_TacChestrig_cbr_F", 
-		"H_Booniehat_khk",
+		"rhsgref_M56",
 		Standard_Equipment_Nam
 	};              
 	respawnLinkedItems[] = 
 	{	
 		"V_TacChestrig_cbr_F", 
-		"H_Booniehat_khk",
+		"rhsgref_M56",
 		Standard_Equipment_Nam
 	};   
 };
@@ -279,13 +279,13 @@ class SOR_Nam_NVA_4 : SOR_Nam_NAV
 	linkedItems[] = 
 	{	
 		"V_TacChestrig_cbr_F", 
-		"H_Booniehat_khk",
+		"rhsgref_M56",
 		Standard_Equipment_Nam
 	};              
 	respawnLinkedItems[] = 
 	{	
 		"V_TacChestrig_cbr_F", 
-		"H_Booniehat_khk",
+		"rhsgref_M56",
 		Standard_Equipment_Nam
 	};   
 };
