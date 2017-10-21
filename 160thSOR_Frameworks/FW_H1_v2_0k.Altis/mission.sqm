@@ -8,7 +8,7 @@ class EditorData
 	toggles=521;
 	class ItemIDProvider
 	{
-		nextID=1639;
+		nextID=1694;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14948.299,343.74368,16545.176};
-		dir[]={-0.56959915,-0.65601861,0.49531695};
-		up[]={-0.49513438,0.75460905,0.4305625};
-		aside[]={0.65623766,-2.0923471e-006,0.75464875};
+		pos[]={14881.508,183.74361,16810.346};
+		dir[]={-0.63219172,-0.54125702,-0.5546059};
+		up[]={-0.40701863,0.8407101,-0.35707003};
+		aside[]={-0.65953732,-3.0998199e-006,0.75180835};
 	};
 };
 binarizationWanted=0;
@@ -19788,7 +19788,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="rhs_mag_M1069";
+							value="rhs_mag_M1028";
 						};
 					};
 				};
@@ -19830,7 +19830,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=11;
+				class Attribute11
+				{
+					property="Enh_featureType";
+					expression="_this setFeatureType (parseNumber _value)";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0";
+						};
+					};
+				};
+				nAttributes=12;
 			};
 		};
 		class Item152
@@ -20020,7 +20039,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="rhs_mag_M1069";
+							value="";
 						};
 					};
 				};
@@ -20062,7 +20081,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=11;
+				class Attribute11
+				{
+					property="Enh_featureType";
+					expression="_this setFeatureType (parseNumber _value)";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0";
+						};
+					};
+				};
+				nAttributes=12;
 			};
 		};
 		class Item153
@@ -20253,7 +20291,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="rhs_mag_M1069";
+							value="rhs_mag_M1028";
 						};
 					};
 				};
@@ -20295,7 +20333,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=11;
+				class Attribute11
+				{
+					property="Enh_featureType";
+					expression="_this setFeatureType (parseNumber _value)";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0";
+						};
+					};
+				};
+				nAttributes=12;
 			};
 		};
 		class Item154
@@ -20486,7 +20543,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="rhs_mag_M1069";
+							value="";
 						};
 					};
 				};
@@ -20528,7 +20585,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=11;
+				class Attribute11
+				{
+					property="Enh_featureType";
+					expression="_this setFeatureType (parseNumber _value)";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0";
+						};
+					};
+				};
+				nAttributes=12;
 			};
 		};
 		class Item155
@@ -20719,7 +20795,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="rhs_mag_M1069";
+							value="rhs_mag_M1028";
 						};
 					};
 				};
@@ -20780,7 +20856,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=12;
+				class Attribute12
+				{
+					property="Enh_featureType";
+					expression="_this setFeatureType (parseNumber _value)";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0";
+						};
+					};
+				};
+				nAttributes=13;
 			};
 		};
 		class Item156
@@ -20971,7 +21066,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="rhs_mag_M1069";
+							value="rhs_mag_M1028";
 						};
 					};
 				};
@@ -21032,7 +21127,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=12;
+				class Attribute12
+				{
+					property="Enh_featureType";
+					expression="_this setFeatureType (parseNumber _value)";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0";
+						};
+					};
+				};
+				nAttributes=13;
 			};
 		};
 		class Item157
@@ -23449,12 +23563,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={14667.368,17.943937,16788.842};
-				angles[]={0,2.6059151,0};
+				position[]={14667.368,17.944,16788.842};
+				angles[]={0,2.6059163,0};
 			};
 			id=1592;
 			type="ACE_ModuleCheckPBOs";
-			atlOffset=0.033937454;
+			atlOffset=0.034000397;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -23491,7 +23605,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[""sa_advancedtowing"",""sa_advancedslingloading"",""cz75_nochain"",""headrangeplus"",""ar_advancedrappelling"",""ASM"",""ares"",""marmadebug"",""jsrs_environment"",""viewdistance_taw""]";
+							value="[""sa_advancedtowing"",""sa_advancedslingloading"",""cz75_nochain"",""headrangeplus"",""ar_advancedrappelling"",""ASM"",""ares"",""marmadebug"",""jsrs_environment"",""viewdistance_taw"",""jsrs_soundmod_bullethits"",""jsrs_soundmod_environment"",""jsrs_soundmod_globalfilters"",""jsrs_soundmod_movement"",""sonic_cracks"",""jsrs_soundmod_explosions"",""jsrs_soundmod_framework"",""jsrs_soundmod_9h99_blackfoot"",""jsrs_soundmod_ah9_pawnee"",""jsrs_soundmod_uav_1"",""srs_soundmod_ch67_huron""]";
 						};
 					};
 				};
