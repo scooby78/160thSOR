@@ -68,7 +68,6 @@ class SOR_Nam_VC_1 : SOR_Nam_VC
 	{
 	Standard_Mags_VC_AR_Nam
 	};
-	
 	linkedItems[] = 
 	{	
 		"V_BandollierB_khk", 
@@ -153,7 +152,7 @@ class SOR_Nam_VC_3 : SOR_Nam_VC
 };
 //NVA
 
-class SOR_Nam_NAV : SOR_Nam_VC
+class SOR_Nam_NVA : SOR_Nam_VC
 {
 	editorCategory = "SOR_Cat_Faction_VC";
 	faction = "SOR_Faction_VC";
@@ -189,7 +188,7 @@ class SOR_Nam_NAV : SOR_Nam_VC
 	};   
 };
 
-class SOR_Nam_NVA_2 : SOR_Nam_NAV
+class SOR_Nam_NVA_2 : SOR_Nam_NVA
 {
 	editorCategory = "SOR_Cat_Faction_VC";
 	faction = "SOR_Faction_VC";
@@ -219,7 +218,7 @@ class SOR_Nam_NVA_2 : SOR_Nam_NAV
 		Standard_Equipment_Nam
 	};   
 };
-class SOR_Nam_NVA_3 : SOR_Nam_NAV
+class SOR_Nam_NVA_3 : SOR_Nam_NVA
 {
 	editorCategory = "SOR_Cat_Faction_VC";
 	faction = "SOR_Faction_VC";
@@ -257,24 +256,54 @@ class SOR_Nam_NVA_3 : SOR_Nam_NAV
 		"V_TacChestrig_cbr_F", 
 		"rhsgref_M56",
 		Standard_Equipment_Nam
-	};   
+	}; 
 };
-class SOR_Nam_NVA_4 : SOR_Nam_NAV
+class SOR_Nam_NVA_4 : SOR_Nam_NVA
 {
 	editorCategory = "SOR_Cat_Faction_VC";
 	faction = "SOR_Faction_VC";
-	displayName = "NVA Soldier GL";
-	backpack = "";
+	displayName = "NVA Soldier RPG";
+	backpack = "SOR_Nam_RPG";
 	side = 0;
-	weapons[] = {"rhs_weap_akm_gp25", "Throw", "put"};
-	respawnweapons[] = {"rhs_weap_akm_gp25", "Throw", "put"};
+	weapons[] = {"arifle_AKM_F", "Throw", "put"};
+	respawnweapons[] = {"arifle_AKM_F", "Throw", "put"};
 	magazines[]=
 	{
-	Standard_Mags_VC_GL_Nam
+ Standard_Mags_VC_Nam
 	};
 	respawnMagazines[]=
 	{
-	Standard_Mags_VC_GL_Nam
+ Standard_Mags_VC_Nam
+	};
+	linkedItems[] = 
+	{	
+		"V_TacChestrig_cbr_F", 
+		"rhsgref_M56",
+		Standard_Equipment_Nam
+	};              
+	respawnLinkedItems[] = 
+	{	
+		"V_TacChestrig_cbr_F", 
+		"rhsgref_M56",
+		Standard_Equipment_Nam
+	};  	
+};
+class SOR_Nam_NVA_5 : SOR_Nam_NVA
+{
+	editorCategory = "SOR_Cat_Faction_VC";
+	faction = "SOR_Faction_VC";
+	displayName = "NVA Soldier AT";
+	backpack = "";
+	side = 0;
+	weapons[] = {"rhs_weap_akm_gp25","launch_RPG7_F", "Throw", "put"};
+	respawnweapons[] = {"rhs_weap_akm_gp25","launch_RPG7_F", "Throw", "put"};
+	magazines[]=
+	{
+	Standard_Mags_VC_Nam
+	};
+	respawnMagazines[]=
+	{
+	Standard_Mags_VC_Nam
 	};
 	linkedItems[] = 
 	{	

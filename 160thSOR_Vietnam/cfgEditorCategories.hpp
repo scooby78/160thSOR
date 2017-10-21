@@ -15,6 +15,6 @@ class CfgEditorCategories
 	};
 	class SOR_Cat_Faction_VC
 	{
-		displayName = "160th VC";
+		displayName = "160th Vietnam Enemy";
 	};
 };

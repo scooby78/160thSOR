@@ -11,6 +11,10 @@ class rhsgref_nat_ural_open;
 class rhsgref_nat_uaz_open;
 class SOR_M113_UNARMED_WD;
 class SOR_M113_SUPPLY_WD;
+class rhs_btr60_vv;
+class rhsgref_cdf_zsu234;
+class RHS_Ural_Civ_01;
+class RHS_Ural_Open_Civ_01;
 
 class SOR_MOG_Nam: rhsgref_nat_ural
 {
@@ -146,4 +150,50 @@ class SOR_M113_SPW_U: SOR_M113_UNARMED_WD
 	class TransportWeapons{};
 	class TransportMagazines{};
 	class TransportBackpacks{};	
+};
+//NVA
+
+class SOR_NVA_BTR: rhs_btr60_vv
+{
+	scope=2;
+	side=0;	
+	displayName="BTR 60";
+	editorCategory = "SOR_Cat_Faction_VC";
+	faction = "SOR_Faction_VC";
+	crew="SOR_Nam_NVA";
+	typicalCargo[]=	{"SOR_Nam_NVA"};
+
+};
+class SOR_NVA_ZSU: rhsgref_cdf_zsu234
+{
+	scope=2;
+	side=0;	
+	displayName="ZSU 23";
+	editorCategory = "SOR_Cat_Faction_VC";
+	faction = "SOR_Faction_VC";
+	crew="SOR_Nam_NVA";
+	typicalCargo[]=	{"SOR_Nam_NVA"};
+
+};
+
+class SOR_NVA_Ural: RHS_Ural_Civ_01
+{
+	scope=2;
+	side=0;	
+	displayName="Ural";
+	editorCategory = "SOR_Cat_Faction_VC";
+	faction = "SOR_Faction_VC";
+	crew="SOR_Nam_NVA";
+	typicalCargo[]=	{"SOR_Nam_NVA"};
+};
+class SOR_NVA_Ural_open: RHS_Ural_Open_Civ_01
+{
+	scope=2;
+	side=0;	
+	displayName="Ural open";
+	editorCategory = "SOR_Cat_Faction_VC";
+	faction = "SOR_Faction_VC";
+	crew="SOR_Nam_NVA";
+	typicalCargo[]=	{"SOR_Nam_NVA"};
+
 };

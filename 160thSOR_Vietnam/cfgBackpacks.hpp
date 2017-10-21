@@ -8,6 +8,7 @@
 
 //Custom Backpacks
 class rhs_medic_bag;
+class rhs_rpg_empty;
 
 class SOR_Medic_Pack_Nam : rhs_medic_bag
 {
@@ -41,4 +42,12 @@ class SOR_PJMedicPack_Nam : rhs_medic_bag
 		item_xx(ACE_morphine,20);
 		item_xx(ACE_epinephrine,20);			
 	};		
+};
+class SOR_Nam_RPG : rhs_rpg_empty
+{
+	displayName = "Pack Nam RPG";
+	class TransportMagazines
+	{
+		mag_xx(RPG7_F,3);
+	};
 };

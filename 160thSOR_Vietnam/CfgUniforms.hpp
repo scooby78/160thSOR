@@ -61,13 +61,13 @@ class NVA_Uniform : Uniform_Base
 		hiddenSelectionsTextures[] = {"160thSOR_Vietnam\data\NVA.paa"};
 		author = "Yettie";
 	      
-        class ItemInfo : UniformItem 
-		{
-            uniformModel = "-";
-            uniformClass = "SOR_Nam_NAV";
-            containerClass = "Supply120";
-            mass = 20;
-		};
+     class ItemInfo : UniformItem 
+	{
+        uniformModel = "-";
+        uniformClass = "SOR_Nam_NAV";
+        containerClass = "Supply120";
+        mass = 20;
+	};
 };	
 
 
