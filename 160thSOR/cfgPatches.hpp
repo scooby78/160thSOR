@@ -11,7 +11,7 @@ class CfgPatches
 	{
 		author="160th SOR";
 		url="http://www.160th.net";
-		version="2.4.9";
+		version="2.4.10";
 		units[] = 
 		{
 			// Desert Troops 
