@@ -33,8 +33,24 @@ SOR_ZuesTool set [0, player addAction ["<t color='#99f990'>Turn On Performance M
 		if (SOR_FPS < 21) then 
 		{
 			SOR_ServerState = "<br/><t color='#ff0000' size='1.5'>SERVER CRASH IMINENT!!</t>";
+		};	
+		if (SOR_ScriptThrottleKill) then 
+		{
+			SOR_KillCommandState = "";
+		}
+		else
+		{
+			SOR_KillCommandState = "<br/><t color='#ff0000' size='1.5'>Script Kill Command Active</t>";
+		};
+		if (SOR_ScriptThrottleOK) then 
+		{
+			SOR_ThrottleCommandState = "";
+		}
+		else
+		{
+			SOR_ThrottleCommandState = "<br/><t color='#ff0000' size='1.5'>Script Throttling Active</t>";
 		};			
-		hint parseText format ["Opfor AI Unit count..%1 <br/> Civilian Unit count.. %2 <br/> Independant Unit Count.. %3 <br/> BluFor Unit Count.. %4 <br/> Total Units on Map.. %5 <br/> Total players on Map.. %6 <br/> <br/> <br/><t size='1.5'>SERVER STATE:</t> <br/>%7 FPS <br/> %8",_eastunits,_civUnits,_indUnits,_westUnits,_totalUnits,_playerUnits,SOR_FPS,SOR_ServerState];
+		hintSilent parseText format ["Opfor AI Unit count..%1 <br/> Civilian Unit count.. %2 <br/> Independant Unit Count.. %3 <br/> BluFor Unit Count.. %4 <br/> Total Units on Map.. %5 <br/> Total players on Map.. %6 <br/> <br/> <br/><t size='1.5'>SERVER STATE:</t> <br/>%7 FPS <br/> %8 %9 %10",_eastunits,_civUnits,_indUnits,_westUnits,_totalUnits,_playerUnits,SOR_FPS,SOR_ServerState,SOR_ThrottleCommandState,SOR_KillCommandState];
 		sleep 5;
 	};
 }, [], 10, false, false]];
@@ -44,7 +60,7 @@ SOR_ZuesTool = [];
 SOR_ZuesTool set [0, player addAction ["<t color='#f4df42'>Turn Off Performance Monitor</t", 
 {
 	SOR_Zeus_Mon = false;
-	hint "";
+	hintSilent "";
 }, [], 10, false, false]];
 
 
@@ -53,17 +69,17 @@ SOR_ZuesTool = [];
 SOR_ZuesTool set [0, player addAction ["<t color='#ca06e8'>Clear Zeus Group Bug</t", 
 {
 	{deleteGroup _X} foreach allGroups;
-	hint "Group cache cleared";
+	hintSilent "Group cache cleared";
 }, [], 10, false, false]];
 
 //Clear Fog
 SOR_ZuesTool = [];
 SOR_ZuesTool set [0, player addAction ["<t color='#FFA700'>Clear Fog</t", 
 {
-	hint "Fog clearing over 30 sec";
+	hintSilent "Fog clearing over 30 sec";
 	[30,0] remoteExec ["setFog",2]; 
 	sleep 30;
-	hint "Fog cleared";
+	hintSilent "Fog cleared";
 }, [], 10, false, false]];
 
 /*
