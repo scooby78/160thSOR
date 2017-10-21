@@ -41,13 +41,12 @@ waitUntil {SOR_ScriptThrottleOK};
 while {SOR_GRPSPWN_ACTIVE && SOR_ScriptThrottleKill && (alive _Group_Start_Object) && _i < _t} do 
 {
 	// Script throttle
-	while {!SOR_ScriptThrottleOK} do 
+	while {!SOR_ScriptThrottleOK && SOR_ScriptThrottleKill} do 
 	{
 		sleep 5;		
 	};
 	// Check if spawn area has been breached
 	_nearestObjects = _Group_Start_Object nearEntities [_vicClass, _Engagement_Stop];	
-//	_nearestObjects = nearestObjects [_Group_Start_Object, [_vicClass], _Engagement_Stop];	
 	_victim = _nearestObjects call bis_fnc_selectRandom;	
 	if !(isNil "_victim") then 
 	{
@@ -63,11 +62,9 @@ while {SOR_GRPSPWN_ACTIVE && SOR_ScriptThrottleKill && (alive _Group_Start_Objec
 	sleep 1;
 	// Initial scan for targets in range
 	_nearestObjects = _Group_Start_Object nearEntities [_vicClass, _Scan_Range];
-//	_nearestObjects = nearestObjects [_Group_Start_Object, [_vicClass], _Scan_Range];	
 	_victim = _nearestObjects call bis_fnc_selectRandom;	
 	if (SOR_DEBUG) then 
 	{
-		hint format ["%1 FPS", SOR_FPS];
 		systemChat format ["%2 - L1 - Checking for targets. Scan Range is %1m",_Scan_Range, _Group_Start_Object];
 		if (isNil "_victim") then 
 		{
@@ -112,4 +109,4 @@ while {SOR_GRPSPWN_ACTIVE && SOR_ScriptThrottleKill && (alive _Group_Start_Objec
 };
 	
 diag_log format ["SOR Group Spawner Script - %1 - Ended.....", _Group_Start_Object];
-if (SOR_DEBUG) then {systemChat format ["%1 - L0 - Script End", _Group_Start_Object];};		
+if (SOR_DEBUG) then {systemChat format ["%1 - L0 - Script End", _Group_Start_Object];};	

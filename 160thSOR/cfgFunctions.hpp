@@ -7,6 +7,7 @@ class CfgFunctions
 			file = "160thSOR\functions";
 			class settings {preInit = 1;};
 			class TFAR_AI_Hearing {postInit = 1;};
+			class server_Perf {postInit = 1;};
 		};
 		tag = "SOR";
 		class functions

@@ -185,4 +185,3 @@ class SOR_HQ_Large_VDV_AI : Land_Bunker_01_HQ_F
 		init = "null = [(_this select 0), 'SoldierWB', 6, 500, configfile >> 'CfgGroups' >> 'East' >> 'SOR_Opfor_Groups_VDV_AI' >> 'SOR_Opfor_InfGroups_VDV_AI' >> 'SOR_Opfor_Patrol_VDV_AI']  execvm '160thSOR_OpFor\functions\fn_buildingSpawn.sqf';";
 	};	
 };
-
