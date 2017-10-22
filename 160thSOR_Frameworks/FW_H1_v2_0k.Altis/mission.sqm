@@ -8,7 +8,7 @@ class EditorData
 	toggles=521;
 	class ItemIDProvider
 	{
-		nextID=1694;
+		nextID=1804;
 	};
 	class MarkerIDProvider
 	{
@@ -16,16 +16,36 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14881.508,183.74361,16810.346};
-		dir[]={-0.63219172,-0.54125702,-0.5546059};
-		up[]={-0.40701863,0.8407101,-0.35707003};
-		aside[]={-0.65953732,-3.0998199e-006,0.75180835};
+		pos[]={14673.59,23.855049,16782.074};
+		dir[]={-0.58816028,-0.60645497,0.53512377};
+		up[]={-0.44858366,0.7951017,0.40813169};
+		aside[]={0.67299485,3.1021773e-007,0.73969269};
 	};
 };
 binarizationWanted=0;
 addons[]=
 {
-
+	"A3_Ui_F",
+	"160th_SOR_Loadouts",
+	"A3_Structures_F_Mil_Helipads",
+	"ace_map",
+	"ace_repair",
+	"ace_dragging",
+	"ace_advanced_fatigue",
+	"A3_Modules_F_Curator_Curator",
+	"ace_nametags",
+	"ace_interaction",
+	"ace_medical",
+	"ace_zeus",
+	"ace_respawn",
+	"ace_hearing",
+	"ace_cargo",
+	"ace_finger",
+	"acex_sitting",
+	"ace_common",
+	"ace_advanced_throwing",
+	"ace_rearm",
+	"160thSOR_Selector"
 };
 class AddonsMetaData
 {
@@ -174,8 +194,8 @@ class AddonsMetaData
 		};
 		class Item20
 		{
-			className="160_Selector";
-			name="160_Selector";
+			className="160thSOR_Selector";
+			name="160thSOR_Selector";
 			author="destruktoid";
 		};
 	};
@@ -20039,7 +20059,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="";
+							value="rhs_mag_M1028";
 						};
 					};
 				};
@@ -20543,7 +20563,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="";
+							value="rhs_mag_M1028";
 						};
 					};
 				};
@@ -23605,7 +23625,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[""sa_advancedtowing"",""sa_advancedslingloading"",""cz75_nochain"",""headrangeplus"",""ar_advancedrappelling"",""ASM"",""ares"",""marmadebug"",""jsrs_environment"",""viewdistance_taw"",""jsrs_soundmod_bullethits"",""jsrs_soundmod_environment"",""jsrs_soundmod_globalfilters"",""jsrs_soundmod_movement"",""sonic_cracks"",""jsrs_soundmod_explosions"",""jsrs_soundmod_framework"",""jsrs_soundmod_9h99_blackfoot"",""jsrs_soundmod_ah9_pawnee"",""jsrs_soundmod_uav_1"",""srs_soundmod_ch67_huron""]";
+							value="[""sa_advancedtowing"",""sa_advancedslingloading"",""cz75_nochain"",""headrangeplus"",""ar_advancedrappelling"",""ASM"",""ares"",""marmadebug"",""jsrs_environment"",""viewdistance_taw"",""jsrs_soundmod_bullethits"",""jsrs_soundmod_environment"",""jsrs_soundmod_globalfilters"",""jsrs_soundmod_movement"",""jsrs_soundmod_sonic_cracks"",""jsrs_soundmod_explosions"",""jsrs_soundmod_framework"",""jsrs_soundmod_ah99_blackfoot"",""jsrs_soundmod_ah9_pawnee"",""jsrs_soundmod_uav_1"",""jsrs_soundmod_ch67_huron"",""jsrs_soundmod_ch49_mohawk"",""jsrs_soundmod_mi290_taru"",""jsrs_soundmod_mi48_kajman"",""jsrs_soundmod_uav_2"",""jsrs_soundmod_po30_orca"",""jsrs_soundmod_uh80_ghosthawk"",""jsrs_soundmod_wy55_hellcat"",""jsrs_soundmod_armed_boat"",""jsrs_soundmod_rubber_boat"",""jsrs_soundmod_speed_boat"",""jsrs_soundmod_2s9_sorcher"",""jsrs_soundmod_btrk_kamysh"",""jsrs_soundmod_fv720_mora"",""jsrs_soundmod_ifv6a_cheetah"",""jsrs_soundmod_ifv6c_panther"",""jsrs_soundmod_m2a1_slammer"",""jsrs_soundmod_m4_scorcher"",""jsrs_soundmod_m5_sandstorm"",""jsrs_soundmod_mbt52_kuma"",""jsrs_soundmod_t100_varsuk"",""jsrs_soundmod_zsu39_tigris"",""jsrs_soundmod_afv4_gorgon"",""jsrs_soundmod_amv7_marshal"",""jsrs_soundmod_hatchback"",""jsrs_soundmod_truck1"",""jsrs_soundmod_hunter"",""jsrs_soundmod_ifrit"",""jsrs_soundmod_mse3_marid"",""jsrs_soundmod_offroad"",""jsrs_soundmod_quadbike"",""jsrs_soundmod_strider"",""jsrs_soundmod_suv"",""jsrs_soundmod_van"",""jsrs_soundmod_truck3"",""jsrs_soundmod_230mm_titan"",""jsrs_soundmod_air_weapons"",""jsrs_soundmod_35mm_autocannon"",""jsrs_soundmod_120mm_cannon"",""jsrs_soundmod_gatling_30mm_autocannon"",""jsrs_soundmod_120mm_cannon"",""jsrs_soundmod_gatling_30mm_plane_cas_01""]";
 						};
 					};
 				};
