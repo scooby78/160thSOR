@@ -16,7 +16,7 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14673.59,23.855049,16782.074};
+		pos[]={14679.598,27.086182,16778.406};
 		dir[]={-0.58816028,-0.60645497,0.53512377};
 		up[]={-0.44858366,0.7951017,0.40813169};
 		aside[]={0.67299485,3.1021773e-007,0.73969269};
@@ -23583,12 +23583,11 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={14667.368,17.944,16788.842};
-				angles[]={0,2.6059163,0};
+				position[]={14672.933,17.91,16782.766};
+				angles[]={-0,2.6059163,0};
 			};
 			id=1592;
 			type="ACE_ModuleCheckPBOs";
-			atlOffset=0.034000397;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -23625,7 +23624,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[""sa_advancedtowing"",""sa_advancedslingloading"",""cz75_nochain"",""headrangeplus"",""ar_advancedrappelling"",""ASM"",""ares"",""marmadebug"",""jsrs_environment"",""viewdistance_taw"",""jsrs_soundmod_bullethits"",""jsrs_soundmod_environment"",""jsrs_soundmod_globalfilters"",""jsrs_soundmod_movement"",""jsrs_soundmod_sonic_cracks"",""jsrs_soundmod_explosions"",""jsrs_soundmod_framework"",""jsrs_soundmod_ah99_blackfoot"",""jsrs_soundmod_ah9_pawnee"",""jsrs_soundmod_uav_1"",""jsrs_soundmod_ch67_huron"",""jsrs_soundmod_ch49_mohawk"",""jsrs_soundmod_mi290_taru"",""jsrs_soundmod_mi48_kajman"",""jsrs_soundmod_uav_2"",""jsrs_soundmod_po30_orca"",""jsrs_soundmod_uh80_ghosthawk"",""jsrs_soundmod_wy55_hellcat"",""jsrs_soundmod_armed_boat"",""jsrs_soundmod_rubber_boat"",""jsrs_soundmod_speed_boat"",""jsrs_soundmod_2s9_sorcher"",""jsrs_soundmod_btrk_kamysh"",""jsrs_soundmod_fv720_mora"",""jsrs_soundmod_ifv6a_cheetah"",""jsrs_soundmod_ifv6c_panther"",""jsrs_soundmod_m2a1_slammer"",""jsrs_soundmod_m4_scorcher"",""jsrs_soundmod_m5_sandstorm"",""jsrs_soundmod_mbt52_kuma"",""jsrs_soundmod_t100_varsuk"",""jsrs_soundmod_zsu39_tigris"",""jsrs_soundmod_afv4_gorgon"",""jsrs_soundmod_amv7_marshal"",""jsrs_soundmod_hatchback"",""jsrs_soundmod_truck1"",""jsrs_soundmod_hunter"",""jsrs_soundmod_ifrit"",""jsrs_soundmod_mse3_marid"",""jsrs_soundmod_offroad"",""jsrs_soundmod_quadbike"",""jsrs_soundmod_strider"",""jsrs_soundmod_suv"",""jsrs_soundmod_van"",""jsrs_soundmod_truck3"",""jsrs_soundmod_230mm_titan"",""jsrs_soundmod_air_weapons"",""jsrs_soundmod_35mm_autocannon"",""jsrs_soundmod_120mm_cannon"",""jsrs_soundmod_gatling_30mm_autocannon"",""jsrs_soundmod_120mm_cannon"",""jsrs_soundmod_gatling_30mm_plane_cas_01""]";
+							value="[""sa_advancedtowing"",""sa_advancedslingloading"",""cz75_nochain"",""headrangeplus"",""ar_advancedrappelling"",""ASM"",""ares"",""marmadebug"",""jsrs_environment"",""viewdistance_taw"",""jsrs_soundmod_bullethits"",""jsrs_soundmod_environment"",""jsrs_soundmod_globalfilters"",""jsrs_soundmod_movement"",""jsrs_soundmod_sonic_cracks"",""jsrs_soundmod_explosions"",""jsrs_soundmod_framework"",""jsrs_soundmod_ah99_blackfoot"",""jsrs_soundmod_ah9_pawnee"",""jsrs_soundmod_uav_1"",""jsrs_soundmod_ch67_huron"",""jsrs_soundmod_ch49_mohawk"",""jsrs_soundmod_mi290_taru"",""jsrs_soundmod_mi48_kajman"",""jsrs_soundmod_uav_2"",""jsrs_soundmod_po30_orca"",""jsrs_soundmod_uh80_ghosthawk"",""jsrs_soundmod_wy55_hellcat"",""jsrs_soundmod_armed_boat"",""jsrs_soundmod_rubber_boat"",""jsrs_soundmod_speed_boat"",""jsrs_soundmod_2s9_sorcher"",""jsrs_soundmod_btrk_kamysh"",""jsrs_soundmod_fv720_mora"",""jsrs_soundmod_ifv6a_cheetah"",""jsrs_soundmod_ifv6c_panther"",""jsrs_soundmod_m2a1_slammer"",""jsrs_soundmod_m4_scorcher"",""jsrs_soundmod_m5_sandstorm"",""jsrs_soundmod_mbt52_kuma"",""jsrs_soundmod_t100_varsuk"",""jsrs_soundmod_zsu39_tigris"",""jsrs_soundmod_afv4_gorgon"",""jsrs_soundmod_amv7_marshal"",""jsrs_soundmod_hatchback"",""jsrs_soundmod_truck1"",""jsrs_soundmod_hunter"",""jsrs_soundmod_ifrit"",""jsrs_soundmod_mse3_marid"",""jsrs_soundmod_offroad"",""jsrs_soundmod_quadbike"",""jsrs_soundmod_strider"",""jsrs_soundmod_suv"",""jsrs_soundmod_van"",""jsrs_soundmod_truck3"",""jsrs_soundmod_230mm_titan"",""jsrs_soundmod_air_weapons"",""jsrs_soundmod_35mm_autocannon"",""jsrs_soundmod_120mm_cannon"",""jsrs_soundmod_gatling_30mm_autocannon"",""jsrs_soundmod_120mm_cannon"",""jsrs_soundmod_gatling_30mm_plane_cas_01"",""jsrs_soundmod_cannon_30mm_plane_cas_02"",""jsrs_soundmod_ctws_autocannon"",""jsrs_soundmod_dagr"",""jsrs_soundmod_dar"",""jsrs_soundmod30mm_cannon"",""jsrs_soundmod_gatling_weapons"",""jsrs_soundmod_hmgs"",""jsrs_soundmod_155mm_amos"",""jsrs_soundmod_lmgcoax"",""jsrs_soundmod_lmgrcws"",""jsrs_soundmod_gmg20"",""jsrs_soundmod_30mm_cannon"",""jsrs_soundmod_mortar"",""jsrs_soundmod_gmg40"",""jsrs_soundmod_skalpel_atgm"",""jsrs_soundmod_skyfire"",""jsrs_soundmod_veh_titan"",""jsrs_soundmod_4five45"",""jsrs_soundmod_acpc"",""jpex_mx"",""jsrs_soundmod_m6"",""jsrs_soundmod_khaybar"",""jsrs_soundmod_m320r"",""jsrs_soundmod_ebr"",""jsrs_soundmod_fs2000"",""jsrs_soundmod_m200"",""jsrs_soundmod__p07"",""jsrs_soundmod_pcml"",""jsrs_soundmod__pdw"",""jsrs_soundmod_rahim"",""jsrs_soundmod_rook40"",""jsrs_soundmod_rpg32"",""jsrs_soundmod_scorpian""]";
 						};
 					};
 				};
