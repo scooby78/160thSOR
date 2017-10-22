@@ -114,7 +114,8 @@ class CfgPatches
 			"ace_common",
 			"task_force_radio_items",
 			"160th_SOR_Loadouts",
-			"rhsusf_a2port_air2"
+			"rhsusf_a2port_air2",
+			"rhsgref_infantry"
 		};
 	};
 };

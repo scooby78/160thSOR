@@ -64,7 +64,7 @@ class NVA_Uniform : Uniform_Base
      class ItemInfo : UniformItem 
 	{
         uniformModel = "-";
-        uniformClass = "SOR_Nam_NAV";
+        uniformClass = "SOR_Nam_NVA";
         containerClass = "Supply120";
         mass = 20;
 	};
