@@ -149,7 +149,7 @@ class SOR_A_Crate_F_Nam : B_CargoNet_01_ammo_F
 	{
 		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,200)
 		mag_xx(rhsusf_mag_15Rnd_9x19_FMJ,40)
-		mag_xx(SMA_150Rnd_762_M80A1_Tracer,32)	
+		mag_xx(100rnd_m60E3_tracer,32)	
 		mag_xx(1Rnd_HE_Grenade_shell,20)			
 		mag_xx(1Rnd_Smoke_Grenade_shell,20)			
 		mag_xx(1Rnd_SmokeRed_Grenade_shell,20)	

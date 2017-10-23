@@ -16,6 +16,7 @@ class SOR_Nam_VC : I_C_Soldier_Bandit_2_F
 	identityTypes[] = {"LanguageCHI_F","Head_Asian","G_CIVIL_male"};
 	backpack = "";
 	side = 0;
+	allowedFacewear[] = {};
 	displayName = "VC Commander";
 	uniformClass = "VC_Uniform_1";
 	model="\A3\characters_F\OPFOR\o_officer.p3d";
@@ -293,7 +294,7 @@ class SOR_Nam_NVA_5 : SOR_Nam_NVA
 	editorCategory = "SOR_Cat_Faction_VC";
 	faction = "SOR_Faction_VC";
 	displayName = "NVA Soldier AT";
-	backpack = "";
+	backpack = "SOR_Nam_RPG";
 	side = 0;
 	weapons[] = {"rhs_weap_akm_gp25","launch_RPG7_F", "Throw", "put"};
 	respawnweapons[] = {"rhs_weap_akm_gp25","launch_RPG7_F", "Throw", "put"};

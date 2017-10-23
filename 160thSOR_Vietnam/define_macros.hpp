@@ -16,7 +16,7 @@
 #define Standard_Mags_AR_Nam 	"100rnd_m60E3_tracer",\
 								"rhs_mag_an_m8hc",\
 								"rhs_mag_an_m8hc",\
-								"rhs_mag_an_m8hc",\
+								"100rnd_m60E3_tracer",\
 								"100rnd_m60E3_tracer",\
 								"100rnd_m60E3_tracer"
 								
@@ -54,3 +54,4 @@
 								"rhs_VOG25",\
 								"rhs_VOG25",\
 								"rhs_VOG25"
+
