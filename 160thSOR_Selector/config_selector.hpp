@@ -142,13 +142,13 @@ class SOR_SelectorOptics {
 
 class SOR_SelectorUnits {
     class Inf_Standard_Desert {
-        units[] = {"SOR_Actual_D","SOR_Medic_D","SOR_Rifleman_D","SOR_Rifleman_ammo_D","SOR_Commander_D","SOR_HMedic_D","SOR_Teamleader2_D","SOR_Teamleader_D","SOR_ParaJumper_D","SOR_ReconLeader_D","SOR_ReconRifleman_D","SOR_Marksman_D"};
+        units[] = {"SOR_Actual_D","SOR_Medic_D","SOR_Rifleman_D","SOR_Rifleman_ammo_D","SOR_Commander_D","SOR_HMedic_D","SOR_Teamleader2_D","SOR_Teamleader_D","SOR_ParaJumper_D","SOR_ReconLeader_D","SOR_ReconRifleman_D","SOR_Marksman_D","SOR_MechCommand_D","SOR_MechCrew_D","SOR_MechOperator_D","SOR_MechCrewCommander_D","SOR_MechDriver_D","SOR_Engineer_Teamleader_D","SOR_Engineer_D"};
         weapons[] = {"Standard_Black","Standard_Desert"};
         optics[] = {"Standard_Black","Standard_Desert"};
     };
     
     class Inf_Standard_Wood {
-        units[] = {"SOR_Actual_W","SOR_Medic_W","SOR_Rifleman_W","SOR_Rifleman_ammo_W","SOR_Commander_W","SOR_HMedic_W","SOR_Teamleader2_W","SOR_Teamleader_W","SOR_ParaJumper_W","SOR_ReconLeader_W","SOR_ReconRifleman_W","SOR_Marksman_W"};
+        units[] = {"SOR_Actual_W","SOR_Medic_W","SOR_Rifleman_W","SOR_Rifleman_ammo_W","SOR_Commander_W","SOR_HMedic_W","SOR_Teamleader2_W","SOR_Teamleader_W","SOR_ParaJumper_W","SOR_ReconLeader_W","SOR_ReconRifleman_W","SOR_Marksman_W","SOR_MechCommand_W","SOR_MechCrew_W","SOR_MechOperator_W","SOR_MechCrewCommander_W","SOR_MechDriver_W","SOR_Engineer_Teamleader_W","SOR_Engineer_W"};
         weapons[] = {"Standard_Black","Standard_Wood"};
         optics[] = {"Standard_Black","Standard_Wood"};
     };
