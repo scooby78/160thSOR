@@ -1,5 +1,5 @@
 version=53;
-center[]={14665.112,17.91,16787.141};
+center[]={9461.4756,139.995,9852.9131};
 class items
 {
 	items=25;
@@ -8,11 +8,11 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={3.2089844,0.026075363,2.7207031};
+			position[]={3.203125,0.026000977,2.7285156};
 		};
-		id=1574;
+		id=1327;
 		type="ace_advanced_fatigue_moduleSettings";
-		atlOffset=0.026075363;
+		atlOffset=0.026000977;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -30,7 +30,7 @@ class items
 								"SCALAR"
 							};
 						};
-						value=0.69999999;
+						value=0.60000002;
 					};
 				};
 			};
@@ -118,12 +118,12 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-4.7304688,0.071214676,2.1777344};
+			position[]={-4.7363281,0.071212769,2.1855469};
 			angles[]={0,0.18120271,0};
 		};
-		id=1575;
+		id=1328;
 		type="ModuleCurator_F";
-		atlOffset=0.071214676;
+		atlOffset=0.071212769;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -229,12 +229,12 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-4.7128906,0.064847946,4.0898438};
+			position[]={-4.71875,0.064849854,4.0976563};
 			angles[]={0,0.18120271,0};
 		};
-		id=1576;
+		id=1329;
 		type="ModuleCurator_F";
-		atlOffset=0.064847946;
+		atlOffset=0.064849854;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -340,10 +340,10 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-4.7236328,0.049591064,0.27539063};
+			position[]={-4.7294922,0.049591064,0.28320313};
 			angles[]={0,0.18120855,0};
 		};
-		id=1577;
+		id=1330;
 		type="ModuleCurator_F";
 		atlOffset=0.049591064;
 		class CustomAttributes
@@ -451,12 +451,12 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-4.6982422,0.046823502,-1.2890625};
+			position[]={-4.7041016,0.046829224,-1.28125};
 			angles[]={0,0.18120271,0};
 		};
-		id=1578;
+		id=1331;
 		type="ModuleCurator_F";
-		atlOffset=0.046823502;
+		atlOffset=0.046829224;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -562,12 +562,12 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-2.9267578,0.047246933,-0.1953125};
+			position[]={-2.9326172,0.047241211,-0.1875};
 			angles[]={0,0.18119842,0};
 		};
-		id=1579;
+		id=1332;
 		type="ModuleCuratorSetCoefs_F";
-		atlOffset=0.047246933;
+		atlOffset=0.047241211;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -730,12 +730,12 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-4.6650391,0.046825409,-2.9121094};
+			position[]={-4.6708984,0.046829224,-2.9042969};
 			angles[]={0,0.18120271,0};
 		};
-		id=1580;
+		id=1333;
 		type="ModuleCurator_F";
-		atlOffset=0.046825409;
+		atlOffset=0.046829224;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -841,12 +841,12 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={1.3427734,0.044324875,-1.1171875};
+			position[]={1.3369141,0.044326782,-1.109375};
 			angles[]={0,2.9516044,0};
 		};
-		id=1581;
+		id=1334;
 		type="ACE_ModuleNameTags";
-		atlOffset=0.044324875;
+		atlOffset=0.044326782;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -952,12 +952,12 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={1.4072266,0.044324875,-2.6640625};
+			position[]={1.4013672,0.044326782,-2.65625};
 			angles[]={0,2.9516044,0};
 		};
-		id=1582;
+		id=1335;
 		type="ACE_ModuleInteraction";
-		atlOffset=0.044324875;
+		atlOffset=0.044326782;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -979,7 +979,26 @@ class items
 					};
 				};
 			};
-			nAttributes=1;
+			class Attribute1
+			{
+				property="ACE_ModuleInteraction_DisableNegativeRating";
+				expression="_this setVariable ['DisableNegativeRating',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			nAttributes=2;
 		};
 	};
 	class Item9
@@ -987,12 +1006,12 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={2.3574219,0.032114029,0.44335938};
+			position[]={2.3515625,0.032119751,0.45117188};
 			angles[]={0,2.9601502,0};
 		};
-		id=1583;
+		id=1336;
 		type="ACE_moduleReviveSettings";
-		atlOffset=0.032114029;
+		atlOffset=0.032119751;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -1060,12 +1079,12 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={1.2333984,0.038076401,0.22070313};
+			position[]={1.2275391,0.038070679,0.22851563};
 			angles[]={0,2.9516022,0};
 		};
-		id=1584;
+		id=1337;
 		type="ace_zeus_moduleSettings";
-		atlOffset=0.038076401;
+		atlOffset=0.038070679;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -1190,10 +1209,10 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={2.390625,0,-2.3964844};
+			position[]={2.3847656,0,-2.3886719};
 			angles[]={0,2.9601502,0};
 		};
-		id=1585;
+		id=1338;
 		type="ACE_ModuleRespawn";
 		class CustomAttributes
 		{
@@ -1243,12 +1262,12 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={1.2070313,0.030574799,1.4804688};
+			position[]={1.2011719,0.030578613,1.4882813};
 			angles[]={0,2.9516044,0};
 		};
-		id=1586;
+		id=1339;
 		type="ACE_ModuleHearing";
-		atlOffset=0.030574799;
+		atlOffset=0.030578613;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -1335,12 +1354,12 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={2.1601563,0.035392761,2.7988281};
+			position[]={2.1542969,0.035400391,2.8066406};
 			angles[]={0,2.9601483,0};
 		};
-		id=1587;
+		id=1340;
 		type="ACE_moduleRepairSettings";
-		atlOffset=0.035392761;
+		atlOffset=0.035400391;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -1522,12 +1541,12 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={1.1367188,0.030574799,2.7070313};
+			position[]={1.1308594,0.030578613,2.7148438};
 			angles[]={0,2.9516044,0};
 		};
-		id=1588;
+		id=1341;
 		type="ACE_moduleCargoSettings";
-		atlOffset=0.030574799;
+		atlOffset=0.030578613;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -1576,10 +1595,10 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={2.3769531,0,-0.90039063};
+			position[]={2.3710938,0,-0.89257813};
 			angles[]={0,2.9601483,0};
 		};
-		id=1589;
+		id=1342;
 		type="ACE_moduleMedicalSettings";
 		class CustomAttributes
 		{
@@ -1857,12 +1876,12 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={1.0820313,0.03430748,3.7714844};
+			position[]={1.0761719,0.034301758,3.7792969};
 			angles[]={0,2.9516044,0};
 		};
-		id=1590;
+		id=1343;
 		type="ace_finger_moduleSettings";
-		atlOffset=0.03430748;
+		atlOffset=0.034301758;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -1911,12 +1930,12 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={2.1894531,0.046136856,3.9160156};
+			position[]={2.1835938,0.046142578,3.9238281};
 			angles[]={0,5.8697066,0};
 		};
-		id=1591;
+		id=1344;
 		type="ACEX_ModuleSitting";
-		atlOffset=0.046136856;
+		atlOffset=0.046142578;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -1946,12 +1965,11 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={2.2558594,0.033937454,1.7011719};
-			angles[]={0,2.6059151,0};
+			position[]={2.3378906,0,1.5078125};
+			angles[]={0,2.6059163,0};
 		};
-		id=1592;
+		id=1345;
 		type="ACE_ModuleCheckPBOs";
-		atlOffset=0.033937454;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -1988,7 +2006,7 @@ class items
 								"STRING"
 							};
 						};
-						value="[""sa_advancedtowing"",""sa_advancedslingloading"",""cz75_nochain"",""headrangeplus"",""ar_advancedrappelling"",""ASM"",""ares"",""marmadebug"",""jsrs_environment"",""dragonfyre_bullethits"",""dragonfyre_explosions"",""dragonfyre_sonic_cracks"",""dragonfyre_230mm_titan"",""dragonfyre_air_weapons"",""dragonfyre_35mm_autocannon"",""dragonfyre_120mm_cannon"",""dragonfyre_autocannon"",""dragonfyre_dagr"",""dragonfyre_dar"",""dragonfyre_minigun"",""dragonfyre_30mm_cannon"",""dragonfyre_gau8"",""dragonfyre_155mm_amos"",""dragonfyre_m134"",""dragonfyre_lmgrcws"",""dragonfyre_gmg20"",""dragonfyre_gmg40"",""dragonfyre_127"",""dragonfyre_skalpel_atgm"",""dragonfyre_skyfire"",""dragonfyre_veh_titan"",""dragonfyre_4five45"",""dragonfyre_acpc"",""dragonfyre_mx"",""dragonfyre_m6"",""dragonfyre_khaybar"",""dragonfyre_m320r"",""dragonfyre_ebr"",""dragonfyre_fs2000"",""dragonfyre_m200"",""dragonfyre_p07"",""dragonfyre_nlaw"",""dragonfyre_pdw"",""dragonfyre_rahim"",""dragonfyre_rook40"",""dragonfyre_rpg32"",""dragonfyre_scorpian"",""dragonfyre_titan"",""dragonfyre_trg20"",""dragonfyre_ugl"",""dragonfyre_sdar"",""dragonfyre_vector"",""dragonfyre_zafir"",""dragonfyre_zubr45"",""dragonfyre_movement"",""dragonfyre_fighterplane3"",""dragonfyre_cas_plane1"",""dragonfyre_ah99_blackfoot"",""dragonfyre_ah9_pawnee"",""dragonfyre_uav_1"",""dragonfyre_ch67_huron"",""dragonfyre_ch49_mohawk"",""dragonfyre_mi290_taru"",""dragonfyre_mi48_kajman"",""dragonfyre_uav_2"",""dragonfyre_po30_orca"",""dragonfyre_cas_plane2"",""dragonfyre_uh80_ghosthawk"",""dragonfyre_wy55_hellcat"",""dragonfyre_boat_armed_1"",""dragonfyre_2s9_sorcher"",""dragonfyre_ah99_blackfoot"",""dragonfyre_ah9_pawnee"",""dragonfyre_uav_1"",""dragonfyre_ch49_mohawk"",""dragonfyre_mi290_taru"",""dragonfyre_mi48_kajman"",""dragonfyre_uav_2"",""dragonfyre_cas_plane2"",""dragonfyre_boat_armed_1"",""dragonfyre_afv4_gorgon"",""dragonfyre_amv7_marshal"",""dragonfyre_btrk_kamysh"",""dragonfyre_fv720_mora"",""dragonfyre_ifv6a_cheetah"",""dragonfyre_ifv6c_panther"",""dragonfyre_m2a1_slammer"",""dragonfyre_m4_scorcher"",""dragonfyre_m5_sandstorm"",""dragonfyre_mse3_marid"",""dragonfyre_t100_varsuk"",""dragonfyre_zsu39_tigris"",""dragonfyre_hatchback"",""dragonfyre_truck1"",""dragonfyre_hunter"",""dragonfyre_ifrit"",""dragonfyre_quadbike"",""dragonfyre_suv"",""dragonfyre_truck2"",""dragonfyre_van"",""dragonfyre_truck3"",""jsrs_environment"",""dragonfyre_bullethits"",""dragonfyre_explosions"",""dragonfyre_sonic_cracks"",""dragonfyre_air_weapons"",""dragonfyre_autocannon"",""dragonfyre_dagr"",""dragonfyre_minigun"",""dragonfyre_gau8"",""dragonfyre_155mm_amos"",""dragonfyre_m134"",""dragonfyre_lmgrcws"",""dragonfyre_gmg40"",""dragonfyre_skyfire"",""dragonfyre_veh_titan"",""dragonfyre_4five45"",""dragonfyre_acpc"",""dragonfyre_mx"",""dragonfyre_khaybar"",""dragonfyre_fs2000"",""dragonfyre_p07"",""dragonfyre_pdw"",""dragonfyre_rook40"",""dragonfyre_rpg32"",""dragonfyre_scorpian"",""dragonfyre_titan"",""dragonfyre_trg20"",""dragonfyre_ugl"",""dragonfyre_sdar"",""dragonfyre_vector"",""dragonfyre_zafir"",""dragonfyre_zubr45"",""dragonfyre_fighterplane3"",""dragonfyre_ah9_pawnee"",""dragonfyre_uav_1"",""dragonfyre_mi290_taru"",""dragonfyre_mi48_kajman"",""dragonfyre_uav_2"",""dragonfyre_cas_plane2"",""dragonfyre_uh80_ghosthawk"",""dragonfyre_boat_armed_1"",""dragonfyre_amv7_marshal"",""dragonfyre_ifv6a_cheetah"",""dragonfyre_m4_scorcher"",""dragonfyre_mse3_marid"",""dragonfyre_offroad"",""dragonfyre_strider"",""jsrs2_distance"",""dragonfyre_mbt52_kuma"",""dragonfyre_distance"",""viewdistance_taw"",""dynasound_ds_sys"",""l_es"",""l_es_air"",""dynasound_ds_main"",""dynasound_ds_w_120mm"",""dynasound_ds_w_155mm"",""dynasound_ds_w_20mmgatling"",""dynasound_ds_w_aa"",""dynasound_ds_w_acpc2"",""dynasound_ds_w_4five"",""dynasound_ds_w_30mmcannon"",""dynasound_ds_w_alamut"",""dynasound_ds_w_asraam"",""dynasound_ds_w_autocannon"",""dynasound_ds_w_cyrus"",""dynasound_ds_w_dagr"",""dynasound_ds_w_abr"",""dynasound_ds_w_emr"",""dynasound_ds_w_f2000"",""dynasound_ds_w_gau8"",""dynasound_ds_w_gmg"",""dynasound_ds_w_hmg"",""dynasound_ds_w_katiba"",""dynasound_ds_w_kir"",""dynasound_ds_w_ebr"",""dynasound_ds_w_launcher_big"",""dynasound_ds_w_launcher_small"",""dynasound_ds_w_lrr"",""dynasound_ds_w_lynx"",""dynasound_ds_w_m134"",""dynasound_ds_w_m200"",""dynasound_ds_w_mar10"",""dynasound_ds_w_minigun"",""dynasound_ds_w_mk14"",""dynasound_ds_w_mk200"",""dynasound_ds_w_mlrs"",""dynasound_ds_w_mortar82mm"",""dynasound_ds_w_mx"",""dynasound_ds_w_navid"",""dynasound_ds_w_p07"",""dynasound_ds_w_pcml"",""dynasound_ds_w_pdw2000"",""dynasound_ds_w_planelaunchers"",""dynasound_ds_w_rahim"",""dynasound_ds_w_rook"",""dynasound_ds_w_rpg"",""dynasound_ds_w_scalpal"",""dynasound_ds_w_sdar"",""dynasound_ds_w_shared"",""dynasound_ds_w_skyfire"",""dynasound_ds_w_spmg"",""dynasound_ds_w_sting"",""dynasound_ds_w_tavor"",""dynasound_ds_w_titan"",""dynasound_ds_w_scalpel"",""dynasound_ds_w_ugl"",""dynasound_ds_w_vermin"",""dynasound_ds_w_zafir"",""dynasound_ds_w_zubr"",""dynasound_ds_a_blackhawk"",""dynasound_ds_a_chinook"",""dynasound_ds_a_comanche"",""dynasound_ds_a_kajman"",""dynasound_ds_a_kasatka"",""dynasound_ds_a_littlebird"",""dynasound_ds_a_lynx"",""dynasound_ds_a_merlin"",""dynasound_ds_a_taru"",""dynasound_ds_m_bullets"",""dynasound_ds_m_explosions""]";
+						value="[""sa_advancedtowing"",""sa_advancedslingloading"",""cz75_nochain"",""headrangeplus"",""ar_advancedrappelling"",""ASM"",""ares"",""marmadebug"",""JSRS_SOUNDMOD_Bullethits"",  ""JSRS_SOUNDMOD_Environment"",  ""JSRS_SOUNDMOD_GlobalFilters"",  ""JSRS_SOUNDMOD_Movement"",  ""JSRS_SOUNDMOD_Sonic_Cracks"",  ""JSRS_SOUNDMOD_Explosions"",  ""JSRS_SOUNDMOD_FrameWork"",  ""JSRS_SOUNDMOD_AH99_Blackfoot"",  ""JSRS_SOUNDMOD_AH9_Pawnee"",  ""JSRS_SOUNDMOD_UAV_1"",  ""JSRS_SOUNDMOD_CH67_Huron"",  ""JSRS_SOUNDMOD_CH49_Mohawk"",  ""JSRS_SOUNDMOD_Mi290_Taru"",  ""JSRS_SOUNDMOD_Mi48_Kajman"",  ""JSRS_SOUNDMOD_UAV_2"",  ""JSRS_SOUNDMOD_Po30_Orca"",  ""JSRS_SOUNDMOD_UH80_GhostHawk"",  ""JSRS_SOUNDMOD_WY55_Hellcat"",  ""JSRS_SOUNDMOD_Armed_Boat"",  ""JSRS_SOUNDMOD_Rubber_Boat"",  ""JSRS_SOUNDMOD_Speed_Boat"",  ""JSRS_SOUNDMOD_2S9_Sorcher"",  ""JSRS_SOUNDMOD_BTRK_Kamysh"",  ""JSRS_SOUNDMOD_FV720_Mora"",  ""JSRS_SOUNDMOD_IFV6a_Cheetah"",  ""JSRS_SOUNDMOD_IFV6c_Panther"",  ""JSRS_SOUNDMOD_M2A1_Slammer"",  ""JSRS_SOUNDMOD_M4_Scorcher"",  ""JSRS_SOUNDMOD_M5_Sandstorm"",  ""JSRS_SOUNDMOD_MBT52_Kuma"",  ""JSRS_SOUNDMOD_T100_Varsuk"",  ""JSRS_SOUNDMOD_ZSU39_Tigris"",  ""JSRS_SOUNDMOD_AFV4_Gorgon"",  ""JSRS_SOUNDMOD_AMV7_Marshal"",  ""JSRS_SOUNDMOD_Hatchback"",  ""JSRS_SOUNDMOD_truck1"",  ""JSRS_SOUNDMOD_Hunter"",  ""JSRS_SOUNDMOD_Ifrit"",  ""JSRS_SOUNDMOD_MSE3_Marid"",  ""JSRS_SOUNDMOD_Offroad"",  ""JSRS_SOUNDMOD_Quadbike"",  ""JSRS_SOUNDMOD_Strider"",  ""JSRS_SOUNDMOD_SUV"",  ""JSRS_SOUNDMOD_Van"",  ""JSRS_SOUNDMOD_Truck3"",  ""JSRS_SOUNDMOD_230mm_Titan"",  ""JSRS_SOUNDMOD_Air_Weapons"",  ""JSRS_SOUNDMOD_35mm_Autocannon"",  ""JSRS_SOUNDMOD_120mm_Cannon"",  ""JSRS_SOUNDMOD_Gatling_30mm_Plane_CAS_01"",  ""JSRS_SOUNDMOD_Cannon_30mm_Plane_CAS_02"",  ""JSRS_SOUNDMOD_CTWS_Autocannon"",  ""JSRS_SOUNDMOD_DAGR"",  ""JSRS_SOUNDMOD_DAR"",  ""JSRS_SOUNDMOD_30mm_Cannon"",  ""JSRS_SOUNDMOD_Gatling_Weapons"",  ""JSRS_SOUNDMOD_HMGS"",  ""JSRS_SOUNDMOD_155mm_AMOS"",  ""JSRS_SOUNDMOD_LMGCoax"",  ""JSRS_SOUNDMOD_LMGRCWS"",  ""JSRS_SOUNDMOD_GMG20"",  ""JSRS_SOUNDMOD_MORTAR"",  ""JSRS_SOUNDMOD_GMG40"",  ""JSRS_SOUNDMOD_Skalpel_ATGM"",  ""JSRS_SOUNDMOD_Skyfire"",  ""JSRS_SOUNDMOD_Veh_Titan"",  ""JSRS_SOUNDMOD_4Five45"",  ""JSRS_SOUNDMOD_ACPC"",  ""JPEX_MX"",  ""JSRS_SOUNDMOD_M6"",  ""JSRS_SOUNDMOD_Khaybar"",  ""JSRS_SOUNDMOD_M320R"",  ""JSRS_SOUNDMOD_EBR"",  ""JSRS_SOUNDMOD_FS2000"",  ""JSRS_SOUNDMOD_M200"",  ""JSRS_SOUNDMOD_P07"",  ""JSRS_SOUNDMOD_PCML"",  ""JSRS_SOUNDMOD_PDW"",  ""JSRS_SOUNDMOD_Rahim"",  ""JSRS_SOUNDMOD_Rook40"",  ""JSRS_SOUNDMOD_RPG32"",  ""JSRS_SOUNDMOD_Scorpian"",  ""JSRS_SOUNDMOD_Titan_MPRL"",  ""JSRS_SOUNDMOD_TRG21"",  ""JSRS_SOUNDMOD_UGL"",  ""JSRS_SOUNDMOD_SDAR"",  ""JSRS_SOUNDMOD_Vector"",  ""JSRS_SOUNDMOD_Zafir"",  ""JSRS_SOUNDMOD_Zubr45"",  ""JSRS_SOUNDMOD_ReloadingSounds"",  ""JSRS_SOUNDMOD_ASP1"",  ""JSRS_SOUNDMOD_Cyrus"",  ""JSRS_SOUNDMOD_MAR10"",  ""JSRS_SOUNDMOD_Mk1EMR"",  ""JSRS_SOUNDMOD_Mk14"",  ""JSRS_SOUNDMOD_Navid"",  ""JSRS_SOUNDMOD_SPMG"",  ""JSRS_SOUNDMOD_Movement_Apex"",  ""JSRS_SOUNDMOD_ReloadingSoundsApex"",  ""JSRS_SOUNDMOD_KH3A_Fenghuan"",  ""JSRS_SOUNDMOD_MQ12_Falcon"",  ""JSRS_SOUNDMOD_V44X_Blackfish"",  ""JSRS_SOUNDMOD_Y32_XIAN"",  ""JSRS_SOUNDMOD_MB4WD"",  ""JSRS_SOUNDMOD_Prowler"",  ""JSRS_SOUNDMOD_Truck2"",  ""JSRS_SOUNDMOD_AK12"",  ""JSRS_SOUNDMOD_AKM"",  ""JSRS_SOUNDMOD_AKS"",  ""JSRS_SOUNDMOD_CMR"",  ""JSRS_SOUNDMOD_CTAR"",  ""JSRS_SOUNDMOD_LIM85"",  ""JSRS_SOUNDMOD_PM9M"",  ""JSRS_SOUNDMOD_Protector"",  ""JSRS_SOUNDMOD_RPG7V"",  ""JSRS_SOUNDMOD_SPAR"",  ""JSRS_SOUNDMOD_Type115""]";
 					};
 				};
 			};
@@ -2019,12 +2037,12 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-4.3193359,0.049325943,-5.0449219};
+			position[]={-4.3251953,0.049331665,-5.0371094};
 			angles[]={0,3.2462144,0};
 		};
-		id=1593;
+		id=1346;
 		type="ModuleCurator_F";
-		atlOffset=0.049325943;
+		atlOffset=0.049331665;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -2130,12 +2148,12 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-4.4580078,0.047025681,-3.9042969};
+			position[]={-4.4638672,0.047027588,-3.8964844};
 			angles[]={0,3.2462144,0};
 		};
-		id=1594;
+		id=1347;
 		type="ModuleCurator_F";
-		atlOffset=0.047025681;
+		atlOffset=0.047027588;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -2241,11 +2259,11 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={3.2109375,0.038244247,3.9023438};
+			position[]={3.2050781,0.038238525,3.9101563};
 		};
-		id=1595;
+		id=1348;
 		type="ace_advanced_throwing_Module";
-		atlOffset=0.038244247;
+		atlOffset=0.038238525;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -2351,11 +2369,11 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={3.1923828,0.02057457,1.7265625};
+			position[]={3.1865234,0.020568848,1.734375};
 		};
-		id=1596;
+		id=1349;
 		type="ACE_moduleRearmSettings";
-		atlOffset=0.02057457;
+		atlOffset=0.020568848;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -2404,22 +2422,22 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={2.9287109,0.045574188,-5.7265625};
+			position[]={2.9228516,0.045578003,-5.71875};
 		};
-		id=1597;
+		id=1350;
 		type="DEST_loadoutSup";
-		atlOffset=0.045574188;
+		atlOffset=0.045578003;
 	};
 	class Item24
 	{
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={1.6201172,0.050575256,-5.7714844};
+			position[]={1.6142578,0.050567627,-5.7636719};
 		};
-		id=1598;
+		id=1351;
 		type="DEST_loadoutNVG";
-		atlOffset=0.050575256;
+		atlOffset=0.050567627;
 	};
 };
 class connections
@@ -2434,8 +2452,8 @@ class connections
 		class Item0
 		{
 			linkID=0;
-			item0=1579;
-			item1=1575;
+			item0=1332;
+			item1=1328;
 			class CustomData
 			{
 				type="Sync";
@@ -2444,8 +2462,8 @@ class connections
 		class Item1
 		{
 			linkID=1;
-			item0=1579;
-			item1=1576;
+			item0=1332;
+			item1=1329;
 			class CustomData
 			{
 				type="Sync";
@@ -2454,8 +2472,8 @@ class connections
 		class Item2
 		{
 			linkID=2;
-			item0=1579;
-			item1=1577;
+			item0=1332;
+			item1=1330;
 			class CustomData
 			{
 				type="Sync";
@@ -2464,8 +2482,8 @@ class connections
 		class Item3
 		{
 			linkID=3;
-			item0=1579;
-			item1=1578;
+			item0=1332;
+			item1=1331;
 			class CustomData
 			{
 				type="Sync";
@@ -2474,8 +2492,8 @@ class connections
 		class Item4
 		{
 			linkID=4;
-			item0=1580;
-			item1=1579;
+			item0=1333;
+			item1=1332;
 			class CustomData
 			{
 				type="Sync";
@@ -2484,8 +2502,8 @@ class connections
 		class Item5
 		{
 			linkID=5;
-			item0=1593;
-			item1=1579;
+			item0=1346;
+			item1=1332;
 			class CustomData
 			{
 				type="Sync";
@@ -2494,8 +2512,8 @@ class connections
 		class Item6
 		{
 			linkID=6;
-			item0=1594;
-			item1=1579;
+			item0=1347;
+			item1=1332;
 			class CustomData
 			{
 				type="Sync";
