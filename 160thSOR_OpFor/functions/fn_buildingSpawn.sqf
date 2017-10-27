@@ -4,6 +4,7 @@ private ["_Group_Start_Object", "_vicClass", "_aiGRP", "_victimPos", "_wp", "_i"
 // Set variables
 if (isNil "SOR_DEBUG") then {SOR_DEBUG = false;};
 if (isNil "SOR_ScriptThrottleOK") then {SOR_ScriptThrottleOK = false;};
+if (isNil "SOR_ScriptThrottleKill") then {SOR_ScriptThrottleKill = false;};
 if (isNil "SOR_GRPSPWN_ACTIVE") then {SOR_GRPSPWN_ACTIVE = true;};
 _Group_Start_Object = _this select 0;
 _vicClass = _this select 1;
@@ -11,13 +12,14 @@ _t = _this select 2;
 _Scan_Range = _this select 3;
 _Group_Class = _this select 4;
 _Engagement_Stop = _this select 5;
-if (isNil "_Engagement_Stop") then {_Engagement_Stop = 10};
+_clearance_area	= _this select 6;
+
 _i = 0;
 
 diag_log format ["SOR Group Spawner Script - %1 - Started.....OK", _Group_Start_Object];
 
 // Area clear (25m)
-_terrainobjects = nearestTerrainObjects [(getPos _Group_Start_Object),["TREE", "SMALL TREE", "FOREST", "FOREST BORDER", "FOREST TRIANGLE", "BUSH", "ROCK", "ROCKS"],25];
+_terrainobjects = nearestTerrainObjects [(getPos _Group_Start_Object),["TREE", "SMALL TREE", "FOREST", "FOREST BORDER", "FOREST TRIANGLE", "BUSH", "ROCK", "ROCKS"],_clearance_area];
 {hideObjectGlobal _x} foreach _terrainobjects; 
 
 // Make zone marker only for planning purposes but don't spawn units in 3Den editor
@@ -35,7 +37,7 @@ if (is3DEN) exitWith
 };
 
 // Give the server breathing space
-waitUntil {SOR_ScriptThrottleOK};
+waitUntil {SOR_ScriptThrottleOK && SOR_ScriptThrottleKill};
 
 // Brains
 while {SOR_GRPSPWN_ACTIVE && SOR_ScriptThrottleKill && (alive _Group_Start_Object) && _i < _t} do 

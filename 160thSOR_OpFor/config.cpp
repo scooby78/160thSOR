@@ -21,7 +21,7 @@ class CfgPatches
 	{
 		author="160th SOR";
 		url="http://www.160th.net";	
-		version="2.1.4";		
+		version="2.1.5";		
 		units[] = 
 		{
 			#include "4th_Reich\cfgPatches.hpp"
@@ -218,15 +218,15 @@ class CfgEditorSubcategories
 	};
 	class SOR_OPFor_SubCat_Barracks_Reich
 	{
-		displayName = "Populated Barracks (Reich)";
+		displayName = "Spawners (Reich)";
 	};
 	class SOR_OPFor_SubCat_Barracks_ISIS
 	{
-		displayName = "Populated Barracks (ISIS)";
+		displayName = "Spawners (ISIS)";
 	};	
 	class SOR_OPFor_SubCat_Barracks_VDV_AI
 	{
-		displayName = "Populated Barracks (Russian)";
+		displayName = "Spawners (Russian)";
 	};	
 };
 
