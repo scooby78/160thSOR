@@ -218,15 +218,15 @@ class CfgEditorSubcategories
 	};
 	class SOR_OPFor_SubCat_Barracks_Reich
 	{
-		displayName = "Populated Barracks (Reich)";
+		displayName = "Spawners (Reich)";
 	};
 	class SOR_OPFor_SubCat_Barracks_ISIS
 	{
-		displayName = "Populated Barracks (ISIS)";
+		displayName = "Spawners (ISIS)";
 	};	
 	class SOR_OPFor_SubCat_Barracks_VDV_AI
 	{
-		displayName = "Populated Barracks (Russian)";
+		displayName = "Spawners (Russian)";
 	};	
 };
 
