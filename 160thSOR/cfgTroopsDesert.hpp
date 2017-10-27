@@ -756,13 +756,13 @@ class SOR_HeliPilot_D : B_Pilot_F
 	linkedItems[] = 
 	{	
 		"V_Rangemaster_belt", 
-		"H_PilotHelmetHeli_O",
+		"rhsusf_hgu56p_visor",
 		Airborne_Equipment
 	};              
 	respawnLinkedItems[] = 
 	{	
 		"V_Rangemaster_belt", 
-		"H_PilotHelmetHeli_O",
+		"rhsusf_hgu56p_visor",
 		Airborne_Equipment
 	};
 	class eventHandlers
@@ -801,13 +801,13 @@ class SOR_HeliCrew_D : B_crew_F
 	linkedItems[] = 
 	{	
 		"V_Rangemaster_belt", 
-		"H_PilotHelmetHeli_O", 
+		"rhsusf_hgu56p_visor_mask", 
 		Airborne_Equipment
 	};              
 	respawnLinkedItems[] = 
 	{	
 		"V_Rangemaster_belt", 
-		"H_PilotHelmetHeli_O", 
+		"rhsusf_hgu56p_visor_mask", 
 		Airborne_Equipment
 	};
 	class eventHandlers
@@ -871,17 +871,18 @@ class SOR_MEVPilot_D : 	SOR_HeliPilot_D
 	linkedItems[] = 
 	{	
 		"V_Rangemaster_belt",
-		"rhsusf_hgu56p_mask", 
+		"rhsusf_hgu56p_visor_mask", 
 		Airborne_Equipment
 	};
 	respawnLinkedItems[] = 
 	{	
 		"V_Rangemaster_belt", 
-		"rhsusf_hgu56p_mask", 
+		"rhsusf_hgu56p_visor_mask", 
 		"ItemGPS",
 		Airborne_Equipment
 	};   
 };
+
 	
 class SOR_ParaJumper_D : B_medic_F
 {

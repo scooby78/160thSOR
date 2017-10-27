@@ -41,7 +41,6 @@ class rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_d;
 class rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d;
 class rhsusf_M978A4_BKIT_usarmy_d;
 
-
 // M109
 class SOR_ARTI : rhsusf_m109d_usarmy
 {
@@ -436,6 +435,7 @@ class SOR_Leopard_D: I_MBT_03_cannon_F
 	faction = SOR_Faction_D;
 	displayName="Leopard II";
 	crew = "SOR_MechCrew_D";
+	ace_cargo_space = 12;
 	hiddenSelectionsTextures[]=
 	{
 		"160thSOR\data\160th_MBT_03_ext01_co.paa",
@@ -453,6 +453,7 @@ class SOR_APC_D: I_APC_Wheeled_03_cannon_F
 	faction = SOR_Faction_D;
 	displayName="Pandur II";
 	crew = "SOR_MechCrew_D";
+	ace_cargo_space = 12;
 	hiddenSelectionsTextures[]=
 	{
 		"160thSOR\data\adf_apc_pandur_ext01_co.paa",
