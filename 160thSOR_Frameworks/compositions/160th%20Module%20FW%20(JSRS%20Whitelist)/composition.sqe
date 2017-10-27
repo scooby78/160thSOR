@@ -1,5 +1,5 @@
 version=53;
-center[]={9461.4756,139.995,9852.9131};
+center[]={9448.0664,139.995,9848.9492};
 class items
 {
 	items=25;
@@ -10,7 +10,7 @@ class items
 		{
 			position[]={3.203125,0.026000977,2.7285156};
 		};
-		id=1327;
+		id=1361;
 		type="ace_advanced_fatigue_moduleSettings";
 		atlOffset=0.026000977;
 		class CustomAttributes
@@ -121,7 +121,7 @@ class items
 			position[]={-4.7363281,0.071212769,2.1855469};
 			angles[]={0,0.18120271,0};
 		};
-		id=1328;
+		id=1362;
 		type="ModuleCurator_F";
 		atlOffset=0.071212769;
 		class CustomAttributes
@@ -232,7 +232,7 @@ class items
 			position[]={-4.71875,0.064849854,4.0976563};
 			angles[]={0,0.18120271,0};
 		};
-		id=1329;
+		id=1363;
 		type="ModuleCurator_F";
 		atlOffset=0.064849854;
 		class CustomAttributes
@@ -343,7 +343,7 @@ class items
 			position[]={-4.7294922,0.049591064,0.28320313};
 			angles[]={0,0.18120855,0};
 		};
-		id=1330;
+		id=1364;
 		type="ModuleCurator_F";
 		atlOffset=0.049591064;
 		class CustomAttributes
@@ -454,7 +454,7 @@ class items
 			position[]={-4.7041016,0.046829224,-1.28125};
 			angles[]={0,0.18120271,0};
 		};
-		id=1331;
+		id=1365;
 		type="ModuleCurator_F";
 		atlOffset=0.046829224;
 		class CustomAttributes
@@ -565,7 +565,7 @@ class items
 			position[]={-2.9326172,0.047241211,-0.1875};
 			angles[]={0,0.18119842,0};
 		};
-		id=1332;
+		id=1366;
 		type="ModuleCuratorSetCoefs_F";
 		atlOffset=0.047241211;
 		class CustomAttributes
@@ -733,7 +733,7 @@ class items
 			position[]={-4.6708984,0.046829224,-2.9042969};
 			angles[]={0,0.18120271,0};
 		};
-		id=1333;
+		id=1367;
 		type="ModuleCurator_F";
 		atlOffset=0.046829224;
 		class CustomAttributes
@@ -844,7 +844,7 @@ class items
 			position[]={1.3369141,0.044326782,-1.109375};
 			angles[]={0,2.9516044,0};
 		};
-		id=1334;
+		id=1368;
 		type="ACE_ModuleNameTags";
 		atlOffset=0.044326782;
 		class CustomAttributes
@@ -955,7 +955,7 @@ class items
 			position[]={1.4013672,0.044326782,-2.65625};
 			angles[]={0,2.9516044,0};
 		};
-		id=1335;
+		id=1369;
 		type="ACE_ModuleInteraction";
 		atlOffset=0.044326782;
 		class CustomAttributes
@@ -1009,7 +1009,7 @@ class items
 			position[]={2.3515625,0.032119751,0.45117188};
 			angles[]={0,2.9601502,0};
 		};
-		id=1336;
+		id=1370;
 		type="ACE_moduleReviveSettings";
 		atlOffset=0.032119751;
 		class CustomAttributes
@@ -1082,7 +1082,7 @@ class items
 			position[]={1.2275391,0.038070679,0.22851563};
 			angles[]={0,2.9516022,0};
 		};
-		id=1337;
+		id=1371;
 		type="ace_zeus_moduleSettings";
 		atlOffset=0.038070679;
 		class CustomAttributes
@@ -1212,7 +1212,7 @@ class items
 			position[]={2.3847656,0,-2.3886719};
 			angles[]={0,2.9601502,0};
 		};
-		id=1338;
+		id=1372;
 		type="ACE_ModuleRespawn";
 		class CustomAttributes
 		{
@@ -1265,7 +1265,7 @@ class items
 			position[]={1.2011719,0.030578613,1.4882813};
 			angles[]={0,2.9516044,0};
 		};
-		id=1339;
+		id=1373;
 		type="ACE_ModuleHearing";
 		atlOffset=0.030578613;
 		class CustomAttributes
@@ -1357,7 +1357,7 @@ class items
 			position[]={2.1542969,0.035400391,2.8066406};
 			angles[]={0,2.9601483,0};
 		};
-		id=1340;
+		id=1374;
 		type="ACE_moduleRepairSettings";
 		atlOffset=0.035400391;
 		class CustomAttributes
@@ -1544,7 +1544,7 @@ class items
 			position[]={1.1308594,0.030578613,2.7148438};
 			angles[]={0,2.9516044,0};
 		};
-		id=1341;
+		id=1375;
 		type="ACE_moduleCargoSettings";
 		atlOffset=0.030578613;
 		class CustomAttributes
@@ -1598,7 +1598,7 @@ class items
 			position[]={2.3710938,0,-0.89257813};
 			angles[]={0,2.9601483,0};
 		};
-		id=1342;
+		id=1376;
 		type="ACE_moduleMedicalSettings";
 		class CustomAttributes
 		{
@@ -1879,7 +1879,7 @@ class items
 			position[]={1.0761719,0.034301758,3.7792969};
 			angles[]={0,2.9516044,0};
 		};
-		id=1343;
+		id=1377;
 		type="ace_finger_moduleSettings";
 		atlOffset=0.034301758;
 		class CustomAttributes
@@ -1933,7 +1933,7 @@ class items
 			position[]={2.1835938,0.046142578,3.9238281};
 			angles[]={0,5.8697066,0};
 		};
-		id=1344;
+		id=1378;
 		type="ACEX_ModuleSitting";
 		atlOffset=0.046142578;
 		class CustomAttributes
@@ -1968,7 +1968,7 @@ class items
 			position[]={2.3378906,0,1.5078125};
 			angles[]={0,2.6059163,0};
 		};
-		id=1345;
+		id=1379;
 		type="ACE_ModuleCheckPBOs";
 		class CustomAttributes
 		{
@@ -2040,7 +2040,7 @@ class items
 			position[]={-4.3251953,0.049331665,-5.0371094};
 			angles[]={0,3.2462144,0};
 		};
-		id=1346;
+		id=1380;
 		type="ModuleCurator_F";
 		atlOffset=0.049331665;
 		class CustomAttributes
@@ -2151,7 +2151,7 @@ class items
 			position[]={-4.4638672,0.047027588,-3.8964844};
 			angles[]={0,3.2462144,0};
 		};
-		id=1347;
+		id=1381;
 		type="ModuleCurator_F";
 		atlOffset=0.047027588;
 		class CustomAttributes
@@ -2261,7 +2261,7 @@ class items
 		{
 			position[]={3.2050781,0.038238525,3.9101563};
 		};
-		id=1348;
+		id=1382;
 		type="ace_advanced_throwing_Module";
 		atlOffset=0.038238525;
 		class CustomAttributes
@@ -2371,7 +2371,7 @@ class items
 		{
 			position[]={3.1865234,0.020568848,1.734375};
 		};
-		id=1349;
+		id=1383;
 		type="ACE_moduleRearmSettings";
 		atlOffset=0.020568848;
 		class CustomAttributes
@@ -2424,7 +2424,7 @@ class items
 		{
 			position[]={2.9228516,0.045578003,-5.71875};
 		};
-		id=1350;
+		id=1384;
 		type="DEST_loadoutSup";
 		atlOffset=0.045578003;
 	};
@@ -2435,7 +2435,7 @@ class items
 		{
 			position[]={1.6142578,0.050567627,-5.7636719};
 		};
-		id=1351;
+		id=1385;
 		type="DEST_loadoutNVG";
 		atlOffset=0.050567627;
 	};
@@ -2444,16 +2444,16 @@ class connections
 {
 	class LinkIDProvider
 	{
-		nextID=7;
+		nextID=14;
 	};
 	class Links
 	{
-		items=7;
+		items=14;
 		class Item0
 		{
 			linkID=0;
-			item0=1332;
-			item1=1328;
+			item0=1579;
+			item1=1575;
 			class CustomData
 			{
 				type="Sync";
@@ -2462,8 +2462,8 @@ class connections
 		class Item1
 		{
 			linkID=1;
-			item0=1332;
-			item1=1329;
+			item0=1579;
+			item1=1576;
 			class CustomData
 			{
 				type="Sync";
@@ -2472,8 +2472,8 @@ class connections
 		class Item2
 		{
 			linkID=2;
-			item0=1332;
-			item1=1330;
+			item0=1579;
+			item1=1577;
 			class CustomData
 			{
 				type="Sync";
@@ -2482,8 +2482,8 @@ class connections
 		class Item3
 		{
 			linkID=3;
-			item0=1332;
-			item1=1331;
+			item0=1579;
+			item1=1578;
 			class CustomData
 			{
 				type="Sync";
@@ -2492,8 +2492,8 @@ class connections
 		class Item4
 		{
 			linkID=4;
-			item0=1333;
-			item1=1332;
+			item0=1580;
+			item1=1579;
 			class CustomData
 			{
 				type="Sync";
@@ -2502,8 +2502,8 @@ class connections
 		class Item5
 		{
 			linkID=5;
-			item0=1346;
-			item1=1332;
+			item0=1593;
+			item1=1579;
 			class CustomData
 			{
 				type="Sync";
@@ -2512,8 +2512,78 @@ class connections
 		class Item6
 		{
 			linkID=6;
-			item0=1347;
-			item1=1332;
+			item0=1594;
+			item1=1579;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item7
+		{
+			linkID=7;
+			item0=1366;
+			item1=1362;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item8
+		{
+			linkID=8;
+			item0=1366;
+			item1=1363;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item9
+		{
+			linkID=9;
+			item0=1366;
+			item1=1364;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item10
+		{
+			linkID=10;
+			item0=1366;
+			item1=1365;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item11
+		{
+			linkID=11;
+			item0=1367;
+			item1=1366;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item12
+		{
+			linkID=12;
+			item0=1380;
+			item1=1366;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item13
+		{
+			linkID=13;
+			item0=1381;
+			item1=1366;
 			class CustomData
 			{
 				type="Sync";
