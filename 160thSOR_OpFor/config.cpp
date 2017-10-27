@@ -21,7 +21,7 @@ class CfgPatches
 	{
 		author="160th SOR";
 		url="http://www.160th.net";	
-		version="2.1.4";		
+		version="2.1.5";		
 		units[] = 
 		{
 			#include "4th_Reich\cfgPatches.hpp"
