@@ -8,26 +8,45 @@ class EditorData
 	toggles=1665;
 	class ItemIDProvider
 	{
-		nextID=1779;
+		nextID=1833;
 	};
 	class Camera
 	{
-		pos[]={1663.6049,128.15202,5678.0664};
-		dir[]={0.83386046,-0.5302372,-0.154203};
-		up[]={0.52159309,0.84768069,-0.096452281};
-		aside[]={-0.18185581,1.290784e-006,-0.98342568};
+		pos[]={1862.8119,55.748604,5553.8306};
+		dir[]={0.73762167,-0.65629697,-0.15950716};
+		up[]={0.6416136,0.75432593,-0.1387416};
+		aside[]={-0.21137528,4.9671507e-007,-0.97750705};
 	};
 };
 binarizationWanted=0;
 addons[]=
 {
-
+	"A3_Ui_F",
+	"160th_SOR_Loadouts",
+	"ace_repair",
+	"ace_dragging",
+	"A3_Structures_F_Mil_Helipads",
+	"ace_advanced_fatigue",
+	"A3_Modules_F_Curator_Curator",
+	"ace_nametags",
+	"ace_interaction",
+	"ace_medical",
+	"ace_zeus",
+	"ace_respawn",
+	"ace_hearing",
+	"ace_cargo",
+	"ace_finger",
+	"acex_sitting",
+	"ace_common",
+	"ace_advanced_throwing",
+	"ace_rearm",
+	"160thSOR_Selector"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=21;
+		items=20;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -58,120 +77,113 @@ class AddonsMetaData
 		};
 		class Item4
 		{
-			className="ace_map";
-			name="ACE3 - Map";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item5
-		{
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item6
+		class Item5
 		{
 			className="ace_advanced_fatigue";
 			name="ACE3 - Advanced Fatigue";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item7
+		class Item6
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item8
+		class Item7
 		{
 			className="ace_nametags";
 			name="ACE3 - Name Tags";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item9
+		class Item8
 		{
 			className="ace_interaction";
 			name="ACE3 - Interaction";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item10
+		class Item9
 		{
 			className="ace_medical";
 			name="ACE3 - Medical";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item11
+		class Item10
 		{
 			className="ace_zeus";
 			name="ACE3 - Zeus";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item12
+		class Item11
 		{
 			className="ace_respawn";
 			name="ACE3 - Respawn";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item13
+		class Item12
 		{
 			className="ace_hearing";
 			name="ACE3 - Hearing";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item14
+		class Item13
 		{
 			className="ace_cargo";
 			name="ACE3 - Cargo";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item15
+		class Item14
 		{
 			className="ace_finger";
 			name="ACE3 - Finger";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item16
+		class Item15
 		{
 			className="acex_sitting";
 			name="ACEX - Sitting";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item17
+		class Item16
 		{
 			className="ace_common";
 			name="ACE3 - Common";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item18
+		class Item17
 		{
 			className="ace_advanced_throwing";
 			name="ACE3 - Advanced Throwing";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item19
+		class Item18
 		{
 			className="ace_rearm";
 			name="ACE3 - Rearm";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item20
+		class Item19
 		{
-			className="160_Selector";
-			name="160_Selector";
+			className="160thSOR_Selector";
+			name="160thSOR_Selector";
 			author="destruktoid";
 		};
 	};
@@ -255,7 +267,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=207;
+		items=210;
 		class Item0
 		{
 			dataType="Marker";
@@ -393,7 +405,7 @@ class Mission
 			};
 			id=17;
 			type="SOR_AH64D_AA";
-			atlOffset=0.011474609;
+			atlOffset=-0.14784718;
 		};
 		class Item8
 		{
@@ -465,7 +477,7 @@ class Mission
 			};
 			id=21;
 			type="SOR_UH60M";
-			atlOffset=-4.7683716e-007;
+			atlOffset=0.14973116;
 		};
 		class Item12
 		{
@@ -483,6 +495,7 @@ class Mission
 			};
 			id=22;
 			type="SOR_AH64D_GS";
+			atlOffset=-0.15932178;
 		};
 		class Item13
 		{
@@ -500,7 +513,7 @@ class Mission
 			};
 			id=44;
 			type="SOR_UH60M";
-			atlOffset=-4.7683716e-007;
+			atlOffset=0.14973116;
 		};
 		class Item14
 		{
@@ -518,7 +531,7 @@ class Mission
 			};
 			id=45;
 			type="SOR_UH60M";
-			atlOffset=-4.7683716e-007;
+			atlOffset=0.14973116;
 		};
 		class Item15
 		{
@@ -529,7 +542,6 @@ class Mission
 				angles[]={0,4.9591641,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -539,6 +551,7 @@ class Mission
 			};
 			id=48;
 			type="SOR_A10";
+			atlOffset=1.6823039;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -610,7 +623,6 @@ class Mission
 				angles[]={0,4.9852123,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -620,6 +632,7 @@ class Mission
 			};
 			id=49;
 			type="SOR_A10";
+			atlOffset=1.6823039;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -880,7 +893,7 @@ class Mission
 			};
 			id=234;
 			type="SOR_M_Box_F";
-			atlOffset=-0.0002579689;
+			atlOffset=0.19103909;
 		};
 		class Item25
 		{
@@ -899,7 +912,7 @@ class Mission
 			};
 			id=235;
 			type="SOR_M_Box_F";
-			atlOffset=0.00031137466;
+			atlOffset=0.19160604;
 		};
 		class Item26
 		{
@@ -1690,6 +1703,7 @@ class Mission
 			};
 			id=375;
 			type="SOR_AH64D_CS_W";
+			atlOffset=-0.15932178;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2372,13 +2386,12 @@ class Mission
 				angles[]={0,1.8235557,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 			};
 			id=1420;
 			type="SOR_UH60M_MEV";
-			atlOffset=-0.11419725;
+			atlOffset=0.79971981;
 		};
 		class Item82
 		{
@@ -2688,7 +2701,7 @@ class Mission
 			};
 			id=1435;
 			type="SOR_TROOP_TRUCK";
-			atlOffset=-0.0029153824;
+			atlOffset=-0.16124964;
 		};
 		class Item93
 		{
@@ -2705,7 +2718,7 @@ class Mission
 			};
 			id=1436;
 			type="SOR_TROOP_TRUCK";
-			atlOffset=-0.0078392029;
+			atlOffset=-0.16032124;
 		};
 		class Item94
 		{
@@ -2722,7 +2735,7 @@ class Mission
 			};
 			id=1437;
 			type="SOR_TROOP_TRUCK";
-			atlOffset=-0.0081071854;
+			atlOffset=-0.16056681;
 		};
 		class Item95
 		{
@@ -2739,7 +2752,7 @@ class Mission
 			};
 			id=1438;
 			type="SOR_TROOP_TRUCK";
-			atlOffset=-0.0027279854;
+			atlOffset=-0.15518332;
 		};
 		class Item96
 		{
@@ -20339,6 +20352,7 @@ class Mission
 			};
 			id=1667;
 			type="SOR_M_Box_F";
+			atlOffset=0.19129086;
 		};
 		class Item153
 		{
@@ -20357,7 +20371,7 @@ class Mission
 			};
 			id=1668;
 			type="SOR_M_Box_F";
-			atlOffset=9.727478e-005;
+			atlOffset=0.19138813;
 		};
 		class Item154
 		{
@@ -20485,6 +20499,7 @@ class Mission
 			};
 			id=1675;
 			type="SOR_M_Box_F";
+			atlOffset=0.19129086;
 		};
 		class Item161
 		{
@@ -21547,14 +21562,64 @@ class Mission
 		};
 		class Item182
 		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2085.4045,9.1827192,5577.3105};
+				angles[]={0,0.20254788,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1804;
+			type="SOR_Eng_APC_Tracked_01";
+		};
+		class Item183
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2058.7341,9.3534088,5585.6177};
+				angles[]={0.0024897563,1.7624147,6.2806959};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1806;
+			type="SOR_APC_WD";
+			atlOffset=-1.5735626e-005;
+		};
+		class Item184
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2064.512,9.2516384,5640.2534};
+				angles[]={0.027492445,0.21288529,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1807;
+			type="SOR_Leopard_W";
+			atlOffset=-0.00095748901;
+		};
+		class Item185
+		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1922.0778,5.9200792,5549.3398};
+				position[]={1918.8539,6.0712643,5544.833};
 			};
-			id=1754;
+			id=1808;
 			type="ace_advanced_fatigue_moduleSettings";
-			atlOffset=0.0048394203;
+			atlOffset=0.022251129;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -21572,7 +21637,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=0.69999999;
+							value=0.60000002;
 						};
 					};
 				};
@@ -21655,17 +21720,17 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item183
+		class Item186
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1914.1383,5.9746895,5548.7969};
+				position[]={1910.9144,6.0037003,5544.29};
 				angles[]={0,0.18120271,0};
 			};
-			id=1755;
+			id=1809;
 			type="ModuleCurator_F";
-			atlOffset=0.071214676;
+			atlOffset=0.077178955;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -21766,17 +21831,17 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item184
+		class Item187
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1914.1559,5.9071956,5550.709};
+				position[]={1910.932,5.9594474,5546.2021};
 				angles[]={0,0.18120271,0};
 			};
-			id=1756;
+			id=1810;
 			type="ModuleCurator_F";
-			atlOffset=0.04984808;
+			atlOffset=0.06485033;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -21877,17 +21942,17 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item185
+		class Item188
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1914.1451,5.9879904,5546.8945};
+				position[]={1910.9213,6.0103602,5542.3877};
 				angles[]={0,0.18120855,0};
 			};
-			id=1757;
+			id=1811;
 			type="ModuleCurator_F";
-			atlOffset=0.048340797;
+			atlOffset=0.055840969;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -21988,17 +22053,17 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item186
+		class Item189
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1914.1705,6.0169568,5545.3301};
+				position[]={1910.9467,6.0317636,5540.8232};
 				angles[]={0,0.18120271,0};
 			};
-			id=1758;
+			id=1812;
 			type="ModuleCurator_F";
-			atlOffset=0.045573711;
+			atlOffset=0.055379868;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -22099,17 +22164,17 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item187
+		class Item190
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1915.942,6.0242953,5546.4238};
+				position[]={1912.7181,6.0523038,5541.917};
 				angles[]={0,0.18119842,0};
 			};
-			id=1759;
+			id=1813;
 			type="ModuleCuratorSetCoefs_F";
-			atlOffset=0.043786526;
+			atlOffset=0.048491001;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -22267,17 +22332,17 @@ class Mission
 				nAttributes=8;
 			};
 		};
-		class Item188
+		class Item191
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1914.2037,6.0500002,5543.707};
+				position[]={1910.9799,6.1200266,5539.2002};
 				angles[]={0,0.18120271,0};
 			};
-			id=1760;
+			id=1814;
 			type="ModuleCurator_F";
-			atlOffset=0.047039986;
+			atlOffset=-0.055670738;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -22378,17 +22443,17 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item189
+		class Item192
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1920.2115,6.0807281,5545.502};
+				position[]={1916.9877,6.1193385,5540.9951};
 				angles[]={0,2.9516044,0};
 			};
-			id=1761;
+			id=1815;
 			type="ACE_ModuleNameTags";
-			atlOffset=0.031824589;
+			atlOffset=0.039327145;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -22489,17 +22554,17 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item190
+		class Item193
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1920.276,6.1113434,5543.9551};
+				position[]={1917.0521,6.1482983,5539.4482};
 				angles[]={0,2.9516044,0};
 			};
-			id=1762;
+			id=1816;
 			type="ACE_ModuleInteraction";
-			atlOffset=0.032049656;
+			atlOffset=-0.013173103;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -22521,20 +22586,39 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				class Attribute1
+				{
+					property="ACE_ModuleInteraction_DisableNegativeRating";
+					expression="_this setVariable ['DisableNegativeRating',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
 			};
 		};
-		class Item191
+		class Item194
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1921.2262,6.0193462,5547.0625};
+				position[]={1918.0023,6.100481,5542.5557};
 				angles[]={0,2.9601502,0};
 			};
-			id=1763;
+			id=1817;
 			type="ACE_moduleReviveSettings";
-			atlOffset=0.0096144676;
+			atlOffset=0.034619331;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -22597,17 +22681,17 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item192
+		class Item195
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1920.1022,6.0482688,5546.8398};
+				position[]={1916.8783,6.0940518,5542.333};
 				angles[]={0,2.9516022,0};
 			};
-			id=1764;
+			id=1818;
 			type="ace_zeus_moduleSettings";
-			atlOffset=0.025576591;
+			atlOffset=0.034655094;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -22727,17 +22811,17 @@ class Mission
 				nAttributes=6;
 			};
 		};
-		class Item193
+		class Item196
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1921.2594,6.0567498,5544.2227};
+				position[]={1918.0355,6.0994406,5539.7158};
 				angles[]={0,2.9601502,0};
 			};
-			id=1765;
+			id=1819;
 			type="ACE_ModuleRespawn";
-			atlOffset=-0.012499809;
+			atlOffset=-0.034838676;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -22781,17 +22865,17 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item194
+		class Item197
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1920.0758,5.9979534,5548.0996};
+				position[]={1916.8519,6.0756226,5543.5928};
 				angles[]={0,2.9516044,0};
 			};
-			id=1766;
+			id=1820;
 			type="ACE_ModuleHearing";
-			atlOffset=0.0030751228;
+			atlOffset=0.031919003;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -22873,17 +22957,17 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item195
+		class Item198
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1921.0289,5.93574,5549.418};
+				position[]={1917.8051,6.0659909,5544.9111};
 				angles[]={0,2.9601483,0};
 			};
-			id=1767;
+			id=1821;
 			type="ACE_moduleRepairSettings";
-			atlOffset=0.0078926086;
+			atlOffset=0.031650543;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -23060,17 +23144,17 @@ class Mission
 				nAttributes=9;
 			};
 		};
-		class Item196
+		class Item199
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1920.0055,5.9499459,5549.3262};
+				position[]={1916.7816,6.0502124,5544.8193};
 				angles[]={0,2.9516044,0};
 			};
-			id=1768;
+			id=1822;
 			type="ACE_moduleCargoSettings";
-			atlOffset=0.0030751228;
+			atlOffset=0.026829243;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -23114,17 +23198,17 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item197
+		class Item200
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1921.2457,6.0268965,5545.7188};
+				position[]={1918.0219,6.0786839,5541.2119};
 				angles[]={0,2.9601483,0};
 			};
-			id=1769;
+			id=1823;
 			type="ACE_moduleMedicalSettings";
-			atlOffset=-0.012499809;
+			atlOffset=-0.003247261;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -23396,17 +23480,17 @@ class Mission
 				nAttributes=14;
 			};
 		};
-		class Item198
+		class Item201
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1919.9508,5.9119205,5550.3906};
+				position[]={1916.7269,6.0319624,5545.8838};
 				angles[]={0,2.9516044,0};
 			};
-			id=1770;
+			id=1824;
 			type="ace_finger_moduleSettings";
-			atlOffset=0.0077915192;
+			atlOffset=0.030551434;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -23450,17 +23534,17 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item199
+		class Item202
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1921.0582,5.9102583,5550.5352};
+				position[]={1917.8344,6.0547557,5546.0283};
 				angles[]={0,5.8697066,0};
 			};
-			id=1771;
+			id=1825;
 			type="ACEX_ModuleSitting";
-			atlOffset=0.027537823;
+			atlOffset=0.042392731;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -23485,17 +23569,17 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item200
+		class Item203
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1921.1246,5.9767551,5548.3203};
-				angles[]={0,2.6059151,0};
+				position[]={1917.9886,6.0588622,5543.6123};
+				angles[]={0,2.6059163,0};
 			};
-			id=1772;
+			id=1826;
 			type="ACE_ModuleCheckPBOs";
-			atlOffset=0.0064373016;
+			atlOffset=0.0010962486;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -23532,7 +23616,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[""sa_advancedtowing"",""sa_advancedslingloading"",""cz75_nochain"",""headrangeplus"",""ar_advancedrappelling"",""ASM"",""ares"",""marmadebug"",""jsrs_environment"",""viewdistance_taw""]";
+							value="[""sa_advancedtowing"",""sa_advancedslingloading"",""cz75_nochain"",""headrangeplus"",""ar_advancedrappelling"",""ASM"",""ares"",""marmadebug"",""JSRS_SOUNDMOD_Bullethits"",  ""JSRS_SOUNDMOD_Environment"",  ""JSRS_SOUNDMOD_GlobalFilters"",  ""JSRS_SOUNDMOD_Movement"",  ""JSRS_SOUNDMOD_Sonic_Cracks"",  ""JSRS_SOUNDMOD_Explosions"",  ""JSRS_SOUNDMOD_FrameWork"",  ""JSRS_SOUNDMOD_AH99_Blackfoot"",  ""JSRS_SOUNDMOD_AH9_Pawnee"",  ""JSRS_SOUNDMOD_UAV_1"",  ""JSRS_SOUNDMOD_CH67_Huron"",  ""JSRS_SOUNDMOD_CH49_Mohawk"",  ""JSRS_SOUNDMOD_Mi290_Taru"",  ""JSRS_SOUNDMOD_Mi48_Kajman"",  ""JSRS_SOUNDMOD_UAV_2"",  ""JSRS_SOUNDMOD_Po30_Orca"",  ""JSRS_SOUNDMOD_UH80_GhostHawk"",  ""JSRS_SOUNDMOD_WY55_Hellcat"",  ""JSRS_SOUNDMOD_Armed_Boat"",  ""JSRS_SOUNDMOD_Rubber_Boat"",  ""JSRS_SOUNDMOD_Speed_Boat"",  ""JSRS_SOUNDMOD_2S9_Sorcher"",  ""JSRS_SOUNDMOD_BTRK_Kamysh"",  ""JSRS_SOUNDMOD_FV720_Mora"",  ""JSRS_SOUNDMOD_IFV6a_Cheetah"",  ""JSRS_SOUNDMOD_IFV6c_Panther"",  ""JSRS_SOUNDMOD_M2A1_Slammer"",  ""JSRS_SOUNDMOD_M4_Scorcher"",  ""JSRS_SOUNDMOD_M5_Sandstorm"",  ""JSRS_SOUNDMOD_MBT52_Kuma"",  ""JSRS_SOUNDMOD_T100_Varsuk"",  ""JSRS_SOUNDMOD_ZSU39_Tigris"",  ""JSRS_SOUNDMOD_AFV4_Gorgon"",  ""JSRS_SOUNDMOD_AMV7_Marshal"",  ""JSRS_SOUNDMOD_Hatchback"",  ""JSRS_SOUNDMOD_truck1"",  ""JSRS_SOUNDMOD_Hunter"",  ""JSRS_SOUNDMOD_Ifrit"",  ""JSRS_SOUNDMOD_MSE3_Marid"",  ""JSRS_SOUNDMOD_Offroad"",  ""JSRS_SOUNDMOD_Quadbike"",  ""JSRS_SOUNDMOD_Strider"",  ""JSRS_SOUNDMOD_SUV"",  ""JSRS_SOUNDMOD_Van"",  ""JSRS_SOUNDMOD_Truck3"",  ""JSRS_SOUNDMOD_230mm_Titan"",  ""JSRS_SOUNDMOD_Air_Weapons"",  ""JSRS_SOUNDMOD_35mm_Autocannon"",  ""JSRS_SOUNDMOD_120mm_Cannon"",  ""JSRS_SOUNDMOD_Gatling_30mm_Plane_CAS_01"",  ""JSRS_SOUNDMOD_Cannon_30mm_Plane_CAS_02"",  ""JSRS_SOUNDMOD_CTWS_Autocannon"",  ""JSRS_SOUNDMOD_DAGR"",  ""JSRS_SOUNDMOD_DAR"",  ""JSRS_SOUNDMOD_30mm_Cannon"",  ""JSRS_SOUNDMOD_Gatling_Weapons"",  ""JSRS_SOUNDMOD_HMGS"",  ""JSRS_SOUNDMOD_155mm_AMOS"",  ""JSRS_SOUNDMOD_LMGCoax"",  ""JSRS_SOUNDMOD_LMGRCWS"",  ""JSRS_SOUNDMOD_GMG20"",  ""JSRS_SOUNDMOD_MORTAR"",  ""JSRS_SOUNDMOD_GMG40"",  ""JSRS_SOUNDMOD_Skalpel_ATGM"",  ""JSRS_SOUNDMOD_Skyfire"",  ""JSRS_SOUNDMOD_Veh_Titan"",  ""JSRS_SOUNDMOD_4Five45"",  ""JSRS_SOUNDMOD_ACPC"",  ""JPEX_MX"",  ""JSRS_SOUNDMOD_M6"",  ""JSRS_SOUNDMOD_Khaybar"",  ""JSRS_SOUNDMOD_M320R"",  ""JSRS_SOUNDMOD_EBR"",  ""JSRS_SOUNDMOD_FS2000"",  ""JSRS_SOUNDMOD_M200"",  ""JSRS_SOUNDMOD_P07"",  ""JSRS_SOUNDMOD_PCML"",  ""JSRS_SOUNDMOD_PDW"",  ""JSRS_SOUNDMOD_Rahim"",  ""JSRS_SOUNDMOD_Rook40"",  ""JSRS_SOUNDMOD_RPG32"",  ""JSRS_SOUNDMOD_Scorpian"",  ""JSRS_SOUNDMOD_Titan_MPRL"",  ""JSRS_SOUNDMOD_TRG21"",  ""JSRS_SOUNDMOD_UGL"",  ""JSRS_SOUNDMOD_SDAR"",  ""JSRS_SOUNDMOD_Vector"",  ""JSRS_SOUNDMOD_Zafir"",  ""JSRS_SOUNDMOD_Zubr45"",  ""JSRS_SOUNDMOD_ReloadingSounds"",  ""JSRS_SOUNDMOD_ASP1"",  ""JSRS_SOUNDMOD_Cyrus"",  ""JSRS_SOUNDMOD_MAR10"",  ""JSRS_SOUNDMOD_Mk1EMR"",  ""JSRS_SOUNDMOD_Mk14"",  ""JSRS_SOUNDMOD_Navid"",  ""JSRS_SOUNDMOD_SPMG"",  ""JSRS_SOUNDMOD_Movement_Apex"",  ""JSRS_SOUNDMOD_ReloadingSoundsApex"",  ""JSRS_SOUNDMOD_KH3A_Fenghuan"",  ""JSRS_SOUNDMOD_MQ12_Falcon"",  ""JSRS_SOUNDMOD_V44X_Blackfish"",  ""JSRS_SOUNDMOD_Y32_XIAN"",  ""JSRS_SOUNDMOD_MB4WD"",  ""JSRS_SOUNDMOD_Prowler"",  ""JSRS_SOUNDMOD_Truck2"",  ""JSRS_SOUNDMOD_AK12"",  ""JSRS_SOUNDMOD_AKM"",  ""JSRS_SOUNDMOD_AKS"",  ""JSRS_SOUNDMOD_CMR"",  ""JSRS_SOUNDMOD_CTAR"",  ""JSRS_SOUNDMOD_LIM85"",  ""JSRS_SOUNDMOD_PM9M"",  ""JSRS_SOUNDMOD_Protector"",  ""JSRS_SOUNDMOD_RPG7V"",  ""JSRS_SOUNDMOD_SPAR"",  ""JSRS_SOUNDMOD_Type115""]";
 						};
 					};
 				};
@@ -23558,17 +23642,17 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item201
+		class Item204
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1914.5494,6.091578,5541.5742};
+				position[]={1911.3256,6.6526999,5537.0674};
 				angles[]={0,3.2462144,0};
 			};
-			id=1773;
+			id=1827;
 			type="ModuleCurator_F";
-			atlOffset=0.05057621;
+			atlOffset=-0.053168297;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -23669,17 +23753,17 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item202
+		class Item205
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1914.4108,6.0697417,5542.7148};
+				position[]={1911.1869,6.3685942,5538.208};
 				angles[]={0,3.2462144,0};
 			};
-			id=1774;
+			id=1828;
 			type="ModuleCurator_F";
-			atlOffset=0.048275948;
+			atlOffset=-0.055471897;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -23780,16 +23864,16 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item203
+		class Item206
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1922.0797,5.9027071,5550.5215};
+				position[]={1918.8558,6.0598936,5546.0146};
 			};
-			id=1775;
+			id=1829;
 			type="ace_advanced_throwing_Module";
-			atlOffset=0.025743961;
+			atlOffset=0.034488678;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -23890,16 +23974,16 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item204
+		class Item207
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1922.0612,5.948329,5548.3457};
+				position[]={1918.8373,6.0855074,5543.8389};
 			};
-			id=1776;
+			id=1830;
 			type="ACE_moduleRearmSettings";
-			atlOffset=-0.0069255829;
+			atlOffset=0.01883316;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -23943,38 +24027,38 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item205
+		class Item208
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1921.7975,6.1508732,5540.8926};
+				position[]={1918.5736,6.5263848,5536.3857};
 			};
-			id=1777;
+			id=1831;
 			type="DEST_loadoutSup";
-			atlOffset=0.043073654;
+			atlOffset=-0.054421902;
 		};
-		class Item206
+		class Item209
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1920.4889,6.1529403,5540.8477};
+				position[]={1917.265,6.5877461,5536.3408};
 			};
-			id=1778;
+			id=1832;
 			type="DEST_loadoutNVG";
-			atlOffset=0.048075676;
+			atlOffset=-0.049432278;
 		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=26;
+			nextID=29;
 		};
 		class Links
 		{
-			items=26;
+			items=29;
 			class Item0
 			{
 				linkID=0;
@@ -24168,8 +24252,8 @@ class Mission
 			class Item19
 			{
 				linkID=19;
-				item0=1759;
-				item1=1755;
+				item0=1804;
+				item1=147;
 				class CustomData
 				{
 					type="Sync";
@@ -24178,8 +24262,8 @@ class Mission
 			class Item20
 			{
 				linkID=20;
-				item0=1759;
-				item1=1756;
+				item0=1806;
+				item1=1714;
 				class CustomData
 				{
 					type="Sync";
@@ -24188,8 +24272,8 @@ class Mission
 			class Item21
 			{
 				linkID=21;
-				item0=1759;
-				item1=1757;
+				item0=1807;
+				item1=147;
 				class CustomData
 				{
 					type="Sync";
@@ -24198,8 +24282,8 @@ class Mission
 			class Item22
 			{
 				linkID=22;
-				item0=1759;
-				item1=1758;
+				item0=1813;
+				item1=1809;
 				class CustomData
 				{
 					type="Sync";
@@ -24208,8 +24292,8 @@ class Mission
 			class Item23
 			{
 				linkID=23;
-				item0=1760;
-				item1=1759;
+				item0=1813;
+				item1=1810;
 				class CustomData
 				{
 					type="Sync";
@@ -24218,8 +24302,8 @@ class Mission
 			class Item24
 			{
 				linkID=24;
-				item0=1773;
-				item1=1759;
+				item0=1813;
+				item1=1811;
 				class CustomData
 				{
 					type="Sync";
@@ -24228,8 +24312,38 @@ class Mission
 			class Item25
 			{
 				linkID=25;
-				item0=1774;
-				item1=1759;
+				item0=1813;
+				item1=1812;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item26
+			{
+				linkID=26;
+				item0=1814;
+				item1=1813;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item27
+			{
+				linkID=27;
+				item0=1827;
+				item1=1813;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item28
+			{
+				linkID=28;
+				item0=1828;
+				item1=1813;
 				class CustomData
 				{
 					type="Sync";
