@@ -7,13 +7,13 @@
 //////////////////////////////
 //SOR Nam Faction Units//
 //////////////////////////////		
-class I_C_Soldier_Bandit_2_F;
+class O_Soldier_GL_F;
 
-class SOR_Nam_VC : I_C_Soldier_Bandit_2_F
+class SOR_Nam_VC : O_Soldier_GL_F
 {
 	editorCategory = "SOR_Cat_Faction_VC";
 	faction = "SOR_Faction_VC";
-	identityTypes[] = {"LanguageCHI_F","Head_Asian","G_CIVIL_male"};
+	identityTypes[] = {"LanguageCHI_F","Head_Asian","NoGlasses"};
 	backpack = "";
 	side = 0;
 	allowedFacewear[] = {};

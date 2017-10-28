@@ -584,6 +584,144 @@ class CfgGroups
 						position[] = {0, -6, 0};
 					};
 				};
+				class SOR_VC_Nam
+				{
+					name = "VC Team";
+					faction = "SOR_Faction_VC";
+					side = 0;
+					rarityGroup = 0.75;	
+					
+					class Unit0 
+					{
+						side = 0;
+						vehicle = "SOR_Nam_VC";
+						rank = SERGEANT;
+						position[] = {0, 0, 0};
+					};						
+					class Unit1 
+					{
+						side = 0;
+						vehicle = "SOR_Nam_VC_1";
+						rank = CORPORAL;
+						position[] = {-2, 0, 0};
+					};						
+					class Unit2 
+					{
+						side = 0;
+						vehicle = "SOR_Nam_VC_2";
+						rank = PRIVATE;
+						position[] = {-4, 0, 0};
+					};
+					class Unit3 						
+					{
+						side = 0;
+						vehicle = "SOR_Nam_VC_3";
+						rank = PRIVATE;
+						position[] = {-6, 0, 0};
+					};		
+				};
+			};	
+		};		
+	};
+
+	
+	class EAST
+	{
+		class SOR_Groups_Nam_Enemy
+		{
+			name = "160th Infantry (Vietnam)";
+			
+			class SOR_InfGroups_Nam_Enemy
+			{
+				name = "SOR Infantry";
+				aliveCategory = "Infantry";			
+				
+				class SOR_NVA_Nam
+				{
+					name = "NVA Team";
+					faction = "SOR_Faction_VC";
+					side = 1;
+					rarityGroup = 0.75;	
+					
+					class Unit0 
+					{
+						side = 0;
+						vehicle = "SOR_Nam_NVA";
+						rank = SERGEANT;
+						position[] = {0, 0, 0};
+					};						
+					class Unit1 
+					{
+						side = 0;
+						vehicle = "SOR_Nam_NVA_2";
+						rank = CORPORAL;
+						position[] = {-2, 0, 0};
+					};						
+					class Unit2 
+					{
+						side = 0;
+						vehicle = "SOR_Nam_NVA_3";
+						rank = PRIVATE;
+						position[] = {-4, 0, 0};
+					};
+					class Unit3 						
+					{
+						side = 0;
+						vehicle = "SOR_Nam_NVA_4";
+						rank = PRIVATE;
+						position[] = {-6, 0, 0};
+					};	
+					class Unit4						
+					{
+						side = 0;
+						vehicle = "SOR_Nam_NVA_5";
+						rank = PRIVATE;
+						position[] = {-8, 0, 0};
+					};	
+				};
+				class SOR_VC_Nam
+				{
+					name = "VC Team";
+					faction = "SOR_Faction_VC";
+					side = 1;
+					rarityGroup = 0.75;	
+					
+					class Unit0 
+					{
+						side = 0;
+						vehicle = "SOR_Nam_VC";
+						rank = SERGEANT;
+						position[] = {0, 0, 0};
+					};						
+					class Unit1 
+					{
+						side = 0;
+						vehicle = "SOR_Nam_VC_1";
+						rank = CORPORAL;
+						position[] = {-2, 0, 0};
+					};						
+					class Unit2 
+					{
+						side = 0;
+						vehicle = "SOR_Nam_VC_2";
+						rank = PRIVATE;
+						position[] = {-4, 0, 0};
+					};
+					class Unit3 						
+					{
+						side = 0;
+						vehicle = "SOR_Nam_VC_3";
+						rank = PRIVATE;
+						position[] = {-6, 0, 0};
+					};	
+					class Unit4						
+					{
+						side = 0;
+						vehicle = "SOR_Nam_VC";
+						rank = PRIVATE;
+						position[] = {-8, 0, 0};
+					};	
+				};
 			};
 		};
 	};

@@ -48,7 +48,7 @@ class SOR_MOG_Nam: rhsgref_nat_ural
 		mag_xx(rhs_mag_an_m8hc,40)
 		mag_xx(1Rnd_SmokeGreen_Grenade_shell,40)
 	};
-	class TransportBackpacks{};};	
+	class TransportBackpacks{};	
 };
 class SOR_MOG_open_Nam: rhsgref_nat_ural_open
 {

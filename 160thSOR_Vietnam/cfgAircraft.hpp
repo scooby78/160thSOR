@@ -168,7 +168,6 @@ class SOR_HUEY_medevac: UH1H_Medevac
 	};
 	class TransportBackpacks
 	{
-		item_xx(SOR_PJMedicPack_Nam,2)
 	};
 	armorStructural = 5; // Was 5	
 	fuelCapacity = 200; //was fuelCapacity = 236;

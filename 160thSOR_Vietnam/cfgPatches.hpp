@@ -78,6 +78,8 @@ class CfgPatches
 			"SOR_NVA_ZSU",
 			"SOR_NVA_Ural",
 			"SOR_NVA_Ural_open",
+			"SOR_VC_Nam",
+			"SOR_NVA_Nam",
 			"SOR_PJ_Pack_Box_F_Nam",
 			"SOR_A_Box_F_Nam",
 			"SOR_M_Box_F_Nam",
