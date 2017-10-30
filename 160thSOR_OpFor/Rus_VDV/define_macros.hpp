@@ -60,13 +60,13 @@
 								"ACE_MapTools",\
 								"ACE_Flashlight_MX991"
 						
-#define RUS_VDV_Standard_Mags 	"rhs_30Rnd_545x39_AK_green",\
-								"rhs_30Rnd_545x39_AK_green",\
-								"rhs_30Rnd_545x39_AK_green",\
-								"rhs_30Rnd_545x39_AK_green",\
-								"rhs_30Rnd_545x39_AK_green",\
-								"rhs_30Rnd_545x39_AK_green",\
-								"rhs_30Rnd_545x39_AK_green",\
+#define RUS_VDV_Standard_Mags 	"30Rnd_545x39_Mag_Green_F",\
+								"30Rnd_545x39_Mag_Green_F",\
+								"30Rnd_545x39_Mag_Green_F",\
+								"30Rnd_545x39_Mag_Green_F",\
+								"30Rnd_545x39_Mag_Green_F",\
+								"30Rnd_545x39_Mag_Green_F",\
+								"30Rnd_545x39_Mag_Green_F",\
 								"rhs_mag_mk3a2",\
 								"rhs_mag_mk3a2",\
 								"rhs_mag_rdg2_white",\
@@ -86,13 +86,13 @@
 								"1Rnd_HE_Grenade_shell",\
 								"1Rnd_HE_Grenade_shell"		
 						
-#define RUS_VDV_SL_Mags	 		"rhs_30Rnd_545x39_AK_green",\
-								"rhs_30Rnd_545x39_AK_green",\
-								"rhs_30Rnd_545x39_AK_green",\
-								"rhs_30Rnd_545x39_AK_green",\
-								"rhs_30Rnd_545x39_AK_green",\
-								"rhs_30Rnd_545x39_AK_green",\
-								"rhs_30Rnd_545x39_AK_green",\
+#define RUS_VDV_SL_Mags	 		"30Rnd_545x39_Mag_Green_F",\
+								"30Rnd_545x39_Mag_Green_F",\
+								"30Rnd_545x39_Mag_Green_F",\
+								"30Rnd_545x39_Mag_Green_F",\
+								"30Rnd_545x39_Mag_Green_F",\
+								"30Rnd_545x39_Mag_Green_F",\
+								"30Rnd_545x39_Mag_Green_F",\
 								"rhs_mag_mk3a2",\
 								"rhs_mag_mk3a2",\
 								"rhs_mag_rdg2_white",\
@@ -100,12 +100,12 @@
 								"rhs_mag_rdg2_white",\
 								"rhs_mag_rdg2_white"
 						
-#define RUS_VDV_Recon_Mags		"rhs_30Rnd_545x39_AK_green",\
-								"rhs_30Rnd_545x39_AK_green",\
-								"rhs_30Rnd_545x39_AK_green",\
-								"rhs_30Rnd_545x39_AK_green",\
-								"rhs_30Rnd_545x39_AK_green",\
-								"rhs_30Rnd_545x39_AK_green",\
+#define RUS_VDV_Recon_Mags		"30Rnd_545x39_Mag_Green_F",\
+								"30Rnd_545x39_Mag_Green_F",\
+								"30Rnd_545x39_Mag_Green_F",\
+								"30Rnd_545x39_Mag_Green_F",\
+								"30Rnd_545x39_Mag_Green_F",\
+								"30Rnd_545x39_Mag_Green_F",\
 								"rhs_mag_mk3a2",\
 								"rhs_mag_mk3a2",\
 								"rhs_mag_rdg2_black",\
