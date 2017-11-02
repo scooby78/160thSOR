@@ -109,6 +109,12 @@ while {SOR_GRPSPWN_ACTIVE && SOR_ScriptThrottleKill && (alive _Group_Start_Objec
 		sleep (floor(random 20));
 	};
 };
+
+if ((_Group_Start_Object isKindOf "SOR_INV_Garbage_VDV_AI") || (_Group_Start_Object isKindOf "SOR_INV_Garbage_ISIS") || (_Group_Start_Object isKindOf "SOR_INV_Garbage_Reich")) then
+{
+	deleteVehicle _Group_Start_Object;
+	diag_log format ["SOR Group Spawner Script - %1 - Deleted.....", _Group_Start_Object];
+};
 	
 diag_log format ["SOR Group Spawner Script - %1 - Ended.....", _Group_Start_Object];
 if (SOR_DEBUG) then {systemChat format ["%1 - L0 - Script End", _Group_Start_Object];};	
