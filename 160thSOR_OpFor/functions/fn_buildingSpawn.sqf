@@ -110,7 +110,7 @@ while {SOR_GRPSPWN_ACTIVE && SOR_ScriptThrottleKill && (alive _Group_Start_Objec
 	};
 };
 
-if ((_Group_Start_Object isKindOf "SOR_INV_Garbage_VDV_AI") || (_Group_Start_Object isKindOf "SOR_INV_Garbage_ISIS") || (_Group_Start_Object isKindOf "SOR_INV_Garbage_Reich")) then
+if (_Group_Start_Object isKindOf "Land_Garbage_square3_F") then
 {
 	deleteVehicle _Group_Start_Object;
 	diag_log format ["SOR Group Spawner Script - %1 - Deleted.....", _Group_Start_Object];
