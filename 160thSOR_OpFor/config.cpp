@@ -137,7 +137,7 @@ class UniformSlotInfo
 { 
 	#include "4th_Reich\UniformSlotInfo.hpp"  
 	#include "SOR_ISIS\UniformSlotInfo.hpp"  	
-	#include "SOR_PMC\UniformSlotInfo.hpp"  
+ 
 }; 
 
 class CfgEditorCategories
@@ -251,8 +251,13 @@ class CfgGroups
 		#include "Rus_VDV\CfgGroups.hpp"
 		#include "4th_Reich\CfgGroups.hpp"
 		#include "SOR_ISIS\CfgGroups.hpp"
-		#include "SOR_PMC\CfgGroups.hpp"
+
 	};
+	
+	class indep
+	{
+		#include "SOR_PMC\CfgGroups.hpp"
+	};	
 };
 
 class CfgVehicleClasses

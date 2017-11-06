@@ -1,225 +1,302 @@
 /*
-	Name: PMC
+	Name: SOR_FACTION_PMC Mod
 	Author: Yettie
 	Date: 25/04/17
 	Description: CfgGroups.hpp
 */
-
-
-		class PMC_groups
+class PMC_groups
+{
+	name = "160th AI PMC";
+	class Infantry
+	{
+		name = "Infantry";
+		class PMC_FT_D
 		{
-			name = "PMC";
-			class Infantry
+			name = "Squad Desert";
+			side = 2;
+			faction = "SOR_FACTION_PMC";
+			class Unit0
 			{
-				name = "Infantry";
-				class PMC_SQD_D
-				{
-					name = "Squad Desert";
-					side = 2;
-					faction = "SOR_FACTION_PMC";
-					class Unit0
-					{
-						side = 2;
-						vehicle = "PMC_Commander_D";
-						rank = "SERGEANT";
-						position[] = {0,0,0};
-					};
-					class Unit1
-					{
-						side = 2;
-						vehicle = "PMC_Grenadier_D";
-						rank = "SERGEANT";
-						position[] = {5,-5,0};
-					};
-					class Unit2
-					{
-						side = 2;
-						vehicle = "PMC_Gunner_D";
-						rank = "CORPORAL";
-						position[] = {-5,-5,0};
-					};
-					class Unit3
-					{
-						side = 2;
-						vehicle = "PMC_AT_Rifleman_D";
-						rank = "PRIVATE";
-						position[] = {10,-10,0};
-					};
-					class Unit4
-					{
-						side = 2;
-						vehicle = "PMC_MM_D";
-						rank = "PRIVATE";
-						position[] = {-10,-10,0};
-					};
-					class Unit5
-					{
-						side = 2;
-						vehicle = "PMC_Soldier_D";
-						rank = "CORPORAL";
-						position[] = {15,-15,0};
-					};
-						class Unit6
-					{
-						side = 2;
-						vehicle = "PMC_Soldier2_D";
-						rank = "PRIVATE";
-						position[] = {20,-20,0};
-					};
-						class Unit7
-					{
-						side = 2;
-						vehicle = "PMC_Soldier3_D";
-						rank = "PRIVATE";
-						position[] = {-20,-20,0};
-					};
-					class Unit8
-					{
-						side = 2;
-						vehicle = "PMC_Sniper_D";
-						rank = "CORPORAL";
-						position[] = {-15,-15,0};
-					};
+				side = 2;
+				vehicle = "PMC_Commander_D";
+				rank = "SERGEANT";
+				position[] = {0,0,0};
+			};
+			class Unit1
+			{
+				side = 2;
+				vehicle = "PMC_Grenadier_D";
+				rank = "SERGEANT";
+				position[] = {5,-5,0};
+			};
+			class Unit2
+			{
+				side = 2;
+				vehicle = "PMC_AT_Rifleman_D";
+				rank = "CORPORAL";
+				position[] = {-5,-5,0};
+			};
+			class Unit3
+			{
+				side = 2;
+				vehicle = "PMC_Gunner_D";
+				rank = "PRIVATE";
+				position[] = {10,-10,0};
+			};
+			class Unit4
+			{
+				side = 2;
+				vehicle = "PMC_Grenadier_D";
+				rank = "PRIVATE";
+				position[] = {-10,-10,0};
+			};
+			class Unit5
+			{
+				side = 2;
+				vehicle = "PMC_Commander_D";
+				rank = "CORPORAL";
+				position[] = {15,-15,0};
+			};
+				class Unit6
+			{
+				side = 2;
+				vehicle = "PMC_MM_D";
+				rank = "PRIVATE";
+				position[] = {20,-20,0};
+			};
+				class Unit7
+			{
+				side = 2;
+				vehicle = "PMC_Gunner_D";
+				rank = "PRIVATE";
+				position[] = {-15,-15,0};
+			};
 
-				};
-				class PMC_Team_D
-				{
-					name = "4 Man Team Desert";
-					side = 2;
-					faction = "SOR_FACTION_PMC";
-					class Unit0
-					{
-						side = 2;
-						vehicle = "PMC_Commander_D";
-						rank = "SERGEANT";
-						position[] = {0,0,0};
-					};
-					class Unit1
-					{
-						side = 2;
-						vehicle = "PMC_MM_D";
-						rank = "SERGEANT";
-						position[] = {5,-5,0};
-					};
-					class Unit2
-					{
-						side = 2;
-						vehicle = "PMC_Gunner_D";
-						rank = "CORPORAL";
-						position[] = {-5,-5,0};
-					};
-					class Unit3
-					{
-						side = 2;
-						vehicle = "PMC_Grenadier_D";
-						rank = "PRIVATE";
-						position[] = {0,-5,0};
-					};
-				};
-				class PMC_Team_W
-				{
-					name = "4 Man Team Desert";
-					side = 2;
-					faction = "SOR_FACTION_PMC";
-					class Unit0
-					{
-						side = 2;
-						vehicle = "PMC_Commander_W";
-						rank = "SERGEANT";
-						position[] = {0,0,0};
-					};
-					class Unit1
-					{
-						side = 2;
-						vehicle = "PMC_MM_W";
-						rank = "SERGEANT";
-						position[] = {5,-5,0};
-					};
-					class Unit2
-					{
-						side = 2;
-						vehicle = "PMC_Gunner_W";
-						rank = "CORPORAL";
-						position[] = {-5,-5,0};
-					};
-					class Unit3
-					{
-						side = 2;
-						vehicle = "PMC_Grenadier_W";
-						rank = "PRIVATE";
-						position[] = {0,-5,0};
-					};
-	
-				};
-				class PMC_SQD_W
-				{
-					name = "Squad Desert";
-					side = 2;
-					faction = "SOR_FACTION_PMC";
-					class Unit0
-					{
-						side = 2;
-						vehicle = "PMC_Commander_W";
-						rank = "SERGEANT";
-						position[] = {0,0,0};
-					};
-					class Unit1
-					{
-						side = 2;
-						vehicle = "PMC_Grenadier_W";
-						rank = "SERGEANT";
-						position[] = {5,-5,0};
-					};
-					class Unit2
-					{
-						side = 2;
-						vehicle = "PMC_Gunner_W";
-						rank = "CORPORAL";
-						position[] = {-5,-5,0};
-					};
-					class Unit3
-					{
-						side = 2;
-						vehicle = "PMC_AT_Rifleman_W";
-						rank = "PRIVATE";
-						position[] = {10,-10,0};
-					};
-					class Unit4
-					{
-						side = 2;
-						vehicle = "PMC_MM_W";
-						rank = "PRIVATE";
-						position[] = {-10,-10,0};
-					};
-					class Unit5
-					{
-						side = 2;
-						vehicle = "PMC_Soldier_W";
-						rank = "CORPORAL";
-						position[] = {15,-15,0};
-					};
-						class Unit6
-					{
-						side = 2;
-						vehicle = "PMC_Soldier2_W";
-						rank = "PRIVATE";
-						position[] = {20,-20,0};
-					};
-						class Unit7
-					{
-						side = 2;
-						vehicle = "PMC_Soldier3_W";
-						rank = "PRIVATE";
-						position[] = {-20,-20,0};
-					};
-					class Unit8
-					{
-						side = 2;
-						vehicle = "PMC_Sniper_W";
-						rank = "CORPORAL";
-						position[] = {-15,-15,0};
-					};
+		};
+		class SOR_FACTION_PMC_FT_1
+		{
+			name = "FT Desert";
+			side = 2;
+			faction = "SOR_FACTION_PMC";
+			class Unit0
+			{
+				side = 2;
+				vehicle = "PMC_Commander_D";
+				rank = "SERGEANT";
+				position[] = {0,0,0};
+			};
+			class Unit1
+			{
+				side = 2;
+				vehicle = "PMC_Grenadier_D";
+				rank = "SERGEANT";
+				position[] = {5,-5,0};
+			};
+			class Unit2
+			{
+				side = 2;
+				vehicle = "PMC_AT_Rifleman_D";
+				rank = "CORPORAL";
+				position[] = {-5,-5,0};
+			};
+			class Unit3
+			{
+				side = 2;
+				vehicle = "PMC_Gunner_D";
+				rank = "PRIVATE";
+				position[] = {0,-10,0};
+			};
 
-				};
+		};
+		class SOR_FACTION_PMC_FT_2
+		{
+			name = "BT Desert";
+			side = 2;
+			faction = "SOR_FACTION_PMC";
+			class Unit0
+			{
+				side = 2;
+				vehicle = "PMC_Commander_D";
+				rank = "SERGEANT";
+				position[] = {0,0,0};
+			};
+			class Unit1
+			{
+				side = 2;
+				vehicle = "PMC_Grenadier_D";
+				rank = "SERGEANT";
+				position[] = {5,-5,0};
+			};
+
+
+		};
+			class SOR_FACTION_PMC_FT2
+		{
+			name = "Squad Woodland";
+			side = 2;
+			faction = "SOR_FACTION_PMC";
+			class Unit0
+			{
+				side = 2;
+				vehicle = "PMC_Commander_w";
+				rank = "SERGEANT";
+				position[] = {0,0,0};
+			};
+			class Unit1
+			{
+				side = 2;
+				vehicle = "PMC_Grenadier_w";
+				rank = "SERGEANT";
+				position[] = {5,-5,0};
+			};
+			class Unit2
+			{
+				side = 2;
+				vehicle = "PMC_AT_Rifleman_w";
+				rank = "CORPORAL";
+				position[] = {-5,-5,0};
+			};
+			class Unit3
+			{
+				side = 2;
+				vehicle = "PMC_Gunner_w";
+				rank = "PRIVATE";
+				position[] = {10,-10,0};
+			};
+			class Unit4
+			{
+				side = 2;
+				vehicle = "PMC_Grenadier_w";
+				rank = "PRIVATE";
+				position[] = {-10,-10,0};
+			};
+			class Unit5
+			{
+				side = 2;
+				vehicle = "PMC_Commander_w";
+				rank = "CORPORAL";
+				position[] = {15,-15,0};
+			};
+				class Unit6
+			{
+				side = 2;
+				vehicle = "PMC_MM_w";
+				rank = "PRIVATE";
+				position[] = {20,-20,0};
+			};
+				class Unit7
+			{
+				side = 2;
+				vehicle = "Reich_gunner_w";
+				rank = "PRIVATE";
+				position[] = {-15,-15,0};
+			};
+
+		};
+		class SOR_FACTION_PMC_FT2_1
+		{
+			name = "FT Woodland";
+			side = 2;
+			faction = "SOR_FACTION_PMC";
+			class Unit0
+			{
+				side = 2;
+				vehicle = "PMC_Commander_w";
+				rank = "SERGEANT";
+				position[] = {0,0,0};
+			};
+			class Unit1
+			{
+				side = 2;
+				vehicle = "PMC_Grenadier_w";
+				rank = "SERGEANT";
+				position[] = {5,-5,0};
+			};
+			class Unit2
+			{
+				side = 2;
+				vehicle = "PMC_AT_Rifleman_w";
+				rank = "CORPORAL";
+				position[] = {-5,-5,0};
+			};
+			class Unit3
+			{
+				side = 2;
+				vehicle = "PMC_Gunner_w";
+				rank = "PRIVATE";
+				position[] = {10,-10,0};
+			};
+
+		};
+		class SOR_FACTION_PMC_FT2_2
+		{
+			name = "BT Woodland";
+			side = 2;
+			faction = "SOR_FACTION_PMC";
+			class Unit0
+			{
+				side = 2;
+				vehicle = "PMC_Commander_w";
+				rank = "SERGEANT";
+				position[] = {0,0,0};
+			};
+			class Unit1
+			{
+				side = 2;
+				vehicle = "PMC_Grenadier_w";
+				rank = "SERGEANT";
+				position[] = {5,-5,0};
 			};
 		};
+	
+		class SOR_FACTION_PMC_CPPT_FT
+		{
+			name = "CPPT";
+			side = 2;
+			faction = "SOR_FACTION_PMC";
+			class Unit0
+			{
+				side = 2;
+				vehicle = "PMC_CPP1";
+				rank = "SERGEANT";
+				position[] = {0,0,0};
+			};
+			class Unit1
+			{
+				side = 2;
+				vehicle = "PMC_CPP2";
+				rank = "CORPORAL";
+				position[] = {5,-5,0};
+			};
+			class Unit2
+			{
+				side = 2;
+				vehicle = "PMC_CPP2";
+				rank = "PRIVATE";
+				position[] = {-5,-5,0};
+			};
+			class Unit3
+			{
+				side = 2;
+				vehicle = "PMC_CPP1";
+				rank = "PRIVATE";
+				position[] = {10,-10,0};
+			};
+			class Unit4
+			{
+				side = 2;
+				vehicle = "PMC_CPP1";
+				rank = "PRIVATE";
+				position[] = {-10,-10,0};
+			};
+			class Unit5
+			{
+				side = 2;
+				vehicle = "PMC_CPP2";
+				rank = "PRIVATE";
+				position[] = {15,-15,0};
+			};
+		};
+		
+	};
+};
