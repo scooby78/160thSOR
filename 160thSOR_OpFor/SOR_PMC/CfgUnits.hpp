@@ -62,8 +62,8 @@ class PMC_Grenadier_D: PMC_Commander_D {
 	displayName = "PMC Grenadier Desert"; 
 	weapons[] = {"SMA_AUG_EGLM","hgun_Pistol_heavy_01_F","Throw","Put"}; 
 	respawnWeapons[] = {"SMA_AUG_EGLM","hgun_Pistol_heavy_01_F","Throw","Put"}; ///match weapons[]
-	magazines[] = {};
-	respawnMagazines[] = {}; // match
+	magazines[] = {"SMA_30Rnd_556x45_Mk318","SMA_30Rnd_556x45_Mk318","SMA_30Rnd_556x45_Mk318","SMA_30Rnd_556x45_Mk318","SMA_30Rnd_556x45_Mk318","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell"};
+	respawnMagazines[] = {"SMA_30Rnd_556x45_Mk318","SMA_30Rnd_556x45_Mk318","SMA_30Rnd_556x45_Mk318","SMA_30Rnd_556x45_Mk318","SMA_30Rnd_556x45_Mk318","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell"}; // match
 
 };
 
@@ -85,10 +85,10 @@ class PMC_AT_Rifleman_D: PMC_Grenadier_D {
 	_generalMacro = "O_T_Recon_F"; 
 	scope = 2; 
 	displayName = "PMC AT Rifleman Desert"; 
-	weapons[] = {"SMA_AUG_A3_F","hgun_Pistol_heavy_01_F","Throw","Put"}; 
-	respawnWeapons[] = {"SMA_AUG_A3_F","hgun_Pistol_heavy_01_F","Throw","Put"}; ///match weapons[]
-	magazines[] = {"SMA_30Rnd_556x45_M855A1","SMA_30Rnd_556x45_M855A1","SMA_30Rnd_556x45_M855A1","SMA_30Rnd_556x45_M855A1","SMA_30Rnd_556x45_M855A1"};
-	respawnMagazines[] = {"SMA_30Rnd_556x45_M855A1","SMA_30Rnd_556x45_M855A1","SMA_30Rnd_556x45_M855A1","SMA_30Rnd_556x45_M855A1","SMA_30Rnd_556x45_M855A1"}; // match magazines[]
+	weapons[] = {"SMA_SKS_F","hgun_Pistol_heavy_01_F","Throw","Put"}; 
+	respawnWeapons[] = {"SMA_SKS_F","hgun_Pistol_heavy_01_F","Throw","Put"}; ///match weapons[]
+	magazines[] = {"SMA_30Rnd_762x39_7n23_AP_Red","SMA_30Rnd_762x39_7n23_AP_Red","SMA_30Rnd_762x39_7n23_AP_Red","SMA_30Rnd_762x39_7n23_AP_Red","SMA_30Rnd_762x39_7n23_AP_Red","rhs_m72a7_mag"};
+	respawnMagazines[] = {"SMA_30Rnd_762x39_7n23_AP_Red","SMA_30Rnd_762x39_7n23_AP_Red","SMA_30Rnd_762x39_7n23_AP_Red","SMA_30Rnd_762x39_7n23_AP_Red","SMA_30Rnd_762x39_7n23_AP_Red","rhs_m72a7_mag"}; // match magazines[]
 
 };
 
@@ -180,11 +180,15 @@ class PMC_Commander_W: B_Soldier_A_F
 		"rhs_30Rnd_545x39_AK",
 		"rhs_30Rnd_545x39_AK",
 		"rhs_30Rnd_545x39_AK",
+		"rhs_30Rnd_545x39_AK",
+		"rhs_30Rnd_545x39_AK",
 		"rhs_30Rnd_545x39_AK",		
 		"Laserbatteries"
 	};
 	respawnMagazines[] = 
 	{
+		"rhs_30Rnd_545x39_AK",
+		"rhs_30Rnd_545x39_AK",
 		"rhs_30Rnd_545x39_AK",
 		"rhs_30Rnd_545x39_AK",
 		"rhs_30Rnd_545x39_AK",
@@ -211,8 +215,8 @@ class PMC_Grenadier_W: PMC_Commander_W {
 	displayName = "PMC Grenadier Woodland"; 
 	weapons[] = {"SMA_AUG_EGLM","hgun_Pistol_heavy_01_F","Throw","Put"}; 
 	respawnWeapons[] = {"SMA_AUG_EGLM","hgun_Pistol_heavy_01_F","Throw","Put"}; ///match weapons[]
-	magazines[] = {};
-	respawnMagazines[] = {}; // match
+	magazines[] = {"SMA_30Rnd_556x45_Mk318","SMA_30Rnd_556x45_Mk318","SMA_30Rnd_556x45_Mk318","SMA_30Rnd_556x45_Mk318","SMA_30Rnd_556x45_Mk318","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell"};
+	respawnMagazines[] = {"SMA_30Rnd_556x45_Mk318","SMA_30Rnd_556x45_Mk318","SMA_30Rnd_556x45_Mk318","SMA_30Rnd_556x45_Mk318","SMA_30Rnd_556x45_Mk318","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell"}; // match
 
 };
 
@@ -234,10 +238,10 @@ class PMC_AT_Rifleman_W: PMC_Commander_w {
 	_generalMacro = "O_T_Recon_F"; 
 	scope = 2; 
 	displayName = "PMC AT Rifleman Woodland"; 
-	weapons[] = {"SMA_AUG_A3_F","hgun_Pistol_heavy_01_F","Throw","Put"}; 
-	respawnWeapons[] = {"SMA_AUG_A3_F","hgun_Pistol_heavy_01_F","Throw","Put"}; ///match weapons[]
-	magazines[] = {"SMA_30Rnd_556x45_M855A1","SMA_30Rnd_556x45_M855A1","SMA_30Rnd_556x45_M855A1","SMA_30Rnd_556x45_M855A1","SMA_30Rnd_556x45_M855A1"};
-	respawnMagazines[] = {"SMA_30Rnd_556x45_M855A1","SMA_30Rnd_556x45_M855A1","SMA_30Rnd_556x45_M855A1","SMA_30Rnd_556x45_M855A1","SMA_30Rnd_556x45_M855A1"}; // match magazines[]
+	weapons[] = {"SMA_SKS_F","hgun_Pistol_heavy_01_F","Throw","Put"}; 
+	respawnWeapons[] = {"SMA_SKS_F","hgun_Pistol_heavy_01_F","Throw","Put"}; ///match weapons[]
+	magazines[] = {"SMA_30Rnd_762x39_7n23_AP_Red","SMA_30Rnd_762x39_7n23_AP_Red","SMA_30Rnd_762x39_7n23_AP_Red","SMA_30Rnd_762x39_7n23_AP_Red","SMA_30Rnd_762x39_7n23_AP_Red","rhs_m72a7_mag"};
+	respawnMagazines[] = {"SMA_30Rnd_762x39_7n23_AP_Red","SMA_30Rnd_762x39_7n23_AP_Red","SMA_30Rnd_762x39_7n23_AP_Red","SMA_30Rnd_762x39_7n23_AP_Red","SMA_30Rnd_762x39_7n23_AP_Red","rhs_m72a7_mag"}; // match magazines[]
 
 };
 
