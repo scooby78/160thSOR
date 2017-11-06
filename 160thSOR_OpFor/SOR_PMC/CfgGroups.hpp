@@ -187,7 +187,7 @@ class PMC_groups
 				class Unit7
 			{
 				side = 2;
-				vehicle = "Reich_gunner_w";
+				vehicle = "PMC_Gunner_w";
 				rank = "PRIVATE";
 				position[] = {-15,-15,0};
 			};
