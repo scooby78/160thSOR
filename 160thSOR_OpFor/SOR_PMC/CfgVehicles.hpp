@@ -5,7 +5,8 @@
 	Description: CfgVehicles.hpp
 */
 
-	#include "CfgUnits.hpp"
-	#include "CfgCars.hpp"
+#include "cfgBackpacks.hpp"
+#include "CfgUnits.hpp"
+#include "CfgCars.hpp"
 
 
