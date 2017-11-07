@@ -8,3 +8,4 @@
 	#include "CfgGuns.hpp"
 	#include "CfgUniforms.hpp"	
 	#include "CfgVest.hpp"	
+	#include "CfgBackpacks.hpp"

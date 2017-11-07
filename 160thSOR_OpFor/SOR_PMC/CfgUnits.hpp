@@ -84,11 +84,12 @@ class PMC_AT_Rifleman_D: PMC_Grenadier_D {
 	author = "Yettie"; 
 	_generalMacro = "O_T_Recon_F"; 
 	scope = 2; 
+	Backpack = "SOR_PMC_Pack_AT";
 	displayName = "PMC AT Rifleman Desert"; 
-	weapons[] = {"SMA_SKS_F","hgun_Pistol_heavy_01_F","Throw","Put"}; 
-	respawnWeapons[] = {"SMA_SKS_F","hgun_Pistol_heavy_01_F","Throw","Put"}; ///match weapons[]
-	magazines[] = {"SMA_30Rnd_762x39_7n23_AP_Red","SMA_30Rnd_762x39_7n23_AP_Red","SMA_30Rnd_762x39_7n23_AP_Red","SMA_30Rnd_762x39_7n23_AP_Red","SMA_30Rnd_762x39_7n23_AP_Red","rhs_m72a7_mag"};
-	respawnMagazines[] = {"SMA_30Rnd_762x39_7n23_AP_Red","SMA_30Rnd_762x39_7n23_AP_Red","SMA_30Rnd_762x39_7n23_AP_Red","SMA_30Rnd_762x39_7n23_AP_Red","SMA_30Rnd_762x39_7n23_AP_Red","rhs_m72a7_mag"}; // match magazines[]
+	weapons[] = {"SMA_SKS_F","hgun_Pistol_heavy_01_F","rhs_weap_maaws","Throw","Put"}; 
+	respawnWeapons[] = {"SMA_SKS_F","hgun_Pistol_heavy_01_F","rhs_weap_maaws","Throw","Put"}; ///match weapons[]
+	magazines[] = {"SMA_30Rnd_762x39_7n23_AP_Red","SMA_30Rnd_762x39_7n23_AP_Red","SMA_30Rnd_762x39_7n23_AP_Red","SMA_30Rnd_762x39_7n23_AP_Red","SMA_30Rnd_762x39_7n23_AP_Red",};
+	respawnMagazines[] = {"SMA_30Rnd_762x39_7n23_AP_Red","SMA_30Rnd_762x39_7n23_AP_Red","SMA_30Rnd_762x39_7n23_AP_Red","SMA_30Rnd_762x39_7n23_AP_Red","SMA_30Rnd_762x39_7n23_AP_Red"}; // match magazines[]
 
 };
 
@@ -237,11 +238,12 @@ class PMC_AT_Rifleman_W: PMC_Commander_w {
 	author = "Yettie"; 
 	_generalMacro = "O_T_Recon_F"; 
 	scope = 2; 
+	Backpack = "SOR_PMC_Pack_AT";
 	displayName = "PMC AT Rifleman Woodland"; 
-	weapons[] = {"SMA_SKS_F","hgun_Pistol_heavy_01_F","Throw","Put"}; 
-	respawnWeapons[] = {"SMA_SKS_F","hgun_Pistol_heavy_01_F","Throw","Put"}; ///match weapons[]
-	magazines[] = {"SMA_30Rnd_762x39_7n23_AP_Red","SMA_30Rnd_762x39_7n23_AP_Red","SMA_30Rnd_762x39_7n23_AP_Red","SMA_30Rnd_762x39_7n23_AP_Red","SMA_30Rnd_762x39_7n23_AP_Red","rhs_m72a7_mag"};
-	respawnMagazines[] = {"SMA_30Rnd_762x39_7n23_AP_Red","SMA_30Rnd_762x39_7n23_AP_Red","SMA_30Rnd_762x39_7n23_AP_Red","SMA_30Rnd_762x39_7n23_AP_Red","SMA_30Rnd_762x39_7n23_AP_Red","rhs_m72a7_mag"}; // match magazines[]
+	weapons[] = {"SMA_SKS_F","hgun_Pistol_heavy_01_F","rhs_weap_maaws","Throw","Put"}; 
+	respawnWeapons[] = {"SMA_SKS_F","hgun_Pistol_heavy_01_F","rhs_weap_maaws","Throw","Put"}; ///match weapons[]
+	magazines[] = {"SMA_30Rnd_762x39_7n23_AP_Red","SMA_30Rnd_762x39_7n23_AP_Red","SMA_30Rnd_762x39_7n23_AP_Red","SMA_30Rnd_762x39_7n23_AP_Red","SMA_30Rnd_762x39_7n23_AP_Red",};
+	respawnMagazines[] = {"SMA_30Rnd_762x39_7n23_AP_Red","SMA_30Rnd_762x39_7n23_AP_Red","SMA_30Rnd_762x39_7n23_AP_Red","SMA_30Rnd_762x39_7n23_AP_Red","SMA_30Rnd_762x39_7n23_AP_Red"}; // match magazines[]
 
 };
 
