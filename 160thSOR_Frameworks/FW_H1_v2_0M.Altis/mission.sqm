@@ -23108,7 +23108,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[""sa_advancedtowing"",""sa_advancedslingloading"",""cz75_nochain"",""headrangeplus"",""ar_advancedrappelling"",""ASM"",""ares"",""marmadebug"",""JSRS_SOUNDMOD_Bullethits"",""JSRS_SOUNDMOD_Environment"",""JSRS_SOUNDMOD_FrameWork"",""JSRS_SOUNDMOD_Sonic_Cracks"",""JSRS_SOUNDMOD_APCs"",""JSRS_SOUNDMOD_Tanks"",""JSRS_SOUNDMOD_CARS"",""JSRS_SOUNDMOD_HELICOPTERS"",""JSRS_SOUNDMOD_Movement"",""JSRS_SOUNDMOD_TRUCKS"",""JSRS_SOUNDMOD_UAVS"",""JSRS_SOUNDMOD_VTOLS"",""jsrs_soundmod_weapons"",""JSRS_SOUNDMOD_RHS_AFRF_WEAPONS"",""JSRS_SOUNDMOD_RHS_USF_WEAPONS"",""JSRS_SOUNDMOD_Explosions""]";
+							value="[""sa_advancedtowing"",""sa_advancedslingloading"",""cz75_nochain"",""headrangeplus"",""ar_advancedrappelling"",""ASM"",""ares"",""marmadebug"",""JSRS_SOUNDMOD_Bullethits"", ""JSRS_SOUNDMOD_Environment"", ""JSRS_SOUNDMOD_FrameWork"", ""JSRS_SOUNDMOD_Sonic_Cracks"", ""JSRS_SOUNDMOD_APCs"", ""JSRS_SOUNDMOD_Tanks"", ""JSRS_SOUNDMOD_CARS"", ""JSRS_SOUNDMOD_HELICOPTERS"", ""JSRS_SOUNDMOD_Movement"", ""JSRS_SOUNDMOD_TRUCKS"", ""JSRS_SOUNDMOD_UAVS"", ""JSRS_SOUNDMOD_VTOLS"", ""jsrs_soundmod_weapons"", ""JSRS_SOUNDMOD_RHS_AFRF_Vehicles"", ""JSRS_SOUNDMOD_RHS_AFRF_WEAPONS"", ""JSRS_SOUNDMOD_RHS_USF_Vehicles"", ""JSRS_SOUNDMOD_RHS_USF_WEAPONS"", ""JSRS_SOUNDMOD_Explosions""]";
 						};
 					};
 				};
