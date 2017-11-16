@@ -8,11 +8,11 @@ class EditorData
 	toggles=1537;
 	class ItemIDProvider
 	{
-		nextID=1908;
+		nextID=1909;
 	};
 	class Camera
 	{
-		pos[]={1849.0441,55.748604,5565.8809};
+		pos[]={1898.3719,20.172918,5548.2764};
 		dir[]={0.83114415,-0.50431436,-0.23476528};
 		up[]={0.48552564,0.86335754,-0.13713762};
 		aside[]={-0.27184632,1.3812969e-006,-0.96244437};
@@ -23981,12 +23981,11 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1911.8777,5.9853301,5542.252};
-				angles[]={0,2.6059163,0};
+				position[]={1911.8121,5.9805341,5542.2866};
+				angles[]={0.014998405,2.6059163,0.027492445};
 			};
-			id=1907;
+			id=1908;
 			type="ACE_ModuleCheckPBOs";
-			atlOffset=0.0024728775;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -24023,7 +24022,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[""sa_advancedtowing"",""sa_advancedslingloading"",""cz75_nochain"",""headrangeplus"",""ar_advancedrappelling"",""ASM"",""ares"",""marmadebug"",""JSRS_SOUNDMOD_Bullethits"", ""JSRS_SOUNDMOD_Environment"", ""JSRS_SOUNDMOD_FrameWork"", ""JSRS_SOUNDMOD_Sonic_Cracks"", ""JSRS_SOUNDMOD_APCs"", ""JSRS_SOUNDMOD_Tanks"", ""JSRS_SOUNDMOD_CARS"", ""JSRS_SOUNDMOD_HELICOPTERS"", ""JSRS_SOUNDMOD_Movement"", ""JSRS_SOUNDMOD_TRUCKS"", ""JSRS_SOUNDMOD_UAVS"", ""JSRS_SOUNDMOD_VTOLS"", ""jsrs_soundmod_weapons"", ""JSRS_SOUNDMOD_RHS_AFRF_Vehicles"", ""JSRS_SOUNDMOD_RHS_AFRF_WEAPONS"", ""JSRS_SOUNDMOD_RHS_USF_Vehicles"", ""JSRS_SOUNDMOD_RHS_USF_WEAPONS"", ""JSRS_SOUNDMOD_Explosions""]";
+							value="[""mrb_a3_vehiclevisibility"",""sa_advancedtowing"",""sa_advancedslingloading"",""cz75_nochain"",""headrangeplus"",""ar_advancedrappelling"",""ASM"",""ares"",""marmadebug"",""JSRS_SOUNDMOD_Bullethits"", ""JSRS_SOUNDMOD_Environment"", ""JSRS_SOUNDMOD_FrameWork"", ""JSRS_SOUNDMOD_Sonic_Cracks"", ""JSRS_SOUNDMOD_APCs"", ""JSRS_SOUNDMOD_Tanks"", ""JSRS_SOUNDMOD_CARS"", ""JSRS_SOUNDMOD_HELICOPTERS"", ""JSRS_SOUNDMOD_Movement"", ""JSRS_SOUNDMOD_TRUCKS"", ""JSRS_SOUNDMOD_UAVS"", ""JSRS_SOUNDMOD_VTOLS"", ""jsrs_soundmod_weapons"", ""JSRS_SOUNDMOD_RHS_AFRF_Vehicles"", ""JSRS_SOUNDMOD_RHS_AFRF_WEAPONS"", ""JSRS_SOUNDMOD_RHS_USF_Vehicles"", ""JSRS_SOUNDMOD_RHS_USF_WEAPONS"", ""JSRS_SOUNDMOD_Explosions""]";
 						};
 					};
 				};
