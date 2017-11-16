@@ -2373,7 +2373,7 @@ class items
 		class PositionInfo
 		{
 			position[]={2.2607422,0,1.5996094};
-			angles[]={-0,2.6059163,0};
+			angles[]={0,2.6059163,0};
 		};
 		id=1915;
 		type="ACE_ModuleCheckPBOs";
@@ -2413,7 +2413,7 @@ class items
 								"STRING"
 							};
 						};
-						value="[""sa_advancedtowing"",""sa_advancedslingloading"",""cz75_nochain"",""headrangeplus"",""ar_advancedrappelling"",""ASM"",""ares"",""marmadebug"",""JSRS_SOUNDMOD_Bullethits"",""JSRS_SOUNDMOD_Environment"",""JSRS_SOUNDMOD_FrameWork"",""JSRS_SOUNDMOD_Sonic_Cracks"",""JSRS_SOUNDMOD_APCs"",""JSRS_SOUNDMOD_Tanks"",""JSRS_SOUNDMOD_CARS"",""JSRS_SOUNDMOD_HELICOPTERS"",""JSRS_SOUNDMOD_Movement"",""JSRS_SOUNDMOD_TRUCKS"",""JSRS_SOUNDMOD_UAVS"",""JSRS_SOUNDMOD_VTOLS"",""jsrs_soundmod_weapons"",""JSRS_SOUNDMOD_RHS_AFRF_WEAPONS"",""JSRS_SOUNDMOD_RHS_USF_WEAPONS"",""JSRS_SOUNDMOD_Explosions""]";
+						value="[""sa_advancedtowing"",""sa_advancedslingloading"",""cz75_nochain"",""headrangeplus"",""ar_advancedrappelling"",""ASM"",""ares"",""marmadebug"",""JSRS_SOUNDMOD_Bullethits"", ""JSRS_SOUNDMOD_Environment"", ""JSRS_SOUNDMOD_FrameWork"", ""JSRS_SOUNDMOD_Sonic_Cracks"", ""JSRS_SOUNDMOD_APCs"", ""JSRS_SOUNDMOD_Tanks"", ""JSRS_SOUNDMOD_CARS"", ""JSRS_SOUNDMOD_HELICOPTERS"", ""JSRS_SOUNDMOD_Movement"", ""JSRS_SOUNDMOD_TRUCKS"", ""JSRS_SOUNDMOD_UAVS"", ""JSRS_SOUNDMOD_VTOLS"", ""jsrs_soundmod_weapons"", ""JSRS_SOUNDMOD_RHS_AFRF_Vehicles"", ""JSRS_SOUNDMOD_RHS_AFRF_WEAPONS"", ""JSRS_SOUNDMOD_RHS_USF_Vehicles"", ""JSRS_SOUNDMOD_RHS_USF_WEAPONS"", ""JSRS_SOUNDMOD_Explosions""]";
 					};
 				};
 			};
@@ -2444,16 +2444,16 @@ class connections
 {
 	class LinkIDProvider
 	{
-		nextID=21;
+		nextID=7;
 	};
 	class Links
 	{
-		items=21;
+		items=7;
 		class Item0
 		{
 			linkID=0;
-			item0=1870;
-			item1=1866;
+			item0=1895;
+			item1=1891;
 			class CustomData
 			{
 				type="Sync";
@@ -2462,8 +2462,8 @@ class connections
 		class Item1
 		{
 			linkID=1;
-			item0=1870;
-			item1=1867;
+			item0=1895;
+			item1=1892;
 			class CustomData
 			{
 				type="Sync";
@@ -2472,8 +2472,8 @@ class connections
 		class Item2
 		{
 			linkID=2;
-			item0=1870;
-			item1=1868;
+			item0=1895;
+			item1=1893;
 			class CustomData
 			{
 				type="Sync";
@@ -2482,8 +2482,8 @@ class connections
 		class Item3
 		{
 			linkID=3;
-			item0=1870;
-			item1=1869;
+			item0=1895;
+			item1=1894;
 			class CustomData
 			{
 				type="Sync";
@@ -2492,8 +2492,8 @@ class connections
 		class Item4
 		{
 			linkID=4;
-			item0=1871;
-			item1=1870;
+			item0=1896;
+			item1=1895;
 			class CustomData
 			{
 				type="Sync";
@@ -2502,8 +2502,8 @@ class connections
 		class Item5
 		{
 			linkID=5;
-			item0=1884;
-			item1=1870;
+			item0=1908;
+			item1=1895;
 			class CustomData
 			{
 				type="Sync";
@@ -2512,146 +2512,6 @@ class connections
 		class Item6
 		{
 			linkID=6;
-			item0=1885;
-			item1=1870;
-			class CustomData
-			{
-				type="Sync";
-			};
-		};
-		class Item7
-		{
-			linkID=7;
-			item0=1870;
-			item1=1866;
-			class CustomData
-			{
-				type="Sync";
-			};
-		};
-		class Item8
-		{
-			linkID=8;
-			item0=1870;
-			item1=1867;
-			class CustomData
-			{
-				type="Sync";
-			};
-		};
-		class Item9
-		{
-			linkID=9;
-			item0=1870;
-			item1=1868;
-			class CustomData
-			{
-				type="Sync";
-			};
-		};
-		class Item10
-		{
-			linkID=10;
-			item0=1870;
-			item1=1869;
-			class CustomData
-			{
-				type="Sync";
-			};
-		};
-		class Item11
-		{
-			linkID=11;
-			item0=1871;
-			item1=1870;
-			class CustomData
-			{
-				type="Sync";
-			};
-		};
-		class Item12
-		{
-			linkID=12;
-			item0=1884;
-			item1=1870;
-			class CustomData
-			{
-				type="Sync";
-			};
-		};
-		class Item13
-		{
-			linkID=13;
-			item0=1885;
-			item1=1870;
-			class CustomData
-			{
-				type="Sync";
-			};
-		};
-		class Item14
-		{
-			linkID=14;
-			item0=1895;
-			item1=1891;
-			class CustomData
-			{
-				type="Sync";
-			};
-		};
-		class Item15
-		{
-			linkID=15;
-			item0=1895;
-			item1=1892;
-			class CustomData
-			{
-				type="Sync";
-			};
-		};
-		class Item16
-		{
-			linkID=16;
-			item0=1895;
-			item1=1893;
-			class CustomData
-			{
-				type="Sync";
-			};
-		};
-		class Item17
-		{
-			linkID=17;
-			item0=1895;
-			item1=1894;
-			class CustomData
-			{
-				type="Sync";
-			};
-		};
-		class Item18
-		{
-			linkID=18;
-			item0=1896;
-			item1=1895;
-			class CustomData
-			{
-				type="Sync";
-			};
-		};
-		class Item19
-		{
-			linkID=19;
-			item0=1908;
-			item1=1895;
-			class CustomData
-			{
-				type="Sync";
-			};
-		};
-		class Item20
-		{
-			linkID=20;
 			item0=1909;
 			item1=1895;
 			class CustomData
