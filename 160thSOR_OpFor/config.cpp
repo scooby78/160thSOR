@@ -21,7 +21,7 @@ class CfgPatches
 	{
 		author="160th SOR";
 		url="http://www.160th.net";	
-		version="2.1.6";		
+		version="2.2.0";		
 		units[] = 
 		{
 			#include "4th_Reich\cfgPatches.hpp"
@@ -160,7 +160,7 @@ class CfgEditorCategories
 	};
 	class SOR_OPFor_Cat_Sites
 	{
-		displayName = "160th Sites";
+		displayName = "160th Sites & Spawners";
 	};	
 };
 
