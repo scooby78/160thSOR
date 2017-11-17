@@ -1,5 +1,5 @@
 version=53;
-center[]={9461.4756,139.995,9852.9131};
+center[]={14665.291,17.91,16782.389};
 class items
 {
 	items=25;
@@ -8,9 +8,9 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={3.203125,0.026000977,2.7285156};
+			position[]={3.2080078,0.026000977,2.7265625};
 		};
-		id=1327;
+		id=1865;
 		type="ace_advanced_fatigue_moduleSettings";
 		atlOffset=0.026000977;
 		class CustomAttributes
@@ -118,10 +118,10 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-4.7363281,0.071212769,2.1855469};
+			position[]={-4.7314453,0.071212769,2.1835938};
 			angles[]={0,0.18120271,0};
 		};
-		id=1328;
+		id=1866;
 		type="ModuleCurator_F";
 		atlOffset=0.071212769;
 		class CustomAttributes
@@ -229,10 +229,10 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-4.71875,0.064849854,4.0976563};
+			position[]={-4.7138672,0.064849854,4.0957031};
 			angles[]={0,0.18120271,0};
 		};
-		id=1329;
+		id=1867;
 		type="ModuleCurator_F";
 		atlOffset=0.064849854;
 		class CustomAttributes
@@ -340,10 +340,10 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-4.7294922,0.049591064,0.28320313};
+			position[]={-4.7246094,0.049591064,0.28125};
 			angles[]={0,0.18120855,0};
 		};
-		id=1330;
+		id=1868;
 		type="ModuleCurator_F";
 		atlOffset=0.049591064;
 		class CustomAttributes
@@ -451,10 +451,10 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-4.7041016,0.046829224,-1.28125};
+			position[]={-4.6992188,0.046829224,-1.2832031};
 			angles[]={0,0.18120271,0};
 		};
-		id=1331;
+		id=1869;
 		type="ModuleCurator_F";
 		atlOffset=0.046829224;
 		class CustomAttributes
@@ -562,10 +562,10 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-2.9326172,0.047241211,-0.1875};
+			position[]={-2.9277344,0.047241211,-0.18945313};
 			angles[]={0,0.18119842,0};
 		};
-		id=1332;
+		id=1870;
 		type="ModuleCuratorSetCoefs_F";
 		atlOffset=0.047241211;
 		class CustomAttributes
@@ -730,10 +730,10 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-4.6708984,0.046829224,-2.9042969};
+			position[]={-4.6660156,0.046829224,-2.90625};
 			angles[]={0,0.18120271,0};
 		};
-		id=1333;
+		id=1871;
 		type="ModuleCurator_F";
 		atlOffset=0.046829224;
 		class CustomAttributes
@@ -841,10 +841,10 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={1.3369141,0.044326782,-1.109375};
+			position[]={1.3417969,0.044326782,-1.1113281};
 			angles[]={0,2.9516044,0};
 		};
-		id=1334;
+		id=1872;
 		type="ACE_ModuleNameTags";
 		atlOffset=0.044326782;
 		class CustomAttributes
@@ -952,10 +952,10 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={1.4013672,0.044326782,-2.65625};
+			position[]={1.40625,0.044326782,-2.6582031};
 			angles[]={0,2.9516044,0};
 		};
-		id=1335;
+		id=1873;
 		type="ACE_ModuleInteraction";
 		atlOffset=0.044326782;
 		class CustomAttributes
@@ -1006,10 +1006,10 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={2.3515625,0.032119751,0.45117188};
+			position[]={2.3564453,0.032119751,0.44921875};
 			angles[]={0,2.9601502,0};
 		};
-		id=1336;
+		id=1874;
 		type="ACE_moduleReviveSettings";
 		atlOffset=0.032119751;
 		class CustomAttributes
@@ -1079,10 +1079,10 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={1.2275391,0.038070679,0.22851563};
+			position[]={1.2324219,0.038070679,0.2265625};
 			angles[]={0,2.9516022,0};
 		};
-		id=1337;
+		id=1875;
 		type="ace_zeus_moduleSettings";
 		atlOffset=0.038070679;
 		class CustomAttributes
@@ -1209,10 +1209,10 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={2.3847656,0,-2.3886719};
+			position[]={2.3896484,0,-2.390625};
 			angles[]={0,2.9601502,0};
 		};
-		id=1338;
+		id=1876;
 		type="ACE_ModuleRespawn";
 		class CustomAttributes
 		{
@@ -1262,10 +1262,10 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={1.2011719,0.030578613,1.4882813};
+			position[]={1.2060547,0.030578613,1.4863281};
 			angles[]={0,2.9516044,0};
 		};
-		id=1339;
+		id=1877;
 		type="ACE_ModuleHearing";
 		atlOffset=0.030578613;
 		class CustomAttributes
@@ -1354,10 +1354,10 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={2.1542969,0.035400391,2.8066406};
+			position[]={2.1591797,0.035400391,2.8046875};
 			angles[]={0,2.9601483,0};
 		};
-		id=1340;
+		id=1878;
 		type="ACE_moduleRepairSettings";
 		atlOffset=0.035400391;
 		class CustomAttributes
@@ -1541,10 +1541,10 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={1.1308594,0.030578613,2.7148438};
+			position[]={1.1357422,0.030578613,2.7128906};
 			angles[]={0,2.9516044,0};
 		};
-		id=1341;
+		id=1879;
 		type="ACE_moduleCargoSettings";
 		atlOffset=0.030578613;
 		class CustomAttributes
@@ -1595,10 +1595,10 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={2.3710938,0,-0.89257813};
+			position[]={2.3759766,0,-0.89453125};
 			angles[]={0,2.9601483,0};
 		};
-		id=1342;
+		id=1880;
 		type="ACE_moduleMedicalSettings";
 		class CustomAttributes
 		{
@@ -1876,10 +1876,10 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={1.0761719,0.034301758,3.7792969};
+			position[]={1.0810547,0.034301758,3.7773438};
 			angles[]={0,2.9516044,0};
 		};
-		id=1343;
+		id=1881;
 		type="ace_finger_moduleSettings";
 		atlOffset=0.034301758;
 		class CustomAttributes
@@ -1930,10 +1930,10 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={2.1835938,0.046142578,3.9238281};
+			position[]={2.1875,0.046142578,3.921875};
 			angles[]={0,5.8697066,0};
 		};
-		id=1344;
+		id=1882;
 		type="ACEX_ModuleSitting";
 		atlOffset=0.046142578;
 		class CustomAttributes
@@ -1965,82 +1965,10 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={2.3378906,0,1.5078125};
-			angles[]={0,2.6059163,0};
-		};
-		id=1345;
-		type="ACE_ModuleCheckPBOs";
-		class CustomAttributes
-		{
-			class Attribute0
-			{
-				property="ACE_ModuleCheckPBOs_CheckAll";
-				expression="_this setVariable ['CheckAll',_value,true];";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=1;
-					};
-				};
-			};
-			class Attribute1
-			{
-				property="ACE_ModuleCheckPBOs_Whitelist";
-				expression="_this setVariable ['Whitelist',_value,true];";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="[""sa_advancedtowing"",""sa_advancedslingloading"",""cz75_nochain"",""headrangeplus"",""ar_advancedrappelling"",""ASM"",""ares"",""marmadebug"",""JSRS_SOUNDMOD_Bullethits"",  ""JSRS_SOUNDMOD_Environment"",  ""JSRS_SOUNDMOD_GlobalFilters"",  ""JSRS_SOUNDMOD_Movement"",  ""JSRS_SOUNDMOD_Sonic_Cracks"",  ""JSRS_SOUNDMOD_Explosions"",  ""JSRS_SOUNDMOD_FrameWork"",  ""JSRS_SOUNDMOD_AH99_Blackfoot"",  ""JSRS_SOUNDMOD_AH9_Pawnee"",  ""JSRS_SOUNDMOD_UAV_1"",  ""JSRS_SOUNDMOD_CH67_Huron"",  ""JSRS_SOUNDMOD_CH49_Mohawk"",  ""JSRS_SOUNDMOD_Mi290_Taru"",  ""JSRS_SOUNDMOD_Mi48_Kajman"",  ""JSRS_SOUNDMOD_UAV_2"",  ""JSRS_SOUNDMOD_Po30_Orca"",  ""JSRS_SOUNDMOD_UH80_GhostHawk"",  ""JSRS_SOUNDMOD_WY55_Hellcat"",  ""JSRS_SOUNDMOD_Armed_Boat"",  ""JSRS_SOUNDMOD_Rubber_Boat"",  ""JSRS_SOUNDMOD_Speed_Boat"",  ""JSRS_SOUNDMOD_2S9_Sorcher"",  ""JSRS_SOUNDMOD_BTRK_Kamysh"",  ""JSRS_SOUNDMOD_FV720_Mora"",  ""JSRS_SOUNDMOD_IFV6a_Cheetah"",  ""JSRS_SOUNDMOD_IFV6c_Panther"",  ""JSRS_SOUNDMOD_M2A1_Slammer"",  ""JSRS_SOUNDMOD_M4_Scorcher"",  ""JSRS_SOUNDMOD_M5_Sandstorm"",  ""JSRS_SOUNDMOD_MBT52_Kuma"",  ""JSRS_SOUNDMOD_T100_Varsuk"",  ""JSRS_SOUNDMOD_ZSU39_Tigris"",  ""JSRS_SOUNDMOD_AFV4_Gorgon"",  ""JSRS_SOUNDMOD_AMV7_Marshal"",  ""JSRS_SOUNDMOD_Hatchback"",  ""JSRS_SOUNDMOD_truck1"",  ""JSRS_SOUNDMOD_Hunter"",  ""JSRS_SOUNDMOD_Ifrit"",  ""JSRS_SOUNDMOD_MSE3_Marid"",  ""JSRS_SOUNDMOD_Offroad"",  ""JSRS_SOUNDMOD_Quadbike"",  ""JSRS_SOUNDMOD_Strider"",  ""JSRS_SOUNDMOD_SUV"",  ""JSRS_SOUNDMOD_Van"",  ""JSRS_SOUNDMOD_Truck3"",  ""JSRS_SOUNDMOD_230mm_Titan"",  ""JSRS_SOUNDMOD_Air_Weapons"",  ""JSRS_SOUNDMOD_35mm_Autocannon"",  ""JSRS_SOUNDMOD_120mm_Cannon"",  ""JSRS_SOUNDMOD_Gatling_30mm_Plane_CAS_01"",  ""JSRS_SOUNDMOD_Cannon_30mm_Plane_CAS_02"",  ""JSRS_SOUNDMOD_CTWS_Autocannon"",  ""JSRS_SOUNDMOD_DAGR"",  ""JSRS_SOUNDMOD_DAR"",  ""JSRS_SOUNDMOD_30mm_Cannon"",  ""JSRS_SOUNDMOD_Gatling_Weapons"",  ""JSRS_SOUNDMOD_HMGS"",  ""JSRS_SOUNDMOD_155mm_AMOS"",  ""JSRS_SOUNDMOD_LMGCoax"",  ""JSRS_SOUNDMOD_LMGRCWS"",  ""JSRS_SOUNDMOD_GMG20"",  ""JSRS_SOUNDMOD_MORTAR"",  ""JSRS_SOUNDMOD_GMG40"",  ""JSRS_SOUNDMOD_Skalpel_ATGM"",  ""JSRS_SOUNDMOD_Skyfire"",  ""JSRS_SOUNDMOD_Veh_Titan"",  ""JSRS_SOUNDMOD_4Five45"",  ""JSRS_SOUNDMOD_ACPC"",  ""JPEX_MX"",  ""JSRS_SOUNDMOD_M6"",  ""JSRS_SOUNDMOD_Khaybar"",  ""JSRS_SOUNDMOD_M320R"",  ""JSRS_SOUNDMOD_EBR"",  ""JSRS_SOUNDMOD_FS2000"",  ""JSRS_SOUNDMOD_M200"",  ""JSRS_SOUNDMOD_P07"",  ""JSRS_SOUNDMOD_PCML"",  ""JSRS_SOUNDMOD_PDW"",  ""JSRS_SOUNDMOD_Rahim"",  ""JSRS_SOUNDMOD_Rook40"",  ""JSRS_SOUNDMOD_RPG32"",  ""JSRS_SOUNDMOD_Scorpian"",  ""JSRS_SOUNDMOD_Titan_MPRL"",  ""JSRS_SOUNDMOD_TRG21"",  ""JSRS_SOUNDMOD_UGL"",  ""JSRS_SOUNDMOD_SDAR"",  ""JSRS_SOUNDMOD_Vector"",  ""JSRS_SOUNDMOD_Zafir"",  ""JSRS_SOUNDMOD_Zubr45"",  ""JSRS_SOUNDMOD_ReloadingSounds"",  ""JSRS_SOUNDMOD_ASP1"",  ""JSRS_SOUNDMOD_Cyrus"",  ""JSRS_SOUNDMOD_MAR10"",  ""JSRS_SOUNDMOD_Mk1EMR"",  ""JSRS_SOUNDMOD_Mk14"",  ""JSRS_SOUNDMOD_Navid"",  ""JSRS_SOUNDMOD_SPMG"",  ""JSRS_SOUNDMOD_Movement_Apex"",  ""JSRS_SOUNDMOD_ReloadingSoundsApex"",  ""JSRS_SOUNDMOD_KH3A_Fenghuan"",  ""JSRS_SOUNDMOD_MQ12_Falcon"",  ""JSRS_SOUNDMOD_V44X_Blackfish"",  ""JSRS_SOUNDMOD_Y32_XIAN"",  ""JSRS_SOUNDMOD_MB4WD"",  ""JSRS_SOUNDMOD_Prowler"",  ""JSRS_SOUNDMOD_Truck2"",  ""JSRS_SOUNDMOD_AK12"",  ""JSRS_SOUNDMOD_AKM"",  ""JSRS_SOUNDMOD_AKS"",  ""JSRS_SOUNDMOD_CMR"",  ""JSRS_SOUNDMOD_CTAR"",  ""JSRS_SOUNDMOD_LIM85"",  ""JSRS_SOUNDMOD_PM9M"",  ""JSRS_SOUNDMOD_Protector"",  ""JSRS_SOUNDMOD_RPG7V"",  ""JSRS_SOUNDMOD_SPAR"",  ""JSRS_SOUNDMOD_Type115""]";
-					};
-				};
-			};
-			class Attribute2
-			{
-				property="ACE_ModuleCheckPBOs_Action";
-				expression="_this setVariable ['Action',_value,true];";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"SCALAR"
-							};
-						};
-						value=1;
-					};
-				};
-			};
-			nAttributes=3;
-		};
-	};
-	class Item19
-	{
-		dataType="Logic";
-		class PositionInfo
-		{
-			position[]={-4.3251953,0.049331665,-5.0371094};
+			position[]={-4.3203125,0.049331665,-5.0390625};
 			angles[]={0,3.2462144,0};
 		};
-		id=1346;
+		id=1884;
 		type="ModuleCurator_F";
 		atlOffset=0.049331665;
 		class CustomAttributes
@@ -2143,15 +2071,15 @@ class items
 			nAttributes=5;
 		};
 	};
-	class Item20
+	class Item19
 	{
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-4.4638672,0.047027588,-3.8964844};
+			position[]={-4.4589844,0.047027588,-3.8984375};
 			angles[]={0,3.2462144,0};
 		};
-		id=1347;
+		id=1885;
 		type="ModuleCurator_F";
 		atlOffset=0.047027588;
 		class CustomAttributes
@@ -2254,14 +2182,14 @@ class items
 			nAttributes=5;
 		};
 	};
-	class Item21
+	class Item20
 	{
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={3.2050781,0.038238525,3.9101563};
+			position[]={3.2099609,0.038238525,3.9082031};
 		};
-		id=1348;
+		id=1886;
 		type="ace_advanced_throwing_Module";
 		atlOffset=0.038238525;
 		class CustomAttributes
@@ -2364,14 +2292,14 @@ class items
 			nAttributes=5;
 		};
 	};
-	class Item22
+	class Item21
 	{
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={3.1865234,0.020568848,1.734375};
+			position[]={3.1914063,0.020568848,1.7324219};
 		};
-		id=1349;
+		id=1887;
 		type="ACE_moduleRearmSettings";
 		atlOffset=0.020568848;
 		class CustomAttributes
@@ -2417,43 +2345,115 @@ class items
 			nAttributes=2;
 		};
 	};
+	class Item22
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={2.9277344,0.045578003,-5.7207031};
+		};
+		id=1888;
+		type="DEST_loadoutSup";
+		atlOffset=0.045578003;
+	};
 	class Item23
 	{
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={2.9228516,0.045578003,-5.71875};
+			position[]={1.6191406,0.050567627,-5.765625};
 		};
-		id=1350;
-		type="DEST_loadoutSup";
-		atlOffset=0.045578003;
+		id=1889;
+		type="DEST_loadoutNVG";
+		atlOffset=0.050567627;
 	};
 	class Item24
 	{
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={1.6142578,0.050567627,-5.7636719};
+			position[]={2.1982422,0,1.5488281};
+			angles[]={-0,2.6059163,0};
 		};
-		id=1351;
-		type="DEST_loadoutNVG";
-		atlOffset=0.050567627;
+		id=1890;
+		type="ACE_ModuleCheckPBOs";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ACE_ModuleCheckPBOs_CheckAll";
+				expression="_this setVariable ['CheckAll',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="ACE_ModuleCheckPBOs_Whitelist";
+				expression="_this setVariable ['Whitelist',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="[""sa_advancedtowing"",""sa_advancedslingloading"",""cz75_nochain"",""headrangeplus"",""ar_advancedrappelling"",""ASM"",""ares"",""marmadebug"",""JSRS_SOUNDMOD_Bullethits"",""JSRS_SOUNDMOD_Environment"",""JSRS_SOUNDMOD_FrameWork"",""JSRS_SOUNDMOD_Sonic_Cracks"",""JSRS_SOUNDMOD_APCs"",""JSRS_SOUNDMOD_Tanks"",""JSRS_SOUNDMOD_CARS"",""JSRS_SOUNDMOD_HELICOPTERS"",""JSRS_SOUNDMOD_Movement"",""JSRS_SOUNDMOD_TRUCKS"",""JSRS_SOUNDMOD_UAVS"",""JSRS_SOUNDMOD_VTOLS"",""jsrs_soundmod_weapons"",""JSRS_SOUNDMOD_ReloadingSounds"",""JSRS_SOUNDMOD_RHS_AFRF_WEAPONS"",""JSRS_SOUNDMOD_RHS_USF_WEAPONS"",""JSRS_SOUNDMOD_Explosions""]";
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="ACE_ModuleCheckPBOs_Action";
+				expression="_this setVariable ['Action',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			nAttributes=3;
+		};
 	};
 };
 class connections
 {
 	class LinkIDProvider
 	{
-		nextID=7;
+		nextID=14;
 	};
 	class Links
 	{
-		items=7;
+		items=14;
 		class Item0
 		{
 			linkID=0;
-			item0=1332;
-			item1=1328;
+			item0=1870;
+			item1=1866;
 			class CustomData
 			{
 				type="Sync";
@@ -2462,8 +2462,8 @@ class connections
 		class Item1
 		{
 			linkID=1;
-			item0=1332;
-			item1=1329;
+			item0=1870;
+			item1=1867;
 			class CustomData
 			{
 				type="Sync";
@@ -2472,8 +2472,8 @@ class connections
 		class Item2
 		{
 			linkID=2;
-			item0=1332;
-			item1=1330;
+			item0=1870;
+			item1=1868;
 			class CustomData
 			{
 				type="Sync";
@@ -2482,8 +2482,8 @@ class connections
 		class Item3
 		{
 			linkID=3;
-			item0=1332;
-			item1=1331;
+			item0=1870;
+			item1=1869;
 			class CustomData
 			{
 				type="Sync";
@@ -2492,8 +2492,8 @@ class connections
 		class Item4
 		{
 			linkID=4;
-			item0=1333;
-			item1=1332;
+			item0=1871;
+			item1=1870;
 			class CustomData
 			{
 				type="Sync";
@@ -2502,8 +2502,8 @@ class connections
 		class Item5
 		{
 			linkID=5;
-			item0=1346;
-			item1=1332;
+			item0=1884;
+			item1=1870;
 			class CustomData
 			{
 				type="Sync";
@@ -2512,8 +2512,78 @@ class connections
 		class Item6
 		{
 			linkID=6;
-			item0=1347;
-			item1=1332;
+			item0=1885;
+			item1=1870;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item7
+		{
+			linkID=7;
+			item0=1870;
+			item1=1866;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item8
+		{
+			linkID=8;
+			item0=1870;
+			item1=1867;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item9
+		{
+			linkID=9;
+			item0=1870;
+			item1=1868;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item10
+		{
+			linkID=10;
+			item0=1870;
+			item1=1869;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item11
+		{
+			linkID=11;
+			item0=1871;
+			item1=1870;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item12
+		{
+			linkID=12;
+			item0=1884;
+			item1=1870;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item13
+		{
+			linkID=13;
+			item0=1885;
+			item1=1870;
 			class CustomData
 			{
 				type="Sync";
