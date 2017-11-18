@@ -50,4 +50,9 @@ class CfgSounds {
             sound[] = {"\160thSOR_Vietnam\sounds\news2.ogg", 30, 1};
             titles[] = {0,""}; 
 	};
+		class Nam_Han { 
+            name = "VC propaganda"; 
+            sound[] = {"\160thSOR_Vietnam\sounds\HH.ogg", 30, 1};
+            titles[] = {0,""}; 
+	};
 };

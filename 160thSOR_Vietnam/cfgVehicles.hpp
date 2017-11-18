@@ -44,10 +44,15 @@
                 displayNameDefault = "run through the jungle";
                 statement = "[this,'Nam_runthroughthejungle',30] spawn NAM_fnc_playSound";
             };
+			class VC_propaganda : PaintItBlack {
+                displayName = "VC propaganda";
+                displayNameDefault = "VC propaganda";
+                statement = "[this,'Nam_Han',30] spawn NAM_fnc_playSound";
+            };
         };
 	};
     
-    
+ 
     
 	#include "cfgBackpacks.hpp"
 	#include "cfgTroopsNam.hpp"	
