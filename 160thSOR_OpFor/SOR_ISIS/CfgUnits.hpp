@@ -1121,4 +1121,13 @@ class SOR_ISIS_Infantry_Base: I_Soldier_base_F
 		};
 	};
 
-
+//Mortar Spotter
+class SOR_ISIS_Infantry_ArtillerySpotter : SOR_ISIS_Infantry_Rifleman
+{
+	displayName = "Artillery Spotter (Scripted)";
+	class eventHandlers
+	{
+		init = "nul= [(_this select 0), 1000, 400 ,'SoldierWB','SOR_ISIS_OPF_Static_Mortar'] spawn SOR_fnc_mortar;";
+	};	
+};	
+	

@@ -571,5 +571,29 @@ class reich_groups
 				position[] = {80, -40, 0};
 			};
 		};
+	};
+	class the_fourth_reich_Static
+	{
+		name="Static";
+		class the_fourth_reich_Mortar
+		{
+			name="Mortar Crew";
+			faction = "the_fourth_reich";
+			side = OPFOR;
+			class Unit0
+			{
+				side = OPFOR;
+				vehicle="Nazi_Mortar";
+				rank="LIEUTENANT";
+				position[]={0,0,0};
+			};
+			class Unit1
+			{
+				side = OPFOR;
+				vehicle="Reich_ArtiSpotter";
+				rank="SERGEANT";
+				position[]={0,5,0};
+			};
+		};
 	};	
 };

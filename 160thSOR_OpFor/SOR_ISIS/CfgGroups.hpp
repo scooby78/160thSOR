@@ -497,4 +497,28 @@ class SOR_ISIS_Groups
 			};
 		};
 	};
+	class ISIS_Static
+	{
+		name="Static";
+		class SOR_ISIS_Mortar
+		{
+			name="Mortar Crew";
+			faction="SOR_FACTION_ISIS";
+			side = OPFOR;
+			class Unit0
+			{
+				side = OPFOR;
+				vehicle="SOR_ISIS_OPF_Static_Mortar";
+				rank="LIEUTENANT";
+				position[]={0,0,0};
+			};
+			class Unit1
+			{
+				side = OPFOR;
+				vehicle="SOR_ISIS_Infantry_ArtillerySpotter";
+				rank="SERGEANT";
+				position[]={0,5,0};
+			};
+		};
+	};
 };	

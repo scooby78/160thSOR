@@ -586,3 +586,14 @@ class SOR_OPFor_Engineer_VDV_AI : SOR_OPFor_Base_VDV_AI
 	magazines[] = {};
 	respawnMagazines[] = {};	
 };	
+
+//Mortar Spotter
+class SOR_OPFor_ArtiSpotter_VDV_AI : SOR_OPFor_Rifleman_VDV_AI
+{
+	displayName = "Artillery Spotter (Scripted)";
+	class eventHandlers
+	{
+		init = "nul= [(_this select 0), 1000, 400 ,'SoldierWB', 'SOR_OPFor_Static_Mortar_VDV_AI'] spawn SOR_fnc_mortar;";
+	};	
+};	
+

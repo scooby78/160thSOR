@@ -21,13 +21,15 @@ class CfgPatches
 	{
 		author="160th SOR";
 		url="http://www.160th.net";	
-		version="2.1.6";		
+		version="2.2.0";		
 		units[] = 
 		{
 			#include "4th_Reich\cfgPatches.hpp"
 			#include "Rus_VDV\cfgPatches.hpp"
 			#include "sites\cfgPatches.hpp"	
 			#include "SOR_ISIS\cfgPatches.hpp"
+			#include "SOR_PMC\cfgPatches.hpp"
+			
 		};
 		weapons[] = 
 		{
@@ -85,6 +87,7 @@ class cfgVehicles
 	#include "4th_Reich\cfgVehicles.hpp"
 	#include "sites\cfgVehicles.hpp"	
 	#include "SOR_ISIS\cfgVehicles.hpp"	
+	#include "SOR_PMC\cfgVehicles.hpp"	
 };
 
 class cfgWeapons 
@@ -92,6 +95,7 @@ class cfgWeapons
 	#include "Rus_VDV\CfgWeapons.hpp"
 	#include "4th_Reich\CfgWeapons.hpp"
 	#include "SOR_ISIS\CfgWeapons.hpp"	
+	#include "SOR_PMC\CfgWeapons.hpp"
 };
 
 class CfgBrains
@@ -133,6 +137,7 @@ class UniformSlotInfo
 { 
 	#include "4th_Reich\UniformSlotInfo.hpp"  
 	#include "SOR_ISIS\UniformSlotInfo.hpp"  	
+ 
 }; 
 
 class CfgEditorCategories
@@ -140,6 +145,7 @@ class CfgEditorCategories
 	#include "4th_Reich\cfgEditorCategories.hpp"
 	#include "Rus_VDV\cfgEditorCategories.hpp"	
 	#include "SOR_ISIS\cfgEditorCategories.hpp"		
+	#include "SOR_PMC\cfgEditorCategories.hpp"	
 	class SOR_OPFor_Cat_Supplies
 	{
 		displayName = "160th Supplies Opfor";
@@ -154,7 +160,7 @@ class CfgEditorCategories
 	};
 	class SOR_OPFor_Cat_Sites
 	{
-		displayName = "160th Sites";
+		displayName = "160th Sites & Spawners";
 	};	
 };
 
@@ -235,6 +241,7 @@ class cfgFactionClasses
 	#include "Rus_VDV\cfgFactionClasses.hpp"
 	#include "4th_Reich\cfgFactionClasses.hpp"
 	#include "SOR_ISIS\cfgFactionClasses.hpp"	
+	#include "SOR_PMC\cfgFactionClasses.hpp"	
 };
 
 class CfgGroups 
@@ -244,7 +251,13 @@ class CfgGroups
 		#include "Rus_VDV\CfgGroups.hpp"
 		#include "4th_Reich\CfgGroups.hpp"
 		#include "SOR_ISIS\CfgGroups.hpp"
+
 	};
+	
+	class indep
+	{
+		#include "SOR_PMC\CfgGroups.hpp"
+	};	
 };
 
 class CfgVehicleClasses

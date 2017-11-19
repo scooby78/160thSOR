@@ -43,6 +43,7 @@
 "SOR_OpFor_MORRFL_VDV",
 "SOR_OPFor_Engineer_Teamleader_VDV",
 "SOR_OpFor_Engineer_VDV",
+"SOR_OPFor_ArtiSpotter_VDV_AI",
 "SOR_OpFor_PJ_Box_F",
 "SOR_OpFor_PJ_Pack_Box_F",
 "SOR_OpFor_Air_LP",
@@ -130,3 +131,4 @@
 "SOR_Opfor_Fighter_CAS_AI",
 "SOR_Ind_Fighter_AA_AI",
 "SOR_Ind_Fighter_CAS_AI",
+"SOR_OPFor_Static_Mortar_VDV_AI",
