@@ -345,7 +345,7 @@ class PMC_AT_ArtiSpotter_D : PMC_AT_Rifleman_D
 	displayName = "Artillery Spotter (Scripted)";
 	class eventHandlers
 	{
-		init = "nul= [(_this select 0), 1000, 400 ,'SoldierWB'] spawn SOR_fnc_mortar;";
+		init = "nul= [(_this select 0), 1000, 400 ,'SoldierWB', 'SOR_FACTION_PMC_Mortar_D'] spawn SOR_fnc_mortar;";
 	};	
 };	
 
@@ -354,6 +354,6 @@ class PMC_AT_ArtiSpotter_W : PMC_AT_Rifleman_W
 	displayName = "Artillery Spotter (Scripted)";
 	class eventHandlers
 	{
-		init = "nul= [(_this select 0), 1000, 400 ,'SoldierWB'] spawn SOR_fnc_mortar;";
+		init = "nul= [(_this select 0), 1000, 400 ,'SoldierWB', 'SOR_FACTION_PMC_Mortar_W'] spawn SOR_fnc_mortar;";
 	};	
 };	

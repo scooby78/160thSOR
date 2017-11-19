@@ -49,4 +49,5 @@
 "SOR_FACTION_PMC_CPPT_FT",
 "PMC_Pilot_W",
 
-"SOR_FACTION_PMC_Mortar",
+"SOR_FACTION_PMC_Mortar_D",
+"SOR_FACTION_PMC_Mortar_W",

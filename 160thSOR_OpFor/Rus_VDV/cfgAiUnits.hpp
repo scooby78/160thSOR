@@ -593,7 +593,7 @@ class SOR_OPFor_ArtiSpotter_VDV_AI : SOR_OPFor_Rifleman_VDV_AI
 	displayName = "Artillery Spotter (Scripted)";
 	class eventHandlers
 	{
-		init = "nul= [(_this select 0), 1000, 400 ,'SoldierWB'] spawn SOR_fnc_mortar;";
+		init = "nul= [(_this select 0), 1000, 400 ,'SoldierWB', 'SOR_OPFor_Static_Mortar_VDV_AI'] spawn SOR_fnc_mortar;";
 	};	
 };	
 

@@ -301,15 +301,35 @@ class PMC_groups
 	class SOR_FACTION_PMC_Static
 	{
 		name="Static";
-		class SOR_FACTION_PMC_Mortar
+		class SOR_FACTION_PMC_Mortar_D
 		{
-			name="Mortar Crew";
+			name="Mortar Crew Desert";
 			faction = "SOR_FACTION_PMC";
 			side = OPFOR;
 			class Unit0
 			{
 				side = OPFOR;
-				vehicle="SOR_FACTION_PMC_Mortar";
+				vehicle="SOR_FACTION_PMC_Mortar_D";
+				rank="LIEUTENANT";
+				position[]={0,0,0};
+			};
+			class Unit1
+			{
+				side = OPFOR;
+				vehicle="PMC_AT_ArtiSpotter_D";
+				rank="SERGEANT";
+				position[]={0,5,0};
+			};
+		};
+		class SOR_FACTION_PMC_Mortar_W
+		{
+			name="Mortar Crew Woodland";
+			faction = "SOR_FACTION_PMC";
+			side = OPFOR;
+			class Unit0
+			{
+				side = OPFOR;
+				vehicle="SOR_FACTION_PMC_Mortar_D";
 				rank="LIEUTENANT";
 				position[]={0,0,0};
 			};

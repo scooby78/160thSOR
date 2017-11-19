@@ -581,6 +581,6 @@ class Reich_ArtiSpotter : Reich_Crew_Black
 	displayName = "Artillery Spotter (Scripted)";
 	class eventHandlers
 	{
-		init = "nul= [(_this select 0), 1000, 400 ,'SoldierWB'] spawn SOR_fnc_mortar;";
+		init = "nul= [(_this select 0), 1000, 400 ,'SoldierWB', 'Nazi_Mortar'] spawn SOR_fnc_mortar;";
 	};	
 };	
