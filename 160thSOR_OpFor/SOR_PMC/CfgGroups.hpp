@@ -296,7 +296,30 @@ class PMC_groups
 				rank = "PRIVATE";
 				position[] = {15,-15,0};
 			};
-		};
-		
+		};		
 	};
+	class SOR_FACTION_PMC_Static
+	{
+		name="Static";
+		class SOR_FACTION_PMC_Mortar
+		{
+			name="Mortar Crew";
+			faction = "SOR_FACTION_PMC";
+			side = OPFOR;
+			class Unit0
+			{
+				side = OPFOR;
+				vehicle="SOR_FACTION_PMC_Mortar";
+				rank="LIEUTENANT";
+				position[]={0,0,0};
+			};
+			class Unit1
+			{
+				side = OPFOR;
+				vehicle="PMC_AT_ArtiSpotter_D";
+				rank="SERGEANT";
+				position[]={0,5,0};
+			};
+		};
+	};	
 };

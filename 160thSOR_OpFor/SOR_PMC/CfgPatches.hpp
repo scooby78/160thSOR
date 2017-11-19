@@ -11,6 +11,7 @@
 "PMC_Sniper_D",
 "PMC_Pilot_D",
 "PMC_SQD_D",
+"PMC_AT_ArtiSpotter_D",
 
 "PMC_Commander_W",
 "PMC_Grenadier_W",
@@ -23,7 +24,7 @@
 "PMC_Soldier3_W",
 "PMC_Sniper_W",
 "PMC_Pilot_W",
-
+"PMC_AT_ArtiSpotter_W",
 
 "PMC_Team_D",
 "PMC_SQD_D",
@@ -47,3 +48,5 @@
 "SOR_FACTION_PMC_FT3_2",
 "SOR_FACTION_PMC_CPPT_FT",
 "PMC_Pilot_W",
+
+"SOR_FACTION_PMC_Mortar",

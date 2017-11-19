@@ -19,7 +19,8 @@
 "SOR_ISIS_Infantry_Rifleman_3",
 "SOR_ISIS_Infantry_GL",
 "SOR_ISIS_Infantry_Exec",
-			
+"SOR_ISIS_Infantry_ArtillerySpotter",		
+	
 "SOR_ISIS_M1025_D1_M2",
 "SOR_ISIS_M1025_D",
 "SOR_ISIS_Offroad_M2",
@@ -55,5 +56,8 @@
 "SOR_ISIS_OPF_Static_AT4",
 "SOR_ISIS_OPF_Static_M2",
 "SOR_ISIS_OPF_Static_M2_MiniTripod",
+"SOR_ISIS_OPF_Static_Mortar",
+
+
 	
 

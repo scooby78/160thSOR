@@ -1135,4 +1135,28 @@ class SOR_Opfor_Groups_VDV_AI
 			};
 		};
 	};
+	class SOR_Opfor_Static_VDV_AI
+	{
+		name="Static";
+		class SOR_Opfor_Mortar_VDV_AI
+		{
+			name="Mortar Crew";
+			faction = "SOR_Opfor_Faction_VDV_AI";
+			side = OPFOR;
+			class Unit0
+			{
+				side = OPFOR;
+				vehicle="SOR_OPFor_Static_Mortar_VDV_AI";
+				rank="LIEUTENANT";
+				position[]={0,0,0};
+			};
+			class Unit1
+			{
+				side = OPFOR;
+				vehicle="SOR_OPFor_ArtiSpotter_VDV_AI";
+				rank="SERGEANT";
+				position[]={0,5,0};
+			};
+		};
+	};
 };

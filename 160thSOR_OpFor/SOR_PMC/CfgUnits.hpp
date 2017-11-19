@@ -339,3 +339,21 @@ class PMC_AT_Rifleman_W: PMC_Commander_w {
 
 };
 
+//Mortar Spotter
+class PMC_AT_ArtiSpotter_D : PMC_AT_Rifleman_D
+{
+	displayName = "Artillery Spotter (Scripted)";
+	class eventHandlers
+	{
+		init = "nul= [(_this select 0), 1000, 400 ,'SoldierWB'] spawn SOR_fnc_mortar;";
+	};	
+};	
+
+class PMC_AT_ArtiSpotter_W : PMC_AT_Rifleman_W
+{
+	displayName = "Artillery Spotter (Scripted)";
+	class eventHandlers
+	{
+		init = "nul= [(_this select 0), 1000, 400 ,'SoldierWB'] spawn SOR_fnc_mortar;";
+	};	
+};	

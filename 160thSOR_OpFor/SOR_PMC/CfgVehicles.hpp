@@ -8,5 +8,5 @@
 #include "cfgBackpacks.hpp"
 #include "CfgUnits.hpp"
 #include "CfgCars.hpp"
-
+#include "CfgStatic.hpp"
 
