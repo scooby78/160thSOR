@@ -7,7 +7,7 @@
 This is optimised for both SP and MP gameplay.
 
 Will take over an infantry unit (defined as a spotter), when a defined unit side (Blufor, Opfor, etc) moves within range (currently set to 1000m). 
-Once the unit is controlled by the script (spotting mode), it will pull out binoculars and will transfer artillery coordinates to a singular artillery  gunner (not the hardware).
+Once the unit is controlled by the script (spotting mode), it will pull out binoculars and will transfer artillery coordinates to the closest defined artillery piece.
 
 Coordinates sent to the gunner have a fixed AND a random error to stop the AI sniping the target.
 
@@ -21,10 +21,10 @@ If the Target is unconscious, fire missions won't be called in.
 
 syntax:
 If placed in the Spotter's init field:
-nul= [this, Range_of_Spotter, Flee_Distance ,'Class_to_hunt'] spawn SOR_fnc_mortar;
+nul= [this, Range_of_Spotter, Flee_Distance ,'Class_to_hunt', 'Arti_Unit_Class'] spawn SOR_fnc_mortar;
 
 If placed in a trigger init field:
-nul= [Name_of_Spotter, Range_of_Spotter, Flee_Distance ,'Class_to_hunt'] spawn SOR_fnc_mortar;
+nul= [Name_of_Spotter, Range_of_Spotter, Flee_Distance ,'Class_to_hunt', 'Arti_Unit_Class'] spawn SOR_fnc_mortar;
 
 Suggested classnames to set for target search criteria:
 'Civilian' (Civilian)
@@ -41,13 +41,13 @@ Opfor Artillery -
 2A18M (D-30A)	(rhs_D30_vdv)		uses 'rhs_mag_3of56_10'
 
 E.g.
-nul= [this, 1000, 400 ,'SoldierWB'] spawn SOR_fnc_mortar; 
-If placed in the Spotter's init field, Blufor units will be hunted and fire missions will be sent to the closest valid mortar unit (the gunner).
+nul= [this, 1000, 400 ,'SoldierWB','SOR_FACTION_PMC_Mortar_D'] spawn SOR_fnc_mortar; 
+If placed in the Spotter's init field, Blufor units will be hunted and fire missions will be sent to the closest valid mortar unit (SOR_FACTION_PMC_Mortar_D).
 
-nul= [spotter1, 1000, 400 ,'SoldierWB'] spawn SOR_fnc_mortar; 
-If placed in a waypoint or a trigger 'on activation' field, will make **Spotter1** hunt Blufor units  and fire missions will be sent to the closest valid mortar unit (the gunner).
+nul= [spotter1, 1000, 400 ,'SoldierWB', 'SOR_FACTION_PMC_Mortar_D'] spawn SOR_fnc_mortar; 
+If placed in a waypoint or a trigger 'on activation' field, will make **Spotter1** hunt Blufor units  and fire missions will be sent to the closest valid mortar unit (SOR_FACTION_PMC_Mortar_D).
 
-Note: If the spotter is the same class as the uint hunted, the spotter will kill itself.
+Note: If the spotter is the same class as the unit hunted, the spotter will kill itself.
 Note: The script can be PAUSED via ZEUS or console by using the global execution... SOR_ARTI_PAUSE = true;
 Note: The script can be DISABLED via ZEUS or console by using the global execution... SOR_ARTI_STOP = true;
 
@@ -57,12 +57,15 @@ Note: The script can be DISABLED via ZEUS or console by using the global executi
 //	Only run on the server
 if !(isServer) exitWith {};
 
+sleep 3;
+
 //	Setup variables
 _spotter = _this select 0;
 _spotter addweapon "Binocular";
 _spotterRange = _this select 1;
 _fleeDistance = _this select 2;
 _vicClass = _this select 3;
+_artiClass = _this select 4;
 if ((isNil '_vicClass')) then {_vicClass = 'SoldierWB'};
 if (isNil "SOR_DEBUG") then {SOR_DEBUG = false;};
 if (isNil "SOR_ScriptThrottleOK") then {SOR_ScriptThrottleOK = false;};
@@ -71,8 +74,7 @@ SOR_ARTI_PAUSE = false;
 SOR_ARTI_STOP = false;
 _defending = false;
 _TargetsInRange = false;
-
-_artiVic = nearestObject [_spotter, "rhs_2b14_82mm_Base"];
+_artiVic = nearestObject [_spotter, _artiClass];
 _arti = gunner _artiVic;
 _artiVehicle = vehicle _arti;
 
@@ -81,7 +83,7 @@ waitUntil {SOR_ScriptThrottleOK && SOR_ScriptThrottleKill};
 diag_log format ["[16thSOR]		(SOR_fnc_mortar)	STARTED Spotter =(%1) Artillery = (%2)",_spotter,_arti]; 
 
 //	Lobotomise the unused arti
-_ArtiList = nearestObjects [_spotter, ["Mortar_01_base_F", "rhs_2b14_82mm_Base"], _spotterRange];
+_ArtiList = nearestObjects [_spotter, ["Mortar_01_base_F", "rhs_2b14_82mm_Base", _artiClass], _spotterRange];
 {
 	_artiGuner =  gunner _x;
 	_artiGuner disableAI 'TARGET';
