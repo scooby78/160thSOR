@@ -127,7 +127,6 @@
 									"30Rnd_545x39_Mag_Tracer_Green_F",\
 									"30Rnd_545x39_Mag_Tracer_Green_F",\
 									"30Rnd_545x39_Mag_Tracer_Green_F",\
-									"HandGrenade",\
 									"SmokeShell",\
 									"SmokeShell",\
 									"SmokeShell"		
@@ -139,9 +138,9 @@
 									"30Rnd_762x39_Mag_Tracer_Green_F",\
 									"30Rnd_762x39_Mag_Tracer_Green_F",\
 									"30Rnd_762x39_Mag_Tracer_Green_F",\
-									"SmokeShell",\
-									"1Rnd_HE_Grenade_shell",\
+									"rhs_mag_mk3a2",\
 									"1Rnd_HE_Grenade_shell"
+
 
 #define RUS_VDV_AI_Standard_Mags_PMC	"30Rnd_580x42_Mag_Tracer_F",\
 										"30Rnd_580x42_Mag_Tracer_F",\
@@ -151,7 +150,7 @@
 										"30Rnd_580x42_Mag_Tracer_F",\
 										"30Rnd_580x42_Mag_Tracer_F",\
 										"16Rnd_9x21_Mag"\
-										"HandGrenade",\
+										"rhs_mag_mk3a2",\
 										"SmokeShell",\
 										"SmokeShell",\
 										"SmokeShell"							
@@ -163,8 +162,4 @@
 										"30Rnd_580x42_Mag_Tracer_F",\
 										"30Rnd_580x42_Mag_Tracer_F",\
 										"30Rnd_580x42_Mag_Tracer_F",\
-										"SmokeShell",\
-										"1Rnd_HE_Grenade_shell",\
-										"1Rnd_HE_Grenade_shell"
-
-							
+										"1Rnd_HE_Grenade_shell"							
