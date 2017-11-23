@@ -1,5 +1,5 @@
 version=53;
-center[]={14665.291,17.91,16782.389};
+center[]={14664.386,17.91,16778.738};
 class items
 {
 	items=25;
@@ -8,9 +8,9 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={3.2080078,0.026000977,2.7265625};
+			position[]={3.2060547,0.026000977,2.7265625};
 		};
-		id=1865;
+		id=1890;
 		type="ace_advanced_fatigue_moduleSettings";
 		atlOffset=0.026000977;
 		class CustomAttributes
@@ -118,10 +118,10 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-4.7314453,0.071212769,2.1835938};
+			position[]={-4.7333984,0.071212769,2.1835938};
 			angles[]={0,0.18120271,0};
 		};
-		id=1866;
+		id=1891;
 		type="ModuleCurator_F";
 		atlOffset=0.071212769;
 		class CustomAttributes
@@ -229,10 +229,10 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-4.7138672,0.064849854,4.0957031};
+			position[]={-4.7158203,0.064849854,4.0957031};
 			angles[]={0,0.18120271,0};
 		};
-		id=1867;
+		id=1892;
 		type="ModuleCurator_F";
 		atlOffset=0.064849854;
 		class CustomAttributes
@@ -340,10 +340,10 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-4.7246094,0.049591064,0.28125};
+			position[]={-4.7265625,0.049591064,0.28125};
 			angles[]={0,0.18120855,0};
 		};
-		id=1868;
+		id=1893;
 		type="ModuleCurator_F";
 		atlOffset=0.049591064;
 		class CustomAttributes
@@ -451,10 +451,10 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-4.6992188,0.046829224,-1.2832031};
+			position[]={-4.7011719,0.046829224,-1.2832031};
 			angles[]={0,0.18120271,0};
 		};
-		id=1869;
+		id=1894;
 		type="ModuleCurator_F";
 		atlOffset=0.046829224;
 		class CustomAttributes
@@ -562,10 +562,10 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-2.9277344,0.047241211,-0.18945313};
+			position[]={-2.9296875,0.047241211,-0.18945313};
 			angles[]={0,0.18119842,0};
 		};
-		id=1870;
+		id=1895;
 		type="ModuleCuratorSetCoefs_F";
 		atlOffset=0.047241211;
 		class CustomAttributes
@@ -730,10 +730,10 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-4.6660156,0.046829224,-2.90625};
+			position[]={-4.6679688,0.046829224,-2.90625};
 			angles[]={0,0.18120271,0};
 		};
-		id=1871;
+		id=1896;
 		type="ModuleCurator_F";
 		atlOffset=0.046829224;
 		class CustomAttributes
@@ -841,10 +841,10 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={1.3417969,0.044326782,-1.1113281};
+			position[]={1.3398438,0.044326782,-1.1113281};
 			angles[]={0,2.9516044,0};
 		};
-		id=1872;
+		id=1897;
 		type="ACE_ModuleNameTags";
 		atlOffset=0.044326782;
 		class CustomAttributes
@@ -952,10 +952,10 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={1.40625,0.044326782,-2.6582031};
+			position[]={1.4042969,0.044326782,-2.6582031};
 			angles[]={0,2.9516044,0};
 		};
-		id=1873;
+		id=1898;
 		type="ACE_ModuleInteraction";
 		atlOffset=0.044326782;
 		class CustomAttributes
@@ -1006,10 +1006,10 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={2.3564453,0.032119751,0.44921875};
+			position[]={2.3544922,0.032119751,0.44921875};
 			angles[]={0,2.9601502,0};
 		};
-		id=1874;
+		id=1899;
 		type="ACE_moduleReviveSettings";
 		atlOffset=0.032119751;
 		class CustomAttributes
@@ -1079,10 +1079,10 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={1.2324219,0.038070679,0.2265625};
+			position[]={1.2304688,0.038070679,0.2265625};
 			angles[]={0,2.9516022,0};
 		};
-		id=1875;
+		id=1900;
 		type="ace_zeus_moduleSettings";
 		atlOffset=0.038070679;
 		class CustomAttributes
@@ -1209,10 +1209,10 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={2.3896484,0,-2.390625};
+			position[]={2.3876953,0,-2.390625};
 			angles[]={0,2.9601502,0};
 		};
-		id=1876;
+		id=1901;
 		type="ACE_ModuleRespawn";
 		class CustomAttributes
 		{
@@ -1262,10 +1262,10 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={1.2060547,0.030578613,1.4863281};
+			position[]={1.2041016,0.030578613,1.4863281};
 			angles[]={0,2.9516044,0};
 		};
-		id=1877;
+		id=1902;
 		type="ACE_ModuleHearing";
 		atlOffset=0.030578613;
 		class CustomAttributes
@@ -1354,10 +1354,10 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={2.1591797,0.035400391,2.8046875};
+			position[]={2.1572266,0.035400391,2.8046875};
 			angles[]={0,2.9601483,0};
 		};
-		id=1878;
+		id=1903;
 		type="ACE_moduleRepairSettings";
 		atlOffset=0.035400391;
 		class CustomAttributes
@@ -1541,10 +1541,10 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={1.1357422,0.030578613,2.7128906};
+			position[]={1.1337891,0.030578613,2.7128906};
 			angles[]={0,2.9516044,0};
 		};
-		id=1879;
+		id=1904;
 		type="ACE_moduleCargoSettings";
 		atlOffset=0.030578613;
 		class CustomAttributes
@@ -1595,10 +1595,10 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={2.3759766,0,-0.89453125};
+			position[]={2.3740234,0,-0.89453125};
 			angles[]={0,2.9601483,0};
 		};
-		id=1880;
+		id=1905;
 		type="ACE_moduleMedicalSettings";
 		class CustomAttributes
 		{
@@ -1876,10 +1876,10 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={1.0810547,0.034301758,3.7773438};
+			position[]={1.0791016,0.034301758,3.7773438};
 			angles[]={0,2.9516044,0};
 		};
-		id=1881;
+		id=1906;
 		type="ace_finger_moduleSettings";
 		atlOffset=0.034301758;
 		class CustomAttributes
@@ -1930,10 +1930,10 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={2.1875,0.046142578,3.921875};
+			position[]={2.1855469,0.046142578,3.921875};
 			angles[]={0,5.8697066,0};
 		};
-		id=1882;
+		id=1907;
 		type="ACEX_ModuleSitting";
 		atlOffset=0.046142578;
 		class CustomAttributes
@@ -1965,10 +1965,10 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-4.3203125,0.049331665,-5.0390625};
+			position[]={-4.3222656,0.049331665,-5.0390625};
 			angles[]={0,3.2462144,0};
 		};
-		id=1884;
+		id=1908;
 		type="ModuleCurator_F";
 		atlOffset=0.049331665;
 		class CustomAttributes
@@ -2076,10 +2076,10 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-4.4589844,0.047027588,-3.8984375};
+			position[]={-4.4609375,0.047027588,-3.8984375};
 			angles[]={0,3.2462144,0};
 		};
-		id=1885;
+		id=1909;
 		type="ModuleCurator_F";
 		atlOffset=0.047027588;
 		class CustomAttributes
@@ -2187,9 +2187,9 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={3.2099609,0.038238525,3.9082031};
+			position[]={3.2080078,0.038238525,3.9082031};
 		};
-		id=1886;
+		id=1910;
 		type="ace_advanced_throwing_Module";
 		atlOffset=0.038238525;
 		class CustomAttributes
@@ -2297,9 +2297,9 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={3.1914063,0.020568848,1.7324219};
+			position[]={3.1894531,0.020568848,1.7324219};
 		};
-		id=1887;
+		id=1911;
 		type="ACE_moduleRearmSettings";
 		atlOffset=0.020568848;
 		class CustomAttributes
@@ -2350,9 +2350,9 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={2.9277344,0.045578003,-5.7207031};
+			position[]={2.9257813,0.045578003,-5.7207031};
 		};
-		id=1888;
+		id=1912;
 		type="DEST_loadoutSup";
 		atlOffset=0.045578003;
 	};
@@ -2361,9 +2361,9 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={1.6191406,0.050567627,-5.765625};
+			position[]={1.6171875,0.050567627,-5.765625};
 		};
-		id=1889;
+		id=1913;
 		type="DEST_loadoutNVG";
 		atlOffset=0.050567627;
 	};
@@ -2372,10 +2372,10 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={2.1982422,0,1.5488281};
-			angles[]={-0,2.6059163,0};
+			position[]={2.2607422,0,1.5996094};
+			angles[]={0,2.6059163,0};
 		};
-		id=1890;
+		id=1915;
 		type="ACE_ModuleCheckPBOs";
 		class CustomAttributes
 		{
@@ -2413,7 +2413,7 @@ class items
 								"STRING"
 							};
 						};
-						value="[""sa_advancedtowing"",""sa_advancedslingloading"",""cz75_nochain"",""headrangeplus"",""ar_advancedrappelling"",""ASM"",""ares"",""marmadebug"",""JSRS_SOUNDMOD_Bullethits"",""JSRS_SOUNDMOD_Environment"",""JSRS_SOUNDMOD_FrameWork"",""JSRS_SOUNDMOD_Sonic_Cracks"",""JSRS_SOUNDMOD_APCs"",""JSRS_SOUNDMOD_Tanks"",""JSRS_SOUNDMOD_CARS"",""JSRS_SOUNDMOD_HELICOPTERS"",""JSRS_SOUNDMOD_Movement"",""JSRS_SOUNDMOD_TRUCKS"",""JSRS_SOUNDMOD_UAVS"",""JSRS_SOUNDMOD_VTOLS"",""jsrs_soundmod_weapons"",""JSRS_SOUNDMOD_ReloadingSounds"",""JSRS_SOUNDMOD_RHS_AFRF_WEAPONS"",""JSRS_SOUNDMOD_RHS_USF_WEAPONS"",""JSRS_SOUNDMOD_Explosions""]";
+						value="[""sa_advancedtowing"",""sa_advancedslingloading"",""cz75_nochain"",""headrangeplus"",""ar_advancedrappelling"",""ASM"",""ares"",""marmadebug"",""JSRS_SOUNDMOD_Bullethits"", ""JSRS_SOUNDMOD_Environment"", ""JSRS_SOUNDMOD_FrameWork"", ""JSRS_SOUNDMOD_Sonic_Cracks"", ""JSRS_SOUNDMOD_APCs"", ""JSRS_SOUNDMOD_Tanks"", ""JSRS_SOUNDMOD_CARS"", ""JSRS_SOUNDMOD_HELICOPTERS"", ""JSRS_SOUNDMOD_Movement"", ""JSRS_SOUNDMOD_TRUCKS"", ""JSRS_SOUNDMOD_UAVS"", ""JSRS_SOUNDMOD_VTOLS"", ""jsrs_soundmod_weapons"", ""JSRS_SOUNDMOD_RHS_AFRF_Vehicles"", ""JSRS_SOUNDMOD_RHS_AFRF_WEAPONS"", ""JSRS_SOUNDMOD_RHS_USF_Vehicles"", ""JSRS_SOUNDMOD_RHS_USF_WEAPONS"", ""JSRS_SOUNDMOD_Explosions""]";
 					};
 				};
 			};
@@ -2444,16 +2444,16 @@ class connections
 {
 	class LinkIDProvider
 	{
-		nextID=14;
+		nextID=7;
 	};
 	class Links
 	{
-		items=14;
+		items=7;
 		class Item0
 		{
 			linkID=0;
-			item0=1870;
-			item1=1866;
+			item0=1895;
+			item1=1891;
 			class CustomData
 			{
 				type="Sync";
@@ -2462,8 +2462,8 @@ class connections
 		class Item1
 		{
 			linkID=1;
-			item0=1870;
-			item1=1867;
+			item0=1895;
+			item1=1892;
 			class CustomData
 			{
 				type="Sync";
@@ -2472,8 +2472,8 @@ class connections
 		class Item2
 		{
 			linkID=2;
-			item0=1870;
-			item1=1868;
+			item0=1895;
+			item1=1893;
 			class CustomData
 			{
 				type="Sync";
@@ -2482,8 +2482,8 @@ class connections
 		class Item3
 		{
 			linkID=3;
-			item0=1870;
-			item1=1869;
+			item0=1895;
+			item1=1894;
 			class CustomData
 			{
 				type="Sync";
@@ -2492,8 +2492,8 @@ class connections
 		class Item4
 		{
 			linkID=4;
-			item0=1871;
-			item1=1870;
+			item0=1896;
+			item1=1895;
 			class CustomData
 			{
 				type="Sync";
@@ -2502,8 +2502,8 @@ class connections
 		class Item5
 		{
 			linkID=5;
-			item0=1884;
-			item1=1870;
+			item0=1908;
+			item1=1895;
 			class CustomData
 			{
 				type="Sync";
@@ -2512,78 +2512,8 @@ class connections
 		class Item6
 		{
 			linkID=6;
-			item0=1885;
-			item1=1870;
-			class CustomData
-			{
-				type="Sync";
-			};
-		};
-		class Item7
-		{
-			linkID=7;
-			item0=1870;
-			item1=1866;
-			class CustomData
-			{
-				type="Sync";
-			};
-		};
-		class Item8
-		{
-			linkID=8;
-			item0=1870;
-			item1=1867;
-			class CustomData
-			{
-				type="Sync";
-			};
-		};
-		class Item9
-		{
-			linkID=9;
-			item0=1870;
-			item1=1868;
-			class CustomData
-			{
-				type="Sync";
-			};
-		};
-		class Item10
-		{
-			linkID=10;
-			item0=1870;
-			item1=1869;
-			class CustomData
-			{
-				type="Sync";
-			};
-		};
-		class Item11
-		{
-			linkID=11;
-			item0=1871;
-			item1=1870;
-			class CustomData
-			{
-				type="Sync";
-			};
-		};
-		class Item12
-		{
-			linkID=12;
-			item0=1884;
-			item1=1870;
-			class CustomData
-			{
-				type="Sync";
-			};
-		};
-		class Item13
-		{
-			linkID=13;
-			item0=1885;
-			item1=1870;
+			item0=1909;
+			item1=1895;
 			class CustomData
 			{
 				type="Sync";
