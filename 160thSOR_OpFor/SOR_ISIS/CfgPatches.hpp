@@ -56,8 +56,3 @@
 "SOR_ISIS_OPF_Static_AT4",
 "SOR_ISIS_OPF_Static_M2",
 "SOR_ISIS_OPF_Static_M2_MiniTripod",
-"SOR_ISIS_OPF_Static_Mortar",
-
-
-	
-
