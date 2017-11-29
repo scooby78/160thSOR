@@ -13,9 +13,14 @@ class SOR_OPFor_Static_Mortar_VDV_AI: rhs_2b14_82mm_Base
 	side=0;
 	editorCategory = "SOR_OPFor_Cat_Faction_VDV_AI";
 	faction = SOR_OPFor_Faction_VDV_AI;
+	displayName="Mortar (Scripted)";	
 	crew="SOR_OPFor_Teamleader_VDV_AI";
 	typicalCargo[]=
 	{
 		"SOR_OPFor_Teamleader_VDV_AI"
 	};
+	class eventHandlers
+	{
+		init = "nul= [(_this select 0), 1000, 400 ,'SoldierWB'] spawn SOPFOR_fnc_mortar;";
+	};	
 };

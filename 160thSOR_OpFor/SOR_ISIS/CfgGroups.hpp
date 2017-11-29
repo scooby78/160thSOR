@@ -10,6 +10,67 @@ class SOR_ISIS_Groups
 	class SOR_ISIS_Infantry
 	{
 		name="Infantry";
+		class SOR_ISIS_Rifle_2Spawner
+		{
+			name = "2 Man Squad (Spawner Group)";
+			faction="SOR_FACTION_ISIS";
+			side = OPFOR;
+			class Unit0
+			{
+				side = OPFOR;
+				vehicle="SOR_ISIS_Infantry_TL";
+				rank="Sergeant";
+				position[]={0,5,0};
+			};
+			class Unit1
+			{
+				side = OPFOR;
+				vehicle="SOR_ISIS_Infantry_Rifleman_2";
+				rank="Corporal";
+				position[]={3,0,0};
+			};
+		};	
+		class SOR_ISIS_Rifle_5Spawner
+		{
+			name = "5 Man Squad (Spawner Group)";
+			faction="SOR_FACTION_ISIS";
+			side = OPFOR;
+			class Unit0
+			{
+				side = OPFOR;
+				vehicle="SOR_ISIS_Infantry_TL";
+				rank="Sergeant";
+				position[]={0,5,0};
+			};
+			class Unit1
+			{
+				side = OPFOR;
+				vehicle="SOR_ISIS_Infantry_Rifleman_2";
+				rank="Corporal";
+				position[]={3,0,0};
+			};
+			class Unit2
+			{
+				side = OPFOR;
+				vehicle="SOR_ISIS_Infantry_Corpsman";
+				rank="Corporal";
+				position[]={5,0,0};
+			};
+			class Unit3
+			{
+				side = OPFOR;
+				vehicle="SOR_ISIS_Infantry_Rifleman";
+				rank="Corporal";
+				position[]={7,0,0};
+			};
+			class Unit4
+			{
+				side = OPFOR;
+				vehicle="SOR_ISIS_Infantry_Rifleman";
+				rank="Private";
+				position[]={9,0,0};
+			};
+		};			
 		class SOR_ISIS_Patrol_section
 		{
 			name="Sentry";
@@ -494,30 +555,6 @@ class SOR_ISIS_Groups
 				vehicle="SOR_ISIS_BMP1";
 				rank="SERGEANT";
 				position[]={20,-30,3};
-			};
-		};
-	};
-	class ISIS_Static
-	{
-		name="Static";
-		class SOR_ISIS_Mortar
-		{
-			name="Mortar Crew";
-			faction="SOR_FACTION_ISIS";
-			side = OPFOR;
-			class Unit0
-			{
-				side = OPFOR;
-				vehicle="SOR_ISIS_OPF_Static_Mortar";
-				rank="LIEUTENANT";
-				position[]={0,0,0};
-			};
-			class Unit1
-			{
-				side = OPFOR;
-				vehicle="SOR_ISIS_Infantry_ArtillerySpotter";
-				rank="SERGEANT";
-				position[]={0,5,0};
 			};
 		};
 	};

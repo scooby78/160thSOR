@@ -574,13 +574,3 @@ class Reich_Shock_trp: Reich_Shock_trp_leader
 	magazines[] = {Reich_SL_Mags};
 	respawnMagazines[] = {Reich_SL_Mags};
 };
-
-//Mortar Spotter
-class Reich_ArtiSpotter : Reich_Crew_Black
-{
-	displayName = "Artillery Spotter (Scripted)";
-	class eventHandlers
-	{
-		init = "nul= [(_this select 0), 1000, 400 ,'SoldierWB', 'Nazi_Mortar'] spawn SOR_fnc_mortar;";
-	};	
-};	

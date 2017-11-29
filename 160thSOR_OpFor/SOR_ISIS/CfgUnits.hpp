@@ -49,8 +49,7 @@ class SOR_ISIS_Infantry_Base: I_Soldier_base_F
 			"rhs_30Rnd_762x39mm",
 			"rhs_30Rnd_762x39mm",
 			"rhs_30Rnd_762x39mm",
-			"rhs_mag_rdg2_white",
-			"rhs_mag_mk3a2"
+			"rhs_mag_rdg2_white"
 		};
 		respawnMagazines[]=
 		{
@@ -59,8 +58,7 @@ class SOR_ISIS_Infantry_Base: I_Soldier_base_F
 			"rhs_30Rnd_762x39mm",
 			"rhs_30Rnd_762x39mm",
 			"rhs_30Rnd_762x39mm",
-			"rhs_mag_rdg2_white",
-			"rhs_mag_mk3a2"
+			"rhs_mag_rdg2_white"
 		};
 
 	};
@@ -296,13 +294,13 @@ class SOR_ISIS_Infantry_Base: I_Soldier_base_F
 		{
 			"rhs_100Rnd_762x54mmR",
 			"rhs_100Rnd_762x54mmR",
-			"rhs_mag_mk3a2"
+			"HandGrenade"
 		};
 		respawnMagazines[]=
 		{
 			"rhs_100Rnd_762x54mmR",
 			"rhs_100Rnd_762x54mmR",
-			"rhs_mag_mk3a2"
+			"HandGrenade"
 		};
 		linkedItems[]=
 		{
@@ -375,8 +373,7 @@ class SOR_ISIS_Infantry_Base: I_Soldier_base_F
 			"rhs_mag_30Rnd_556x45_Mk318_Stanag",
 			"rhs_mag_rdg2_white",
 			"rhs_mag_rdg2_black",
-			"rhs_mag_mk3a2",
-			"rhs_mag_mk3a2"
+			"HandGrenade"
 		};
 		respawnMagazines[]=
 		{
@@ -387,8 +384,7 @@ class SOR_ISIS_Infantry_Base: I_Soldier_base_F
 			"rhs_mag_30Rnd_556x45_Mk318_Stanag",
 			"rhs_mag_rdg2_white",
 			"rhs_mag_rdg2_black",
-			"rhs_mag_mk3a2",
-			"rhs_mag_mk3a2"
+			"HandGrenade"
 		};
 		linkedItems[]=
 		{
@@ -443,8 +439,7 @@ class SOR_ISIS_Infantry_Base: I_Soldier_base_F
 			"SMA_30Rnd_556x45_M855A1",
 			"rhs_mag_rdg2_white",
 			"rhs_mag_rdg2_black",
-			"rhs_mag_mk3a2",
-			"rhs_mag_mk3a2"
+			"HandGrenade"
 		};
 		respawnMagazines[]=
 		{
@@ -455,8 +450,7 @@ class SOR_ISIS_Infantry_Base: I_Soldier_base_F
 			"SMA_30Rnd_556x45_M855A1",
 			"rhs_mag_rdg2_white",
 			"rhs_mag_rdg2_black",
-			"rhs_mag_mk3a2",
-			"rhs_mag_mk3a2"
+			"HandGrenade"
 		};
 		linkedItems[]=
 		{
@@ -513,8 +507,7 @@ class SOR_ISIS_Infantry_Base: I_Soldier_base_F
 			"rhsusf_10Rnd_762x51_m118_special_Mag",
 			"rhs_mag_rdg2_white",
 			"rhs_mag_rdg2_black",
-			"rhs_mag_mk3a2",
-			"rhs_mag_mk3a2"
+			"HandGrenade"
 		};
 		respawnMagazines[]=
 		{
@@ -527,8 +520,7 @@ class SOR_ISIS_Infantry_Base: I_Soldier_base_F
 			"rhsusf_10Rnd_762x51_m118_special_Mag",
 			"rhs_mag_rdg2_white",
 			"rhs_mag_rdg2_black",
-			"rhs_mag_mk3a2",
-			"rhs_mag_mk3a2"
+			"HandGrenade"
 		};
 		linkedItems[]=
 		{
@@ -583,8 +575,7 @@ class SOR_ISIS_Infantry_Base: I_Soldier_base_F
 			"SMA_30Rnd_556x45_M855A1",
 			"SMA_30Rnd_556x45_M855A1",
 			"SMA_30Rnd_556x45_M855A1",
-			"SMA_30Rnd_556x45_M855A1",
-			"rhs_mag_mk3a2"
+			"SMA_30Rnd_556x45_M855A1"
 		};
 		respawnMagazines[]=
 		{
@@ -593,8 +584,7 @@ class SOR_ISIS_Infantry_Base: I_Soldier_base_F
 			"SMA_30Rnd_556x45_M855A1",
 			"SMA_30Rnd_556x45_M855A1",
 			"SMA_30Rnd_556x45_M855A1",
-			"SMA_30Rnd_556x45_M855A1",
-			"rhs_mag_mk3a2"
+			"SMA_30Rnd_556x45_M855A1"
 		};
 		linkedItems[]=
 		{
@@ -647,8 +637,7 @@ class SOR_ISIS_Infantry_Base: I_Soldier_base_F
 			"SMA_30Rnd_556x45_M855A1",
 			"SMA_30Rnd_556x45_M855A1",
 			"SMA_30Rnd_556x45_M855A1",
-			"SMA_30Rnd_556x45_M855A1",
-			"rhs_mag_mk3a2"
+			"SMA_30Rnd_556x45_M855A1"
 		};
 		respawnMagazines[]=
 		{
@@ -657,8 +646,7 @@ class SOR_ISIS_Infantry_Base: I_Soldier_base_F
 			"SMA_30Rnd_556x45_M855A1",
 			"SMA_30Rnd_556x45_M855A1",
 			"SMA_30Rnd_556x45_M855A1",
-			"SMA_30Rnd_556x45_M855A1",
-			"rhs_mag_mk3a2"
+			"SMA_30Rnd_556x45_M855A1"
 		};
 		linkedItems[]=
 		{
@@ -707,14 +695,12 @@ class SOR_ISIS_Infantry_Base: I_Soldier_base_F
 		magazines[]=
 		{
 			"SMA_150Rnd_762_M80A1_Tracer",
-			"SMA_150Rnd_762_M80A1_Tracer",
-			"rhs_mag_mk3a2"
+			"SMA_150Rnd_762_M80A1_Tracer"
 		};
 		respawnMagazines[]=
 		{
 			"SMA_150Rnd_762_M80A1_Tracer",
-			"SMA_150Rnd_762_M80A1_Tracer",
-			"rhs_mag_mk3a2"
+			"SMA_150Rnd_762_M80A1_Tracer"
 		};
 		linkedItems[]=
 		{
@@ -788,9 +774,7 @@ class SOR_ISIS_Infantry_Base: I_Soldier_base_F
 			"rhs_30Rnd_762x39mm",
 			"rhs_30Rnd_762x39mm",
 			"rhs_mag_rdg2_white",
-			"rhs_mag_rdg2_black",
-			"rhs_mag_mk3a2",
-			"rhs_mag_mk3a2"
+			"rhs_mag_rdg2_black"
 		};
 		respawnMagazines[]=
 		{
@@ -801,9 +785,7 @@ class SOR_ISIS_Infantry_Base: I_Soldier_base_F
 			"rhs_30Rnd_762x39mm",
 			"rhs_30Rnd_762x39mm",
 			"rhs_mag_rdg2_white",
-			"rhs_mag_rdg2_black",
-			"rhs_mag_mk3a2",
-			"rhs_mag_mk3a2"
+			"rhs_mag_rdg2_black"
 		};
 		linkedItems[]=
 		{
@@ -865,8 +847,7 @@ class SOR_ISIS_Infantry_Base: I_Soldier_base_F
 			"rhs_VOG25",
 			"rhs_mag_rdg2_white",
 			"rhs_mag_rdg2_black",
-			"rhs_mag_mk3a2",
-			"rhs_mag_mk3a2"
+			"HandGrenade"
 		};
 		respawnMagazines[]=
 		{
@@ -882,8 +863,7 @@ class SOR_ISIS_Infantry_Base: I_Soldier_base_F
 			"rhs_VOG25",
 			"rhs_mag_rdg2_white",
 			"rhs_mag_rdg2_black",
-			"rhs_mag_mk3a2",
-			"rhs_mag_mk3a2"
+			"HandGrenade"
 		};
 		linkedItems[]=
 		{
@@ -1120,14 +1100,3 @@ class SOR_ISIS_Infantry_Base: I_Soldier_base_F
 			"160thSOR_OpFor\SOR_ISIS\data\isis_soldier_01_clothing_wmar_wdl_co.paa"
 		};
 	};
-
-//Mortar Spotter
-class SOR_ISIS_Infantry_ArtillerySpotter : SOR_ISIS_Infantry_Rifleman
-{
-	displayName = "Artillery Spotter (Scripted)";
-	class eventHandlers
-	{
-		init = "nul= [(_this select 0), 1000, 400 ,'SoldierWB','SOR_ISIS_OPF_Static_Mortar'] spawn SOR_fnc_mortar;";
-	};	
-};	
-	
