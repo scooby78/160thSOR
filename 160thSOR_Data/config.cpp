@@ -10,7 +10,7 @@ class CfgPatches {
 	{
 		author="160th SOR";
 		url="http://www.160th.net";
-		version="1.0.2";
+		version="1.1.0";
 		requiredAddons[] = 
 		{
 			"160th_SOR_Loadouts"
@@ -79,21 +79,21 @@ class cfgVehicles
 		{
 			class Air
 			{
-				displayName = "<t color='#F088ff'>Begin Airborne Training Brief</t>";
 				priority = 8;
 				showWindow = 0;
 				hideOnUse = true;
 				radius= 2;
 				position = "";
 				onlyForPlayer = 1;
-				shortcut = "";				
+				shortcut = "";	
+				displayName = "<t color='#F088ff'>Begin Airborne Training Brief</t>";				
 				condition = "Alive(this) && player isKindOf 'SOR_AirCommand_D' && (SOR_SLIDESHOW  == -1)";
 				statement = "[this] spawn SOR_fnc_AirSlideShow";
 			};
 			class Inf: Air
 			{
-				displayName = "Begin Infrantry Training Brief";
-				condition = "Alive(this) && player isKindOf 'SOR_Commander_D' && (SOR_SLIDESHOW  == -1)";
+				displayName = "<t color='#F088ff'>Begin Infrantry Training Brief</t>";
+				condition = "Alive(this) && player isKindOf 'SOR_Actual_D' && (SOR_SLIDESHOW  == -1)";
 				statement = "[this] spawn SOR_fnc_InfSlideShow";
 			};
 			class Mech: Air

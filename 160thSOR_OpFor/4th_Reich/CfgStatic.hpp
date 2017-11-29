@@ -55,9 +55,14 @@ class Nazi_Mortar: B_Mortar_01_F
 {
 	scope=2;
 	side=0;		
-	displayName="Reich Mortar";
+	displayName="Mortar (Scripted)";
 	editorCategory = "SOR_Reich_Cat_Faction_VDV_AI";
+	editorSubcategory = "rhs_EdSubcat_artillery";
 	faction = "the_fourth_reich";
 	crew="Reich_Crew_Black";
 	typicalCargo[]=	{"Reich_Crew_Black"};
+	class eventHandlers
+	{
+		init = "nul= [(_this select 0), 1000, 400 ,'SoldierWB'] spawn SOPFOR_fnc_mortar;";
+	};	
 };

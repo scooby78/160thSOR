@@ -6,12 +6,12 @@
 
 This is optimised for both SP and MP gameplay.
 
-Will take over an infantry unit (defined as a spotter), when a defined unit side (Blufor, Opfor, etc) moves within range (currently set to 1000m). 
-Once the unit is controlled by the script (spotting mode), it will pull out binoculars and will transfer artillery coordinates to the closest defined artillery piece.
+Will take over an artilery unit (and create a crew if empty) then add a spotter unit.  When a defined unit side (Blufor, Opfor, etc) moves within range (1000m recommended) the spotter (if he can 'SEE' the target) will
+enter 'spotting mode'.  It will pull out binoculars and transfer artillery coordinates to the artillery crew.
 
 Coordinates sent to the gunner have a fixed AND a random error to stop the AI sniping the target.
 
-The spotter will not be Zeus controllable while in spotting mode although after the currently selected target (the unit the spotter is watching) gets within a defined distance (default 400m), the script will
+The spotter will not be Zeus controllable while in spotting mode although can be remote controled.  After the currently observed target (by the spotter) gets within a defined distance (400m recommended), the script will
 release control of the unit and allow the AI to return fire and runaway.
 
 If the AI successfully evades the target, it will return to spotting mode automatically.
@@ -20,11 +20,8 @@ If the Spotter and the target are not in a clear line of sight, fire missions wo
 If the Target is unconscious, fire missions won't be called in.
 
 syntax:
-If placed in the Spotter's init field:
-nul= [this, Range_of_Spotter, Flee_Distance ,'Class_to_hunt', 'Arti_Unit_Class'] spawn SOR_fnc_mortar;
-
-If placed in a trigger init field:
-nul= [Name_of_Spotter, Range_of_Spotter, Flee_Distance ,'Class_to_hunt', 'Arti_Unit_Class'] spawn SOR_fnc_mortar;
+If placed in the Artillery Gun's init field:
+nul= [this, Range_of_Spotter, Spotter_Flee_Distance ,'Class_to_hunt'] spawn SOPFOR_fnc_mortar;
 
 Suggested classnames to set for target search criteria:
 'Civilian' (Civilian)
@@ -41,11 +38,8 @@ Opfor Artillery -
 2A18M (D-30A)	(rhs_D30_vdv)		uses 'rhs_mag_3of56_10'
 
 E.g.
-nul= [this, 1000, 400 ,'SoldierWB','SOR_FACTION_PMC_Mortar_D'] spawn SOR_fnc_mortar; 
+nul= [this, 1000, 400 ,'SoldierWB'] spawn SOPFOR_fnc_mortar; 
 If placed in the Spotter's init field, Blufor units will be hunted and fire missions will be sent to the closest valid mortar unit (SOR_FACTION_PMC_Mortar_D).
-
-nul= [spotter1, 1000, 400 ,'SoldierWB', 'SOR_FACTION_PMC_Mortar_D'] spawn SOR_fnc_mortar; 
-If placed in a waypoint or a trigger 'on activation' field, will make **Spotter1** hunt Blufor units  and fire missions will be sent to the closest valid mortar unit (SOR_FACTION_PMC_Mortar_D).
 
 Note: If the spotter is the same class as the unit hunted, the spotter will kill itself.
 Note: The script can be PAUSED via ZEUS or console by using the global execution... SOR_ARTI_PAUSE = true;
@@ -57,15 +51,35 @@ Note: The script can be DISABLED via ZEUS or console by using the global executi
 //	Only run on the server
 if !(isServer) exitWith {};
 
-sleep 3;
-
-//	Setup variables
-_spotter = _this select 0;
-_spotter addweapon "Binocular";
+//	Initial Setup variables
+_artiVehicle = _this select 0;
 _spotterRange = _this select 1;
 _fleeDistance = _this select 2;
+
+// Make zone marker only for planning purposes but don't spawn units in 3Den editor
+if (is3DEN) exitWith 
+{
+	_marker = str _artiVehicle;
+	_markerpos = position _artiVehicle;
+	createMarker [_marker, _markerpos];
+	_marker setMarkerType "Empty";
+	_marker setMarkerBrush "Solid";
+	_marker setMarkerShape "ELLIPSE";
+	_marker setMarkerSize [_spotterRange, _spotterRange];
+	_marker setMarkerColor "ColorRed";
+	_marker setMarkerAlpha 0.2;
+};
+
+//	Setup variables
+if ((count (crew _artiVehicle)) == 0) then 
+{
+	createVehicleCrew _artiVehicle;
+};
+_arti = gunner _artiVehicle;
+_artiType = typeOf _arti;
+_spotter = group _arti createUnit [_artiType, position _arti, [], 0, "FORM"];
+_spotter addweapon "Binocular";
 _vicClass = _this select 3;
-_artiClass = _this select 4;
 if ((isNil '_vicClass')) then {_vicClass = 'SoldierWB'};
 if (isNil "SOR_DEBUG") then {SOR_DEBUG = false;};
 if (isNil "SOR_ScriptThrottleOK") then {SOR_ScriptThrottleOK = false;};
@@ -74,25 +88,10 @@ SOR_ARTI_PAUSE = false;
 SOR_ARTI_STOP = false;
 _defending = false;
 _TargetsInRange = false;
-_artiVic = nearestObject [_spotter, _artiClass];
-_arti = gunner _artiVic;
-_artiVehicle = vehicle _arti;
 
 // Give the server breathing space
 waitUntil {SOR_ScriptThrottleOK && SOR_ScriptThrottleKill};
-diag_log format ["[16thSOR]		(SOR_fnc_mortar)	STARTED Spotter =(%1) Artillery = (%2)",_spotter,_arti]; 
-
-//	Lobotomise the unused arti
-_ArtiList = nearestObjects [_spotter, ["Mortar_01_base_F", "rhs_2b14_82mm_Base", _artiClass], _spotterRange];
-{
-	_artiGuner =  gunner _x;
-	_artiGuner disableAI 'TARGET';
-	_artiGuner disableAI 'SUPPRESSION';
-	_artiGuner disableAI 'AUTOTARGET';
-	_artiGuner disableAI 'PATH';
-	_artiGuner disableAI 'FSM';
-	_artiGuner disableAI 'AUTOCOMBAT';
-} foreach _ArtiList;
+diag_log format ["[16thSOR]		(SOPFOR_fnc_mortar)	STARTED Spotter =(%1) Artillery = (%2)",_spotter,_arti]; 
 
 //	Lobotomise the AI
 {
@@ -117,12 +116,12 @@ while {!SOR_ARTI_STOP && (alive _spotter) && (alive _arti) && SOR_ScriptThrottle
 	_nearestObjects = nearestObjects [_spotter, [_vicClass], _spotterRange];
 	_ArtiTgt = _nearestObjects call bis_fnc_selectRandom;	
 	//	Mid-Mission pause
-	if (SOR_ARTI_PAUSE) then {diag_log  "[16thSOR]		(SOR_fnc_mortar)	 Script Paused";};
+	if (SOR_ARTI_PAUSE) then {diag_log  "[16thSOR]		(SOPFOR_fnc_mortar)	 Script Paused";};
 	waitUntil {!(SOR_ARTI_PAUSE)};
 	while {!SOR_ARTI_STOP && !(isNil "_ArtiTgt") && (alive _spotter) && (alive _arti) && SOR_ScriptThrottleOK} do
 	{		
 		//	Mid-Mission pause
-		if (SOR_ARTI_PAUSE) then {diag_log  "[16thSOR]		(SOR_fnc_mortar)	Script Paused";};
+		if (SOR_ARTI_PAUSE) then {diag_log  "[16thSOR]		(SOPFOR_fnc_mortar)	Script Paused";};
 		waitUntil {!(SOR_ARTI_PAUSE)};
 		if ((alive _spotter) && (alive _arti)) then
 		{
@@ -135,7 +134,7 @@ while {!SOR_ARTI_STOP && (alive _spotter) && (alive _arti) && SOR_ScriptThrottle
 			_ArtiTgtUnconscious = _ArtiTgt getVariable "ACE_isUnconscious";
 			if (_viewdist > .07 && !_ArtiTgtUnconscious) then 
 			{
-				if (SOR_DEBUG) then {diag_log  format ["[16thSOR]		(SOR_fnc_mortar)	Spotter (%2) Now Targeting %1",_ArtiTgt, _spotter];};
+				if (SOR_DEBUG) then {diag_log  format ["[16thSOR]		(SOPFOR_fnc_mortar)	Spotter (%2) Now Targeting %1",_ArtiTgt, _spotter];};
 				//	Getting grids for target
 				_targetpos = getPos _ArtiTgt;				
 				_TargetPosX = _targetpos select 0;
@@ -153,14 +152,14 @@ while {!SOR_ARTI_STOP && (alive _spotter) && (alive _arti) && SOR_ScriptThrottle
 					_targetX = (floor _TargetPosX) + 50 + (floor(random 200)) - (floor(random 200));
 					_targetY = (floor _TargetPosY) + 50 + (floor(random 200)) - (floor(random 200));
 					_targetZ = (floor _TargetPosZ);
-					if (SOR_DEBUG) then {diag_log format ["[16thSOR]		(SOR_fnc_mortar)	Spotter (%1) Radioing in Grids",_spotter];};
+					if (SOR_DEBUG) then {diag_log format ["[16thSOR]		(SOPFOR_fnc_mortar)	Spotter (%1) Radioing in Grids",_spotter];};
 					//	Random pause so all arti don't continuously fire at the same time
 					sleep (5 + (floor(random 20)));
 					//	Mid-Mission pause
-					if (SOR_ARTI_PAUSE) then {diag_log format ["[16thSOR]		(SOR_fnc_mortar)	Spotter (%1) Script Paused",_spotter];};
+					if (SOR_ARTI_PAUSE) then {diag_log format ["[16thSOR]		(SOPFOR_fnc_mortar)	Spotter (%1) Script Paused",_spotter];};
 					waitUntil {!(SOR_ARTI_PAUSE)};
 					//	Fire command
-					if (SOR_DEBUG) then {diag_log format ["[16thSOR]		(SOR_fnc_mortar)	Spotter (%1) - %2 Fire",_spotter, _arti];};
+					if (SOR_DEBUG) then {diag_log format ["[16thSOR]		(SOPFOR_fnc_mortar)	Spotter (%1) - %2 Fire",_spotter, _arti];};
 					_artiDir = _arti getRelDir _ArtiTgt;
 					_arti setFormDir _artiDir;				
 					if (_artiVehicle isKindOf "Mortar_01_base_F") then {_arti doArtilleryFire [[_targetX,_targetY,_targetZ], '8Rnd_82mm_Mo_shells', 1];};
@@ -170,7 +169,7 @@ while {!SOR_ARTI_STOP && (alive _spotter) && (alive _arti) && SOR_ScriptThrottle
 				//	Spotter will defend himself is enemy units get too close (should opt to run away though)
 				while {!SOR_ARTI_STOP && !(isnil "_ArtiTgt") && (alive _spotter) && (alive _arti) && ((_spotter distance _ArtiTgt) < _fleeDistance)} do 
 				{
-					if (SOR_DEBUG) then {diag_log format ["[16thSOR]		(SOR_fnc_mortar)	Spotter (%1) Defending",_spotter];};						
+					if (SOR_DEBUG) then {diag_log format ["[16thSOR]		(SOPFOR_fnc_mortar)	Spotter (%1) Defending",_spotter];};						
 					if !(_defending) then 
 					{
 						_defending = true;
@@ -189,7 +188,7 @@ while {!SOR_ARTI_STOP && (alive _spotter) && (alive _arti) && SOR_ScriptThrottle
 				//	Lobotomise the AI again
 				if (_defending) then
 				{
-					if (SOR_DEBUG) then {diag_log format ["[16thSOR]		(SOR_fnc_mortar)	Spotter (%1) Setting Back Up",_spotter];};	
+					if (SOR_DEBUG) then {diag_log format ["[16thSOR]		(SOPFOR_fnc_mortar)	Spotter (%1) Setting Back Up",_spotter];};	
 					_defending = false;
 					_spotter disableAI 'TARGET';
 					_spotter disableAI 'AUTOTARGET';
@@ -206,4 +205,4 @@ while {!SOR_ARTI_STOP && (alive _spotter) && (alive _arti) && SOR_ScriptThrottle
 {
 	_x setDamage 1;
 } foreach [_spotter,_arti];
-diag_log format ["[16thSOR]		(SOR_fnc_mortar)	 STOPPED Spotter =(%1) Artillery = (%2)",_spotter,_arti]; 
+diag_log format ["[16thSOR]		(SOPFOR_fnc_mortar)	 STOPPED Spotter =(%1) Artillery = (%2)",_spotter,_arti]; 
