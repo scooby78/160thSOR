@@ -138,7 +138,7 @@
 									"30Rnd_762x39_Mag_Tracer_Green_F",\
 									"30Rnd_762x39_Mag_Tracer_Green_F",\
 									"30Rnd_762x39_Mag_Tracer_Green_F",\
-									"rhs_mag_mk3a2",\
+									"HandGrenade",\
 									"1Rnd_HE_Grenade_shell"
 
 
@@ -150,7 +150,6 @@
 										"30Rnd_580x42_Mag_Tracer_F",\
 										"30Rnd_580x42_Mag_Tracer_F",\
 										"16Rnd_9x21_Mag"\
-										"rhs_mag_mk3a2",\
 										"SmokeShell",\
 										"SmokeShell",\
 										"SmokeShell"							
