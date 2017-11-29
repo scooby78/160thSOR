@@ -10,6 +10,67 @@ class reich_groups
 	class Infantry
 	{
 		name = "Infantry";
+		class the_fourth_reich_2Spawner
+		{
+			name = "2 Man Squad (Spawner Group)";
+			side = 0;
+			faction = "the_fourth_reich";
+			class Unit0
+			{
+				side = 0;
+				vehicle = "SS_Trooper_MM";
+				rank = "SERGEANT";
+				position[] = {0,0,0};
+			};
+			class Unit1
+			{
+				side = 0;
+				vehicle = "SS_Trooper_MG";
+				rank = "CORPORAL";
+				position[] = {5,-5,0};
+			};
+		};
+		class the_fourth_reich_5Spawner
+		{
+			name = "5 Man Squad (Spawner Group)";
+			side = 0;
+			faction = "the_fourth_reich";
+			class Unit0
+			{
+				side = 0;
+				vehicle = "SS_Trooper_MM";
+				rank = "SERGEANT";
+				position[] = {0,0,0};
+			};
+			class Unit1
+			{
+				side = 0;
+				vehicle = "SS_Trooper_MG";
+				rank = "CORPORAL";
+				position[] = {5,-5,0};
+			};
+			class Unit2
+			{
+				side = 0;
+				vehicle = "SS_Trooper_EXP";
+				rank = "PRIVATE";
+				position[] = {-5,-5,0};
+			};
+			class Unit3
+			{
+				side = 0;
+				vehicle = "SS_Trooper_MM";
+				rank = "PRIVATE";
+				position[] = {10,-10,0};
+			};
+			class Unit4
+			{
+				side = 0;
+				vehicle = "SS_Trooper_MM";
+				rank = "PRIVATE";
+				position[] = {-10,-10,0};
+			};
+		};			
 		class the_fourth_reich_FT
 		{
 			name = "Squad Desert";
@@ -414,7 +475,6 @@ class reich_groups
 				position[] = {15,-15,0};
 			};
 		};
-		
 		class the_fourth_reich_SS_Blitz
 		{
 			name = "SS Blitz Team";
@@ -571,5 +631,5 @@ class reich_groups
 				position[] = {80, -40, 0};
 			};
 		};
-	};	
+	};
 };

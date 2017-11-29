@@ -30,6 +30,7 @@ class RHS_C130J;
 class B_Plane_Fighter_01_F;
 class B_Plane_Fighter_01_Stealth_F;
 class C_UAV_06_medical_F;
+class RHS_A10_AT;
 
 class SOR_UAV_medical_F: C_UAV_06_medical_F
 {
@@ -1070,7 +1071,7 @@ class SOR_A10_BASE: RHS_A10
 	class Components;
 };
 
-class SOR_A10 : SOR_A10_BASE
+class SOR_A10 : RHS_A10_AT
 {
 	scope = 2;
 	scopecurator = 2;
@@ -1082,97 +1083,6 @@ class SOR_A10 : SOR_A10_BASE
 	class TransportWeapons{};
 	class TransportMagazines{};
 	class TransportBackpacks{};
-	class Components
-	{
-		class TransportPylonsComponent
-		{
-			UIPicture = "\rhsusf\addons\rhsusf_a2port_air\data\loadouts\RHS_A10_EDEN_CA.paa";
-			class pylons
-			{
-				class pylon1
-				{
-					hardpoints[] = {"RHS_HP_AIM9_2x", "RHS_HP_LGB_500", "RHS_HP_ECM"};
-					priority = 5;
-					maxweight = 1200;
-					UIposition[] = {0.3, 0.55};
-					bay = -1;
-					attachment = "rhs_mag_ANALQ131";
-				};
-				class pylon2
-				{
-					hardpoints[] = {"RHS_HP_LGB_500", "RHS_HP_FFAR_USAF"};
-					priority = 4;
-					maxweight = 1200;
-					UIposition[] = {0.3, 0.5};
-					bay = -1;
-					attachment = "rhs_mag_FFAR_7_USAF";
-				};
-				class pylon3
-				{
-					hardpoints[] = {"RHS_HP_LGB_500", "RHS_HP_FFAR_USAF", "RHS_HP_AGM65_3x", "RHS_HP_BOMB_500_3x"};
-					priority = 3;
-					maxweight = 1200;
-					UIposition[] = {0.3, 0.45};
-					bay = -1;
-					attachment = "rhs_mag_agm65d_3";
-				};
-				class pylon4
-				{
-					hardpoints[] = {"RHS_HP_LGB_500", "RHS_HP_FFAR_USAF", "RHS_HP_BOMB_500_3x"};
-					priority = 2;
-					maxweight = 1200;
-					UIposition[] = {0.35, 0.375};
-					bay = -1;
-					attachment = "rhs_mag_cbu87";
-				};
-				class pylon5
-				{
-					hardpoints[] = {"RHS_HP_LGB_500", "RHS_HP_FFAR_USAF"};
-					priority = 1;
-					maxweight = 1200;
-					UIposition[] = {0.35, 0.325};
-					bay = -1;
-					attachment = "rhs_mag_gbu12";
-				};
-				class pylon6
-				{
-					hardpoints[] = {};
-					priority = 1;
-					maxweight = 1200;
-					UIposition[] = {0.35, 0.275};
-					bay = -1;
-					attachment = "";
-				};
-				class pylon7: pylon5
-				{
-					UIposition[] = {0.35, 0.225};
-					mirroredMissilePos = 5;
-				};
-				class pylon8: pylon4
-				{
-					UIposition[] = {0.35, 0.175};
-					mirroredMissilePos = 4;
-				};
-				class pylon9: pylon3
-				{
-					UIposition[] = {0.3, 0.1};
-					mirroredMissilePos = 3;
-				};
-				class pylon10: pylon2
-				{
-					UIposition[] = {0.3, 0.05};
-					mirroredMissilePos = 2;
-				};
-				class pylon11: pylon1
-				{
-					hardpoints[] = {"RHS_HP_AIM9_2x", "RHS_HP_LGB_500"};
-					UIposition[] = {0.3, 0};
-					attachment = "rhs_mag_Sidewinder_2";
-					mirroredMissilePos = 1;
-				};
-			};
-		};
-	};
 };
 /////////////////////
 //Captured Aircraft//

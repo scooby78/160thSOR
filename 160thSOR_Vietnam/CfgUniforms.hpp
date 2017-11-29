@@ -27,7 +27,7 @@ class US_ARMY_Uniform : Uniform_Base
 		{
             uniformModel = "-";
             uniformClass = "SOR_Actual_Nam";
-            containerClass = "Supply120";
+            containerClass = "Supply300";
             mass = 20;
 		};
 };	
@@ -46,7 +46,7 @@ class VC_Uniform_1 : Uniform_Base
 		{
             uniformModel = "-";
             uniformClass = "SOR_Nam_VC_1";
-            containerClass = "Supply120";
+            containerClass = "Supply300";
             mass = 20;
 		};
 };	

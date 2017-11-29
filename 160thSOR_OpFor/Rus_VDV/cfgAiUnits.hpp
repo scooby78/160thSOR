@@ -585,4 +585,4 @@ class SOR_OPFor_Engineer_VDV_AI : SOR_OPFor_Base_VDV_AI
 	RespawnItems[] = {RUS_VDV_Standard_Meds};
 	magazines[] = {};
 	respawnMagazines[] = {};	
-};	
+};
