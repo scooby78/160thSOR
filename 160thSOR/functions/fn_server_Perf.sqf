@@ -1,6 +1,6 @@
 if !(isServer) exitWith {};
 waitUntil {time > 0};
-diag_log "SOR Server Performance Script - STARTED.....";	
+diag_log "[16thSOR]		(Server Performance Script) - STARTED.....";	
 
 SOR_PerfMonitor	= true;
 SOR_ScriptThrottleKill = false;
@@ -22,7 +22,7 @@ while {SOR_PerfMonitor} do
 		{
 			SOR_ScriptThrottleKill = false;
 			publicVariable "SOR_ScriptThrottleKill";
-			diag_log "SOR Server Performance Script - Script 'Kill' Command Sent.....";	
+			diag_log "[16thSOR]		(Server Performance Script) - Script 'Kill' Command Sent.....";	
 			sleep 10;
 			SOR_FPS = (floor(diag_fps));
 			publicVariable "SOR_FPS";			
@@ -42,7 +42,7 @@ while {SOR_PerfMonitor} do
 	{
 		SOR_ScriptThrottleOK = false;
 		publicVariable "SOR_ScriptThrottleOK";
-		diag_log "SOR Server Performance Script - Script 'Throttle Down' Command Sent.....";
+		diag_log "[16thSOR]		(Server Performance Script) - Script 'Throttle Down' Command Sent.....";
 	};	
 	sleep 5;
 };

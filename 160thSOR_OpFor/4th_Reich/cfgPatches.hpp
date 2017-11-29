@@ -35,7 +35,6 @@
 "Reich_Shock_trp_leader",
 "Reich_Shock_trp_aa",
 "Reich_Shock_trp_at",
-"Reich_ArtiSpotter",
 "the_fourth_reich_AT_team",
 "the_fourth_reich_AA_team",
 "SS_Commander",
@@ -72,5 +71,3 @@
 "Nazi_SAA",
 "Nazi_GBAD",
 "Nazi_HMG_high",
-"Nazi_Mortar",
-

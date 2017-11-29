@@ -12,7 +12,6 @@ class SOR_Opfor_Groups_VDV
 	{
 		name = "Infantry";
 		aliveCategory = "Infantry";
-		
 		class SOR_Opfor_HavocGroup_VDV 
 		{
 			name = "HAVOC";
@@ -651,6 +650,69 @@ class SOR_Opfor_Groups_VDV_AI
 	{
 		name = "Infantry";
 		aliveCategory = "Infantry";
+		class SOR_Opfor_2Spawner_VDV_AI
+		{
+			name = "2 Man Squad (Spawner Group)";
+			faction = "SOR_OPFor_Faction_VDV_AI";
+			side = OPFOR;
+			rarityGroup = 0.75;
+			class Unit0 
+			{
+				side = OPFOR;
+				vehicle = "SOR_OPFor_Rifleman_VDV_AI";
+				rank = SERGEANT;
+				position[] = {0, -0, 0};
+			};					
+			class Unit1 
+			{
+				side = OPFOR;
+				vehicle = "SOR_OPFor_Rifleman_VDV_AI";
+				rank = PRIVATE;
+				position[] = {0, -2, 0};
+			};	
+		};
+		class SOR_Opfor_5Spawner_VDV_AI
+		{
+			name = "5 Man Squad (Spawner Group)";
+			faction = "SOR_OPFor_Faction_VDV_AI";
+			side = OPFOR;
+			rarityGroup = 0.75;
+			class Unit0 
+			{
+				side = OPFOR;
+				vehicle = "SOR_Opfor_Grenadier_VDV_AI";
+				rank = SERGEANT;
+				position[] = {0, -0, 0};
+			};					
+			class Unit1 
+			{
+				side = OPFOR;
+				vehicle = "SOR_Opfor_Medic_VDV_AI";
+				rank = PRIVATE;
+				position[] = {0, -2, 0};
+			};					
+			class Unit2 
+			{
+				side = OPFOR;
+				vehicle = "SOR_OPFor_Rifleman_VDV_AI";
+				rank = CORPORAL;
+				position[] = {0, -6, 0};
+			};
+			class Unit3 
+			{
+				side = OPFOR;
+				vehicle = "SOR_OPFor_PKM_VDV_AI";
+				rank = PRIVATE;
+				position[] = {0, -8, 0};
+			};
+			class Unit4 
+			{
+				side = OPFOR;
+				vehicle = "SOR_OPFor_Rifleman_VDV_AI";
+				rank = PRIVATE;
+				position[] = {0, -10, 0};
+			};
+		};	
 		class SOR_Opfor_INFSquadA_VDV_AI
 		{
 			name = "10 Man Squad";
@@ -1132,30 +1194,6 @@ class SOR_Opfor_Groups_VDV_AI
 				vehicle = "SOR_Opfor_Fighter_CAS2";
 				rank = LIEUTENANT;
 				position[] = {-80, -40, 0};
-			};
-		};
-	};
-	class SOR_Opfor_Static_VDV_AI
-	{
-		name="Static";
-		class SOR_Opfor_Mortar_VDV_AI
-		{
-			name="Mortar Crew";
-			faction = "SOR_Opfor_Faction_VDV_AI";
-			side = OPFOR;
-			class Unit0
-			{
-				side = OPFOR;
-				vehicle="SOR_OPFor_Static_Mortar_VDV_AI";
-				rank="LIEUTENANT";
-				position[]={0,0,0};
-			};
-			class Unit1
-			{
-				side = OPFOR;
-				vehicle="SOR_OPFor_ArtiSpotter_VDV_AI";
-				rank="SERGEANT";
-				position[]={0,5,0};
 			};
 		};
 	};

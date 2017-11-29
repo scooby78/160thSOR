@@ -337,23 +337,4 @@ class PMC_AT_Rifleman_W: PMC_Commander_w {
 	magazines[] = {"rhsusf_mag_40Rnd_46x30_JHP","rhsusf_mag_40Rnd_46x30_JHP","rhsusf_mag_40Rnd_46x30_JHP","rhsusf_mag_40Rnd_46x30_JHP","rhsusf_mag_40Rnd_46x30_JHP","rhsusf_mag_40Rnd_46x30_JHP","rhsusf_mag_40Rnd_46x30_JHP"}; 
 	respawnMagazines[] = {"rhsusf_mag_40Rnd_46x30_JHP","rhsusf_mag_40Rnd_46x30_JHP","rhsusf_mag_40Rnd_46x30_JHP","rhsusf_mag_40Rnd_46x30_JHP","rhsusf_mag_40Rnd_46x30_JHP","rhsusf_mag_40Rnd_46x30_JHP","rhsusf_mag_40Rnd_46x30_JHP"};
 
-};
-
-//Mortar Spotter
-class PMC_AT_ArtiSpotter_D : PMC_AT_Rifleman_D
-{
-	displayName = "Artillery Spotter (Scripted)";
-	class eventHandlers
-	{
-		init = "nul= [(_this select 0), 1000, 400 ,'SoldierWB', 'SOR_FACTION_PMC_Mortar_D'] spawn SOR_fnc_mortar;";
-	};	
-};	
-
-class PMC_AT_ArtiSpotter_W : PMC_AT_Rifleman_W
-{
-	displayName = "Artillery Spotter (Scripted)";
-	class eventHandlers
-	{
-		init = "nul= [(_this select 0), 1000, 400 ,'SoldierWB', 'SOR_FACTION_PMC_Mortar_W'] spawn SOR_fnc_mortar;";
-	};	
 };	

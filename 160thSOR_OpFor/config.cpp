@@ -77,7 +77,8 @@ class CfgFunctions
 			class gunSpawn;
 			class NoFlySite4km;
 			class NoFlySite3km;
-			class buildingSpawn;			
+			class spawner;	
+			class mortar;
 		};
 	};
 };
