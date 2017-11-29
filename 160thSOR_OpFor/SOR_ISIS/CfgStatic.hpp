@@ -12,7 +12,6 @@ class rhs_DSHKM_ins;
 class RHS_M2StaticMG_D;
 class RHS_M2StaticMG_MiniTripod_D;
 
-
 class SOR_ISIS_OPF_Igla_AA_pod: rhs_Igla_AA_pod_vdv
 {
 	scope=2;
@@ -68,6 +67,7 @@ class SOR_ISIS_OPF_Static_DSHKM: rhs_DSHKM_ins
 {
 	scope=2;
 	editorCategory = "SOR_ISIS_Cat_Faction";
+	editorPreview = "";
 	side=0;
 	faction="SOR_FACTION_ISIS";
 	crew="SOR_ISIS_Infantry_SL";
@@ -100,4 +100,21 @@ class SOR_ISIS_OPF_Static_M2_MiniTripod: RHS_M2StaticMG_MiniTripod_D
 	{
 		"SOR_ISIS_Infantry_SL"
 	};
+};
+class SOR_ISIS_OPF_Static_Mortar: rhs_2b14_82mm_Base
+{
+	scope=2;
+	side=0;
+	editorCategory = "SOR_ISIS_Cat_Faction";
+	faction="SOR_FACTION_ISIS";
+	displayName="Mortar (Scripted)";	
+	crew="SOR_ISIS_Infantry_SL";
+	typicalCargo[]=
+	{
+		"SOR_ISIS_Infantry_SL"
+	};
+	class eventHandlers
+	{
+		init = "nul= [(_this select 0), 1000, 400 ,'SoldierWB'] spawn SOPFOR_fnc_mortar;";
+	};		
 };

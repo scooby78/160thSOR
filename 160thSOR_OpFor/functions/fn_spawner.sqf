@@ -13,7 +13,8 @@ _Scan_Range = _this select 3;
 _Group_Class = _this select 4;
 _Engagement_Stop = _this select 5;
 _clearance_area	= _this select 6;
-
+_timeout = _this select 7;
+if (isNil "_timeout") then {_timeout = 10};
 _i = 0;
 
 diag_log format ["SOR Group Spawner Script - %1 - Started.....OK", _Group_Start_Object];
@@ -106,8 +107,14 @@ while {SOR_GRPSPWN_ACTIVE && SOR_ScriptThrottleKill && (alive _Group_Start_Objec
 	}
 	else
 	{
-		sleep (floor(random 20));
+		sleep _timeout;
 	};
+};
+
+if (_Group_Start_Object isKindOf "Land_Garbage_square3_F") then
+{
+	deleteVehicle _Group_Start_Object;
+	diag_log format ["SOR Group Spawner Script - %1 - Deleted.....", _Group_Start_Object];
 };
 	
 diag_log format ["SOR Group Spawner Script - %1 - Ended.....", _Group_Start_Object];
