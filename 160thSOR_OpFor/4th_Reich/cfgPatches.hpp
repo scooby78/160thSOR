@@ -71,5 +71,3 @@
 "Nazi_SAA",
 "Nazi_GBAD",
 "Nazi_HMG_high",
-"Nazi_Mortar",
-

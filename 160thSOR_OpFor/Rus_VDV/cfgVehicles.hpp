@@ -12,3 +12,4 @@
 #include "cfgAiAircraft.hpp"		
 #include "cfgArmour.hpp"	
 #include "cfgCrates.hpp"
+#include "cfgStatic.hpp"
