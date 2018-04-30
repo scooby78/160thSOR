@@ -6,13 +6,13 @@
 */
 
 
-class C_Offroad_02_unarmed_F_black;
+class C_Offroad_02_unarmed_black_F;
 class C_Scooter_Transport_01_F;
 class B_T_Boat_Transport_01_F;
 class C_Hatchback_01_F;
 class B_Heli_Light_01_F;
 
-class PMC_Jeep: C_Offroad_02_unarmed_F_black
+class PMC_Jeep: C_Offroad_02_unarmed_black_F
 {
 	scope=2;
 	displayName="Jeep";
