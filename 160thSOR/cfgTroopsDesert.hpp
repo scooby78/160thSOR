@@ -1386,7 +1386,7 @@ class SOR_MechDriver_D : SOR_MechCrew_D
 	engineer = 1; // allows unit to repair 	
 	class eventHandlers
 	{
-		init="_null = [[(_this select 0), '160thSOR_Mech_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP; [(_this select 0)] spawn SOR_fnc_ExternalView;";	
+		init="_null = [[(_this select 0), '160thSOR_Mech_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
 	};	
 };	
 
