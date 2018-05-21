@@ -150,12 +150,16 @@ class SOR_MechCommand_D : B_officer_F
 	Items[] =
 	{
 		Standard_Meds,
-		SL_Equip
+		SL_Equip,
+        "ACE_epinephrine",
+        "ACE_epinephrine"
 	};  
 	RespawnItems[] = 
 	{
 		Standard_Meds,
-		SL_Equip
+		SL_Equip,
+        "ACE_epinephrine",
+        "ACE_epinephrine"
 	};
 	magazines[] = 
 	{
@@ -492,7 +496,7 @@ class SOR_M249AR_D : B_soldier_AR_F
 	faction = SOR_Faction_D;
 	uniformClass = "U_B_CombatUniform_mcam";
 	displayName = "AutoRifleman M249";
-	backpack = "";
+	backpack = "B_AssaultPack_cbr";
 	weapons[] = {"160_weap_inf_AR1", "160_weap_inf_handgun", "Throw", "Put"};
 	respawnWeapons[] = {"160_weap_inf_AR1", "160_weap_inf_handgun","Throw", "Put"};
 	Items[] = {Standard_Meds};
@@ -534,7 +538,7 @@ class SOR_M240AR_D : B_soldier_AR_F
 	faction = SOR_Faction_D;
 	uniformClass = "U_B_CombatUniform_mcam";
 	displayName = "AutoRifleman M240";
-	backpack = "";
+	backpack = "B_AssaultPack_cbr";
 	weapons[] = {"160_weap_inf_AR2", "160_weap_inf_handgun", "Throw", "Put"};
 	respawnWeapons[] = {"160_weap_inf_AR2", "160_weap_inf_handgun","Throw", "Put"};
 	Items[] = {Standard_Meds};
@@ -621,9 +625,9 @@ class SOR_Rifleman_D : B_Soldier_F
 	faction = SOR_Faction_D;
 	uniformClass = "U_B_CombatUniform_mcam";
 	displayName = "Rifleman AT Ammo Bearer (M249)";
-	backpack = "";
-	weapons[] = {"160_weap_inf_std", "160_weap_inf_handgun","160_weap_inf_RPG","Throw","Put","Rangefinder"};
-	respawnWeapons[] = {"160_weap_inf_std", "160_weap_inf_handgun","160_weap_inf_RPG","Throw","Put","Rangefinder"};
+	backpack = "SOR_Rifleman_AT_Pack_D";
+	weapons[] = {"160_weap_inf_std","launch_MRAWS_sand_rail_F","Throw","Put","Rangefinder"};
+	respawnWeapons[] = {"160_weap_inf_std","launch_MRAWS_sand_rail_F","Throw","Put","Rangefinder"};
 	Items[] = 
 	{
 		"ACE_EntrenchingTool",
@@ -637,13 +641,11 @@ class SOR_Rifleman_D : B_Soldier_F
 	magazines[] = 
 	{
 		Standard_Mags,
-		Std_Pistol,
 		Standard_Mags_AR1_ammo
 	};
 	respawnMagazines[] = 
 	{
 		Standard_Mags,
-		Std_Pistol,
 		Standard_Mags_AR1_ammo
 	};	
 	linkedItems[] = 
@@ -669,19 +671,17 @@ class SOR_Rifleman_D : B_Soldier_F
 class SOR_Rifleman_ammo_D : SOR_Rifleman_D	
 {
 	displayName = "Rifleman AT Ammo Bearer (M240)";
-	backpack = "";
-	weapons[] = {"160_weap_inf_std","160_weap_inf_handgun","160_weap_inf_RPG","Throw","Put","Rangefinder"};
-	respawnWeapons[] = {"160_weap_inf_std","160_weap_inf_handgun","160_weap_inf_RPG","Throw","Put","Rangefinder"};
+	backpack = "SOR_Rifleman_AT_Pack_D";
+	weapons[] = {"160_weap_inf_std","launch_MRAWS_sand_rail_F","Throw","Put","Rangefinder"};
+	respawnWeapons[] = {"160_weap_inf_std","launch_MRAWS_sand_rail_F","Throw","Put","Rangefinder"};
 	magazines[] = 
 	{
 		Standard_Mags,
-		Std_Pistol,
 		Standard_Mags_AR2_ammo
 	};
 	respawnMagazines[] = 
 	{
 		Standard_Mags,
-		Std_Pistol,
 		Standard_Mags_AR2_ammo
 	};	
 };
@@ -1486,13 +1486,21 @@ class SOR_Engineer_Teamleader_D : B_engineer_F
 	{
 		"ACE_EntrenchingTool",
 		"ACE_Flashlight_MX991",
-		Standard_Meds
+		Standard_Meds,
+        "ACE_epinephrine",
+        "ACE_epinephrine",
+        "ACE_epinephrine",
+        "ACE_epinephrine"
 	};
 	RespawnItems[] =
 	{
 		"ACE_EntrenchingTool",
 		"ACE_Flashlight_MX991",
-		Standard_Meds
+		Standard_Meds,
+        "ACE_epinephrine",
+        "ACE_epinephrine",
+        "ACE_epinephrine",
+        "ACE_epinephrine"
 	};
 	linkedItems[] = 
 	{	

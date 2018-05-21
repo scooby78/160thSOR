@@ -10,7 +10,18 @@ class tf_rt1523g_rhs;
 class rhsusf_assault_eagleaiii_ocp;
 class tf_anarc210;
 class B_FieldPack_blk;
+class B_AssaultPack_cbr;
 
+
+//Custom Rifleman MAAWS pack
+class SOR_Rifleman_AT_Pack_D : B_AssaultPack_cbr
+{
+	displayName = "Pack Desert Rifleman (AT)";
+	class TransportMagazines
+	{
+		mag_xx(MRAWS_HEAT_F,1);
+	};
+};
 
 //Custom Medic Pack	
 class SOR_Medic_Pack_D : rhsusf_assault_eagleaiii_ocp

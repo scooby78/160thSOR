@@ -83,28 +83,35 @@
 							"rhs_mag_an_m8hc",\
 							"rhs_mag_an_m8hc",\
 							"rhs_mag_an_m8hc",\
+                            "rhs_mag_m67",\
+						    "rhs_mag_m67",\
 							"SMA_150Rnd_762_M80A1_Tracer",\
+                            "SMA_150Rnd_762_M80A1_Tracer",\
 							"SMA_150Rnd_762_M80A1_Tracer"
 							
-#define Standard_Mags_AR1_ammo 	"SMA_150Rnd_762_M80A1_Tracer"
+#define Standard_Mags_AR1_ammo     "MRAWS_HEAT_F"
 							
 #define Standard_Mags_AR2 	"rhsusf_mag_15Rnd_9x19_FMJ",\
 							"rhs_mag_an_m8hc",\
 							"rhs_mag_an_m8hc",\
 							"rhs_mag_an_m8hc",\
+                            "rhs_mag_m67",\
+						    "rhs_mag_m67",\
 							"SMA_150Rnd_762_M80A1_Tracer",\
+                            "SMA_150Rnd_762_M80A1_Tracer",\
 							"SMA_150Rnd_762_M80A1_Tracer"	
 							
-#define Standard_Mags_AR2_ammo 	"SMA_150Rnd_762_M80A1_Tracer"		
+#define Standard_Mags_AR2_ammo     "MRAWS_HEAT_F"
 				
-#define GL_Mags 		"1Rnd_SmokeRed_Grenade_shell",\
+#define GL_Mags 		"1Rnd_SmokeGreen_Grenade_shell",\
+                        "1Rnd_SmokeRed_Grenade_shell",\
 						"1Rnd_SmokeRed_Grenade_shell",\
 						"1Rnd_SmokeRed_Grenade_shell",\
 						"1Rnd_Smoke_Grenade_shell",\
 						"1Rnd_Smoke_Grenade_shell",\
 						"1Rnd_Smoke_Grenade_shell",\
-						"1Rnd_HE_Grenade_shell",\
-						"1Rnd_HE_Grenade_shell",\
+                        "UGL_FlareRed_F",\
+                        "UGL_FlareRed_F",\
 						"1Rnd_HE_Grenade_shell",\
 						"1Rnd_HE_Grenade_shell",\
 						"1Rnd_HE_Grenade_shell",\
