@@ -115,18 +115,18 @@ class SOR_AirCommand_W : SOR_AirCommand_D
 	editorPreview = "\160thSOR\data\SOR_AirCommand_W.jpg";
 	editorCategory = "SOR_Cat_Faction_W";
 	faction = SOR_Faction_W;
-	uniformClass = "U_B_HeliPilotCoveralls"; 
+	uniformClass = "U_B_T_Soldier_F"; 
 	backpack = "tf_rt1523g_green";		
 	linkedItems[] = 
 	{	
-		"V_Rangemaster_belt", 
+		"V_TacVest_oli", 
 		"rhsusf_hgu56p", 
 		"ItemGPS", 	
 		Airborne_Equipment
 	};              
 	respawnLinkedItems[] = 
 	{	
-		"V_Rangemaster_belt", 
+		"V_TacVest_oli", 
 		"rhsusf_hgu56p", 
 		"ItemGPS", 	
 		Airborne_Equipment
@@ -389,16 +389,16 @@ class SOR_HeliPilot_W : SOR_HeliPilot_D
 	editorCategory = "SOR_Cat_Faction_W";
 	faction = SOR_Faction_W;
 	backpack = "tf_rt1523g_bwmod";		
-	uniformClass = "U_B_HeliPilotCoveralls"; 
+	uniformClass = "U_B_T_Soldier_F"; 
 	linkedItems[] = 
 	{	
-		"V_Rangemaster_belt", 
+		"V_TacVest_oli", 
 		"rhsusf_hgu56p", 
 		Airborne_Equipment
 	};              
 	respawnLinkedItems[] = 
 	{	
-		"V_Rangemaster_belt", 
+		"V_TacVest_oli", 
 		"rhsusf_hgu56p", 
 		Airborne_Equipment
 	};   
@@ -410,16 +410,16 @@ class SOR_HeliCrew_W : SOR_HeliCrew_D
 	editorCategory = "SOR_Cat_Faction_W";
 	faction = SOR_Faction_W;
 	backpack = "SOR_Repair_Pack_W";		
-	uniformClass = "U_B_HeliPilotCoveralls"; 
+	uniformClass = "U_B_T_Soldier_F"; 
 	linkedItems[] = 
 	{	
-		"V_Rangemaster_belt", 
+		"V_TacVest_oli", 
 		"rhsusf_hgu56p", 
 		Airborne_Equipment
 	};             
 	respawnLinkedItems[] = 
 	{	
-		"V_Rangemaster_belt", 
+		"V_TacVest_oli", 
 		"rhsusf_hgu56p", 
 		Airborne_Equipment
 	};  
@@ -438,16 +438,16 @@ class SOR_MEVPilot_W : SOR_MEVPilot_D
 	editorCategory = "SOR_Cat_Faction_W";
 	faction = SOR_Faction_W;
 	backpack = "tf_rt1523g_bwmod";		
-	uniformClass = "U_B_HeliPilotCoveralls"; 
+	uniformClass = "U_B_T_Soldier_F"; 
 	linkedItems[] = 
 	{	
-		"V_Rangemaster_belt",			
+		"V_TacVest_oli",			
 		"rhsusf_hgu56p_mask",
 		Airborne_Equipment
 	};              
 	respawnLinkedItems[] = 
 	{	
-		"V_Rangemaster_belt", 
+		"V_TacVest_oli", 
 		"rhsusf_hgu56p_mask",
 		Airborne_Equipment
 	};   

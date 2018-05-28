@@ -245,13 +245,13 @@ class SOR_AirCommand_D : B_officer_F
 	};
 	linkedItems[] = 
 	{	
-		"V_Rangemaster_belt", 
+		"V_TacVest_khk", 
 		"H_PilotHelmetHeli_O",
 		Airborne_Equipment
 	};              
 	respawnLinkedItems[] = 
 	{	
-		"V_Rangemaster_belt", 
+		"V_TacVest_khk", 
 		"H_PilotHelmetHeli_O",
 		Airborne_Equipment
 	};
@@ -755,13 +755,13 @@ class SOR_HeliPilot_D : B_Pilot_F
 	};	
 	linkedItems[] = 
 	{	
-		"V_Rangemaster_belt", 
+		"V_TacVest_khk", 
 		"rhsusf_hgu56p_visor",
 		Airborne_Equipment
 	};              
 	respawnLinkedItems[] = 
 	{	
-		"V_Rangemaster_belt", 
+		"V_TacVest_khk", 
 		"rhsusf_hgu56p_visor",
 		Airborne_Equipment
 	};
@@ -800,13 +800,13 @@ class SOR_HeliCrew_D : B_crew_F
 	};		
 	linkedItems[] = 
 	{	
-		"V_Rangemaster_belt", 
+		"V_TacVest_khk", 
 		"rhsusf_hgu56p_visor_mask", 
 		Airborne_Equipment
 	};              
 	respawnLinkedItems[] = 
 	{	
-		"V_Rangemaster_belt", 
+		"V_TacVest_khk", 
 		"rhsusf_hgu56p_visor_mask", 
 		Airborne_Equipment
 	};
@@ -847,13 +847,13 @@ class SOR_JetPilot_D : B_Pilot_F
 	};
 	linkedItems[] = 
 	{	
-		"V_Rangemaster_belt",
+		"V_TacVest_khk",
 		"H_PilotHelmetFighter_B",
 		Airborne_Equipment
 	};
 	respawnLinkedItems[] = 
 	{	
-		"V_Rangemaster_belt", 
+		"V_TacVest_khk", 
 		"H_PilotHelmetFighter_B",
 		Airborne_Equipment
 	};
@@ -870,13 +870,13 @@ class SOR_MEVPilot_D : 	SOR_HeliPilot_D
 	displayName = "MEV Pilot";
 	linkedItems[] = 
 	{	
-		"V_Rangemaster_belt",
+		"V_TacVest_khk",
 		"rhsusf_hgu56p_visor_mask", 
 		Airborne_Equipment
 	};
 	respawnLinkedItems[] = 
 	{	
-		"V_Rangemaster_belt", 
+		"V_TacVest_khk", 
 		"rhsusf_hgu56p_visor_mask", 
 		"ItemGPS",
 		Airborne_Equipment
