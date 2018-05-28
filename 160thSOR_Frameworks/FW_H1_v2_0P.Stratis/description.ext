@@ -43,8 +43,8 @@ allowFunctionsLog = 0;
 author = 16th Operations - Your Name Here;
 loadScreen =  "160thSOR\data\160th_night.paa"; 			//Options are... 160th_night.paa / 160th_day.paa / 160th.paa
 overviewPicture = "160thSOR\data\160th.paa"; 			//Options are... 160th_night.paa / 160th_day.paa / 160th.paa
-overviewText = "16th Operations";	
-onLoadName = 'Malden Framework';
+overviewText = "160th Operations";	
+onLoadName = 'Stratis Framework';
 
 //  Mission maker can edit these if required /\ /\ /\ /\ /\ /\ /\ /\ /\
 

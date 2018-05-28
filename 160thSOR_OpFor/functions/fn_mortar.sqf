@@ -39,7 +39,8 @@ Opfor Artillery -
 
 E.g.
 nul= [this, 1000, 400 ,'SoldierWB'] spawn SOPFOR_fnc_mortar; 
-If placed in the Spotter's init field, Blufor units will be hunted and fire missions will be sent to the closest valid mortar unit (SOR_FACTION_PMC_Mortar_D).
+If placed in a MK6 Mortar or 2B14-1 'Podnos' init field, Blufor units will be hunted by a spotter once they enter a 1000m radius, fire missions will be sent to the arti.  
+If Blufor get within 400m the spotter will defend himself and attempt to run away.
 
 Note: If the spotter is the same class as the unit hunted, the spotter will kill itself.
 Note: The script can be PAUSED via ZEUS or console by using the global execution... SOR_ARTI_PAUSE = true;

@@ -14,6 +14,17 @@ class B_AssaultPack_tna_F;
 /////////////////////////
 //Custom Packs Woodland//
 /////////////////////////
+
+//Custom Rifleman MAAWS pack
+class SOR_Rifleman_AT_Pack_W : B_AssaultPack_tna_F
+{
+	displayName = "Pack Woodland Rifleman (AT)";
+	class TransportMagazines
+	{
+		mag_xx(MRAWS_HEAT_F,1);
+	};
+};
+
 //Custom Medic Pack	
 class SOR_Medic_Pack_W : B_AssaultPack_tna_F
 {

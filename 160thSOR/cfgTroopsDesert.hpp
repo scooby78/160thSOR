@@ -150,12 +150,16 @@ class SOR_MechCommand_D : B_officer_F
 	Items[] =
 	{
 		Standard_Meds,
-		SL_Equip
+		SL_Equip,
+        "ACE_epinephrine",
+        "ACE_epinephrine"
 	};  
 	RespawnItems[] = 
 	{
 		Standard_Meds,
-		SL_Equip
+		SL_Equip,
+        "ACE_epinephrine",
+        "ACE_epinephrine"
 	};
 	magazines[] = 
 	{
@@ -176,16 +180,16 @@ class SOR_MechCommand_D : B_officer_F
 	linkedItems[] = 
 	{	
 		"rhsusf_iotv_ocp_Repair",
-		"rhsusf_cvc_ess", 
-		"rhs_balaclava",
+		"rhsusf_cvc_alt_helmet", 
+		"rhsusf_shemagh2_gogg_tan",
 		"ItemGPS",
 		Standard_Equipment
 	};
 	respawnLinkedItems[] = 
 	{	
 		"rhsusf_iotv_ocp_Repair", 
-		"rhsusf_cvc_ess", 
-		"rhs_balaclava",
+		"rhsusf_cvc_alt_helmet", 
+		"rhsusf_shemagh2_gogg_tan",
 		"ItemGPS",
 		Standard_Equipment
 	};
@@ -241,13 +245,13 @@ class SOR_AirCommand_D : B_officer_F
 	};
 	linkedItems[] = 
 	{	
-		"V_Rangemaster_belt", 
+		"V_TacVest_khk", 
 		"H_PilotHelmetHeli_O",
 		Airborne_Equipment
 	};              
 	respawnLinkedItems[] = 
 	{	
-		"V_Rangemaster_belt", 
+		"V_TacVest_khk", 
 		"H_PilotHelmetHeli_O",
 		Airborne_Equipment
 	};
@@ -492,7 +496,7 @@ class SOR_M249AR_D : B_soldier_AR_F
 	faction = SOR_Faction_D;
 	uniformClass = "U_B_CombatUniform_mcam";
 	displayName = "AutoRifleman M249";
-	backpack = "";
+	backpack = "B_AssaultPack_cbr";
 	weapons[] = {"160_weap_inf_AR1", "160_weap_inf_handgun", "Throw", "Put"};
 	respawnWeapons[] = {"160_weap_inf_AR1", "160_weap_inf_handgun","Throw", "Put"};
 	Items[] = {Standard_Meds};
@@ -534,7 +538,7 @@ class SOR_M240AR_D : B_soldier_AR_F
 	faction = SOR_Faction_D;
 	uniformClass = "U_B_CombatUniform_mcam";
 	displayName = "AutoRifleman M240";
-	backpack = "";
+	backpack = "B_AssaultPack_cbr";
 	weapons[] = {"160_weap_inf_AR2", "160_weap_inf_handgun", "Throw", "Put"};
 	respawnWeapons[] = {"160_weap_inf_AR2", "160_weap_inf_handgun","Throw", "Put"};
 	Items[] = {Standard_Meds};
@@ -621,9 +625,9 @@ class SOR_Rifleman_D : B_Soldier_F
 	faction = SOR_Faction_D;
 	uniformClass = "U_B_CombatUniform_mcam";
 	displayName = "Rifleman AT Ammo Bearer (M249)";
-	backpack = "";
-	weapons[] = {"160_weap_inf_std", "160_weap_inf_handgun","160_weap_inf_RPG","Throw","Put","Rangefinder"};
-	respawnWeapons[] = {"160_weap_inf_std", "160_weap_inf_handgun","160_weap_inf_RPG","Throw","Put","Rangefinder"};
+	backpack = "SOR_Rifleman_AT_Pack_D";
+	weapons[] = {"160_weap_inf_std","launch_MRAWS_sand_rail_F","Throw","Put","Rangefinder"};
+	respawnWeapons[] = {"160_weap_inf_std","launch_MRAWS_sand_rail_F","Throw","Put","Rangefinder"};
 	Items[] = 
 	{
 		"ACE_EntrenchingTool",
@@ -637,13 +641,11 @@ class SOR_Rifleman_D : B_Soldier_F
 	magazines[] = 
 	{
 		Standard_Mags,
-		Std_Pistol,
 		Standard_Mags_AR1_ammo
 	};
 	respawnMagazines[] = 
 	{
 		Standard_Mags,
-		Std_Pistol,
 		Standard_Mags_AR1_ammo
 	};	
 	linkedItems[] = 
@@ -669,19 +671,17 @@ class SOR_Rifleman_D : B_Soldier_F
 class SOR_Rifleman_ammo_D : SOR_Rifleman_D	
 {
 	displayName = "Rifleman AT Ammo Bearer (M240)";
-	backpack = "";
-	weapons[] = {"160_weap_inf_std","160_weap_inf_handgun","160_weap_inf_RPG","Throw","Put","Rangefinder"};
-	respawnWeapons[] = {"160_weap_inf_std","160_weap_inf_handgun","160_weap_inf_RPG","Throw","Put","Rangefinder"};
+	backpack = "SOR_Rifleman_AT_Pack_D";
+	weapons[] = {"160_weap_inf_std","launch_MRAWS_sand_rail_F","Throw","Put","Rangefinder"};
+	respawnWeapons[] = {"160_weap_inf_std","launch_MRAWS_sand_rail_F","Throw","Put","Rangefinder"};
 	magazines[] = 
 	{
 		Standard_Mags,
-		Std_Pistol,
 		Standard_Mags_AR2_ammo
 	};
 	respawnMagazines[] = 
 	{
 		Standard_Mags,
-		Std_Pistol,
 		Standard_Mags_AR2_ammo
 	};	
 };
@@ -755,13 +755,13 @@ class SOR_HeliPilot_D : B_Pilot_F
 	};	
 	linkedItems[] = 
 	{	
-		"V_Rangemaster_belt", 
+		"V_TacVest_khk", 
 		"rhsusf_hgu56p_visor",
 		Airborne_Equipment
 	};              
 	respawnLinkedItems[] = 
 	{	
-		"V_Rangemaster_belt", 
+		"V_TacVest_khk", 
 		"rhsusf_hgu56p_visor",
 		Airborne_Equipment
 	};
@@ -800,13 +800,13 @@ class SOR_HeliCrew_D : B_crew_F
 	};		
 	linkedItems[] = 
 	{	
-		"V_Rangemaster_belt", 
+		"V_TacVest_khk", 
 		"rhsusf_hgu56p_visor_mask", 
 		Airborne_Equipment
 	};              
 	respawnLinkedItems[] = 
 	{	
-		"V_Rangemaster_belt", 
+		"V_TacVest_khk", 
 		"rhsusf_hgu56p_visor_mask", 
 		Airborne_Equipment
 	};
@@ -847,13 +847,13 @@ class SOR_JetPilot_D : B_Pilot_F
 	};
 	linkedItems[] = 
 	{	
-		"V_Rangemaster_belt",
+		"V_TacVest_khk",
 		"H_PilotHelmetFighter_B",
 		Airborne_Equipment
 	};
 	respawnLinkedItems[] = 
 	{	
-		"V_Rangemaster_belt", 
+		"V_TacVest_khk", 
 		"H_PilotHelmetFighter_B",
 		Airborne_Equipment
 	};
@@ -870,13 +870,13 @@ class SOR_MEVPilot_D : 	SOR_HeliPilot_D
 	displayName = "MEV Pilot";
 	linkedItems[] = 
 	{	
-		"V_Rangemaster_belt",
+		"V_TacVest_khk",
 		"rhsusf_hgu56p_visor_mask", 
 		Airborne_Equipment
 	};
 	respawnLinkedItems[] = 
 	{	
-		"V_Rangemaster_belt", 
+		"V_TacVest_khk", 
 		"rhsusf_hgu56p_visor_mask", 
 		"ItemGPS",
 		Airborne_Equipment
@@ -1303,16 +1303,16 @@ class SOR_MechCrew_D : B_crew_F
 	linkedItems[] = 
 	{	
 		"rhsusf_iotv_ocp",
-		"rhsusf_cvc_helmet", 
-		"rhs_balaclava",
+		"rhsusf_cvc_alt_helmet", 
+		"rhsusf_shemagh2_gogg_tan",
 		"ItemGPS",
 		Standard_Equipment
 	};
 	respawnLinkedItems[] = 
 	{	
 		"rhsusf_iotv_ocp",
-		"rhsusf_cvc_helmet", 
-		"rhs_balaclava",
+		"rhsusf_cvc_alt_helmet", 
+		"rhsusf_shemagh2_gogg_tan",
 		"ItemGPS",
 		Standard_Equipment
 	};
@@ -1342,16 +1342,16 @@ class SOR_MechOperator_D : SOR_MechCrew_D
 	linkedItems[] = 
 	{	
 		"rhsusf_iotv_ocp_Repair",
-		"rhsusf_cvc_ess", 
-		"rhs_balaclava",
+		"rhsusf_cvc_alt_helmet", 
+		"rhsusf_shemagh2_gogg_tan",
 		"ItemGPS",
 		Standard_Equipment
 	};
 	respawnLinkedItems[] = 
 	{	
 		"rhsusf_iotv_ocp_Repair",
-		"rhsusf_cvc_ess", 
-		"rhs_balaclava",
+		"rhsusf_cvc_alt_helmet", 
+		"rhsusf_shemagh2_gogg_tan",
 		"ItemGPS",
 		Standard_Equipment
 	};
@@ -1386,7 +1386,7 @@ class SOR_MechDriver_D : SOR_MechCrew_D
 	engineer = 1; // allows unit to repair 	
 	class eventHandlers
 	{
-		init="_null = [[(_this select 0), '160thSOR_Mech_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP; [(_this select 0)] spawn SOR_fnc_ExternalView;";	
+		init="_null = [[(_this select 0), '160thSOR_Mech_Badge'], 'BIS_fnc_setUnitInsignia', nil, true, true] call BIS_fnc_MP;";	
 	};	
 };	
 
@@ -1486,13 +1486,21 @@ class SOR_Engineer_Teamleader_D : B_engineer_F
 	{
 		"ACE_EntrenchingTool",
 		"ACE_Flashlight_MX991",
-		Standard_Meds
+		Standard_Meds,
+        "ACE_epinephrine",
+        "ACE_epinephrine",
+        "ACE_epinephrine",
+        "ACE_epinephrine"
 	};
 	RespawnItems[] =
 	{
 		"ACE_EntrenchingTool",
 		"ACE_Flashlight_MX991",
-		Standard_Meds
+		Standard_Meds,
+        "ACE_epinephrine",
+        "ACE_epinephrine",
+        "ACE_epinephrine",
+        "ACE_epinephrine"
 	};
 	linkedItems[] = 
 	{	
