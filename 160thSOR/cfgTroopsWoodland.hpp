@@ -119,14 +119,14 @@ class SOR_AirCommand_W : SOR_AirCommand_D
 	backpack = "tf_rt1523g_green";		
 	linkedItems[] = 
 	{	
-		"V_TacVest_oli", 
+		"V_PlateCarrier1_tna_F", 
 		"rhsusf_hgu56p", 
 		"ItemGPS", 	
 		Airborne_Equipment
 	};              
 	respawnLinkedItems[] = 
 	{	
-		"V_TacVest_oli", 
+		"V_PlateCarrier1_tna_F", 
 		"rhsusf_hgu56p", 
 		"ItemGPS", 	
 		Airborne_Equipment
@@ -392,13 +392,13 @@ class SOR_HeliPilot_W : SOR_HeliPilot_D
 	uniformClass = "U_B_T_Soldier_F"; 
 	linkedItems[] = 
 	{	
-		"V_TacVest_oli", 
+		"V_PlateCarrier1_tna_F", 
 		"rhsusf_hgu56p", 
 		Airborne_Equipment
 	};              
 	respawnLinkedItems[] = 
 	{	
-		"V_TacVest_oli", 
+		"V_PlateCarrier1_tna_F", 
 		"rhsusf_hgu56p", 
 		Airborne_Equipment
 	};   
@@ -413,13 +413,13 @@ class SOR_HeliCrew_W : SOR_HeliCrew_D
 	uniformClass = "U_B_T_Soldier_F"; 
 	linkedItems[] = 
 	{	
-		"V_TacVest_oli", 
+		"V_PlateCarrier1_tna_F", 
 		"rhsusf_hgu56p", 
 		Airborne_Equipment
 	};             
 	respawnLinkedItems[] = 
 	{	
-		"V_TacVest_oli", 
+		"V_PlateCarrier1_tna_F", 
 		"rhsusf_hgu56p", 
 		Airborne_Equipment
 	};  
@@ -441,13 +441,13 @@ class SOR_MEVPilot_W : SOR_MEVPilot_D
 	uniformClass = "U_B_T_Soldier_F"; 
 	linkedItems[] = 
 	{	
-		"V_TacVest_oli",			
+		"V_PlateCarrier1_tna_F",			
 		"rhsusf_hgu56p_mask",
 		Airborne_Equipment
 	};              
 	respawnLinkedItems[] = 
 	{	
-		"V_TacVest_oli", 
+		"V_PlateCarrier1_tna_F", 
 		"rhsusf_hgu56p_mask",
 		Airborne_Equipment
 	};   
