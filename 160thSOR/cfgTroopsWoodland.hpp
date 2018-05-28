@@ -94,16 +94,16 @@ class SOR_MechCommand_W : SOR_MechCommand_D
 	linkedItems[] = 
 	{	
 		"V_PlateCarrier2_tna_F" , 
-		"rhsusf_cvc_green_ess", 
-		"rhs_balaclava",
+		"rhsusf_cvc_green_alt_helmet", 
+		"rhsusf_shemagh2_gogg_od",
 		"ItemGPS",
 		Standard_Equipment
 	};              
 	respawnLinkedItems[] = 
 	{	
 		"V_PlateCarrier2_tna_F", 
-		"rhsusf_cvc_green_ess", 
-		"rhs_balaclava",
+		"rhsusf_cvc_green_alt_helmet", 
+		"rhsusf_shemagh2_gogg_od",
 		"ItemGPS",
 		Standard_Equipment
 	};   
@@ -653,16 +653,16 @@ class SOR_MechCrew_W : SOR_MechCrew_D
 	linkedItems[] = 
 	{	
 		"V_PlateCarrier2_tna_F", 
-		"rhsusf_cvc_green_helmet", 
-		"rhs_balaclava",
+		"rhsusf_cvc_green_alt_helmet", 
+		"rhsusf_shemagh2_gogg_od",
 		"ItemGPS",
 		Standard_Equipment
 	};              
 	respawnLinkedItems[] = 
 	{	
 		"V_PlateCarrier2_tna_F", 
-		"rhsusf_cvc_green_helmet", 
-		"rhs_balaclava",
+		"rhsusf_cvc_green_alt_helmet", 
+		"rhsusf_shemagh2_gogg_od",
 		"ItemGPS",
 		Standard_Equipment
 	};   
@@ -700,16 +700,16 @@ class SOR_MechOperator_W : SOR_MechCrew_W
 	linkedItems[] = 
 	{	
 		"V_PlateCarrier2_tna_F", 
-		"rhsusf_cvc_green_ess",
-		"rhs_balaclava",
+		"rhsusf_cvc_green_alt_helmet",
+		"rhsusf_shemagh2_gogg_od",
 		"ItemGPS",
 		Standard_Equipment
 	};
 	respawnLinkedItems[] = 
 	{	
 		"V_PlateCarrier2_tna_F", 
-		"rhsusf_cvc_green_ess",
-		"rhs_balaclava",
+		"rhsusf_cvc_green_alt_helmet",
+		"rhsusf_shemagh2_gogg_od",
 		"ItemGPS",
 		Standard_Equipment
 	};

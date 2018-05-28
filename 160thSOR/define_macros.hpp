@@ -173,15 +173,32 @@
 									};\
 									class TransportWeapons\
 									{\
-										weap_xx(rhs_weap_M136_hp,2)\
+										weap_xx(launch_MRAWS_sand_rail_F,1)\
 										weap_xx(rhs_weap_m4a1_carryhandle_grip,2)\
 									};\
 									class TransportMagazines\
 									{\
+                                        mag_xx(MRAWS_HEAT_F,1)\
 										mag_xx(30Rnd_556x45_Stanag_Tracer_Red,20)\
 										mag_xx(SMA_150Rnd_762_M80A1_Tracer,8)\
 										mag_xx(SLAMDirectionalMine_Wire_Mag,2)\
 									};\
+									class TransportBackpacks\
+									{\
+										pack_xx(SOR_Repair_Pack_veh_D,1)\
+									};
+                                    
+//Light Mech Vehicle Loadout
+#define Mech_Inventory_Light 		class TransportItems \
+									{\
+										item_xx(ACE_FieldDressing,10);\
+									};\
+									class TransportWeapons\
+									{\
+										weap_xx(rhs_weap_m4a1_carryhandle_grip,2)\
+									};\
+									class TransportMagazines\
+									{};\
 									class TransportBackpacks\
 									{\
 										pack_xx(SOR_Repair_Pack_veh_D,1)\
@@ -195,11 +212,12 @@
 										};\
 									class TransportWeapons\
 									{\
-										weap_xx(rhs_weap_M136_hp,1)\
+										weap_xx(launch_MRAWS_sand_rail_F,1)\
 									};\
 									class TransportMagazines\
 									{\
 										mag_xx(Laserbatteries,1)\
+                                        mag_xx(MRAWS_HEAT_F,1)\
 										mag_xx(SMA_150Rnd_762_M80A1_Tracer,2)\
 										mag_xx(30Rnd_556x45_Stanag_Tracer_Red,10)\
 										mag_xx(ClaymoreDirectionalMine_Remote_Mag,2)\
@@ -220,10 +238,11 @@
 									};\
 									class TransportWeapons\
 									{\
-										weap_xx(rhs_weap_M136_hp,2)\
+										weap_xx(launch_MRAWS_sand_rail_F,1)\
 									};\
 									class TransportMagazines\
 									{\
+                                        mag_xx(MRAWS_HEAT_F,1)\
 										mag_xx(SMA_150Rnd_762_M80A1_Tracer,4)\
 									};\
 									class TransportBackpacks\
@@ -243,11 +262,12 @@
 									};\
 									class TransportWeapons\
 									{\
-										weap_xx(rhs_weap_M136_hp,2)\
+										weap_xx(launch_MRAWS_sand_rail_F,1)\
 										weap_xx(rhs_weap_m4a1_carryhandle_grip,2)\
 									};\
 									class TransportMagazines\
 									{\
+                                        mag_xx(MRAWS_HEAT_F,1)\
 										mag_xx(30Rnd_556x45_Stanag_Tracer_Red,6)\
 									};\
 									class TransportBackpacks\

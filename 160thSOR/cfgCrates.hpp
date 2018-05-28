@@ -257,11 +257,11 @@ class SOR_Launcher_Box_F : Box_NATO_WpsLaunch_F
 	faction = SOR_Faction_CRATE;		
 	displayName = "Box [Launcher AT]";
 	class TransportItems{};
-	class TransportWeapons
-	{
-		weap_xx(rhs_weap_M136_hp,6)
-	};	
-	class TransportMagazines{};
+	class TransportWeapons {};	
+	class TransportMagazines
+    {
+        mag_xx(MRAWS_HEAT_F,12)
+    };
 	class TransportBackpacks{};
 };	
 
@@ -377,7 +377,7 @@ class SOR_Training_Crate_WTT : B_CargoNet_01_ammo_F
 	};	
 	class TransportWeapons
 	{
-		weap_xx(rhs_weap_M136_hp,100)
+		weap_xx(launch_MRAWS_sand_rail_F,50)
 		weap_xx(160_weap_inf_gl,30)		
 		weap_xx(160_weap_inf_AR1,30)	
 		weap_xx(Rangefinder,20)
@@ -395,6 +395,7 @@ class SOR_Training_Crate_WTT : B_CargoNet_01_ammo_F
 		mag_xx(1Rnd_HE_Grenade_shell,100)
 		mag_xx(1Rnd_SmokeRed_Grenade_shell,50)
 		mag_xx(1Rnd_Smoke_Grenade_shell,50)
+        mag_xx(MRAWS_HEAT_F,100)
 	};
 	class TransportBackpacks{};
 };
@@ -414,10 +415,7 @@ class SOR_A_Crate_F : B_CargoNet_01_ammo_F
 	icon = "iconCrateAmmo";
 	ace_dragging_canDrag = 1;	
 	class TransportItems{};
-	class TransportWeapons
-	{
-		weap_xx(rhs_weap_M136_hp,16)
-	};
+	class TransportWeapons {};
 	class TransportMagazines
 	{
 		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,200)
@@ -429,6 +427,7 @@ class SOR_A_Crate_F : B_CargoNet_01_ammo_F
 		mag_xx(rhs_mag_m67,40)
 		mag_xx(rhs_mag_an_m8hc,40)
 		mag_xx(1Rnd_SmokeGreen_Grenade_shell,40)
+        mag_xx(MRAWS_HEAT_F,32)
 	};
 	class TransportBackpacks{};
 };
@@ -449,10 +448,7 @@ class SOR_AM_Crate_F : B_CargoNet_01_ammo_F
 		item_xx(ACE_FieldDressing,200);
 		item_xx(ACE_morphine,100);
 	};		
-	class TransportWeapons
-	{
-		weap_xx(rhs_weap_M136_hp,8)
-	};
+	class TransportWeapons {};
 	class TransportMagazines
 	{
 		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,200)
@@ -464,6 +460,7 @@ class SOR_AM_Crate_F : B_CargoNet_01_ammo_F
 		mag_xx(rhs_mag_m67,40)
 		mag_xx(rhs_mag_an_m8hc,40)
 		mag_xx(1Rnd_SmokeGreen_Grenade_shell,40)
+        mag_xx(MRAWS_HEAT_F,32)
 	};
 	class TransportBackpacks
 	{
@@ -547,10 +544,7 @@ class SOR_Taru_Pod_ammo_black : Land_Pod_Heli_Transport_04_ammo_F
 		"\A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_black_CO.paa"
 	};
 	class TransportItems{};
-	class TransportWeapons
-	{
-		weap_xx(rhs_weap_M136_hp,12)
-	};
+	class TransportWeapons {};
 	class TransportMagazines
 	{
 		mag_xx(30Rnd_556x45_Stanag_Tracer_Red,200)
@@ -562,6 +556,7 @@ class SOR_Taru_Pod_ammo_black : Land_Pod_Heli_Transport_04_ammo_F
 		mag_xx(rhs_mag_m67,40)
 		mag_xx(rhs_mag_an_m8hc,40)
 		mag_xx(1Rnd_SmokeGreen_Grenade_shell,40)
+        mag_xx(MRAWS_HEAT_F,24)
 	};
 	class TransportBackpacks{};
 };

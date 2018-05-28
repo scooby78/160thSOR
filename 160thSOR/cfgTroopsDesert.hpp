@@ -180,16 +180,16 @@ class SOR_MechCommand_D : B_officer_F
 	linkedItems[] = 
 	{	
 		"rhsusf_iotv_ocp_Repair",
-		"rhsusf_cvc_ess", 
-		"rhs_balaclava",
+		"rhsusf_cvc_alt_helmet", 
+		"rhsusf_shemagh2_gogg_tan",
 		"ItemGPS",
 		Standard_Equipment
 	};
 	respawnLinkedItems[] = 
 	{	
 		"rhsusf_iotv_ocp_Repair", 
-		"rhsusf_cvc_ess", 
-		"rhs_balaclava",
+		"rhsusf_cvc_alt_helmet", 
+		"rhsusf_shemagh2_gogg_tan",
 		"ItemGPS",
 		Standard_Equipment
 	};
@@ -1303,16 +1303,16 @@ class SOR_MechCrew_D : B_crew_F
 	linkedItems[] = 
 	{	
 		"rhsusf_iotv_ocp",
-		"rhsusf_cvc_helmet", 
-		"rhs_balaclava",
+		"rhsusf_cvc_alt_helmet", 
+		"rhsusf_shemagh2_gogg_tan",
 		"ItemGPS",
 		Standard_Equipment
 	};
 	respawnLinkedItems[] = 
 	{	
 		"rhsusf_iotv_ocp",
-		"rhsusf_cvc_helmet", 
-		"rhs_balaclava",
+		"rhsusf_cvc_alt_helmet", 
+		"rhsusf_shemagh2_gogg_tan",
 		"ItemGPS",
 		Standard_Equipment
 	};
@@ -1342,16 +1342,16 @@ class SOR_MechOperator_D : SOR_MechCrew_D
 	linkedItems[] = 
 	{	
 		"rhsusf_iotv_ocp_Repair",
-		"rhsusf_cvc_ess", 
-		"rhs_balaclava",
+		"rhsusf_cvc_alt_helmet", 
+		"rhsusf_shemagh2_gogg_tan",
 		"ItemGPS",
 		Standard_Equipment
 	};
 	respawnLinkedItems[] = 
 	{	
 		"rhsusf_iotv_ocp_Repair",
-		"rhsusf_cvc_ess", 
-		"rhs_balaclava",
+		"rhsusf_cvc_alt_helmet", 
+		"rhsusf_shemagh2_gogg_tan",
 		"ItemGPS",
 		Standard_Equipment
 	};
