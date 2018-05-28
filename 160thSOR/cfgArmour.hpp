@@ -39,6 +39,14 @@ class B_MBT_01_TUSK_F;
 class B_AFV_Wheeled_01_up_cannon_F;
 class B_AFV_Wheeled_01_cannon_F;
 
+class B_T_APC_Tracked_01_rcws_F;
+class B_T_APC_Tracked_01_AA_F;
+class B_T_MBT_01_cannon_F;
+class B_T_APC_Wheeled_01_cannon_F;
+class B_T_MBT_01_TUSK_F;
+class B_T_AFV_Wheeled_01_up_cannon_F;
+class B_T_AFV_Wheeled_01_cannon_F;
+
 class Cha_Des1_LAV25A2;
 class Cha_Des1_LAV25_HQ;
 

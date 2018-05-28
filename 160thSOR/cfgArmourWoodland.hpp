@@ -325,3 +325,67 @@ class SOR_APC_WD: SOR_APC_D
 	};
 };
 
+//Mech NATO vehicles
+
+class SOR_NATO_T_APC_Tracked_01_rcws_F : B_T_APC_Tracked_01_rcws_F
+{
+	editorCategory = "SOR_Cat_Faction_W";
+	vehicleclass = "SOR_Vehicles";
+	ace_cargo_space = 12;
+	faction = SOR_Faction_W;
+	Mech_Inventory
+};	
+
+class SOR_NATO_T_APC_Tracked_01_AA_F : B_T_APC_Tracked_01_AA_F
+{
+	editorCategory = "SOR_Cat_Faction_W";
+	vehicleclass = "SOR_Vehicles";
+	ace_cargo_space = 12;
+	faction = SOR_Faction_W;
+	Mech_Inventory
+};
+
+class SOR_NATO_T_MBT_01_cannon_F : B_T_MBT_01_cannon_F
+{
+	editorCategory = "SOR_Cat_Faction_W";
+	vehicleclass = "SOR_Vehicles";
+	ace_cargo_space = 12;
+	faction = SOR_Faction_W;
+	Mech_Inventory
+};
+
+class SOR_NATO_T_MBT_01_TUSK_F : B_T_MBT_01_TUSK_F
+{
+	editorCategory = "SOR_Cat_Faction_W";
+	vehicleclass = "SOR_Vehicles";
+	ace_cargo_space = 12;
+	faction = SOR_Faction_W;
+	Mech_Inventory
+};
+
+class SOR_NATO_T_APC_Wheeled_01_cannon_F : B_T_APC_Wheeled_01_cannon_F
+{
+	editorCategory = "SOR_Cat_Faction_W";
+	vehicleclass = "SOR_Vehicles";
+	ace_cargo_space = 12;
+	faction = SOR_Faction_W;
+	Mech_Inventory
+};
+
+class SOR_NATO_T_AFV_Wheeled_01_up_cannon_F : B_T_AFV_Wheeled_01_up_cannon_F
+{
+	editorCategory = "SOR_Cat_Faction_W";
+	vehicleclass = "SOR_Vehicles";
+	ace_cargo_space = 12;
+	faction = SOR_Faction_W;
+	Mech_Inventory
+};
+
+class SOR_NATO_T_AFV_Wheeled_01_cannon_F : B_T_AFV_Wheeled_01_cannon_F
+{
+	editorCategory = "SOR_Cat_Faction_W";
+	vehicleclass = "SOR_Vehicles";
+	ace_cargo_space = 12;
+	faction = SOR_Faction_W;
+	Mech_Inventory
+};
