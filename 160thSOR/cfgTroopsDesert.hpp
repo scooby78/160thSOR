@@ -1538,4 +1538,16 @@ class SOR_Engineer_D : SOR_Engineer_Teamleader_D
 		"rhs_mag_m18_green",
 		Standard_Mags		
 	};	
+    Items[] = 
+	{
+		"ACE_EntrenchingTool",
+		"ACE_Flashlight_MX991",
+		Standard_Meds
+	};
+	RespawnItems[] =
+	{
+		"ACE_EntrenchingTool",
+		"ACE_Flashlight_MX991",
+		Standard_Meds
+	};
 };

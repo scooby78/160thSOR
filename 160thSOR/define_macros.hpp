@@ -243,7 +243,7 @@
 									class TransportMagazines\
 									{\
                                         mag_xx(MRAWS_HEAT_F,1)\
-										mag_xx(SMA_150Rnd_762_M80A1_Tracer,4)\
+                                        mag_xx(30Rnd_556x45_Stanag_Tracer_Red,8)\
 									};\
 									class TransportBackpacks\
 									{\
