@@ -70,6 +70,16 @@
 						"rhs_mag_m67",\
 						"rhs_mag_an_m8hc",\
 						"rhs_mag_an_m8hc"
+                        
+#define Medic_Mags 	    "30Rnd_556x45_Stanag_Tracer_Red",\
+						"30Rnd_556x45_Stanag_Tracer_Red",\
+						"30Rnd_556x45_Stanag_Tracer_Red",\
+						"30Rnd_556x45_Stanag_Tracer_Red",\
+						"30Rnd_556x45_Stanag_Tracer_Red",\
+						"30Rnd_556x45_Stanag_Tracer_Red",\
+						"30Rnd_556x45_Stanag_Tracer_Red",\
+						"rhs_mag_an_m8hc",\
+						"rhs_mag_an_m8hc"
 
 #define Standard_Mags_crew 	"30Rnd_556x45_Stanag_Tracer_Red",\
 							"30Rnd_556x45_Stanag_Tracer_Red",\

@@ -456,8 +456,8 @@ class SOR_Medic_D : B_medic_F
 	respawnWeapons[] = {"160_weap_inf_std", "160_weap_inf_handgun","Throw", "Put"};
 	Items[] = {Standard_Meds};
 	RespawnItems[] = {Standard_Meds};
-	magazines[] = {Standard_Mags,Std_Pistol};
-	respawnMagazines[] = {Standard_Mags,Std_Pistol};		
+	magazines[] = {Medic_Mags,Std_Pistol};
+	respawnMagazines[] = {Medic_Mags,Std_Pistol};		
 	linkedItems[] = 
 	{	
 		"rhsusf_iotv_ocp_Medic",
