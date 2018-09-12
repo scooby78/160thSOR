@@ -280,11 +280,14 @@ class SOR_Eng_Truck_Repair_wd : SOR_Eng_Truck_Repair_D
 };
 	
 //Engineer armored transport
-class SOR_Eng_APC_Tracked_01_wd : SOR_Eng_APC_Tracked_01
+class SOR_Eng_APC_Tracked_01_wd : B_T_APC_Tracked_01_CRV_F
 {
 	editorCategory = "SOR_Cat_Faction_W";
 	vehicleclass = "SOR_Vehicles";
+    displayName = "Nemmera (Engineer)";
+    ace_cargo_space = 16;
 	faction = SOR_Faction_W;
+    Eng_Inventory
 };	
 
 class SOR_B_APC_Tracked_02_wd : SOR_B_APC_Tracked_02

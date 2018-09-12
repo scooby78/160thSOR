@@ -70,6 +70,16 @@
 						"rhs_mag_m67",\
 						"rhs_mag_an_m8hc",\
 						"rhs_mag_an_m8hc"
+                        
+#define Medic_Mags 	    "30Rnd_556x45_Stanag_Tracer_Red",\
+						"30Rnd_556x45_Stanag_Tracer_Red",\
+						"30Rnd_556x45_Stanag_Tracer_Red",\
+						"30Rnd_556x45_Stanag_Tracer_Red",\
+						"30Rnd_556x45_Stanag_Tracer_Red",\
+						"30Rnd_556x45_Stanag_Tracer_Red",\
+						"30Rnd_556x45_Stanag_Tracer_Red",\
+						"rhs_mag_an_m8hc",\
+						"rhs_mag_an_m8hc"
 
 #define Standard_Mags_crew 	"30Rnd_556x45_Stanag_Tracer_Red",\
 							"30Rnd_556x45_Stanag_Tracer_Red",\
@@ -243,7 +253,7 @@
 									class TransportMagazines\
 									{\
                                         mag_xx(MRAWS_HEAT_F,1)\
-										mag_xx(SMA_150Rnd_762_M80A1_Tracer,4)\
+                                        mag_xx(30Rnd_556x45_Stanag_Tracer_Red,8)\
 									};\
 									class TransportBackpacks\
 									{\

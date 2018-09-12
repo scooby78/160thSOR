@@ -808,4 +808,16 @@ class SOR_Engineer_W : SOR_Engineer_Teamleader_W
 {   
 	displayName = "Engineer";
 	backpack = "SOR_Eng_Repair_Pack_W";
+    Items[] = 
+	{
+		"ACE_EntrenchingTool",
+		"ACE_Flashlight_MX991",
+		Standard_Meds
+	};
+	RespawnItems[] =
+	{
+		"ACE_EntrenchingTool",
+		"ACE_Flashlight_MX991",
+		Standard_Meds
+	};
 };

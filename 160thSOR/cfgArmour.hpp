@@ -46,6 +46,7 @@ class B_T_APC_Wheeled_01_cannon_F;
 class B_T_MBT_01_TUSK_F;
 class B_T_AFV_Wheeled_01_up_cannon_F;
 class B_T_AFV_Wheeled_01_cannon_F;
+class B_T_APC_Tracked_01_CRV_F;
 
 class Cha_Des1_LAV25A2;
 class Cha_Des1_LAV25_HQ;
@@ -425,11 +426,12 @@ class SOR_Eng_Truck_Repair_D : B_Truck_01_Repair_F
 	
 	
 //Engineer armored recovery
-class SOR_Eng_APC_Tracked_01 : B_APC_Tracked_01_rcws_F
+class SOR_Eng_APC_Tracked_01 : B_APC_Tracked_01_CRV_F
 {
 	editorCategory = "SOR_Cat_Faction_D";
 	vehicleclass = "SOR_Vehicles";
-	ace_cargo_space = 16;
+    displayName = "Nemmera (Engineer)";
+	ace_cargo_space = 16;	
 	faction = SOR_Faction_D;
 	Eng_Inventory
 };	
@@ -442,6 +444,7 @@ class SOR_B_APC_Tracked_02 : B_APC_Tracked_01_CRV_F
 	faction = SOR_Faction_D;
 	Mech_Inventory
 };
+
 
 //Retexture by AmTheAgent
 

@@ -20,3 +20,4 @@
 #include "cfgMarkers.hpp"
 #include "cfgAISkill.hpp"
 #include "cfgCloudlets.hpp"
+#include "cfgXEH.hpp"

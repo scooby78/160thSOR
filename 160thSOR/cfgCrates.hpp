@@ -118,8 +118,8 @@ class SOR_M_Box_F : ACE_medicalSupplyCrate
 	displayName = "Box [Medical]";
 	class TransportItems
 	{
-		item_xx(ACE_FieldDressing,40);
-		item_xx(ACE_morphine,18);
+		item_xx(ACE_FieldDressing,80);
+		item_xx(ACE_morphine,30);
 	};		
 	class TransportWeapons{};
 	class TransportMagazines{};

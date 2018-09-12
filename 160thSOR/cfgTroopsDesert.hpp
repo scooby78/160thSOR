@@ -456,8 +456,8 @@ class SOR_Medic_D : B_medic_F
 	respawnWeapons[] = {"160_weap_inf_std", "160_weap_inf_handgun","Throw", "Put"};
 	Items[] = {Standard_Meds};
 	RespawnItems[] = {Standard_Meds};
-	magazines[] = {Standard_Mags,Std_Pistol};
-	respawnMagazines[] = {Standard_Mags,Std_Pistol};		
+	magazines[] = {Medic_Mags,Std_Pistol};
+	respawnMagazines[] = {Medic_Mags,Std_Pistol};		
 	linkedItems[] = 
 	{	
 		"rhsusf_iotv_ocp_Medic",
@@ -1538,4 +1538,16 @@ class SOR_Engineer_D : SOR_Engineer_Teamleader_D
 		"rhs_mag_m18_green",
 		Standard_Mags		
 	};	
+    Items[] = 
+	{
+		"ACE_EntrenchingTool",
+		"ACE_Flashlight_MX991",
+		Standard_Meds
+	};
+	RespawnItems[] =
+	{
+		"ACE_EntrenchingTool",
+		"ACE_Flashlight_MX991",
+		Standard_Meds
+	};
 };
