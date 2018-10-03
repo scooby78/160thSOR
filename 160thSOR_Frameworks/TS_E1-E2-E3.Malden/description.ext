@@ -42,3 +42,4 @@ onLoadName = "E1 E2 E3 Training Space";
 onLoadMission = "www.160th.net (Requires Loadouts v2.4.11)";
 overviewPicture = "160thSOR\data\160th_day.paa"; 		
 
+cba_settings_whitelist[] = {76561198035093548};
