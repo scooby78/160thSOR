@@ -12,11 +12,11 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=184;
+		nextID=186;
 	};
 	class Camera
 	{
-		pos[]={9490.375,21.151354,6987.2856};
+		pos[]={9505.8242,41.06057,6985.1665};
 		dir[]={-0.78996295,-0.58564043,0.18184866};
 		up[]={-0.57074088,0.81054014,0.13138467};
 		aside[]={0.22434434,7.4302079e-007,0.9745605};
@@ -58599,7 +58599,7 @@ class Mission
 				position[]={9474.8701,4.6162953,6992.3442};
 				angles[]={0.013596115,0,0.059934605};
 			};
-			name="Shadow";
+			name="Hawkz";
 			id=4774;
 			type="ModuleCurator_F";
 			class CustomAttributes
@@ -58619,7 +58619,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="76561198136369139";
+							value="76561198116995444";
 						};
 					};
 				};
@@ -58657,7 +58657,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Shadow";
+							value="Hawkz";
 						};
 					};
 				};
